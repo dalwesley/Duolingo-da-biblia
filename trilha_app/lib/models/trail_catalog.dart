@@ -27,12 +27,18 @@ enum TrailRealm {
 }
 
 enum TrailCategory {
+  // Motivos do onboarding — cards em Temas (trilha própria cada um).
+  // "Criar uma sequência" não tem card: abre Gênesis no AT.
+  pazNoDia('paz-no-dia', TrailRealm.vidaCrista, 1),
+  conhecerADeus('conhecer-a-deus', TrailRealm.vidaCrista, 2),
+  entenderABiblia('entender-a-biblia', TrailRealm.vidaCrista, 3),
+
   // Bíblia toda — atravessam os dois Testamentos; guardadas no AT.
-  panorama('panorama', TrailRealm.antigoTestamento, 1),
-  personagens('personagens', TrailRealm.antigoTestamento, 2),
-  promessaCumprimento('promessa-cumprimento', TrailRealm.antigoTestamento, 3),
-  temasBiblicos('temas-biblicos', TrailRealm.antigoTestamento, 4),
-  parabolasMilagres('parabolas-milagres', TrailRealm.antigoTestamento, 5),
+  panorama('panorama', TrailRealm.antigoTestamento, 4),
+  personagens('personagens', TrailRealm.antigoTestamento, 5),
+  promessaCumprimento('promessa-cumprimento', TrailRealm.antigoTestamento, 6),
+  temasBiblicos('temas-biblicos', TrailRealm.antigoTestamento, 7),
+  parabolasMilagres('parabolas-milagres', TrailRealm.antigoTestamento, 8),
 
   // Antigo Testamento
   pentateuco('pentateuco', TrailRealm.antigoTestamento, 10),
@@ -66,6 +72,9 @@ enum TrailCategory {
 
   /// Título da categoria (idioma atual).
   String get label => switch (this) {
+    pazNoDia => L10n.current.categoryPazNoDiaTitle,
+    conhecerADeus => L10n.current.categoryConhecerADeusTitle,
+    entenderABiblia => L10n.current.categoryEntenderABibliaTitle,
     panorama => L10n.current.categoryPanoramaTitle,
     personagens => L10n.current.categoryPersonagensTitle,
     promessaCumprimento => L10n.current.categoryPromessaCumprimentoTitle,
@@ -92,6 +101,9 @@ enum TrailCategory {
 
   /// Blurb da categoria (idioma atual).
   String get description => switch (this) {
+    pazNoDia => L10n.current.categoryPazNoDiaBlurb,
+    conhecerADeus => L10n.current.categoryConhecerADeusBlurb,
+    entenderABiblia => L10n.current.categoryEntenderABibliaBlurb,
     pentateuco => L10n.current.categoryPentateucoBlurb,
     historicosAt => L10n.current.categoryHistoricosAtBlurb,
     poeticos => L10n.current.categoryPoeticosBlurb,
@@ -171,6 +183,16 @@ enum TrailJourney {
     TrailCategory.epistolas,
     TrailCategory.apocalipse,
   ]),
+  // Motivos do onboarding — um card por trilha, grátis (ver [requiresPlus]).
+  pazNoDia(TrailShelf.tematicos, TrailRealm.vidaCrista, [
+    TrailCategory.pazNoDia,
+  ]),
+  conhecerADeus(TrailShelf.tematicos, TrailRealm.vidaCrista, [
+    TrailCategory.conhecerADeus,
+  ]),
+  entenderABiblia(TrailShelf.tematicos, TrailRealm.vidaCrista, [
+    TrailCategory.entenderABiblia,
+  ]),
   panorama(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
     TrailCategory.panorama,
   ]),
@@ -222,9 +244,16 @@ enum TrailJourney {
     _ => categories.single.description,
   };
 
-  /// Só o card da Bíblia (AT e NT) é grátis: todos os livros, poéticos
-  /// inclusive. Temáticos, Vida Cristã e Teologia são Peregrino+.
-  bool get requiresPlus => shelf != TrailShelf.biblia;
+  /// Bíblia (AT/NT) e os motivos do onboarding são grátis. Demais Temas,
+  /// Vida Cristã e Teologia pedem Peregrino+.
+  bool get requiresPlus {
+    if (this == pazNoDia ||
+        this == conhecerADeus ||
+        this == entenderABiblia) {
+      return false;
+    }
+    return shelf != TrailShelf.biblia;
+  }
 
   /// Cards temáticos que atravessam os dois Testamentos: a trilha pode estar
   /// gravada no AT ou no NT.

@@ -524,6 +524,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get categoryApocalipseTitle => 'Apocalipsis o Revelación';
 
   @override
+  String get categoryConhecerADeusBlurb =>
+      'Dios viene antes de todo: el Creador, el nombre YO SOY, la santidad, el pastor y el Verbo hecho carne. Cinco escenas para acercarse a él.';
+
+  @override
+  String get categoryConhecerADeusTitle => 'Conocer a Dios';
+
+  @override
   String get categoryCristologiaBlurb =>
       'Quién es Jesús: Dios y hombre, profeta, sacerdote y rey. La ruta recorre su persona y su obra: encarnación, cruz, resurrección y señorío.';
 
@@ -532,10 +539,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get categoryDiscipuladoBlurb =>
-      'Seguir a Jesús cada día: el Sermón del Monte, la familia, la misión y las horas difíciles, como la ansiedad y el recomienzo. Fe que se hace camino.';
+      'Seguir a Jesús cada día: el Sermón del Monte, la familia, la misión y el recomienzo. Fe que se hace camino.';
 
   @override
   String get categoryDiscipuladoTitle => 'Discipulado';
+
+  @override
+  String get categoryEntenderABibliaBlurb =>
+      'Un panorama de la historia bíblica: creación, caída, promesa, liberación, el Siervo, la resurrección y la nueva creación — siete escenas de todo el arco.';
+
+  @override
+  String get categoryEntenderABibliaTitle => 'Entender la Biblia';
 
   @override
   String get categoryEpistolasBlurb =>
@@ -613,6 +627,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get categoryParabolasMilagresTitle => 'Parábolas y milagros';
+
+  @override
+  String get categoryPazNoDiaBlurb =>
+      'Un respiro en medio del día: echa la ansiedad en el Padre y sigue con confianza. Cinco escenas cortas para el corazón inquieto.';
+
+  @override
+  String get categoryPazNoDiaTitle => 'Paz en el día';
 
   @override
   String get categoryPentateucoBlurb =>
@@ -1074,8 +1095,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count días atrás en la caminata',
-      one: '1 día atrás en la caminata',
+      other: '$count días atrás en el camino',
+      one: '1 día atrás en el camino',
     );
     return '$_temp0';
   }
@@ -1091,14 +1112,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get companionDelayFreshInsight =>
-      'Se está quedando atrás en nuestra caminata';
+      'Se está quedando atrás en nuestra compañía';
 
   @override
   String get companionDelayLostHeadline => 'Todavía hay lugar a mi lado';
 
   @override
-  String get companionDelayLostInsight =>
-      'Pero se puede retomar nuestra caminata';
+  String get companionDelayLostInsight => 'Pero se puede seguir juntos';
 
   @override
   String get companionErrorAlreadyHave => 'Ya tienes una compañía.';
@@ -1243,7 +1263,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String companionSheetPromptBodyDay2(int steps) {
-    return 'Dos días seguidos. Estudia con una persona — no con trescientos. Ganan +$steps pasos en la semana juntos.';
+    return 'Dos días de racha. Estudia con una persona — no con trescientos. Ganan +$steps pasos en la semana juntos.';
   }
 
   @override
@@ -1683,7 +1703,7 @@ class AppLocalizationsEs extends AppLocalizations {
       other: '$daysAway días sin caminar',
       one: '1 día sin caminar',
     );
-    return '$name, $_temp0. El hielo aún cubre 1 falta — retoma la caminata.';
+    return '$name, $_temp0. El hielo aún cubre 1 falta — sigue el camino.';
   }
 
   @override
@@ -1699,7 +1719,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String dustAwayNoStreak(String name) {
-    return '$name, la ruta espera. Una escena basta para retomar el camino.';
+    return '$name, la ruta espera. Una escena basta para continuar.';
   }
 
   @override
@@ -1742,12 +1762,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String dustEveningFreeze2(String countdown) {
-    return 'Últimas $countdown. Sigue la caminata — el hielo aún cubre 1 día.';
+    return 'Últimas $countdown. Sigue el camino — el hielo aún cubre 1 día.';
   }
 
   @override
   String dustEveningNoFreeze2(String countdown) {
-    return 'La noche cierra. Faltan $countdown — sigue la caminata ahora.';
+    return 'La noche cierra. Faltan $countdown — sigue el camino ahora.';
   }
 
   @override
@@ -1802,7 +1822,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String dustRiskBodyFreeze3(String countdown) {
-    return 'Faltan $countdown. Sigue la caminata — el hielo cubre 1 día.';
+    return 'Faltan $countdown. Sigue el camino — el hielo cubre 1 día.';
   }
 
   @override
@@ -1859,7 +1879,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dustTwoDays => 'Dos días';
 
   @override
-  String get dustUiDetail2 => 'Sigue la caminata · una escena basta';
+  String get dustUiDetail2 => 'Sigue el camino · una escena basta';
 
   @override
   String get dustUiDetail3 => 'La racha espera · camina hoy';
@@ -3315,7 +3335,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get intentHabitBlurb =>
-      'Un paso al día: la racha nace de volver mañana.';
+      'Una escena al día: la racha nace de volver mañana.';
 
   @override
   String get intentHabitSkill1 => 'Volver';
@@ -3950,7 +3970,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get juntosRoomHintInvite =>
-      'Invita a quien estudia contigo: célula, familia, amigos.';
+      'Invita a quien estudia contigo: célula, familia, compañeros.';
 
   @override
   String get juntosRoomHintStudyToday =>
@@ -4151,7 +4171,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get juntosYouLower => 'tú';
 
   @override
-  String get languageCaptionDevice => 'Sigue el idioma del aparato.';
+  String get languageCaptionDevice => 'Usa el idioma del aparato.';
 
   @override
   String get languageCaptionEn => 'Inglés (Estados Unidos).';
@@ -4551,7 +4571,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get mascotAllClear => 'Todo claro. Vuelve mañana para continuar.';
 
   @override
-  String get mascotBossHigh => 'El desafío final quedó atrás. Sigue el mapa.';
+  String get mascotBossHigh => 'La travesía quedó atrás. Sigue el mapa.';
 
   @override
   String get mascotBossLow =>
@@ -4888,7 +4908,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get medalPerfectBossHint =>
-      'Ganaste un desafío final con 100% de aciertos';
+      'Ganaste una travesía con 100% de aciertos';
 
   @override
   String get medalPerfectBossTitle => 'Prueba impecable';
@@ -6000,7 +6020,7 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count versículos en el mazo. Memorizar refuerza el aprendizaje.',
+      other: '$count versículos en el mazo. Memorizar fija lo que leíste.',
       one: 'Un versículo te espera. Bastan dos minutos.',
     );
     return '$_temp0';
@@ -6012,9 +6032,8 @@ class AppLocalizationsEs extends AppLocalizations {
       count,
       locale: localeName,
       other:
-          'Tienes $count errores para reforzar. Práctica rápida, mente firme.',
-      one:
-          'Tienes 1 error para reforzar. Practica ahora y fija el aprendizaje.',
+          'Tienes $count errores para reforzar. Un refuerzo corto fija lo que viste.',
+      one: 'Tienes 1 error para reforzar. Un refuerzo corto fija lo que viste.',
     );
     return '$_temp0';
   }
@@ -6027,8 +6046,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Aún faltan $count gestos del día.',
-      one: 'Queda 1 gesto. Uno más y el día cierra.',
+      other: 'Aún faltan $count tareas del día.',
+      one: 'Queda 1 tarea. Una más y el día cierra.',
     );
     return '$_temp0';
   }
@@ -6045,7 +6064,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notifReadingPlanTitle => 'Hora de leer';
 
   @override
-  String get notifResumeTitle => 'Hora de retomar';
+  String get notifResumeTitle => 'Hora de continuar';
 
   @override
   String notifReturningBody(String name, int count) {
@@ -6459,7 +6478,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'La Biblia y las escenas siguen gratis. Siempre.';
 
   @override
-  String get paywallHeadline => 'Camina con más constancia';
+  String get paywallHeadline => 'Mantén tu ritmo';
 
   @override
   String paywallLaunchFreeBody(String date) {
@@ -6499,7 +6518,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkRecognitionBody =>
-      'Mira quién reconoció tu caminata y tus logros.';
+      'Mira quién reconoció tu camino y tus medallas.';
 
   @override
   String get paywallPerkRecognitionTitle => 'Reconocimiento';
@@ -6513,7 +6532,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Caminatas por las temporadas del año, como el Adviento: un paso por día y un repaso cada semana.';
+      'Rutas por las temporadas del año, como el Adviento: una escena por día y un repaso cada semana.';
 
   @override
   String get paywallPerkSeasonTitle => 'Rutas de temporada';
@@ -7147,7 +7166,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plusEndedHomeBody =>
-      'Tus repasos, planes guiados y la Caminata te esperan. La Biblia y las escenas siguen gratis, como siempre.';
+      'Tus repasos, planes guiados y las rutas de temporada te esperan. La Biblia y las escenas siguen gratis, como siempre.';
 
   @override
   String get plusEndedHomeTitle => 'Tu Peregrino+ terminó';
@@ -7189,10 +7208,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Todas las escenas y rutas, en los 3 modos';
 
   @override
-  String get plusNoticeFreeSocial => 'Liga, Caravana y compañía';
+  String get plusNoticeFreeSocial => 'Caravana y compañía';
 
   @override
-  String get plusNoticeFreeSocialCaravan => 'Liga y Caravana';
+  String get plusNoticeFreeSocialCaravan => 'Caravana';
 
   @override
   String get plusNoticeFreeStreak => 'Tu racha diaria y los recordatorios';
@@ -7230,8 +7249,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count escenas caminadas',
-      one: '1 escena caminada',
+      other: '$count escenas concluidas',
+      one: '1 escena concluida',
     );
     return '$_temp0';
   }
@@ -7249,10 +7268,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plusOfferWinbackBody =>
-      'Tu Peregrino+ terminó, pero tus repasos, planes y la Caminata siguen aquí. Volver es un toque — y mantiene Stway gratis para quien no puede pagar.';
+      'Tu Peregrino+ terminó, pero tus repasos, planes y las rutas de temporada siguen aquí. Volver es un toque — y mantiene Stway gratis para quien no puede pagar.';
 
   @override
-  String get plusOfferWinbackTitle => 'Tu caminata Plus te extraña';
+  String get plusOfferWinbackTitle => 'Tu Peregrino+ te extraña';
 
   @override
   String get plusPerksHeader => 'Con Peregrino+';
@@ -7403,7 +7422,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get profilePlusTeaserTitle => 'Tu camino con Peregrino+';
+  String get profilePlusTeaserTitle => 'Tu Peregrino+';
 
   @override
   String profilePrivacyHiddenSemantics(String label) {
@@ -8466,7 +8485,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String setPieceStreakLine(int count) {
-    return '$count días seguidos en el camino.';
+    return '$count días de racha en el camino.';
   }
 
   @override

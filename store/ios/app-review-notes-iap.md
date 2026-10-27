@@ -10,9 +10,10 @@ The Firestore rules no longer let the client write `supporter`/`plus*` —
 the RevenueCat webhook is the only writer. If the rules ship first,
 subscribers pay and never get the badge on the Caravan.
 
-- [ ] 1. Deploy the Cloud Functions (incl. `revenueCatWebhook`) and set
-    the webhook secret (`revenuecat.auth` config or
-    `REVENUECAT_WEBHOOK_AUTH`). Point the RevenueCat webhook at it.
+- [ ] 1. Set the webhook secret (`firebase functions:secrets:set
+    REVENUECAT_WEBHOOK_AUTH`), deploy the Cloud Functions (incl.
+    `revenueCatWebhook`) and point the RevenueCat webhook at it, with the
+    same secret as the Authorization header.
 - [ ] 2. Deploy `firestore.rules` (server-only `supporter`/`plus*`).
 - [ ] 3. Only then fill in the RevenueCat API keys in the app and submit.
 

@@ -25,11 +25,7 @@ class HomePlayerHeader extends StatelessWidget {
   /// (duplicava o CTA do hero).
   final VoidCallback? onTapMission;
 
-  const HomePlayerHeader({
-    super.key,
-    this.onProfileTap,
-    this.onTapMission,
-  });
+  const HomePlayerHeader({super.key, this.onProfileTap, this.onTapMission});
 
   @override
   Widget build(BuildContext context) {
@@ -75,11 +71,7 @@ class HomePlayerHeader extends StatelessWidget {
       walkedToday: p.walkedToday,
       returningAfterGap: p.returningAfterGap,
     );
-    final ctaBorder = HeroCardMoodStyle.of(
-      mood,
-      a,
-      atRisk: atRisk,
-    ).border;
+    final ctaBorder = HeroCardMoodStyle.of(mood, a, atRisk: atRisk).border;
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),

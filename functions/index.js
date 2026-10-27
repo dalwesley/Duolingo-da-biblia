@@ -5,6 +5,7 @@ const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const { getMessaging } = require('firebase-admin/messaging');
 const functions = require('firebase-functions/v1');
 const { logger } = require('firebase-functions');
+const { defineSecret } = require('firebase-functions/params');
 
 /**
  * Token FCM do peregrino: `users/{uid}/private/data` (app novo) ou
@@ -432,19 +433,22 @@ exports.submitSiteForm = functions
 
 const revenueCat = require('./revenuecat');
 
+// Mesmo valor do "Authorization header" do webhook no RevenueCat.
+// `firebase functions:secrets:set REVENUECAT_WEBHOOK_AUTH`. O
+// `functions.config()` antigo foi removido no firebase-functions v7 e
+// derrubava toda chamada com 500.
+const revenueCatWebhookAuth = defineSecret('REVENUECAT_WEBHOOK_AUTH');
+
 /**
  * Grava `users/{uid}.plus*` (e o selo, no apoio avulso) a partir do
  * RevenueCat. Sem o segredo configurado, 503 — nunca grava sem conferir.
  */
 exports.revenueCatWebhook = functions
+  .runWith({ secrets: [revenueCatWebhookAuth] })
   .region('us-central1')
   .https.onRequest(async (req, res) => {
     res.set('Cache-Control', 'no-store');
-    const secret =
-      (functions.config().revenuecat &&
-        functions.config().revenuecat.auth) ||
-      process.env.REVENUECAT_WEBHOOK_AUTH ||
-      '';
+    const secret = revenueCatWebhookAuth.value() || '';
     if (!secret) {
       res.status(503).json({ ok: false, error: 'Webhook não configurado.' });
       return;

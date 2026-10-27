@@ -42,6 +42,9 @@ void main() {
 
   test('themes and the other plus shelves keep their card order', () {
     expect(TrailJourney.forShelf(TrailShelf.tematicos), [
+      TrailJourney.pazNoDia,
+      TrailJourney.conhecerADeus,
+      TrailJourney.entenderABiblia,
       TrailJourney.panorama,
       TrailJourney.personagens,
       TrailJourney.promessaCumprimento,
@@ -59,13 +62,31 @@ void main() {
       TrailJourney.sistematica,
       TrailJourney.cristologia,
     ]);
+    // Motivos do onboarding são grátis; o resto de Temas/Vida/Teologia pede Plus.
+    expect(TrailJourney.pazNoDia.requiresPlus, isFalse);
+    expect(TrailJourney.conhecerADeus.requiresPlus, isFalse);
+    expect(TrailJourney.entenderABiblia.requiresPlus, isFalse);
     for (final journey in [
-      ...TrailJourney.forShelf(TrailShelf.tematicos),
+      TrailJourney.panorama,
+      TrailJourney.personagens,
+      TrailJourney.promessaCumprimento,
+      TrailJourney.temasBiblicos,
+      TrailJourney.parabolasMilagres,
       ...TrailJourney.forShelf(TrailShelf.vidaCrista),
       ...TrailJourney.forShelf(TrailShelf.teologia),
     ]) {
       expect(journey.requiresPlus, isTrue, reason: journey.name);
     }
+  });
+
+  test('onboarding motives resolve to their Temas cards', () {
+    expect(of('vida-crista', 'paz-no-dia'), TrailJourney.pazNoDia);
+    expect(of('vida-crista', 'conhecer-a-deus'), TrailJourney.conhecerADeus);
+    expect(
+      of('vida-crista', 'entender-a-biblia'),
+      TrailJourney.entenderABiblia,
+    );
+    expect(of('vida-crista', 'discipulado'), TrailJourney.discipulado);
   });
 
   test('whole-Bible cards accept either testament', () {

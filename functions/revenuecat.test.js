@@ -95,6 +95,8 @@ test('usuário anônimo ou evento vazio não grava', () => {
 test('autorização exige o segredo, com ou sem prefixo Bearer', () => {
   assert.equal(RC.authorized('Bearer segredo', 'segredo'), true);
   assert.equal(RC.authorized('Bearer segredo', 'Bearer segredo'), true);
+  assert.equal(RC.authorized('segredo', 'segredo'), true);
+  assert.equal(RC.authorized('segredo', 'Bearer segredo'), true);
   assert.equal(RC.authorized('Bearer outro', 'segredo'), false);
   assert.equal(RC.authorized('Bearer segredo', ''), false);
   assert.equal(RC.authorized(undefined, 'segredo'), false);

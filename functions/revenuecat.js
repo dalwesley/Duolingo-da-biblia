@@ -191,9 +191,11 @@ function pioneerClaimDecision({ alreadyCounted, sourceCounted, count, inheritOnl
 function authorized(header, secret) {
   if (!secret) return false;
   if (typeof header !== 'string' || !header) return false;
-  const expected = secret.startsWith('Bearer ') ? secret : `Bearer ${secret}`;
-  // Comparação simples: o segredo é longo e o endpoint só grava 3 campos.
-  return header === expected;
+  const bare = secret.startsWith('Bearer ') ? secret.slice(7) : secret;
+  // O RevenueCat manda o header como foi digitado no painel: com ou sem
+  // "Bearer ". Comparação simples: o segredo é longo e o endpoint só grava
+  // 3 campos.
+  return header === `Bearer ${bare}` || header === bare;
 }
 
 module.exports = {

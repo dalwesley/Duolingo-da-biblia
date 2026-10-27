@@ -171,6 +171,6 @@ String _insightShareText(String insight, String? verseRef) {
   if (ref.isNotEmpty) {
     buf.write('\n\n— $ref');
   }
-  buf.write('\n\nMissão curta no Stway.');
+  buf.write('\n\nCena curta no Stway.');
   return buf.toString();
 }

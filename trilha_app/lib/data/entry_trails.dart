@@ -2,8 +2,10 @@ import '../l10n/l10n_global.dart';
 import '../models/trail.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Trilhas curtas de entrada por dor — desembocam no cânon.
-/// Atos vêm do banco das missões originais (`bankSection` + `bankTrailSlug`).
+/// Trilhas curtas de entrada por dor/motivo — desembocam no cânon.
+/// Recomeço ainda empresta atos do cânon (`bankSection` + `bankTrailSlug`).
+/// Ansiedade, Conhecer a Deus e Entender a Bíblia têm banco próprio
+/// (`perguntas-v2/<slug>.json`, section = slug da cena).
 class EntryTrails {
   EntryTrails._();
 
@@ -24,8 +26,8 @@ class EntryTrails {
     'entender-a-biblia',
   };
 
-  /// Trilhas de um motivo só: viram a ativa da Home só para quem o escolheu,
-  /// e ficam fora da fila Ansiedade → Recomeço → Sermão (sempre abertas).
+  /// Trilhas de um motivo só: viram a ativa da Home só para quem o escolheu.
+  /// Vivem em Temas (card próprio) e ficam sempre abertas.
   static const intentOnly = {'conhecer-a-deus', 'entender-a-biblia'};
 
   static List<Trail> get overlay => [_anxiety, _restart, _knowGod, _bible];
@@ -65,7 +67,7 @@ class EntryTrails {
       comingSoon: false,
       color: '#4C6EF5',
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'paz-no-dia',
       modules: [
         TrailModule(
           title: l.entryTrailAnsiedadeModuleTitle,
@@ -84,8 +86,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia01HookNote,
               centralInsight: l.entryMissionDorAnsia01CentralInsight,
               objective: l.entryMissionDorAnsia01Objective,
-              bankSection: 'sm-21-tesouros-e-ansiedade',
-              bankTrailSlug: 'sermao-do-monte',
             ),
             Mission(
               slug: 'dor-ansia-02',
@@ -100,8 +100,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia02HookNote,
               centralInsight: l.entryMissionDorAnsia02CentralInsight,
               objective: l.entryMissionDorAnsia02Objective,
-              bankSection: 'fp-03-contentamento',
-              bankTrailSlug: 'filipenses',
             ),
             Mission(
               slug: 'dor-ansia-03',
@@ -116,8 +114,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia03HookNote,
               centralInsight: l.entryMissionDorAnsia03CentralInsight,
               objective: l.entryMissionDorAnsia03Objective,
-              bankSection: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
-              bankTrailSlug: 'salmos',
             ),
             Mission(
               slug: 'dor-ansia-04',
@@ -132,8 +128,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia04HookNote,
               centralInsight: l.entryMissionDorAnsia04CentralInsight,
               objective: l.entryMissionDorAnsia04Objective,
-              bankSection: 'or-01-pai-nosso',
-              bankTrailSlug: 'oracao',
             ),
             Mission(
               slug: 'dor-ansia-05',
@@ -148,8 +142,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia05HookNote,
               centralInsight: l.entryMissionDorAnsia05CentralInsight,
               objective: l.entryMissionDorAnsia05Objective,
-              bankSection: 'pd-01',
-              bankTrailSlug: 'pedro',
             ),
           ],
         ),
@@ -275,7 +267,7 @@ class EntryTrails {
       comingSoon: false,
       color: '#E67700',
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'conhecer-a-deus',
       modules: [
         TrailModule(
           title: l.entryTrailConhecerADeusModuleTitle,
@@ -293,8 +285,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaDeus01HookNote,
               centralInsight: l.entryMissionEntradaDeus01CentralInsight,
               objective: l.entryMissionEntradaDeus01Objective,
-              bankSection: 'gen-01-criador',
-              bankTrailSlug: 'genesis-1-11',
             ),
             Mission(
               slug: 'entrada-deus-02',
@@ -308,8 +298,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaDeus02HookNote,
               centralInsight: l.entryMissionEntradaDeus02CentralInsight,
               objective: l.entryMissionEntradaDeus02Objective,
-              bankSection: 'exo-02-moises',
-              bankTrailSlug: 'exodo',
             ),
             Mission(
               slug: 'entrada-deus-03',
@@ -324,8 +312,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaDeus03HookNote,
               centralInsight: l.entryMissionEntradaDeus03CentralInsight,
               objective: l.entryMissionEntradaDeus03Objective,
-              bankSection: 'dd-02-santo',
-              bankTrailSlug: 'doutrina-de-deus',
             ),
             Mission(
               slug: 'entrada-deus-04',
@@ -340,8 +326,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaDeus04HookNote,
               centralInsight: l.entryMissionEntradaDeus04CentralInsight,
               objective: l.entryMissionEntradaDeus04Objective,
-              bankSection: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
-              bankTrailSlug: 'salmos',
             ),
             Mission(
               slug: 'entrada-deus-05',
@@ -356,8 +340,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaDeus05HookNote,
               centralInsight: l.entryMissionEntradaDeus05CentralInsight,
               objective: l.entryMissionEntradaDeus05Objective,
-              bankSection: 'evg-01-encarnacao',
-              bankTrailSlug: 'evangelhos',
             ),
           ],
         ),
@@ -376,7 +358,7 @@ class EntryTrails {
       comingSoon: false,
       color: '#1971C2',
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'entender-a-biblia',
       modules: [
         TrailModule(
           title: l.entryTrailEntenderABibliaModuleTitle,
@@ -394,8 +376,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia01HookNote,
               centralInsight: l.entryMissionEntradaBiblia01CentralInsight,
               objective: l.entryMissionEntradaBiblia01Objective,
-              bankSection: 'gen-01-criador',
-              bankTrailSlug: 'genesis-1-11',
             ),
             Mission(
               slug: 'entrada-biblia-02',
@@ -410,8 +390,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia02HookNote,
               centralInsight: l.entryMissionEntradaBiblia02CentralInsight,
               objective: l.entryMissionEntradaBiblia02Objective,
-              bankSection: 'gen-06-queda',
-              bankTrailSlug: 'genesis-1-11',
             ),
             Mission(
               slug: 'entrada-biblia-03',
@@ -426,8 +404,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia03HookNote,
               centralInsight: l.entryMissionEntradaBiblia03CentralInsight,
               objective: l.entryMissionEntradaBiblia03Objective,
-              bankSection: 'gen-11-abraao',
-              bankTrailSlug: 'genesis-1-11',
             ),
             Mission(
               slug: 'entrada-biblia-04',
@@ -441,8 +417,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia04HookNote,
               centralInsight: l.entryMissionEntradaBiblia04CentralInsight,
               objective: l.entryMissionEntradaBiblia04Objective,
-              bankSection: 'exo-05-mar',
-              bankTrailSlug: 'exodo',
             ),
             Mission(
               slug: 'entrada-biblia-05',
@@ -457,8 +431,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia05HookNote,
               centralInsight: l.entryMissionEntradaBiblia05CentralInsight,
               objective: l.entryMissionEntradaBiblia05Objective,
-              bankSection: 'isaias-esperanca--02-o-servo-sofredor',
-              bankTrailSlug: 'isaias',
             ),
             Mission(
               slug: 'entrada-biblia-06',
@@ -473,8 +445,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia06HookNote,
               centralInsight: l.entryMissionEntradaBiblia06CentralInsight,
               objective: l.entryMissionEntradaBiblia06Objective,
-              bankSection: 'evg-09-ressurreicao',
-              bankTrailSlug: 'evangelhos',
             ),
             Mission(
               slug: 'entrada-biblia-07',
@@ -489,8 +459,6 @@ class EntryTrails {
               hookNote: l.entryMissionEntradaBiblia07HookNote,
               centralInsight: l.entryMissionEntradaBiblia07CentralInsight,
               objective: l.entryMissionEntradaBiblia07Objective,
-              bankSection: 'apo-03-novo',
-              bankTrailSlug: 'apocalipse',
             ),
           ],
         ),
@@ -531,7 +499,8 @@ class CharacterSeals {
       name: 'Imagem',
       trailSlug: 'genesis-1-11',
       missionSlug: 'gen-03-imagem',
-      fact: 'Homem e mulher são imagem de Deus — não um deles só, nem um ídolo.',
+      fact:
+          'Homem e mulher são imagem de Deus — não um deles só, nem um ídolo.',
       verseRef: 'Gênesis 1:27',
       verseText:
           'Criou Deus o homem à sua imagem, à imagem de Deus o criou; homem e mulher os criou.',
@@ -542,7 +511,8 @@ class CharacterSeals {
       name: 'Abrão',
       trailSlug: 'genesis-12-50',
       missionSlug: 'gen12-01-chamado',
-      fact: 'A fé de Abrão anda porque a promessa é de Deus, não porque ele via o mapa.',
+      fact:
+          'A fé de Abrão anda porque a promessa é de Deus, não porque ele via o mapa.',
       verseRef: 'Gênesis 12:1',
       verseText:
           'Sai da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei.',
@@ -553,7 +523,8 @@ class CharacterSeals {
       name: 'Moisés',
       trailSlug: 'exodo',
       missionSlug: 'exo-02-moises',
-      fact: 'O libertador cresce na casa do opressor — Deus escreve êxodo com ironia santa.',
+      fact:
+          'O libertador cresce na casa do opressor — Deus escreve êxodo com ironia santa.',
       verseRef: 'Êxodo 3:14',
       verseText: 'Disse Deus a Moisés: EU SOU O QUE SOU.',
       glyph: CinematicGlyph.flame,
@@ -563,7 +534,8 @@ class CharacterSeals {
       name: 'Davi',
       trailSlug: 'salmos',
       missionSlug: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
-      fact: 'O rei-pastor canta cuidado, não invencibilidade. O vale também é do Senhor.',
+      fact:
+          'O rei-pastor canta cuidado, não invencibilidade. O vale também é do Senhor.',
       verseRef: 'Salmo 23:1',
       verseText: 'O Senhor é o meu pastor; nada me faltará.',
       glyph: CinematicGlyph.heart,
@@ -575,7 +547,8 @@ class CharacterSeals {
       missionSlug: 'evg-01-encarnacao',
       fact: 'O Verbo não visitou de longe: se fez carne e habitou entre nós.',
       verseRef: 'João 1:14',
-      verseText: 'E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade.',
+      verseText:
+          'E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade.',
       glyph: CinematicGlyph.dove,
     ),
     CharacterSeal(
@@ -583,7 +556,8 @@ class CharacterSeals {
       name: 'Paulo',
       trailSlug: 'filipenses',
       missionSlug: 'fp-02-humildade',
-      fact: 'A mente de Cristo é descida: da glória à cruz, sem apegar-se ao privilégio.',
+      fact:
+          'A mente de Cristo é descida: da glória à cruz, sem apegar-se ao privilégio.',
       verseRef: 'Filipenses 2:5–8',
       verseText:
           'Tende em vós o mesmo sentimento que houve também em Cristo Jesus, que… a si mesmo se humilhou, tornando-se obediente até à morte.',
@@ -593,7 +567,10 @@ class CharacterSeals {
 
   static List<CharacterSeal> unlocked(Iterable<String> completed) {
     final set = completed.toSet();
-    return [for (final s in all) if (set.contains(s.missionSlug)) s];
+    return [
+      for (final s in all)
+        if (set.contains(s.missionSlug)) s,
+    ];
   }
 
   static CharacterSeal? nextLocked(Iterable<String> completed) {
@@ -619,10 +596,7 @@ class CharacterSeals {
   }
 
   /// Primeiro término desta missão-selo — o encontro, não o replay.
-  static bool unlocksOn(
-    String missionSlug,
-    Iterable<String> completedBefore,
-  ) {
+  static bool unlocksOn(String missionSlug, Iterable<String> completedBefore) {
     final seal = forMission(missionSlug);
     if (seal == null) return false;
     return !completedBefore.contains(missionSlug);

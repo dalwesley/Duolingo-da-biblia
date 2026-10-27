@@ -51,7 +51,7 @@ const _appleEulaUrl =
 /// desempata o produto.
 int _rank(Package p) => SubscriptionService.isFounderPackage(p)
     ? 0
-    : switch (p.packageType) {
+    : switch (SubscriptionService.planType(p)) {
         PackageType.annual => 1,
         PackageType.monthly => 2,
         PackageType.lifetime => 3,
@@ -132,7 +132,9 @@ class _PaywallScreenState extends State<PaywallScreen> {
             orElse: () => packages.first,
           );
     final trial = selected == null ? null : sub.trialDaysFor(selected);
-    final renews = selected?.packageType != PackageType.lifetime;
+    final renews =
+        selected == null ||
+        SubscriptionService.planType(selected) != PackageType.lifetime;
 
     return ImmersiveScaffold(
       mode: mode,
@@ -236,7 +238,11 @@ class _PaywallScreenState extends State<PaywallScreen> {
                       _PlanTile(
                         package: p,
                         monthly: packages
-                            .where((x) => x.packageType == PackageType.monthly)
+                            .where(
+                              (x) =>
+                                  SubscriptionService.planType(x) ==
+                                  PackageType.monthly,
+                            )
                             .firstOrNull,
                         selected: p.identifier == selected!.identifier,
                         trialDays: sub.trialDaysFor(p),
@@ -363,7 +369,9 @@ class _PlanTile extends StatelessWidget {
   /// Economia do anual sobre 12 mensais, em %. Null se < 10%.
   int? _savings() {
     final m = monthly?.storeProduct.price;
-    if (package.packageType != PackageType.annual || m == null || m <= 0) {
+    if (SubscriptionService.planType(package) != PackageType.annual ||
+        m == null ||
+        m <= 0) {
       return null;
     }
     final pct = ((1 - package.storeProduct.price / (m * 12)) * 100).round();
@@ -375,7 +383,7 @@ class _PlanTile extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final product = package.storeProduct;
-    final type = package.packageType;
+    final type = SubscriptionService.planType(package);
     final founder = SubscriptionService.isFounderPackage(package);
     final title = founder
         ? l10n.paywallPlanFounder
@@ -544,7 +552,8 @@ class _PlanExplain extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final price = SubscriptionService.packageLabel(package);
-    final renews = package.packageType != PackageType.lifetime;
+    final renews =
+        SubscriptionService.planType(package) != PackageType.lifetime;
     final days = trialDays;
     final founder = SubscriptionService.isFounderPackage(package);
     // Data real de cada marco: "Dia 14" é hoje + 14, quando o teste acaba

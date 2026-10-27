@@ -1,0 +1,3773 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "true_false",
+    "question": "Jesus manda não andar ansioso pela vida, quanto ao comer, beber ou vestir.",
+    "prompt": "Jesus manda não andar ansioso pela vida, quanto ao comer, beber ou vestir.",
+    "cue": "Jesus manda não andar ansioso pela vida, quanto ao comer, beber ou vestir.",
+    "feedbackCorrect": "Certo: O cuidado do Pai desarma a ansiedade.",
+    "feedbackWrong": {
+      "false": "O texto de Mateus 6:25 diz exatamente isso."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:25, toque a palavra que falta em \"Não andeis ___ pela vossa vida\"?",
+    "prompt": "Em Mateus 6:25, toque a palavra que falta em \"Não andeis ___ pela vossa vida\"?",
+    "cue": "Em Mateus 6:25, toque a palavra que falta em \"Não andeis ___ pela vossa vida\"?",
+    "feedbackCorrect": "Exato: não andeis ansiosos.",
+    "feedbackWrong": {
+      "b": "Celeiros aparece depois, sobre as aves.",
+      "c": "Aves é o exemplo, não esta lacuna."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "ansiosos"
+      },
+      {
+        "id": "b",
+        "text": "celeiros"
+      },
+      {
+        "id": "c",
+        "text": "aves"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não andeis ___ pela vossa vida"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "choice",
+    "question": "Segundo Mateus 6:25–26, quem alimenta as aves do céu?",
+    "prompt": "Segundo Mateus 6:25–26, quem alimenta as aves do céu?",
+    "cue": "Segundo Mateus 6:25–26, quem alimenta as aves do céu?",
+    "feedbackCorrect": "Certo: o Pai celeste as alimenta.",
+    "feedbackWrong": {
+      "b": "Elas não ajuntam em celeiros.",
+      "c": "O texto diz que não semeiam nem colhem.",
+      "d": "Não são os discípulos quem as alimentam."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Pai celeste"
+      },
+      {
+        "id": "b",
+        "text": "Os celeiros cheios"
+      },
+      {
+        "id": "c",
+        "text": "O próprio esforço delas"
+      },
+      {
+        "id": "d",
+        "text": "Os discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Mateus 6:25–26?",
+    "prompt": "Qual a ordem dos fatos em Mateus 6:25–26?",
+    "cue": "Qual a ordem dos fatos em Mateus 6:25–26?",
+    "feedbackCorrect": "Certo: do aviso ao exemplo do Pai.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não andeis ansiosos pela vossa vida"
+      },
+      {
+        "id": "b",
+        "text": "Olhai para as aves do céu"
+      },
+      {
+        "id": "c",
+        "text": "Vosso Pai celeste as alimenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "complete",
+    "question": "Complete em Mateus 6:26: \"e vosso ___ celeste as alimenta\".",
+    "prompt": "Complete em Mateus 6:26: \"e vosso ___ celeste as alimenta\".",
+    "cue": "Complete em Mateus 6:26: \"e vosso ___ celeste as alimenta\".",
+    "feedbackCorrect": "Certo: o Pai celeste.",
+    "feedbackWrong": {
+      "b": "Corpo é o que não se deve vestir com ansiedade.",
+      "c": "Celeiros é o que as aves não têm."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "celeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e vosso ___ celeste as alimenta"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o argumento é o cuidado do Pai.",
+    "feedbackWrong": {
+      "b": "Jesus não promete estoque; aponta o Pai.",
+      "c": "Há necessidade; o que muda é a confiança."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-sem-dor-ansia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidado do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Estoque garantido"
+      },
+      {
+        "id": "c",
+        "text": "Ausência de necessidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:26",
+      "text": "Vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O cuidado do Pai desarma a ansiedade"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "true_false",
+    "question": "Jesus ensina que a ansiedade some quando deixamos de ter necessidades.",
+    "prompt": "Jesus ensina que a ansiedade some quando deixamos de ter necessidades.",
+    "cue": "Jesus ensina que a ansiedade some quando deixamos de ter necessidades.",
+    "feedbackCorrect": "Certo: O cuidado do Pai desarma a ansiedade.",
+    "feedbackWrong": {
+      "true": "O argumento é o cuidado do Pai, não a ausência de necessidade."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:26, toque a palavra que falta em \"e vosso Pai celeste as ___\"?",
+    "prompt": "Em Mateus 6:26, toque a palavra que falta em \"e vosso Pai celeste as ___\"?",
+    "cue": "Em Mateus 6:26, toque a palavra que falta em \"e vosso Pai celeste as ___\"?",
+    "feedbackCorrect": "Exato: as alimenta.",
+    "feedbackWrong": {
+      "b": "Elas não semeiam — isso descreve as aves.",
+      "c": "Colhem também descreve o que elas não fazem."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "alimenta"
+      },
+      {
+        "id": "b",
+        "text": "semeiam"
+      },
+      {
+        "id": "c",
+        "text": "colhem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e vosso Pai celeste as ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "choice",
+    "question": "Por que Jesus aponta as aves no meio do ensino sobre ansiedade?",
+    "prompt": "Por que Jesus aponta as aves no meio do ensino sobre ansiedade?",
+    "cue": "Por que Jesus aponta as aves no meio do ensino sobre ansiedade?",
+    "feedbackCorrect": "Certo: o Pai cuida sem celeiro próprio delas.",
+    "feedbackWrong": {
+      "b": "O texto não cancela o trabalho; cancela a ansiedade.",
+      "c": "Não é promessa universal de fartura automática.",
+      "d": "A comparação é com o valor dos discípulos, não dos celeiros."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para mostrar que o Pai sustenta quem não controla o estoque"
+      },
+      {
+        "id": "b",
+        "text": "Para mandar os discípulos pararem de trabalhar"
+      },
+      {
+        "id": "c",
+        "text": "Para provar que comida nunca falta a ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Para comparar o valor das aves ao dos celeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 6:25–26?",
+    "prompt": "Como se encadeiam os eventos de Mateus 6:25–26?",
+    "cue": "Como se encadeiam os eventos de Mateus 6:25–26?",
+    "feedbackCorrect": "Certo: aviso → exemplo → Pai.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O aviso contra a ansiedade pela vida"
+      },
+      {
+        "id": "b",
+        "text": "O exemplo das aves que não ajuntam"
+      },
+      {
+        "id": "c",
+        "text": "A conclusão: o Pai as alimenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Não é a ___ mais do que o alimento\"?",
+    "prompt": "Complete: \"Não é a ___ mais do que o alimento\"?",
+    "cue": "Complete: \"Não é a ___ mais do que o alimento\"?",
+    "feedbackCorrect": "Certo: a vida vale mais que o alimento.",
+    "feedbackWrong": {
+      "b": "Vestes entra na outra comparação.",
+      "c": "Aves é o exemplo seguinte."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "vestes"
+      },
+      {
+        "id": "c",
+        "text": "aves"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não é a ___ mais do que o alimento"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: confiar no Pai sem viver do celeiro.",
+    "feedbackWrong": {
+      "b": "Jesus não nega a fome; redireciona o medo.",
+      "c": "O culto ao amanhã é o que ele corta."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-cam-dor-ansia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiança sem estoque"
+      },
+      {
+        "id": "b",
+        "text": "Negação da fome"
+      },
+      {
+        "id": "c",
+        "text": "Culto ao amanhã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:25",
+      "text": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O cuidado do Pai desarma a ansiedade"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "true_false",
+    "question": "Em Mateus 6, o antídoto da ansiedade é a confiança no Pai, não o controle total do amanhã.",
+    "prompt": "Em Mateus 6, o antídoto da ansiedade é a confiança no Pai, não o controle total do amanhã.",
+    "cue": "Em Mateus 6, o antídoto da ansiedade é a confiança no Pai, não o controle total do amanhã.",
+    "feedbackCorrect": "Certo: O cuidado do Pai desarma a ansiedade.",
+    "feedbackWrong": {
+      "false": "O texto aponta o Pai, não o domínio absoluto do futuro."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:26, toque a palavra que falta em \"Não ___ vós muito mais do que elas\"?",
+    "prompt": "Em Mateus 6:26, toque a palavra que falta em \"Não ___ vós muito mais do que elas\"?",
+    "cue": "Em Mateus 6:26, toque a palavra que falta em \"Não ___ vós muito mais do que elas\"?",
+    "feedbackCorrect": "Exato: não valeis vós muito mais.",
+    "feedbackWrong": {
+      "b": "Olhai inicia o exemplo das aves.",
+      "c": "Ajuntam descreve o que as aves não fazem."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "valeis"
+      },
+      {
+        "id": "b",
+        "text": "olhai"
+      },
+      {
+        "id": "c",
+        "text": "ajuntam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não ___ vós muito mais do que elas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Mateus 6:25–26 melhor prepara o coração ansioso?",
+    "prompt": "Qual leitura de Mateus 6:25–26 melhor prepara o coração ansioso?",
+    "cue": "Qual leitura de Mateus 6:25–26 melhor prepara o coração ansioso?",
+    "feedbackCorrect": "Certo: o valor perante o Pai desarma o medo.",
+    "feedbackWrong": {
+      "b": "O celeiro não é o argumento de Jesus.",
+      "c": "O texto diz o contrário: valeis muito mais.",
+      "d": "A fé não apaga a necessidade; muda o lugar dela."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sou visto e sustentado por um Pai, mesmo sem controlar o estoque"
+      },
+      {
+        "id": "b",
+        "text": "Se eu organizar melhor o celeiro, a ansiedade some sozinha"
+      },
+      {
+        "id": "c",
+        "text": "Preciso valer menos que as aves para ser humilde"
+      },
+      {
+        "id": "d",
+        "text": "A fé cancela qualquer necessidade concreta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 6:25–26?",
+    "prompt": "Qual sequência revela o sentido de Mateus 6:25–26?",
+    "cue": "Qual sequência revela o sentido de Mateus 6:25–26?",
+    "feedbackCorrect": "Certo: medo → exemplo → valor no Pai.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ansiedade quer governar o amanhã"
+      },
+      {
+        "id": "b",
+        "text": "As aves vivem sob o cuidado do Pai"
+      },
+      {
+        "id": "c",
+        "text": "O discípulo vale mais e pode confiar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e vosso Pai ___ as alimenta\".",
+    "prompt": "Complete: \"e vosso Pai ___ as alimenta\".",
+    "cue": "Complete: \"e vosso Pai ___ as alimenta\".",
+    "feedbackCorrect": "Certo: Pai celeste.",
+    "feedbackWrong": {
+      "b": "Ansiosos é o verbo do aviso.",
+      "c": "Vestir é um dos temores listados."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "celeste"
+      },
+      {
+        "id": "b",
+        "text": "ansiosos"
+      },
+      {
+        "id": "c",
+        "text": "vestir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e vosso Pai ___ as alimenta"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:25–26",
+    "learningObjective": "Ver como Jesus liga o cuidado do Pai à ansiedade do amanhã.",
+    "evidence": [
+      "Mateus 6:25",
+      "Mateus 6:26"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:25–26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o valor no Pai sustenta a paz.",
+    "feedbackWrong": {
+      "b": "As aves ilustram cuidado, não mérito.",
+      "c": "Jesus fala dentro da vida real."
+    },
+    "passageText": "Não andeis ansiosos pela vossa vida, quanto ao que haveis de comer ou beber; nem pelo vosso corpo, quanto ao que haveis de vestir. Não é a vida mais do que o alimento, e o corpo mais do que as vestes? Olhai para as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós muito mais do que elas?",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "id": "ansiedade-pro-dor-ansia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Valor perante o Pai"
+      },
+      {
+        "id": "b",
+        "text": "Mérito das aves"
+      },
+      {
+        "id": "c",
+        "text": "Fuga da vida real"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:26",
+      "text": "Não valeis vós muito mais do que elas?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O cuidado do Pai desarma a ansiedade"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "Paulo diz que sabe viver na penúria e também na abundância.",
+    "prompt": "Paulo diz que sabe viver na penúria e também na abundância.",
+    "cue": "Paulo diz que sabe viver na penúria e também na abundância.",
+    "feedbackCorrect": "Certo: Cristo basta na fome e na fartura.",
+    "feedbackWrong": {
+      "false": "Filipenses 4:12 afirma os dois lados."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___\"?",
+    "prompt": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___\"?",
+    "cue": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___\"?",
+    "feedbackCorrect": "Exato: que me fortalece.",
+    "feedbackWrong": {
+      "b": "Penúria é uma das situações, não o verbo.",
+      "c": "Fartura também descreve a situação."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "fortalece"
+      },
+      {
+        "id": "b",
+        "text": "penúria"
+      },
+      {
+        "id": "c",
+        "text": "fartura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tudo posso naquele que me ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Em Filipenses 4:12–13, o que Paulo aprendeu?",
+    "prompt": "Em Filipenses 4:12–13, o que Paulo aprendeu?",
+    "cue": "Em Filipenses 4:12–13, o que Paulo aprendeu?",
+    "feedbackCorrect": "Certo: contentamento nos dois extremos.",
+    "feedbackWrong": {
+      "b": "Ele fala de ter fome, não de evitá-la sempre.",
+      "c": "Ele também sabe a penúria.",
+      "d": "Ele admite penúria e fome."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estar contente na penúria e na fartura"
+      },
+      {
+        "id": "b",
+        "text": "Evitar qualquer situação de fome"
+      },
+      {
+        "id": "c",
+        "text": "Depender só da abundância"
+      },
+      {
+        "id": "d",
+        "text": "Negar que já passou necessidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em Filipenses 4:12–13?",
+    "prompt": "Qual a ordem das ideias em Filipenses 4:12–13?",
+    "cue": "Qual a ordem das ideias em Filipenses 4:12–13?",
+    "feedbackCorrect": "Certo: situações → extremos → Cristo.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sei viver na penúria e na abundância"
+      },
+      {
+        "id": "b",
+        "text": "Sei ter fartura e ter fome"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Sei ainda viver na ___ e sei também viver na abundância\".",
+    "prompt": "Complete: \"Sei ainda viver na ___ e sei também viver na abundância\".",
+    "cue": "Complete: \"Sei ainda viver na ___ e sei também viver na abundância\".",
+    "feedbackCorrect": "Certo: penúria.",
+    "feedbackWrong": {
+      "b": "Fortalece fecha o v.13.",
+      "c": "Posso é o verbo de 4:13."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "penúria"
+      },
+      {
+        "id": "b",
+        "text": "fortalece"
+      },
+      {
+        "id": "c",
+        "text": "posso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Sei ainda viver na ___ e sei também viver na abundância"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Cristo basta nos extremos.",
+    "feedbackWrong": {
+      "b": "Não há promessa de riqueza aqui.",
+      "c": "A força vem daquele que fortalece."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-sem-dor-ansia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contentamento em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Promessa de riqueza"
+      },
+      {
+        "id": "c",
+        "text": "Estoicismo sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Tudo posso naquele que me fortalece."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo basta na fome e na fartura"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "\"Tudo posso\" em Filipenses 4:13 significa realizar qualquer desejo pessoal.",
+    "prompt": "\"Tudo posso\" em Filipenses 4:13 significa realizar qualquer desejo pessoal.",
+    "cue": "\"Tudo posso\" em Filipenses 4:13 significa realizar qualquer desejo pessoal.",
+    "feedbackCorrect": "Certo: Cristo basta na fome e na fartura.",
+    "feedbackWrong": {
+      "true": "O contexto é contentamento na fome e na fartura, não autossuficiência."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:12, toque a palavra que falta em \"ter fartura e ter ___\"?",
+    "prompt": "Em Filipenses 4:12, toque a palavra que falta em \"ter fartura e ter ___\"?",
+    "cue": "Em Filipenses 4:12, toque a palavra que falta em \"ter fartura e ter ___\"?",
+    "feedbackCorrect": "Exato: ter fome.",
+    "feedbackWrong": {
+      "b": "Abundância já apareceu antes.",
+      "c": "Posso pertence ao v.13."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "fome"
+      },
+      {
+        "id": "b",
+        "text": "abundância"
+      },
+      {
+        "id": "c",
+        "text": "posso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "sei o que é ter fartura e ter ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Como o contentamento de Paulo se relaciona com a ansiedade do ter?",
+    "prompt": "Como o contentamento de Paulo se relaciona com a ansiedade do ter?",
+    "cue": "Como o contentamento de Paulo se relaciona com a ansiedade do ter?",
+    "feedbackCorrect": "Certo: a estabilidade está em Cristo.",
+    "feedbackWrong": {
+      "b": "Paulo conheceu necessidade.",
+      "c": "Fartura não valida ansiedade.",
+      "d": "Ele não romantiza a penúria."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo sustenta o coração quando o estoque oscila"
+      },
+      {
+        "id": "b",
+        "text": "A paz depende de nunca passar necessidade"
+      },
+      {
+        "id": "c",
+        "text": "A fartura prova que Deus aprova o ansioso"
+      },
+      {
+        "id": "d",
+        "text": "A penúria é sinal de fé superior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "cue": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "feedbackCorrect": "Certo: experiência → extremos → fonte.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo conhece falta e fartura"
+      },
+      {
+        "id": "b",
+        "text": "Ele nomeia fome e abundância"
+      },
+      {
+        "id": "c",
+        "text": "A força vem daquele que o fortalece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete: \"sei também viver na ___\".",
+    "prompt": "Complete: \"sei também viver na ___\".",
+    "cue": "Complete: \"sei também viver na ___\".",
+    "feedbackCorrect": "Certo: abundância.",
+    "feedbackWrong": {
+      "b": "Fome entra depois na mesma frase.",
+      "c": "Misericórdia não está neste verso."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "abundância"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Sei ainda viver na penúria e sei também viver na ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Cristo basta nos dois polos.",
+    "feedbackWrong": {
+      "b": "Ele não foge da pobreza; aprende nela.",
+      "c": "Fartura também precisa de contentamento."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-cam-dor-ansia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bastaça em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Fuga da pobreza"
+      },
+      {
+        "id": "c",
+        "text": "Culto à fartura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Filipenses 4:12",
+      "text": "Sei ainda viver na penúria e sei também viver na abundância."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo basta na fome e na fartura"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "O contentamento cristão em Filipenses 4 não é indiferença estoica: é dependência de Cristo.",
+    "prompt": "O contentamento cristão em Filipenses 4 não é indiferença estoica: é dependência de Cristo.",
+    "cue": "O contentamento cristão em Filipenses 4 não é indiferença estoica: é dependência de Cristo.",
+    "feedbackCorrect": "Certo: Cristo basta na fome e na fartura.",
+    "feedbackWrong": {
+      "false": "A força vem daquele que fortalece — não do eu impassível."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:12, toque a palavra que falta em \"Sei ainda viver na ___\"?",
+    "prompt": "Em Filipenses 4:12, toque a palavra que falta em \"Sei ainda viver na ___\"?",
+    "cue": "Em Filipenses 4:12, toque a palavra que falta em \"Sei ainda viver na ___\"?",
+    "feedbackCorrect": "Exato: penúria.",
+    "feedbackWrong": {
+      "b": "“fartura” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“naquele” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "penúria"
+      },
+      {
+        "id": "b",
+        "text": "fartura"
+      },
+      {
+        "id": "c",
+        "text": "naquele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Sei ainda viver na ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Filipenses 4:12–13 para quem vive ansioso com o ter?",
+    "prompt": "Qual implicação de Filipenses 4:12–13 para quem vive ansioso com o ter?",
+    "cue": "Qual implicação de Filipenses 4:12–13 para quem vive ansioso com o ter?",
+    "feedbackCorrect": "Certo: o cenário muda; Cristo permanece.",
+    "feedbackWrong": {
+      "b": "Paulo fala também da penúria.",
+      "c": "A fome está dentro do aprendizado.",
+      "d": "Ele nomeia a fome; não a nega."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A paz não exige cenário estável; exige união com Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Só há paz quando a fartura chega"
+      },
+      {
+        "id": "c",
+        "text": "A fome prova que Cristo falhou"
+      },
+      {
+        "id": "d",
+        "text": "Contentamento é negar a dor da falta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "cue": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "feedbackCorrect": "Certo: oscilação → aprendizado → fonte.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "As circunstâncias oscilam"
+      },
+      {
+        "id": "b",
+        "text": "O coração aprende contentamento"
+      },
+      {
+        "id": "c",
+        "text": "A força é recebida de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Tudo posso naquele que me ___\".",
+    "prompt": "Complete: \"Tudo posso naquele que me ___\".",
+    "cue": "Complete: \"Tudo posso naquele que me ___\".",
+    "feedbackCorrect": "Certo: fortalece.",
+    "feedbackWrong": {
+      "b": "Abundância é circunstância, não o verbo.",
+      "c": "Pastor não está neste verso."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "fortalece"
+      },
+      {
+        "id": "b",
+        "text": "abundância"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tudo posso naquele que me ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a força é recebida daquele que fortalece.",
+    "feedbackWrong": {
+      "b": "Não é eu posso sozinho.",
+      "c": "A fome é confessada."
+    },
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome. Tudo posso naquele que me fortalece.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "id": "ansiedade-pro-dor-ansia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Força recebida"
+      },
+      {
+        "id": "b",
+        "text": "Autossuficiência"
+      },
+      {
+        "id": "c",
+        "text": "Negação da fome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Tudo posso naquele que me fortalece."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo basta na fome e na fartura"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "true_false",
+    "question": "O salmista diz que o Senhor é o seu pastor e que nada lhe faltará.",
+    "prompt": "O salmista diz que o Senhor é o seu pastor e que nada lhe faltará.",
+    "cue": "O salmista diz que o Senhor é o seu pastor e que nada lhe faltará.",
+    "feedbackCorrect": "Certo: Há pastor no vale.",
+    "feedbackWrong": {
+      "false": "Salmo 23:1 afirma exatamente isso."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:1, toque a palavra que falta em \"O Senhor é o meu ___\"?",
+    "prompt": "Em Salmo 23:1, toque a palavra que falta em \"O Senhor é o meu ___\"?",
+    "cue": "Em Salmo 23:1, toque a palavra que falta em \"O Senhor é o meu ___\"?",
+    "feedbackCorrect": "Exato: pastor.",
+    "feedbackWrong": {
+      "b": "Pastos vem no verso seguinte.",
+      "c": "Alma aparece no v.3."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "pastor"
+      },
+      {
+        "id": "b",
+        "text": "pastos"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "O Senhor é o meu ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "choice",
+    "question": "Segundo Salmo 23:1–3, para onde o pastor leva o salmista?",
+    "prompt": "Segundo Salmo 23:1–3, para onde o pastor leva o salmista?",
+    "cue": "Segundo Salmo 23:1–3, para onde o pastor leva o salmista?",
+    "feedbackCorrect": "Certo: pastos e águas de descanso.",
+    "feedbackWrong": {
+      "b": "Não há celeiro no texto.",
+      "c": "O vale virá no salmo; aqui há guia.",
+      "d": "Não é esse o destino nomeado."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para pastos verdejantes e águas de descanso"
+      },
+      {
+        "id": "b",
+        "text": "Para um celeiro cheio"
+      },
+      {
+        "id": "c",
+        "text": "Para longe de qualquer vale"
+      },
+      {
+        "id": "d",
+        "text": "Para o trono dos reis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "prompt": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "cue": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "feedbackCorrect": "Certo: pastor → pastos → águas.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é o meu pastor"
+      },
+      {
+        "id": "b",
+        "text": "Ele me faz repousar em pastos verdejantes"
+      },
+      {
+        "id": "c",
+        "text": "Leva-me para junto das águas de descanso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O Senhor é o meu pastor; nada me ___\".",
+    "prompt": "Complete: \"O Senhor é o meu pastor; nada me ___\".",
+    "cue": "Complete: \"O Senhor é o meu pastor; nada me ___\".",
+    "feedbackCorrect": "Certo: nada me faltará.",
+    "feedbackWrong": {
+      "b": "Refrigera é do v.3.",
+      "c": "Verdejantes descreve os pastos."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "faltará"
+      },
+      {
+        "id": "b",
+        "text": "refrigera"
+      },
+      {
+        "id": "c",
+        "text": "verdejantes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nada me ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o pastor guia e sustenta.",
+    "feedbackWrong": {
+      "b": "Não é fórmula mágica.",
+      "c": "O cuidado não apaga toda luta."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-sem-dor-ansia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidado que guia"
+      },
+      {
+        "id": "b",
+        "text": "Amuleto mágico"
+      },
+      {
+        "id": "c",
+        "text": "Ausência de luta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:1",
+      "text": "O Senhor é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há pastor no vale"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "true_false",
+    "question": "No Salmo 23, \"nada me faltará\" significa que o crente nunca enfrentará necessidade concreta.",
+    "prompt": "No Salmo 23, \"nada me faltará\" significa que o crente nunca enfrentará necessidade concreta.",
+    "cue": "No Salmo 23, \"nada me faltará\" significa que o crente nunca enfrentará necessidade concreta.",
+    "feedbackCorrect": "Certo: Há pastor no vale.",
+    "feedbackWrong": {
+      "true": "É confiança no pastor, não garantia de cenário fácil."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:2, toque a palavra que falta em \"Ele me faz ___ em pastos verdejantes\"?",
+    "prompt": "Em Salmo 23:2, toque a palavra que falta em \"Ele me faz ___ em pastos verdejantes\"?",
+    "cue": "Em Salmo 23:2, toque a palavra que falta em \"Ele me faz ___ em pastos verdejantes\"?",
+    "feedbackCorrect": "Exato: repousar.",
+    "feedbackWrong": {
+      "b": "Pastor é do v.1.",
+      "c": "Alma é do v.3."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "repousar"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Ele me faz ___ em pastos verdejantes"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "choice",
+    "question": "Como o Salmo 23 responde a um coração ansioso?",
+    "prompt": "Como o Salmo 23 responde a um coração ansioso?",
+    "cue": "Como o Salmo 23 responde a um coração ansioso?",
+    "feedbackCorrect": "Certo: a presença do pastor reordena o medo.",
+    "feedbackWrong": {
+      "b": "O salmo conhece o vale.",
+      "c": "Quem leva é o pastor.",
+      "d": "O centro é o Senhor, não o estoque."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desloca o centro do medo para a presença do pastor"
+      },
+      {
+        "id": "b",
+        "text": "Promete que o vale nunca virá"
+      },
+      {
+        "id": "c",
+        "text": "Ensina a controlar sozinho as águas"
+      },
+      {
+        "id": "d",
+        "text": "Troca o pastor por técnicas de estoque"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "prompt": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "cue": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "feedbackCorrect": "Certo: confissão → repouso → refrigério.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão: o Senhor é pastor"
+      },
+      {
+        "id": "b",
+        "text": "Repouso nos pastos"
+      },
+      {
+        "id": "c",
+        "text": "Condução às águas e refrigério da alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"águas de ___\".",
+    "prompt": "Complete: \"águas de ___\".",
+    "cue": "Complete: \"águas de ___\".",
+    "feedbackCorrect": "Certo: águas de descanso.",
+    "feedbackWrong": {
+      "b": "Pastor é o título do Senhor.",
+      "c": "Céus não está neste trecho."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "leva-me para junto das águas de ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: presença do pastor no caminho.",
+    "feedbackWrong": {
+      "b": "O salmista não controla o vale.",
+      "c": "O cuidado é concreto, no corpo e no caminho."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-cam-dor-ansia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Presença que guia"
+      },
+      {
+        "id": "b",
+        "text": "Controle do vale"
+      },
+      {
+        "id": "c",
+        "text": "Fuga do corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:2",
+      "text": "Ele me faz repousar em pastos verdejantes."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há pastor no vale"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "true_false",
+    "question": "O Salmo 23 apresenta o Senhor como pastor presente: a paz vem da condução dele, não da ausência de caminho difícil.",
+    "prompt": "O Salmo 23 apresenta o Senhor como pastor presente: a paz vem da condução dele, não da ausência de caminho difícil.",
+    "cue": "O Salmo 23 apresenta o Senhor como pastor presente: a paz vem da condução dele, não da ausência de caminho difícil.",
+    "feedbackCorrect": "Certo: Há pastor no vale.",
+    "feedbackWrong": {
+      "false": "O pastor age no caminho — pastos, águas, alma."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:3, toque a palavra que falta em \"___-me a alma\"?",
+    "prompt": "Em Salmo 23:3, toque a palavra que falta em \"___-me a alma\"?",
+    "cue": "Em Salmo 23:3, toque a palavra que falta em \"___-me a alma\"?",
+    "feedbackCorrect": "Exato: Refrigera-me a alma.",
+    "feedbackWrong": {
+      "b": "Pastos é do v.2.",
+      "c": "Faltará é do v.1."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refrigera"
+      },
+      {
+        "id": "b",
+        "text": "pastos"
+      },
+      {
+        "id": "c",
+        "text": "faltará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___-me a alma"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica do Salmo 23:1–3 melhor desarma a ansiedade?",
+    "prompt": "Qual leitura teológica do Salmo 23:1–3 melhor desarma a ansiedade?",
+    "cue": "Qual leitura teológica do Salmo 23:1–3 melhor desarma a ansiedade?",
+    "feedbackCorrect": "Certo: ser conduzido muda o peso do amanhã.",
+    "feedbackWrong": {
+      "b": "Não é amuleto.",
+      "c": "O pastor age na falta e no caminho.",
+      "d": "Quem refrigera é o Senhor."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sou conduzido por alguém; não carrego sozinho o amanhã"
+      },
+      {
+        "id": "b",
+        "text": "Se eu memorizar o salmo, nada mau me alcança"
+      },
+      {
+        "id": "c",
+        "text": "O pastor só age quando o estoque está cheio"
+      },
+      {
+        "id": "d",
+        "text": "A alma se refrigera sem necessidade de guia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Salmo 23:1–3?",
+    "prompt": "Qual sequência revela o sentido de Salmo 23:1–3?",
+    "cue": "Qual sequência revela o sentido de Salmo 23:1–3?",
+    "feedbackCorrect": "Certo: reconhecer → repousar → ser refrigerado.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecer o pastor"
+      },
+      {
+        "id": "b",
+        "text": "Aceitar o repouso que ele dá"
+      },
+      {
+        "id": "c",
+        "text": "Receber o refrigério da alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"pastos ___\".",
+    "prompt": "Complete: \"pastos ___\".",
+    "cue": "Complete: \"pastos ___\".",
+    "feedbackCorrect": "Certo: pastos verdejantes.",
+    "feedbackWrong": {
+      "b": "Incorruptível é de 1 Pedro.",
+      "c": "Ansiosos é de Mateus 6."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdejantes"
+      },
+      {
+        "id": "b",
+        "text": "incorruptível"
+      },
+      {
+        "id": "c",
+        "text": "ansiosos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "pastos ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ler o Salmo 23 como cuidado do pastor, não como amuleto contra o medo.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2",
+      "Salmo 23:3"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: há guia no caminho.",
+    "feedbackWrong": {
+      "b": "Sem pastor não há a promessa do salmo.",
+      "c": "A presença é o centro."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "id": "ansiedade-pro-dor-ansia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guia no caminho"
+      },
+      {
+        "id": "b",
+        "text": "Garantia sem pastor"
+      },
+      {
+        "id": "c",
+        "text": "Vale sem presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:3",
+      "text": "Refrigera-me a alma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há pastor no vale"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "true_false",
+    "question": "Jesus ensina a pedir: o pão nosso de cada dia nos dá hoje.",
+    "prompt": "Jesus ensina a pedir: o pão nosso de cada dia nos dá hoje.",
+    "cue": "Jesus ensina a pedir: o pão nosso de cada dia nos dá hoje.",
+    "feedbackCorrect": "Certo: O pão é de hoje.",
+    "feedbackWrong": {
+      "false": "Mateus 6:11 traz exatamente esse pedido."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:11, toque a palavra que falta em \"nos dá ___\"?",
+    "prompt": "Em Mateus 6:11, toque a palavra que falta em \"nos dá ___\"?",
+    "cue": "Em Mateus 6:11, toque a palavra que falta em \"nos dá ___\"?",
+    "feedbackCorrect": "Exato: hoje.",
+    "feedbackWrong": {
+      "b": "Céus aparece no início da oração.",
+      "c": "Reino é o pedido anterior."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "hoje"
+      },
+      {
+        "id": "b",
+        "text": "céus"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "o pão nosso de cada dia nos dá ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "choice",
+    "question": "Na oração de Mateus 6:9–11, o que se pede sobre o pão?",
+    "prompt": "Na oração de Mateus 6:9–11, o que se pede sobre o pão?",
+    "cue": "Na oração de Mateus 6:9–11, o que se pede sobre o pão?",
+    "feedbackCorrect": "Certo: pão de cada dia, hoje.",
+    "feedbackWrong": {
+      "b": "Não é pedido de estoque anual.",
+      "c": "O pedido é para hoje.",
+      "d": "Não há troca de mérito no texto."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O pão de cada dia, hoje"
+      },
+      {
+        "id": "b",
+        "text": "O estoque de todo o ano"
+      },
+      {
+        "id": "c",
+        "text": "Pão somente no céu"
+      },
+      {
+        "id": "d",
+        "text": "Pão em troca de mérito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos pedidos em Mateus 6:9–11?",
+    "prompt": "Qual a ordem dos pedidos em Mateus 6:9–11?",
+    "cue": "Qual a ordem dos pedidos em Mateus 6:9–11?",
+    "feedbackCorrect": "Certo: nome → reino → pão.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santificado seja o teu nome"
+      },
+      {
+        "id": "b",
+        "text": "Venha o teu reino"
+      },
+      {
+        "id": "c",
+        "text": "O pão nosso de cada dia nos dá hoje"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete: \"venha o teu ___\".",
+    "prompt": "Complete: \"venha o teu ___\".",
+    "cue": "Complete: \"venha o teu ___\".",
+    "feedbackCorrect": "Certo: reino.",
+    "feedbackWrong": {
+      "b": "Pão vem depois.",
+      "c": "Medo não está na oração."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "pão"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "venha o teu ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o dia se pede ao Pai.",
+    "feedbackWrong": {
+      "b": "O pedido é hoje, não o censo do medo.",
+      "c": "O nome é santificado primeiro."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-sem-dor-ansia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia confiado ao Pai"
+      },
+      {
+        "id": "b",
+        "text": "Censo do amanhã"
+      },
+      {
+        "id": "c",
+        "text": "Nome esquecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:11",
+      "text": "O pão nosso de cada dia nos dá hoje."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pão é de hoje"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "true_false",
+    "question": "Em Mateus 6:9–11, o pão vem antes do nome e do reino na ordem dos pedidos.",
+    "prompt": "Em Mateus 6:9–11, o pão vem antes do nome e do reino na ordem dos pedidos.",
+    "cue": "Em Mateus 6:9–11, o pão vem antes do nome e do reino na ordem dos pedidos.",
+    "feedbackCorrect": "Certo: O pão é de hoje.",
+    "feedbackWrong": {
+      "true": "Primeiro o nome e o reino; depois o pão de hoje."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:9, toque a palavra que falta em \"___ seja o teu nome\"?",
+    "prompt": "Em Mateus 6:9, toque a palavra que falta em \"___ seja o teu nome\"?",
+    "cue": "Em Mateus 6:9, toque a palavra que falta em \"___ seja o teu nome\"?",
+    "feedbackCorrect": "Exato: santificado.",
+    "feedbackWrong": {
+      "b": "Terra aparece na vontade feita.",
+      "c": "Pão é o pedido do v.11."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "santificado"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___ seja o teu nome"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "choice",
+    "question": "Por que pedir o pão \"hoje\" desarma a ansiedade?",
+    "prompt": "Por que pedir o pão \"hoje\" desarma a ansiedade?",
+    "cue": "Por que pedir o pão \"hoje\" desarma a ansiedade?",
+    "feedbackCorrect": "Certo: dependência no dia presente.",
+    "feedbackWrong": {
+      "b": "Não cancela planejamento responsável.",
+      "c": "Não é garantia automática.",
+      "d": "O Reino vem antes do pão."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treina o coração a depender do Pai no dia presente"
+      },
+      {
+        "id": "b",
+        "text": "Proíbe qualquer planejamento futuro"
+      },
+      {
+        "id": "c",
+        "text": "Garante que nunca haverá fome"
+      },
+      {
+        "id": "d",
+        "text": "Substitui o Reino por necessidades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 6:9–11?",
+    "prompt": "Como se encadeiam os eventos de Mateus 6:9–11?",
+    "cue": "Como se encadeiam os eventos de Mateus 6:9–11?",
+    "feedbackCorrect": "Certo: Pai → Reino → pão.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invocar o Pai nos céus"
+      },
+      {
+        "id": "b",
+        "text": "Pedir que o Reino venha"
+      },
+      {
+        "id": "c",
+        "text": "Pedir o pão de hoje"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete: \"seja feita a tua ___\".",
+    "prompt": "Complete: \"seja feita a tua ___\".",
+    "cue": "Complete: \"seja feita a tua ___\".",
+    "feedbackCorrect": "Certo: vontade.",
+    "feedbackWrong": {
+      "b": "Ansiedade não está na oração.",
+      "c": "Fartura não está no pedido."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "vontade"
+      },
+      {
+        "id": "b",
+        "text": "ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "fartura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "seja feita a tua ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Reino ordena o pedido do pão.",
+    "feedbackWrong": {
+      "b": "O Pai e o Reino vêm antes.",
+      "c": "A oração não cultiva o medo."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-cam-dor-ansia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino antes do pão"
+      },
+      {
+        "id": "b",
+        "text": "Pão antes do Pai"
+      },
+      {
+        "id": "c",
+        "text": "Medo como oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:10",
+      "text": "Venha o teu reino; seja feita a tua vontade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pão é de hoje"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "true_false",
+    "question": "Pedir o pão de hoje é exercício de confiança: o discípulo entrega o dia ao Pai antes de inventariar o medo.",
+    "prompt": "Pedir o pão de hoje é exercício de confiança: o discípulo entrega o dia ao Pai antes de inventariar o medo.",
+    "cue": "Pedir o pão de hoje é exercício de confiança: o discípulo entrega o dia ao Pai antes de inventariar o medo.",
+    "feedbackCorrect": "Certo: O pão é de hoje.",
+    "feedbackWrong": {
+      "false": "O pedido diário forma confiança, não censo ansioso."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:9, toque a palavra que falta em \"que estás nos ___\"?",
+    "prompt": "Em Mateus 6:9, toque a palavra que falta em \"que estás nos ___\"?",
+    "cue": "Em Mateus 6:9, toque a palavra que falta em \"que estás nos ___\"?",
+    "feedbackCorrect": "Exato: céus.",
+    "feedbackWrong": {
+      "b": "Hoje fecha o pedido do pão.",
+      "c": "Nome vem na frase seguinte."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "céus"
+      },
+      {
+        "id": "b",
+        "text": "hoje"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "que estás nos ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Mateus 6:9–11 melhor forma um dia sem domínio da ansiedade?",
+    "prompt": "Qual leitura de Mateus 6:9–11 melhor forma um dia sem domínio da ansiedade?",
+    "cue": "Qual leitura de Mateus 6:9–11 melhor forma um dia sem domínio da ansiedade?",
+    "feedbackCorrect": "Certo: prioridade do Reino e pedido filial.",
+    "feedbackWrong": {
+      "b": "Nome e reino vêm primeiro.",
+      "c": "Oração não cancela trabalho.",
+      "d": "Pedimos justamente o que não controlamos."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Reino define a prioridade; o pão se pede como filho, não como pânico"
+      },
+      {
+        "id": "b",
+        "text": "Só o pão importa; nome e reino são adorno"
+      },
+      {
+        "id": "c",
+        "text": "Orar o dia elimina a necessidade de trabalhar"
+      },
+      {
+        "id": "d",
+        "text": "O Pai só ouve quem já resolveu o amanhã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 6:9–11?",
+    "prompt": "Qual sequência revela o sentido de Mateus 6:9–11?",
+    "cue": "Qual sequência revela o sentido de Mateus 6:9–11?",
+    "feedbackCorrect": "Certo: Pai → Reino → dia.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecer o Pai"
+      },
+      {
+        "id": "b",
+        "text": "Desejar o Reino e a vontade dele"
+      },
+      {
+        "id": "c",
+        "text": "Receber o dia como dom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O ___ nosso de cada dia nos dá hoje\".",
+    "prompt": "Complete: \"O ___ nosso de cada dia nos dá hoje\".",
+    "cue": "Complete: \"O ___ nosso de cada dia nos dá hoje\".",
+    "feedbackCorrect": "Certo: pão.",
+    "feedbackWrong": {
+      "b": "Vale é linguagem do Salmo 23.",
+      "c": "Pastor também."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "pão"
+      },
+      {
+        "id": "b",
+        "text": "vale"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "O ___ nosso de cada dia nos dá hoje"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:9–11",
+    "learningObjective": "Orar o pão de hoje e o Reino antes do estoque do medo.",
+    "evidence": [
+      "Mateus 6:9",
+      "Mateus 6:10",
+      "Mateus 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: confiança pedida a cada dia.",
+    "feedbackWrong": {
+      "b": "Não há estoque sagrado no pedido.",
+      "c": "O Reino se pede agora."
+    },
+    "passageText": "Pai nosso, que estás nos céus; santificado seja o teu nome; venha o teu reino; seja feita a tua vontade, assim na terra como no céu. O pão nosso de cada dia nos dá hoje.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "id": "ansiedade-pro-dor-ansia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiança diária"
+      },
+      {
+        "id": "b",
+        "text": "Estoque sagrado"
+      },
+      {
+        "id": "c",
+        "text": "Reino adiado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 6:11",
+      "text": "O pão nosso de cada dia nos dá hoje."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pão é de hoje"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "true_false",
+    "question": "Deus nos regenerou para uma viva esperança pela ressurreição de Jesus Cristo.",
+    "prompt": "Deus nos regenerou para uma viva esperança pela ressurreição de Jesus Cristo.",
+    "cue": "Deus nos regenerou para uma viva esperança pela ressurreição de Jesus Cristo.",
+    "feedbackCorrect": "Certo: A herança está guardada.",
+    "feedbackWrong": {
+      "false": "1 Pedro 1:3 afirma regeneração e esperança viva."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 1:3, toque a palavra que falta em \"uma viva ___\"?",
+    "prompt": "Em 1 Pedro 1:3, toque a palavra que falta em \"uma viva ___\"?",
+    "cue": "Em 1 Pedro 1:3, toque a palavra que falta em \"uma viva ___\"?",
+    "feedbackCorrect": "Exato: esperança.",
+    "feedbackWrong": {
+      "b": "Herança vem no v.4.",
+      "c": "Céus é onde a herança está reservada."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nos regenerou para uma viva ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "choice",
+    "question": "Segundo 1 Pedro 1:3–4, onde está reservada a herança?",
+    "prompt": "Segundo 1 Pedro 1:3–4, onde está reservada a herança?",
+    "cue": "Segundo 1 Pedro 1:3–4, onde está reservada a herança?",
+    "feedbackCorrect": "Certo: reservada nos céus.",
+    "feedbackWrong": {
+      "b": "Não é o templo.",
+      "c": "Não depende do estoque humano.",
+      "d": "Não é no vale."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nos céus"
+      },
+      {
+        "id": "b",
+        "text": "No templo de Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "No estoque do discípulo"
+      },
+      {
+        "id": "d",
+        "text": "No vale do medo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em 1 Pedro 1:3–4?",
+    "prompt": "Qual a ordem das ideias em 1 Pedro 1:3–4?",
+    "cue": "Qual a ordem das ideias em 1 Pedro 1:3–4?",
+    "feedbackCorrect": "Certo: bênção → esperança → herança.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bendito o Deus e Pai"
+      },
+      {
+        "id": "b",
+        "text": "Regenerou-nos para uma viva esperança"
+      },
+      {
+        "id": "c",
+        "text": "Para uma herança reservada nos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"segundo a sua grande ___\".",
+    "prompt": "Complete: \"segundo a sua grande ___\".",
+    "cue": "Complete: \"segundo a sua grande ___\".",
+    "feedbackCorrect": "Certo: misericórdia.",
+    "feedbackWrong": {
+      "b": "Ansiedade não está no verso.",
+      "c": "Penúria é de Filipenses."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "penúria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "segundo a sua grande ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: esperança viva e herança guardada.",
+    "feedbackWrong": {
+      "b": "A herança é incorruptível.",
+      "c": "A esperança vem pela ressurreição."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-sem-dor-ansia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança guardada"
+      },
+      {
+        "id": "b",
+        "text": "Herança frágil"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição negada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "1 Pedro 1:3",
+      "text": "nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A herança está guardada"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "true_false",
+    "question": "A herança de 1 Pedro 1:4 é corruptível e depende do humor do dia.",
+    "prompt": "A herança de 1 Pedro 1:4 é corruptível e depende do humor do dia.",
+    "cue": "A herança de 1 Pedro 1:4 é corruptível e depende do humor do dia.",
+    "feedbackCorrect": "Certo: A herança está guardada.",
+    "feedbackWrong": {
+      "true": "O texto a chama de incorruptível, incontaminável e imarcescível."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 1:4, toque a palavra que falta em \"para uma ___ incorruptível\"?",
+    "prompt": "Em 1 Pedro 1:4, toque a palavra que falta em \"para uma ___ incorruptível\"?",
+    "cue": "Em 1 Pedro 1:4, toque a palavra que falta em \"para uma ___ incorruptível\"?",
+    "feedbackCorrect": "Exato: herança.",
+    "feedbackWrong": {
+      "b": "“Bendito” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“segundo” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "herança"
+      },
+      {
+        "id": "b",
+        "text": "Bendito"
+      },
+      {
+        "id": "c",
+        "text": "segundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "para uma ___ incorruptível"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "choice",
+    "question": "Como a esperança viva de 1 Pedro enfrenta a ansiedade?",
+    "prompt": "Como a esperança viva de 1 Pedro enfrenta a ansiedade?",
+    "cue": "Como a esperança viva de 1 Pedro enfrenta a ansiedade?",
+    "feedbackCorrect": "Certo: herança reservada fora do alcance do medo.",
+    "feedbackWrong": {
+      "b": "Pedro escreve a quem sofre.",
+      "c": "A base é a ressurreição.",
+      "d": "A reserva é nos céus."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ancora o coração numa herança que o dia não rouba"
+      },
+      {
+        "id": "b",
+        "text": "Promete que o sofrimento nunca virá"
+      },
+      {
+        "id": "c",
+        "text": "Substitui a ressurreição por otimismo"
+      },
+      {
+        "id": "d",
+        "text": "Guarda a herança no celeiro humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Pedro 1:3–4?",
+    "prompt": "Como se encadeiam os eventos de 1 Pedro 1:3–4?",
+    "cue": "Como se encadeiam os eventos de 1 Pedro 1:3–4?",
+    "feedbackCorrect": "Certo: misericórdia → esperança → herança.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Nova vida e esperança pela ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Herança guardada nos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"pela ___ de Jesus Cristo\".",
+    "prompt": "Complete: \"pela ___ de Jesus Cristo\".",
+    "cue": "Complete: \"pela ___ de Jesus Cristo\".",
+    "feedbackCorrect": "Certo: ressurreição.",
+    "feedbackWrong": {
+      "b": "Penúria é de Filipenses.",
+      "c": "Reino é de Mateus 6."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressurreição"
+      },
+      {
+        "id": "b",
+        "text": "penúria"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "pela ___ de Jesus Cristo dentre os mortos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: âncora que o dia não move.",
+    "feedbackWrong": {
+      "b": "Não é controle; é esperança.",
+      "c": "A reserva é nos céus."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-cam-dor-ansia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Âncora além do dia"
+      },
+      {
+        "id": "b",
+        "text": "Controle do amanhã"
+      },
+      {
+        "id": "c",
+        "text": "Herança na terra só"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "1 Pedro 1:4",
+      "text": "herança incorruptível… reservada nos céus para vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A herança está guardada"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "true_false",
+    "question": "A esperança cristã em 1 Pedro 1 não nega o sofrimento: ancora o crente na ressurreição e na herança reservada.",
+    "prompt": "A esperança cristã em 1 Pedro 1 não nega o sofrimento: ancora o crente na ressurreição e na herança reservada.",
+    "cue": "A esperança cristã em 1 Pedro 1 não nega o sofrimento: ancora o crente na ressurreição e na herança reservada.",
+    "feedbackCorrect": "Certo: A herança está guardada.",
+    "feedbackWrong": {
+      "false": "Esperança viva nasce da ressurreição, não da negação da dor."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 1:4, toque a palavra que falta em \"herança ___\"?",
+    "prompt": "Em 1 Pedro 1:4, toque a palavra que falta em \"herança ___\"?",
+    "cue": "Em 1 Pedro 1:4, toque a palavra que falta em \"herança ___\"?",
+    "feedbackCorrect": "Exato: incorruptível.",
+    "feedbackWrong": {
+      "b": "“misericórdia” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“ressurreição” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "incorruptível"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "ressurreição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "herança ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de 1 Pedro 1:3–4 para quem sai da trilha da ansiedade?",
+    "prompt": "Qual implicação de 1 Pedro 1:3–4 para quem sai da trilha da ansiedade?",
+    "cue": "Qual implicação de 1 Pedro 1:3–4 para quem sai da trilha da ansiedade?",
+    "feedbackCorrect": "Certo: herança guardada libera o próximo passo.",
+    "feedbackWrong": {
+      "b": "A esperança sustenta na instabilidade.",
+      "c": "A esperança vem de Cristo.",
+      "d": "A herança anima a caminhada."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posso seguir no currículo com herança já guardada, não com medo no comando"
+      },
+      {
+        "id": "b",
+        "text": "Só continuo se o cenário estiver estável"
+      },
+      {
+        "id": "c",
+        "text": "A esperança substitui a necessidade de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "A herança cancela a caminhada presente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Pedro 1:3–4?",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 1:3–4?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 1:3–4?",
+    "feedbackCorrect": "Certo: misericórdia → ressurreição → herança.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus age por misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "A ressurreição gera esperança viva"
+      },
+      {
+        "id": "c",
+        "text": "A herança segura o futuro do crente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"reservada nos ___ para vós\".",
+    "prompt": "Complete: \"reservada nos ___ para vós\".",
+    "cue": "Complete: \"reservada nos ___ para vós\".",
+    "feedbackCorrect": "Certo: céus.",
+    "feedbackWrong": {
+      "b": "Celeiros é linguagem de Mateus 6.",
+      "c": "Penúria é de Filipenses."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "céus"
+      },
+      {
+        "id": "b",
+        "text": "celeiros"
+      },
+      {
+        "id": "c",
+        "text": "penúria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "reservada nos ___ para vós"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 1:3–4",
+    "learningObjective": "Ancorar a esperança na ressurreição e na herança guardada, não no controle do medo.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o futuro está guardado no Pai.",
+    "feedbackWrong": {
+      "b": "A herança não é o medo.",
+      "c": "A esperança depende da ressurreição."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos regenerou para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos, para uma herança incorruptível, incontaminável e imarcescível, reservada nos céus para vós.",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "id": "ansiedade-pro-dor-ansia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Futuro guardado"
+      },
+      {
+        "id": "b",
+        "text": "Medo como herança"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição opcional"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "1 Pedro 1:3–4",
+      "text": "viva esperança… herança… reservada nos céus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A herança está guardada"
+    }
+  }
+]

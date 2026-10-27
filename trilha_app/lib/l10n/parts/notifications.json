@@ -40,9 +40,9 @@
     "es": "Aún da tiempo de cerrar la semana."
   },
   "notifResumeTitle": {
-    "pt": "Hora de retomar",
-    "en": "Time to pick it up again",
-    "es": "Hora de retomar"
+    "pt": "Hora de continuar",
+    "en": "Time to continue",
+    "es": "Hora de continuar"
   },
   "notifContinueTitle": {
     "pt": "Continue de onde parou",
@@ -96,9 +96,9 @@
     "es": "Del día"
   },
   "notifQuestsLeftBody": {
-    "pt": "{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}",
-    "en": "{count, plural, =1{1 gesture left. One more and the day is done.} other{{count} daily gestures still left.}}",
-    "es": "{count, plural, =1{Queda 1 gesto. Uno más y el día cierra.} other{Aún faltan {count} gestos del día.}}",
+    "pt": "{count, plural, =1{Sobrou 1 tarefa. Mais uma e o dia fecha.} other{Ainda faltam {count} tarefas do dia.}}",
+    "en": "{count, plural, =1{1 task left. One more and the day is done.} other{{count} daily tasks still left.}}",
+    "es": "{count, plural, =1{Queda 1 tarea. Una más y el día cierra.} other{Aún faltan {count} tareas del día.}}",
     "placeholders": {
       "count": "int"
     }
@@ -109,17 +109,17 @@
     "es": "Hora de practicar"
   },
   "notifMistakesBody": {
-    "pt": "{count, plural, =1{Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.} other{Tem {count} erros para reforçar. Prática rápida, mente firme.}}",
-    "en": "{count, plural, =1{You have 1 mistake to reinforce. Practice now and lock it in.} other{You have {count} mistakes to reinforce. Quick practice, steady mind.}}",
-    "es": "{count, plural, =1{Tienes 1 error para reforzar. Practica ahora y fija el aprendizaje.} other{Tienes {count} errores para reforzar. Práctica rápida, mente firme.}}",
+    "pt": "{count, plural, =1{Tem 1 erro para reforçar. Um reforço curto firma o que você viu.} other{Tem {count} erros para reforçar. Um reforço curto firma o que você viu.}}",
+    "en": "{count, plural, =1{You have 1 mistake to reinforce. A short review locks in what you saw.} other{You have {count} mistakes to reinforce. A short review locks in what you saw.}}",
+    "es": "{count, plural, =1{Tienes 1 error para reforzar. Un refuerzo corto fija lo que viste.} other{Tienes {count} errores para reforzar. Un refuerzo corto fija lo que viste.}}",
     "placeholders": {
       "count": "int"
     }
   },
   "notifMemoryBody": {
-    "pt": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}",
-    "en": "{count, plural, =1{A verse is waiting for you. Two minutes is enough.} other{{count} verses in the deck. Memorizing reinforces learning.}}",
-    "es": "{count, plural, =1{Un versículo te espera. Bastan dos minutos.} other{{count} versículos en el mazo. Memorizar refuerza el aprendizaje.}}",
+    "pt": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar firma o que você leu.}}",
+    "en": "{count, plural, =1{A verse is waiting for you. Two minutes is enough.} other{{count} verses in the deck. Memorizing locks in what you read.}}",
+    "es": "{count, plural, =1{Un versículo te espera. Bastan dos minutos.} other{{count} versículos en el mazo. Memorizar fija lo que leíste.}}",
     "placeholders": {
       "count": "int"
     }

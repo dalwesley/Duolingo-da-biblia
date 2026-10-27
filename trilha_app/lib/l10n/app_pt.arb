@@ -333,10 +333,14 @@
   "canonProfetasMenoresTitle": "Profetas menores",
   "categoryApocalipseBlurb": "O livro de Apocalipse, escrito por João Evangelista.",
   "categoryApocalipseTitle": "Apocalipse ou Revelação",
+  "categoryConhecerADeusBlurb": "Deus vem antes de tudo: o Criador, o nome EU SOU, a santidade, o pastor e o Verbo feito carne. Cinco cenas para se aproximar dele.",
+  "categoryConhecerADeusTitle": "Conhecer a Deus",
   "categoryCristologiaBlurb": "Quem é Jesus: Deus e homem, profeta, sacerdote e rei. A trilha percorre a pessoa e a obra dele — encarnação, cruz, ressurreição e senhorio.",
   "categoryCristologiaTitle": "Cristologia",
-  "categoryDiscipuladoBlurb": "Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e as horas difíceis, como ansiedade e recomeço. Fé que vira caminho.",
+  "categoryDiscipuladoBlurb": "Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e o recomeço. Fé que vira caminho.",
   "categoryDiscipuladoTitle": "Discipulado",
+  "categoryEntenderABibliaBlurb": "Um panorama da história bíblica: criação, queda, promessa, libertação, o Servo, a ressurreição e a nova criação — sete cenas do arco inteiro.",
+  "categoryEntenderABibliaTitle": "Entender a Bíblia",
   "categoryEpistolasBlurb": "Vinte e uma cartas às primeiras igrejas — treze de Paulo e oito de outros autores.",
   "categoryEpistolasTitle": "Epístolas ou cartas apostólicas",
   "categoryEvangelhosBlurb": "Nascimento, ministério, morte, ressurreição e ascensão de Jesus — Mateus a João.",
@@ -359,6 +363,8 @@
   "categoryPanoramaTitle": "Panorama",
   "categoryParabolasMilagresBlurb": "O ensino e os sinais de Jesus. As parábolas mostram como é o Reino; os milagres revelam quem ele é — pão, vista, tempestade, vida — em eco com o Antigo Testamento.",
   "categoryParabolasMilagresTitle": "Parábolas e milagres",
+  "categoryPazNoDiaBlurb": "Um respiro no meio do dia: lance a ansiedade no Pai e siga com confiança. Cinco cenas curtas para o coração inquieto.",
+  "categoryPazNoDiaTitle": "Paz no dia",
   "categoryPentateucoBlurb": "Os cinco primeiros livros da Bíblia — a Torá, o Livro da Lei, em ordem cronológica.",
   "categoryPentateucoTitle": "Pentateuco",
   "categoryPersonagensBlurb": "Vidas que carregam a história: Abraão, Moisés, Davi, os profetas, Maria, Pedro, Paulo. Cada trilha segue uma pessoa por vários livros, com suas falhas, e o modo como essa vida aponta para Cristo.",
@@ -638,7 +644,7 @@
       }
     }
   },
-  "companionDaysWithoutStudy": "{count, plural, =1{1 dia pra trás na caminhada} other{{count} dias pra trás na caminhada}}",
+  "companionDaysWithoutStudy": "{count, plural, =1{1 dia atrás na jornada} other{{count} dias atrás na jornada}}",
   "@companionDaysWithoutStudy": {
     "placeholders": {
       "count": {
@@ -649,13 +655,13 @@
   "companionDelayDustyHeadline": "Sua falta na trilha",
   "companionDelayDustyInsight": "A poeira já cobriu o caminho",
   "companionDelayFreshHeadline": "Ficando para trás",
-  "companionDelayFreshInsight": "Está ficando para trás na nossa caminhada",
+  "companionDelayFreshInsight": "Está ficando para trás na nossa companhia",
   "companionDelayLostHeadline": "Ainda tem lugar ao meu lado",
-  "companionDelayLostInsight": "Mas dá para retomar nossa caminhada",
+  "companionDelayLostInsight": "Mas dá para continuar juntos",
   "companionErrorAlreadyHave": "Você já tem uma companhia.",
   "companionErrorCreateInvite": "Não foi possível criar o convite.",
   "companionErrorInvalidCode": "Código inválido ou companhia já está completa.",
-  "companionErrorLoad": "Não deu para atualizar sua companhia. Confira a internet.",
+  "companionErrorLoad": "Não foi possível atualizar sua companhia. Confira a internet.",
   "companionErrorSignInCreate": "Entre com Google para criar uma companhia.",
   "companionErrorSignInJoin": "Entre com Google para entrar numa companhia.",
   "companionErrorSignInWave": "Entre na conta para acenar no app.",
@@ -771,7 +777,7 @@
       }
     }
   },
-  "companionSheetPromptBodyDay2": "Dois dias seguidos. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.",
+  "companionSheetPromptBodyDay2": "Dois dias de sequência. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.",
   "@companionSheetPromptBodyDay2": {
     "placeholders": {
       "steps": {
@@ -1137,11 +1143,11 @@
   "deleteAccountAwareness": "Estou ciente de que a conta e os dados serão apagados",
   "deleteAccountBody": "Sua conta, o progresso salvo na nuvem, seu lugar nos rankings, grupos e companhias serão apagados. O app pode pedir para você entrar de novo, para confirmar que é você. Não dá para desfazer.",
   "deleteAccountDone": "Conta excluída",
-  "deleteAccountFailed": "Não deu para excluir a conta. Tente de novo.",
+  "deleteAccountFailed": "Não foi possível excluir a conta. Tente de novo.",
   "deleteAccountSubscriptionNote": "Excluir a conta não cancela a assinatura do Peregrino+. Cancele na App Store ou no Google Play.",
   "deleteAccountTitle": "Excluir conta",
   "deleteAccountWrongUser": "Entre com a mesma conta que você quer excluir.",
-  "dustAwayManyFreeze": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — retome a caminhada.",
+  "dustAwayManyFreeze": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — continue a jornada.",
   "@dustAwayManyFreeze": {
     "placeholders": {
       "name": {
@@ -1163,7 +1169,7 @@
       }
     }
   },
-  "dustAwayNoStreak": "{name}, a trilha espera. Uma cena basta para retomar o caminho.",
+  "dustAwayNoStreak": "{name}, a trilha espera. Uma cena basta para continuar.",
   "@dustAwayNoStreak": {
     "placeholders": {
       "name": {
@@ -1213,7 +1219,7 @@
       }
     }
   },
-  "dustEveningFreeze2": "Últimas {countdown}. Continue a caminhada — o gelo ainda cobre 1 dia.",
+  "dustEveningFreeze2": "Últimas {countdown}. Continue a jornada — o gelo ainda cobre 1 dia.",
   "@dustEveningFreeze2": {
     "placeholders": {
       "countdown": {
@@ -1221,7 +1227,7 @@
       }
     }
   },
-  "dustEveningNoFreeze2": "Noite fechando. Faltam {countdown} — continue a caminhada agora.",
+  "dustEveningNoFreeze2": "Noite fechando. Faltam {countdown} — continue a jornada agora.",
   "@dustEveningNoFreeze2": {
     "placeholders": {
       "countdown": {
@@ -1267,7 +1273,7 @@
       }
     }
   },
-  "dustRiskBodyFreeze3": "Faltam {countdown}. Continue a caminhada — o gelo cobre 1 dia.",
+  "dustRiskBodyFreeze3": "Faltam {countdown}. Continue a jornada — o gelo cobre 1 dia.",
   "@dustRiskBodyFreeze3": {
     "placeholders": {
       "countdown": {
@@ -1323,7 +1329,7 @@
   "dustStreakWaits": "A sequência espera",
   "dustTrailWaits": "A trilha espera",
   "dustTwoDays": "Dois dias",
-  "dustUiDetail2": "Continue a caminhada · uma cena basta",
+  "dustUiDetail2": "Continue a jornada · uma cena basta",
   "dustUiDetail3": "A sequência espera · caminhe hoje",
   "dustUiFreeze1": "Sequência em risco · gelo ainda cobre 1 dia",
   "dustUiFreeze2": "Ainda dá tempo · gelo a postos",
@@ -2146,7 +2152,7 @@
       }
     }
   },
-  "intentHabitBlurb": "Um passo por dia: a sequência nasce de voltar amanhã.",
+  "intentHabitBlurb": "Uma cena por dia: a sequência nasce de voltar amanhã.",
   "intentHabitSkill1": "Voltar",
   "intentHabitSkill2": "Persistir",
   "intentHabitSkill3": "Crescer",
@@ -2596,7 +2602,7 @@
   "juntosRoomHintClaimed": "Baú do grupo coletado nesta semana.",
   "juntosRoomHintHalf": "O baú abre quando metade do grupo estudar.",
   "juntosRoomHintHalfOrGoal": "O baú abre com metade do grupo ou a meta.",
-  "juntosRoomHintInvite": "Chame quem estuda com você: célula, família, amigos.",
+  "juntosRoomHintInvite": "Chame quem estuda com você: célula, família, companheiros.",
   "juntosRoomHintStudyToday": "Estude hoje para abrir o baú do grupo.",
   "juntosRoomJoinError": "Não foi possível entrar no grupo. Tente de novo.",
   "juntosRoomJoined": "Você entrou em {name}.",
@@ -2749,7 +2755,7 @@
   "@juntosYouLower": {
     "description": "Used inside a sentence, e.g. 'Leader: you'."
   },
-  "languageCaptionDevice": "Segue o idioma do aparelho.",
+  "languageCaptionDevice": "Usa o idioma do aparelho.",
   "languageCaptionEn": "Inglês (Estados Unidos).",
   "languageCaptionEs": "Espanhol (Espanha).",
   "languageCaptionPt": "Português do Brasil.",
@@ -3050,7 +3056,7 @@
   "loginWithApple": "Continuar com Apple",
   "loginWithGoogle": "Continuar com Google",
   "mascotAllClear": "Tudo claro. Volte amanhã para continuar.",
-  "mascotBossHigh": "O desafio final ficou para trás. Siga o mapa.",
+  "mascotBossHigh": "A travessia ficou para trás. Siga o mapa.",
   "mascotBossLow": "Travessia feita. Vale reforçar o que ainda tremeu.",
   "mascotCaravanDetailLead": "Segure o 1º até o domingo e você avança de caravana.",
   "mascotCaravanDetailOut": "Cada cena move a caravana. Continue nesta semana.",
@@ -3091,7 +3097,7 @@
   "medalAdventDoorTitle": "Porta aberta",
   "medalAdventHalfHint": "Caminhe metade dos dias do Advento",
   "medalAdventHalfTitle": "Meio do caminho",
-  "medalAdventLivedTitle": "Temporada vivida",
+  "medalAdventLivedTitle": "Estação vivida",
   "medalAdventSubtitle": "Espera e preparação",
   "medalAdventTitle": "Advento",
   "medalAdventTrackSubtitle": "Espera e preparação — {year}",
@@ -3244,7 +3250,7 @@
   "medalPathStreak14Title": "Duas semanas",
   "medalPathStreak30Title": "Mês constante",
   "medalPathStreak3Title": "Três dias firmes",
-  "medalPerfectBossHint": "Venceu um desafio final com 100% de acertos",
+  "medalPerfectBossHint": "Venceu uma travessia com 100% de acertos",
   "medalPerfectBossTitle": "Prova impecável",
   "medalProximityAction": "{count, plural, =1{Falta {units} · {track}} other{Faltam {units} · {track}}}",
   "@medalProximityAction": {
@@ -3719,8 +3725,8 @@
       }
     }
   },
-  "moderationBlockFailed": "Não deu para bloquear. Tente de novo.",
-  "moderationBlockHint": "{name} some dos rankings para você e não consegue mais te convidar, desafiar ou reconhecer.",
+  "moderationBlockFailed": "Não foi possível bloquear. Tente de novo.",
+  "moderationBlockHint": "{name} some dos rankings para você e não consegue mais te chamar, desafiar ou reconhecer.",
   "@moderationBlockHint": {
     "placeholders": {
       "name": {
@@ -3745,7 +3751,7 @@
   "moderationReasonOther": "Outro motivo",
   "moderationReasonSpam": "Spam ou golpe",
   "moderationReport": "Denunciar",
-  "moderationReportFailed": "Não deu para enviar. Tente de novo.",
+  "moderationReportFailed": "Não foi possível enviar. Tente de novo.",
   "moderationReportHint": "Nome, foto ou atitude imprópria. A equipe analisa em até 24 horas.",
   "moderationReportSent": "Denúncia enviada. Obrigado por cuidar da caravana.",
   "moderationReportTitle": "Denunciar {name}",
@@ -3998,7 +4004,7 @@
     }
   },
   "notifMedalNearTitle": "Uma medalha está perto",
-  "notifMemoryBody": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}",
+  "notifMemoryBody": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar firma o que você leu.}}",
   "@notifMemoryBody": {
     "placeholders": {
       "count": {
@@ -4006,7 +4012,7 @@
       }
     }
   },
-  "notifMistakesBody": "{count, plural, =1{Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.} other{Tem {count} erros para reforçar. Prática rápida, mente firme.}}",
+  "notifMistakesBody": "{count, plural, =1{Tem 1 erro para reforçar. Um reforço curto firma o que você viu.} other{Tem {count} erros para reforçar. Um reforço curto firma o que você viu.}}",
   "@notifMistakesBody": {
     "placeholders": {
       "count": {
@@ -4015,7 +4021,7 @@
     }
   },
   "notifPracticeTitle": "Hora de praticar",
-  "notifQuestsLeftBody": "{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}",
+  "notifQuestsLeftBody": "{count, plural, =1{Sobrou 1 tarefa. Mais uma e o dia fecha.} other{Ainda faltam {count} tarefas do dia.}}",
   "@notifQuestsLeftBody": {
     "placeholders": {
       "count": {
@@ -4036,7 +4042,7 @@
     }
   },
   "notifReadingPlanTitle": "Hora da leitura",
-  "notifResumeTitle": "Hora de retomar",
+  "notifResumeTitle": "Hora de continuar",
   "notifReturningBody": "{name}, faz {count, plural, =1{1 dia} other{{count} dias}} sem estudar. Uma cena retoma a sequência.",
   "@notifReturningBody": {
     "placeholders": {
@@ -4293,7 +4299,7 @@
   "paywallFounderNote": "O preço fica enquanto você renovar.",
   "paywallFounderTitle": "O preço do lançamento",
   "paywallFreeForever": "A Bíblia e as cenas continuam grátis. Sempre.",
-  "paywallHeadline": "Caminhe com mais constância",
+  "paywallHeadline": "Mantenha seu ritmo",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
   "@paywallLaunchFreeBody": {
     "placeholders": {
@@ -4311,11 +4317,11 @@
   "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
   "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
   "paywallPerkPlansTitle": "Planos de leitura",
-  "paywallPerkRecognitionBody": "Veja quem reconheceu a sua caminhada e as suas conquistas.",
+  "paywallPerkRecognitionBody": "Veja quem reconheceu a sua jornada e as suas medalhas.",
   "paywallPerkRecognitionTitle": "Reconhecimento",
   "paywallPerkReinforceBody": "Você vê onde tropeça. Depois, um treino só daquilo.",
   "paywallPerkReinforceTitle": "O que você mais erra",
-  "paywallPerkSeasonBody": "Caminhadas das estações do ano, como o Advento: um passo por dia e a revisão de cada semana.",
+  "paywallPerkSeasonBody": "Trilhas das estações do ano, como o Advento: uma cena por dia e a revisão de cada semana.",
   "paywallPerkSeasonTitle": "Trilhas da estação",
   "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
   "paywallPerkStreakTitle": "Seus dias",
@@ -4792,7 +4798,7 @@
   "plusBillingHomeAction": "Ver meu plano",
   "plusBillingHomeBody": "A loja não conseguiu cobrar. Atualize o pagamento para não perder o acesso quando o plano vencer.",
   "plusBillingHomeTitle": "Problema no pagamento do Peregrino+",
-  "plusEndedHomeBody": "Suas revisões, planos guiados e a Caminhada estão esperando. A Bíblia e as cenas continuam grátis, como sempre.",
+  "plusEndedHomeBody": "Suas revisões, planos guiados e as trilhas da estação estão esperando. A Bíblia e as cenas continuam grátis, como sempre.",
   "plusEndedHomeTitle": "Seu Peregrino+ acabou",
   "plusGraceHomeBody": "Você ainda tem alguns dias de acesso enquanto a loja confirma. Abra para conferir seu plano.",
   "plusGraceHomeTitle": "Seu Peregrino+ venceu há pouco",
@@ -4818,8 +4824,8 @@
   "plusNoticeFreeBible": "A Bíblia completa",
   "plusNoticeFreeHeader": "Continua grátis, sempre",
   "plusNoticeFreeScenes": "Todas as cenas e trilhas, nos 3 modos",
-  "plusNoticeFreeSocial": "Liga, Caravana e companhia",
-  "plusNoticeFreeSocialCaravan": "Liga e Caravana",
+  "plusNoticeFreeSocial": "Caravana e companhia",
+  "plusNoticeFreeSocialCaravan": "Caravana",
   "plusNoticeFreeStreak": "Sua sequência diária e os lembretes",
   "plusNoticeLockedHeader": "Só no Peregrino+",
   "plusNoticeLockedHeaderSoon": "A partir de {date}, só no Peregrino+",
@@ -4847,7 +4853,7 @@
     }
   },
   "plusOfferScenesBody": "Você está criando um hábito. O Peregrino+ ajuda a não parar e mantém o Stway grátis para quem não pode pagar.",
-  "plusOfferScenesTitle": "{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}",
+  "plusOfferScenesTitle": "{count, plural, =1{1 cena concluída} other{{count} cenas concluídas}}",
   "@plusOfferScenesTitle": {
     "placeholders": {
       "count": {
@@ -4863,8 +4869,8 @@
       }
     }
   },
-  "plusOfferWinbackBody": "Seu Peregrino+ acabou, mas suas revisões, planos e a Caminhada continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.",
-  "plusOfferWinbackTitle": "Sua caminhada Plus sente sua falta",
+  "plusOfferWinbackBody": "Seu Peregrino+ acabou, mas suas revisões, planos e as trilhas da estação continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.",
+  "plusOfferWinbackTitle": "Seu Peregrino+ sente sua falta",
   "plusPerksHeader": "Com o Peregrino+",
   "plusPerksMore": "{count, plural, =1{E mais 1 benefício} other{E mais {count} benefícios}}",
   "@plusPerksMore": {
@@ -4956,7 +4962,7 @@
       }
     }
   },
-  "profilePlusTeaserTitle": "Sua caminhada no Peregrino+",
+  "profilePlusTeaserTitle": "Seu Peregrino+",
   "profilePrivacyHiddenSemantics": "{label} oculto da caravana",
   "@profilePrivacyHiddenSemantics": {
     "placeholders": {
@@ -5414,7 +5420,7 @@
     }
   },
   "roomErrorInvalidCode": "Código inválido ou grupo não encontrado.",
-  "roomErrorLoad": "Não deu para abrir seu grupo. Confira a internet.",
+  "roomErrorLoad": "Não foi possível abrir seu grupo. Confira a internet.",
   "roomErrorLostGroup": "Não achamos o grupo em que você estava.",
   "roomErrorSignInCreate": "Entre com Google para criar um grupo.",
   "roomErrorSignInJoin": "Entre com Google para entrar num grupo.",
@@ -5671,7 +5677,7 @@
   "setPieceSeasonEyebrow": "Nova estação",
   "setPieceStreakEyebrow": "Sequência",
   "setPieceStreakGoalLine": "Compromisso cumprido. Você voltou todos os dias.",
-  "setPieceStreakLine": "{count} dias seguidos no caminho.",
+  "setPieceStreakLine": "{count} dias de sequência no caminho.",
   "@setPieceStreakLine": {
     "placeholders": {
       "count": {

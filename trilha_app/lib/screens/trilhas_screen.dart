@@ -29,6 +29,7 @@ import '../widgets/shell_tab_scope.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import '../services/subscription_service.dart';
+import 'paywall_screen.dart';
 import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
 import 'support_screen.dart';
@@ -144,6 +145,43 @@ class _TrilhasScreenState extends State<TrilhasScreen>
 
   void _openJourney(TrailJourney journey) {
     final trails = _trails!;
+    final playable = trails
+        .where(
+          (t) =>
+              t.journey == journey &&
+              t.missionSlugs.isNotEmpty &&
+              !t.comingSoon,
+        )
+        .toList();
+    // Um tema com uma só trilha: pula o mapa do caminho e abre as cenas.
+    if (playable.length == 1) {
+      final trail = playable.single;
+      final progress = context.read<ProgressService>();
+      final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
+      if (!plusOpen &&
+          TrailProgress.nextSceneNeedsPlus(
+            trail,
+            progress.completedMissions,
+          )) {
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => const PaywallScreen(source: 'trail'),
+          ),
+        );
+        return;
+      }
+      final reduced = MediaQuery.disableAnimationsOf(context);
+      Navigator.of(context).push(
+        PageRouteBuilder<void>(
+          transitionDuration: reduced ? Duration.zero : AppMotion.standard,
+          reverseTransitionDuration: reduced ? Duration.zero : AppMotion.quick,
+          pageBuilder: (_, _, _) => TrailMapScreen(slug: trail.slug),
+          transitionsBuilder: (_, animation, _, child) =>
+              FadeTransition(opacity: animation, child: child),
+        ),
+      );
+      return;
+    }
     final reduced = MediaQuery.disableAnimationsOf(context);
     Navigator.of(context).push(
       PageRouteBuilder<void>(
@@ -211,9 +249,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       glyph: whole
           ? visuals.glyph
           : TrailVisuals.forCategory(journey.categories.single.id),
-      outline: [
-        for (final category in journey.categories) category.label,
-      ],
+      outline: [for (final category in journey.categories) category.label],
     );
   }
 
@@ -234,7 +270,8 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       trailCount: trails,
       completedCount: done,
       locked: locked,
-      plus: hub.shelf != TrailShelf.biblia,
+      // Temas hospeda os 4 motivos do onboarding (grátis).
+      plus: hub.shelf != TrailShelf.biblia && hub.shelf != TrailShelf.tematicos,
       featured: activeJourney?.shelf == hub.shelf,
       onTap: () => _openHub(hub),
     );

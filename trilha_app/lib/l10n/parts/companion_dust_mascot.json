@@ -61,14 +61,14 @@
     }
   },
   "companionDelayFreshInsight": {
-    "pt": "Está ficando para trás na nossa caminhada",
-    "en": "Falling behind on our walk",
-    "es": "Se está quedando atrás en nuestra caminata"
+    "pt": "Está ficando para trás na nossa companhia",
+    "en": "Falling behind in our companionship",
+    "es": "Se está quedando atrás en nuestra compañía"
   },
   "companionDaysWithoutStudy": {
-    "pt": "{count, plural, =1{1 dia pra trás na caminhada} other{{count} dias pra trás na caminhada}}",
-    "en": "{count, plural, =1{1 day behind on the walk} other{{count} days behind on the walk}}",
-    "es": "{count, plural, =1{1 día atrás en la caminata} other{{count} días atrás en la caminata}}",
+    "pt": "{count, plural, =1{1 dia atrás na jornada} other{{count} dias atrás na jornada}}",
+    "en": "{count, plural, =1{1 day behind on the journey} other{{count} days behind on the journey}}",
+    "es": "{count, plural, =1{1 día atrás en el camino} other{{count} días atrás en el camino}}",
     "placeholders": {
       "count": "int"
     }
@@ -115,9 +115,9 @@
     "es": "Todavía hay lugar a mi lado"
   },
   "companionDelayLostInsight": {
-    "pt": "Mas dá para retomar nossa caminhada",
-    "en": "But we can pick up our walk again",
-    "es": "Pero se puede retomar nuestra caminata"
+    "pt": "Mas dá para continuar juntos",
+    "en": "But we can keep going together",
+    "es": "Pero se puede seguir juntos"
   },
   "companionShareLost": {
     "pt": "Oi {name} 👋\nAinda tem lugar ao meu lado!\nFaz {days} dias que a gente não caminha juntos no Stway.\n\nMas dá pra retomar — já dei meus passos de hoje.\nVem?",
@@ -266,9 +266,9 @@
     }
   },
   "dustRiskBodyFreeze3": {
-    "pt": "Faltam {countdown}. Continue a caminhada — o gelo cobre 1 dia.",
-    "en": "{countdown} left. Keep walking — freeze covers 1 day.",
-    "es": "Faltan {countdown}. Sigue la caminata — el hielo cubre 1 día.",
+    "pt": "Faltam {countdown}. Continue a jornada — o gelo cobre 1 dia.",
+    "en": "{countdown} left. Keep going — freeze covers 1 day.",
+    "es": "Faltan {countdown}. Sigue el camino — el hielo cubre 1 día.",
     "placeholders": {
       "countdown": "String"
     }
@@ -309,25 +309,25 @@
     }
   },
   "dustEveningFreeze2": {
-    "pt": "Últimas {countdown}. Continue a caminhada — o gelo ainda cobre 1 dia.",
-    "en": "Last {countdown}. Keep walking — freeze still covers 1 day.",
-    "es": "Últimas {countdown}. Sigue la caminata — el hielo aún cubre 1 día.",
+    "pt": "Últimas {countdown}. Continue a jornada — o gelo ainda cobre 1 dia.",
+    "en": "Last {countdown}. Keep going — freeze still covers 1 day.",
+    "es": "Últimas {countdown}. Sigue el camino — el hielo aún cubre 1 día.",
     "placeholders": {
       "countdown": "String"
     }
   },
   "dustEveningNoFreeze2": {
-    "pt": "Noite fechando. Faltam {countdown} — continue a caminhada agora.",
-    "en": "Night closing in. {countdown} left — keep walking now.",
-    "es": "La noche cierra. Faltan {countdown} — sigue la caminata ahora.",
+    "pt": "Noite fechando. Faltam {countdown} — continue a jornada agora.",
+    "en": "Night closing in. {countdown} left — keep going now.",
+    "es": "La noche cierra. Faltan {countdown} — sigue el camino ahora.",
     "placeholders": {
       "countdown": "String"
     }
   },
   "dustAwayManyFreeze": {
-    "pt": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — retome a caminhada.",
-    "en": "{name}, {daysAway, plural, =1{1 day without walking} other{{daysAway} days without walking}}. Freeze still covers 1 miss — pick up the walk.",
-    "es": "{name}, {daysAway, plural, =1{1 día sin caminar} other{{daysAway} días sin caminar}}. El hielo aún cubre 1 falta — retoma la caminata.",
+    "pt": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — continue a jornada.",
+    "en": "{name}, {daysAway, plural, =1{1 day without walking} other{{daysAway} days without walking}}. Freeze still covers 1 miss — keep going.",
+    "es": "{name}, {daysAway, plural, =1{1 día sin caminar} other{{daysAway} días sin caminar}}. El hielo aún cubre 1 falta — sigue el camino.",
     "placeholders": {
       "name": "String",
       "daysAway": "int"
@@ -368,9 +368,9 @@
     }
   },
   "dustAwayNoStreak": {
-    "pt": "{name}, a trilha espera. Uma cena basta para retomar o caminho.",
-    "en": "{name}, the trail is waiting. One scene is enough to pick up the path.",
-    "es": "{name}, la ruta espera. Una escena basta para retomar el camino.",
+    "pt": "{name}, a trilha espera. Uma cena basta para continuar.",
+    "en": "{name}, the trail is waiting. One scene is enough to continue.",
+    "es": "{name}, la ruta espera. Una escena basta para continuar.",
     "placeholders": {
       "name": "String"
     }
@@ -406,9 +406,9 @@
     "es": "La racha espera · una escena alcanza"
   },
   "dustUiDetail2": {
-    "pt": "Continue a caminhada · uma cena basta",
-    "en": "Keep walking · one scene is enough",
-    "es": "Sigue la caminata · una escena basta"
+    "pt": "Continue a jornada · uma cena basta",
+    "en": "Keep going · one scene is enough",
+    "es": "Sigue el camino · una escena basta"
   },
   "dustUiDetail3": {
     "pt": "A sequência espera · caminhe hoje",
@@ -526,9 +526,9 @@
     "es": "Ninguna lámpara perdida. Eso queda."
   },
   "mascotBossHigh": {
-    "pt": "O desafio final ficou para trás. Siga o mapa.",
-    "en": "The final challenge is behind you. Follow the map.",
-    "es": "El desafío final quedó atrás. Sigue el mapa."
+    "pt": "A travessia ficou para trás. Siga o mapa.",
+    "en": "The crossing is behind you. Follow the map.",
+    "es": "La travesía quedó atrás. Sigue el mapa."
   },
   "mascotBossLow": {
     "pt": "Travessia feita. Vale reforçar o que ainda tremeu.",

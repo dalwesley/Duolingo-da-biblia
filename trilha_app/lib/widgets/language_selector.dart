@@ -55,7 +55,7 @@ extension LanguageChoiceX on AppLanguage {
   String get sample => switch (shown) {
     AppLanguage.en => 'One step a day, back to the Word.',
     AppLanguage.es => 'Un paso al día, de vuelta a la Palabra.',
-    _ => 'Um passo por dia, de volta à Palavra.',
+    _ => 'Uma cena por dia, de volta à Palavra.',
   };
 }
 

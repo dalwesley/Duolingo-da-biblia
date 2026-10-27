@@ -1,0 +1,5231 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "A Bíblia abre dizendo que, no princípio, Deus criou os céus e a terra.",
+    "prompt": "A Bíblia abre dizendo que, no princípio, Deus criou os céus e a terra.",
+    "cue": "A Bíblia abre dizendo que, no princípio, Deus criou os céus e a terra.",
+    "feedbackCorrect": "Certo: A história começa em Deus.",
+    "feedbackWrong": {
+      "false": "Gênesis 1:1 é a abertura."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"os ___ e a terra\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"os ___ e a terra\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"os ___ e a terra\"?",
+    "feedbackCorrect": "Exato: céus.",
+    "feedbackWrong": {
+      "b": "“Deus” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“face” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "céus"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "face"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "criou os ___ e a terra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "O que Gênesis 1:1 estabelece para o resto da Bíblia?",
+    "prompt": "O que Gênesis 1:1 estabelece para o resto da Bíblia?",
+    "cue": "O que Gênesis 1:1 estabelece para o resto da Bíblia?",
+    "feedbackCorrect": "Certo: a história parte do Criador.",
+    "feedbackWrong": {
+      "b": "A queda vem depois.",
+      "c": "A lei é bem posterior.",
+      "d": "Deus está no primeiro verso."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um começo com Deus como Criador"
+      },
+      {
+        "id": "b",
+        "text": "Um começo com a queda"
+      },
+      {
+        "id": "c",
+        "text": "Um começo com a lei de Moisés"
+      },
+      {
+        "id": "d",
+        "text": "Um começo sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "prompt": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "cue": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "feedbackCorrect": "Certo: criação → vazio → luz.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria céus e terra"
+      },
+      {
+        "id": "b",
+        "text": "A terra está sem forma"
+      },
+      {
+        "id": "c",
+        "text": "Deus diz: Haja luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Haja ___\".",
+    "prompt": "Complete: \"Haja ___\".",
+    "cue": "Complete: \"Haja ___\".",
+    "feedbackCorrect": "Certo: luz.",
+    "feedbackWrong": {
+      "b": "Nação é de Gênesis 12.",
+      "c": "Cruz não está aqui."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "nação"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Haja ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Bíblia começa aqui.",
+    "feedbackWrong": {
+      "b": "É abertura, não fechamento.",
+      "c": "A queda ainda não ocorreu."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-sem-entrada-biblia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ponto de partida"
+      },
+      {
+        "id": "b",
+        "text": "Fim da história"
+      },
+      {
+        "id": "c",
+        "text": "Queda primeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A história começa em Deus"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "Gênesis 1:1 é só um detalhe local, sem peso para o restante da Bíblia.",
+    "prompt": "Gênesis 1:1 é só um detalhe local, sem peso para o restante da Bíblia.",
+    "cue": "Gênesis 1:1 é só um detalhe local, sem peso para o restante da Bíblia.",
+    "feedbackCorrect": "Certo: A história começa em Deus.",
+    "feedbackWrong": {
+      "true": "É o marco inicial de toda a narrativa bíblica."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No ___\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No ___\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No ___\"?",
+    "feedbackCorrect": "Exato: princípio.",
+    "feedbackWrong": {
+      "b": "“Espírito” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“pairava” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "princípio"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "pairava"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "No ___, Deus criou"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "Por que o panorama bíblico começa na criação?",
+    "prompt": "Por que o panorama bíblico começa na criação?",
+    "cue": "Por que o panorama bíblico começa na criação?",
+    "feedbackCorrect": "Certo: o palco da história é a criação.",
+    "feedbackWrong": {
+      "b": "A bênção alcançará todas as famílias.",
+      "c": "A queda exigirá salvação.",
+      "d": "João ecoa Gênesis."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque toda a trama parte de um mundo feito por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Porque a Bíblia só fala de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Porque a criação cancela a necessidade de salvação"
+      },
+      {
+        "id": "d",
+        "text": "Porque o Novo Testamento ignora Gênesis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 1:1–3 no panorama?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 1:1–3 no panorama?",
+    "cue": "Como se encadeiam os eventos de Gênesis 1:1–3 no panorama?",
+    "feedbackCorrect": "Certo: cria → espera → luz.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria"
+      },
+      {
+        "id": "b",
+        "text": "O mundo ainda espera ordem plena"
+      },
+      {
+        "id": "c",
+        "text": "A palavra traz luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"No princípio, ___ criou\".",
+    "prompt": "Complete: \"No princípio, ___ criou\".",
+    "cue": "Complete: \"No princípio, ___ criou\".",
+    "feedbackCorrect": "Certo: Deus.",
+    "feedbackWrong": {
+      "b": "Serpente é inimiga depois.",
+      "c": "Faraó é do êxodo."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "serpente"
+      },
+      {
+        "id": "c",
+        "text": "faraó"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "No princípio, ___ criou"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: abertura da trama bíblica.",
+    "feedbackWrong": {
+      "b": "É fundamento da narrativa.",
+      "c": "Há começo claro."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-cam-entrada-biblia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abertura da trama"
+      },
+      {
+        "id": "b",
+        "text": "Só mito descartável"
+      },
+      {
+        "id": "c",
+        "text": "Fim sem começo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:3",
+      "text": "Disse Deus: Haja luz. E houve luz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A história começa em Deus"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "Ler a Bíblia como panorama começa reconhecendo que a história tem autor: Deus cria e fala.",
+    "prompt": "Ler a Bíblia como panorama começa reconhecendo que a história tem autor: Deus cria e fala.",
+    "cue": "Ler a Bíblia como panorama começa reconhecendo que a história tem autor: Deus cria e fala.",
+    "feedbackCorrect": "Certo: A história começa em Deus.",
+    "feedbackWrong": {
+      "false": "Criação e palavra abrem o livro."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "prompt": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "cue": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "feedbackCorrect": "Exato: vazia.",
+    "feedbackWrong": {
+      "b": "“criou” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“terra” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "vazia"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "sem forma e ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Gênesis 1:1–3 para entender a Bíblia inteira?",
+    "prompt": "Qual implicação de Gênesis 1:1–3 para entender a Bíblia inteira?",
+    "cue": "Qual implicação de Gênesis 1:1–3 para entender a Bíblia inteira?",
+    "feedbackCorrect": "Certo: o palco é dele do começo ao fim.",
+    "feedbackWrong": {
+      "b": "Há abertura clara.",
+      "c": "A queda mostrará a necessidade.",
+      "d": "Começo e fim se respondem."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O drama seguinte (queda, promessa, cruz, nova criação) ocorre no mundo de Deus"
+      },
+      {
+        "id": "b",
+        "text": "A Bíblia não tem começo coerente"
+      },
+      {
+        "id": "c",
+        "text": "A criação torna a redenção desnecessária"
+      },
+      {
+        "id": "d",
+        "text": "Só o fim importa; o começo não"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 1:1–3 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 1:1–3 no panorama?",
+    "cue": "Qual sequência revela o sentido de Gênesis 1:1–3 no panorama?",
+    "feedbackCorrect": "Certo: Criador → dependência → palavra.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um Criador"
+      },
+      {
+        "id": "b",
+        "text": "O mundo não se explica sozinho"
+      },
+      {
+        "id": "c",
+        "text": "A palavra de Deus ordena"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"os céus e a ___\".",
+    "prompt": "Complete: \"os céus e a ___\".",
+    "cue": "Complete: \"os céus e a ___\".",
+    "feedbackCorrect": "Certo: terra.",
+    "feedbackWrong": {
+      "b": "Herança é de 1 Pedro.",
+      "c": "Cruz é do NT."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "os céus e a ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: origem da história bíblica.",
+    "feedbackWrong": {
+      "b": "Há Criador.",
+      "c": "É prólogo, não epílogo."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-01",
+    "id": "entender-a-biblia-pro-entrada-biblia-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Origem da história"
+      },
+      {
+        "id": "b",
+        "text": "Acaso sem autor"
+      },
+      {
+        "id": "c",
+        "text": "Só epílogo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A história começa em Deus"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "true_false",
+    "question": "A serpente disse à mulher: É certo que vocês não morrerão.",
+    "prompt": "A serpente disse à mulher: É certo que vocês não morrerão.",
+    "cue": "A serpente disse à mulher: É certo que vocês não morrerão.",
+    "feedbackCorrect": "Certo: A ruptura começa na desconfiança.",
+    "feedbackWrong": {
+      "false": "Gênesis 3:4 traz essa fala."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 3:1, toque a palavra que falta em \"a ___ era mais astuta\"?",
+    "prompt": "Em Gênesis 3:1, toque a palavra que falta em \"a ___ era mais astuta\"?",
+    "cue": "Em Gênesis 3:1, toque a palavra que falta em \"a ___ era mais astuta\"?",
+    "feedbackCorrect": "Exato: serpente.",
+    "feedbackWrong": {
+      "b": "“alimaças” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“comereis” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "serpente"
+      },
+      {
+        "id": "b",
+        "text": "alimaças"
+      },
+      {
+        "id": "c",
+        "text": "comereis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "a ___ era mais astuta"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "choice",
+    "question": "O que a serpente faz com a palavra de Deus?",
+    "prompt": "O que a serpente faz com a palavra de Deus?",
+    "cue": "O que a serpente faz com a palavra de Deus?",
+    "feedbackCorrect": "Certo: contesta a palavra.",
+    "feedbackWrong": {
+      "b": "Ela contradiz.",
+      "c": "Ela fala.",
+      "d": "Não há adoração aqui."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contesta e distorce"
+      },
+      {
+        "id": "b",
+        "text": "Repete fielmente"
+      },
+      {
+        "id": "c",
+        "text": "Silencia e vai embora"
+      },
+      {
+        "id": "d",
+        "text": "Adora o Criador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Gênesis 3:1–4?",
+    "prompt": "Qual a ordem dos fatos em Gênesis 3:1–4?",
+    "cue": "Qual a ordem dos fatos em Gênesis 3:1–4?",
+    "feedbackCorrect": "Certo: pergunta → resposta → mentira.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A serpente questiona o que Deus disse"
+      },
+      {
+        "id": "b",
+        "text": "A mulher responde sobre o fruto"
+      },
+      {
+        "id": "c",
+        "text": "A serpente nega a morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"vocês não ___\".",
+    "prompt": "Complete: \"vocês não ___\".",
+    "cue": "Complete: \"vocês não ___\".",
+    "feedbackCorrect": "Certo: morrerão.",
+    "feedbackWrong": {
+      "b": "Criou é de Gênesis 1.",
+      "c": "Habitou é de João/Apocalipse."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "morrerão"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "habitou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "vocês não ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a ruptura começa na desconfiança.",
+    "feedbackWrong": {
+      "b": "A criação permanece o palco.",
+      "c": "A promessa ainda virá."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-sem-entrada-biblia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desconfiança da palavra"
+      },
+      {
+        "id": "b",
+        "text": "Criação cancelada"
+      },
+      {
+        "id": "c",
+        "text": "Promessa cumprida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 3:4",
+      "text": "É certo que vocês não morrerão."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A ruptura começa na desconfiança"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "true_false",
+    "question": "Em Gênesis 3, o problema central é só botânica: o tipo de árvore.",
+    "prompt": "Em Gênesis 3, o problema central é só botânica: o tipo de árvore.",
+    "cue": "Em Gênesis 3, o problema central é só botânica: o tipo de árvore.",
+    "feedbackCorrect": "Certo: A ruptura começa na desconfiança.",
+    "feedbackWrong": {
+      "true": "O centro é desconfiar e contradizer a palavra de Deus."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 3:1, toque a palavra que falta em \"disse à ___\"?",
+    "prompt": "Em Gênesis 3:1, toque a palavra que falta em \"disse à ___\"?",
+    "cue": "Em Gênesis 3:1, toque a palavra que falta em \"disse à ___\"?",
+    "feedbackCorrect": "Exato: mulher.",
+    "feedbackWrong": {
+      "b": "“astuta” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“Senhor” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "astuta"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "disse à ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "choice",
+    "question": "Por que a queda explica o restante da Bíblia?",
+    "prompt": "Por que a queda explica o restante da Bíblia?",
+    "cue": "Por que a queda explica o restante da Bíblia?",
+    "feedbackCorrect": "Certo: a trama seguinte responde à ruptura.",
+    "feedbackWrong": {
+      "b": "A história continua.",
+      "c": "A promessa virá.",
+      "d": "A serpente mente."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque introduz a ruptura que Deus vai curar na trama"
+      },
+      {
+        "id": "b",
+        "text": "Porque encerra a história ali"
+      },
+      {
+        "id": "c",
+        "text": "Porque elimina a necessidade de promessa"
+      },
+      {
+        "id": "d",
+        "text": "Porque prova que a serpente diz a verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 3:1–4?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 3:1–4?",
+    "cue": "Como se encadeiam os eventos de Gênesis 3:1–4?",
+    "feedbackCorrect": "Certo: dúvida → diálogo → negação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dúvida plantada"
+      },
+      {
+        "id": "b",
+        "text": "Diálogo sobre o fruto"
+      },
+      {
+        "id": "c",
+        "text": "Negação aberta da palavra de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"árvores do ___\".",
+    "prompt": "Complete: \"árvores do ___\".",
+    "cue": "Complete: \"árvores do ___\".",
+    "feedbackCorrect": "Certo: jardim.",
+    "feedbackWrong": {
+      "b": "Egito é do êxodo.",
+      "c": "Cruz é do NT."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "jardim"
+      },
+      {
+        "id": "b",
+        "text": "Egito"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "árvores do ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 3:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 3:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 3:1–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: aqui nasce o problema da trama.",
+    "feedbackWrong": {
+      "b": "A solução virá depois.",
+      "c": "Há desconfiança e mentira."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-cam-entrada-biblia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Problema da trama"
+      },
+      {
+        "id": "b",
+        "text": "Solução final"
+      },
+      {
+        "id": "c",
+        "text": "Criação invertida sem culpa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 3:1",
+      "text": "É assim que Deus disse: Não comereis…?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A ruptura começa na desconfiança"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "true_false",
+    "question": "A queda em Gênesis 3 mostra que o drama bíblico gira em torno de confiar ou não na palavra de Deus.",
+    "prompt": "A queda em Gênesis 3 mostra que o drama bíblico gira em torno de confiar ou não na palavra de Deus.",
+    "cue": "A queda em Gênesis 3 mostra que o drama bíblico gira em torno de confiar ou não na palavra de Deus.",
+    "feedbackCorrect": "Certo: A ruptura começa na desconfiança.",
+    "feedbackWrong": {
+      "false": "A serpente ataca justamente a palavra."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 3:1, toque a palavra que falta em \"mais ___\"?",
+    "prompt": "Em Gênesis 3:1, toque a palavra que falta em \"mais ___\"?",
+    "cue": "Em Gênesis 3:1, toque a palavra que falta em \"mais ___\"?",
+    "feedbackCorrect": "Exato: astuta.",
+    "feedbackWrong": {
+      "b": "“Senhor” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“mulher” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "astuta"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "mais ___ que todas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Gênesis 3 prepara o leitor para o panorama?",
+    "prompt": "Qual leitura de Gênesis 3 prepara o leitor para o panorama?",
+    "cue": "Qual leitura de Gênesis 3 prepara o leitor para o panorama?",
+    "feedbackCorrect": "Certo: o panorama buscará restaurar a confiança.",
+    "feedbackWrong": {
+      "b": "A salvação será necessária.",
+      "c": "É ruptura, não progresso.",
+      "d": "O tema atravessa a Bíblia."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem restauração da confiança na palavra, a história fica partida"
+      },
+      {
+        "id": "b",
+        "text": "A mentira da serpente encerra a necessidade de salvação"
+      },
+      {
+        "id": "c",
+        "text": "Desconfiar de Deus é progresso"
+      },
+      {
+        "id": "d",
+        "text": "A Bíblia abandona esse problema"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 3 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 3 no panorama?",
+    "cue": "Qual sequência revela o sentido de Gênesis 3 no panorama?",
+    "feedbackCorrect": "Certo: questionamento → mentira → necessidade de resposta.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra de Deus é questionada"
+      },
+      {
+        "id": "b",
+        "text": "A mentira oferece autonomia"
+      },
+      {
+        "id": "c",
+        "text": "A ruptura pede resposta divina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"É assim que ___ disse\"?",
+    "prompt": "Complete: \"É assim que ___ disse\"?",
+    "cue": "Complete: \"É assim que ___ disse\"?",
+    "feedbackCorrect": "Certo: Deus.",
+    "feedbackWrong": {
+      "b": "Faraó é do êxodo.",
+      "c": "Pedro é do NT."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "faraó"
+      },
+      {
+        "id": "c",
+        "text": "Pedro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "É assim que ___ disse"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 3:1–4",
+    "learningObjective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+    "evidence": [
+      "Gênesis 3:1",
+      "Gênesis 3:4"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: origem da fratura.",
+    "feedbackWrong": {
+      "b": "A fratura começa aqui.",
+      "c": "A criação era boa; a desconfiança quebra."
+    },
+    "passageText": "Ora, a serpente era mais astuta que todas as alimaças do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim? Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais. Então, a serpente disse à mulher: É certo que vocês não morrerão.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-02",
+    "id": "entender-a-biblia-pro-entrada-biblia-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Origem da fratura"
+      },
+      {
+        "id": "b",
+        "text": "Fim sem fratura"
+      },
+      {
+        "id": "c",
+        "text": "Criação como erro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 3:4",
+      "text": "É certo que vocês não morrerão."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A ruptura começa na desconfiança"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "true_false",
+    "question": "O Senhor promete que em Abrão serão benditas todas as famílias da terra.",
+    "prompt": "O Senhor promete que em Abrão serão benditas todas as famílias da terra.",
+    "cue": "O Senhor promete que em Abrão serão benditas todas as famílias da terra.",
+    "feedbackCorrect": "Certo: Deus responde com uma promessa.",
+    "feedbackWrong": {
+      "false": "Gênesis 12:3 afirma isso."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 12:2, toque a palavra que falta em \"grande ___\"?",
+    "prompt": "Em Gênesis 12:2, toque a palavra que falta em \"grande ___\"?",
+    "cue": "Em Gênesis 12:2, toque a palavra que falta em \"grande ___\"?",
+    "feedbackCorrect": "Exato: nação.",
+    "feedbackWrong": {
+      "b": "“disse” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“Abrão” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "nação"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "Abrão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "far-te-ei uma grande ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "choice",
+    "question": "O que Deus pede a Abrão no início da promessa?",
+    "prompt": "O que Deus pede a Abrão no início da promessa?",
+    "cue": "O que Deus pede a Abrão no início da promessa?",
+    "feedbackCorrect": "Certo: sair para a terra que Deus mostrará.",
+    "feedbackWrong": {
+      "b": "Não há templo aqui.",
+      "c": "Não.",
+      "d": "Não."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sair da terra e da parentela"
+      },
+      {
+        "id": "b",
+        "text": "Construir um templo"
+      },
+      {
+        "id": "c",
+        "text": "Negar a criação"
+      },
+      {
+        "id": "d",
+        "text": "Seguir a serpente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em Gênesis 12:1–3?",
+    "prompt": "Qual a ordem das ideias em Gênesis 12:1–3?",
+    "cue": "Qual a ordem das ideias em Gênesis 12:1–3?",
+    "feedbackCorrect": "Certo: chamado → bênção pessoal → bênção universal.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado para sair"
+      },
+      {
+        "id": "b",
+        "text": "Promessa de nação e bênção"
+      },
+      {
+        "id": "c",
+        "text": "Bênção para todas as famílias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"serão ___ todas as famílias\".",
+    "prompt": "Complete: \"serão ___ todas as famílias\".",
+    "cue": "Complete: \"serão ___ todas as famílias\".",
+    "feedbackCorrect": "Certo: benditas.",
+    "feedbackWrong": {
+      "b": "Mortas não está no texto.",
+      "c": "Vazias é de Gênesis 1."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "benditas"
+      },
+      {
+        "id": "b",
+        "text": "mortas"
+      },
+      {
+        "id": "c",
+        "text": "vazias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "serão ___ todas as famílias"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus responde com promessa.",
+    "feedbackWrong": {
+      "b": "Há plano.",
+      "c": "Após a queda, vem a promessa."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-sem-entrada-biblia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resposta promissora"
+      },
+      {
+        "id": "b",
+        "text": "Fim sem plano"
+      },
+      {
+        "id": "c",
+        "text": "Queda sem esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 12:3",
+      "text": "em ti serão benditas todas as famílias da terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus responde com uma promessa"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "true_false",
+    "question": "A promessa a Abrão se limita à sua casa e ignora as nações.",
+    "prompt": "A promessa a Abrão se limita à sua casa e ignora as nações.",
+    "cue": "A promessa a Abrão se limita à sua casa e ignora as nações.",
+    "feedbackCorrect": "Certo: Deus responde com uma promessa.",
+    "feedbackWrong": {
+      "true": "Todas as famílias da terra serão benditas."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 12:1, toque a palavra que falta em \"da tua ___\"?",
+    "prompt": "Em Gênesis 12:1, toque a palavra que falta em \"da tua ___\"?",
+    "cue": "Em Gênesis 12:1, toque a palavra que falta em \"da tua ___\"?",
+    "feedbackCorrect": "Exato: terra.",
+    "feedbackWrong": {
+      "b": "“disse” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“Abrão” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "Abrão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Sai-te da tua ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "choice",
+    "question": "Como Gênesis 12 avança o panorama após a queda?",
+    "prompt": "Como Gênesis 12 avança o panorama após a queda?",
+    "cue": "Como Gênesis 12 avança o panorama após a queda?",
+    "feedbackCorrect": "Certo: plano de bênção universal.",
+    "feedbackWrong": {
+      "b": "Ele chama e promete.",
+      "c": "A bênção é pela linha de Abrão.",
+      "d": "Há palavra de promessa."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus inicia um plano de bênção que alcançará os povos"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona o mundo criado"
+      },
+      {
+        "id": "c",
+        "text": "A serpente recebe a bênção"
+      },
+      {
+        "id": "d",
+        "text": "A história volta ao caos sem palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 12:1–3?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 12:1–3?",
+    "cue": "Como se encadeiam os eventos de Gênesis 12:1–3?",
+    "feedbackCorrect": "Certo: sair → promessas → povos.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a sair"
+      },
+      {
+        "id": "b",
+        "text": "Promessas a Abrão"
+      },
+      {
+        "id": "c",
+        "text": "Alcance a todas as famílias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"tu serás uma ___\".",
+    "prompt": "Complete: \"tu serás uma ___\".",
+    "cue": "Complete: \"tu serás uma ___\".",
+    "feedbackCorrect": "Certo: bênção.",
+    "feedbackWrong": {
+      "b": "Serpente é inimiga.",
+      "c": "Sepulcro é da ressurreição."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "bênção"
+      },
+      {
+        "id": "b",
+        "text": "serpente"
+      },
+      {
+        "id": "c",
+        "text": "sepulcro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "tu serás uma ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 12:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 12:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 12:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: horizonte para os povos.",
+    "feedbackWrong": {
+      "b": "Todas as famílias.",
+      "c": "Há conteúdo claro."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-cam-entrada-biblia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plano para os povos"
+      },
+      {
+        "id": "b",
+        "text": "Só Israel sem horizonte"
+      },
+      {
+        "id": "c",
+        "text": "Promessa vazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 12:2",
+      "text": "far-te-ei uma grande nação, e abençoar-te-ei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus responde com uma promessa"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "true_false",
+    "question": "Depois da queda, Gênesis 12 mostra que Deus não desiste: começa a resposta por uma família rumo aos povos.",
+    "prompt": "Depois da queda, Gênesis 12 mostra que Deus não desiste: começa a resposta por uma família rumo aos povos.",
+    "cue": "Depois da queda, Gênesis 12 mostra que Deus não desiste: começa a resposta por uma família rumo aos povos.",
+    "feedbackCorrect": "Certo: Deus responde com uma promessa.",
+    "feedbackWrong": {
+      "false": "Chamado + bênção universal."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 12:3, toque a palavra que falta em \"todas as ___\"?",
+    "prompt": "Em Gênesis 12:3, toque a palavra que falta em \"todas as ___\"?",
+    "cue": "Em Gênesis 12:3, toque a palavra que falta em \"todas as ___\"?",
+    "feedbackCorrect": "Exato: famílias.",
+    "feedbackWrong": {
+      "b": "“abençoar” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“benditas” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "famílias"
+      },
+      {
+        "id": "b",
+        "text": "abençoar"
+      },
+      {
+        "id": "c",
+        "text": "benditas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "todas as ___ da terra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Gênesis 12 para ler o restante da Bíblia?",
+    "prompt": "Qual implicação de Gênesis 12 para ler o restante da Bíblia?",
+    "cue": "Qual implicação de Gênesis 12 para ler o restante da Bíblia?",
+    "feedbackCorrect": "Certo: a linha da promessa segue.",
+    "feedbackWrong": {
+      "b": "É começo de plano.",
+      "c": "Há horizonte universal.",
+      "d": "As famílias estão no texto."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar a linha da promessa até sua fulgor em Cristo e na missão"
+      },
+      {
+        "id": "b",
+        "text": "Parar a leitura em Abrão"
+      },
+      {
+        "id": "c",
+        "text": "Tratar a bênção como sorte pessoal só"
+      },
+      {
+        "id": "d",
+        "text": "Ignorar as nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 12 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 12 no panorama?",
+    "cue": "Qual sequência revela o sentido de Gênesis 12 no panorama?",
+    "feedbackCorrect": "Certo: chamado → Abrão → povos.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama no meio da história partida"
+      },
+      {
+        "id": "b",
+        "text": "Promete bênção a Abrão"
+      },
+      {
+        "id": "c",
+        "text": "Estende a bênção aos povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"que eu te ___\".",
+    "prompt": "Complete: \"que eu te ___\".",
+    "cue": "Complete: \"que eu te ___\".",
+    "feedbackCorrect": "Certo: mostrarei.",
+    "feedbackWrong": {
+      "b": "Morrerão é da mentira da serpente.",
+      "c": "Ressuscitou é do evangelho."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "mostrarei"
+      },
+      {
+        "id": "b",
+        "text": "morrerão"
+      },
+      {
+        "id": "c",
+        "text": "ressuscitou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "terra que eu te ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 12:1–3",
+    "learningObjective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+    "evidence": [
+      "Gênesis 12:1",
+      "Gênesis 12:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: início da resposta divina.",
+    "feedbackWrong": {
+      "b": "A criação permanece.",
+      "c": "A promessa contrapõe a serpente."
+    },
+    "passageText": "Ora, o Senhor disse a Abrão: Sai-te da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei. E far-te-ei uma grande nação, e abençoar-te-ei e engrandecerei o teu nome; e tu serás uma bênção. E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-03",
+    "id": "entender-a-biblia-pro-entrada-biblia-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Início da resposta"
+      },
+      {
+        "id": "b",
+        "text": "Fim da criação"
+      },
+      {
+        "id": "c",
+        "text": "Vitória da serpente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 12:3",
+      "text": "em ti serão benditas todas as famílias da terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus responde com uma promessa"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "true_false",
+    "question": "Moisés diz: O Senhor lutará por vós, e vós vos calareis.",
+    "prompt": "Moisés diz: O Senhor lutará por vós, e vós vos calareis.",
+    "cue": "Moisés diz: O Senhor lutará por vós, e vós vos calareis.",
+    "feedbackCorrect": "Certo: A salvação vem do Senhor.",
+    "feedbackWrong": {
+      "false": "Êxodo 14:14."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 14:14, toque a palavra que falta em \"O Senhor ___ por vós\"?",
+    "prompt": "Em Êxodo 14:14, toque a palavra que falta em \"O Senhor ___ por vós\"?",
+    "cue": "Em Êxodo 14:14, toque a palavra que falta em \"O Senhor ___ por vós\"?",
+    "feedbackCorrect": "Exato: lutará.",
+    "feedbackWrong": {
+      "b": "“Moisés” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“temais” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "lutará"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "temais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "O Senhor ___ por vós"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "choice",
+    "question": "Segundo Êxodo 14:13, o que o povo deve fazer?",
+    "prompt": "Segundo Êxodo 14:13, o que o povo deve fazer?",
+    "cue": "Segundo Êxodo 14:13, o que o povo deve fazer?",
+    "feedbackCorrect": "Certo: não temer e ver o livramento.",
+    "feedbackWrong": {
+      "b": "O Senhor lutará.",
+      "c": "Não é a ordem.",
+      "d": "O livramento é anunciado."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não temer e ver o livramento do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Lutar com as próprias armas só"
+      },
+      {
+        "id": "c",
+        "text": "Voltar ao Egito em paz"
+      },
+      {
+        "id": "d",
+        "text": "Negar o livramento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em Êxodo 14:13–14?",
+    "prompt": "Qual a ordem das ideias em Êxodo 14:13–14?",
+    "cue": "Qual a ordem das ideias em Êxodo 14:13–14?",
+    "feedbackCorrect": "Certo: ânimo → ver → Deus luta.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não temais"
+      },
+      {
+        "id": "b",
+        "text": "Vede o livramento do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor lutará; calai-vos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"vede o ___ do Senhor\".",
+    "prompt": "Complete: \"vede o ___ do Senhor\".",
+    "cue": "Complete: \"vede o ___ do Senhor\".",
+    "feedbackCorrect": "Certo: livramento.",
+    "feedbackWrong": {
+      "b": "Serpente é da queda.",
+      "c": "Glória é de Isaías/João."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "livramento"
+      },
+      {
+        "id": "b",
+        "text": "serpente"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "vede o ___ do Senhor"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Senhor salva.",
+    "feedbackWrong": {
+      "b": "Ele luta.",
+      "c": "Há livramento anunciado."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-sem-entrada-biblia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Autossalvação"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 14:14",
+      "text": "O Senhor lutará por vós, e vós vos calareis."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação vem do Senhor"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "true_false",
+    "question": "Em Êxodo 14, o povo é chamado a salvar-se sem a ação do Senhor.",
+    "prompt": "Em Êxodo 14, o povo é chamado a salvar-se sem a ação do Senhor.",
+    "cue": "Em Êxodo 14, o povo é chamado a salvar-se sem a ação do Senhor.",
+    "feedbackCorrect": "Certo: A salvação vem do Senhor.",
+    "feedbackWrong": {
+      "true": "O Senhor lutará; eles se calarão."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 14:13, toque a palavra que falta em \"estai ___\"?",
+    "prompt": "Em Êxodo 14:13, toque a palavra que falta em \"estai ___\"?",
+    "cue": "Em Êxodo 14:13, toque a palavra que falta em \"estai ___\"?",
+    "feedbackCorrect": "Exato: quietos.",
+    "feedbackWrong": {
+      "b": "“Moisés” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“temais” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "quietos"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "temais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "estai ___ e vede"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "choice",
+    "question": "Por que o êxodo é molde no panorama bíblico?",
+    "prompt": "Por que o êxodo é molde no panorama bíblico?",
+    "cue": "Por que o êxodo é molde no panorama bíblico?",
+    "feedbackCorrect": "Certo: libertação pela ação de Deus.",
+    "feedbackWrong": {
+      "b": "O Senhor luta.",
+      "c": "Continua o plano.",
+      "d": "Não."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque mostra Deus libertando quem não pode salvar a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "Porque ensina que o mar se vence só com técnica"
+      },
+      {
+        "id": "c",
+        "text": "Porque cancela a promessa a Abrão"
+      },
+      {
+        "id": "d",
+        "text": "Porque nega a criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Êxodo 14:13–14?",
+    "prompt": "Como se encadeiam os eventos de Êxodo 14:13–14?",
+    "cue": "Como se encadeiam os eventos de Êxodo 14:13–14?",
+    "feedbackCorrect": "Certo: ânimo → visão → luta divina.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a não temer"
+      },
+      {
+        "id": "b",
+        "text": "Promessa de ver o livramento"
+      },
+      {
+        "id": "c",
+        "text": "Declaração: o Senhor luta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"vós vos ___\".",
+    "prompt": "Complete: \"vós vos ___\".",
+    "cue": "Complete: \"vós vos ___\".",
+    "feedbackCorrect": "Certo: calareis.",
+    "feedbackWrong": {
+      "b": "Morrerão é da serpente.",
+      "c": "Criou é de Gênesis."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "calareis"
+      },
+      {
+        "id": "b",
+        "text": "morrerão"
+      },
+      {
+        "id": "c",
+        "text": "criou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "vós vos ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 14:13–14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 14:13–14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 14:13–14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus é o libertador.",
+    "feedbackWrong": {
+      "b": "Eles se calam.",
+      "c": "Não temais."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-cam-entrada-biblia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus liberta"
+      },
+      {
+        "id": "b",
+        "text": "Povo basta"
+      },
+      {
+        "id": "c",
+        "text": "Medo manda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 14:13",
+      "text": "vede o livramento do Senhor que ele hoje vos fará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação vem do Senhor"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "true_false",
+    "question": "O êxodo ensina o padrão da salvação bíblica: Deus age; o povo recebe o livramento.",
+    "prompt": "O êxodo ensina o padrão da salvação bíblica: Deus age; o povo recebe o livramento.",
+    "cue": "O êxodo ensina o padrão da salvação bíblica: Deus age; o povo recebe o livramento.",
+    "feedbackCorrect": "Certo: A salvação vem do Senhor.",
+    "feedbackWrong": {
+      "false": "Luta do Senhor + silêncio confiante."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 14:13, toque a palavra que falta em \"Não ___\"?",
+    "prompt": "Em Êxodo 14:13, toque a palavra que falta em \"Não ___\"?",
+    "cue": "Em Êxodo 14:13, toque a palavra que falta em \"Não ___\"?",
+    "feedbackCorrect": "Exato: temais.",
+    "feedbackWrong": {
+      "b": "“Moisés” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“Senhor” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "temais"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "choice",
+    "question": "Qual implicação do êxodo para ler a salvação no resto da Bíblia?",
+    "prompt": "Qual implicação do êxodo para ler a salvação no resto da Bíblia?",
+    "cue": "Qual implicação do êxodo para ler a salvação no resto da Bíblia?",
+    "feedbackCorrect": "Certo: salvação como dom do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto diz o contrário.",
+      "c": "É molde recorrente.",
+      "d": "Ele luta."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar um livramento que vem do Senhor, não do ego"
+      },
+      {
+        "id": "b",
+        "text": "Tratar toda salvação como esforço puro"
+      },
+      {
+        "id": "c",
+        "text": "Ignorar o padrão de libertação"
+      },
+      {
+        "id": "d",
+        "text": "Achar que Deus nunca luta pelo seu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Êxodo 14 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Êxodo 14 no panorama?",
+    "cue": "Qual sequência revela o sentido de Êxodo 14 no panorama?",
+    "feedbackCorrect": "Certo: impotência → confiança → ação divina.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo está impotente"
+      },
+      {
+        "id": "b",
+        "text": "A palavra chama a confiar"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor garante a luta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"livramento do ___\".",
+    "prompt": "Complete: \"livramento do ___\".",
+    "cue": "Complete: \"livramento do ___\".",
+    "feedbackCorrect": "Certo: Senhor.",
+    "feedbackWrong": {
+      "b": "Serpente não liberta.",
+      "c": "Uzias é rei humano."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "serpente"
+      },
+      {
+        "id": "c",
+        "text": "Uzias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "livramento do ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 14:13–14",
+    "learningObjective": "Entender o êxodo como retrato da salvação que a Bíblia repete.",
+    "evidence": [
+      "Êxodo 14:13",
+      "Êxodo 14:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: molde da salvação.",
+    "feedbackWrong": {
+      "b": "A queda é o problema; aqui há livramento.",
+      "c": "Há livramento."
+    },
+    "passageText": "Moisés respondeu ao povo: Não temais; estai quietos e vede o livramento do Senhor que ele hoje vos fará. O Senhor lutará por vós, e vós vos calareis.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-04",
+    "id": "entender-a-biblia-pro-entrada-biblia-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Molde da salvação"
+      },
+      {
+        "id": "b",
+        "text": "Molde da queda"
+      },
+      {
+        "id": "c",
+        "text": "Fim sem liberdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 14:14",
+      "text": "O Senhor lutará por vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação vem do Senhor"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "true_false",
+    "question": "O texto diz que ele foi ferido por causa das nossas transgressões.",
+    "prompt": "O texto diz que ele foi ferido por causa das nossas transgressões.",
+    "cue": "O texto diz que ele foi ferido por causa das nossas transgressões.",
+    "feedbackCorrect": "Certo: Alguém leva a culpa no nosso lugar.",
+    "feedbackWrong": {
+      "false": "Isaías 53:5."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 53:5, toque a palavra que falta em \"traz a ___\"?",
+    "prompt": "Em Isaías 53:5, toque a palavra que falta em \"traz a ___\"?",
+    "cue": "Em Isaías 53:5, toque a palavra que falta em \"traz a ___\"?",
+    "feedbackCorrect": "Exato: paz.",
+    "feedbackWrong": {
+      "b": "“nós” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“fez” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "nós"
+      },
+      {
+        "id": "c",
+        "text": "fez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "castigo que nos traz a ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "choice",
+    "question": "Segundo Isaías 53:6, o que o Senhor fez cair sobre ele?",
+    "prompt": "Segundo Isaías 53:6, o que o Senhor fez cair sobre ele?",
+    "cue": "Segundo Isaías 53:6, o que o Senhor fez cair sobre ele?",
+    "feedbackCorrect": "Certo: a iniquidade de nós todos.",
+    "feedbackWrong": {
+      "b": "Não.",
+      "c": "O foco é a culpa transferida.",
+      "d": "Não."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A iniquidade de nós todos"
+      },
+      {
+        "id": "b",
+        "text": "A glória de Uzias"
+      },
+      {
+        "id": "c",
+        "text": "O livramento do Egito só"
+      },
+      {
+        "id": "d",
+        "text": "A criação dos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em Isaías 53:5–6?",
+    "prompt": "Qual a ordem das ideias em Isaías 53:5–6?",
+    "cue": "Qual a ordem das ideias em Isaías 53:5–6?",
+    "feedbackCorrect": "Certo: ferido → sarados → iniquidade sobre ele.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele foi ferido por nossas transgressões"
+      },
+      {
+        "id": "b",
+        "text": "Pelas pisaduras fomos sarados"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor fez cair sobre ele a iniquidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"desgarrados como ___\".",
+    "prompt": "Complete: \"desgarrados como ___\".",
+    "cue": "Complete: \"desgarrados como ___\".",
+    "feedbackCorrect": "Certo: ovelhas.",
+    "feedbackWrong": {
+      "b": "Aves é de Mateus 6.",
+      "c": "Serafins é de Isaías 6."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "ovelhas"
+      },
+      {
+        "id": "b",
+        "text": "aves"
+      },
+      {
+        "id": "c",
+        "text": "serafins"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "desgarrados como ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 53 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 53 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 53 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: alguém leva a culpa.",
+    "feedbackWrong": {
+      "b": "A iniquidade é nomeada.",
+      "c": "Há ferida e castigo."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-sem-entrada-biblia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Substituto sofredor"
+      },
+      {
+        "id": "b",
+        "text": "Culpa ignorada"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem custo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 53:5",
+      "text": "ferido por causa das nossas transgressões."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alguém leva a culpa no nosso lugar"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "true_false",
+    "question": "Isaías 53 descreve alguém ferido por causa das próprias virtudes apenas.",
+    "prompt": "Isaías 53 descreve alguém ferido por causa das próprias virtudes apenas.",
+    "cue": "Isaías 53 descreve alguém ferido por causa das próprias virtudes apenas.",
+    "feedbackCorrect": "Certo: Alguém leva a culpa no nosso lugar.",
+    "feedbackWrong": {
+      "true": "Foi ferido por causa das nossas transgressões."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 53:5, toque a palavra que falta em \"fomos ___\"?",
+    "prompt": "Em Isaías 53:5, toque a palavra que falta em \"fomos ___\"?",
+    "cue": "Em Isaías 53:5, toque a palavra que falta em \"fomos ___\"?",
+    "feedbackCorrect": "Exato: sarados.",
+    "feedbackWrong": {
+      "b": "“castigo” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“ovelhas” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "sarados"
+      },
+      {
+        "id": "b",
+        "text": "castigo"
+      },
+      {
+        "id": "c",
+        "text": "ovelhas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "fomos ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "choice",
+    "question": "Como Isaías 53 avança o panorama da salvação?",
+    "prompt": "Como Isaías 53 avança o panorama da salvação?",
+    "cue": "Como Isaías 53 avança o panorama da salvação?",
+    "feedbackCorrect": "Certo: substituto sofredor.",
+    "feedbackWrong": {
+      "b": "Há transgressões.",
+      "c": "Há avanço na trama.",
+      "d": "A iniquidade cai sobre ele."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aponta um servo que carrega a culpa do povo"
+      },
+      {
+        "id": "b",
+        "text": "Nega qualquer necessidade de perdão"
+      },
+      {
+        "id": "c",
+        "text": "Volta a história só à criação"
+      },
+      {
+        "id": "d",
+        "text": "Ensina que cada um paga só por si, sem substituto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Isaías 53:5–6?",
+    "prompt": "Como se encadeiam os eventos de Isaías 53:5–6?",
+    "cue": "Como se encadeiam os eventos de Isaías 53:5–6?",
+    "feedbackCorrect": "Certo: culpa → ferida → transferência.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transgressões nossas"
+      },
+      {
+        "id": "b",
+        "text": "Feridas dele"
+      },
+      {
+        "id": "c",
+        "text": "Iniquidade transferida pelo Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"pelo seu ___\".",
+    "prompt": "Complete: \"pelo seu ___\".",
+    "cue": "Complete: \"pelo seu ___\".",
+    "feedbackCorrect": "Certo: caminho.",
+    "feedbackWrong": {
+      "b": "Jardim é de Gênesis 3.",
+      "c": "Trono é de Apocalipse."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "jardim"
+      },
+      {
+        "id": "c",
+        "text": "trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "desviava pelo seu ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 53:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 53:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 53:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: substituição.",
+    "feedbackWrong": {
+      "b": "Há sarar pelas pisaduras.",
+      "c": "O castigo estava sobre ele."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-cam-entrada-biblia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Culpa no lugar do outro"
+      },
+      {
+        "id": "b",
+        "text": "Culpa sem solução"
+      },
+      {
+        "id": "c",
+        "text": "Paz sem castigo alheio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 53:6",
+      "text": "o Senhor fez cair sobre ele a iniquidade de nós todos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alguém leva a culpa no nosso lugar"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "true_false",
+    "question": "No panorama bíblico, Isaías 53 prepara o leitor para um Salvador que sofre no lugar do povo.",
+    "prompt": "No panorama bíblico, Isaías 53 prepara o leitor para um Salvador que sofre no lugar do povo.",
+    "cue": "No panorama bíblico, Isaías 53 prepara o leitor para um Salvador que sofre no lugar do povo.",
+    "feedbackCorrect": "Certo: Alguém leva a culpa no nosso lugar.",
+    "feedbackWrong": {
+      "false": "Transgressões nossas; feridas dele."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 53:6, toque a palavra que falta em \"a ___\"?",
+    "prompt": "Em Isaías 53:6, toque a palavra que falta em \"a ___\"?",
+    "cue": "Em Isaías 53:6, toque a palavra que falta em \"a ___\"?",
+    "feedbackCorrect": "Exato: iniquidade.",
+    "feedbackWrong": {
+      "b": "“iniquidades” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“pisaduras” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "iniquidade"
+      },
+      {
+        "id": "b",
+        "text": "iniquidades"
+      },
+      {
+        "id": "c",
+        "text": "pisaduras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "cair sobre ele a ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Isaías 53 para entender a cruz depois?",
+    "prompt": "Qual implicação de Isaías 53 para entender a cruz depois?",
+    "cue": "Qual implicação de Isaías 53 para entender a cruz depois?",
+    "feedbackCorrect": "Certo: castigo sobre ele, paz para nós.",
+    "feedbackWrong": {
+      "b": "Há preparo claro.",
+      "c": "O texto liga.",
+      "d": "Todos andávamos desgarrados."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A paz vem porque outro levou o castigo"
+      },
+      {
+        "id": "b",
+        "text": "A cruz seria acaso sem preparo profético"
+      },
+      {
+        "id": "c",
+        "text": "Não há relação entre culpa e salvador"
+      },
+      {
+        "id": "d",
+        "text": "O povo não precisava de substituto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Isaías 53 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Isaías 53 no panorama?",
+    "cue": "Qual sequência revela o sentido de Isaías 53 no panorama?",
+    "feedbackCorrect": "Certo: desvio → ferida → substituição.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo está desgarrado"
+      },
+      {
+        "id": "b",
+        "text": "Um servo é ferido"
+      },
+      {
+        "id": "c",
+        "text": "A iniquidade é posta sobre ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"nossas ___\".",
+    "prompt": "Complete: \"nossas ___\".",
+    "cue": "Complete: \"nossas ___\".",
+    "feedbackCorrect": "Certo: transgressões.",
+    "feedbackWrong": {
+      "b": "Celeiros é de Mateus 6.",
+      "c": "Pastos é do Salmo."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "transgressões"
+      },
+      {
+        "id": "b",
+        "text": "celeiros"
+      },
+      {
+        "id": "c",
+        "text": "pastos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "por causa das nossas ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 53:5–6",
+    "learningObjective": "Ver como os profetas apontam para um Salvador que sofre.",
+    "evidence": [
+      "Isaías 53:5",
+      "Isaías 53:6"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 53 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 53 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 53 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: preparação para o Salvador sofredor.",
+    "feedbackWrong": {
+      "b": "O pecado é central.",
+      "c": "Há desenho claro."
+    },
+    "passageText": "Mas ele foi ferido por causa das nossas transgressões, e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu caminho; mas o Senhor fez cair sobre ele a iniquidade de nós todos.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-05",
+    "id": "entender-a-biblia-pro-entrada-biblia-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparação do Salvador"
+      },
+      {
+        "id": "b",
+        "text": "Negação do pecado"
+      },
+      {
+        "id": "c",
+        "text": "Salvação por acaso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 53:5–6",
+      "text": "pelas suas pisaduras fomos sarados… iniquidade de nós todos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alguém leva a culpa no nosso lugar"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "true_false",
+    "question": "O anjo diz que Jesus já ressuscitou, como ele havia dito.",
+    "prompt": "O anjo diz que Jesus já ressuscitou, como ele havia dito.",
+    "cue": "O anjo diz que Jesus já ressuscitou, como ele havia dito.",
+    "feedbackCorrect": "Certo: A morte não tem a última palavra.",
+    "feedbackWrong": {
+      "false": "Mateus 28:6."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:6, toque a palavra que falta em \"já ___\"?",
+    "prompt": "Em Mateus 28:6, toque a palavra que falta em \"já ___\"?",
+    "cue": "Em Mateus 28:6, toque a palavra que falta em \"já ___\"?",
+    "feedbackCorrect": "Exato: ressuscitou.",
+    "feedbackWrong": {
+      "b": "“crucificado” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“mulheres” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "crucificado"
+      },
+      {
+        "id": "c",
+        "text": "mulheres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "já ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "choice",
+    "question": "Segundo Mateus 28:6, onde Jesus não está?",
+    "prompt": "Segundo Mateus 28:6, onde Jesus não está?",
+    "cue": "Segundo Mateus 28:6, onde Jesus não está?",
+    "feedbackCorrect": "Certo: não está aqui — no lugar onde jazia.",
+    "feedbackWrong": {
+      "b": "Não.",
+      "c": "Não.",
+      "d": "Não."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "No sepulcro"
+      },
+      {
+        "id": "b",
+        "text": "Nas promessas"
+      },
+      {
+        "id": "c",
+        "text": "Na criação"
+      },
+      {
+        "id": "d",
+        "text": "Na palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Mateus 28:5–6?",
+    "prompt": "Qual a ordem dos fatos em Mateus 28:5–6?",
+    "cue": "Qual a ordem dos fatos em Mateus 28:5–6?",
+    "feedbackCorrect": "Certo: fala → anúncio → convite.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O anjo fala às mulheres"
+      },
+      {
+        "id": "b",
+        "text": "Anuncia que Jesus ressuscitou"
+      },
+      {
+        "id": "c",
+        "text": "Convida a ver o lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Não ___ vós\".",
+    "prompt": "Complete: \"Não ___ vós\".",
+    "cue": "Complete: \"Não ___ vós\".",
+    "feedbackCorrect": "Certo: temais.",
+    "feedbackWrong": {
+      "b": "Ovelhas é de Isaías 53.",
+      "c": "Luz é de Gênesis."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "temais"
+      },
+      {
+        "id": "b",
+        "text": "ovelhas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não ___ vós"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a morte não tem a última palavra.",
+    "feedbackWrong": {
+      "b": "Há ressurreição.",
+      "c": "Ele não está ali."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-sem-entrada-biblia-06-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória sobre a morte"
+      },
+      {
+        "id": "b",
+        "text": "Derrota final"
+      },
+      {
+        "id": "c",
+        "text": "Sepulcro fechado para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 28:6",
+      "text": "Ele não está aqui, porque já ressuscitou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A morte não tem a última palavra"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "true_false",
+    "question": "Em Mateus 28, o anjo diz que o corpo de Jesus permanece no sepulcro.",
+    "prompt": "Em Mateus 28, o anjo diz que o corpo de Jesus permanece no sepulcro.",
+    "cue": "Em Mateus 28, o anjo diz que o corpo de Jesus permanece no sepulcro.",
+    "feedbackCorrect": "Certo: A morte não tem a última palavra.",
+    "feedbackWrong": {
+      "true": "Ele não está aqui, porque já ressuscitou."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:6, toque a palavra que falta em \"vede o ___\"?",
+    "prompt": "Em Mateus 28:6, toque a palavra que falta em \"vede o ___\"?",
+    "cue": "Em Mateus 28:6, toque a palavra que falta em \"vede o ___\"?",
+    "feedbackCorrect": "Exato: lugar.",
+    "feedbackWrong": {
+      "b": "“porém” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“disse” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "lugar"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "vede o ___ onde o Senhor jazia"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "choice",
+    "question": "Como a ressurreição resume o panorama até aqui?",
+    "prompt": "Como a ressurreição resume o panorama até aqui?",
+    "cue": "Como a ressurreição resume o panorama até aqui?",
+    "feedbackCorrect": "Certo: a morte é vencida.",
+    "feedbackWrong": {
+      "b": "A criação será restaurada.",
+      "c": "A promessa segue.",
+      "d": "O livramento aponta para cá."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A morte entrada na queda é vencida no centro da história"
+      },
+      {
+        "id": "b",
+        "text": "A criação é desfeita"
+      },
+      {
+        "id": "c",
+        "text": "A promessa a Abrão falhou"
+      },
+      {
+        "id": "d",
+        "text": "O êxodo perde sentido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 28:5–6?",
+    "prompt": "Como se encadeiam os eventos de Mateus 28:5–6?",
+    "cue": "Como se encadeiam os eventos de Mateus 28:5–6?",
+    "feedbackCorrect": "Certo: busca → anúncio → evidência.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "As mulheres buscam o crucificado"
+      },
+      {
+        "id": "b",
+        "text": "O anjo anuncia a ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "O sepulcro vazio é mostrado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"que foi ___\".",
+    "prompt": "Complete: \"que foi ___\".",
+    "cue": "Complete: \"que foi ___\".",
+    "feedbackCorrect": "Certo: crucificado.",
+    "feedbackWrong": {
+      "b": "Astuta é da serpente.",
+      "c": "Verdejantes é do Salmo."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "crucificado"
+      },
+      {
+        "id": "b",
+        "text": "astuta"
+      },
+      {
+        "id": "c",
+        "text": "verdejantes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Jesus, que foi ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: centro da trama bíblica.",
+    "feedbackWrong": {
+      "b": "É decisivo.",
+      "c": "Ele foi crucificado e ressuscitou."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-cam-entrada-biblia-06-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Centro da trama"
+      },
+      {
+        "id": "b",
+        "text": "Nota de rodapé"
+      },
+      {
+        "id": "c",
+        "text": "Negação da cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 28:6",
+      "text": "como ele havia dito. Vinde, vede o lugar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A morte não tem a última palavra"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "true_false",
+    "question": "A ressurreição confirma que a trama bíblica não termina na morte introduzida pela queda.",
+    "prompt": "A ressurreição confirma que a trama bíblica não termina na morte introduzida pela queda.",
+    "cue": "A ressurreição confirma que a trama bíblica não termina na morte introduzida pela queda.",
+    "feedbackCorrect": "Certo: A morte não tem a última palavra.",
+    "feedbackWrong": {
+      "false": "Já ressuscitou — a morte não fecha a história."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:5, toque a palavra que falta em \"que ___ a Jesus\"?",
+    "prompt": "Em Mateus 28:5, toque a palavra que falta em \"que ___ a Jesus\"?",
+    "cue": "Em Mateus 28:5, toque a palavra que falta em \"que ___ a Jesus\"?",
+    "feedbackCorrect": "Exato: buscais.",
+    "feedbackWrong": {
+      "b": "“mulheres” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“temais” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "buscais"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "temais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "sei que ___ a Jesus"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Mateus 28 para ler a Bíblia inteira?",
+    "prompt": "Qual implicação de Mateus 28 para ler a Bíblia inteira?",
+    "cue": "Qual implicação de Mateus 28 para ler a Bíblia inteira?",
+    "feedbackCorrect": "Certo: convergência na ressurreição.",
+    "feedbackWrong": {
+      "b": "Há continuidade.",
+      "c": "É central.",
+      "d": "Ele ressuscitou."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda a linha (criação, queda, promessa, êxodo, servo) converge na vitória de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "O Antigo Testamento fica sem relação com Jesus"
+      },
+      {
+        "id": "c",
+        "text": "A ressurreição é opcional na trama"
+      },
+      {
+        "id": "d",
+        "text": "A morte ainda tem a palavra final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 28 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28 no panorama?",
+    "cue": "Qual sequência revela o sentido de Mateus 28 no panorama?",
+    "feedbackCorrect": "Certo: cruz → ressurreição → anúncio.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz aconteceu"
+      },
+      {
+        "id": "b",
+        "text": "A morte não reteve Jesus"
+      },
+      {
+        "id": "c",
+        "text": "O anúncio abre o futuro da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Ele não está ___\".",
+    "prompt": "Complete: \"Ele não está ___\".",
+    "cue": "Complete: \"Ele não está ___\".",
+    "feedbackCorrect": "Certo: aqui.",
+    "feedbackWrong": {
+      "b": "Egito é do êxodo.",
+      "c": "Abismo é de Gênesis 1."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "aqui"
+      },
+      {
+        "id": "b",
+        "text": "Egito"
+      },
+      {
+        "id": "c",
+        "text": "abismo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Ele não está ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:5–6",
+    "learningObjective": "Entender a ressurreição como o centro da história bíblica.",
+    "evidence": [
+      "Mateus 28:5",
+      "Mateus 28:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida em Cristo fala por último.",
+    "feedbackWrong": {
+      "b": "Ele ressuscitou.",
+      "c": "O lugar está vazio."
+    },
+    "passageText": "O anjo, porém, disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Ele não está aqui, porque já ressuscitou, como ele havia dito. Vinde, vede o lugar onde o Senhor jazia.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-06",
+    "id": "entender-a-biblia-pro-entrada-biblia-06-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Última palavra da vida"
+      },
+      {
+        "id": "b",
+        "text": "Última palavra da morte"
+      },
+      {
+        "id": "c",
+        "text": "Sepulcro como fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Mateus 28:6",
+      "text": "já ressuscitou, como ele havia dito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A morte não tem a última palavra"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "true_false",
+    "question": "Deus declara: Eis que faço novas todas as coisas.",
+    "prompt": "Deus declara: Eis que faço novas todas as coisas.",
+    "cue": "Deus declara: Eis que faço novas todas as coisas.",
+    "feedbackCorrect": "Certo: Deus faz novas todas as coisas.",
+    "feedbackWrong": {
+      "false": "Apocalipse 21:5."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:3, toque a palavra que falta em \"o ___ de Deus\"?",
+    "prompt": "Em Apocalipse 21:3, toque a palavra que falta em \"o ___ de Deus\"?",
+    "cue": "Em Apocalipse 21:3, toque a palavra que falta em \"o ___ de Deus\"?",
+    "feedbackCorrect": "Exato: tabernáculo.",
+    "feedbackWrong": {
+      "b": "“primeiras” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“assentado” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "tabernáculo"
+      },
+      {
+        "id": "b",
+        "text": "primeiras"
+      },
+      {
+        "id": "c",
+        "text": "assentado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Eis aqui o ___ de Deus"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "choice",
+    "question": "Segundo Apocalipse 21:3, onde Deus habitará?",
+    "prompt": "Segundo Apocalipse 21:3, onde Deus habitará?",
+    "cue": "Segundo Apocalipse 21:3, onde Deus habitará?",
+    "feedbackCorrect": "Certo: com os homens.",
+    "feedbackWrong": {
+      "b": "Com eles habitará.",
+      "c": "Não.",
+      "d": "Não."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com os homens"
+      },
+      {
+        "id": "b",
+        "text": "Longe de qualquer povo"
+      },
+      {
+        "id": "c",
+        "text": "Só no Egito antigo"
+      },
+      {
+        "id": "d",
+        "text": "Apenas no sepulcro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em Apocalipse 21:3–5?",
+    "prompt": "Qual a ordem das ideias em Apocalipse 21:3–5?",
+    "cue": "Qual a ordem das ideias em Apocalipse 21:3–5?",
+    "feedbackCorrect": "Certo: habitação → fim da dor → nova criação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tabernáculo de Deus com os homens"
+      },
+      {
+        "id": "b",
+        "text": "Fim da morte e da lágrima"
+      },
+      {
+        "id": "c",
+        "text": "Faço novas todas as coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "complete",
+    "question": "Complete: \"toda a ___\".",
+    "prompt": "Complete: \"toda a ___\".",
+    "cue": "Complete: \"toda a ___\".",
+    "feedbackCorrect": "Certo: lágrima.",
+    "feedbackWrong": {
+      "b": "Luz é de Gênesis 1.",
+      "c": "Astuta é da serpente."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "lágrima"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "astuta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "limpará de seus olhos toda a ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus refaz o que a queda quebrou.",
+    "feedbackWrong": {
+      "b": "As primeiras coisas passam.",
+      "c": "Ele habita com eles."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-sem-entrada-biblia-07-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restauração final"
+      },
+      {
+        "id": "b",
+        "text": "Queda repetida"
+      },
+      {
+        "id": "c",
+        "text": "Deus distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Apocalipse 21:3",
+      "text": "Eis aqui o tabernáculo de Deus com os homens."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus faz novas todas as coisas"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "true_false",
+    "question": "Apocalipse 21 anuncia que a morte continua para sempre.",
+    "prompt": "Apocalipse 21 anuncia que a morte continua para sempre.",
+    "cue": "Apocalipse 21 anuncia que a morte continua para sempre.",
+    "feedbackCorrect": "Certo: Deus faz novas todas as coisas.",
+    "feedbackWrong": {
+      "true": "Não haverá mais morte; as primeiras coisas são passadas."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:5, toque a palavra que falta em \"faço ___ todas as coisas\"?",
+    "prompt": "Em Apocalipse 21:5, toque a palavra que falta em \"faço ___ todas as coisas\"?",
+    "cue": "Em Apocalipse 21:5, toque a palavra que falta em \"faço ___ todas as coisas\"?",
+    "feedbackCorrect": "Exato: novas.",
+    "feedbackWrong": {
+      "b": "“trono” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“dizia” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "novas"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "dizia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "faço ___ todas as coisas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "choice",
+    "question": "Como o fim da Bíblia responde ao começo?",
+    "prompt": "Como o fim da Bíblia responde ao começo?",
+    "cue": "Como o fim da Bíblia responde ao começo?",
+    "feedbackCorrect": "Certo: habitação e renovação.",
+    "feedbackWrong": {
+      "b": "Ele habita com eles.",
+      "c": "A morte passa.",
+      "d": "Jardim e cidade se respondem."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus volta a habitar com o seu povo e renova a criação"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona o mundo criado"
+      },
+      {
+        "id": "c",
+        "text": "A serpente vence no fim"
+      },
+      {
+        "id": "d",
+        "text": "Não há relação com Gênesis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Apocalipse 21:3–5?",
+    "prompt": "Como se encadeiam os eventos de Apocalipse 21:3–5?",
+    "cue": "Como se encadeiam os eventos de Apocalipse 21:3–5?",
+    "feedbackCorrect": "Certo: presença → consolo → renovação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus habita com os homens"
+      },
+      {
+        "id": "b",
+        "text": "Toda lágrima é limpa"
+      },
+      {
+        "id": "c",
+        "text": "Tudo é feito novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "complete",
+    "question": "Complete: \"não haverá mais ___\".",
+    "prompt": "Complete: \"não haverá mais ___\".",
+    "cue": "Complete: \"não haverá mais ___\".",
+    "feedbackCorrect": "Certo: morte.",
+    "feedbackWrong": {
+      "b": "Abrão é da promessa.",
+      "c": "Moisés é do êxodo."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "Abrão"
+      },
+      {
+        "id": "c",
+        "text": "Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "não haverá mais ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21:3–5 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3–5 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3–5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fecho do panorama.",
+    "feedbackWrong": {
+      "b": "A queda é revertida.",
+      "c": "Há nova criação."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-cam-entrada-biblia-07-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fecho do panorama"
+      },
+      {
+        "id": "b",
+        "text": "Abertura da queda"
+      },
+      {
+        "id": "c",
+        "text": "Negação da criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Apocalipse 21:5",
+      "text": "Eis que faço novas todas as coisas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus faz novas todas as coisas"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "true_false",
+    "question": "Apocalipse 21 fecha o panorama: o Deus que criou no princípio habita de novo com os homens e renova tudo.",
+    "prompt": "Apocalipse 21 fecha o panorama: o Deus que criou no princípio habita de novo com os homens e renova tudo.",
+    "cue": "Apocalipse 21 fecha o panorama: o Deus que criou no princípio habita de novo com os homens e renova tudo.",
+    "feedbackCorrect": "Certo: Deus faz novas todas as coisas.",
+    "feedbackWrong": {
+      "false": "Tabernáculo com os homens + faço novas todas as coisas."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:4, toque a palavra que falta em \"são ___\"?",
+    "prompt": "Em Apocalipse 21:4, toque a palavra que falta em \"são ___\"?",
+    "cue": "Em Apocalipse 21:4, toque a palavra que falta em \"são ___\"?",
+    "feedbackCorrect": "Exato: passadas.",
+    "feedbackWrong": {
+      "b": "“habitará” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“próprio” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "passadas"
+      },
+      {
+        "id": "b",
+        "text": "habitará"
+      },
+      {
+        "id": "c",
+        "text": "próprio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "primeiras coisas são ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Apocalipse 21 para quem leu o panorama?",
+    "prompt": "Qual implicação de Apocalipse 21 para quem leu o panorama?",
+    "cue": "Qual implicação de Apocalipse 21 para quem leu o panorama?",
+    "feedbackCorrect": "Certo: destino de nova criação.",
+    "feedbackWrong": {
+      "b": "Há fecho claro.",
+      "c": "A lágrima é limpa.",
+      "d": "Ele habitará com eles."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Bíblia vai de criação a nova criação; a esperança tem destino"
+      },
+      {
+        "id": "b",
+        "text": "A história bíblica não tem destino"
+      },
+      {
+        "id": "c",
+        "text": "A dor é eterna e sem resposta"
+      },
+      {
+        "id": "d",
+        "text": "Deus nunca quis habitar com o povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Apocalipse 21 no panorama?",
+    "prompt": "Qual sequência revela o sentido de Apocalipse 21 no panorama?",
+    "cue": "Qual sequência revela o sentido de Apocalipse 21 no panorama?",
+    "feedbackCorrect": "Certo: habitação → fim do mal → renovação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se aproxima para habitar"
+      },
+      {
+        "id": "b",
+        "text": "O mal e a morte perdem lugar"
+      },
+      {
+        "id": "c",
+        "text": "Tudo é declarado novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "complete",
+    "question": "Complete: \"o seu ___\".",
+    "prompt": "Complete: \"o seu ___\".",
+    "cue": "Complete: \"o seu ___\".",
+    "feedbackCorrect": "Certo: povo.",
+    "feedbackWrong": {
+      "b": "Sepulcro é da ressurreição.",
+      "c": "Serpente é da queda."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "sepulcro"
+      },
+      {
+        "id": "c",
+        "text": "serpente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "eles serão o seu ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–5",
+    "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:5"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus faz novas todas as coisas.",
+    "feedbackWrong": {
+      "b": "As primeiras coisas passam.",
+      "c": "Eles serão o seu povo."
+    },
+    "passageText": "E ouvi uma grande voz do trono, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e o próprio Deus estará com eles e será o seu Deus. E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor, porque já as primeiras coisas são passadas. E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas.",
+    "trail": "entender-a-biblia",
+    "section": "entrada-biblia-07",
+    "id": "entender-a-biblia-pro-entrada-biblia-07-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova criação"
+      },
+      {
+        "id": "b",
+        "text": "Queda permanente"
+      },
+      {
+        "id": "c",
+        "text": "Deus sem povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Apocalipse 21:3–5",
+      "text": "habitará… faço novas todas as coisas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus faz novas todas as coisas"
+    }
+  }
+]

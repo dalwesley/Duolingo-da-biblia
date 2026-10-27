@@ -1,0 +1,3737 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "No princípio, Deus criou os céus e a terra.",
+    "prompt": "No princípio, Deus criou os céus e a terra.",
+    "cue": "No princípio, Deus criou os céus e a terra.",
+    "feedbackCorrect": "Certo: Deus vem antes de tudo.",
+    "feedbackWrong": {
+      "false": "Gênesis 1:1 diz exatamente isso."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, Deus criou\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, Deus criou\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, Deus criou\"?",
+    "feedbackCorrect": "Exato: No princípio.",
+    "feedbackWrong": {
+      "b": "Abismo aparece no v.2.",
+      "c": "Luz vem no v.3."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "princípio"
+      },
+      {
+        "id": "b",
+        "text": "abismo"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "No ___, Deus criou os céus e a terra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "Quem age no primeiro verso da Bíblia?",
+    "prompt": "Quem age no primeiro verso da Bíblia?",
+    "cue": "Quem age no primeiro verso da Bíblia?",
+    "feedbackCorrect": "Certo: Deus criou.",
+    "feedbackWrong": {
+      "b": "O homem ainda não aparece.",
+      "c": "A terra é criada, não criadora.",
+      "d": "As águas são cenário do v.2."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "O homem"
+      },
+      {
+        "id": "c",
+        "text": "A terra vazia"
+      },
+      {
+        "id": "d",
+        "text": "As águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "prompt": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "cue": "Qual a ordem dos fatos em Gênesis 1:1–3?",
+    "feedbackCorrect": "Certo: criação → Espírito → luz.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus criou os céus e a terra"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito pairava sobre as águas"
+      },
+      {
+        "id": "c",
+        "text": "Disse Deus: Haja luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Haja ___\".",
+    "prompt": "Complete: \"Haja ___\".",
+    "cue": "Complete: \"Haja ___\".",
+    "feedbackCorrect": "Certo: luz.",
+    "feedbackWrong": {
+      "b": "Terra já foi nomeada no v.1.",
+      "c": "Abismo é do v.2."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "abismo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Haja ___. E houve luz"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a história começa em Deus.",
+    "feedbackWrong": {
+      "b": "O verso não começa conosco.",
+      "c": "O mundo é criado."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-sem-entrada-deus-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus primeiro"
+      },
+      {
+        "id": "b",
+        "text": "Homem no centro"
+      },
+      {
+        "id": "c",
+        "text": "Mundo eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus vem antes de tudo"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "Gênesis 1:1 começa falando do homem e de suas necessidades.",
+    "prompt": "Gênesis 1:1 começa falando do homem e de suas necessidades.",
+    "cue": "Gênesis 1:1 começa falando do homem e de suas necessidades.",
+    "feedbackCorrect": "Certo: Deus vem antes de tudo.",
+    "feedbackWrong": {
+      "true": "Começa com Deus criando."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"Deus ___ os céus e a terra\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"Deus ___ os céus e a terra\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"Deus ___ os céus e a terra\"?",
+    "feedbackCorrect": "Exato: criou.",
+    "feedbackWrong": {
+      "b": "Pairava descreve o Espírito.",
+      "c": "Trevas é do v.2."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "criou"
+      },
+      {
+        "id": "b",
+        "text": "pairava"
+      },
+      {
+        "id": "c",
+        "text": "trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Deus ___ os céus e a terra"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "Por que Gênesis 1:1 importa para quem quer conhecer a Deus?",
+    "prompt": "Por que Gênesis 1:1 importa para quem quer conhecer a Deus?",
+    "cue": "Por que Gênesis 1:1 importa para quem quer conhecer a Deus?",
+    "feedbackCorrect": "Certo: o ponto de partida é Deus.",
+    "feedbackWrong": {
+      "b": "O verso põe Deus no início.",
+      "c": "Ele cria a terra.",
+      "d": "A luz responde à palavra dele."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o conhecer começa nele, não em nós"
+      },
+      {
+        "id": "b",
+        "text": "Porque prova que o homem cria o sentido"
+      },
+      {
+        "id": "c",
+        "text": "Porque a terra já existia sem Deus"
+      },
+      {
+        "id": "d",
+        "text": "Porque a luz é mais importante que o Criador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 1:1–3?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 1:1–3?",
+    "cue": "Como se encadeiam os eventos de Gênesis 1:1–3?",
+    "feedbackCorrect": "Certo: cria → vazio → luz.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria no princípio"
+      },
+      {
+        "id": "b",
+        "text": "A terra está sem forma"
+      },
+      {
+        "id": "c",
+        "text": "A palavra de Deus traz luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"o ___ de Deus pairava\".",
+    "prompt": "Complete: \"o ___ de Deus pairava\".",
+    "cue": "Complete: \"o ___ de Deus pairava\".",
+    "feedbackCorrect": "Certo: Espírito.",
+    "feedbackWrong": {
+      "b": "Homem ainda não foi criado.",
+      "c": "Templo não está aqui."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "o ___ de Deus pairava sobre as águas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: conhecer começa no Criador.",
+    "feedbackWrong": {
+      "b": "O texto não centra o homem.",
+      "c": "A luz vem pela palavra."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-cam-entrada-deus-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Início em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Autossuficiência humana"
+      },
+      {
+        "id": "c",
+        "text": "Criação sem palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:3",
+      "text": "Disse Deus: Haja luz. E houve luz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus vem antes de tudo"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "true_false",
+    "question": "Conhecer a Deus, segundo Gênesis 1, começa reconhecendo que ele já age antes de nós.",
+    "prompt": "Conhecer a Deus, segundo Gênesis 1, começa reconhecendo que ele já age antes de nós.",
+    "cue": "Conhecer a Deus, segundo Gênesis 1, começa reconhecendo que ele já age antes de nós.",
+    "feedbackCorrect": "Certo: Deus vem antes de tudo.",
+    "feedbackWrong": {
+      "false": "Ele cria no princípio — antes de qualquer resposta humana."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "prompt": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "cue": "Em Gênesis 1:2, toque a palavra que falta em \"sem forma e ___\"?",
+    "feedbackCorrect": "Exato: vazia.",
+    "feedbackWrong": {
+      "b": "Luz é do v.3.",
+      "c": "Céus é do v.1."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "vazia"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "A terra era sem forma e ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de Gênesis 1:1–3 para a fé?",
+    "prompt": "Qual implicação de Gênesis 1:1–3 para a fé?",
+    "cue": "Qual implicação de Gênesis 1:1–3 para a fé?",
+    "feedbackCorrect": "Certo: a palavra dele ordena o real.",
+    "feedbackWrong": {
+      "b": "Ele cria; não depende.",
+      "c": "Houve luz porque ele disse.",
+      "d": "O texto começa nele."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus não é projeção nossa: ele fala e o mundo responde"
+      },
+      {
+        "id": "b",
+        "text": "A criação prova que Deus depende do homem"
+      },
+      {
+        "id": "c",
+        "text": "A luz existe sem a palavra de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Conhecer a Deus começa pelo eu interior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 1:1–3?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 1:1–3?",
+    "cue": "Qual sequência revela o sentido de Gênesis 1:1–3?",
+    "feedbackCorrect": "Certo: sujeito → caos sob domínio → luz.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é o sujeito da criação"
+      },
+      {
+        "id": "b",
+        "text": "O caos não tem a última palavra"
+      },
+      {
+        "id": "c",
+        "text": "A palavra dele gera luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"No princípio, ___ criou\".",
+    "prompt": "Complete: \"No princípio, ___ criou\".",
+    "cue": "Complete: \"No princípio, ___ criou\".",
+    "feedbackCorrect": "Certo: Deus.",
+    "feedbackWrong": {
+      "b": "Adão vem depois na narrativa.",
+      "c": "Israel ainda não existe."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Adão"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "No princípio, ___ criou"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1–3",
+    "learningObjective": "Ver que conhecer a Deus começa por ele, não por nós.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Gênesis 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus vem antes.",
+    "feedbackWrong": {
+      "b": "O verso não começa no eu.",
+      "c": "Há criação com origem nele."
+    },
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: Haja luz. E houve luz.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-01",
+    "id": "conhecer-a-deus-pro-entrada-deus-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioridade de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Prioridade do eu"
+      },
+      {
+        "id": "c",
+        "text": "Mundo sem origem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus vem antes de tudo"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "prompt": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "cue": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "feedbackCorrect": "Certo: Deus se dá a conhecer pelo nome.",
+    "feedbackWrong": {
+      "false": "Êxodo 3:14 registra essa resposta."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:13, toque a palavra que falta em \"Qual é o seu ___\"?",
+    "prompt": "Em Êxodo 3:13, toque a palavra que falta em \"Qual é o seu ___\"?",
+    "cue": "Em Êxodo 3:13, toque a palavra que falta em \"Qual é o seu ___\"?",
+    "feedbackCorrect": "Exato: nome.",
+    "feedbackWrong": {
+      "b": "Israel é o povo.",
+      "c": "Pais aparece na frase anterior."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "pais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Qual é o seu ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "Quando Moisés pergunta o nome, o que Deus responde?",
+    "prompt": "Quando Moisés pergunta o nome, o que Deus responde?",
+    "cue": "Quando Moisés pergunta o nome, o que Deus responde?",
+    "feedbackCorrect": "Certo: EU SOU O QUE SOU.",
+    "feedbackWrong": {
+      "b": "Não é um deus entre muitos.",
+      "c": "O nome é revelado para ser dito.",
+      "d": "A resposta é sobre Deus."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "EU SOU O QUE SOU"
+      },
+      {
+        "id": "b",
+        "text": "Um deus entre muitos"
+      },
+      {
+        "id": "c",
+        "text": "Um nome secreto inútil"
+      },
+      {
+        "id": "d",
+        "text": "O nome de Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Êxodo 3:13–14?",
+    "prompt": "Qual a ordem dos fatos em Êxodo 3:13–14?",
+    "cue": "Qual a ordem dos fatos em Êxodo 3:13–14?",
+    "feedbackCorrect": "Certo: pergunta → revelação → envio.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés pergunta qual é o nome"
+      },
+      {
+        "id": "b",
+        "text": "Deus responde: EU SOU O QUE SOU"
+      },
+      {
+        "id": "c",
+        "text": "Moisés deve dizer: EU SOU me enviou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"EU SOU me ___ a vós\".",
+    "prompt": "Complete: \"EU SOU me ___ a vós\".",
+    "cue": "Complete: \"EU SOU me ___ a vós\".",
+    "feedbackCorrect": "Certo: enviou.",
+    "feedbackWrong": {
+      "b": "Criou é linguagem de Gênesis.",
+      "c": "Pastos é do Salmo 23."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "enviou"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "pastos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "EU SOU me ___ a vós"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus se dá a conhecer.",
+    "feedbackWrong": {
+      "b": "Quem fala é Deus.",
+      "c": "Há nome e envio."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-sem-entrada-deus-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome revelado"
+      },
+      {
+        "id": "b",
+        "text": "Nome inventado por Moisés"
+      },
+      {
+        "id": "c",
+        "text": "Deus sem identidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "EU SOU O QUE SOU."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se dá a conhecer pelo nome"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "Em Êxodo 3, Deus se recusa a dizer qualquer nome a Moisés.",
+    "prompt": "Em Êxodo 3, Deus se recusa a dizer qualquer nome a Moisés.",
+    "cue": "Em Êxodo 3, Deus se recusa a dizer qualquer nome a Moisés.",
+    "feedbackCorrect": "Certo: Deus se dá a conhecer pelo nome.",
+    "feedbackWrong": {
+      "true": "Ele revela: EU SOU O QUE SOU."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"EU ___ O QUE SOU\"?",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"EU ___ O QUE SOU\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"EU ___ O QUE SOU\"?",
+    "feedbackCorrect": "Exato: SOU.",
+    "feedbackWrong": {
+      "b": "“Eis” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“for” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOU"
+      },
+      {
+        "id": "b",
+        "text": "Eis"
+      },
+      {
+        "id": "c",
+        "text": "for"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "EU ___ O QUE SOU"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "O que o nome EU SOU ensina sobre conhecer a Deus?",
+    "prompt": "O que o nome EU SOU ensina sobre conhecer a Deus?",
+    "cue": "O que o nome EU SOU ensina sobre conhecer a Deus?",
+    "feedbackCorrect": "Certo: identidade soberana.",
+    "feedbackWrong": {
+      "b": "A revelação é estável.",
+      "c": "Ele envia; não depende da fé para existir.",
+      "d": "É revelação teológica, não só código."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se define por si mesmo, sem depender de outro"
+      },
+      {
+        "id": "b",
+        "text": "Ele muda de nome conforme o povo pede"
+      },
+      {
+        "id": "c",
+        "text": "Ele só existe enquanto Israel crê"
+      },
+      {
+        "id": "d",
+        "text": "O nome é só um código militar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Êxodo 3:13–14?",
+    "prompt": "Como se encadeiam os eventos de Êxodo 3:13–14?",
+    "cue": "Como se encadeiam os eventos de Êxodo 3:13–14?",
+    "feedbackCorrect": "Certo: dúvida → revelação → anúncio.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dúvida sobre o nome"
+      },
+      {
+        "id": "b",
+        "text": "A revelação do EU SOU"
+      },
+      {
+        "id": "c",
+        "text": "A missão de anunciar esse nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Deus disse a ___\".",
+    "prompt": "Complete: \"Deus disse a ___\".",
+    "cue": "Complete: \"Deus disse a ___\".",
+    "feedbackCorrect": "Certo: Moisés.",
+    "feedbackWrong": {
+      "b": "Abraão não é o interlocutor aqui.",
+      "c": "Davi tampouco."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Deus disse a ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:13–14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 3:13–14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:13–14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus se apresenta pelo nome.",
+    "feedbackWrong": {
+      "b": "Deus fala; Moisés ouve.",
+      "c": "O nome é central na cena."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-cam-entrada-deus-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se apresenta"
+      },
+      {
+        "id": "b",
+        "text": "Moisés inventa Deus"
+      },
+      {
+        "id": "c",
+        "text": "Nome irrelevante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "Assim dirás aos filhos de Israel: EU SOU me enviou a vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se dá a conhecer pelo nome"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "O nome revelado a Moisés mostra um Deus que é em si mesmo e que se dá a conhecer para enviar.",
+    "prompt": "O nome revelado a Moisés mostra um Deus que é em si mesmo e que se dá a conhecer para enviar.",
+    "cue": "O nome revelado a Moisés mostra um Deus que é em si mesmo e que se dá a conhecer para enviar.",
+    "feedbackCorrect": "Certo: Deus se dá a conhecer pelo nome.",
+    "feedbackWrong": {
+      "false": "EU SOU e o envio caminham juntos."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"aos ___ de Israel\"?",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"aos ___ de Israel\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"aos ___ de Israel\"?",
+    "feedbackCorrect": "Exato: filhos.",
+    "feedbackWrong": {
+      "b": "“Moisés” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“quando” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "quando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim dirás aos ___ de Israel"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "Qual implicação do EU SOU para quem busca conhecer a Deus?",
+    "prompt": "Qual implicação do EU SOU para quem busca conhecer a Deus?",
+    "cue": "Qual implicação do EU SOU para quem busca conhecer a Deus?",
+    "feedbackCorrect": "Certo: revelação e missão.",
+    "feedbackWrong": {
+      "b": "Ele se define.",
+      "c": "A cena é revelação.",
+      "d": "Não é magia."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não o reduzimos a uma função nossa: ele se revela e envia"
+      },
+      {
+        "id": "b",
+        "text": "Podemos moldar Deus ao nosso desejo"
+      },
+      {
+        "id": "c",
+        "text": "Conhecer a Deus dispensa a revelação"
+      },
+      {
+        "id": "d",
+        "text": "O nome serve só para magia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Êxodo 3:13–14?",
+    "prompt": "Qual sequência revela o sentido de Êxodo 3:13–14?",
+    "cue": "Qual sequência revela o sentido de Êxodo 3:13–14?",
+    "feedbackCorrect": "Certo: necessidade → revelação → autoridade.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo precisará de um nome"
+      },
+      {
+        "id": "b",
+        "text": "Deus revela quem ele é"
+      },
+      {
+        "id": "c",
+        "text": "Esse nome autoriza o envio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete o nome: \"___ O QUE SOU\".",
+    "prompt": "Complete o nome: \"___ O QUE SOU\".",
+    "cue": "Complete o nome: \"___ O QUE SOU\".",
+    "feedbackCorrect": "Certo: EU SOU.",
+    "feedbackWrong": {
+      "b": "Uzias é de Isaías.",
+      "c": "Verbo é de João."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "EU SOU"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "Verbo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___ O QUE SOU"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:13–14",
+    "learningObjective": "Entender o que o nome EU SOU revela sobre Deus.",
+    "evidence": [
+      "Êxodo 3:13",
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "prompt": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o que ele é autoriza o envio.",
+    "feedbackWrong": {
+      "b": "Há nome revelado.",
+      "c": "O nome vem de Deus."
+    },
+    "passageText": "Disse Moisés a Deus: Eis que quando eu for aos filhos de Israel e lhes disser: O Deus de vossos pais me enviou a vós; e eles me perguntarem: Qual é o seu nome? Que lhes direi? E Deus disse a Moisés: EU SOU O QUE SOU. Disse mais: Assim dirás aos filhos de Israel: EU SOU me enviou a vós.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-02",
+    "id": "conhecer-a-deus-pro-entrada-deus-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identidade que envia"
+      },
+      {
+        "id": "b",
+        "text": "Anonimato divino"
+      },
+      {
+        "id": "c",
+        "text": "Nome humano de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "EU SOU O QUE SOU."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se dá a conhecer pelo nome"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "Os serafins clamam: Santo, santo, santo é o SENHOR dos Exércitos.",
+    "prompt": "Os serafins clamam: Santo, santo, santo é o SENHOR dos Exércitos.",
+    "cue": "Os serafins clamam: Santo, santo, santo é o SENHOR dos Exércitos.",
+    "feedbackCorrect": "Certo: Deus é santo.",
+    "feedbackWrong": {
+      "false": "Isaías 6:3 traz o tríplice santo."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"___, santo, santo\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"___, santo, santo\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"___, santo, santo\"?",
+    "feedbackCorrect": "Exato: Santo.",
+    "feedbackWrong": {
+      "b": "Uzias marca o ano da visão.",
+      "c": "Templo é o lugar enchido pelas vestes."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___, santo, santo é o SENHOR"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Em Isaías 6:1–3, o que enche a terra?",
+    "prompt": "Em Isaías 6:1–3, o que enche a terra?",
+    "cue": "Em Isaías 6:1–3, o que enche a terra?",
+    "feedbackCorrect": "Certo: a terra repleta da glória dele.",
+    "feedbackWrong": {
+      "b": "Uzias morreu; o trono visto é do Senhor.",
+      "c": "O clamor é sobre a glória.",
+      "d": "O centro é o SENHOR."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A glória do SENHOR"
+      },
+      {
+        "id": "b",
+        "text": "O trono de Uzias"
+      },
+      {
+        "id": "c",
+        "text": "O medo de Isaías só"
+      },
+      {
+        "id": "d",
+        "text": "A fumaça sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos em Isaías 6:1–3?",
+    "prompt": "Qual a ordem dos fatos em Isaías 6:1–3?",
+    "cue": "Qual a ordem dos fatos em Isaías 6:1–3?",
+    "feedbackCorrect": "Certo: visão → serafins → clamor.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isaías vê o Senhor no trono"
+      },
+      {
+        "id": "b",
+        "text": "Serafins estão por cima"
+      },
+      {
+        "id": "c",
+        "text": "Clamam: Santo, santo, santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"repleta da sua ___\".",
+    "prompt": "Complete: \"repleta da sua ___\".",
+    "cue": "Complete: \"repleta da sua ___\".",
+    "feedbackCorrect": "Certo: glória.",
+    "feedbackWrong": {
+      "b": "Abismo é de Gênesis.",
+      "c": "Pão é de Mateus 6."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "abismo"
+      },
+      {
+        "id": "c",
+        "text": "pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "toda a terra está repleta da sua ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus é santo.",
+    "feedbackWrong": {
+      "b": "Uzias morreu; o Santo é o SENHOR.",
+      "c": "O tríplice santo nega o comum."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-sem-entrada-deus-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santidade de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Santidade de Uzias"
+      },
+      {
+        "id": "c",
+        "text": "Deus comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "Santo, santo, santo é o SENHOR dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "Em Isaías 6, a santidade de Deus o torna igual a qualquer rei humano.",
+    "prompt": "Em Isaías 6, a santidade de Deus o torna igual a qualquer rei humano.",
+    "cue": "Em Isaías 6, a santidade de Deus o torna igual a qualquer rei humano.",
+    "feedbackCorrect": "Certo: Deus é santo.",
+    "feedbackWrong": {
+      "true": "Ele está num alto e sublime trono; os serafins proclamam sua santidade."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:1, toque a palavra que falta em \"sublime ___\"?",
+    "prompt": "Em Isaías 6:1, toque a palavra que falta em \"sublime ___\"?",
+    "cue": "Em Isaías 6:1, toque a palavra que falta em \"sublime ___\"?",
+    "feedbackCorrect": "Exato: trono.",
+    "feedbackWrong": {
+      "b": "“Uzias” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“sobre” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "assentado sobre um alto e sublime ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Por que a visão de Isaías 6 importa para conhecer a Deus?",
+    "prompt": "Por que a visão de Isaías 6 importa para conhecer a Deus?",
+    "cue": "Por que a visão de Isaías 6 importa para conhecer a Deus?",
+    "feedbackCorrect": "Certo: santidade que separa e revela.",
+    "feedbackWrong": {
+      "b": "As vestes enchiam o templo; Deus não depende dele.",
+      "c": "Uzias morreu.",
+      "d": "A terra está repleta da glória."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque revela um Deus separado em santidade, não uma versão maior de nós"
+      },
+      {
+        "id": "b",
+        "text": "Porque prova que Deus precisa do templo humano"
+      },
+      {
+        "id": "c",
+        "text": "Porque Uzias é o verdadeiro Santo"
+      },
+      {
+        "id": "d",
+        "text": "Porque a glória fica só no céu e nunca toca a terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Isaías 6:1–3?",
+    "prompt": "Como se encadeiam os eventos de Isaías 6:1–3?",
+    "cue": "Como se encadeiam os eventos de Isaías 6:1–3?",
+    "feedbackCorrect": "Certo: visão → seres → proclamação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Morte de Uzias e visão do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Serafins sobre o trono"
+      },
+      {
+        "id": "c",
+        "text": "Proclamação da santidade e da glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"SENHOR dos ___\".",
+    "prompt": "Complete: \"SENHOR dos ___\".",
+    "cue": "Complete: \"SENHOR dos ___\".",
+    "feedbackCorrect": "Certo: Exércitos.",
+    "feedbackWrong": {
+      "b": "Israel é o povo.",
+      "c": "Moisés não está no clamor."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exércitos"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "SENHOR dos ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: santo e incomparável.",
+    "feedbackWrong": {
+      "b": "O tríplice santo impede reduzir Deus.",
+      "c": "Há trono ocupado."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-cam-entrada-deus-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus incomparável"
+      },
+      {
+        "id": "b",
+        "text": "Deus doméstico"
+      },
+      {
+        "id": "c",
+        "text": "Trono vazio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 6:1",
+      "text": "eu vi o Senhor assentado sobre um alto e sublime trono."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "A santidade proclamada em Isaías 6 mostra que aproximar-se de Deus não é tratá-lo como igual: ele é outro em pureza e glória.",
+    "prompt": "A santidade proclamada em Isaías 6 mostra que aproximar-se de Deus não é tratá-lo como igual: ele é outro em pureza e glória.",
+    "cue": "A santidade proclamada em Isaías 6 mostra que aproximar-se de Deus não é tratá-lo como igual: ele é outro em pureza e glória.",
+    "feedbackCorrect": "Certo: Deus é santo.",
+    "feedbackWrong": {
+      "false": "Santo, santo, santo marca a diferença."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"está ___ da sua glória\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"está ___ da sua glória\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"está ___ da sua glória\"?",
+    "feedbackCorrect": "Exato: repleta.",
+    "feedbackWrong": {
+      "b": "“sublime” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“enchiam” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "repleta"
+      },
+      {
+        "id": "b",
+        "text": "sublime"
+      },
+      {
+        "id": "c",
+        "text": "enchiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "toda a terra está ___ da sua glória"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Qual implicação da santidade de Isaías 6 para o discípulo?",
+    "prompt": "Qual implicação da santidade de Isaías 6 para o discípulo?",
+    "cue": "Qual implicação da santidade de Isaías 6 para o discípulo?",
+    "feedbackCorrect": "Certo: reverência diante do Santo.",
+    "feedbackWrong": {
+      "b": "A santidade não se negocia.",
+      "c": "A terra está repleta.",
+      "d": "Eles proclamam o SENHOR."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a Deus inclui reverência: ele não é extensão do meu ego"
+      },
+      {
+        "id": "b",
+        "text": "Posso negociar a santidade dele"
+      },
+      {
+        "id": "c",
+        "text": "A glória dele nunca encontra a terra"
+      },
+      {
+        "id": "d",
+        "text": "Serafins substituem o SENHOR"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Isaías 6:1–3?",
+    "prompt": "Qual sequência revela o sentido de Isaías 6:1–3?",
+    "cue": "Qual sequência revela o sentido de Isaías 6:1–3?",
+    "feedbackCorrect": "Certo: rei cai → Santo permanece → glória na terra.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei humano morre"
+      },
+      {
+        "id": "b",
+        "text": "O Rei santo é visto"
+      },
+      {
+        "id": "c",
+        "text": "A terra é declarada cheia de glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete o clamor: \"___, santo, santo\".",
+    "prompt": "Complete o clamor: \"___, santo, santo\".",
+    "cue": "Complete o clamor: \"___, santo, santo\".",
+    "feedbackCorrect": "Certo: Santo.",
+    "feedbackWrong": {
+      "b": "Pastor é do Salmo 23.",
+      "c": "Pão é de Mateus 6."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___, santo, santo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:1–3",
+    "learningObjective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+    "evidence": [
+      "Isaías 6:1",
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: santidade que separa e revela.",
+    "feedbackWrong": {
+      "b": "O clamor não autoriza irreverência.",
+      "c": "A glória enche a terra."
+    },
+    "passageText": "No ano em que morreu o rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono, e as abas de suas vestes enchiam o templo. Serafins estavam por cima dele. E clamavam uns para os outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-03",
+    "id": "conhecer-a-deus-pro-entrada-deus-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separação santa"
+      },
+      {
+        "id": "b",
+        "text": "Familiaridade irreverente"
+      },
+      {
+        "id": "c",
+        "text": "Glória privada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "toda a terra está repleta da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "true_false",
+    "question": "O Senhor é o meu pastor; nada me faltará.",
+    "prompt": "O Senhor é o meu pastor; nada me faltará.",
+    "cue": "O Senhor é o meu pastor; nada me faltará.",
+    "feedbackCorrect": "Certo: O santo cuida de perto.",
+    "feedbackWrong": {
+      "false": "Salmo 23:1 afirma isso."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:1, toque a palavra que falta em \"meu ___\"?",
+    "prompt": "Em Salmo 23:1, toque a palavra que falta em \"meu ___\"?",
+    "cue": "Em Salmo 23:1, toque a palavra que falta em \"meu ___\"?",
+    "feedbackCorrect": "Exato: pastor.",
+    "feedbackWrong": {
+      "b": "“Senhor” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“pastos” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "pastor"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "pastos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "O Senhor é o meu ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "choice",
+    "question": "No Salmo 23, como o Senhor cuida?",
+    "prompt": "No Salmo 23, como o Senhor cuida?",
+    "cue": "No Salmo 23, como o Senhor cuida?",
+    "feedbackCorrect": "Certo: pastor próximo.",
+    "feedbackWrong": {
+      "b": "O tom é cuidado.",
+      "c": "Ele conduz de perto.",
+      "d": "Aqui a imagem é pastor."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como pastor que faz repousar e conduz às águas"
+      },
+      {
+        "id": "b",
+        "text": "Só como juiz distante"
+      },
+      {
+        "id": "c",
+        "text": "Sem se aproximar"
+      },
+      {
+        "id": "d",
+        "text": "Apenas no templo de Isaías"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "order",
+    "question": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "prompt": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "cue": "Qual a ordem dos fatos no Salmo 23:1–3?",
+    "feedbackCorrect": "Certo: pastor → pastos → águas.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é pastor"
+      },
+      {
+        "id": "b",
+        "text": "Repouso em pastos verdejantes"
+      },
+      {
+        "id": "c",
+        "text": "Águas de descanso e refrigério"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"nada me ___\".",
+    "prompt": "Complete: \"nada me ___\".",
+    "cue": "Complete: \"nada me ___\".",
+    "feedbackCorrect": "Certo: faltará.",
+    "feedbackWrong": {
+      "b": "Uzias é de Isaías.",
+      "c": "Verbo é de João."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "faltará"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "Verbo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nada me ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23:1 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23:1 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o santo também pastoreia.",
+    "feedbackWrong": {
+      "b": "O salmo mostra proximidade.",
+      "c": "Há pastor presente."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-sem-entrada-deus-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidado próximo"
+      },
+      {
+        "id": "b",
+        "text": "Santidade fria"
+      },
+      {
+        "id": "c",
+        "text": "Deus ausente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:1",
+      "text": "O Senhor é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O santo cuida de perto"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "true_false",
+    "question": "O Salmo 23 apresenta um Deus santo que se recusa a cuidar de perto.",
+    "prompt": "O Salmo 23 apresenta um Deus santo que se recusa a cuidar de perto.",
+    "cue": "O Salmo 23 apresenta um Deus santo que se recusa a cuidar de perto.",
+    "feedbackCorrect": "Certo: O santo cuida de perto.",
+    "feedbackWrong": {
+      "true": "Ele pastoreia, faz repousar e refrigera a alma."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:2, toque a palavra que falta em \"pastos ___\"?",
+    "prompt": "Em Salmo 23:2, toque a palavra que falta em \"pastos ___\"?",
+    "cue": "Em Salmo 23:2, toque a palavra que falta em \"pastos ___\"?",
+    "feedbackCorrect": "Exato: verdejantes.",
+    "feedbackWrong": {
+      "b": "“Refrigera” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“repousar” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdejantes"
+      },
+      {
+        "id": "b",
+        "text": "Refrigera"
+      },
+      {
+        "id": "c",
+        "text": "repousar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "pastos ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "choice",
+    "question": "Como o Salmo 23 completa a visão de Isaías 6 nesta trilha?",
+    "prompt": "Como o Salmo 23 completa a visão de Isaías 6 nesta trilha?",
+    "cue": "Como o Salmo 23 completa a visão de Isaías 6 nesta trilha?",
+    "feedbackCorrect": "Certo: santo e próximo.",
+    "feedbackWrong": {
+      "b": "O salmo é cuidado.",
+      "c": "Há pastoreio explícito.",
+      "d": "É o mesmo Senhor."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Deus santo também se aproxima como pastor"
+      },
+      {
+        "id": "b",
+        "text": "A santidade cancela qualquer cuidado"
+      },
+      {
+        "id": "c",
+        "text": "Só há glória, nunca pastoreio"
+      },
+      {
+        "id": "d",
+        "text": "O pastor substitui o Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "prompt": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "cue": "Como se encadeiam os eventos de Salmo 23:1–3?",
+    "feedbackCorrect": "Certo: confissão → repouso → refrigério.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão do pastor"
+      },
+      {
+        "id": "b",
+        "text": "Repouso guiado"
+      },
+      {
+        "id": "c",
+        "text": "Refrigério da alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"águas de ___\".",
+    "prompt": "Complete: \"águas de ___\".",
+    "cue": "Complete: \"águas de ___\".",
+    "feedbackCorrect": "Certo: descanso.",
+    "feedbackWrong": {
+      "b": "Trono é de Isaías 6.",
+      "c": "Nome é de Êxodo 3."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "águas de ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23:1–3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o santo acolhe como pastor.",
+    "feedbackWrong": {
+      "b": "Há proximidade.",
+      "c": "O Senhor é o pastor."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-cam-entrada-deus-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santidade acolhedora"
+      },
+      {
+        "id": "b",
+        "text": "Distância absoluta"
+      },
+      {
+        "id": "c",
+        "text": "Cuidado sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:2",
+      "text": "Ele me faz repousar em pastos verdejantes."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O santo cuida de perto"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "true_false",
+    "question": "Conhecer a Deus une Isaías e o Salmo 23: o Santo também pastoreia de perto.",
+    "prompt": "Conhecer a Deus une Isaías e o Salmo 23: o Santo também pastoreia de perto.",
+    "cue": "Conhecer a Deus une Isaías e o Salmo 23: o Santo também pastoreia de perto.",
+    "feedbackCorrect": "Certo: O santo cuida de perto.",
+    "feedbackWrong": {
+      "false": "Santidade e cuidado não se excluem."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "tap",
+    "question": "Em Salmo 23:3, toque a palavra que falta em \"a ___\"?",
+    "prompt": "Em Salmo 23:3, toque a palavra que falta em \"a ___\"?",
+    "cue": "Em Salmo 23:3, toque a palavra que falta em \"a ___\"?",
+    "feedbackCorrect": "Exato: alma.",
+    "feedbackWrong": {
+      "b": "“nada” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“leva” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "alma"
+      },
+      {
+        "id": "b",
+        "text": "nada"
+      },
+      {
+        "id": "c",
+        "text": "leva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Refrigera-me a ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "choice",
+    "question": "Qual leitura une santidade e pastoreio nesta cena?",
+    "prompt": "Qual leitura une santidade e pastoreio nesta cena?",
+    "cue": "Qual leitura une santidade e pastoreio nesta cena?",
+    "feedbackCorrect": "Certo: reverência e confiança juntas.",
+    "feedbackWrong": {
+      "b": "O salmo mostra cuidado.",
+      "c": "É o Senhor quem pastoreia.",
+      "d": "O cuidado é parte de conhecê-lo."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posso reverenciar o Santo e confiar no Pastor ao mesmo tempo"
+      },
+      {
+        "id": "b",
+        "text": "Se ele é santo, não pode cuidar"
+      },
+      {
+        "id": "c",
+        "text": "Se ele pastoreia, não é santo"
+      },
+      {
+        "id": "d",
+        "text": "O cuidado substitui o conhecimento de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Salmo 23:1–3 nesta trilha?",
+    "prompt": "Qual sequência revela o sentido de Salmo 23:1–3 nesta trilha?",
+    "cue": "Qual sequência revela o sentido de Salmo 23:1–3 nesta trilha?",
+    "feedbackCorrect": "Certo: reconhecer → pastoreio → descanso.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecer o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Receber o pastoreio dele"
+      },
+      {
+        "id": "c",
+        "text": "Descansar sob cuidado santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O ___ é o meu pastor\".",
+    "prompt": "Complete: \"O ___ é o meu pastor\".",
+    "cue": "Complete: \"O ___ é o meu pastor\".",
+    "feedbackCorrect": "Certo: Senhor.",
+    "feedbackWrong": {
+      "b": "Uzias é rei humano.",
+      "c": "Serpente é da queda."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "serpente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "O ___ é o meu pastor"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmo 23:1–3",
+    "learningObjective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+    "evidence": [
+      "Salmo 23:1",
+      "Salmo 23:2"
+    ],
+    "type": "connect",
+    "question": "O que Salmo 23 comunica que se liga a este contexto?",
+    "prompt": "O que Salmo 23 comunica que se liga a este contexto?",
+    "cue": "O que Salmo 23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Santo tem rosto de pastor.",
+    "feedbackWrong": {
+      "b": "Há relação pessoal.",
+      "c": "O pastor é o Senhor."
+    },
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera-me a alma.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-04",
+    "id": "conhecer-a-deus-pro-entrada-deus-04-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proximidade santa"
+      },
+      {
+        "id": "b",
+        "text": "Santidade sem rosto"
+      },
+      {
+        "id": "c",
+        "text": "Pastor sem Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Salmo 23:1–3",
+      "text": "O Senhor é o meu pastor… Refrigera-me a alma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O santo cuida de perto"
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "true_false",
+    "question": "O Verbo se fez carne e habitou entre nós.",
+    "prompt": "O Verbo se fez carne e habitou entre nós.",
+    "cue": "O Verbo se fez carne e habitou entre nós.",
+    "feedbackCorrect": "Certo: Em Jesus, Deus se aproximou.",
+    "feedbackWrong": {
+      "false": "João 1:14 afirma a encarnação."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "tap",
+    "question": "Em João 1:14, toque a palavra que falta em \"se fez ___\"?",
+    "prompt": "Em João 1:14, toque a palavra que falta em \"se fez ___\"?",
+    "cue": "Em João 1:14, toque a palavra que falta em \"se fez ___\"?",
+    "feedbackCorrect": "Exato: carne.",
+    "feedbackWrong": {
+      "b": "“Verbo” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“entre” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "Verbo"
+      },
+      {
+        "id": "c",
+        "text": "entre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "o Verbo se fez ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "choice",
+    "question": "Segundo João 1:1, quem era o Verbo?",
+    "prompt": "Segundo João 1:1, quem era o Verbo?",
+    "cue": "Segundo João 1:1, quem era o Verbo?",
+    "feedbackCorrect": "Certo: o Verbo era Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz que era Deus.",
+      "c": "Ele estava no princípio.",
+      "d": "O Verbo é pessoal."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Apenas uma ideia"
+      },
+      {
+        "id": "c",
+        "text": "Só um profeta posterior"
+      },
+      {
+        "id": "d",
+        "text": "A criação sem pessoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "order",
+    "question": "Qual a ordem das ideias em João 1:1,14?",
+    "prompt": "Qual a ordem das ideias em João 1:1,14?",
+    "cue": "Qual a ordem das ideias em João 1:1,14?",
+    "feedbackCorrect": "Certo: princípio → deidade → encarnação.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "O Verbo era Deus"
+      },
+      {
+        "id": "c",
+        "text": "O Verbo se fez carne e habitou entre nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"cheio de ___ e de verdade\".",
+    "prompt": "Complete: \"cheio de ___ e de verdade\".",
+    "cue": "Complete: \"cheio de ___ e de verdade\".",
+    "feedbackCorrect": "Certo: graça.",
+    "feedbackWrong": {
+      "b": "Penúria é de Filipenses.",
+      "c": "Uzias é de Isaías."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "penúria"
+      },
+      {
+        "id": "c",
+        "text": "Uzias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "cheio de ___ e de verdade"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "connect",
+    "question": "O que João 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:14 comunica que se liga a este contexto?",
+    "cue": "O que João 1:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus se aproximou em Jesus.",
+    "feedbackWrong": {
+      "b": "Ele habitou entre nós.",
+      "c": "Fez-se carne."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-sem-entrada-deus-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus perto em Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Deus só distante"
+      },
+      {
+        "id": "c",
+        "text": "Verbo sem carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Em Jesus, Deus se aproximou"
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "true_false",
+    "question": "João 1 ensina que o Verbo nunca se aproximou da história humana.",
+    "prompt": "João 1 ensina que o Verbo nunca se aproximou da história humana.",
+    "cue": "João 1 ensina que o Verbo nunca se aproximou da história humana.",
+    "feedbackCorrect": "Certo: Em Jesus, Deus se aproximou.",
+    "feedbackWrong": {
+      "true": "Ele se fez carne e habitou entre nós."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "tap",
+    "question": "Em João 1:14, toque a palavra que falta em \"e ___ entre nós\"?",
+    "prompt": "Em João 1:14, toque a palavra que falta em \"e ___ entre nós\"?",
+    "cue": "Em João 1:14, toque a palavra que falta em \"e ___ entre nós\"?",
+    "feedbackCorrect": "Exato: habitou.",
+    "feedbackWrong": {
+      "b": "“verdade” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“estava” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "habitou"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "estava"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e ___ entre nós"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "choice",
+    "question": "Como João 1 liga o início de Gênesis ao conhecimento de Deus?",
+    "prompt": "Como João 1 liga o início de Gênesis ao conhecimento de Deus?",
+    "cue": "Como João 1 liga o início de Gênesis ao conhecimento de Deus?",
+    "feedbackCorrect": "Certo: eco de Gênesis na encarnação.",
+    "feedbackWrong": {
+      "b": "Há continuidade.",
+      "c": "O Verbo é Deus e se encarna.",
+      "d": "Jesus é a revelação clara."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O mesmo \"no princípio\" agora revela o Verbo feito carne"
+      },
+      {
+        "id": "b",
+        "text": "João cancela Gênesis"
+      },
+      {
+        "id": "c",
+        "text": "A criação substitui Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Conhecer a Deus dispensa o Verbo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de João 1:1,14?",
+    "prompt": "Como se encadeiam os eventos de João 1:1,14?",
+    "cue": "Como se encadeiam os eventos de João 1:1,14?",
+    "feedbackCorrect": "Certo: eternidade → deidade → proximidade.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo no princípio com Deus"
+      },
+      {
+        "id": "b",
+        "text": "O Verbo era Deus"
+      },
+      {
+        "id": "c",
+        "text": "O Verbo habita entre nós em carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"vimos a sua ___\".",
+    "prompt": "Complete: \"vimos a sua ___\".",
+    "cue": "Complete: \"vimos a sua ___\".",
+    "feedbackCorrect": "Certo: glória.",
+    "feedbackWrong": {
+      "b": "Ansiedade é de Mateus 6.",
+      "c": "Celeiros também."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "celeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "vimos a sua ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "connect",
+    "question": "O que João 1 comunica que se liga a este contexto?",
+    "prompt": "O que João 1 comunica que se liga a este contexto?",
+    "cue": "O que João 1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: conhecer a Deus em Jesus.",
+    "feedbackWrong": {
+      "b": "Vimos a glória.",
+      "c": "Há habitação entre nós."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-cam-entrada-deus-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revelação em carne"
+      },
+      {
+        "id": "b",
+        "text": "Deus sem rosto"
+      },
+      {
+        "id": "c",
+        "text": "Só lei sem presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "João 1:14",
+      "text": "vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Em Jesus, Deus se aproximou"
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "true_false",
+    "question": "João 1 apresenta Jesus como o modo decisivo de conhecer a Deus: o Verbo eterno veio habitar entre nós.",
+    "prompt": "João 1 apresenta Jesus como o modo decisivo de conhecer a Deus: o Verbo eterno veio habitar entre nós.",
+    "cue": "João 1 apresenta Jesus como o modo decisivo de conhecer a Deus: o Verbo eterno veio habitar entre nós.",
+    "feedbackCorrect": "Certo: Em Jesus, Deus se aproximou.",
+    "feedbackWrong": {
+      "false": "Princípio divino + encarnação = revelação clara."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "tap",
+    "question": "Em João 1:1, toque a palavra que falta em \"era o ___\"?",
+    "prompt": "Em João 1:1, toque a palavra que falta em \"era o ___\"?",
+    "cue": "Em João 1:1, toque a palavra que falta em \"era o ___\"?",
+    "feedbackCorrect": "Exato: Verbo.",
+    "feedbackWrong": {
+      "b": "“carne” aparece no texto, mas não preenche esta lacuna.",
+      "c": "“entre” aparece no texto, mas não preenche esta lacuna."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "entre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "No princípio era o ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "choice",
+    "question": "Qual implicação de João 1:1,14 para quem quer conhecer a Deus?",
+    "prompt": "Qual implicação de João 1:1,14 para quem quer conhecer a Deus?",
+    "cue": "Qual implicação de João 1:1,14 para quem quer conhecer a Deus?",
+    "feedbackCorrect": "Certo: Jesus é a aproximação de Deus.",
+    "feedbackWrong": {
+      "b": "Ele habitou entre nós.",
+      "c": "A carne é o meio da revelação.",
+      "d": "Ele é cheio de ambas."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Olhar para Jesus é encontrar o Deus que se aproximou"
+      },
+      {
+        "id": "b",
+        "text": "Deus permanece só no princípio, sem história"
+      },
+      {
+        "id": "c",
+        "text": "A carne impede qualquer revelação"
+      },
+      {
+        "id": "d",
+        "text": "Graça e verdade se excluem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 1:1,14?",
+    "prompt": "Qual sequência revela o sentido de João 1:1,14?",
+    "cue": "Qual sequência revela o sentido de João 1:1,14?",
+    "feedbackCorrect": "Certo: eterno → Deus → conosco.",
+    "feedbackWrong": {
+      "b": "A ordem do texto é outra.",
+      "c": "Releia a sequência no texto."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo eterno"
+      },
+      {
+        "id": "b",
+        "text": "A identificação com Deus"
+      },
+      {
+        "id": "c",
+        "text": "A habitação entre nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e o Verbo era ___\".",
+    "prompt": "Complete: \"e o Verbo era ___\".",
+    "cue": "Complete: \"e o Verbo era ___\".",
+    "feedbackCorrect": "Certo: Deus.",
+    "feedbackWrong": {
+      "b": "Uzias é rei humano.",
+      "c": "Moisés recebeu o nome; aqui o Verbo é Deus."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Uzias"
+      },
+      {
+        "id": "c",
+        "text": "Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e o Verbo era ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1,14",
+    "learningObjective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+    "evidence": [
+      "João 1:1",
+      "João 1:14"
+    ],
+    "type": "connect",
+    "question": "O que João 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:14 comunica que se liga a este contexto?",
+    "cue": "O que João 1:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o encontro se dá em Jesus.",
+    "feedbackWrong": {
+      "b": "Ele habitou entre nós.",
+      "c": "Fez-se carne."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "trail": "conhecer-a-deus",
+    "section": "entrada-deus-05",
+    "id": "conhecer-a-deus-pro-entrada-deus-05-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Encontro em Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Deus inacessível para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Verbo só abstrato"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "João 1:1,14",
+      "text": "o Verbo era Deus… o Verbo se fez carne."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Em Jesus, Deus se aproximou"
+    }
+  }
+]

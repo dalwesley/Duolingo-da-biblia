@@ -797,6 +797,24 @@ class SubscriptionService extends ChangeNotifier {
   bool get plusLifetime => isPeregrinoPlus && plusExpiresAt == null;
 
   /// O pacote é o anual Fundador (mesmo tipo anual, outro produto).
+  /// Tipo do plano pelo período do produto quando o pacote é personalizado.
+  /// Uma oferta do RevenueCat só aceita um pacote Annual, então o Pioneiro
+  /// entra como pacote personalizado (`pioneiro`) — sem isto ele perdia o
+  /// "/ano", a economia e o aviso de renovação no paywall.
+  static PackageType planType(Package p) {
+    final type = p.packageType;
+    if (type != PackageType.custom && type != PackageType.unknown) return type;
+    return switch (p.storeProduct.subscriptionPeriod) {
+      'P1Y' || 'P12M' => PackageType.annual,
+      'P6M' => PackageType.sixMonth,
+      'P3M' => PackageType.threeMonth,
+      'P2M' => PackageType.twoMonth,
+      'P1M' || 'P4W' => PackageType.monthly,
+      'P1W' || 'P7D' => PackageType.weekly,
+      _ => type,
+    };
+  }
+
   static bool isFounderPackage(Package p) =>
       PlusAccess.isPioneerProduct(p.storeProduct.identifier);
 
@@ -820,8 +838,8 @@ class SubscriptionService extends ChangeNotifier {
         .where(
           (p) => PlusAccess.baseProductId(p.storeProduct.identifier) == base,
         )
-        .firstOrNull
-        ?.packageType;
+        .map(planType)
+        .firstOrNull;
   }
 
   /// Abre a tela da loja para mudar de plano ou cancelar.
@@ -842,7 +860,7 @@ class SubscriptionService extends ChangeNotifier {
   /// também, mas não entra aqui: quem usa este getter quer o plano com
   /// teste grátis (folha de oferta, aviso de promoção).
   Package? get annualPackage => availablePackages
-      .where((p) => p.packageType == PackageType.annual && !isFounderPackage(p))
+      .where((p) => planType(p) == PackageType.annual && !isFounderPackage(p))
       .firstOrNull;
 
   /// Dias do teste grátis do pacote, se houver.
@@ -863,7 +881,7 @@ class SubscriptionService extends ChangeNotifier {
     final product = package.storeProduct;
     final price = product.priceString;
     final l10n = L10n.current;
-    final label = switch (package.packageType) {
+    final label = switch (planType(package)) {
       PackageType.monthly => l10n.paywallPriceMonthly(price),
       PackageType.annual => l10n.paywallPriceAnnual(price),
       PackageType.lifetime => l10n.paywallPriceLifetime(price),
@@ -894,7 +912,7 @@ class SubscriptionService extends ChangeNotifier {
   /// Preenche o plano simulado como a loja faria.
   void _debugGrantPlus(Package? package) {
     isPeregrinoPlus = true;
-    final type = package?.packageType ?? PackageType.annual;
+    final type = package == null ? PackageType.annual : planType(package);
     final trial = package == null
         ? null
         : SubscriptionService.trialDays(package);
@@ -1061,10 +1079,12 @@ class SubscriptionService extends ChangeNotifier {
     double price,
     String priceString, {
     String offering = 'default',
+    String? packageId,
+    String? period,
     String? perMonth,
     IntroductoryPrice? intro,
   }) => Package(
-    id,
+    packageId ?? id,
     type,
     StoreProduct(
       id,
@@ -1075,6 +1095,7 @@ class SubscriptionService extends ChangeNotifier {
       'BRL',
       introductoryPrice: intro,
       pricePerMonthString: perMonth,
+      subscriptionPeriod: period,
     ),
     PresentedOfferingContext(offering, null, null),
   );
@@ -1082,10 +1103,20 @@ class SubscriptionService extends ChangeNotifier {
   // Espelha a loja real decidida em out/2026 (ver MONETIZATION.md):
   // mensal 19,90 · Pioneiro 89,90 e anual 119,90, os dois com 14 dias.
   static List<Package> _debugPlans() => [
-    _debugPackage('plus_monthly', PackageType.monthly, 19.90, r'R$ 19,90'),
+    _debugPackage(
+      'plus_monthly',
+      PackageType.monthly,
+      19.90,
+      r'R$ 19,90',
+      period: 'P1M',
+    ),
+    // Como no RevenueCat: a oferta só aceita um Annual, o Pioneiro é o
+    // pacote personalizado `pioneiro` e o período vem do produto.
     _debugPackage(
       founderProductId,
-      PackageType.annual,
+      PackageType.custom,
+      packageId: 'pioneiro',
+      period: 'P1Y',
       89.90,
       r'R$ 89,90',
       perMonth: r'R$ 7,49',
@@ -1103,6 +1134,7 @@ class SubscriptionService extends ChangeNotifier {
       PackageType.annual,
       119.90,
       r'R$ 119,90',
+      period: 'P1Y',
       perMonth: r'R$ 9,99',
       intro: const IntroductoryPrice(
         0,

@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/trail.dart';
+import 'package:trilha_app/models/trail_catalog.dart';
 import 'package:trilha_app/utils/catalog_access.dart';
 import 'package:trilha_app/utils/trail_progress.dart';
 
@@ -279,13 +280,6 @@ void main() {
   }
 
   test('same journey opens one trail at a time', () {
-    final anxiety = contentTrail(
-      slug: 'ansiedade',
-      mission: 'a1',
-      order: 0,
-      realmId: 'vida-crista',
-      categoryId: 'discipulado',
-    );
     final restart = contentTrail(
       slug: 'recomeco',
       mission: 'r1',
@@ -300,15 +294,45 @@ void main() {
       realmId: 'vida-crista',
       categoryId: 'discipulado',
     );
-    final path = [anxiety, restart, sermon];
+    final path = [restart, sermon];
 
-    expect(TrailProgress.isTrailUnlocked(anxiety, path, []), isTrue);
-    expect(TrailProgress.isTrailUnlocked(restart, path, []), isFalse);
+    expect(TrailProgress.isTrailUnlocked(restart, path, []), isTrue);
     expect(TrailProgress.isTrailUnlocked(sermon, path, []), isFalse);
+    expect(TrailProgress.isTrailUnlocked(sermon, path, ['r1']), isTrue);
+  });
 
-    expect(TrailProgress.isTrailUnlocked(restart, path, ['a1']), isTrue);
-    expect(TrailProgress.isTrailUnlocked(sermon, path, ['a1']), isFalse);
-    expect(TrailProgress.isTrailUnlocked(sermon, path, ['a1', 'r1']), isTrue);
+  test('onboarding motive trails open on their own Temas cards', () {
+    final peace = contentTrail(
+      slug: 'ansiedade',
+      mission: 'a1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'paz-no-dia',
+    );
+    final know = contentTrail(
+      slug: 'conhecer-a-deus',
+      mission: 'k1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'conhecer-a-deus',
+    );
+    final bible = contentTrail(
+      slug: 'entender-a-biblia',
+      mission: 'b1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'entender-a-biblia',
+    );
+    final all = [peace, know, bible];
+    expect(TrailProgress.isTrailUnlocked(peace, all, []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(know, all, []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(bible, all, []), isTrue);
+    expect(peace.journey, TrailJourney.pazNoDia);
+    expect(know.journey, TrailJourney.conhecerADeus);
+    expect(bible.journey, TrailJourney.entenderABiblia);
+    expect(TrailJourney.pazNoDia.requiresPlus, isFalse);
+    expect(TrailJourney.conhecerADeus.requiresPlus, isFalse);
+    expect(TrailJourney.entenderABiblia.requiresPlus, isFalse);
   });
 
   test('a trail already started stays open behind an unfinished one', () {
@@ -317,7 +341,7 @@ void main() {
       mission: 'a1',
       order: 0,
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'paz-no-dia',
     );
     final sermon = contentTrail(
       slug: 'sermao-do-monte',
@@ -356,30 +380,24 @@ void main() {
     expect(TrailProgress.isTrailUnlocked(matthew, path, ['g1']), isTrue);
   });
 
-  test(
-    'uma trilha Peregrino+ não espera o pré-requisito de outra área',
-    () {
-      final psalms = contentTrail(
-        slug: 'salmos',
-        mission: 'p1',
-        order: 21,
-        categoryId: 'poeticos',
-      );
-      final prayer = contentTrail(
-        slug: 'oracao',
-        mission: 'o1',
-        order: 210,
-        unlockAfter: 'salmos',
-        realmId: 'vida-crista',
-        categoryId: 'oracao',
-      );
-      // Oração é tema (Plus): quem assina não precisa terminar Salmos.
-      expect(
-        TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], []),
-        isTrue,
-      );
-    },
-  );
+  test('uma trilha Peregrino+ não espera o pré-requisito de outra área', () {
+    final psalms = contentTrail(
+      slug: 'salmos',
+      mission: 'p1',
+      order: 21,
+      categoryId: 'poeticos',
+    );
+    final prayer = contentTrail(
+      slug: 'oracao',
+      mission: 'o1',
+      order: 210,
+      unlockAfter: 'salmos',
+      realmId: 'vida-crista',
+      categoryId: 'oracao',
+    );
+    // Oração é tema (Plus): quem assina não precisa terminar Salmos.
+    expect(TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], []), isTrue);
+  });
 
   test('trail unlock requires prerequisite when catalog gated', () {
     final trails = [
@@ -469,14 +487,14 @@ void main() {
       mission: 'a1',
       order: 0,
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'paz-no-dia',
     );
     final knowGod = contentTrail(
       slug: 'conhecer-a-deus',
       mission: 'k1',
       order: 2,
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'conhecer-a-deus',
     );
     final sermon = contentTrail(
       slug: 'sermao-do-monte',
@@ -509,14 +527,14 @@ void main() {
       mission: 'a1',
       order: 0,
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'paz-no-dia',
     );
     final knowGod = contentTrail(
       slug: 'conhecer-a-deus',
       mission: 'entrada-deus-05',
       order: 2,
       realmId: 'vida-crista',
-      categoryId: 'discipulado',
+      categoryId: 'conhecer-a-deus',
     );
     final gospels = contentTrail(
       slug: 'evangelhos',
@@ -589,11 +607,7 @@ void main() {
     final started = TrailProgress.startedTrails(
       all,
       ['g1', 'x1', 'p1'],
-      completedOn: {
-        'g1': '2026-10-20',
-        'x1': '2026-10-01',
-        'p1': '2026-10-21',
-      },
+      completedOn: {'g1': '2026-10-20', 'x1': '2026-10-01', 'p1': '2026-10-21'},
     );
     expect(started.map((t) => t.slug), ['exodo', 'salmos', 'genesis-1-11']);
 

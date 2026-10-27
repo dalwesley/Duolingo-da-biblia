@@ -65,6 +65,15 @@ void main() {
       sub.annualPackage?.storeProduct.identifier,
       SubscriptionService.annualProductId,
     );
+    // No RevenueCat o Pioneiro é pacote personalizado; o período do
+    // produto faz dele um anual no paywall ("/ano", economia, renovação).
+    expect(founder.packageType, PackageType.custom);
+    expect(SubscriptionService.planType(founder), PackageType.annual);
+    expect(SubscriptionService.packageLabel(founder), contains('89,90'));
+    expect(
+      SubscriptionService.packageLabel(founder),
+      isNot(startsWith(founder.storeProduct.title)),
+    );
     // No lançamento o Pioneiro também tem os 14 dias de teste.
     expect(sub.trialDaysFor(founder), 14);
     expect(sub.trialDaysFor(sub.annualPackage!), 14);

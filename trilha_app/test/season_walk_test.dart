@@ -117,7 +117,7 @@ void main() {
   });
 
   group('Entry trails and seals', () {
-    test('pain and intent overlays borrow every scene from a bank', () {
+    test('entry overlays keep continuesTo; only Recomeço borrows banks', () {
       final bySlug = {for (final t in EntryTrails.overlay) t.slug: t};
       expect(bySlug.keys.toSet(), EntryTrails.slugs);
       expect(bySlug['ansiedade']!.missionSlugs, hasLength(5));
@@ -126,25 +126,28 @@ void main() {
       expect(bySlug['entender-a-biblia']!.missionSlugs, hasLength(7));
       for (final t in EntryTrails.overlay) {
         expect(EntryTrails.continuesTo[t.missionSlugs.last], isNotNull);
-        for (final m in t.modules.expand((mod) => mod.missions)) {
-          expect(m.bankSection, isNotEmpty);
-          expect(m.bankTrailSlug, isNotEmpty);
+      }
+      // Motivos: banco próprio (section = slug da cena).
+      for (final slug in ['ansiedade', 'conhecer-a-deus', 'entender-a-biblia']) {
+        for (final m in bySlug[slug]!.modules.expand((mod) => mod.missions)) {
+          expect(m.bankSection, isNull);
+          expect(m.bankTrailSlug, isNull);
+          expect(m.resolvedBankSection, m.slug);
         }
+      }
+      // Recomeço ainda empresta o cânon.
+      for (final m in bySlug['recomeco']!.modules.expand((mod) => mod.missions)) {
+        expect(m.bankSection, isNotEmpty);
+        expect(m.bankTrailSlug, isNotEmpty);
       }
     });
 
-    test('scenes on the same bank complete together', () {
-      expect(EntryTrails.linkedScenes('dor-ansia-01'), {
-        'sm-21-tesouros-e-ansiedade',
-      });
-      expect(EntryTrails.linkedScenes('gen-01-criador'), {
-        'entrada-deus-01',
-        'entrada-biblia-01',
-      });
-      expect(EntryTrails.linkedScenes('entrada-deus-04'), {
-        'salmos-louvor-02-o-senhor-e-o-meu-pas',
-        'dor-ansia-03',
-      });
+    test('only Recomeço scenes still share completion with canon banks', () {
+      expect(EntryTrails.linkedScenes('dor-ansia-01'), isEmpty);
+      expect(EntryTrails.linkedScenes('entrada-deus-01'), isEmpty);
+      expect(EntryTrails.linkedScenes('entrada-biblia-01'), isEmpty);
+      expect(EntryTrails.linkedScenes('dor-recome-01'), {'gen-06-queda'});
+      expect(EntryTrails.linkedScenes('gen-06-queda'), {'dor-recome-01'});
       expect(EntryTrails.linkedScenes('gen-02-dias'), isEmpty);
     });
 
@@ -188,7 +191,7 @@ void main() {
       expect(EntryTrails.continuesTo['dor-recome-05'], 'genesis-1-11');
     });
 
-    test('anxiety contentment hook matches the borrowed bank', () {
+    test('anxiety contentment scene keeps its own section, not Filipenses bank', () {
       final m = EntryTrails.overlay
           .firstWhere((t) => t.slug == 'ansiedade')
           .modules
@@ -196,7 +199,8 @@ void main() {
           .missions
           .firstWhere((x) => x.slug == 'dor-ansia-02');
       expect(m.hookRef, 'Filipenses 4:12–13');
-      expect(m.bankSection, 'fp-03-contentamento');
+      expect(m.bankSection, isNull);
+      expect(m.resolvedBankSection, 'dor-ansia-02');
     });
   });
 

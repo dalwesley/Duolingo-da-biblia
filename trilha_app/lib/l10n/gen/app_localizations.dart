@@ -964,6 +964,18 @@ abstract class AppLocalizations {
   /// **'Apocalipse ou Revelação'**
   String get categoryApocalipseTitle;
 
+  /// No description provided for @categoryConhecerADeusBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus vem antes de tudo: o Criador, o nome EU SOU, a santidade, o pastor e o Verbo feito carne. Cinco cenas para se aproximar dele.'**
+  String get categoryConhecerADeusBlurb;
+
+  /// No description provided for @categoryConhecerADeusTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer a Deus'**
+  String get categoryConhecerADeusTitle;
+
   /// No description provided for @categoryCristologiaBlurb.
   ///
   /// In pt, this message translates to:
@@ -979,7 +991,7 @@ abstract class AppLocalizations {
   /// No description provided for @categoryDiscipuladoBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e as horas difíceis, como ansiedade e recomeço. Fé que vira caminho.'**
+  /// **'Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e o recomeço. Fé que vira caminho.'**
   String get categoryDiscipuladoBlurb;
 
   /// No description provided for @categoryDiscipuladoTitle.
@@ -987,6 +999,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Discipulado'**
   String get categoryDiscipuladoTitle;
+
+  /// No description provided for @categoryEntenderABibliaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um panorama da história bíblica: criação, queda, promessa, libertação, o Servo, a ressurreição e a nova criação — sete cenas do arco inteiro.'**
+  String get categoryEntenderABibliaBlurb;
+
+  /// No description provided for @categoryEntenderABibliaTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender a Bíblia'**
+  String get categoryEntenderABibliaTitle;
 
   /// No description provided for @categoryEpistolasBlurb.
   ///
@@ -1119,6 +1143,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Parábolas e milagres'**
   String get categoryParabolasMilagresTitle;
+
+  /// No description provided for @categoryPazNoDiaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um respiro no meio do dia: lance a ansiedade no Pai e siga com confiança. Cinco cenas curtas para o coração inquieto.'**
+  String get categoryPazNoDiaBlurb;
+
+  /// No description provided for @categoryPazNoDiaTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Paz no dia'**
+  String get categoryPazNoDiaTitle;
 
   /// No description provided for @categoryPentateucoBlurb.
   ///
@@ -1825,7 +1861,7 @@ abstract class AppLocalizations {
   /// No description provided for @companionDaysWithoutStudy.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia pra trás na caminhada} other{{count} dias pra trás na caminhada}}'**
+  /// **'{count, plural, =1{1 dia atrás na jornada} other{{count} dias atrás na jornada}}'**
   String companionDaysWithoutStudy(int count);
 
   /// No description provided for @companionDelayDustyHeadline.
@@ -1849,7 +1885,7 @@ abstract class AppLocalizations {
   /// No description provided for @companionDelayFreshInsight.
   ///
   /// In pt, this message translates to:
-  /// **'Está ficando para trás na nossa caminhada'**
+  /// **'Está ficando para trás na nossa companhia'**
   String get companionDelayFreshInsight;
 
   /// No description provided for @companionDelayLostHeadline.
@@ -1861,7 +1897,7 @@ abstract class AppLocalizations {
   /// No description provided for @companionDelayLostInsight.
   ///
   /// In pt, this message translates to:
-  /// **'Mas dá para retomar nossa caminhada'**
+  /// **'Mas dá para continuar juntos'**
   String get companionDelayLostInsight;
 
   /// No description provided for @companionErrorAlreadyHave.
@@ -1885,7 +1921,7 @@ abstract class AppLocalizations {
   /// No description provided for @companionErrorLoad.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para atualizar sua companhia. Confira a internet.'**
+  /// **'Não foi possível atualizar sua companhia. Confira a internet.'**
   String get companionErrorLoad;
 
   /// No description provided for @companionErrorSignInCreate.
@@ -2071,7 +2107,7 @@ abstract class AppLocalizations {
   /// No description provided for @companionSheetPromptBodyDay2.
   ///
   /// In pt, this message translates to:
-  /// **'Dois dias seguidos. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.'**
+  /// **'Dois dias de sequência. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.'**
   String companionSheetPromptBodyDay2(int steps);
 
   /// No description provided for @companionSheetPromptBodyTomorrow.
@@ -2683,7 +2719,7 @@ abstract class AppLocalizations {
   /// No description provided for @deleteAccountFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para excluir a conta. Tente de novo.'**
+  /// **'Não foi possível excluir a conta. Tente de novo.'**
   String get deleteAccountFailed;
 
   /// No description provided for @deleteAccountSubscriptionNote.
@@ -2707,7 +2743,7 @@ abstract class AppLocalizations {
   /// No description provided for @dustAwayManyFreeze.
   ///
   /// In pt, this message translates to:
-  /// **'{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — retome a caminhada.'**
+  /// **'{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — continue a jornada.'**
   String dustAwayManyFreeze(String name, int daysAway);
 
   /// No description provided for @dustAwayManyNoFreeze.
@@ -2719,7 +2755,7 @@ abstract class AppLocalizations {
   /// No description provided for @dustAwayNoStreak.
   ///
   /// In pt, this message translates to:
-  /// **'{name}, a trilha espera. Uma cena basta para retomar o caminho.'**
+  /// **'{name}, a trilha espera. Uma cena basta para continuar.'**
   String dustAwayNoStreak(String name);
 
   /// No description provided for @dustAwayStreak.
@@ -2773,13 +2809,13 @@ abstract class AppLocalizations {
   /// No description provided for @dustEveningFreeze2.
   ///
   /// In pt, this message translates to:
-  /// **'Últimas {countdown}. Continue a caminhada — o gelo ainda cobre 1 dia.'**
+  /// **'Últimas {countdown}. Continue a jornada — o gelo ainda cobre 1 dia.'**
   String dustEveningFreeze2(String countdown);
 
   /// No description provided for @dustEveningNoFreeze2.
   ///
   /// In pt, this message translates to:
-  /// **'Noite fechando. Faltam {countdown} — continue a caminhada agora.'**
+  /// **'Noite fechando. Faltam {countdown} — continue a jornada agora.'**
   String dustEveningNoFreeze2(String countdown);
 
   /// No description provided for @dustFewHours.
@@ -2833,7 +2869,7 @@ abstract class AppLocalizations {
   /// No description provided for @dustRiskBodyFreeze3.
   ///
   /// In pt, this message translates to:
-  /// **'Faltam {countdown}. Continue a caminhada — o gelo cobre 1 dia.'**
+  /// **'Faltam {countdown}. Continue a jornada — o gelo cobre 1 dia.'**
   String dustRiskBodyFreeze3(String countdown);
 
   /// No description provided for @dustRiskBodyNoFreeze1.
@@ -2905,7 +2941,7 @@ abstract class AppLocalizations {
   /// No description provided for @dustUiDetail2.
   ///
   /// In pt, this message translates to:
-  /// **'Continue a caminhada · uma cena basta'**
+  /// **'Continue a jornada · uma cena basta'**
   String get dustUiDetail2;
 
   /// No description provided for @dustUiDetail3.
@@ -5209,7 +5245,7 @@ abstract class AppLocalizations {
   /// No description provided for @intentHabitBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'Um passo por dia: a sequência nasce de voltar amanhã.'**
+  /// **'Uma cena por dia: a sequência nasce de voltar amanhã.'**
   String get intentHabitBlurb;
 
   /// No description provided for @intentHabitSkill1.
@@ -6223,7 +6259,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosRoomHintInvite.
   ///
   /// In pt, this message translates to:
-  /// **'Chame quem estuda com você: célula, família, amigos.'**
+  /// **'Chame quem estuda com você: célula, família, companheiros.'**
   String get juntosRoomHintInvite;
 
   /// No description provided for @juntosRoomHintStudyToday.
@@ -6528,7 +6564,7 @@ abstract class AppLocalizations {
   /// No description provided for @languageCaptionDevice.
   ///
   /// In pt, this message translates to:
-  /// **'Segue o idioma do aparelho.'**
+  /// **'Usa o idioma do aparelho.'**
   String get languageCaptionDevice;
 
   /// No description provided for @languageCaptionEn.
@@ -7146,7 +7182,7 @@ abstract class AppLocalizations {
   /// No description provided for @mascotBossHigh.
   ///
   /// In pt, this message translates to:
-  /// **'O desafio final ficou para trás. Siga o mapa.'**
+  /// **'A travessia ficou para trás. Siga o mapa.'**
   String get mascotBossHigh;
 
   /// No description provided for @mascotBossLow.
@@ -7308,7 +7344,7 @@ abstract class AppLocalizations {
   /// No description provided for @medalAdventLivedTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Temporada vivida'**
+  /// **'Estação vivida'**
   String get medalAdventLivedTitle;
 
   /// No description provided for @medalAdventSubtitle.
@@ -7638,7 +7674,7 @@ abstract class AppLocalizations {
   /// No description provided for @medalPerfectBossHint.
   ///
   /// In pt, this message translates to:
-  /// **'Venceu um desafio final com 100% de acertos'**
+  /// **'Venceu uma travessia com 100% de acertos'**
   String get medalPerfectBossHint;
 
   /// No description provided for @medalPerfectBossTitle.
@@ -8442,13 +8478,13 @@ abstract class AppLocalizations {
   /// No description provided for @moderationBlockFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para bloquear. Tente de novo.'**
+  /// **'Não foi possível bloquear. Tente de novo.'**
   String get moderationBlockFailed;
 
   /// No description provided for @moderationBlockHint.
   ///
   /// In pt, this message translates to:
-  /// **'{name} some dos rankings para você e não consegue mais te convidar, desafiar ou reconhecer.'**
+  /// **'{name} some dos rankings para você e não consegue mais te chamar, desafiar ou reconhecer.'**
   String moderationBlockHint(String name);
 
   /// No description provided for @moderationBlocked.
@@ -8514,7 +8550,7 @@ abstract class AppLocalizations {
   /// No description provided for @moderationReportFailed.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para enviar. Tente de novo.'**
+  /// **'Não foi possível enviar. Tente de novo.'**
   String get moderationReportFailed;
 
   /// No description provided for @moderationReportHint.
@@ -9384,13 +9420,13 @@ abstract class AppLocalizations {
   /// No description provided for @notifMemoryBody.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}'**
+  /// **'{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar firma o que você leu.}}'**
   String notifMemoryBody(int count);
 
   /// No description provided for @notifMistakesBody.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.} other{Tem {count} erros para reforçar. Prática rápida, mente firme.}}'**
+  /// **'{count, plural, =1{Tem 1 erro para reforçar. Um reforço curto firma o que você viu.} other{Tem {count} erros para reforçar. Um reforço curto firma o que você viu.}}'**
   String notifMistakesBody(int count);
 
   /// No description provided for @notifPracticeTitle.
@@ -9402,7 +9438,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifQuestsLeftBody.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}'**
+  /// **'{count, plural, =1{Sobrou 1 tarefa. Mais uma e o dia fecha.} other{Ainda faltam {count} tarefas do dia.}}'**
   String notifQuestsLeftBody(int count);
 
   /// No description provided for @notifReadingPlanBody.
@@ -9426,7 +9462,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifResumeTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Hora de retomar'**
+  /// **'Hora de continuar'**
   String get notifResumeTitle;
 
   /// No description provided for @notifReturningBody.
@@ -10068,7 +10104,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallHeadline.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhe com mais constância'**
+  /// **'Mantenha seu ritmo'**
   String get paywallHeadline;
 
   /// No description provided for @paywallLaunchFreeBody.
@@ -10134,7 +10170,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkRecognitionBody.
   ///
   /// In pt, this message translates to:
-  /// **'Veja quem reconheceu a sua caminhada e as suas conquistas.'**
+  /// **'Veja quem reconheceu a sua jornada e as suas medalhas.'**
   String get paywallPerkRecognitionBody;
 
   /// No description provided for @paywallPerkRecognitionTitle.
@@ -10158,7 +10194,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhadas das estações do ano, como o Advento: um passo por dia e a revisão de cada semana.'**
+  /// **'Trilhas das estações do ano, como o Advento: uma cena por dia e a revisão de cada semana.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
@@ -11058,7 +11094,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusEndedHomeBody.
   ///
   /// In pt, this message translates to:
-  /// **'Suas revisões, planos guiados e a Caminhada estão esperando. A Bíblia e as cenas continuam grátis, como sempre.'**
+  /// **'Suas revisões, planos guiados e as trilhas da estação estão esperando. A Bíblia e as cenas continuam grátis, como sempre.'**
   String get plusEndedHomeBody;
 
   /// No description provided for @plusEndedHomeTitle.
@@ -11130,13 +11166,13 @@ abstract class AppLocalizations {
   /// No description provided for @plusNoticeFreeSocial.
   ///
   /// In pt, this message translates to:
-  /// **'Liga, Caravana e companhia'**
+  /// **'Caravana e companhia'**
   String get plusNoticeFreeSocial;
 
   /// No description provided for @plusNoticeFreeSocialCaravan.
   ///
   /// In pt, this message translates to:
-  /// **'Liga e Caravana'**
+  /// **'Caravana'**
   String get plusNoticeFreeSocialCaravan;
 
   /// No description provided for @plusNoticeFreeStreak.
@@ -11178,7 +11214,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusOfferScenesTitle.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}'**
+  /// **'{count, plural, =1{1 cena concluída} other{{count} cenas concluídas}}'**
   String plusOfferScenesTitle(int count);
 
   /// No description provided for @plusOfferTryFree.
@@ -11190,13 +11226,13 @@ abstract class AppLocalizations {
   /// No description provided for @plusOfferWinbackBody.
   ///
   /// In pt, this message translates to:
-  /// **'Seu Peregrino+ acabou, mas suas revisões, planos e a Caminhada continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.'**
+  /// **'Seu Peregrino+ acabou, mas suas revisões, planos e as trilhas da estação continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.'**
   String get plusOfferWinbackBody;
 
   /// No description provided for @plusOfferWinbackTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sua caminhada Plus sente sua falta'**
+  /// **'Seu Peregrino+ sente sua falta'**
   String get plusOfferWinbackTitle;
 
   /// No description provided for @plusPerksHeader.
@@ -11418,7 +11454,7 @@ abstract class AppLocalizations {
   /// No description provided for @profilePlusTeaserTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sua caminhada no Peregrino+'**
+  /// **'Seu Peregrino+'**
   String get profilePlusTeaserTitle;
 
   /// No description provided for @profilePrivacyHiddenSemantics.
@@ -12444,7 +12480,7 @@ abstract class AppLocalizations {
   /// No description provided for @roomErrorLoad.
   ///
   /// In pt, this message translates to:
-  /// **'Não deu para abrir seu grupo. Confira a internet.'**
+  /// **'Não foi possível abrir seu grupo. Confira a internet.'**
   String get roomErrorLoad;
 
   /// No description provided for @roomErrorLostGroup.
@@ -13128,7 +13164,7 @@ abstract class AppLocalizations {
   /// No description provided for @setPieceStreakLine.
   ///
   /// In pt, this message translates to:
-  /// **'{count} dias seguidos no caminho.'**
+  /// **'{count} dias de sequência no caminho.'**
   String setPieceStreakLine(int count);
 
   /// No description provided for @setPieceStreakTitle.

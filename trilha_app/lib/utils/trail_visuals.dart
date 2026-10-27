@@ -51,6 +51,9 @@ class TrailVisuals {
         'promessa-cumprimento' => CinematicGlyph.link,
         'temas-biblicos' => CinematicGlyph.tree,
         'parabolas-milagres' => CinematicGlyph.lamp,
+        'paz-no-dia' => CinematicGlyph.dove,
+        'conhecer-a-deus' => CinematicGlyph.heart,
+        'entender-a-biblia' => CinematicGlyph.book,
         'pentateuco' => CinematicGlyph.book,
         'historicos-at' => CinematicGlyph.shield,
         'poeticos' => CinematicGlyph.dove,
@@ -108,6 +111,9 @@ class TrailVisuals {
     'hebraico': CinematicGlyph.scroll,
     'grego': CinematicGlyph.scroll,
     'romanos': CinematicGlyph.scales,
+    'ansiedade': CinematicGlyph.dove,
+    'conhecer-a-deus': CinematicGlyph.heart,
+    'entender-a-biblia': CinematicGlyph.book,
   };
 
   /// Trilhas conhecidas sem o [Trail] em mãos (Home, onboarding).

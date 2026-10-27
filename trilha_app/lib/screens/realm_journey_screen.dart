@@ -343,13 +343,9 @@ void openJourneyItem(BuildContext context, JourneyPathItem item) {
             ? l10n.journeyLockedFinish(item.lockedBy!)
             : l10n.journeyLockedHint)
       : l10n.journeySoonHint;
-  final missions = [
-    for (final module in trail.modules) ...module.missions,
-  ];
+  final missions = [for (final module in trail.modules) ...module.missions];
   final sceneCount = missions.length;
-  final chips = <String>[
-    if (sceneCount > 0) l10n.commonScenes(sceneCount),
-  ];
+  final chips = <String>[if (sceneCount > 0) l10n.commonScenes(sceneCount)];
   // Roteiro: títulos das cenas (ou módulos, se forem muitos).
   final outline = sceneCount <= 8
       ? [
