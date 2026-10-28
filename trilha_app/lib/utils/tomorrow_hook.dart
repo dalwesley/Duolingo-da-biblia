@@ -329,15 +329,28 @@ class TomorrowHook {
       );
     }
 
-    final following = trails
+    // A seguinte no caminho, só se já abre (e não pede o Plus logo de
+    // cara). O `unlockAfter` apontava para trilha ainda fechada (Evangelhos
+    // → Salmos, que espera Jó).
+    Trail? successor = TrailProgress.successorsOf(active, trails)
         .where(
           (t) =>
               !t.comingSoon &&
               t.missionSlugs.isNotEmpty &&
-              t.unlockAfter == active.slug,
+              !TrailProgress.isTrailCompleted(
+                t,
+                completed,
+                clearedTrailModes: clearedTrailModes,
+              ) &&
+              TrailProgress.isTrailUnlocked(
+                t,
+                trails,
+                completed,
+                clearedTrailModes: clearedTrailModes,
+              ) &&
+              (plusOpen || !TrailProgress.nextSceneNeedsPlus(t, completed)),
         )
-        .toList();
-    Trail? successor = following.isEmpty ? null : following.first;
+        .firstOrNull;
     successor ??= TrailProgress.findActiveTrail(
       trails.where((t) => t.slug != active.slug).toList(),
       completed,

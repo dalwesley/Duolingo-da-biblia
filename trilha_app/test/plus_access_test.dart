@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/plus_access.dart';
 
 void main() {
@@ -114,5 +115,29 @@ void main() {
         isFalse,
       );
     });
+  });
+
+  test('trilha que espera outra paga vira porta do Plus', () {
+    Trail make(String slug, String realm, String category) => Trail(
+      slug: slug,
+      title: slug,
+      description: '',
+      icon: '',
+      order: 1,
+      comingSoon: false,
+      color: '#000000',
+      realmId: realm,
+      categoryId: category,
+      modules: const [],
+    );
+    final prayer = make('oracao', 'vida-crista', 'oracao');
+    final fasting = make('jejum', 'vida-crista', 'oracao');
+    final genesis = make('genesis-1-11', 'antigo-testamento', 'pentateuco');
+    final exodus = make('exodo', 'antigo-testamento', 'pentateuco');
+
+    expect(PlusAccess.waitsOnPlus(fasting, prayer), isTrue);
+    // Bíblia grátis: o livro anterior termina sem Plus.
+    expect(PlusAccess.waitsOnPlus(exodus, genesis), isFalse);
+    expect(PlusAccess.waitsOnPlus(fasting, null), isFalse);
   });
 }

@@ -1989,117 +1989,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get entryMissionDorAnsia05Title => 'Living hope';
 
   @override
-  String get entryMissionDorRecome01CentralInsight =>
-      'God still asks where you are';
-
-  @override
-  String get entryMissionDorRecome01HookNote =>
-      'The first move after the fall is God seeking — not the human hiding successfully.';
-
-  @override
-  String get entryMissionDorRecome01Intro =>
-      'Distrust breaks communion — and still God asks.';
-
-  @override
-  String get entryMissionDorRecome01Objective =>
-      'See the fall as a break, not the end of the conversation.';
-
-  @override
-  String get entryMissionDorRecome01Title => 'The fall';
-
-  @override
-  String get entryMissionDorRecome02CentralInsight =>
-      'There is a seed after the door';
-
-  @override
-  String get entryMissionDorRecome02EchoQuestion =>
-      'He asked. And after the answer, did the story end?';
-
-  @override
-  String get entryMissionDorRecome02HookNote =>
-      'In the same chapter as the expulsion, God speaks of a seed. Judgment does not cancel the story.';
-
-  @override
-  String get entryMissionDorRecome02Intro =>
-      'Sin has a cost. The promise does not vanish.';
-
-  @override
-  String get entryMissionDorRecome02Objective =>
-      'Read consequence and promise in the same text.';
-
-  @override
-  String get entryMissionDorRecome02Title => 'Consequences';
-
-  @override
-  String get entryMissionDorRecome03CentralInsight =>
-      'A fresh start is covenant, not erasing';
-
-  @override
-  String get entryMissionDorRecome03EchoQuestion =>
-      'There is a seed after the door. Does the world start again by erasing the past?';
-
-  @override
-  String get entryMissionDorRecome03HookNote =>
-      'The world starts again under covenant, not amnesia. The bow reminds God — and us.';
-
-  @override
-  String get entryMissionDorRecome03Intro =>
-      'Judgment and a fresh start fit in the same God.';
-
-  @override
-  String get entryMissionDorRecome03Objective =>
-      'See the flood as judgment that keeps a remnant.';
-
-  @override
-  String get entryMissionDorRecome03Title => 'Flood';
-
-  @override
-  String get entryMissionDorRecome04CentralInsight =>
-      'A fresh start walks outward';
-
-  @override
-  String get entryMissionDorRecome04EchoQuestion =>
-      'A fresh start is covenant. Is Babel fixed with another tower?';
-
-  @override
-  String get entryMissionDorRecome04HookNote =>
-      'God does not fix Babel with another tower. He calls a family to be a blessing.';
-
-  @override
-  String get entryMissionDorRecome04Intro =>
-      'Leaving the land is the fresh-start gesture that blesses others.';
-
-  @override
-  String get entryMissionDorRecome04Objective =>
-      'Link a fresh start to a call, not to isolation.';
-
-  @override
-  String get entryMissionDorRecome04Title => 'Abram\'s call';
-
-  @override
-  String get entryMissionDorRecome05CentralInsight =>
-      'There is comfort for those who truly mourn';
-
-  @override
-  String get entryMissionDorRecome05EchoQuestion =>
-      'A fresh start walks outward. Those who mourn what died find what in the Kingdom?';
-
-  @override
-  String get entryMissionDorRecome05HookNote =>
-      'The Kingdom does not rush grief. It comforts. The canonical trail begins in Genesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Intro =>
-      'Those who mourn what died are blessed. Continue in Genesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Objective =>
-      'Leave the pain trail for the curriculum: Genesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Title => 'Those who mourn';
-
-  @override
   String get entryMissionEntradaBiblia01CentralInsight =>
       'The story begins with God';
 
@@ -2355,16 +2244,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get entryTrailEntenderABibliaTitle => 'Understand the Bible';
-
-  @override
-  String get entryTrailRecomecoDescription =>
-      'Five scenes from the fall to the call — and back to Genesis 1–11.';
-
-  @override
-  String get entryTrailRecomecoModuleTitle => 'From the break to the call';
-
-  @override
-  String get entryTrailRecomecoTitle => 'Fresh start';
 
   @override
   String get eraChurchBlurb => 'Acts, epistles, and the consummation';
@@ -6428,7 +6307,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallFreeForever =>
-      'The Bible and the scenes stay free. Always.';
+      'The Bible and the book trails stay free. Always.';
 
   @override
   String get paywallHeadline => 'Keep your pace';
@@ -6450,6 +6329,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallManageHint =>
       'Change plan or cancel in the App Store or Google Play.';
+
+  @override
+  String get paywallOffersFailed =>
+      'We couldn\'t load the plans. Check your connection and try again.';
 
   @override
   String get paywallPerkBadgeBody =>
@@ -6485,7 +6368,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Trails through the seasons of the year, like Advent: one scene a day and a review each week.';
+      'Advent, and the next seasons as they come: one scene a day and a review each week.';
 
   @override
   String get paywallPerkSeasonTitle => 'Season trails';
@@ -6553,6 +6436,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String paywallPricePerYearShort(String price) {
+    return '$price/yr';
+  }
+
+  @override
   String paywallPriceWeekly(String price) {
     return '$price per week';
   }
@@ -6563,7 +6451,19 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get paywallPurchaseAlreadyOwned =>
+      'This store account already has Pilgrim+. Tap Restore purchase.';
+
+  @override
   String get paywallPurchaseFailed => 'Couldn\'t complete the purchase.';
+
+  @override
+  String get paywallPurchaseNoAccess =>
+      'The purchase went through, but Pilgrim+ didn\'t reach this account. Tap Restore purchase.';
+
+  @override
+  String get paywallPurchasePending =>
+      'Payment is processing. Pilgrim+ opens as soon as the store confirms it.';
 
   @override
   String paywallRenewsOn(String date) {
@@ -7129,6 +7029,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get plusGraceHomeTitle => 'Your Pilgrim+ just ended';
+
+  @override
+  String get plusLockedSheetBody =>
+      'This trail is part of Pilgrim+. The Bible and the book trails stay free.';
+
+  @override
+  String get plusLockedSheetCta => 'See Pilgrim+';
 
   @override
   String get plusNoticeContinue => 'Continue with Pilgrim+';
@@ -9180,10 +9087,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trailMapCrossing => 'Crossing';
 
   @override
+  String trailMapGoToScene(String scene) {
+    return 'Go to $scene';
+  }
+
+  @override
   String get trailMapLocked => 'Locked';
 
   @override
   String get trailMapScene => 'Scene';
+
+  @override
+  String trailMapSceneLockedBody(String scene) {
+    return 'Finish “$scene” to open this scene. They go in order: each one prepares the next.';
+  }
 
   @override
   String trailMapSeal(String name) {

@@ -26,6 +26,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
 import '../widgets/journey_sky.dart';
 import '../widgets/path_preview_sheet.dart';
+import '../widgets/plus_locked_sheet.dart';
 import '../widgets/top_bar.dart';
 import 'paywall_screen.dart';
 import 'trail_map_screen.dart';
@@ -242,8 +243,23 @@ List<JourneyPathItem> realmJourneyItems(
       statusLabel = null;
     }
 
+    final blocker = unlocked
+        ? null
+        : TrailProgress.blockingTrail(
+            trail,
+            allTrails,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+          );
+    // Sem Plus, "Termine Oração para abrir" é promessa vazia: Oração só
+    // termina com o Plus. A trilha vira porta do Plus (cadeado + botão).
+    final plusWall =
+        !plusOpen && hasContent && PlusAccess.waitsOnPlus(trail, blocker);
+
     final JourneyNodeState state;
-    if (!unlocked) {
+    if (plusWall) {
+      state = JourneyNodeState.upcoming;
+    } else if (!unlocked) {
       state = JourneyNodeState.locked;
     } else if (done) {
       state = JourneyNodeState.completed;
@@ -267,24 +283,18 @@ List<JourneyPathItem> realmJourneyItems(
         clearedModeIds: cleared,
         activeDifficultyId: openId ?? storedId,
         plusLocked:
+            plusWall ||
             !plusOpen &&
-            unlocked &&
-            !done &&
-            TrailProgress.nextSceneNeedsPlus(
-              trail,
-              progress.completedMissionsForTrail(
-                trailSlug: trail.slug,
-                missionSlugs: trail.missionSlugs,
-              ),
-            ),
-        lockedBy: unlocked
-            ? null
-            : TrailProgress.blockingTrail(
-                trail,
-                allTrails,
-                completed,
-                clearedTrailModes: clearedTrailModes,
-              )?.localizedTitle,
+                unlocked &&
+                !done &&
+                TrailProgress.nextSceneNeedsPlus(
+                  trail,
+                  progress.completedMissionsForTrail(
+                    trailSlug: trail.slug,
+                    missionSlugs: trail.missionSlugs,
+                  ),
+                ),
+        lockedBy: blocker?.localizedTitle,
       ),
     );
   }
@@ -308,12 +318,30 @@ void openJourneyItem(BuildContext context, JourneyPathItem item) {
               : 'amostra ou sem cena pendente, mapa'}',
     );
   }
-  // Trilha temática cuja próxima cena pede o Plus: o toque é a compra.
+  // Trilha temática cuja próxima cena pede o Plus. Na estação em curso o
+  // botão "Continuar com o Peregrino+" é a compra; nas outras, a folha
+  // explica antes.
   if (item.plusLocked) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => const PaywallScreen(source: 'trail'),
-      ),
+    if (item.state == JourneyNodeState.current) {
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'trail'),
+        ),
+      );
+      return;
+    }
+    final visuals = RealmVisuals.of(TrailRealm.fromId(trail.realmId));
+    final sceneCount = trail.missionSlugs.length;
+    showPlusLockedSheet(
+      context,
+      title: trail.localizedTitle,
+      description: trail.localizedDescription,
+      source: 'trail_sheet',
+      art: TrailArt.of(trail.slug),
+      eyebrow: context.l10n.plusNoticeLockedHeader,
+      accent: visuals.accent,
+      glyph: TrailVisuals.forTrail(trail).glyph,
+      chips: [if (sceneCount > 0) context.l10n.commonScenes(sceneCount)],
     );
     return;
   }

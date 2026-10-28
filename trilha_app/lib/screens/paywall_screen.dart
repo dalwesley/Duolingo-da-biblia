@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -74,6 +76,8 @@ class _PaywallScreenState extends State<PaywallScreen> {
         ? 'offer'
         : 'unavailable';
     PlusLog.log('paywall', 'aberto por ${widget.source} (estado $_viewState)');
+    // A oferta não veio na abertura do app: tenta de novo agora.
+    if (_viewState == 'unavailable') unawaited(sub.retryOfferings());
     AnalyticsService.instance.logPaywallView(
       source: widget.source,
       state: _viewState,
@@ -121,7 +125,9 @@ class _PaywallScreenState extends State<PaywallScreen> {
       ..sort((x, y) => _rank(x).compareTo(_rank(y)));
     // Durante a promoção também dá para assinar: quem quer garantir o
     // plano não espera o fim da gratuidade (a compra começa hoje).
-    final offer = !paid && sub.canPurchase;
+    // Oferta só com plano à venda: o Pioneiro sozinho e fora de venda
+    // deixava a lista vazia com o botão na tela (e `selected!` quebrava).
+    final offer = !paid && sub.canPurchase && packages.isNotEmpty;
     // A oferta pode chegar depois da abertura (loja lenta): o estado do
     // funil acompanha a tela, não congela no primeiro frame.
     if (offer && _viewState == 'unavailable') _viewState = 'offer';
@@ -302,10 +308,24 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     const SizedBox(height: AppSpace.xl),
                     if (promoDate == null)
                       Text(
-                        l10n.paywallUnavailable,
+                        // Loja ligada sem oferta é falha de conexão, não
+                        // "versão sem assinatura".
+                        sub.isConfigured
+                            ? l10n.paywallOffersFailed
+                            : l10n.paywallUnavailable,
                         textAlign: TextAlign.center,
                         style: AppTypography.body(size: 12, color: a.textFaint),
                       ),
+                    if (sub.isConfigured) ...[
+                      const SizedBox(height: AppSpace.md),
+                      CopperCta(
+                        label: l10n.commonTryAgain,
+                        expanded: true,
+                        onTap: sub.loading
+                            ? null
+                            : () => unawaited(sub.retryOfferings()),
+                      ),
+                    ],
                     if (sub.isConfigured) ...[
                       const SizedBox(height: AppSpace.lg),
                       _LegalLinks(sub: sub),
@@ -397,11 +417,12 @@ class _PlanTile extends StatelessWidget {
     final perMonth = type == PackageType.annual
         ? product.pricePerMonthString
         : null;
-    // Preço grande à direita: o anual fala em "por mês".
+    // Preço grande à direita é o valor cobrado (Apple 3.1.2): o anual
+    // mostra o ano em destaque e o "por mês" só como comparação.
     final (bigPrice, smallPrice) = switch (type) {
       PackageType.annual when perMonth != null => (
+        l10n.paywallPricePerYearShort(product.priceString),
         l10n.paywallPricePerMonthShort(perMonth),
-        SubscriptionService.packageLabel(package),
       ),
       PackageType.monthly => (
         l10n.paywallPricePerMonthShort(product.priceString),

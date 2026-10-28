@@ -140,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
       return;
     }
-    debugPrint('[STWAY:Auth] LoginScreen: ok → ${result.email}');
+    debugPrint('[STWAY:Auth] LoginScreen: ok');
     unawaited(AnalyticsService.instance.logLogin(method: 'google'));
     unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);
@@ -167,7 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
       return;
     }
-    debugPrint('[STWAY:Auth] LoginScreen: Apple ok → ${result.email}');
+    debugPrint('[STWAY:Auth] LoginScreen: Apple ok');
     unawaited(AnalyticsService.instance.logLogin(method: 'apple'));
     unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);

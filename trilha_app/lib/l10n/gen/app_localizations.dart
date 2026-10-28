@@ -3136,180 +3136,6 @@ abstract class AppLocalizations {
   /// **'Esperança viva'**
   String get entryMissionDorAnsia05Title;
 
-  /// No description provided for @entryMissionDorRecome01CentralInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Deus ainda pergunta onde estás'**
-  String get entryMissionDorRecome01CentralInsight;
-
-  /// No description provided for @entryMissionDorRecome01HookNote.
-  ///
-  /// In pt, this message translates to:
-  /// **'O primeiro movimento depois da queda é Deus procurando — não o humano se escondendo com sucesso.'**
-  String get entryMissionDorRecome01HookNote;
-
-  /// No description provided for @entryMissionDorRecome01Intro.
-  ///
-  /// In pt, this message translates to:
-  /// **'A desconfiança rompe a comunhão — e ainda assim Deus pergunta.'**
-  String get entryMissionDorRecome01Intro;
-
-  /// No description provided for @entryMissionDorRecome01Objective.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver a queda como ruptura, não como o fim da conversa.'**
-  String get entryMissionDorRecome01Objective;
-
-  /// No description provided for @entryMissionDorRecome01Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'A queda'**
-  String get entryMissionDorRecome01Title;
-
-  /// No description provided for @entryMissionDorRecome02CentralInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Há semente depois da porta'**
-  String get entryMissionDorRecome02CentralInsight;
-
-  /// No description provided for @entryMissionDorRecome02EchoQuestion.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ele perguntou. E depois da resposta, a história acabou?'**
-  String get entryMissionDorRecome02EchoQuestion;
-
-  /// No description provided for @entryMissionDorRecome02HookNote.
-  ///
-  /// In pt, this message translates to:
-  /// **'No mesmo capítulo da expulsão, Deus fala de uma semente. O juízo não cancela a história.'**
-  String get entryMissionDorRecome02HookNote;
-
-  /// No description provided for @entryMissionDorRecome02Intro.
-  ///
-  /// In pt, this message translates to:
-  /// **'O pecado tem custo. A promessa não some.'**
-  String get entryMissionDorRecome02Intro;
-
-  /// No description provided for @entryMissionDorRecome02Objective.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ler consequência e promessa no mesmo texto.'**
-  String get entryMissionDorRecome02Objective;
-
-  /// No description provided for @entryMissionDorRecome02Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Consequências'**
-  String get entryMissionDorRecome02Title;
-
-  /// No description provided for @entryMissionDorRecome03CentralInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Recomeçar é aliança, não apagar'**
-  String get entryMissionDorRecome03CentralInsight;
-
-  /// No description provided for @entryMissionDorRecome03EchoQuestion.
-  ///
-  /// In pt, this message translates to:
-  /// **'Há semente depois da porta. O mundo recomeça apagando o passado?'**
-  String get entryMissionDorRecome03EchoQuestion;
-
-  /// No description provided for @entryMissionDorRecome03HookNote.
-  ///
-  /// In pt, this message translates to:
-  /// **'O mundo recomeça sob aliança, não sob amnésia. O arco lembra a Deus — e a nós.'**
-  String get entryMissionDorRecome03HookNote;
-
-  /// No description provided for @entryMissionDorRecome03Intro.
-  ///
-  /// In pt, this message translates to:
-  /// **'Juízo e recomeço cabem no mesmo Deus.'**
-  String get entryMissionDorRecome03Intro;
-
-  /// No description provided for @entryMissionDorRecome03Objective.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver o dilúvio como juízo que guarda um resto.'**
-  String get entryMissionDorRecome03Objective;
-
-  /// No description provided for @entryMissionDorRecome03Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dilúvio'**
-  String get entryMissionDorRecome03Title;
-
-  /// No description provided for @entryMissionDorRecome04CentralInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'O recomeço caminha para fora'**
-  String get entryMissionDorRecome04CentralInsight;
-
-  /// No description provided for @entryMissionDorRecome04EchoQuestion.
-  ///
-  /// In pt, this message translates to:
-  /// **'Recomeçar é aliança. Babel se conserta com outra torre?'**
-  String get entryMissionDorRecome04EchoQuestion;
-
-  /// No description provided for @entryMissionDorRecome04HookNote.
-  ///
-  /// In pt, this message translates to:
-  /// **'Deus não conserta Babel com outra torre. Chama uma família para ser bênção.'**
-  String get entryMissionDorRecome04HookNote;
-
-  /// No description provided for @entryMissionDorRecome04Intro.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sair da terra é o gesto do recomeço que abençoa outros.'**
-  String get entryMissionDorRecome04Intro;
-
-  /// No description provided for @entryMissionDorRecome04Objective.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ligar recomeço a chamado, não a isolamento.'**
-  String get entryMissionDorRecome04Objective;
-
-  /// No description provided for @entryMissionDorRecome04Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Chamado de Abrão'**
-  String get entryMissionDorRecome04Title;
-
-  /// No description provided for @entryMissionDorRecome05CentralInsight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Há conforto para quem chora de verdade'**
-  String get entryMissionDorRecome05CentralInsight;
-
-  /// No description provided for @entryMissionDorRecome05EchoQuestion.
-  ///
-  /// In pt, this message translates to:
-  /// **'O recomeço caminha para fora. Quem chora o que morreu encontra o quê no Reino?'**
-  String get entryMissionDorRecome05EchoQuestion;
-
-  /// No description provided for @entryMissionDorRecome05HookNote.
-  ///
-  /// In pt, this message translates to:
-  /// **'O Reino não apressa o luto. Consola. A trilha canônica começa em Gênesis 1–11.'**
-  String get entryMissionDorRecome05HookNote;
-
-  /// No description provided for @entryMissionDorRecome05Intro.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quem chora o que morreu é bem-aventurado. Continue em Gênesis 1–11.'**
-  String get entryMissionDorRecome05Intro;
-
-  /// No description provided for @entryMissionDorRecome05Objective.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sair da trilha de dor para o currículo: Gênesis 1–11.'**
-  String get entryMissionDorRecome05Objective;
-
-  /// No description provided for @entryMissionDorRecome05Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Os que choram'**
-  String get entryMissionDorRecome05Title;
-
   /// No description provided for @entryMissionEntradaBiblia01CentralInsight.
   ///
   /// In pt, this message translates to:
@@ -3723,24 +3549,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Entender a Bíblia'**
   String get entryTrailEntenderABibliaTitle;
-
-  /// No description provided for @entryTrailRecomecoDescription.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cinco cenas da queda ao chamado — e de volta a Gênesis 1–11.'**
-  String get entryTrailRecomecoDescription;
-
-  /// No description provided for @entryTrailRecomecoModuleTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Do rompimento ao chamado'**
-  String get entryTrailRecomecoModuleTitle;
-
-  /// No description provided for @entryTrailRecomecoTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Recomeço'**
-  String get entryTrailRecomecoTitle;
 
   /// No description provided for @eraChurchBlurb.
   ///
@@ -10098,7 +9906,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFreeForever.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia e as cenas continuam grátis. Sempre.'**
+  /// **'A Bíblia e as trilhas de cada livro continuam grátis. Sempre.'**
   String get paywallFreeForever;
 
   /// No description provided for @paywallHeadline.
@@ -10136,6 +9944,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Mudar de plano ou cancelar é na App Store ou no Google Play.'**
   String get paywallManageHint;
+
+  /// No description provided for @paywallOffersFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não conseguimos carregar os planos. Confira sua conexão e tente de novo.'**
+  String get paywallOffersFailed;
 
   /// No description provided for @paywallPerkBadgeBody.
   ///
@@ -10194,7 +10008,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'Trilhas das estações do ano, como o Advento: uma cena por dia e a revisão de cada semana.'**
+  /// **'O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
@@ -10299,6 +10113,12 @@ abstract class AppLocalizations {
   /// **'{price}/mês'**
   String paywallPricePerMonthShort(String price);
 
+  /// No description provided for @paywallPricePerYearShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'{price}/ano'**
+  String paywallPricePerYearShort(String price);
+
   /// No description provided for @paywallPriceWeekly.
   ///
   /// In pt, this message translates to:
@@ -10311,11 +10131,29 @@ abstract class AppLocalizations {
   /// **'Você pode assinar desde já: o plano começa hoje, pelas regras da loja, sem esperar {date}.'**
   String paywallPromoSubscribeNote(String date);
 
+  /// No description provided for @paywallPurchaseAlreadyOwned.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta conta da loja já tem o Peregrino+. Toque em Restaurar compra.'**
+  String get paywallPurchaseAlreadyOwned;
+
   /// No description provided for @paywallPurchaseFailed.
   ///
   /// In pt, this message translates to:
   /// **'Não foi possível concluir a compra.'**
   String get paywallPurchaseFailed;
+
+  /// No description provided for @paywallPurchaseNoAccess.
+  ///
+  /// In pt, this message translates to:
+  /// **'A compra foi feita, mas o Peregrino+ não veio para esta conta. Toque em Restaurar compra.'**
+  String get paywallPurchaseNoAccess;
+
+  /// No description provided for @paywallPurchasePending.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pagamento em processamento. O Peregrino+ abre assim que a loja confirmar.'**
+  String get paywallPurchasePending;
 
   /// No description provided for @paywallRenewsOn.
   ///
@@ -11114,6 +10952,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Seu Peregrino+ venceu há pouco'**
   String get plusGraceHomeTitle;
+
+  /// No description provided for @plusLockedSheetBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta trilha faz parte do Peregrino+. A Bíblia e as trilhas de cada livro continuam grátis.'**
+  String get plusLockedSheetBody;
+
+  /// No description provided for @plusLockedSheetCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer o Peregrino+'**
+  String get plusLockedSheetCta;
 
   /// No description provided for @plusNoticeContinue.
   ///
@@ -14337,6 +14187,12 @@ abstract class AppLocalizations {
   /// **'Travessia'**
   String get trailMapCrossing;
 
+  /// No description provided for @trailMapGoToScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ir para {scene}'**
+  String trailMapGoToScene(String scene);
+
   /// A locked scene
   ///
   /// In pt, this message translates to:
@@ -14348,6 +14204,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Cena'**
   String get trailMapScene;
+
+  /// No description provided for @trailMapSceneLockedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termine “{scene}” para abrir esta cena. Elas vão em ordem: cada uma prepara a próxima.'**
+  String trailMapSceneLockedBody(String scene);
 
   /// Character seal; name is a Bible character
   ///

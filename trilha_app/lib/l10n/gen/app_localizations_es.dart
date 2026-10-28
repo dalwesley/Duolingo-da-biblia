@@ -1996,117 +1996,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get entryMissionDorAnsia05Title => 'Esperanza viva';
 
   @override
-  String get entryMissionDorRecome01CentralInsight =>
-      'Dios todavía pregunta dónde estás';
-
-  @override
-  String get entryMissionDorRecome01HookNote =>
-      'El primer movimiento después de la caída es Dios buscando — no el humano escondiéndose con éxito.';
-
-  @override
-  String get entryMissionDorRecome01Intro =>
-      'La desconfianza rompe la comunión — y aun así Dios pregunta.';
-
-  @override
-  String get entryMissionDorRecome01Objective =>
-      'Ver la caída como ruptura, no como el fin de la conversación.';
-
-  @override
-  String get entryMissionDorRecome01Title => 'La caída';
-
-  @override
-  String get entryMissionDorRecome02CentralInsight =>
-      'Hay semilla después de la puerta';
-
-  @override
-  String get entryMissionDorRecome02EchoQuestion =>
-      'Él preguntó. ¿Y después de la respuesta, se acabó la historia?';
-
-  @override
-  String get entryMissionDorRecome02HookNote =>
-      'En el mismo capítulo de la expulsión, Dios habla de una semilla. El juicio no cancela la historia.';
-
-  @override
-  String get entryMissionDorRecome02Intro =>
-      'El pecado tiene costo. La promesa no desaparece.';
-
-  @override
-  String get entryMissionDorRecome02Objective =>
-      'Leer consecuencia y promesa en el mismo texto.';
-
-  @override
-  String get entryMissionDorRecome02Title => 'Consecuencias';
-
-  @override
-  String get entryMissionDorRecome03CentralInsight =>
-      'Recomenzar es pacto, no borrar';
-
-  @override
-  String get entryMissionDorRecome03EchoQuestion =>
-      'Hay semilla después de la puerta. ¿El mundo recomienza borrando el pasado?';
-
-  @override
-  String get entryMissionDorRecome03HookNote =>
-      'El mundo recomienza bajo pacto, no bajo amnesia. El arco recuerda a Dios — y a nosotros.';
-
-  @override
-  String get entryMissionDorRecome03Intro =>
-      'Juicio y recomienzo caben en el mismo Dios.';
-
-  @override
-  String get entryMissionDorRecome03Objective =>
-      'Ver el diluvio como juicio que guarda un resto.';
-
-  @override
-  String get entryMissionDorRecome03Title => 'Diluvio';
-
-  @override
-  String get entryMissionDorRecome04CentralInsight =>
-      'El recomienzo camina hacia fuera';
-
-  @override
-  String get entryMissionDorRecome04EchoQuestion =>
-      'Recomenzar es pacto. ¿Babel se arregla con otra torre?';
-
-  @override
-  String get entryMissionDorRecome04HookNote =>
-      'Dios no arregla Babel con otra torre. Llama a una familia para ser bendición.';
-
-  @override
-  String get entryMissionDorRecome04Intro =>
-      'Salir de la tierra es el gesto del recomienzo que bendice a otros.';
-
-  @override
-  String get entryMissionDorRecome04Objective =>
-      'Unir recomienzo a llamado, no a aislamiento.';
-
-  @override
-  String get entryMissionDorRecome04Title => 'Llamado de Abram';
-
-  @override
-  String get entryMissionDorRecome05CentralInsight =>
-      'Hay consuelo para quien llora de verdad';
-
-  @override
-  String get entryMissionDorRecome05EchoQuestion =>
-      'El recomienzo camina hacia fuera. ¿Quién llora lo que murió encuentra qué en el Reino?';
-
-  @override
-  String get entryMissionDorRecome05HookNote =>
-      'El Reino no apresura el luto. Consuela. La ruta canónica empieza en Génesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Intro =>
-      'Quien llora lo que murió es bienaventurado. Continúa en Génesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Objective =>
-      'Salir de la ruta de dolor al currículo: Génesis 1–11.';
-
-  @override
-  String get entryMissionDorRecome05Title => 'Los que lloran';
-
-  @override
   String get entryMissionEntradaBiblia01CentralInsight =>
       'La historia empieza en Dios';
 
@@ -2362,16 +2251,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get entryTrailEntenderABibliaTitle => 'Entender la Biblia';
-
-  @override
-  String get entryTrailRecomecoDescription =>
-      'Cinco escenas de la caída al llamado — y de vuelta a Génesis 1–11.';
-
-  @override
-  String get entryTrailRecomecoModuleTitle => 'Del rompimiento al llamado';
-
-  @override
-  String get entryTrailRecomecoTitle => 'Recomienzo';
 
   @override
   String get eraChurchBlurb => 'Hechos, epístolas y la consumación';
@@ -6475,7 +6354,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallFreeForever =>
-      'La Biblia y las escenas siguen gratis. Siempre.';
+      'La Biblia y las rutas de cada libro siguen gratis. Siempre.';
 
   @override
   String get paywallHeadline => 'Mantén tu ritmo';
@@ -6497,6 +6376,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get paywallManageHint =>
       'Cambiar de plan o cancelar se hace en App Store o Google Play.';
+
+  @override
+  String get paywallOffersFailed =>
+      'No pudimos cargar los planes. Revisa tu conexión e inténtalo de nuevo.';
 
   @override
   String get paywallPerkBadgeBody =>
@@ -6532,7 +6415,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Rutas por las temporadas del año, como el Adviento: una escena por día y un repaso cada semana.';
+      'El Adviento, y las próximas temporadas cuando lleguen: una escena por día y un repaso cada semana.';
 
   @override
   String get paywallPerkSeasonTitle => 'Rutas de temporada';
@@ -6600,6 +6483,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String paywallPricePerYearShort(String price) {
+    return '$price/año';
+  }
+
+  @override
   String paywallPriceWeekly(String price) {
     return '$price a la semana';
   }
@@ -6610,7 +6498,19 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get paywallPurchaseAlreadyOwned =>
+      'Esta cuenta de la tienda ya tiene Peregrino+. Toca Restaurar compra.';
+
+  @override
   String get paywallPurchaseFailed => 'No se pudo completar la compra.';
+
+  @override
+  String get paywallPurchaseNoAccess =>
+      'La compra se hizo, pero Peregrino+ no llegó a esta cuenta. Toca Restaurar compra.';
+
+  @override
+  String get paywallPurchasePending =>
+      'Pago en proceso. Peregrino+ se abre en cuanto la tienda lo confirme.';
 
   @override
   String paywallRenewsOn(String date) {
@@ -7177,6 +7077,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plusGraceHomeTitle => 'Tu Peregrino+ venció hace poco';
+
+  @override
+  String get plusLockedSheetBody =>
+      'Esta ruta es parte de Peregrino+. La Biblia y las rutas de cada libro siguen gratis.';
+
+  @override
+  String get plusLockedSheetCta => 'Conocer Peregrino+';
 
   @override
   String get plusNoticeContinue => 'Continuar con Peregrino+';
@@ -9235,10 +9142,20 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trailMapCrossing => 'Travesía';
 
   @override
+  String trailMapGoToScene(String scene) {
+    return 'Ir a $scene';
+  }
+
+  @override
   String get trailMapLocked => 'Bloqueada';
 
   @override
   String get trailMapScene => 'Escena';
+
+  @override
+  String trailMapSceneLockedBody(String scene) {
+    return 'Termina «$scene» para abrir esta escena. Van en orden: cada una prepara la siguiente.';
+  }
 
   @override
   String trailMapSeal(String name) {

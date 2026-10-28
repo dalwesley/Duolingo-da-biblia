@@ -428,6 +428,22 @@
     "en": "Learn more",
     "es": "Más información"
   },
+  "trailMapGoToScene": {
+    "pt": "Ir para {scene}",
+    "en": "Go to {scene}",
+    "es": "Ir a {scene}",
+    "placeholders": {
+      "scene": "String"
+    }
+  },
+  "trailMapSceneLockedBody": {
+    "pt": "Termine “{scene}” para abrir esta cena. Elas vão em ordem: cada uma prepara a próxima.",
+    "en": "Finish “{scene}” to open this scene. They go in order: each one prepares the next.",
+    "es": "Termina «{scene}» para abrir esta escena. Van en orden: cada una prepara la siguiente.",
+    "placeholders": {
+      "scene": "String"
+    }
+  },
   "trailMapCrossing": {
     "pt": "Travessia",
     "en": "Crossing",

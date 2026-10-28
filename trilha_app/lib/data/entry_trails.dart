@@ -2,17 +2,15 @@ import '../l10n/l10n_global.dart';
 import '../models/trail.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Trilhas curtas de entrada por dor/motivo — desembocam no cânon.
-/// Recomeço ainda empresta atos do cânon (`bankSection` + `bankTrailSlug`).
-/// Ansiedade, Conhecer a Deus e Entender a Bíblia têm banco próprio
-/// (`perguntas-v2/<slug>.json`, section = slug da cena).
+/// Trilhas curtas de entrada, uma por motivo do onboarding — desembocam no
+/// cânon. Cada uma tem banco próprio (`perguntas-v2/<slug>.json`, section =
+/// slug da cena).
 class EntryTrails {
   EntryTrails._();
 
   /// Última missão da trilha de entrada → trilha canônica.
   static const continuesTo = {
     'dor-ansia-05': 'sermao-do-monte',
-    'dor-recome-05': 'genesis-1-11',
     'entrada-deus-05': 'evangelhos',
     'entrada-biblia-07': 'genesis-1-11',
   };
@@ -21,7 +19,6 @@ class EntryTrails {
   /// pré-requisito de outra área ([TrailProgress]).
   static const slugs = {
     'ansiedade',
-    'recomeco',
     'conhecer-a-deus',
     'entender-a-biblia',
   };
@@ -30,7 +27,7 @@ class EntryTrails {
   /// Vivem em Temas (card próprio) e ficam sempre abertas.
   static const intentOnly = {'conhecer-a-deus', 'entender-a-biblia'};
 
-  static List<Trail> get overlay => [_anxiety, _restart, _knowGod, _bible];
+  static List<Trail> get overlay => [_anxiety, _knowGod, _bible];
 
   /// Banco de origem → cenas de entrada que tocam o mesmo banco.
   static final Map<String, Set<String>> _byBank = () {
@@ -142,113 +139,6 @@ class EntryTrails {
               hookNote: l.entryMissionDorAnsia05HookNote,
               centralInsight: l.entryMissionDorAnsia05CentralInsight,
               objective: l.entryMissionDorAnsia05Objective,
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-
-  static Trail get _restart {
-    final l = L10n.current;
-    return Trail(
-      slug: 'recomeco',
-      title: l.entryTrailRecomecoTitle,
-      description: l.entryTrailRecomecoDescription,
-      icon: '🌱',
-      order: 1,
-      comingSoon: false,
-      color: '#2F9E44',
-      realmId: 'vida-crista',
-      categoryId: 'discipulado',
-      modules: [
-        TrailModule(
-          title: l.entryTrailRecomecoModuleTitle,
-          icon: '🌱',
-          missions: [
-            Mission(
-              slug: 'dor-recome-01',
-              title: l.entryMissionDorRecome01Title,
-              intro: l.entryMissionDorRecome01Intro,
-              type: 'lesson',
-              stepsReward: 60,
-              questions: const [],
-              hookRef: 'Gênesis 3:8–9',
-              hookVerse:
-                  'E ouviram a voz do Senhor Deus, que andava no jardim à viração da tarde… E o Senhor Deus chamou o homem e lhe perguntou: Onde você está?',
-              hookNote: l.entryMissionDorRecome01HookNote,
-              centralInsight: l.entryMissionDorRecome01CentralInsight,
-              objective: l.entryMissionDorRecome01Objective,
-              bankSection: 'gen-06-queda',
-              bankTrailSlug: 'genesis-1-11',
-            ),
-            Mission(
-              slug: 'dor-recome-02',
-              title: l.entryMissionDorRecome02Title,
-              intro: l.entryMissionDorRecome02Intro,
-              type: 'lesson',
-              stepsReward: 60,
-              questions: const [],
-              hookRef: 'Gênesis 3:15',
-              hookVerse:
-                  'Porei inimizade entre ti e a mulher, e entre a tua semente e a semente dela; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.',
-              hookNote: l.entryMissionDorRecome02HookNote,
-              centralInsight: l.entryMissionDorRecome02CentralInsight,
-              echoQuestion: l.entryMissionDorRecome02EchoQuestion,
-              objective: l.entryMissionDorRecome02Objective,
-              bankSection: 'gen-07-consequencias',
-              bankTrailSlug: 'genesis-1-11',
-            ),
-            Mission(
-              slug: 'dor-recome-03',
-              title: l.entryMissionDorRecome03Title,
-              intro: l.entryMissionDorRecome03Intro,
-              type: 'lesson',
-              stepsReward: 60,
-              questions: const [],
-              hookRef: 'Gênesis 9:12–13',
-              hookVerse:
-                  'Disse Deus: Este é o sinal da aliança que instituo entre mim e vós… O meu arco tenho posto nas nuvens.',
-              hookNote: l.entryMissionDorRecome03HookNote,
-              centralInsight: l.entryMissionDorRecome03CentralInsight,
-              echoQuestion: l.entryMissionDorRecome03EchoQuestion,
-              objective: l.entryMissionDorRecome03Objective,
-              bankSection: 'gen-09-diluvio',
-              bankTrailSlug: 'genesis-1-11',
-            ),
-            Mission(
-              slug: 'dor-recome-04',
-              title: l.entryMissionDorRecome04Title,
-              intro: l.entryMissionDorRecome04Intro,
-              type: 'lesson',
-              stepsReward: 60,
-              questions: const [],
-              hookRef: 'Gênesis 12:1–2',
-              hookVerse:
-                  'O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei.',
-              hookNote: l.entryMissionDorRecome04HookNote,
-              centralInsight: l.entryMissionDorRecome04CentralInsight,
-              echoQuestion: l.entryMissionDorRecome04EchoQuestion,
-              objective: l.entryMissionDorRecome04Objective,
-              bankSection: 'gen-11-abraao',
-              bankTrailSlug: 'genesis-1-11',
-            ),
-            Mission(
-              slug: 'dor-recome-05',
-              title: l.entryMissionDorRecome05Title,
-              intro: l.entryMissionDorRecome05Intro,
-              type: 'lesson',
-              stepsReward: 70,
-              questions: const [],
-              hookRef: 'Mateus 5:4',
-              hookVerse:
-                  'Bem-aventurados os que choram, porque eles serão consolados.',
-              hookNote: l.entryMissionDorRecome05HookNote,
-              centralInsight: l.entryMissionDorRecome05CentralInsight,
-              echoQuestion: l.entryMissionDorRecome05EchoQuestion,
-              objective: l.entryMissionDorRecome05Objective,
-              bankSection: 'sm-03-os-que-choram',
-              bankTrailSlug: 'sermao-do-monte',
             ),
           ],
         ),

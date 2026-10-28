@@ -125,6 +125,11 @@
     "en": "Your support keeps Stway free for those who can't pay.\nAnd you also get the benefits below.",
     "es": "Tu apoyo mantiene Stway gratis para quien no puede pagar.\nY además recibes los beneficios de abajo."
   },
+  "paywallOffersFailed": {
+    "pt": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
+    "en": "We couldn't load the plans. Check your connection and try again.",
+    "es": "No pudimos cargar los planes. Revisa tu conexión e inténtalo de nuevo."
+  },
   "paywallUnavailable": {
     "pt": "Assinatura ainda não disponível nesta versão.",
     "en": "Subscription isn't available in this version yet.",
@@ -134,6 +139,21 @@
     "pt": "Restaurar compra",
     "en": "Restore purchase",
     "es": "Restaurar compra"
+  },
+  "paywallPurchasePending": {
+    "pt": "Pagamento em processamento. O Peregrino+ abre assim que a loja confirmar.",
+    "en": "Payment is processing. Pilgrim+ opens as soon as the store confirms it.",
+    "es": "Pago en proceso. Peregrino+ se abre en cuanto la tienda lo confirme."
+  },
+  "paywallPurchaseAlreadyOwned": {
+    "pt": "Esta conta da loja já tem o Peregrino+. Toque em Restaurar compra.",
+    "en": "This store account already has Pilgrim+. Tap Restore purchase.",
+    "es": "Esta cuenta de la tienda ya tiene Peregrino+. Toca Restaurar compra."
+  },
+  "paywallPurchaseNoAccess": {
+    "pt": "A compra foi feita, mas o Peregrino+ não veio para esta conta. Toque em Restaurar compra.",
+    "en": "The purchase went through, but Pilgrim+ didn't reach this account. Tap Restore purchase.",
+    "es": "La compra se hizo, pero Peregrino+ no llegó a esta cuenta. Toca Restaurar compra."
   },
   "paywallPurchaseFailed": {
     "pt": "Não foi possível concluir a compra.",
@@ -953,9 +973,9 @@
     "es": "Rutas de temporada"
   },
   "paywallPerkSeasonBody": {
-    "pt": "Trilhas das estações do ano, como o Advento: uma cena por dia e a revisão de cada semana.",
-    "en": "Trails through the seasons of the year, like Advent: one scene a day and a review each week.",
-    "es": "Rutas por las temporadas del año, como el Adviento: una escena por día y un repaso cada semana."
+    "pt": "O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.",
+    "en": "Advent, and the next seasons as they come: one scene a day and a review each week.",
+    "es": "El Adviento, y las próximas temporadas cuando lleguen: una escena por día y un repaso cada semana."
   },
   "paywallPerkWeeklyTitle": {
     "pt": "Revisão da semana",
@@ -998,9 +1018,9 @@
     "es": "Un sello exclusivo en tu perfil y en la Caravana."
   },
   "paywallFreeForever": {
-    "pt": "A Bíblia e as cenas continuam grátis. Sempre.",
-    "en": "The Bible and the scenes stay free. Always.",
-    "es": "La Biblia y las escenas siguen gratis. Siempre."
+    "pt": "A Bíblia e as trilhas de cada livro continuam grátis. Sempre.",
+    "en": "The Bible and the book trails stay free. Always.",
+    "es": "La Biblia y las rutas de cada libro siguen gratis. Siempre."
   },
   "paywallSave": {
     "pt": "Economize {percent}%",
@@ -1008,6 +1028,14 @@
     "es": "Ahorra {percent}%",
     "placeholders": {
       "percent": "int"
+    }
+  },
+  "paywallPricePerYearShort": {
+    "pt": "{price}/ano",
+    "en": "{price}/yr",
+    "es": "{price}/año",
+    "placeholders": {
+      "price": "String"
     }
   },
   "paywallPricePerMonthShort": {

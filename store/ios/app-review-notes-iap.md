@@ -61,7 +61,8 @@ Character count: about 2,300, under the 4,000 limit.
 STWAY helps Portuguese-speaking Christians build a daily habit of reading and studying the Bible: one short passage a day, studied in three levels (observation, comprehension, interpretation). Sign in with Apple; any Apple ID works.
 
 NEW IN THIS VERSION: PEREGRINO+ (OPTIONAL SUBSCRIPTION)
-The Bible, every lesson in all three levels, rankings and study partners stay free. Peregrino+ adds:
+The whole Bible, the trails for every book of the Bible (all lessons, all three levels), the three onboarding trails, rankings and study partners stay free. Peregrino+ adds:
+- Themed trails (Christian Life and Themes: e.g. Prayer, Family, the Sermon on the Mount): the first lesson of each trail is free; from the second lesson the trail opens the paywall.
 - The liturgical season (Advent, and later seasons when they exist): days 1–3 are free; from day 4 the Home card opens the paywall. The same lesson stays available on the Trails tab. Each week's season review is included.
 - Daily review and weekly review: the week's key ideas plus 3 questions a day.
 - Guided reading plans in full (the first 3 days of each plan are free).

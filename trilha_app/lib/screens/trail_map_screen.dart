@@ -34,8 +34,11 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/journey_sky.dart';
+import '../widgets/journey_station_card.dart' show journeyRomanNumeral;
 import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
+import '../widgets/path_preview_sheet.dart';
+import '../widgets/plus_locked_sheet.dart';
 import '../widgets/mode_emblem.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/reset_progress_sheet.dart';
@@ -453,7 +456,24 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                                       trail,
                                       slug,
                                     ),
+                              onLockedTap: (slug) => _showLockedScene(
+                                trail,
+                                slug,
+                                currentSlug: currentSlug,
+                                plusOpen: plusOpen,
+                                accent: modeAccent,
+                              ),
                               onPlusTap: (slug) {
+                                // A cena em curso tem o botão amarelo: vai
+                                // direto à compra. As seguintes explicam.
+                                if (slug != currentSlug) {
+                                  _showPlusScene(
+                                    trail,
+                                    slug,
+                                    accent: modeAccent,
+                                  );
+                                  return;
+                                }
                                 PlusLog.log(
                                   'trava',
                                   'mapa ${trail.slug} · cena $slug: '
@@ -478,6 +498,85 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  /// Cena fechada pela ordem: diz qual cena falta e leva até ela (ou à
+  /// compra, se a cena em curso pede o Peregrino+).
+  void _showLockedScene(
+    Trail trail,
+    String slug, {
+    required String? currentSlug,
+    required bool plusOpen,
+    required Color? accent,
+  }) {
+    final missions = [for (final m in trail.modules) ...m.missions];
+    final index = missions.indexWhere((m) => m.slug == slug);
+    if (index < 0) return;
+    final mission = missions[index];
+    final current = currentSlug == null
+        ? null
+        : missions.where((m) => m.slug == currentSlug).firstOrNull;
+    final l10n = context.l10n;
+    final roman = journeyRomanNumeral(index + 1);
+    ActHaptics.tap();
+    showPathPreviewSheet(
+      context,
+      title: mission.localizedTitle,
+      description: current == null
+          ? l10n.journeyBeyondHorizon
+          : l10n.trailMapSceneLockedBody(current.localizedTitle),
+      art: TrailArt.ofScene(trail.slug, mission.slug),
+      accent: accent,
+      eyebrow: mission.isBoss
+          ? l10n.trailMapCrossing
+          : '${l10n.commonScene} $roman',
+      glyph: CinematicGlyph.lock,
+      footer: current == null
+          ? null
+          : CopperCta(
+              label: l10n.trailMapGoToScene(current.localizedTitle),
+              expanded: true,
+              onTap: () {
+                Navigator.of(context).pop();
+                if (!plusOpen &&
+                    PlusAccess.missionNeedsPlus(trail, current.slug)) {
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const PaywallScreen(source: 'trail'),
+                    ),
+                  );
+                  return;
+                }
+                Navigator.of(
+                  context,
+                ).pushNamed('/lesson', arguments: current.slug);
+              },
+            ),
+    );
+  }
+
+  /// Cena Peregrino+ que ainda não é a da vez: a folha do Plus.
+  void _showPlusScene(Trail trail, String slug, {required Color? accent}) {
+    final missions = [for (final m in trail.modules) ...m.missions];
+    final index = missions.indexWhere((m) => m.slug == slug);
+    if (index < 0) return;
+    final mission = missions[index];
+    final l10n = context.l10n;
+    ActHaptics.tap();
+    showPlusLockedSheet(
+      context,
+      title: mission.localizedTitle,
+      description: mission.subtitle.trim().isEmpty
+          ? trail.localizedTitle
+          : mission.subtitle,
+      source: 'trail_sheet',
+      art: TrailArt.ofScene(trail.slug, mission.slug),
+      eyebrow: mission.isBoss
+          ? l10n.trailMapCrossing
+          : '${l10n.commonScene} ${journeyRomanNumeral(index + 1)}',
+      accent: accent,
+      glyph: CinematicGlyph.lock,
     );
   }
 

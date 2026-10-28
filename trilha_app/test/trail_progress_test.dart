@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/models/trail_catalog.dart';
 import 'package:trilha_app/utils/catalog_access.dart';
+import 'package:trilha_app/utils/tomorrow_hook.dart';
 import 'package:trilha_app/utils/trail_progress.dart';
 
 void main() {
@@ -380,6 +381,32 @@ void main() {
     expect(TrailProgress.isTrailUnlocked(matthew, path, ['g1']), isTrue);
   });
 
+  test('Salmos espera só o livro anterior, não os Evangelhos', () {
+    final job = contentTrail(
+      slug: 'jo',
+      mission: 'j1',
+      order: 20,
+      categoryId: 'poeticos',
+    );
+    final psalms = contentTrail(
+      slug: 'salmos',
+      mission: 'p1',
+      order: 21,
+      unlockAfter: 'evangelhos',
+      categoryId: 'poeticos',
+    );
+    final gospels = contentTrail(
+      slug: 'evangelhos',
+      mission: 'g1',
+      order: 40,
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final all = [job, psalms, gospels];
+    expect(TrailProgress.isTrailUnlocked(psalms, all, []), isFalse);
+    expect(TrailProgress.isTrailUnlocked(psalms, all, ['j1']), isTrue);
+  });
+
   test('uma trilha Peregrino+ não espera o pré-requisito de outra área', () {
     final psalms = contentTrail(
       slug: 'salmos',
@@ -564,6 +591,69 @@ void main() {
       TrailProgress.findActiveTrail(all, ['entrada-deus-05'])?.slug,
       'evangelhos',
     );
+  });
+
+  test(
+    'terminou um livro: a Home segue o próximo do card, não o Ansiedade',
+    () {
+      final anxiety = contentTrail(
+        slug: 'ansiedade',
+        mission: 'a1',
+        order: 0,
+        realmId: 'vida-crista',
+        categoryId: 'paz-no-dia',
+      );
+      final genesis = contentTrail(slug: 'genesis-1-11', mission: 'g1');
+      final genesis2 = contentTrail(
+        slug: 'genesis-12-50',
+        mission: 'g2',
+        order: 2,
+      );
+      final all = [anxiety, genesis, genesis2];
+      addTearDown(() {
+        TrailProgress.preferredTrailSlug = null;
+        TrailProgress.lastPlayedMissionSlug = null;
+      });
+      TrailProgress.preferredTrailSlug = 'genesis-1-11';
+      TrailProgress.lastPlayedMissionSlug = 'g1';
+      expect(TrailProgress.findActiveTrail(all, ['g1'])?.slug, 'genesis-12-50');
+    },
+  );
+
+  test('Amanhã depois dos Evangelhos não promete Salmos fechado', () {
+    final job = contentTrail(
+      slug: 'jo',
+      mission: 'j1',
+      order: 20,
+      categoryId: 'poeticos',
+    );
+    final psalms = contentTrail(
+      slug: 'salmos',
+      mission: 'p1',
+      order: 21,
+      unlockAfter: 'evangelhos',
+      categoryId: 'poeticos',
+    );
+    final gospels = contentTrail(
+      slug: 'evangelhos',
+      mission: 'e1',
+      order: 40,
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final matthew = contentTrail(
+      slug: 'mateus',
+      mission: 'm1',
+      order: 41,
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final hook = TomorrowHook.resolve(
+      trails: [job, psalms, gospels, matthew],
+      completed: ['e1'],
+      justFinishedSlug: 'e1',
+    );
+    expect(hook?.trailSlug, 'mateus');
   });
 
   test('started trails list the last walked first, then by day', () {

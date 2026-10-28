@@ -243,9 +243,9 @@ class TrailProgress {
         .where((t) => t.slug == trail.unlockAfter)
         .firstOrNull;
     if (prereq == null) return null;
-    if (prereq.journey != trail.journey && _skipsOutsidePrereq(trail)) {
-      return null;
-    }
+    // Só a ordem do próprio caminho trava. Pré-requisito de outro card
+    // (Salmos → Evangelhos, Oração → Salmos) não segura ninguém.
+    if (prereq.journey != trail.journey) return null;
     return isTrailCompleted(
           prereq,
           completed,
@@ -285,6 +285,22 @@ class TrailProgress {
     return null;
   }
 
+  /// Para onde [trail] segue quando acaba: o destino da trilha de entrada
+  /// ([EntryTrails.continuesTo]), depois a seguinte no mesmo caminho. Sem
+  /// isto, quem fechava Gênesis 1–11 caía no começo do catálogo (Ansiedade).
+  static List<Trail> successorsOf(Trail trail, List<Trail> allTrails) {
+    final target = trail.missionSlugs.isEmpty
+        ? null
+        : EntryTrails.continuesTo[trail.missionSlugs.last];
+    return [
+      if (target != null) ...allTrails.where((t) => t.slug == target),
+      for (final peer in allTrails)
+        if (peer.journey == trail.journey &&
+            _previousContentTrail(peer, allTrails)?.slug == trail.slug)
+          peer,
+    ];
+  }
+
   static int _journeyOrder(Trail a, Trail b) {
     final category = TrailCategory.fromId(
       a.categoryId,
@@ -293,16 +309,6 @@ class TrailProgress {
     final order = a.order.compareTo(b.order);
     if (order != 0) return order;
     return a.slug.compareTo(b.slug);
-  }
-
-  /// Não exige um caminho de fora: NT inteiro e toda trilha Peregrino+
-  /// (quem paga pelo tema não espera terminar Atos ou Salmos). Dentro do
-  /// próprio caminho a ordem continua valendo.
-  static bool _skipsOutsidePrereq(Trail trail) {
-    if (trail.realmId == TrailRealm.novoTestamento.id) return true;
-    if (PlusAccess.trailIsPlus(trail)) return true;
-    return trail.slug == 'sermao-do-monte' ||
-        EntryTrails.slugs.contains(trail.slug);
   }
 
   /// A próxima cena desta trilha pede o Peregrino+? Falso quando a trilha
@@ -365,8 +371,9 @@ class TrailProgress {
         : trails.where((t) => t.missionSlugs.contains(lastSlug)).firstOrNull;
     if (open(last)) return last;
     if (last != null) {
-      final next = bySlug(EntryTrails.continuesTo[last.missionSlugs.last]);
-      if (open(next)) return next;
+      for (final next in successorsOf(last, trails)) {
+        if (open(next)) return next;
+      }
     }
     // 2. A do motivo do onboarding.
     final preferred = preferredTrailSlug;

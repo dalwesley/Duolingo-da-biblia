@@ -27,6 +27,11 @@ class PlusAccess {
     return slugs.isNotEmpty && slugs.first != missionSlug;
   }
 
+  /// [trail] está fechada esperando [blocker], que só termina com o Plus?
+  /// Sem o Plus, "Termine [blocker] para abrir" não tem como acontecer.
+  static bool waitsOnPlus(Trail trail, Trail? blocker) =>
+      blocker != null && trailIsPlus(trail) && trailIsPlus(blocker);
+
   /// Peregrino+ de outra pessoa pelo doc público `users/{uid}`
   /// (`plusActive` e `plusExpiresAt`, gravados só pelo webhook). Data de
   /// fim vencida além da graça não conta, mesmo com `plusActive` atrasado.

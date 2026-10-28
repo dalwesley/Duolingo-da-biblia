@@ -71,7 +71,15 @@ class JourneyStationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isCurrent = state == JourneyNodeState.current;
     final isDone = state == JourneyNodeState.completed;
-    final isLocked = state == JourneyNodeState.locked;
+    // Peregrino+ fora da estação em curso: aparência de fechada (cadeado,
+    // pintura apagada) e o status "Só no Peregrino+". Sem botão: o amarelo
+    // fica só na estação em curso; o toque abre a folha do Plus.
+    final plusGate =
+        plusLocked &&
+        state != JourneyNodeState.current &&
+        state != JourneyNodeState.locked &&
+        state != JourneyNodeState.soon;
+    final isLocked = state == JourneyNodeState.locked || plusGate;
     // Fechada não mostra barra: "Falta 1 cena" fazia parecer aberta.
     final meter = isCurrent || (showMeter && !isLocked);
     final isSoon = state == JourneyNodeState.soon;
@@ -400,7 +408,7 @@ class JourneyStationCard extends StatelessWidget {
         ? beacon
         : ActPress(
             onTap: onTap,
-            depth: quiet ? 0 : (isCurrent ? 3 : 2),
+            depth: quiet && !plusGate ? 0 : (isCurrent ? 3 : 2),
             child: beacon,
           );
 
@@ -421,7 +429,12 @@ class JourneyStationCard extends StatelessWidget {
           final width = math.min(preferred, constraints.maxWidth);
           // Altura medida no card em curso (título, modo, barra, cenas).
           // O Peregrino+ soma o botão e passa desse piso.
-          final height = isCurrent && plusLocked ? 182.0 : 129.0;
+          // A fonte do app (Ajustes, até 1,35×) cresce o texto: a altura
+          // cresce junto, senão título de 2 linhas + botão estouram.
+          final scale = MediaQuery.textScalerOf(
+            context,
+          ).scale(1).clamp(1.0, 1.35);
+          final height = (isCurrent && plusLocked ? 182.0 : 129.0) * scale;
           return SizedBox(width: width, height: height, child: tappable);
         },
       ),

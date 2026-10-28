@@ -120,6 +120,10 @@ class SubscriptionService extends ChangeNotifier {
   bool _initialized = false;
   String? _boundUid;
 
+  /// Conta que a loja deveria usar, mesmo se o configure falhou — a nova
+  /// tentativa ([retryOfferings]) não pode cair num id anônimo.
+  String? _wantedUid;
+
   /// Alguma conta já foi ligada nesta abertura (com ou sem loja). Sem
   /// isto, o `bindUid(null)` do boot — antes de o login restaurar —
   /// era lido como "saiu da conta" e apagava o cache de graça offline.
@@ -322,6 +326,7 @@ class SubscriptionService extends ChangeNotifier {
   }
 
   Future<void> _initNow(String? uid) async {
+    _wantedUid = uid;
     if (!isConfigured) {
       PlusLog.log(
         'loja',
@@ -336,24 +341,58 @@ class SubscriptionService extends ChangeNotifier {
     }
     _initialized = true;
     try {
-      final apiKey = defaultTargetPlatform == TargetPlatform.iOS
-          ? _apiKeyIos
-          : _apiKeyAndroid;
-      await Purchases.configure(
-        PurchasesConfiguration(apiKey)..appUserID = uid,
-      );
-      _boundUid = uid;
-      PlusLog.log(
-        'loja',
-        'RevenueCat configurado, conta ${PlusLog.shortUid(uid)}',
-      );
-      Purchases.addCustomerInfoUpdateListener(_onCustomerInfo);
-      final info = await Purchases.getCustomerInfo();
-      _onCustomerInfo(info);
-      await _loadOfferings();
+      await _configureAndLoad(uid);
     } catch (e) {
       PlusLog.log('loja', 'init falhou: $e');
     }
+  }
+
+  Future<void> _configureAndLoad(String? uid) async {
+    final apiKey = defaultTargetPlatform == TargetPlatform.iOS
+        ? _apiKeyIos
+        : _apiKeyAndroid;
+    await Purchases.configure(PurchasesConfiguration(apiKey)..appUserID = uid);
+    _boundUid = uid;
+    PlusLog.log(
+      'loja',
+      'RevenueCat configurado, conta ${PlusLog.shortUid(uid)}',
+    );
+    Purchases.addCustomerInfoUpdateListener(_onCustomerInfo);
+    final info = await Purchases.getCustomerInfo();
+    _onCustomerInfo(info);
+    await _loadOfferings();
+  }
+
+  /// A oferta não veio na abertura (sem rede, loja lenta, init que falhou):
+  /// tenta de novo. Antes ficava assim até reiniciar o app — o paywall dizia
+  /// "não disponível" e o Plus seguia fechado, sem saída. O paywall chama ao
+  /// abrir e no "Tentar de novo".
+  Future<void> retryOfferings() {
+    if (!isConfigured || _offeringsReady || _debugFakeStore) {
+      return Future<void>.value();
+    }
+    final run = _bindChain.then((_) async {
+      if (_offeringsReady) return;
+      loading = true;
+      notifyListeners();
+      try {
+        if (!_initialized || !await Purchases.isConfigured) {
+          _initialized = true;
+          await _configureAndLoad(_wantedUid);
+        } else {
+          final info = await Purchases.getCustomerInfo();
+          _onCustomerInfo(info);
+          await _loadOfferings();
+        }
+      } catch (e) {
+        PlusLog.log('ofertas', 'nova tentativa falhou: $e');
+      } finally {
+        loading = false;
+        notifyListeners();
+      }
+    });
+    _bindChain = run.catchError((Object _) {});
+    return run;
   }
 
   /// Liga a compra à conta Firebase. Sem uid, encerra a sessão da loja
@@ -366,9 +405,11 @@ class SubscriptionService extends ChangeNotifier {
 
   Future<void> _bindNow(String? uid) async {
     if (uid == null || uid.isEmpty) {
+      _wantedUid = null;
       await _endSession();
       return;
     }
+    _wantedUid = uid;
     _hadAccount = true;
     // Cache de outra conta neste aparelho não atravessa a troca: sem
     // isto, a pessoa nova herdava o Plus até a loja responder — e para
@@ -700,12 +741,25 @@ class SubscriptionService extends ChangeNotifier {
         'compra',
         '$productId ${isPeregrinoPlus ? 'concluída' : 'sem entitlement'}',
       );
+      // A loja aceitou mas o Plus não veio (recibo de outra conta da
+      // loja): sem aviso, o toque parecia não fazer nada.
+      if (!isPeregrinoPlus) lastError = L10n.current.paywallPurchaseNoAccess;
       return isPeregrinoPlus;
     } on PlatformException catch (e) {
       final code = PurchasesErrorHelper.getErrorCode(e);
       if (code == PurchasesErrorCode.purchaseCancelledError) {
         track('cancel');
         PlusLog.log('compra', '$productId cancelada pela pessoa');
+      } else if (code == PurchasesErrorCode.paymentPendingError) {
+        // Boleto/PIX no Play: a compra fecha depois, pelo listener. Dizer
+        // "falhou" levava a pagar de novo.
+        track('pending');
+        lastError = L10n.current.paywallPurchasePending;
+        PlusLog.log('compra', '$productId pagamento pendente');
+      } else if (code == PurchasesErrorCode.productAlreadyPurchasedError) {
+        track('fail');
+        lastError = L10n.current.paywallPurchaseAlreadyOwned;
+        PlusLog.log('compra', '$productId já comprado: restaurar');
       } else {
         track('fail');
         lastError = L10n.current.paywallPurchaseFailed;

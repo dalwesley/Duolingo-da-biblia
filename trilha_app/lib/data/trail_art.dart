@@ -64,6 +64,7 @@ class TrailArt {
     'marcos',
     'mateus',
     'miqueias',
+    'missao',
     'naum',
     'neemias',
     'numeros',
@@ -74,7 +75,6 @@ class TrailArt {
     'periodo-intertestamentario',
     'pneumatologia',
     'proverbios',
-    'recomeco',
     'reforma',
     'reis',
     'romanos',
@@ -91,6 +91,7 @@ class TrailArt {
     'timoteo',
     'tito',
     'vida-crista',
+    'zacarias',
   };
 
   static String? of(String slug) => switch (slug) {

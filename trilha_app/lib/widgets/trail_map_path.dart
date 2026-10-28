@@ -32,6 +32,9 @@ class TrailMapPath extends StatelessWidget {
   /// Toque numa cena que pede o Plus: abre a compra, não a cena.
   final void Function(String slug)? onPlusTap;
 
+  /// Toque numa cena ainda fechada pela ordem: explica o que falta.
+  final void Function(String slug)? onLockedTap;
+
   /// Trilha dona destas cenas — a pintura do card.
   final String trailSlug;
 
@@ -53,6 +56,7 @@ class TrailMapPath extends StatelessWidget {
     this.currentSlug,
     this.plusLocked,
     this.onPlusTap,
+    this.onLockedTap,
   });
 
   bool _completed(String slug) => completedMissions.contains(slug);
@@ -131,8 +135,10 @@ class TrailMapPath extends StatelessWidget {
         accent: accent,
         glow: glow,
         chrome: chrome,
-        onTap: !unlocked
-            ? null
+        // Fechada pela ordem e também paga: o toque é a compra, como o
+        // status ("Só no Peregrino+") já diz.
+        onTap: !unlocked && !(needsPlus && onPlusTap != null)
+            ? (onLockedTap == null ? null : () => onLockedTap!(mission.slug))
             : needsPlus && onPlusTap != null
             ? () => onPlusTap!(mission.slug)
             : () => onMissionTap?.call(mission.slug),

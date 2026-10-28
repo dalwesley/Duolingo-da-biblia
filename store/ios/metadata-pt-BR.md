@@ -39,7 +39,7 @@ HEBRAICO E GREGO POR BAIXO DA PALAVRA
 Leia na Almeida Atualizada Livre ou na Tradução Brasileira, mesmo sem internet. Toque uma palavra para ver o original em hebraico ou grego, com o número de Strong e o sentido.
 
 DO GÊNESIS AO APOCALIPSE
-Trilhas cena por cena: Gênesis, Êxodo, Evangelhos, Cartas, Salmos e caminhos para a vida, como Oração, Ansiedade, Recomeço e Família.
+Trilhas cena por cena por todos os livros da Bíblia: Gênesis, Êxodo, Evangelhos, Cartas, Salmos. A Bíblia e as trilhas de cada livro são grátis. Trilhas por tema para a vida, como Oração, Família e o Sermão do Monte, fazem parte do Peregrino+ (assinatura opcional; a 1ª cena de cada uma é grátis).
 
 UM HÁBITO QUE CABE NO DIA
 • De 5 a 12 minutos por dia.
