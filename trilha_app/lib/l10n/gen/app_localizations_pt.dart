@@ -9639,6 +9639,31 @@ class AppLocalizationsPt extends AppLocalizations {
   String get waveCta => 'Acenar';
 
   @override
+  String get webRedeemDone =>
+      'Peregrino+ ativado. A assinatura do site agora está na sua conta.';
+
+  @override
+  String webRedeemExpired(String email) {
+    return 'O link venceu. Um novo foi enviado para $email.';
+  }
+
+  @override
+  String get webRedeemFailed =>
+      'Não foi possível ativar a assinatura do site. Tente de novo em instantes.';
+
+  @override
+  String get webRedeemInvalid =>
+      'Este link de ativação não vale mais. Se você já ativou, o Peregrino+ está na sua conta.';
+
+  @override
+  String get webRedeemNeedsAccount =>
+      'Entre na sua conta e toque no link de novo para ativar o Peregrino+ do site.';
+
+  @override
+  String get webRedeemOtherAccount =>
+      'Esta assinatura do site já está ligada a outra conta do STWAY.';
+
+  @override
   String get weeklyReviewDoneBody =>
       'Revisão feita. Na próxima semana tem outra.';
 

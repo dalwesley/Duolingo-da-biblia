@@ -9606,6 +9606,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get waveCta => 'Wave';
 
   @override
+  String get webRedeemDone =>
+      'Peregrino+ is on. Your website subscription is now on your account.';
+
+  @override
+  String webRedeemExpired(String email) {
+    return 'The link expired. A new one was sent to $email.';
+  }
+
+  @override
+  String get webRedeemFailed =>
+      'Couldn\'t turn on your website subscription. Try again in a moment.';
+
+  @override
+  String get webRedeemInvalid =>
+      'This activation link is no longer valid. If you already used it, Peregrino+ is on your account.';
+
+  @override
+  String get webRedeemNeedsAccount =>
+      'Sign in, then tap the link again to turn on your website Peregrino+.';
+
+  @override
+  String get webRedeemOtherAccount =>
+      'This website subscription is already linked to another STWAY account.';
+
+  @override
   String get weeklyReviewDoneBody =>
       'Review done. There\'s another one next week.';
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planos — STWAY</title>
+  <meta name="description" content="A Bíblia é grátis no STWAY. O Peregrino+ abre as trilhas por tema, as estações, os planos guiados e a revisão da semana. Assine pelo site ou pelo app." />
+  <meta name="theme-color" content="#040910" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Planos — STWAY" />
+  <meta property="og:description" content="A Bíblia é grátis. O caminho guiado é Peregrino+." />
+  <meta property="og:image" content="https://stway.com.br/og.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://stway.com.br/planos" />
+  <link rel="canonical" href="https://stway.com.br/planos" />
+  <link rel="icon" href="/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css?v=planos1" />
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true"></div>
+  <div class="film" aria-hidden="true">
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div>
+  <header class="site-header is-solid">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img src="/icon-192.png" alt="" width="34" height="34" />
+        STWAY
+      </a>
+      <nav class="nav" aria-label="Seções">
+        <a class="quiet" href="/#palco">O palco</a>
+        <a class="quiet" href="/#profundidades">Profundidades</a>
+        <a class="quiet" href="/#jornada">Trilha</a>
+        <a class="quiet is-on" href="/planos" aria-current="page">Planos</a>
+        <a class="quiet" href="/sobre">Sobre</a>
+        <a class="quiet" href="/doar">Doar</a>
+        <a class="btn btn-gold btn-sm" href="#peregrino">Assinar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page planos">
+    <header class="planos-head">
+      <p class="kicker">Planos</p>
+      <h1>A Bíblia é grátis.<br><em>O caminho guiado</em> é Peregrino+.</h1>
+      <p class="lead">Ler, estudar o Antigo e o Novo Testamento cena por cena e caminhar com a sua liga não custam nada. O Peregrino+ abre as trilhas por tema, as estações e os planos guiados — e ajuda a manter o STWAY de pé.</p>
+
+      <div class="billing" role="group" aria-label="Forma de cobrança">
+        <button type="button" class="billing-opt" data-billing="anual" aria-pressed="true">Anual</button>
+        <button type="button" class="billing-opt" data-billing="mensal" aria-pressed="false">Mensal</button>
+        <span class="billing-save" id="billing-save">Pague 6 meses, leve 12</span>
+      </div>
+    </header>
+
+    <div class="plan-grid">
+      <!-- Grátis -->
+      <article class="plan" aria-labelledby="plan-free">
+        <p class="plan-tag">Para começar todo dia</p>
+        <h2 id="plan-free">Grátis</h2>
+        <p class="plan-sub">A Palavra inteira, sem cartão.</p>
+        <div class="plan-price">
+          <span class="plan-amount">R$&nbsp;0</span>
+          <span class="plan-note">para sempre</span>
+        </div>
+        <a class="btn btn-ghost plan-cta" data-store href="/#teste">Baixar o app</a>
+        <p class="plan-list-head">O que está incluso</p>
+        <ul class="plan-list">
+          <li><strong>A Bíblia inteira</strong><span>Tradução Brasileira, com busca, versículos guardados e leitura sem internet.</span></li>
+          <li><strong>Antigo e Novo Testamento, cena por cena</strong><span>Os seis gestos e as três profundidades em todos os livros.</span></li>
+          <li><strong>Hebraico e grego por baixo da palavra</strong><span>Toque a palavra e veja o Strong.</span></li>
+          <li><strong>Plano da Bíblia inteira</strong><span>Com lembrete diário de leitura.</span></li>
+          <li><strong>Liga e Caravana</strong><span>Caminhe junto com quem está na mesma estrada.</span></li>
+        </ul>
+      </article>
+
+      <!-- Peregrino+ -->
+      <article class="plan plan-hero" id="peregrino" aria-labelledby="plan-plus">
+        <p class="plan-tag" id="plus-tag">Preço de Pioneiro</p>
+        <h2 id="plan-plus">Peregrino+</h2>
+        <p class="plan-sub">Tudo do Grátis, com trilhas guiadas para ir mais fundo.</p>
+        <div class="plan-price" aria-live="polite">
+          <s class="plan-was" id="plus-was"></s>
+          <span class="plan-amount" id="plus-amount"></span>
+          <span class="plan-note" id="plus-note"></span>
+        </div>
+        <p class="plan-fine" id="plus-fine"></p>
+        <a class="btn btn-gold btn-sheen plan-cta" id="plus-cta" href="#como">Começar 14 dias grátis</a>
+        <p class="plan-cta-note" id="plus-cta-note"></p>
+        <p class="plan-list-head">Tudo do Grátis, mais</p>
+        <ul class="plan-list">
+          <li><strong>Trilhas por tema</strong><span>Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.</span></li>
+          <li><strong>Trilhas da estação</strong><span>O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.</span></li>
+          <li><strong>Revisão da semana</strong><span>Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.</span></li>
+          <li><strong>Planos de leitura</strong><span>Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.</span></li>
+          <li><strong>Seus dias</strong><span>Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.</span></li>
+          <li><strong>O que você mais erra</strong><span>Você vê onde tropeça. Depois, um treino só daquilo.</span></li>
+          <li><strong>Erros explicados</strong><span>Cada erro fica guardado, com a resposta certa e o porquê.</span></li>
+          <li><strong>Selo de Peregrino</strong><span>Um selo exclusivo no seu perfil e na Caravana.</span></li>
+          <li><strong>Reconhecimento</strong><span>Veja quem reconheceu a sua jornada e as suas medalhas.</span></li>
+        </ul>
+      </article>
+
+      <!-- Igrejas -->
+      <article class="plan plan-church" aria-labelledby="plan-church">
+        <p class="plan-tag">Para igrejas e líderes</p>
+        <h2 id="plan-church">Igreja</h2>
+        <p class="plan-sub">Células, discipulado e escola bíblica no mesmo texto.</p>
+        <div class="plan-price">
+          <span class="plan-amount plan-amount-sm">Sob consulta</span>
+          <span class="plan-note">em preparo</span>
+        </div>
+        <a class="btn btn-ghost plan-cta" href="/#contato">Entrar na lista</a>
+        <p class="plan-list-head">O que estamos preparando</p>
+        <ul class="plan-list">
+          <li><strong>Grupos de estudo</strong><span>O líder escolhe a trilha e a cena da semana para o grupo.</span></li>
+          <li><strong>Peregrino+ para o grupo</strong><span>A cena da semana abre para todos os membros.</span></li>
+          <li><strong>Conversa direta conosco</strong><span>Montamos o plano com a sua igreja.</span></li>
+        </ul>
+        <p class="plan-church-note">Igreja pequena ou pastor sem verba? Fale com a gente mesmo assim.</p>
+      </article>
+    </div>
+
+    <section class="como" id="como" data-web aria-labelledby="como-title">
+      <h2 id="como-title" class="display display-sm">Assinou no site?<br><em>Três passos.</em></h2>
+      <ol class="como-steps">
+        <li>
+          <span class="como-n">1</span>
+          <strong>Assine aqui</strong>
+          <p>Cartão de crédito, em página segura. O recibo chega no seu e-mail.</p>
+        </li>
+        <li>
+          <span class="como-n">2</span>
+          <strong>Instale o STWAY e entre na sua conta</strong>
+          <p>No celular onde você vai estudar, Android ou iPhone.</p>
+        </li>
+        <li>
+          <span class="como-n">3</span>
+          <strong>Toque em “Ativar no app”</strong>
+          <p>O link vem na página de confirmação e no e-mail. O Peregrino+ entra na sua conta.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="display display-sm">Perguntas</h2>
+      <details>
+        <summary>Preciso pagar para ler a Bíblia?</summary>
+        <p>Não. A Bíblia inteira, o Antigo e o Novo Testamento cena por cena, a liga e o plano da Bíblia inteira são grátis e continuam grátis.</p>
+      </details>
+      <details>
+        <summary>Como funcionam os 14 dias grátis?</summary>
+        <p>No plano anual, você usa o Peregrino+ por 14 dias sem pagar. A cobrança só acontece no 15º dia. Cancele antes e nada é cobrado.</p>
+      </details>
+      <details>
+        <summary>O que é o preço de Pioneiro?</summary>
+        <p>Os primeiros assinantes do anual pagam R$&nbsp;89,90 por ano, e esse preço fica travado enquanto a assinatura renovar. Depois, o anual passa a custar R$&nbsp;119,90.</p>
+      </details>
+      <details data-web>
+        <summary>Assinei pelo site. Vale no Android e no iPhone?</summary>
+        <p>Vale. Depois de ativada, a assinatura fica na sua conta do STWAY, e não no aparelho. Entre com a mesma conta em qualquer celular.</p>
+      </details>
+      <details>
+        <summary>Como cancelo?</summary>
+        <p>Quem assinou pelo site cancela pelo link do e-mail de recibo, a qualquer momento. Quem assinou pelo app cancela na App Store ou no Google Play. O acesso segue até o fim do período pago.</p>
+      </details>
+      <details>
+        <summary>Já assino pelo app. Preciso fazer algo?</summary>
+        <p>Não. Sua assinatura continua na loja do celular. Não assine de novo pelo site.</p>
+      </details>
+    </section>
+
+    <p class="planos-fine">Preços em reais. Ao assinar, você concorda com os <a href="/termos">Termos de uso</a> e a <a href="/privacidade">Política de privacidade</a>. Quer só ajudar, sem assinar? <a href="/doar">Doe qualquer valor</a>.</p>
+  </main>
+
+  <footer class="site-footer site-footer-full">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <img src="/icon-192.png" alt="" width="34" height="34" loading="lazy" />
+          STWAY
+        </a>
+        <p class="footer-mission">Feito para despertar o amor pelas Escrituras e o hábito de lê-las — um passo por dia, o texto no centro.</p>
+        <blockquote class="footer-verse">
+          <p>Quanto amo a tua lei! Ela é a minha meditação de contínuo.</p>
+          <footer>Salmos 119:97</footer>
+        </blockquote>
+      </div>
+
+      <nav class="footer-col" aria-label="O app">
+        <h2>O app</h2>
+        <a href="/#palco">Os seis gestos</a>
+        <a href="/#profundidades">Três profundidades</a>
+        <a href="/#strong">Hebraico e grego (Strong)</a>
+        <a href="/#jornada">A trilha</a>
+        <a href="/planos" aria-current="page">Planos</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/doar">Doar</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Participe">
+        <h2>Participe</h2>
+        <a href="/#teste">Entrar no teste</a>
+        <a href="/#contato">Para igrejas</a>
+        <a href="/#contato">Imprensa</a>
+        <a href="/#contato">Fale conosco</a>
+      </nav>
+
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <a href="mailto:stway.app@gmail.com">stway.app@gmail.com</a>
+        <a href="/termos">Termos</a>
+        <a href="/privacidade">Privacidade</a>
+      </div>
+    </div>
+
+    <div class="wrap footer-base">
+      <span>© 2026 STWAY</span>
+      <span>Texto bíblico: Tradução Brasileira</span>
+      <span>Feito no Brasil, para quem quer ler a Bíblia de verdade.</span>
+    </div>
+  </footer>
+  <script src="/planos/planos.js?v=1" defer></script>
+</body>
+</html>

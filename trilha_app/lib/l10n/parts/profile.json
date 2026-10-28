@@ -1090,5 +1090,38 @@
     "placeholders": {
       "price": "String"
     }
+  },
+  "webRedeemDone": {
+    "pt": "Peregrino+ ativado. A assinatura do site agora está na sua conta.",
+    "en": "Peregrino+ is on. Your website subscription is now on your account.",
+    "es": "Peregrino+ activado. La suscripción del sitio ya está en tu cuenta."
+  },
+  "webRedeemNeedsAccount": {
+    "pt": "Entre na sua conta e toque no link de novo para ativar o Peregrino+ do site.",
+    "en": "Sign in, then tap the link again to turn on your website Peregrino+.",
+    "es": "Inicia sesión y toca el enlace otra vez para activar el Peregrino+ del sitio."
+  },
+  "webRedeemOtherAccount": {
+    "pt": "Esta assinatura do site já está ligada a outra conta do STWAY.",
+    "en": "This website subscription is already linked to another STWAY account.",
+    "es": "Esta suscripción del sitio ya está vinculada a otra cuenta de STWAY."
+  },
+  "webRedeemInvalid": {
+    "pt": "Este link de ativação não vale mais. Se você já ativou, o Peregrino+ está na sua conta.",
+    "en": "This activation link is no longer valid. If you already used it, Peregrino+ is on your account.",
+    "es": "Este enlace de activación ya no es válido. Si ya lo usaste, Peregrino+ está en tu cuenta."
+  },
+  "webRedeemExpired": {
+    "pt": "O link venceu. Um novo foi enviado para {email}.",
+    "en": "The link expired. A new one was sent to {email}.",
+    "es": "El enlace venció. Se envió uno nuevo a {email}.",
+    "placeholders": {
+      "email": "String"
+    }
+  },
+  "webRedeemFailed": {
+    "pt": "Não foi possível ativar a assinatura do site. Tente de novo em instantes.",
+    "en": "Couldn't turn on your website subscription. Try again in a moment.",
+    "es": "No se pudo activar la suscripción del sitio. Inténtalo de nuevo en un momento."
   }
 }

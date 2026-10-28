@@ -35,6 +35,7 @@
             <!-- Convite de companhia: stway://companhia/CODIGO -->
             <!-- Convite de grupo: stway://sala/CODIGO -->
             <!-- Abrir Juntos: stway://juntos -->
+            <!-- Peregrino+ do site: stway://redeem_web_purchase?… (RevenueCat) -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -44,6 +45,7 @@
                 <data android:scheme="stway" android:host="juntos"/>
                 <data android:scheme="stway" android:host="sala"/>
                 <data android:scheme="stway" android:host="grupo"/>
+                <data android:scheme="stway" android:host="redeem_web_purchase"/>
             </intent-filter>
         </activity>
         <receiver

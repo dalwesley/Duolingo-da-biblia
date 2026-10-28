@@ -9664,6 +9664,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String get waveCta => 'Saludar';
 
   @override
+  String get webRedeemDone =>
+      'Peregrino+ activado. La suscripción del sitio ya está en tu cuenta.';
+
+  @override
+  String webRedeemExpired(String email) {
+    return 'El enlace venció. Se envió uno nuevo a $email.';
+  }
+
+  @override
+  String get webRedeemFailed =>
+      'No se pudo activar la suscripción del sitio. Inténtalo de nuevo en un momento.';
+
+  @override
+  String get webRedeemInvalid =>
+      'Este enlace de activación ya no es válido. Si ya lo usaste, Peregrino+ está en tu cuenta.';
+
+  @override
+  String get webRedeemNeedsAccount =>
+      'Inicia sesión y toca el enlace otra vez para activar el Peregrino+ del sitio.';
+
+  @override
+  String get webRedeemOtherAccount =>
+      'Esta suscripción del sitio ya está vinculada a otra cuenta de STWAY.';
+
+  @override
   String get weeklyReviewDoneBody =>
       'Repaso hecho. La próxima semana hay otro.';
 

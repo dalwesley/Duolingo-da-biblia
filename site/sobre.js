@@ -1,9 +1,9 @@
-/* Aberta pelo app (?src=app): sem links de doação nem navegação para o
+/* Aberta pelo app (?src=app): sem links de doação, planos nem navegação para o
    resto do site — as lojas não permitem levar do app para pagamento externo. */
 (function hideDonateWhenFromApp() {
   if (new URLSearchParams(location.search).get('src') !== 'app') return;
   document
-    .querySelectorAll('a[href^="/doar"], .sb-doar, header .nav')
+    .querySelectorAll('a[href^="/doar"], a[href^="/planos"], .sb-doar, header .nav')
     .forEach((el) => el.remove());
 })();
 

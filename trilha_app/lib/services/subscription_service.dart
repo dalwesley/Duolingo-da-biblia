@@ -28,6 +28,24 @@ import 'remote_config_service.dart';
 /// O gate das telas é [plusFeaturesOpen]: sem loja configurada abre tudo;
 /// com loja, fecha sem Plus mesmo se a oferta falhar — o cache do último
 /// entitlement segura o assinante até vencer + 7 dias de graça.
+/// Resultado do resgate de uma compra feita no site.
+enum WebRedeemOutcome {
+  success,
+
+  /// Não há conta ligada: o resgate esperaria num id anônimo.
+  needsAccount,
+
+  /// A compra já foi ligada a outra conta do STWAY.
+  otherAccount,
+
+  /// Link que não é de resgate ou já usado.
+  invalid,
+
+  /// Link vencido: o RevenueCat manda um novo por e-mail.
+  expired,
+  failed,
+}
+
 class SubscriptionService extends ChangeNotifier {
   String? _lastSnapshot;
 
@@ -843,6 +861,67 @@ class SubscriptionService extends ChangeNotifier {
       unawaited(AnalyticsService.instance.logRestore('error'));
       PlusLog.log('restaurar', 'falhou: $e');
       return null;
+    } finally {
+      loading = false;
+      notifyListeners();
+    }
+  }
+
+  /// Resgata o Peregrino+ comprado no site (link de resgate do RevenueCat).
+  /// Passa pela mesma fila do [bindUid]: sem isto o resgate podia cair no
+  /// id anônimo antes de a conta ligar — e a compra ficava sem dono.
+  Future<WebRedeemOutcome> redeemWebPurchase(String link) {
+    final run = _bindChain.then((_) => _redeemNow(link));
+    _bindChain = run.catchError((Object _) => WebRedeemOutcome.failed);
+    return run;
+  }
+
+  /// E-mail mascarado do último link vencido (o RevenueCat manda outro).
+  String? lastRedeemEmail;
+
+  Future<WebRedeemOutcome> _redeemNow(String link) async {
+    if (!isConfigured || !_initialized || _debugFakeStore) {
+      PlusLog.log('site', 'resgate sem loja configurada');
+      return WebRedeemOutcome.failed;
+    }
+    if (_boundUid == null) {
+      PlusLog.log('site', 'resgate sem conta: pede login');
+      return WebRedeemOutcome.needsAccount;
+    }
+    loading = true;
+    notifyListeners();
+    try {
+      final redemption = await Purchases.parseAsWebPurchaseRedemption(link);
+      if (redemption == null) return WebRedeemOutcome.invalid;
+      final result = await Purchases.redeemWebPurchase(redemption);
+      if (result case WebPurchaseRedemptionSuccess(:final customerInfo)) {
+        _onCustomerInfo(customerInfo);
+      }
+      if (result case WebPurchaseRedemptionExpired(:final obfuscatedEmail)) {
+        lastRedeemEmail = obfuscatedEmail;
+      }
+      if (result case WebPurchaseRedemptionError(:final error)) {
+        PlusLog.log('site', 'erro da loja: ${error.message}');
+      }
+      final outcome = switch (result) {
+        WebPurchaseRedemptionSuccess() when isPeregrinoPlus =>
+          WebRedeemOutcome.success,
+        WebPurchaseRedemptionPurchaseBelongsToOtherUser() =>
+          WebRedeemOutcome.otherAccount,
+        WebPurchaseRedemptionInvalidToken() => WebRedeemOutcome.invalid,
+        WebPurchaseRedemptionExpired() => WebRedeemOutcome.expired,
+        _ => WebRedeemOutcome.failed,
+      };
+      PlusLog.log('site', 'resgate: ${outcome.name}');
+      unawaited(
+        AnalyticsService.instance.logEvent('plus_web_redeem', {
+          'result': outcome.name,
+        }),
+      );
+      return outcome;
+    } catch (e) {
+      PlusLog.log('site', 'resgate falhou: $e');
+      return WebRedeemOutcome.failed;
     } finally {
       loading = false;
       notifyListeners();

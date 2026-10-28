@@ -6531,6 +6531,19 @@
     }
   },
   "waveCta": "Acenar",
+  "webRedeemDone": "Peregrino+ ativado. A assinatura do site agora está na sua conta.",
+  "webRedeemExpired": "O link venceu. Um novo foi enviado para {email}.",
+  "@webRedeemExpired": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "webRedeemFailed": "Não foi possível ativar a assinatura do site. Tente de novo em instantes.",
+  "webRedeemInvalid": "Este link de ativação não vale mais. Se você já ativou, o Peregrino+ está na sua conta.",
+  "webRedeemNeedsAccount": "Entre na sua conta e toque no link de novo para ativar o Peregrino+ do site.",
+  "webRedeemOtherAccount": "Esta assinatura do site já está ligada a outra conta do STWAY.",
   "weeklyReviewDoneBody": "Revisão feita. Na próxima semana tem outra.",
   "weeklyReviewEmptyBody": "{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}",
   "@weeklyReviewEmptyBody": {

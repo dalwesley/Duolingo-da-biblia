@@ -4,6 +4,7 @@ import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 
 /// Deep links: `stway://companhia/CODIGO` · `stway://sala/CODIGO` · `stway://juntos`
+/// · `stway://redeem_web_purchase?…` (Peregrino+ comprado no site)
 /// Link https do grupo (câmera / WhatsApp): [roomHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
@@ -14,11 +15,15 @@ class InviteDeepLinkService extends ChangeNotifier {
   static const juntosHost = 'juntos';
   static const roomHost = 'sala';
 
+  /// Link de resgate que o RevenueCat manda depois da compra no site.
+  static const webPurchaseHost = 'redeem_web_purchase';
+
   final _appLinks = AppLinks();
   StreamSubscription<Uri>? _sub;
 
   String? _pendingCompanionCode;
   String? _pendingRoomCode;
+  String? _pendingWebPurchaseLink;
   bool _wantJuntosTab = false;
   bool _wantCompanhiaTab = false;
   bool _wantGruposTab = false;
@@ -141,6 +146,11 @@ $juntosHttpsUrl
   }
 
   void _ingestUri(Uri uri) {
+    if (uri.scheme == scheme && uri.host.toLowerCase() == webPurchaseHost) {
+      _pendingWebPurchaseLink = uri.toString();
+      notifyListeners();
+      return;
+    }
     final roomCode = extractRoomCode(uri.toString());
     if (roomCode != null) {
       offerRoomCode(roomCode);
@@ -213,6 +223,13 @@ $juntosHttpsUrl
     final code = _pendingRoomCode;
     _pendingRoomCode = null;
     return code;
+  }
+
+  /// MainShell consome o link de resgate da compra no site (uma vez).
+  String? takePendingWebPurchaseLink() {
+    final link = _pendingWebPurchaseLink;
+    _pendingWebPurchaseLink = null;
+    return link;
   }
 
   /// LeagueScreen consome o código pendente (uma vez).

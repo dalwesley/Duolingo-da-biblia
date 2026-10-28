@@ -17,6 +17,7 @@ import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
+import '../services/subscription_service.dart';
 import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -205,6 +206,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       }
       unawaited(_maybePromptAppUpdate());
       _openJuntosIfInvitePending();
+      unawaited(_redeemWebPurchaseIfPending());
       MedalEngagementService.instance.scheduleCheck(context);
     });
   }
@@ -218,6 +220,34 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   void _onInviteDeepLink() {
     if (!mounted) return;
     _openJuntosIfInvitePending();
+    unawaited(_redeemWebPurchaseIfPending());
+  }
+
+  /// Peregrino+ comprado no site: o link de resgate liga a compra à conta.
+  Future<void> _redeemWebPurchaseIfPending() async {
+    final link = InviteDeepLinkService.instance.takePendingWebPurchaseLink();
+    if (link == null) return;
+    final outcome = await context.read<SubscriptionService>().redeemWebPurchase(
+      link,
+    );
+    if (!mounted) return;
+    final l10n = context.l10n;
+    final ok = outcome == WebRedeemOutcome.success;
+    showAppToastFor(
+      context,
+      message: switch (outcome) {
+        WebRedeemOutcome.success => l10n.webRedeemDone,
+        WebRedeemOutcome.needsAccount => l10n.webRedeemNeedsAccount,
+        WebRedeemOutcome.otherAccount => l10n.webRedeemOtherAccount,
+        WebRedeemOutcome.invalid => l10n.webRedeemInvalid,
+        WebRedeemOutcome.expired => l10n.webRedeemExpired(
+          context.read<SubscriptionService>().lastRedeemEmail ?? '',
+        ),
+        WebRedeemOutcome.failed => l10n.webRedeemFailed,
+      },
+      glyph: ok ? CinematicGlyph.gift : CinematicGlyph.lamp,
+      tone: ok ? AppToastTone.accent : AppToastTone.warn,
+    );
   }
 
   void _openJuntosIfInvitePending() {

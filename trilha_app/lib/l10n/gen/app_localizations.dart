@@ -14913,6 +14913,42 @@ abstract class AppLocalizations {
   /// **'Acenar'**
   String get waveCta;
 
+  /// No description provided for @webRedeemDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+ ativado. A assinatura do site agora está na sua conta.'**
+  String get webRedeemDone;
+
+  /// No description provided for @webRedeemExpired.
+  ///
+  /// In pt, this message translates to:
+  /// **'O link venceu. Um novo foi enviado para {email}.'**
+  String webRedeemExpired(String email);
+
+  /// No description provided for @webRedeemFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível ativar a assinatura do site. Tente de novo em instantes.'**
+  String get webRedeemFailed;
+
+  /// No description provided for @webRedeemInvalid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este link de ativação não vale mais. Se você já ativou, o Peregrino+ está na sua conta.'**
+  String get webRedeemInvalid;
+
+  /// No description provided for @webRedeemNeedsAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre na sua conta e toque no link de novo para ativar o Peregrino+ do site.'**
+  String get webRedeemNeedsAccount;
+
+  /// No description provided for @webRedeemOtherAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta assinatura do site já está ligada a outra conta do STWAY.'**
+  String get webRedeemOtherAccount;
+
   /// No description provided for @weeklyReviewDoneBody.
   ///
   /// In pt, this message translates to:
