@@ -132,6 +132,74 @@ test('transferência desliga a conta de origem', () => {
   ]);
 });
 
+test('transferência de assinatura vencida não liga o destino, só desliga a origem', () => {
+  const out = RC.plusStateFromEvent({
+    type: 'TRANSFER',
+    transferred_from: ['uid-velho'],
+    transferred_to: ['uid-novo'],
+    product_id: 'plus_annual',
+    entitlement_ids: ['peregrino_plus'],
+    expiration_at_ms: past,
+  });
+  assert.equal(out.uid, 'uid-novo');
+  assert.equal(out.fields, null);
+  assert.deepEqual(out.also, [
+    { uid: 'uid-velho', fields: { plusActive: false, plusWillRenew: false } },
+  ]);
+});
+
+test('transferência sem data de fim ou sem entitlement não dá Plus', () => {
+  // Não há produto vitalício: sem data, não há como saber que ainda vale.
+  const noDate = RC.plusStateFromEvent({
+    type: 'TRANSFER',
+    transferred_to: ['uid-novo'],
+    product_id: 'plus_annual',
+    entitlement_ids: ['peregrino_plus'],
+  });
+  assert.equal(noDate, null);
+  const noEntitlement = RC.plusStateFromEvent({
+    type: 'TRANSFER',
+    transferred_from: ['uid-velho'],
+    transferred_to: ['uid-novo'],
+    product_id: 'plus_annual',
+    expiration_at_ms: future,
+  });
+  assert.equal(noEntitlement.fields, null);
+  assert.equal(noEntitlement.also.length, 1);
+});
+
+test('transferência de recibo de apoio dá só o selo', () => {
+  const out = RC.plusStateFromEvent({
+    type: 'TRANSFER',
+    transferred_from: ['uid-velho'],
+    transferred_to: ['uid-novo'],
+    product_id: 'apoio_15',
+    entitlement_ids: ['peregrino_plus'],
+    expiration_at_ms: future,
+  });
+  assert.deepEqual(out.fields, { supporter: true });
+});
+
+test('evento sem lista de entitlements não liga o Plus', () => {
+  assert.equal(
+    RC.plusStateFromEvent({
+      type: 'INITIAL_PURCHASE',
+      app_user_id: 'uid1',
+      product_id: 'plus_annual',
+      expiration_at_ms: future,
+    }),
+    null,
+  );
+  // Formato antigo: `entitlement_id` como texto.
+  const legacy = RC.plusStateFromEvent({
+    type: 'RENEWAL',
+    app_user_id: 'uid1',
+    entitlement_id: 'peregrino_plus',
+    expiration_at_ms: future,
+  });
+  assert.equal(legacy.fields.plusActive, true);
+});
+
 test('Pioneiro: primeira compra ocupa vaga; renovar, cancelar e sandbox não', () => {
   const buy = RC.pioneerSlotFromEvent({
     type: 'INITIAL_PURCHASE',

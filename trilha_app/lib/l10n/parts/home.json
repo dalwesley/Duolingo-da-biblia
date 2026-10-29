@@ -402,6 +402,11 @@
     "en": "protected by a freeze",
     "es": "protegido por el hielo"
   },
+  "streakDayRepaired": {
+    "pt": "recuperado",
+    "en": "brought back",
+    "es": "recuperado"
+  },
   "streakDayEmpty": {
     "pt": "sem cena",
     "en": "no scene",
@@ -426,36 +431,47 @@
     }
   },
   "streakRepairTitle": {
-    "pt": "Reparar sequência",
-    "en": "Repair streak",
-    "es": "Reparar racha"
+    "pt": "Ontem ficou em branco",
+    "en": "You missed yesterday",
+    "es": "Ayer quedó en blanco"
+  },
+  "streakRepairTitleDay": {
+    "pt": "{day} ficou em branco",
+    "en": "You missed {day}",
+    "es": "El {day} quedó en blanco",
+    "placeholders": {
+      "day": "String"
+    }
   },
   "streakRepairBody": {
-    "pt": "{broken, plural, =1{Você tinha 1 dia. Restaure para {restored} — 1× neste mês.} other{Você tinha {broken} dias. Restaure para {restored} — 1× neste mês.}}",
-    "en": "{broken, plural, =1{You had 1 day. Restore it to {restored} — once this month.} other{You had {broken} days. Restore it to {restored} — once this month.}}",
-    "es": "{broken, plural, =1{Tenías 1 día. Restáurala a {restored} — 1 vez este mes.} other{Tenías {broken} días. Restáurala a {restored} — 1 vez este mes.}}",
+    "pt": "{broken, plural, =1{Por isso sua sequência de 1 dia recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.} other{Por isso sua sequência de {broken} dias recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.}}",
+    "en": "{broken, plural, =1{So your 1-day streak restarted. If you bring it back, it goes to {restored} days. You can do this once a month.} other{So your {broken}-day streak restarted. If you bring it back, it goes to {restored} days. You can do this once a month.}}",
+    "es": "{broken, plural, =1{Por eso tu racha de 1 día empezó de nuevo. Si la recuperas, vuelve a {restored} días. Puedes hacerlo 1 vez al mes.} other{Por eso tu racha de {broken} días empezó de nuevo. Si la recuperas, vuelve a {restored} días. Puedes hacerlo 1 vez al mes.}}",
     "placeholders": {
       "broken": "int",
       "restored": "int"
     }
   },
   "streakRepairAction": {
-    "pt": "Reparar",
-    "en": "Repair",
-    "es": "Reparar"
+    "pt": "Recuperar",
+    "en": "Bring it back",
+    "es": "Recuperar"
   },
   "streakRepairDone": {
-    "pt": "{count, plural, =1{Sequência restaurada · 1 dia} other{Sequência restaurada · {count} dias}}",
-    "en": "{count, plural, =1{Streak restored · 1 day} other{Streak restored · {count} days}}",
-    "es": "{count, plural, =1{Racha restaurada · 1 día} other{Racha restaurada · {count} días}}",
+    "pt": "{count, plural, =1{Sequência de volta · 1 dia} other{Sequência de volta · {count} dias}}",
+    "en": "{count, plural, =1{Streak is back · 1 day} other{Streak is back · {count} days}}",
+    "es": "{count, plural, =1{Racha de vuelta · 1 día} other{Racha de vuelta · {count} días}}",
     "placeholders": {
       "count": "int"
     }
   },
   "streakRepairDismiss": {
-    "pt": "Deixar",
-    "en": "Let it go",
-    "es": "Dejarla"
+    "pt": "{count, plural, =1{Ficar com 1 dia} other{Ficar com {count} dias}}",
+    "en": "{count, plural, =1{Keep 1 day} other{Keep {count} days}}",
+    "es": "{count, plural, =1{Quedarme con 1 día} other{Quedarme con {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
   },
   "streakRepairCanReturn": {
     "pt": "{count, plural, =1{1 dia ainda pode voltar} other{{count} dias ainda podem voltar}}",

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
+import '../data/curated_trails.dart';
 import '../data/entry_trails.dart';
 import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
@@ -39,6 +40,7 @@ import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/path_preview_sheet.dart';
 import '../widgets/plus_locked_sheet.dart';
+import '../widgets/promise_map.dart';
 import '../widgets/mode_emblem.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/reset_progress_sheet.dart';
@@ -316,6 +318,18 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
               prog.total,
             ),
           ),
+        ),
+      // A Promessa: depois da Travessia final, o mapa por bloco.
+      if (trail.slug == CuratedTrails.promiseSlug &&
+          completed.contains(CuratedTrails.synthesisSlug))
+        const Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            0,
+            AppSpace.screen,
+            AppSpace.md,
+          ),
+          child: PromiseMapCard(),
         ),
       if (medalChip != null)
         Padding(

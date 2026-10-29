@@ -10,36 +10,30 @@ enum GrowthStage {
   fruit;
 
   String get label => switch (this) {
-        GrowthStage.seed => L10n.current.growthStageSeed,
-        GrowthStage.sprout => L10n.current.growthStageSprout,
-        GrowthStage.branch => L10n.current.growthStageBranch,
-        GrowthStage.tree => L10n.current.growthStageTree,
-        GrowthStage.fruit => L10n.current.growthStageFruit,
-      };
+    GrowthStage.seed => L10n.current.growthStageSeed,
+    GrowthStage.sprout => L10n.current.growthStageSprout,
+    GrowthStage.branch => L10n.current.growthStageBranch,
+    GrowthStage.tree => L10n.current.growthStageTree,
+    GrowthStage.fruit => L10n.current.growthStageFruit,
+  };
 
   /// Dias de streak necessários para alcançar este marco.
   int get unlockAt => switch (this) {
-        GrowthStage.seed => 0,
-        GrowthStage.sprout => 1,
-        GrowthStage.branch => 3,
-        GrowthStage.tree => 7,
-        GrowthStage.fruit => 14,
-      };
+    GrowthStage.seed => 0,
+    GrowthStage.sprout => 1,
+    GrowthStage.branch => 3,
+    GrowthStage.tree => 7,
+    GrowthStage.fruit => 14,
+  };
 
   String get shortHint => switch (this) {
-        GrowthStage.seed => L10n.current.growthHintDayZero,
-        _ => L10n.current.commonDays(unlockAt),
-      };
+    GrowthStage.seed => L10n.current.growthHintDayZero,
+    _ => L10n.current.commonDays(unlockAt),
+  };
 }
 
 /// Humor reativo do Living Seed — presença de jogo sem pet shop.
-enum SeedMood {
-  calm,
-  thriving,
-  atRisk,
-  perfectGlow,
-  frozen,
-}
+enum SeedMood { calm, thriving, atRisk, perfectGlow, frozen }
 
 class SpiritualGrowth {
   final GrowthStage stage;
@@ -129,10 +123,7 @@ class SpiritualGrowth {
       return SpiritualGrowth(
         stage: GrowthStage.branch,
         title: GrowthStage.branch.label,
-        subtitle: L10n.current.growthDaysToStage(
-          left,
-          GrowthStage.tree.label,
-        ),
+        subtitle: L10n.current.growthDaysToStage(left, GrowthStage.tree.label),
         streak: s,
         nextAt: 7,
       );
@@ -142,10 +133,7 @@ class SpiritualGrowth {
       return SpiritualGrowth(
         stage: GrowthStage.tree,
         title: GrowthStage.tree.label,
-        subtitle: L10n.current.growthDaysToStage(
-          left,
-          GrowthStage.fruit.label,
-        ),
+        subtitle: L10n.current.growthDaysToStage(left, GrowthStage.fruit.label),
         streak: s,
         nextAt: 14,
       );

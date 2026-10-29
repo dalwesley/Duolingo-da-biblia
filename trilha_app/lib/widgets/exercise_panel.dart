@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 import '../l10n/app_language.dart';
 import '../models/trail.dart';
@@ -10,6 +11,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'anan_speech.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'stage_plate.dart';
@@ -22,6 +24,8 @@ class _ActSkin {
   static const gap = AppSpace.sm;
   // Cormorant tem olho pequeno: 25 lê como ~21 num serifado comum.
   static const verseSize = 24.0; // degrau da escala de versículo
+  // Abaixo disso o palco encolhido ganha a lupa.
+  static const zoomBelow = 21.0;
   static const noteSize = 16.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
@@ -230,6 +234,16 @@ class _ExercisePanelState extends State<ExercisePanel>
     if (!keepOrder) {
       final items = List<QuestionOption>.from(widget.exercise.effectiveOptions);
       items.shuffle();
+      // Ordenar nunca começa já resolvido: se o acaso acertou, gira um.
+      if (widget.exercise.type == ExerciseType.order && items.length > 1) {
+        final want = widget.exercise.resolvedCorrectAnswer
+            .split(',')
+            .map((s) => s.trim())
+            .join(',');
+        if (items.map((o) => o.id).join(',') == want) {
+          items.add(items.removeAt(0));
+        }
+      }
       _shuffledOrderItems = items;
       _shuffledMatchRight = List<QuestionOption>.from(
         widget.exercise.matchRight,
@@ -1168,13 +1182,20 @@ class _RefLabel extends StatelessWidget {
   }
 }
 
-class _Manuscript extends StatelessWidget {
+class _Manuscript extends StatefulWidget {
   final Color accent;
   final Widget child;
   final String? reference;
   final bool framed;
   final bool fill;
   final bool lit;
+
+  /// Trechos para a lupa: quando o palco encolhe o texto abaixo de
+  /// [_ActSkin.zoomBelow], a lupa abre o mesmo texto em corpo de leitura.
+  final List<ExercisePassage> zoom;
+
+  /// Corpo de origem do texto no palco, antes de encolher.
+  final double verseSize;
 
   const _Manuscript({
     required this.accent,
@@ -1183,7 +1204,23 @@ class _Manuscript extends StatelessWidget {
     this.framed = false,
     this.fill = false,
     this.lit = false,
+    this.zoom = const [],
+    this.verseSize = _ActSkin.verseSize,
   });
+
+  @override
+  State<_Manuscript> createState() => _ManuscriptState();
+}
+
+class _ManuscriptState extends State<_Manuscript> {
+  bool _small = false;
+
+  Color get accent => widget.accent;
+  Widget get child => widget.child;
+  String? get reference => widget.reference;
+  bool get framed => widget.framed;
+  bool get fill => widget.fill;
+  bool get lit => widget.lit;
 
   BoxDecoration _plate(BuildContext context) => StagePlate.decoration(
     // Acerto = glow de ouro no rim do palco; idle = luz do modo.
@@ -1206,9 +1243,40 @@ class _Manuscript extends StatelessWidget {
         return FittedBox(
           fit: BoxFit.scaleDown,
           alignment: Alignment.center,
-          child: SizedBox(width: maxW, child: child),
+          child: widget.zoom.isEmpty
+              ? SizedBox(width: maxW, child: child)
+              : _ScaleProbe(
+                  limit: maxH,
+                  minScale: _ActSkin.zoomBelow / widget.verseSize,
+                  onSmall: (small) {
+                    if (mounted && small != _small) {
+                      setState(() => _small = small);
+                    }
+                  },
+                  child: SizedBox(width: maxW, child: child),
+                ),
         );
       },
+    );
+  }
+
+  /// Lupa no canto do palco — só quando o texto ficou pequeno.
+  Widget _withZoom(Widget plate) {
+    if (!_small || widget.zoom.isEmpty) return plate;
+    return Stack(
+      children: [
+        plate,
+        PositionedDirectional(
+          top: 10,
+          end: 10,
+          child: _ZoomButton(
+            onTap: () {
+              ActHaptics.tap();
+              _showStageZoom(context, widget.zoom, widget.accent);
+            },
+          ),
+        ),
+      ],
     );
   }
 
@@ -1252,33 +1320,363 @@ class _Manuscript extends StatelessWidget {
     final stage = _filledStage();
 
     if (framed) {
-      return Container(
-        width: double.infinity,
-        height: double.infinity,
-        padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-        decoration: _plate(context),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            if (ref.isNotEmpty) ...[
-              _RefLabel(reference: ref),
-              const SizedBox(height: 14),
+      return _withZoom(
+        Container(
+          width: double.infinity,
+          height: double.infinity,
+          padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
+          decoration: _plate(context),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (ref.isNotEmpty) ...[
+                _RefLabel(reference: ref),
+                const SizedBox(height: 14),
+              ],
+              Expanded(child: stage),
             ],
-            Expanded(child: stage),
-          ],
+          ),
         ),
       );
     }
 
-    if (ref.isEmpty) return stage;
+    if (ref.isEmpty) return _withZoom(stage);
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        _RefLabel(reference: ref),
-        const SizedBox(height: 14),
-        Expanded(child: stage),
-      ],
+    return _withZoom(
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _RefLabel(reference: ref),
+          const SizedBox(height: 14),
+          Expanded(child: stage),
+        ],
+      ),
+    );
+  }
+}
+
+/// Mede o texto do palco antes do [FittedBox] e avisa quando a escala
+/// necessária para caber em [limit] fica abaixo de [minScale].
+class _ScaleProbe extends SingleChildRenderObjectWidget {
+  final double limit;
+  final double minScale;
+  final ValueChanged<bool> onSmall;
+
+  const _ScaleProbe({
+    required this.limit,
+    required this.minScale,
+    required this.onSmall,
+    required super.child,
+  });
+
+  @override
+  _RenderScaleProbe createRenderObject(BuildContext context) =>
+      _RenderScaleProbe(limit: limit, minScale: minScale, onSmall: onSmall);
+
+  @override
+  void updateRenderObject(BuildContext context, _RenderScaleProbe probe) {
+    probe
+      ..limit = limit
+      ..minScale = minScale
+      ..onSmall = onSmall;
+  }
+}
+
+class _RenderScaleProbe extends RenderProxyBox {
+  _RenderScaleProbe({
+    required this._limit,
+    required this._minScale,
+    required this.onSmall,
+  });
+
+  ValueChanged<bool> onSmall;
+  bool? _reported;
+
+  double _limit;
+  set limit(double v) {
+    if (v == _limit) return;
+    _limit = v;
+    markNeedsLayout();
+  }
+
+  double _minScale;
+  set minScale(double v) {
+    if (v == _minScale) return;
+    _minScale = v;
+    markNeedsLayout();
+  }
+
+  @override
+  void performLayout() {
+    super.performLayout();
+    final h = size.height;
+    final small = h > 0 && _limit / h < _minScale;
+    if (small == _reported) return;
+    _reported = small;
+    WidgetsBinding.instance.addPostFrameCallback((_) => onSmall(small));
+  }
+}
+
+class _ZoomButton extends StatelessWidget {
+  final VoidCallback onTap;
+
+  const _ZoomButton({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Semantics(
+      button: true,
+      label: context.l10n.exerciseZoomStage,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: Padding(
+          padding: const EdgeInsets.all(4),
+          child: Container(
+            width: 36,
+            height: 36,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: a.stageFill,
+              border: Border.all(color: a.divider),
+            ),
+            child: CinematicIcon(
+              glyph: CinematicGlyph.search,
+              size: 18,
+              accent: a.sectionLabel,
+              framed: false,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// O texto do palco em corpo de leitura, com a referência de cada trecho.
+Future<void> _showStageZoom(
+  BuildContext context,
+  List<ExercisePassage> passages,
+  Color accent,
+) {
+  return showAppSheet<void>(
+    context,
+    builder: (_) => _StageZoomSheet(passages: passages, accent: accent),
+  );
+}
+
+/// Lupa do palco: o mesmo papel do palco, em corpo de leitura. A−/A+ mudam
+/// o corpo e a sheet cresce junto (lembrado na sessão). Na ponte, um fio
+/// liga os trechos.
+class _StageZoomSheet extends StatefulWidget {
+  final List<ExercisePassage> passages;
+  final Color accent;
+
+  const _StageZoomSheet({required this.passages, required this.accent});
+
+  static const sizes = [22.0, 26.0, 30.0, 34.0];
+  static int _step = 1;
+
+  @override
+  State<_StageZoomSheet> createState() => _StageZoomSheetState();
+}
+
+class _StageZoomSheetState extends State<_StageZoomSheet> {
+  int get _step => _StageZoomSheet._step;
+
+  void _nudge(int by) {
+    final next = (_step + by).clamp(0, _StageZoomSheet.sizes.length - 1);
+    if (next == _step) return;
+    ActHaptics.tick();
+    setState(() => _StageZoomSheet._step = next);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final accent = widget.accent;
+    final size = _StageZoomSheet.sizes[_step];
+    final maxH = MediaQuery.sizeOf(context).height * 0.62;
+    final passages = widget.passages;
+
+    return AppSheetPanel(
+      tint: accent,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              _SizeStep(
+                label: 'A',
+                semantics: context.l10n.exerciseZoomSmaller,
+                small: true,
+                onTap: _step == 0 ? null : () => _nudge(-1),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CinematicIcon(
+                      glyph: CinematicGlyph.search,
+                      size: 16,
+                      accent: a.sectionLabel,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: SectionLabel(
+                        context.l10n.exerciseZoomStage,
+                        size: 12,
+                        color: a.sectionLabel,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              _SizeStep(
+                label: 'A',
+                semantics: context.l10n.exerciseZoomLarger,
+                onTap: _step == _StageZoomSheet.sizes.length - 1
+                    ? null
+                    : () => _nudge(1),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpace.md),
+          AnimatedSize(
+            duration: AppMotion.standard,
+            curve: AppMotion.enter,
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxHeight: maxH),
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    for (final (i, p) in passages.indexed) ...[
+                      if (i > 0) _ZoomRope(accent: accent),
+                      StagePlate(
+                        accent: accent,
+                        tint: true,
+                        padding: const EdgeInsets.fromLTRB(20, 18, 20, 22),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            if (p.ref.trim().isNotEmpty) ...[
+                              _RefLabel(reference: p.ref),
+                              const SizedBox(height: 12),
+                            ],
+                            Text(
+                              p.text.trim(),
+                              textAlign: TextAlign.center,
+                              style: _verseWordStyle(
+                                color: a.text,
+                                height: 1.5,
+                                size: size,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          GhostCta(
+            label: context.l10n.commonClose,
+            expanded: true,
+            matchCopper: true,
+            onTap: () => Navigator.of(context).pop(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Botão de corpo: “A” pequeno diminui, “A” grande aumenta.
+class _SizeStep extends StatelessWidget {
+  final String label;
+  final String semantics;
+  final bool small;
+  final VoidCallback? onTap;
+
+  const _SizeStep({
+    required this.label,
+    required this.semantics,
+    this.small = false,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final on = onTap != null;
+    return Semantics(
+      button: true,
+      enabled: on,
+      label: semantics,
+      excludeSemantics: true,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: AnimatedOpacity(
+          duration: AppMotion.standard,
+          opacity: on ? 1 : 0.35,
+          child: Container(
+            width: 40,
+            height: 40,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: a.insetFill,
+              border: Border.all(color: a.insetBorder),
+            ),
+            child: Text(
+              label,
+              style: AppTypography.verse(
+                size: small ? 16 : 24,
+                weight: FontWeight.w700,
+                height: 1,
+                color: a.text,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Fio entre os trechos da ponte, como no palco.
+class _ZoomRope extends StatelessWidget {
+  final Color accent;
+
+  const _ZoomRope({required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    final line = accent.withValues(alpha: 0.45);
+    return SizedBox(
+      height: 28,
+      child: Column(
+        children: [
+          Expanded(child: Container(width: 1.5, color: line)),
+          Container(
+            width: 7,
+            height: 7,
+            decoration: BoxDecoration(shape: BoxShape.circle, color: accent),
+          ),
+          Expanded(child: Container(width: 1.5, color: line)),
+        ],
+      ),
     );
   }
 }
@@ -1396,6 +1794,13 @@ class _CompleteVerseState extends State<_CompleteVerse> {
       framed: true,
       fill: widget.fill,
       lit: widget.lit,
+      verseSize: size,
+      zoom: [
+        ExercisePassage(
+          ref: widget.reference ?? '',
+          text: template.replaceAll(_blank, '_____'),
+        ),
+      ],
       child: Text.rich(
         TextSpan(
           style: style,
@@ -1558,6 +1963,8 @@ class _BridgePassages extends StatelessWidget {
       framed: true,
       fill: fill,
       lit: lit,
+      verseSize: size,
+      zoom: [?passageA, ?passageB],
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -1893,6 +2300,8 @@ class _PassageBlock extends StatelessWidget {
       framed: framed,
       fill: fill,
       lit: lit,
+      verseSize: size,
+      zoom: [ExercisePassage(ref: reference ?? '', text: text)],
       child: tappable
           ? Text.rich(
               TextSpan(

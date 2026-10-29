@@ -71,7 +71,10 @@ class SessionComposer {
         ? (options: bq.options, template: bq.template)
         : repairActOptions(
             options: List<QuestionOption>.from(bq.options),
-            correctId: bq.correctOptionId,
+            // Mesmo id que a correção usa (`correctAnswer` antes do default).
+            correctId: bq.options.any((o) => o.id == cid)
+                ? cid
+                : bq.correctOptionId,
             passage: (bq.passageText ?? bq.template ?? '').trim(),
             quote: quote,
             question: bq.question,

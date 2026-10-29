@@ -2436,6 +2436,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exerciseVerbJudge => 'Juzga';
 
   @override
+  String get exerciseZoomLarger => 'Letra más grande';
+
+  @override
+  String get exerciseZoomSmaller => 'Letra más pequeña';
+
+  @override
+  String get exerciseZoomStage => 'Ampliar texto';
+
+  @override
   String get explainAnswerLabel => 'Respuesta correcta';
 
   @override
@@ -2960,7 +2969,29 @@ class AppLocalizationsEs extends AppLocalizations {
   String get guidedPlanPsalmsTitle => 'Salmos y Proverbios en 31 días';
 
   @override
+  String get heroEndAllBody =>
+      'Nuevas rutas llegan pronto. Mientras tanto, repasa lo pendiente o lee la Biblia.';
+
+  @override
+  String get heroEndAllTitle => 'Recorriste todas las rutas';
+
+  @override
+  String get heroEndPlusBody =>
+      'Las próximas rutas son de Peregrino+. La Biblia sigue abierta para leer.';
+
+  @override
+  String get heroEndPlusCta => 'Conocer Peregrino+';
+
+  @override
+  String get heroEndPlusTitle => 'Recorriste todas las rutas abiertas';
+
+  @override
   String get homeBibleOfflineSubtitle => 'Lee sin internet';
+
+  @override
+  String homeCarouselPosition(int index, int total) {
+    return '$index de $total';
+  }
 
   @override
   String get homeCatalogDownloading => 'Descargando…';
@@ -3382,11 +3413,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get inviteTrailGiftLine =>
-      'Quien acepte gana una ruta de Peregrino+ a su elección. Es tu pase de este mes.';
+      'Quien acepte elige una ruta de Peregrino+ y la recorre completa, sin pagar. Es tu pase de este mes.';
 
   @override
   String get inviteTrailGiftShareLine =>
       '🎁 Al aceptar, ganas una ruta de Peregrino+ por mi cuenta. Tú eliges cuál.';
+
+  @override
+  String get inviteTrailGiftTitle => 'Una ruta de regalo';
 
   @override
   String get journalEmpty =>
@@ -5859,6 +5893,67 @@ class AppLocalizationsEs extends AppLocalizations {
   String get navTrails => 'Rutas';
 
   @override
+  String get nextStepDeepenCta => 'Empezar';
+
+  @override
+  String nextStepDeepenLineCaminhada(int percent) {
+    return 'Fuiste firme: $percent% a la primera. Ahora las mismas escenas preguntan por qué.';
+  }
+
+  @override
+  String nextStepDeepenLineProfundezas(int percent) {
+    return 'Fuiste firme: $percent% a la primera. Ahora las mismas escenas preguntan qué revela el texto.';
+  }
+
+  @override
+  String nextStepDeepenTitle(String trail, String mode) {
+    return '$trail en $mode';
+  }
+
+  @override
+  String get nextStepEyebrow => 'Tu próximo paso';
+
+  @override
+  String get nextStepLater => 'Ahora no';
+
+  @override
+  String get nextStepReinforceCta => 'Practicar';
+
+  @override
+  String nextStepReinforceLine(int correct, int total) {
+    return 'Acertaste $correct de $total. Son 5 preguntas de tus últimas escenas.';
+  }
+
+  @override
+  String get nextStepWeakChoice => 'Practicar elegir la mejor respuesta';
+
+  @override
+  String get nextStepWeakComplete => 'Practicar completar el versículo';
+
+  @override
+  String get nextStepWeakConnect => 'Practicar unir textos';
+
+  @override
+  String get nextStepWeakInterpret => 'Practicar interpretar el texto';
+
+  @override
+  String get nextStepWeakOrder => 'Practicar el orden de los hechos';
+
+  @override
+  String nextStepWeakOther(String gesture) {
+    return 'Practicar “$gesture”';
+  }
+
+  @override
+  String get nextStepWeakTap => 'Practicar la palabra exacta';
+
+  @override
+  String get nextStepWeakText => 'Practicar encontrar la respuesta en el texto';
+
+  @override
+  String get nextStepWeakTrueFalse => 'Practicar verificar afirmaciones';
+
+  @override
   String get notifChannelDesc =>
       'Meta diaria, escenas, práctica, memorización y favoritos';
 
@@ -6386,6 +6481,9 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cambiar de plan o cancelar se hace en App Store o Google Play.';
 
   @override
+  String get paywallMoreComing => 'Y muchos otros beneficios están en camino.';
+
+  @override
   String get paywallOffersFailed =>
       'No pudimos cargar los planes. Revisa tu conexión e inténtalo de nuevo.';
 
@@ -6402,10 +6500,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkGiftBody =>
-      'Tu suscripción abre el camino a alguien: elige una ruta de Peregrino+ y compártela con quien quieras.';
+      'Comparte 1 ruta de Peregrino+ al mes con un amigo. Queda abierta completa para quien la recibe, sin pagar.';
 
   @override
-  String get paywallPerkGiftTitle => 'Libera una ruta al mes';
+  String get paywallPerkGiftTitle => 'Una ruta de regalo cada mes';
 
   @override
   String get paywallPerkPlansBody =>
@@ -6430,14 +6528,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkReinforceBody =>
-      'Ves dónde tropiezas. Después, una práctica solo de eso.';
+      'Ves dónde tropiezas. Después, una práctica a tu medida.';
 
   @override
   String get paywallPerkReinforceTitle => 'Lo que más fallas';
 
   @override
   String get paywallPerkSeasonBody =>
-      'El Adviento, y las próximas temporadas cuando lleguen: una escena por día y un repaso cada semana.';
+      'El Adviento, la Navidad, la Pascua y las próximas temporadas cuando lleguen: una escena por día y un repaso cada semana.';
 
   @override
   String get paywallPerkSeasonTitle => 'Rutas de temporada';
@@ -7402,6 +7500,35 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String profileNearAlbum(String trail) {
+    return 'Álbum $trail';
+  }
+
+  @override
+  String profileNearAlbumLine(int done, int total, int left) {
+    String _temp0 = intl.Intl.pluralLogic(
+      left,
+      locale: localeName,
+      other: 'faltan $left',
+      one: 'falta 1',
+    );
+    return '$done de $total postales · $_temp0';
+  }
+
+  @override
+  String profileNearSeal(String name) {
+    return 'Sello de $name';
+  }
+
+  @override
+  String profileNearSealLine(String trail) {
+    return 'En la próxima escena de $trail';
+  }
+
+  @override
+  String get profileNearTitle => 'Casi ahí';
+
+  @override
   String get profileNotes => 'Notas';
 
   @override
@@ -7510,6 +7637,9 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get profileStatStreak => 'Días seguidos';
+
+  @override
   String profileStreakGoalDone(int goal) {
     return 'Compromiso de $goal días cumplido. Sigue firme.';
   }
@@ -7537,6 +7667,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileStreakStart => 'Una escena hoy enciende el primer día.';
+
+  @override
+  String profileStudyErrors(int count) {
+    return 'Ver errores ($count)';
+  }
+
+  @override
+  String get profileStudyErrorsNone => 'Errores explicados';
+
+  @override
+  String get profileStudyTitle => 'Mi estudio';
 
   @override
   String get profileThisWeek => 'Esta semana';
@@ -7583,8 +7724,44 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileWeekHistory => 'Historial de semanas';
 
   @override
+  String get profileWeekTitle => 'Esta semana';
+
+  @override
   String profileWeeksWalkedSemantics(int walked, int weeks) {
     return '$walked días caminados en las últimas $weeks semanas';
+  }
+
+  @override
+  String profileWordFavorites(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count favoritos',
+      one: '1 favorito',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String profileWordNotes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count notas',
+      one: '1 nota',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String profileWordShared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count compartidos',
+      one: '1 compartido',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -7595,6 +7772,297 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileYourStreak => 'Tu racha';
+
+  @override
+  String get promiseTrail01Intro =>
+      'Todo empieza con una promesa: tierra, descendencia y bendición para todas las familias de la tierra. Sigue ese hilo de Abraham a Cristo.';
+
+  @override
+  String get promiseTrail01Note =>
+      'Dios promete a un hombre sin hijos que, por medio de él, todas las familias de la tierra serán bendecidas.';
+
+  @override
+  String get promiseTrail01Title => 'En ti, todas las familias';
+
+  @override
+  String get promiseTrail02Intro =>
+      'Abram todavía no tiene hijo. Dios lo saca afuera y le manda mirar el cielo.';
+
+  @override
+  String get promiseTrail02Note =>
+      'Abram creyó, y le fue contado por justicia. Pablo volverá a este versículo.';
+
+  @override
+  String get promiseTrail02Title => 'Cuenta las estrellas';
+
+  @override
+  String get promiseTrail03Intro =>
+      'El hijo de la promesa sube el monte. La promesa parece en peligro.';
+
+  @override
+  String get promiseTrail03Note =>
+      'En el Moriah, Dios provee el cordero en lugar del hijo y confirma la promesa con juramento.';
+
+  @override
+  String get promiseTrail03Title => 'El Señor proveerá';
+
+  @override
+  String get promiseTrail04Intro =>
+      'Siglos después, la familia de Abraham es un pueblo esclavo en Egipto. Parece que la promesa murió. Dios no olvidó.';
+
+  @override
+  String get promiseTrail04Note =>
+      'Dios se presenta como el Dios de Abraham, de Isaac y de Jacob: la promesa antigua mueve el rescate.';
+
+  @override
+  String get promiseTrail04Title => 'Dios se acuerda';
+
+  @override
+  String get promiseTrail05Intro =>
+      'Libre de Egipto, el pueblo llega al Sinaí. La promesa toma forma de alianza.';
+
+  @override
+  String get promiseTrail05Note =>
+      'Israel será un reino de sacerdotes: la bendición de Abraham pasa por un pueblo para alcanzar a las naciones.';
+
+  @override
+  String get promiseTrail05Title => 'Un pueblo para las naciones';
+
+  @override
+  String get promiseTrail06Intro =>
+      'Ya en la tierra, Josué vuelve a contar la historia y llama al pueblo a escoger a quién servir.';
+
+  @override
+  String get promiseTrail06Note =>
+      'La tierra fue dada; la fidelidad del pueblo fallará. La promesa necesitará a alguien mayor que Israel.';
+
+  @override
+  String get promiseTrail06Title => 'En la tierra prometida';
+
+  @override
+  String get promiseTrail07Intro =>
+      'El pueblo falla, pero Dios no se rinde. Ahora la promesa se concentra en un rey: David.';
+
+  @override
+  String get promiseTrail07Note =>
+      'Dios escoge al menor de los hijos de Isaí. De la línea de David vendrá el rey cuyo trono no tendrá fin (2 Samuel 7).';
+
+  @override
+  String get promiseTrail07Title => 'El rey escogido';
+
+  @override
+  String get promiseTrail08Intro =>
+      'Los profetas anuncian a alguien que carga la culpa de otros.';
+
+  @override
+  String get promiseTrail08Note =>
+      'Como en el Moriah, alguien toma el lugar de otro: el Siervo es herido por nuestras rebeliones.';
+
+  @override
+  String get promiseTrail08Title => 'El Siervo herido';
+
+  @override
+  String get promiseTrail09Intro =>
+      'El pacto del Sinaí fue roto. Dios promete otro.';
+
+  @override
+  String get promiseTrail09Note =>
+      'Dios promete escribir la ley en el corazón y perdonar el pecado. Jesús llamará a la copa de la cena el nuevo pacto.';
+
+  @override
+  String get promiseTrail09Title => 'Un nuevo pacto';
+
+  @override
+  String get promiseTrail10Intro =>
+      'Mateo abre el Nuevo Testamento con Jesús, hijo de David, hijo de Abraham. El hilo llega a una persona.';
+
+  @override
+  String get promiseTrail10Note =>
+      'Emanuel, Dios con nosotros: el hijo prometido a Abraham y el rey prometido a David son el mismo.';
+
+  @override
+  String get promiseTrail10Title => 'Hijo de David, hijo de Abraham';
+
+  @override
+  String get promiseTrail11Intro =>
+      'El cumplimiento llega pequeño: en un pesebre, anunciado a pastores.';
+
+  @override
+  String get promiseTrail11Note =>
+      'El gran gozo es para todo el pueblo: eco de la bendición prometida a todas las familias de la tierra.';
+
+  @override
+  String get promiseTrail11Title => 'Gozo para todo el pueblo';
+
+  @override
+  String get promiseTrail12Intro =>
+      'Pablo cierra el hilo: la promesa hecha a Abraham llega a quien cree.';
+
+  @override
+  String get promiseTrail12Note =>
+      'En Cristo, la bendición de Abraham alcanza a las naciones por la fe. Y la promesa aún apunta a la nueva creación.';
+
+  @override
+  String get promiseTrail12Title => 'La bendición llega a ti';
+
+  @override
+  String get promiseTrailMapCardBody =>
+      'Mira qué quedó firme en cada parte del hilo y qué pide repaso.';
+
+  @override
+  String get promiseTrailMapFirm => 'Firme';
+
+  @override
+  String promiseTrailMapReview(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count errores para repasar',
+      one: '1 error para repasar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get promiseTrailMapReviewCta => 'Repasar';
+
+  @override
+  String get promiseTrailMapReviewIntro =>
+      'Los errores de este bloque, otra vez. Sin prisa.';
+
+  @override
+  String promiseTrailMapReviewTitle(String block) {
+    return 'Repaso: $block';
+  }
+
+  @override
+  String get promiseTrailMapSheetBody =>
+      'Cada bloque muestra los errores que aún están en tu repaso. Repásalos y el bloque queda firme.';
+
+  @override
+  String get promiseTrailMapSynthesis => 'Síntesis';
+
+  @override
+  String get promiseTrailMapTitle => 'Mapa de la Promesa';
+
+  @override
+  String get promiseTrailModule1 => 'La promesa hecha';
+
+  @override
+  String get promiseTrailModule2 => 'La promesa guardada';
+
+  @override
+  String get promiseTrailModule3 => 'La promesa anunciada';
+
+  @override
+  String get promiseTrailModule4 => 'La promesa cumplida';
+
+  @override
+  String get promiseTrailQ1A => 'El cordero que Dios provee';
+
+  @override
+  String get promiseTrailQ1B => 'La obediencia que salva';
+
+  @override
+  String get promiseTrailQ1C => 'El monte como lugar de culto';
+
+  @override
+  String get promiseTrailQ1Correct =>
+      'Dios provee el cordero en el Moriah; Juan señala a Jesús como el Cordero.';
+
+  @override
+  String get promiseTrailQ1Hint => 'Mira quién provee y qué es provisto.';
+
+  @override
+  String get promiseTrailQ1Question =>
+      '¿Qué comunica Génesis 22:8 que se une a Juan 1:29?';
+
+  @override
+  String get promiseTrailQ1WrongB =>
+      'Abraham obedece, pero quien provee el cordero es Dios.';
+
+  @override
+  String get promiseTrailQ1WrongC =>
+      'Juan no habla del monte: habla del Cordero que quita el pecado.';
+
+  @override
+  String get promiseTrailQ2A => 'La ley del Sinaí repetida';
+
+  @override
+  String get promiseTrailQ2B => 'El nuevo pacto en la sangre de Jesús';
+
+  @override
+  String get promiseTrailQ2C => 'Un pacto solo para los profetas';
+
+  @override
+  String get promiseTrailQ2Correct =>
+      'Jeremías promete un nuevo pacto; en la cena, Jesús dice que viene en su sangre.';
+
+  @override
+  String get promiseTrailQ2Hint =>
+      'Busca la palabra que los dos textos repiten.';
+
+  @override
+  String get promiseTrailQ2Question =>
+      '¿Qué comunica Jeremías 31:31 que se une a Lucas 22:20?';
+
+  @override
+  String get promiseTrailQ2WrongA =>
+      'Jeremías dice que no será como el pacto hecho con los padres.';
+
+  @override
+  String get promiseTrailQ2WrongC =>
+      'El pacto es con la casa de Israel; Jesús lo da a los discípulos en la copa.';
+
+  @override
+  String get promiseTrailQ3A => 'La bendición queda solo con Israel';
+
+  @override
+  String get promiseTrailQ3B => 'La bendición viene por la circuncisión';
+
+  @override
+  String get promiseTrailQ3C => 'El evangelio llega a las naciones por la fe';
+
+  @override
+  String get promiseTrailQ3Correct =>
+      'Pablo lee Génesis 12 como el evangelio anunciado a Abraham: las naciones bendecidas por la fe.';
+
+  @override
+  String get promiseTrailQ3Hint => 'Mira quién es bendecido y por qué camino.';
+
+  @override
+  String get promiseTrailQ3Question =>
+      '¿Qué comunica Génesis 12:3 que se une a Gálatas 3:8?';
+
+  @override
+  String get promiseTrailQ3WrongA =>
+      'La promesa ya decía todas las familias de la tierra.';
+
+  @override
+  String get promiseTrailQ3WrongB =>
+      'Pablo dice que Dios justifica a las naciones por la fe.';
+
+  @override
+  String get promiseTrailSynthIntro =>
+      'Tres puentes para unir lo prometido con lo cumplido.';
+
+  @override
+  String get promiseTrailSynthNote =>
+      'Desde el principio, la bendición prometida a Abraham era para todas las naciones.';
+
+  @override
+  String get promiseTrailSynthObjective =>
+      'Unir la promesa a Abraham con su cumplimiento en Cristo.';
+
+  @override
+  String get promiseTrailSynthTitle => 'Travesía: la promesa entera';
+
+  @override
+  String get promiseTrailTrailDescription =>
+      'De Abraham a Cristo en 12 escenas: el hilo que cose la Biblia. Cada escena también cuenta en su ruta de origen.';
+
+  @override
+  String get promiseTrailTrailTitle => 'La Promesa';
 
   @override
   String get questAccuracySubtitle => 'Termina una escena con 80% de aciertos';
@@ -8136,6 +8604,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get roomStudyFallbackTitle => 'Estudio de la semana';
+
+  @override
+  String get sceneStudyCta => 'Para profundizar';
+
+  @override
+  String get sceneStudyKeyword => 'Palabra clave';
+
+  @override
+  String get sceneStudyLinks => 'Conexiones en la Biblia';
+
+  @override
+  String get sceneStudyThink => 'Para pensar';
 
   @override
   String sealsAllRevealed(int done, int total) {
@@ -8930,6 +9410,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get streakDayFrozen => 'protegido por el hielo';
 
   @override
+  String get streakDayRepaired => 'recuperado';
+
+  @override
   String streakDaySemantics(String day, String status) {
     return '$day: $status';
   }
@@ -8940,15 +9423,17 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get streakRepairAction => 'Reparar';
+  String get streakRepairAction => 'Recuperar';
 
   @override
   String streakRepairBody(int broken, int restored) {
     String _temp0 = intl.Intl.pluralLogic(
       broken,
       locale: localeName,
-      other: 'Tenías $broken días. Restáurala a $restored — 1 vez este mes.',
-      one: 'Tenías 1 día. Restáurala a $restored — 1 vez este mes.',
+      other:
+          'Por eso tu racha de $broken días empezó de nuevo. Si la recuperas, vuelve a $restored días. Puedes hacerlo 1 vez al mes.',
+      one:
+          'Por eso tu racha de 1 día empezó de nuevo. Si la recuperas, vuelve a $restored días. Puedes hacerlo 1 vez al mes.',
     );
     return '$_temp0';
   }
@@ -8970,21 +9455,34 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get streakRepairDismiss => 'Dejarla';
+  String streakRepairDismiss(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Quedarme con $count días',
+      one: 'Quedarme con 1 día',
+    );
+    return '$_temp0';
+  }
 
   @override
   String streakRepairDone(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Racha restaurada · $count días',
-      one: 'Racha restaurada · 1 día',
+      other: 'Racha de vuelta · $count días',
+      one: 'Racha de vuelta · 1 día',
     );
     return '$_temp0';
   }
 
   @override
-  String get streakRepairTitle => 'Reparar racha';
+  String get streakRepairTitle => 'Ayer quedó en blanco';
+
+  @override
+  String streakRepairTitleDay(String day) {
+    return 'El $day quedó en blanco';
+  }
 
   @override
   String streakShareDays(int count, int steps, String signature) {
@@ -9900,7 +10398,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get weeklyReviewIntro =>
-      'Relee el “Hoy:” de cada escena y responde 3 preguntas sobre ellas.';
+      'Toca una escena para releer su “Hoy:” y, al final, responde 3 preguntas sobre ellas.';
 
   @override
   String get weeklyReviewMissionIntro =>
@@ -9943,6 +10441,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String weeklyReviewTodayInsight(String insight) {
     return 'Hoy: $insight';
   }
+
+  @override
+  String get weeklyReviewTodayNext => 'Siguiente escena';
+
+  @override
+  String weeklyReviewTodayPage(int index, int total) {
+    return '$index de $total';
+  }
+
+  @override
+  String get weeklyReviewTodayPrev => 'Escena anterior';
 
   @override
   String get widgetBackToTrail => 'Vuelve a la ruta';

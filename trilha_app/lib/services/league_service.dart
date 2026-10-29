@@ -202,9 +202,10 @@ class LeagueEntry {
     final m = int.tryParse(parts[1]);
     final d = int.tryParse(parts[2]);
     if (y == null || m == null || d == null) return null;
-    final last = DateTime(y, m, d);
+    // Datas em UTC: diferença em dias civis, imune à troca de horário.
+    final last = DateTime.utc(y, m, d);
     final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = DateTime.utc(now.year, now.month, now.day);
     return today.difference(last).inDays.clamp(0, 999);
   }
 }
@@ -288,11 +289,7 @@ class LeagueService extends ChangeNotifier {
 
   static String weekKey([DateTime? now]) {
     final d = now ?? DateTime.now();
-    final monday = DateTime(
-      d.year,
-      d.month,
-      d.day,
-    ).subtract(Duration(days: d.weekday - 1));
+    final monday = DateTime(d.year, d.month, d.day - (d.weekday - 1));
     return monday.toIso8601String().substring(0, 10);
   }
 

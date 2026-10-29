@@ -146,6 +146,10 @@ class SubscriptionService extends ChangeNotifier {
   /// isto, o `bindUid(null)` do boot — antes de o login restaurar —
   /// era lido como "saiu da conta" e apagava o cache de graça offline.
   bool _hadAccount = false;
+
+  /// O `logOut` da loja falhou: o SDK ainda está na conta que saiu. O
+  /// próximo `bindUid(null)` tenta de novo.
+  bool _logOutPending = false;
   Future<void> _bindChain = Future<void>.value();
 
   /// A oferta da loja chegou com planos. Falha ou lista vazia não trava nada.
@@ -375,7 +379,7 @@ class SubscriptionService extends ChangeNotifier {
       'loja',
       'RevenueCat configurado, conta ${PlusLog.shortUid(uid)}',
     );
-    Purchases.addCustomerInfoUpdateListener(_onCustomerInfo);
+    Purchases.addCustomerInfoUpdateListener(_onCustomerInfoUpdate);
     final info = await Purchases.getCustomerInfo();
     _onCustomerInfo(info);
     await _loadOfferings();
@@ -455,20 +459,51 @@ class SubscriptionService extends ChangeNotifier {
       _historyUid = null;
       unawaited(_savePlusHistory());
     }
-    _boundUid = uid;
-    PlusLog.log(
-      'loja',
-      'conta ${switching ? 'trocada' : 'ligada'}: ${PlusLog.shortUid(uid)}',
-    );
+    // Só vira a conta ligada depois do `logIn`: se ele falhar, o próximo
+    // `bindUid` tenta de novo (antes o `uid == _boundUid` barrava para
+    // sempre) e o listener não aplica o Plus da conta em que o SDK ficou.
+    _boundUid = null;
     try {
       await Purchases.logIn(uid);
+      _boundUid = uid;
+      _logOutPending = false;
+      PlusLog.log(
+        'loja',
+        'conta ${switching ? 'trocada' : 'ligada'}: ${PlusLog.shortUid(uid)}',
+      );
       final info = await Purchases.getCustomerInfo();
       _onCustomerInfo(info);
     } catch (e) {
       // Troca de conta sem resposta da loja: solta o Plus de quem saiu.
       if (switching) _clearLocalPlus();
-      debugPrint('SubscriptionService.bindUid falhou: $e');
+      PlusLog.log('loja', 'logIn falhou (tenta de novo no próximo bind): $e');
     }
+  }
+
+  /// Aviso espontâneo do SDK: vem da conta em que ele está, que pode não
+  /// ser a ligada (logIn/logOut que falhou). Só aplica se for a mesma —
+  /// sem conta ligada, só a anônima.
+  void _onCustomerInfoUpdate(CustomerInfo info) {
+    unawaited(() async {
+      try {
+        final sdkUid = await Purchases.appUserID;
+        final bound = _boundUid;
+        final same = bound == null
+            ? sdkUid.startsWith(r'$RCAnonymousID')
+            : sdkUid == bound;
+        if (!same) {
+          PlusLog.log(
+            'loja',
+            'aviso de outra conta ignorado: ${PlusLog.shortUid(sdkUid)}',
+          );
+          return;
+        }
+      } catch (e) {
+        debugPrint('SubscriptionService.appUserID falhou: $e');
+        return;
+      }
+      _onCustomerInfo(info);
+    }());
   }
 
   /// Sai da conta ou exclui: solta o RevenueCat e esquece o Plus local.
@@ -483,11 +518,21 @@ class SubscriptionService extends ChangeNotifier {
     _boundUid = null;
     _clearLocalPlus();
     if (kDebugMode) unawaited(_debugSave());
-    if (!_initialized || !wasBound) return;
+    if (!_initialized || (!wasBound && !_logOutPending)) return;
     try {
+      // Já anônimo (logOut anterior fechou depois): nada a sair.
+      if (await Purchases.isAnonymous) {
+        _logOutPending = false;
+        return;
+      }
       final info = await Purchases.logOut();
+      _logOutPending = false;
       _onCustomerInfo(info);
     } catch (e) {
+      // O SDK segue na conta que saiu; o listener ignora o Plus dela e o
+      // próximo `bindUid(null)` tenta sair de novo.
+      _logOutPending = true;
+      _hadAccount = true;
       debugPrint('SubscriptionService.logOut falhou: $e');
     }
   }
@@ -733,10 +778,29 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  /// A loja está na conta logada? Se o `logIn` não pegou, tenta agora:
+  /// sem isso, compra e restauração caíam na conta em que o SDK ficou.
+  Future<bool> _storeOnWantedAccount() async {
+    final wanted = _wantedUid;
+    if (wanted == null || wanted == _boundUid) return true;
+    await bindUid(wanted);
+    if (_boundUid == wanted) return true;
+    PlusLog.log(
+      'loja',
+      'conta ainda não ligada à loja: ${PlusLog.shortUid(wanted)}',
+    );
+    return false;
+  }
+
   Future<bool> purchase(Package package) async {
     lastError = null;
     if (_debugFakeStore) {
       return _debugFakePurchase(() => _debugGrantPlus(package));
+    }
+    if (!await _storeOnWantedAccount()) {
+      lastError = L10n.current.paywallPurchaseFailed;
+      notifyListeners();
+      return false;
     }
     loading = true;
     notifyListeners();
@@ -799,6 +863,11 @@ class SubscriptionService extends ChangeNotifier {
   Future<bool> purchaseSupport(Package package) async {
     lastError = null;
     if (_debugFakeStore) return _debugFakePurchase(() => isSupporter = true);
+    if (!await _storeOnWantedAccount()) {
+      lastError = L10n.current.paywallPurchaseFailed;
+      notifyListeners();
+      return false;
+    }
     loading = true;
     notifyListeners();
     final productId = package.storeProduct.identifier;
@@ -842,6 +911,11 @@ class SubscriptionService extends ChangeNotifier {
     lastError = null;
     if (!isConfigured) return null;
     if (_debugFakeStore) return isPeregrinoPlus;
+    if (!await _storeOnWantedAccount()) {
+      lastError = L10n.current.paywallRestoreFailed;
+      notifyListeners();
+      return null;
+    }
     loading = true;
     notifyListeners();
     try {
@@ -884,7 +958,14 @@ class SubscriptionService extends ChangeNotifier {
       PlusLog.log('site', 'resgate sem loja configurada');
       return WebRedeemOutcome.failed;
     }
+    // Já na fila do bind: o logIn que falhou antes tenta de novo aqui.
+    final wanted = _wantedUid;
+    if (wanted != null && _boundUid != wanted) await _bindNow(wanted);
     if (_boundUid == null) {
+      if (wanted != null) {
+        PlusLog.log('site', 'resgate sem loja na conta: logIn falhou');
+        return WebRedeemOutcome.failed;
+      }
       PlusLog.log('site', 'resgate sem conta: pede login');
       return WebRedeemOutcome.needsAccount;
     }

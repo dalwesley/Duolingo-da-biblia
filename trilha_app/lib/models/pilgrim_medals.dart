@@ -299,6 +299,42 @@ class PilgrimMedals {
         state.vault.id,
   ];
 
+  /// As [limit] trilhas de medalha mais perto da próxima (dentro do
+  /// "falta pouco" de cada uma), da que falta menos para a que falta mais.
+  /// Sem as descobertas, que são surpresa.
+  static List<PilgrimTrackProximity> nearestLockedList({
+    required CaravanPilgrimProfile profile,
+    required List<Trail> catalog,
+    PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
+    int limit = 3,
+  }) {
+    final out = <PilgrimTrackProximity>[];
+    final vaults = evaluateVaults(profile: profile, catalog: catalog, ctx: ctx);
+    for (final state in vaults) {
+      if (state.vault.kind == PilgrimVaultKind.discovery) continue;
+      for (final trackState in state.tracks) {
+        if (trackState.isComplete) continue;
+        final step = _progressTowardTrack(trackState, profile, catalog, ctx);
+        if (step == null || step.remaining > step.showWithin) continue;
+        final next = trackState.nextLevel;
+        if (next == null) continue;
+        out.add(
+          PilgrimTrackProximity(
+            track: trackState.track,
+            nextLevel: next,
+            vaultTitle: state.vault.title,
+            current: step.current,
+            target: step.target,
+            remaining: step.remaining,
+            units: step.units,
+          ),
+        );
+      }
+    }
+    out.sort((a, b) => a.remaining.compareTo(b.remaining));
+    return out.take(limit).toList();
+  }
+
   static PilgrimTrackProximity? nearestLocked({
     required CaravanPilgrimProfile profile,
     required List<Trail> catalog,

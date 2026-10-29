@@ -1,0 +1,138 @@
+{
+  "nextStepEyebrow": {
+    "pt": "Seu próximo passo",
+    "en": "Your next step",
+    "es": "Tu próximo paso"
+  },
+  "nextStepDeepenTitle": {
+    "pt": "{trail} em {mode}",
+    "en": "{trail} in {mode}",
+    "es": "{trail} en {mode}",
+    "placeholders": {
+      "trail": "String",
+      "mode": "String"
+    }
+  },
+  "nextStepLater": {
+    "pt": "Agora não",
+    "en": "Not now",
+    "es": "Ahora no"
+  },
+  "heroEndPlusTitle": {
+    "pt": "Você caminhou todas as trilhas abertas",
+    "en": "You've walked every open trail",
+    "es": "Recorriste todas las rutas abiertas"
+  },
+  "heroEndPlusBody": {
+    "pt": "As próximas trilhas são do Peregrino+. A Bíblia continua aberta para ler.",
+    "en": "The next trails are in Peregrino+. The Bible stays open to read.",
+    "es": "Las próximas rutas son de Peregrino+. La Biblia sigue abierta para leer."
+  },
+  "heroEndPlusCta": {
+    "pt": "Conhecer o Peregrino+",
+    "en": "See Peregrino+",
+    "es": "Conocer Peregrino+"
+  },
+  "heroEndAllTitle": {
+    "pt": "Você caminhou todas as trilhas",
+    "en": "You've walked every trail",
+    "es": "Recorriste todas las rutas"
+  },
+  "heroEndAllBody": {
+    "pt": "Novas trilhas chegam em breve. Enquanto isso, revise o que ficou ou leia a Bíblia.",
+    "en": "New trails are coming soon. Meanwhile, review what's left or read the Bible.",
+    "es": "Nuevas rutas llegan pronto. Mientras tanto, repasa lo pendiente o lee la Biblia."
+  },
+  "homeCarouselPosition": {
+    "pt": "{index} de {total}",
+    "en": "{index} of {total}",
+    "es": "{index} de {total}",
+    "placeholders": {
+      "index": "int",
+      "total": "int"
+    }
+  },
+  "nextStepDeepenLineCaminhada": {
+    "pt": "Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam por quê.",
+    "en": "You stood firm: {percent}% on the first try. Now the same scenes ask why.",
+    "es": "Fuiste firme: {percent}% a la primera. Ahora las mismas escenas preguntan por qué.",
+    "placeholders": {
+      "percent": "int"
+    }
+  },
+  "nextStepDeepenLineProfundezas": {
+    "pt": "Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam o que o texto revela.",
+    "en": "You stood firm: {percent}% on the first try. Now the same scenes ask what the text reveals.",
+    "es": "Fuiste firme: {percent}% a la primera. Ahora las mismas escenas preguntan qué revela el texto.",
+    "placeholders": {
+      "percent": "int"
+    }
+  },
+  "nextStepDeepenCta": {
+    "pt": "Começar",
+    "en": "Start",
+    "es": "Empezar"
+  },
+  "nextStepReinforceLine": {
+    "pt": "Você acertou {correct} de {total}. São 5 perguntas das suas últimas cenas.",
+    "en": "You got {correct} of {total}. 5 questions from your latest scenes.",
+    "es": "Acertaste {correct} de {total}. Son 5 preguntas de tus últimas escenas.",
+    "placeholders": {
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "nextStepReinforceCta": {
+    "pt": "Treinar",
+    "en": "Practice",
+    "es": "Practicar"
+  },
+  "nextStepWeakOrder": {
+    "pt": "Treinar a ordem dos fatos",
+    "en": "Practice the order of events",
+    "es": "Practicar el orden de los hechos"
+  },
+  "nextStepWeakTap": {
+    "pt": "Treinar a palavra exata",
+    "en": "Practice the exact word",
+    "es": "Practicar la palabra exacta"
+  },
+  "nextStepWeakComplete": {
+    "pt": "Treinar completar o versículo",
+    "en": "Practice completing the verse",
+    "es": "Practicar completar el versículo"
+  },
+  "nextStepWeakConnect": {
+    "pt": "Treinar ligar um texto ao outro",
+    "en": "Practice linking texts",
+    "es": "Practicar unir textos"
+  },
+  "nextStepWeakChoice": {
+    "pt": "Treinar escolher a melhor resposta",
+    "en": "Practice choosing the best answer",
+    "es": "Practicar elegir la mejor respuesta"
+  },
+  "nextStepWeakTrueFalse": {
+    "pt": "Treinar conferir afirmações",
+    "en": "Practice checking statements",
+    "es": "Practicar verificar afirmaciones"
+  },
+  "nextStepWeakText": {
+    "pt": "Treinar achar a resposta no texto",
+    "en": "Practice finding the answer in the text",
+    "es": "Practicar encontrar la respuesta en el texto"
+  },
+  "nextStepWeakInterpret": {
+    "pt": "Treinar interpretar o texto",
+    "en": "Practice interpreting the text",
+    "es": "Practicar interpretar el texto"
+  },
+  "nextStepWeakOther": {
+    "pt": "Treinar “{gesture}”",
+    "en": "Practice “{gesture}”",
+    "es": "Practicar “{gesture}”",
+    "placeholders": {
+      "gesture": "String"
+    }
+  }
+}

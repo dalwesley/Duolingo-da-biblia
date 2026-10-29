@@ -36,10 +36,10 @@ O postal depende de uma frase "Hoje" boa. Em 28 out 2026, 347 das 459 cenas tinh
 
 ### 1. Revelar (fim da cena), grátis
 
-- Antes de concluída, a pintura da cena aparece velada (desfoque, sem cor) no mapa da trilha e nos cards de cena. A cena atual também, para a revelação ser o prêmio.
+- Antes de concluída, a pintura da cena aparece velada (desfoque, sem cor) no mapa da trilha e nos cards de cena, para a revelação ser o prêmio. No herói da Hoje o véu é leve (`sceneTeaseFilter`, decode em 140 px): cor e forma aparecem, só suaves, para o herói não virar mancha escura; a revelação entrega a nitidez.
 - Momento em tela cheia (`showPostcardReveal`, `widgets/postcard.dart`), aberto pela `CelebrationScreen` 2,6 s depois da contagem, antes dos outros momentos (sequência, fim de trilha). O postal chega velado; tocar nele ou em "Revelar o postal" clareia a pintura, pousa o carimbo do dia (háptica + som) e sobe a frase "Hoje". O Anan fica ao lado e comemora no carimbo.
 - Depois: "Ver na minha Bíblia" e "Compartilhar" entram com as peças 3 e 5.
-- Véu: decode da pintura em 36 px de largura + tom apagado (`SceneArtImage`, `sceneVeilFilter`), sem blur por frame. Vale no mapa da trilha, nas folhas de prévia e do Plus e no card da Hoje.
+- Véu: decode da pintura em 36 px de largura + tom apagado (`SceneArtImage`, `sceneVeilFilter`), sem blur por frame. Vale no mapa da trilha e nas folhas de prévia e do Plus.
 - Refazer uma cena já concluída não revela de novo; o postal mantém a data da primeira vez.
 
 ### 2. Álbum, grátis

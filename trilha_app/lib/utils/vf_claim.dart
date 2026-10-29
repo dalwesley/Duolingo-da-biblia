@@ -220,16 +220,20 @@ bool _looksLikeVerb(String word) {
     'caminha',
   };
   if (known.contains(w) || w == 'tem' || w == 'têm' || w == 'há') return true;
-  return RegExp(r'(ou|eu|iu|aram|eram|iam|ava|avam)$', caseSensitive: false)
-      .hasMatch(w);
+  return RegExp(
+    r'(ou|eu|iu|aram|eram|iam|ava|avam)$',
+    caseSensitive: false,
+  ).hasMatch(w);
 }
 
 bool _looksLikeName(String text) {
   final t = text.trim();
   final words = t.split(_space).where((w) => w.isNotEmpty).toList();
   if (words.isEmpty || words.length > 3) return false;
-  if (RegExp(r'^(não|nao|sim|sem|todos|todas|isso|nenhum|nenhuma)\b', caseSensitive: false)
-      .hasMatch(t)) {
+  if (RegExp(
+    r'^(não|nao|sim|sem|todos|todas|isso|nenhum|nenhuma)\b',
+    caseSensitive: false,
+  ).hasMatch(t)) {
     return false;
   }
   final folded = t.toLowerCase();
@@ -293,8 +297,10 @@ String _joinAsk(String stem, String answer) {
 
 String _because(String rest, String answer) {
   final a = _asComplement(answer);
-  if (RegExp(r'^(para|por|porque|pois|devido)\b', caseSensitive: false)
-      .hasMatch(a)) {
+  if (RegExp(
+    r'^(para|por|porque|pois|devido)\b',
+    caseSensitive: false,
+  ).hasMatch(a)) {
     return '$rest $a';
   }
   return '$rest porque $a';
@@ -360,8 +366,10 @@ String _which(String key, String rest, String answer) {
     }
     return '$topic $verb ${_asComplement(answer)}';
   }
-  final det = RegExp(r'^(o|a|os|as)\s+(.+)$', caseSensitive: false)
-      .firstMatch(topicRest);
+  final det = RegExp(
+    r'^(o|a|os|as)\s+(.+)$',
+    caseSensitive: false,
+  ).firstMatch(topicRest);
   if (det != null) {
     return '${_asSubject(det.group(0)!)} é ${_asComplement(answer)}';
   }
@@ -386,9 +394,11 @@ String _place(String rest, String answer) {
   ).hasMatch(a)) {
     return '$rest $a';
   }
-  final prep = RegExp(r'\b(fugiu|foi|viajou|manda|vai|partiu|desceu)\b',
-          caseSensitive: false)
-      .hasMatch(rest)
+  final prep =
+      RegExp(
+        r'\b(fugiu|foi|viajou|manda|vai|partiu|desceu)\b',
+        caseSensitive: false,
+      ).hasMatch(rest)
       ? 'para'
       : 'em';
   return '$rest $prep $a';
@@ -426,7 +436,9 @@ String _plainQue(String key, String rest, String answer) {
     if (trans != null) {
       final who = (trans.group(1) ?? '').trim();
       final a = _asComplement(answer);
-      final into = RegExp(r'^em\b', caseSensitive: false).hasMatch(a) ? a : 'em $a';
+      final into = RegExp(r'^em\b', caseSensitive: false).hasMatch(a)
+          ? a
+          : 'em $a';
       if (who.isEmpty) return 'Se transforma $into';
       return '$who se transforma $into';
     }
@@ -447,7 +459,10 @@ bool _feminineNoun(String word) {
 }
 
 String _how(String rest, String answer) {
-  final called = RegExp(r'^se chama\s+(.+)$', caseSensitive: false).firstMatch(rest);
+  final called = RegExp(
+    r'^se chama\s+(.+)$',
+    caseSensitive: false,
+  ).firstMatch(rest);
   if (called != null) {
     return '${called.group(1)} se chama ${_asComplement(answer)}';
   }
@@ -471,9 +486,10 @@ String _subjectThenRest(String subject, String rest) {
   return '${_asSubject(subject)} $r';
 }
 
-bool _isCommand(String text) =>
-    RegExp(r'^(haja|faça|faze|venha|sê|seja|amai)\b', caseSensitive: false)
-        .hasMatch(text);
+bool _isCommand(String text) => RegExp(
+  r'^(haja|faça|faze|venha|sê|seja|amai)\b',
+  caseSensitive: false,
+).hasMatch(text);
 
 String _asSubject(String text) {
   final t = text.trim();
@@ -498,8 +514,10 @@ String _asComplement(String text) {
     return t[0].toLowerCase() + t.substring(1);
   }
   if (RegExp(r'^[a-záéíóúãõâêôç]').hasMatch(t)) return t;
-  if (RegExp(r'^[A-ZÁÉÍÓÚÂÊÔÃÕ][a-záéíóúãõâêôç]+$', unicode: true)
-          .hasMatch(first) &&
+  if (RegExp(
+        r'^[A-ZÁÉÍÓÚÂÊÔÃÕ][a-záéíóúãõâêôç]+$',
+        unicode: true,
+      ).hasMatch(first) &&
       first.length >= 3) {
     return t;
   }

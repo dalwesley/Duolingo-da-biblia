@@ -247,7 +247,10 @@ class Exercise {
     if ((palcoTemplate ?? '').contains('___')) return false;
     final text = (passageText ?? '').trim();
     if (text.isEmpty) return false;
-    return optionsEmbeddedIn(text).isNotEmpty;
+    // Só quando a certa vira alvo no trecho; senão os chips voltam.
+    return optionsEmbeddedIn(
+      text,
+    ).any((o) => o.id == resolvedCorrectAnswer);
   }
 
   bool get usesCompletePalco =>

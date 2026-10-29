@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 import 'network_reachability_stub.dart'
-    if (dart.library.io) 'network_reachability_io.dart' as impl;
+    if (dart.library.io) 'network_reachability_io.dart'
+    as impl;
 
 /// Checagem leve de rede — sem pacote extra.
 class NetworkReachability {

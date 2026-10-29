@@ -67,7 +67,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   Future<void> _tryClipboard() async {
     try {
       final data = await Clipboard.getData(Clipboard.kTextPlain);
-      final code = widget.extract(data?.text);
+      final code = _extract(data?.text);
       if (!mounted || code == null || _controller.text.isNotEmpty) return;
       setState(() => _controller.text = code);
     } catch (_) {}
@@ -79,9 +79,18 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
     super.dispose();
   }
 
+  /// Texto colado pode trazer link torto (`%FF`): não derruba a folha.
+  String? _extract(String? raw) {
+    try {
+      return widget.extract(raw);
+    } catch (_) {
+      return null;
+    }
+  }
+
   void _submit([String? raw]) {
     final code =
-        widget.extract(raw ?? _controller.text) ??
+        _extract(raw ?? _controller.text) ??
         (raw ?? _controller.text).trim().toUpperCase();
     if (code.isEmpty) return;
     Navigator.pop(context, code);

@@ -5,33 +5,20 @@ import '../l10n/l10n_global.dart';
 class DustCopy {
   DustCopy._();
 
-  static int get _tick =>
-      DateTime.now().day * 17 + DateTime.now().hour * 3;
+  static int get _tick => DateTime.now().day * 17 + DateTime.now().hour * 3;
 
   // ── Notificações: título curto (cabe na bandeja) ─────────────────────────
 
   static String atRiskTitle({bool lateEvening = false}) {
     final l = L10n.current;
     if (lateEvening) {
-      return _pick([
-        l.dustDayEnding,
-        l.dustStillTime,
-        l.dustStreakWaits,
-      ]);
+      return _pick([l.dustDayEnding, l.dustStillTime, l.dustStreakWaits]);
     }
     final hour = DateTime.now().hour;
     if (hour < 14) {
-      return _pick([
-        l.dustSceneToday,
-        l.dustTrailWaits,
-        l.homeMoodDusty,
-      ]);
+      return _pick([l.dustSceneToday, l.dustTrailWaits, l.homeMoodDusty]);
     }
-    return _pick([
-      l.homeMoodDusty,
-      l.dustFewHours,
-      l.dustSceneTodayWaits,
-    ]);
+    return _pick([l.homeMoodDusty, l.dustFewHours, l.dustSceneTodayWaits]);
   }
 
   static String atRiskBody({
@@ -83,17 +70,9 @@ class DustCopy {
       ]);
     }
     if (daysAway >= 2) {
-      return _pick([
-        l.dustTwoDays,
-        l.dustCanReturn,
-        l.dustComeBackToday,
-      ]);
+      return _pick([l.dustTwoDays, l.dustCanReturn, l.dustComeBackToday]);
     }
-    return _pick([
-      l.dustOneDay,
-      l.dustSceneWaits,
-      l.dustComeBackToday,
-    ]);
+    return _pick([l.dustOneDay, l.dustSceneWaits, l.dustComeBackToday]);
   }
 
   static String lostAwayBody({
@@ -123,26 +102,14 @@ class DustCopy {
   static String uiRiskLine({required bool hasFreeze}) {
     final l = L10n.current;
     if (hasFreeze) {
-      return _pick([
-        l.dustUiFreeze1,
-        l.dustUiFreeze2,
-        l.dustUiFreeze3,
-      ]);
+      return _pick([l.dustUiFreeze1, l.dustUiFreeze2, l.dustUiFreeze3]);
     }
-    return _pick([
-      l.dustUiNoFreeze1,
-      l.dustUiNoFreeze2,
-      l.dustUiNoFreeze3,
-    ]);
+    return _pick([l.dustUiNoFreeze1, l.dustUiNoFreeze2, l.dustUiNoFreeze3]);
   }
 
   static String uiRiskDetail() {
     final l = L10n.current;
-    return _pick([
-      l.dustUiNoFreeze1,
-      l.dustUiDetail2,
-      l.dustUiDetail3,
-    ]);
+    return _pick([l.dustUiNoFreeze1, l.dustUiDetail2, l.dustUiDetail3]);
   }
 
   /// Linha do hero card (com countdown). Uma frase: o que acaba, quando, o que fazer.

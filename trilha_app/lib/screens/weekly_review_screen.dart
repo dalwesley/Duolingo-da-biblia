@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
+import '../data/mission_study.dart';
 import '../data/question_bank.dart';
+import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
@@ -14,12 +16,20 @@ import '../services/progress_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
 import '../utils/layout_utils.dart';
+import '../utils/palco_verse.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/anan_speech.dart';
+import '../widgets/app_sheet.dart';
+import '../widgets/evidence_verse.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/today_facts.dart';
+import '../widgets/share_insight_card.dart';
+import '../widgets/today_stage.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
@@ -195,10 +205,21 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
         if (hasPlus)
           RelicChapter(title: l10n.weeklyReviewInsightsHeader, divided: false),
         if (hasPlus) const SizedBox(height: 12),
-        for (final scene in scenes)
+        for (var i = 0; i < scenes.length; i++)
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
-            child: _SceneCard(scene: scene, showInsight: hasPlus),
+            child: _SceneCard(
+              scene: scenes[i],
+              showInsight: hasPlus,
+              onTap: () => hasPlus
+                  ? _openToday(scenes, i)
+                  : Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            const PaywallScreen(source: 'weekly_review'),
+                      ),
+                    ),
+            ),
           ),
         const SizedBox(height: AppSpace.lg),
         if (!hasPlus)
@@ -221,6 +242,27 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
           ),
       ],
     ];
+  }
+
+  /// Reabre a placa Hoje da cena tocada; deslizar passa pelas outras.
+  Future<void> _openToday(List<_Scene> scenes, int index) {
+    ActHaptics.tap();
+    AnalyticsService.instance.logEvent('weekly_review_today_open', {
+      'mission_slug': scenes[index].mission.slug,
+      'index': index,
+    });
+    final progress = context.read<ProgressService>();
+    return showAppSheet<void>(
+      context,
+      builder: (_) => _TodaySheet(
+        scenes: scenes,
+        initial: index,
+        accentFor: (trailSlug) => DifficultyVisuals.accentFor(
+          TrailDifficulty.fromId(progress.difficultyForTrail(trailSlug)) ??
+              TrailDifficulty.semente,
+        ),
+      ),
+    );
   }
 
   /// Até 3 perguntas, uma por cena em rodízio, preferindo as erradas.
@@ -325,8 +367,13 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
 class _SceneCard extends StatelessWidget {
   final _Scene scene;
   final bool showInsight;
+  final VoidCallback onTap;
 
-  const _SceneCard({required this.scene, required this.showInsight});
+  const _SceneCard({
+    required this.scene,
+    required this.showInsight,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -334,23 +381,226 @@ class _SceneCard extends StatelessWidget {
     final insight = scene.mission.localizedCentralInsight?.trim() ?? '';
     return GlassCard(
       padding: AppMetrics.cardPaddingCompact,
+      onTap: onTap,
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  context.l10n.weeklyReviewSceneLine(
+                    scene.trail.localizedTitle,
+                    scene.mission.localizedTitle,
+                  ),
+                  style: AppTypography.body(size: 12, color: a.textFaint),
+                ),
+                if (showInsight && insight.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    context.l10n.weeklyReviewTodayInsight(insight),
+                    style: AppTypography.title(size: 14, color: a.text),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          ListChevron(color: a.textFaint),
+        ],
+      ),
+    );
+  }
+}
+
+/// A placa Hoje de cada cena da semana, como no fim da cena: a frase, os
+/// fatos (tocar acende o trecho) ou, sem fatos, o texto da cena.
+class _TodaySheet extends StatefulWidget {
+  final List<_Scene> scenes;
+  final int initial;
+  final Color Function(String trailSlug) accentFor;
+
+  const _TodaySheet({
+    required this.scenes,
+    required this.initial,
+    required this.accentFor,
+  });
+
+  @override
+  State<_TodaySheet> createState() => _TodaySheetState();
+}
+
+class _TodaySheetState extends State<_TodaySheet> {
+  late final PageController _pages = PageController(
+    initialPage: widget.initial,
+  );
+  late int _index = widget.initial;
+
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
+  }
+
+  void _go(int to) {
+    if (to < 0 || to >= widget.scenes.length) return;
+    ActHaptics.tap();
+    _pages.animateToPage(
+      to,
+      duration: AppMotion.standard,
+      curve: AppMotion.enter,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final total = widget.scenes.length;
+    final height = MediaQuery.sizeOf(context).height * 0.62;
+    return AppSheetPanel(
+      padding: const EdgeInsets.fromLTRB(0, AppSpace.md, 0, AppSpace.md),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          SizedBox(
+            height: height,
+            child: PageView.builder(
+              controller: _pages,
+              itemCount: total,
+              onPageChanged: (i) => setState(() => _index = i),
+              itemBuilder: (_, i) => _TodayPage(
+                scene: widget.scenes[i],
+                accent: widget.accentFor(widget.scenes[i].trail.slug),
+              ),
+            ),
+          ),
+          if (total > 1) ...[
+            const SizedBox(height: AppSpace.sm),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpace.md),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: _index > 0 ? () => _go(_index - 1) : null,
+                    tooltip: context.l10n.weeklyReviewTodayPrev,
+                    icon: Opacity(
+                      opacity: _index > 0 ? 1 : 0.3,
+                      child: Transform.flip(
+                        flipX: true,
+                        child: ListChevron(color: a.textSecondary),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      context.l10n.weeklyReviewTodayPage(_index + 1, total),
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w700,
+                        color: a.textFaint,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: _index < total - 1
+                        ? () => _go(_index + 1)
+                        : null,
+                    tooltip: context.l10n.weeklyReviewTodayNext,
+                    icon: Opacity(
+                      opacity: _index < total - 1 ? 1 : 0.3,
+                      child: ListChevron(color: a.textSecondary),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _TodayPage extends StatelessWidget {
+  final _Scene scene;
+  final Color accent;
+
+  const _TodayPage({required this.scene, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final mission = scene.mission;
+    final study =
+        MissionStudy.forSlug(mission.slug) ??
+        MissionStudy.forSlug(mission.resolvedBankSection);
+    final insight = mission.localizedCentralInsight?.trim() ?? '';
+    final doneOn = context
+        .read<ProgressService>()
+        .missionCompletedOn[mission.slug];
+    final facts = study?.localizedFacts ?? const <StudyFact>[];
+    final studyRef = study?.passageRef.trim() ?? '';
+    final ref = studyRef.isNotEmpty ? studyRef : (mission.hookRef ?? '').trim();
+    final studyText = study?.passageText.trim() ?? '';
+    final passage = PalcoVerse.swapDivineName(
+      studyText.isNotEmpty ? studyText : (mission.hookVerse ?? '').trim(),
+    );
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             context.l10n.weeklyReviewSceneLine(
               scene.trail.localizedTitle,
-              scene.mission.localizedTitle,
+              mission.localizedTitle,
             ),
+            textAlign: TextAlign.center,
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
-          if (showInsight && insight.isNotEmpty) ...[
-            const SizedBox(height: 4),
-            Text(
-              context.l10n.weeklyReviewTodayInsight(insight),
-              style: AppTypography.title(size: 14, color: a.text),
+          const SizedBox(height: AppSpace.md),
+          TodayStage(
+            insight: insight,
+            art: TrailArt.ofScene(scene.trail.slug, mission.slug),
+            reference: ref,
+            on: DateTime.tryParse(doneOn ?? '') ?? DateTime.now(),
+            accent: accent,
+            onShare: insight.isEmpty
+                ? null
+                : () {
+                    AnalyticsService.instance.logEvent('today_share', {
+                      'source': 'weekly_review',
+                      'mission_slug': mission.slug,
+                    });
+                    shareTodayCard(
+                      context,
+                      insight: insight,
+                      verseRef: ref,
+                      art: TrailArt.ofScene(scene.trail.slug, mission.slug),
+                    );
+                  },
+            height: (MediaQuery.sizeOf(context).height * 0.52).clamp(
+              420.0,
+              520.0,
             ),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          if (facts.isNotEmpty)
+            TodayFacts(
+              facts: facts,
+              passageRef: ref,
+              passageText: passage,
+              accent: accent,
+            )
+          else if (passage.isNotEmpty) ...[
+            SectionLabel(context.l10n.lessonPassageTitle, size: 12),
+            const SizedBox(height: AppSpace.sm),
+            EvidenceVerse(reference: ref, verse: passage, accent: accent),
           ],
+          const SizedBox(height: AppSpace.md),
         ],
       ),
     );

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
@@ -15,44 +17,48 @@ class StreakRepairBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final offer = context.select(
-      (ProgressService p) =>
-          (show: p.showStreakRepairOffer, broken: p.brokenStreak),
+      (ProgressService p) => (
+        show: p.showStreakRepairOffer,
+        broken: p.brokenStreak,
+        restored: p.streakRepairRestored,
+        current: p.streak < 1 ? 1 : p.streak,
+        missed: p.streakRepairMissedDay,
+      ),
     );
     if (!offer.show) return const SizedBox.shrink();
     final progress = context.read<ProgressService>();
 
     final a = Appearance.of(context);
-    final broken = offer.broken;
-    final restored = broken + 1;
+    final restored = offer.restored;
 
+    // O Anan conta o que houve (triste: a sequência caiu) e oferece
+    // juntar de volta — no ouro da sequência, não no gelo do congelamento.
     return GlassCard(
       elevated: true,
+      tint: AppRoles.streak,
+      borderColor: AppRoles.streak.withValues(alpha: 0.35),
       padding: AppMetrics.cardPadding,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.frost,
-                size: AppMetrics.leadingIcon,
-                accent: AppRoles.streak,
-                glowing: false,
-              ),
+              const CloudMascot(face: CloudFace.triste, size: 52),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      context.l10n.streakRepairTitle,
+                      _title(context, offer.missed),
                       style: AppTypography.title(size: 16, color: a.text),
                     ),
-                    const SizedBox(height: 2),
+                    const SizedBox(height: 4),
                     Text(
-                      context.l10n.streakRepairBody(broken, restored),
+                      context.l10n.streakRepairBody(offer.broken, restored),
                       style: AppTypography.body(
-                        size: 12,
+                        size: 13,
                         height: 1.35,
                         weight: FontWeight.w600,
                         color: a.textSecondary,
@@ -70,6 +76,8 @@ class StreakRepairBanner extends StatelessWidget {
                 child: CopperCta(
                   label: context.l10n.streakRepairAction,
                   trailing: CinematicGlyph.flame,
+                  dense: true,
+                  showGlow: false,
                   onTap: () async {
                     final ok = await progress.claimStreakRepair();
                     if (!context.mounted || !ok) return;
@@ -83,8 +91,8 @@ class StreakRepairBanner extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               TextCta(
-                label: context.l10n.streakRepairDismiss,
-                color: a.textFaint,
+                label: context.l10n.streakRepairDismiss(offer.current),
+                color: a.textSecondary,
                 onTap: () async {
                   await progress.dismissStreakRepair();
                 },
@@ -95,6 +103,21 @@ class StreakRepairBanner extends StatelessWidget {
       ),
     );
   }
+
+  /// "Ontem ficou em branco" — ou o dia da semana, se a falta já passou.
+  static String _title(BuildContext context, DateTime? missed) {
+    final now = DateTime.now();
+    final yesterday = DateTime(now.year, now.month, now.day - 1);
+    if (missed == null || DateUtils.isSameDay(missed, yesterday)) {
+      return context.l10n.streakRepairTitle;
+    }
+    final tag = Localizations.localeOf(context).toLanguageTag();
+    final day = DateFormat.EEEE(tag).format(missed);
+    final lead = Localizations.localeOf(context).languageCode == 'pt'
+        ? '${day[0].toUpperCase()}${day.substring(1)}'
+        : day;
+    return context.l10n.streakRepairTitleDay(lead);
+  }
 }
 
 /// Oferta na celebração — quieta, sem segundo CTA ouro.
@@ -104,15 +127,18 @@ class StreakRepairCelebrationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final offer = context.select(
-      (ProgressService p) =>
-          (show: p.showStreakRepairOffer, broken: p.brokenStreak),
+      (ProgressService p) => (
+        show: p.showStreakRepairOffer,
+        broken: p.brokenStreak,
+        restored: p.streakRepairRestored,
+      ),
     );
     if (!offer.show) return const SizedBox.shrink();
     final progress = context.read<ProgressService>();
 
     final a = Appearance.of(context);
     final broken = offer.broken;
-    final restored = broken + 1;
+    final restored = offer.restored;
 
     return GlassCard(
       tint: AppRoles.streak,

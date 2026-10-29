@@ -199,50 +199,56 @@ class _YearReviewScreenState extends State<YearReviewScreen> {
               ],
             ),
           ),
-          SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpace.screen,
-                AppSpace.sm,
-                AppSpace.sm,
-                0,
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Row(
-                      children: [
-                        for (var i = 0; i < slides.length; i++) ...[
-                          if (i > 0) const SizedBox(width: 4),
-                          Expanded(
-                            child: AnimatedContainer(
-                              duration: AppMotion.standard,
-                              height: 3,
-                              decoration: BoxDecoration(
-                                color: ink.withValues(
-                                  alpha: i <= _page ? 0.9 : 0.25,
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: SafeArea(
+              bottom: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  AppSpace.sm,
+                  AppSpace.sm,
+                  0,
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Row(
+                        children: [
+                          for (var i = 0; i < slides.length; i++) ...[
+                            if (i > 0) const SizedBox(width: 4),
+                            Expanded(
+                              child: AnimatedContainer(
+                                duration: AppMotion.standard,
+                                height: 3,
+                                decoration: BoxDecoration(
+                                  color: ink.withValues(
+                                    alpha: i <= _page ? 0.9 : 0.25,
+                                  ),
+                                  borderRadius: BorderRadius.circular(3),
                                 ),
-                                borderRadius: BorderRadius.circular(3),
                               ),
                             ),
-                          ),
+                          ],
                         ],
-                      ],
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    tooltip: MaterialLocalizations.of(
-                      context,
-                    ).closeButtonTooltip,
-                    icon: CinematicIcon(
-                      glyph: CinematicGlyph.close,
-                      size: 32,
-                      accent: ink.withValues(alpha: 0.85),
-                      glowing: false,
+                    IconButton(
+                      onPressed: () => Navigator.of(context).pop(),
+                      tooltip: MaterialLocalizations.of(
+                        context,
+                      ).closeButtonTooltip,
+                      icon: CinematicIcon(
+                        glyph: CinematicGlyph.close,
+                        size: 32,
+                        accent: ink.withValues(alpha: 0.85),
+                        glowing: false,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

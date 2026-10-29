@@ -157,10 +157,7 @@ List<String> definitionSenses(String definition) {
 }
 
 /// Coloca na frente o sentido que casa com o versículo.
-List<String> rankDefinitionSenses(
-  List<String> senses,
-  List<String> needles,
-) {
+List<String> rankDefinitionSenses(List<String> senses, List<String> needles) {
   if (senses.length <= 1 || needles.isEmpty) return senses;
   final scored = <({String sense, int score})>[];
   for (final s in senses) {
@@ -198,11 +195,7 @@ int _needleScore(String word, String needle) {
 }
 
 /// Escolhe o sentido que o versículo em português realmente usa.
-String alignGlossToVerse(
-  String verse,
-  String gloss, {
-  String definition = '',
-}) {
+String alignGlossToVerse(String verse, String gloss, {String definition = ''}) {
   final candidates = <String>[];
   void add(String raw) {
     final t = raw.trim();
@@ -227,8 +220,10 @@ String alignGlossToVerse(
   if (candidates.isEmpty) return gloss.trim();
 
   final firstSense = candidates.first;
-  final firstWords =
-      firstSense.split(RegExp(r'\s+')).where((w) => w.length >= 2).toList();
+  final firstWords = firstSense
+      .split(RegExp(r'\s+'))
+      .where((w) => w.length >= 2)
+      .toList();
   if (firstWords.length >= 2 &&
       firstWords.length <= 4 &&
       firstWords.any(
@@ -266,10 +261,7 @@ List<String> studyNeedles(
   String morph, {
   String verseGloss = '',
 }) {
-  final out = <String>[
-    ...glossNeedles(gloss),
-    ...glossNeedles(verseGloss),
-  ];
+  final out = <String>[...glossNeedles(gloss), ...glossNeedles(verseGloss)];
   final pn = suffixPronounPt(morph);
   if (pn != null && pn.length >= 2) out.add(pn);
   final seen = <String>{};
@@ -301,10 +293,7 @@ class _LinkCand {
 }
 
 /// Liga cada palavra da tradução a um token original (interlinear reverso).
-List<VerseWordLink> linkVerseToTokens(
-  String verse,
-  List<TokenNeedle> tokens,
-) {
+List<VerseWordLink> linkVerseToTokens(String verse, List<TokenNeedle> tokens) {
   if (verse.isEmpty || tokens.isEmpty) return const [];
   final wordRe = RegExp(r'[\p{L}\p{M}]+', unicode: true);
   final words = wordRe.allMatches(verse).toList();
@@ -386,7 +375,9 @@ bool wordMatchesNeedle(String word, String needle) {
   if (ws.length >= 3 && ns.length >= 3 && ws == ns) {
     return true;
   }
-  if (ws.length >= 4 && ns.length >= 4 && (w.startsWith(ns) || n.startsWith(ws))) {
+  if (ws.length >= 4 &&
+      ns.length >= 4 &&
+      (w.startsWith(ns) || n.startsWith(ws))) {
     return true;
   }
   return false;
@@ -402,9 +393,13 @@ String _stemPt(String s) {
           s.endsWith('ir') ||
           s.endsWith('ado') ||
           s.endsWith('ido'))) {
-    return s.substring(0, s.length - (s.endsWith('ado') || s.endsWith('ido') ? 3 : 2));
+    return s.substring(
+      0,
+      s.length - (s.endsWith('ado') || s.endsWith('ido') ? 3 : 2),
+    );
   }
-  if (s.length > 4 && (s.endsWith('os') || s.endsWith('as') || s.endsWith('es'))) {
+  if (s.length > 4 &&
+      (s.endsWith('os') || s.endsWith('as') || s.endsWith('es'))) {
     return s.substring(0, s.length - 1);
   }
   return s;

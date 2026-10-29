@@ -172,8 +172,39 @@ class _PilgrimChestState extends State<PilgrimChest> {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final postcards = widget.postcards;
-    final tab = postcards == null && _tab == 2 ? 0 : _tab;
-    final seals = tab == 1;
+    // No perfil próprio os postais vêm primeiro: é a parte mais visual da
+    // coleção. No perfil de outro peregrino, só medalhas e selos.
+    final tabs =
+        <
+          ({
+            String label,
+            Widget child,
+            Set<CaravanProfileSection>? eye,
+            String eyeLabel,
+          })
+        >[
+          if (postcards != null)
+            (
+              label: l10n.postcardsTitle,
+              child: postcards,
+              eye: null,
+              eyeLabel: '',
+            ),
+          (
+            label: l10n.medalVaultTitle,
+            child: widget.medals,
+            eye: const {CaravanProfileSection.medals},
+            eyeLabel: l10n.medalVaultTitle,
+          ),
+          (
+            label: l10n.sealsTitle,
+            child: widget.seals,
+            eye: const {CaravanProfileSection.trails},
+            eyeLabel: l10n.pilgrimSealsAndTrails,
+          ),
+        ];
+    final tab = _tab.clamp(0, tabs.length - 1);
+    final current = tabs[tab];
     return RelicPanel(
       accent: AppRoles.reward,
       glow: 0.7,
@@ -184,18 +215,9 @@ class _PilgrimChestState extends State<PilgrimChest> {
             title: l10n.pilgrimCollections,
             accent: AppRoles.reward,
             divided: false,
-            action: tab == 2
+            action: current.eye == null
                 ? null
-                : PrivacyEye(
-                    sections: {
-                      seals
-                          ? CaravanProfileSection.trails
-                          : CaravanProfileSection.medals,
-                    },
-                    label: seals
-                        ? l10n.pilgrimSealsAndTrails
-                        : l10n.medalVaultTitle,
-                  ),
+                : PrivacyEye(sections: current.eye!, label: current.eyeLabel),
           ),
           const SizedBox(height: AppSpace.md),
           AppSegmentedTabs(
@@ -203,28 +225,12 @@ class _PilgrimChestState extends State<PilgrimChest> {
             accent: AppRoles.reward,
             onChanged: (i) => setState(() => _tab = i),
             items: [
-              (
-                label: l10n.medalVaultTitle,
-                glyph: null,
-                mark: null,
-                alert: false,
-              ),
-              (label: l10n.sealsTitle, glyph: null, mark: null, alert: false),
-              if (postcards != null)
-                (
-                  label: l10n.postcardsTitle,
-                  glyph: null,
-                  mark: null,
-                  alert: false,
-                ),
+              for (final t in tabs)
+                (label: t.label, glyph: null, mark: null, alert: false),
             ],
           ),
           const SizedBox(height: AppSpace.lg),
-          switch (tab) {
-            1 => widget.seals,
-            2 => postcards!,
-            _ => widget.medals,
-          },
+          current.child,
         ],
       ),
     );
@@ -238,6 +244,10 @@ class PilgrimProfileDetailSections extends StatelessWidget {
   final VoidCallback? onOpenSettings;
   final Set<CaravanProfileSection> omitSections;
   final bool includeStreakMilestones;
+
+  /// Esconde o caminho da trilha em destaque (no perfil próprio as trilhas
+  /// já estão na aba Trilhas e no herói da Hoje). Os selos continuam.
+  final bool showTrailPath;
 
   /// Quando o cartão de identidade já mostra o que estas seções omitem.
   final bool suppressEmptyState;
@@ -260,6 +270,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     this.onOpenSettings,
     this.omitSections = const {},
     this.includeStreakMilestones = true,
+    this.showTrailPath = true,
     this.suppressEmptyState = false,
     this.collectionsFirst = false,
     this.showOwnerPrivacyBanner = true,
@@ -342,7 +353,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       );
     }
 
-    if (_show(CaravanProfileSection.trails)) {
+    if (_show(CaravanProfileSection.trails) && showTrailPath) {
       final featured = profile.featuredTrail;
       if (featured == null) {
         add(

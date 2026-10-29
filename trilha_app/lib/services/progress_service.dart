@@ -195,6 +195,10 @@ class ProgressService extends ChangeNotifier {
   static const maxPlayDates = 120;
   static const minStreakForRepair = 3;
 
+  /// Dias seguidos, a partir do recomeço, em que o reparo ainda vale —
+  /// jogar a cena não obriga a escolher; só soma ao que volta.
+  static const streakRepairWindowDays = 3;
+
   /// Bônus ao host quando o convidado completa a 1ª missão (referral).
   /// Calibrável via [RemoteConfigService], default igual ao valor anterior.
   static int get referralFirstMissionBonus =>
@@ -268,6 +272,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Dias cobertos pelo congelamento (aparecem com gelo na semana).
   List<String> frozenDates = [];
+
+  /// Dias em branco recuperados pelo reparo (aparecem com chama na semana).
+  List<String> repairedDates = [];
   String? questDay;
   Map<String, int> questProgressMap = {};
   List<String> questClaimed = [];
@@ -450,6 +457,13 @@ class ProgressService extends ChangeNotifier {
   Map<String, int> trailAnswerCorrect = {};
   Map<String, int> trailAnswerTotal = {};
 
+  /// Acerto de primeira por "grupo.modo" (ex.: `pentateuco.semente`), com o
+  /// grupo canônico do livro da pergunta ([BibleCanonicalGroups]). Base do
+  /// Seu mapa: diferente do acerto por trilha, não some quando a trilha é
+  /// recomeçada — é a história da caminhada, não o placar da trilha.
+  Map<String, int> domainAnswerCorrect = {};
+  Map<String, int> domainAnswerTotal = {};
+
   /// Semanas (segunda YYYY-MM-DD) com a revisão da semana concluída.
   List<String> weeklyReviewsDone = [];
 
@@ -493,6 +507,10 @@ class ProgressService extends ChangeNotifier {
   String? streakRepairMonth;
   bool streakRepairPending = false;
   int brokenStreak = 0;
+
+  /// Dia em branco que quebrou a sequência (YYYY-MM-DD), gravado na quebra:
+  /// um gelo depois do recomeço desloca a conta `último passo - sequência`.
+  String? streakRepairMissedDate;
 
   /// Sheet de retorno — mostra no máx. 1× por dia civil.
   String? lastComebackShownDate;
@@ -609,18 +627,29 @@ class ProgressService extends ChangeNotifier {
 
   String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
 
-  String _yesterdayKey() {
-    final d = DateTime.now().subtract(const Duration(days: 1));
-    return d.toIso8601String().substring(0, 10);
-  }
+  /// Dia civil [n] dias depois de [d] (negativo = antes). Aritmética de
+  /// calendário: `Duration(days:)` erra um dia na troca de horário.
+  static DateTime addCivilDays(DateTime d, int n) =>
+      DateTime(d.year, d.month, d.day + n);
+
+  /// Dias civis de [from] até [to] — só a data conta (UTC, sem horário de
+  /// verão no meio).
+  static int civilDaysBetween(DateTime from, DateTime to) => DateTime.utc(
+    to.year,
+    to.month,
+    to.day,
+  ).difference(DateTime.utc(from.year, from.month, from.day)).inDays;
+
+  String _yesterdayKey() =>
+      addCivilDays(DateTime.now(), -1).toIso8601String().substring(0, 10);
 
   String _dayAfterKey(String yyyyMmDd) {
     final parts = yyyyMmDd.split('-');
     final d = DateTime(
       int.parse(parts[0]),
       int.parse(parts[1]),
-      int.parse(parts[2]),
-    ).add(const Duration(days: 1));
+      int.parse(parts[2]) + 1,
+    );
     return d.toIso8601String().substring(0, 10);
   }
 
@@ -639,9 +668,7 @@ class ProgressService extends ChangeNotifier {
   /// semana que termina; de segunda a sábado, a semana anterior.
   String weeklyReviewWeekKey([DateTime? now]) {
     final d = now ?? DateTime.now();
-    final ref = d.weekday == DateTime.sunday
-        ? d
-        : DateTime(d.year, d.month, d.day).subtract(const Duration(days: 7));
+    final ref = d.weekday == DateTime.sunday ? d : addCivilDays(d, -7);
     return _weekMondayKey(ref);
   }
 
@@ -692,6 +719,16 @@ class ProgressService extends ChangeNotifier {
   /// Laboratório (debug): põe [slugs] na semana da revisão (seg, qua, sex),
   /// reabre a revisão dessa semana e soma respostas de mentira por modo e
   /// gesto. Não mexe em cenas concluídas, passos nem sequência.
+  /// Laboratório: marca [slugs] como feitas, sem passos nem ranking (para
+  /// chegar ao fim de uma trilha sem jogar cada cena). [undo] desmarca.
+  Future<void> debugMarkScenes(List<String> slugs, {bool undo = false}) async {
+    if (!kDebugMode) return;
+    completedMissions = undo
+        ? completedMissions.where((s) => !slugs.contains(s)).toList()
+        : {...completedMissions, ...slugs}.toList();
+    await _save();
+  }
+
   Future<void> debugSeedReviewWeek(List<String> slugs) async {
     if (!kDebugMode) return;
     final week = weeklyReviewWeekKey();
@@ -706,6 +743,7 @@ class ProgressService extends ChangeNotifier {
     }
     missionCompletedOn = seeded;
     weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
+    _debugFreeReviewSlotToday();
     const fake = {
       'semente.true_false': (8, 10),
       'semente.tap': (6, 8),
@@ -740,8 +778,18 @@ class ProgressService extends ChangeNotifier {
     answerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
+    domainAnswerCorrect = {};
+    domainAnswerTotal = {};
     weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
+    _debugFreeReviewSlotToday();
     await _save();
+  }
+
+  /// Uma revisão feita hoje ocupa o dia e a Home esconde a da semana até
+  /// amanhã — o laboratório libera o dia para a revisão reaparecer já.
+  void _debugFreeReviewSlotToday() {
+    final today = _todayKey();
+    reviewSlotDays = reviewSlotDays.where((d) => d != today).toList();
   }
 
   /// Laboratório (debug): deixa o baú de hoje pronto de novo — marca a
@@ -798,11 +846,7 @@ class ProgressService extends ChangeNotifier {
 
   String _weekMondayKey([DateTime? now]) {
     final d = now ?? DateTime.now();
-    final monday = DateTime(
-      d.year,
-      d.month,
-      d.day,
-    ).subtract(Duration(days: d.weekday - 1));
+    final monday = addCivilDays(d, -(d.weekday - 1));
     return monday.toIso8601String().substring(0, 10);
   }
 
@@ -1139,6 +1183,8 @@ class ProgressService extends ChangeNotifier {
     answerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
+    domainAnswerCorrect = {};
+    domainAnswerTotal = {};
     weeklyReviewsDone = [];
     dailyReviewsDone = [];
     reviewSlotDays = [];
@@ -1167,6 +1213,7 @@ class ProgressService extends ChangeNotifier {
     mistakeAnswers = {};
     playDates = [];
     frozenDates = [];
+    repairedDates = [];
     streakFreezeAvailable = true;
     streakFreezeWeek = null;
     questDay = null;
@@ -1216,6 +1263,7 @@ class ProgressService extends ChangeNotifier {
     streakRepairMonth = null;
     streakRepairPending = false;
     brokenStreak = 0;
+    streakRepairMissedDate = null;
     lastComebackShownDate = null;
     comebackBonusPending = false;
     notificationsPrompted = false;
@@ -1229,6 +1277,15 @@ class ProgressService extends ChangeNotifier {
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     desbravador = false;
+    lifetimeQuestionsCorrect = 0;
+    lifetimeQuestionsAnswered = 0;
+    daysAsCaravanLeader = 0;
+    lastLeaderRankDay = null;
+    // O setter também zera TrailProgress.lastPlayedMissionSlug (CTA da Home).
+    lastMissionSlug = null;
+    lastMissionCompletedDate = null;
+    caravanProfilePrefs = const CaravanProfilePrefs();
+    _pendingGeloTeach = false;
     _dropOrphanedWalkStats();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
@@ -1309,8 +1366,8 @@ class ProgressService extends ChangeNotifier {
     final sunday = DateTime(
       int.parse(parts[0]),
       int.parse(parts[1]),
-      int.parse(parts[2]),
-    ).add(const Duration(days: 6)).toIso8601String().substring(0, 10);
+      int.parse(parts[2]) + 6,
+    ).toIso8601String().substring(0, 10);
     for (final day in frozenDates) {
       if (day.compareTo(monday) >= 0 && day.compareTo(sunday) <= 0) {
         return true;
@@ -1369,9 +1426,7 @@ class ProgressService extends ChangeNotifier {
       int.tryParse(parts[1]) ?? 1,
       int.tryParse(parts[2]) ?? 1,
     );
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-    return today.difference(first).inDays.clamp(0, 9999);
+    return civilDaysBetween(first, DateTime.now()).clamp(0, 9999);
   }
 
   /// Dias civis desde o último passo (0 = hoje).
@@ -1384,9 +1439,7 @@ class ProgressService extends ChangeNotifier {
       int.parse(parts[1]),
       int.parse(parts[2]),
     );
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-    return today.difference(last).inDays.clamp(0, 999);
+    return civilDaysBetween(last, DateTime.now()).clamp(0, 999);
   }
 
   void _ensureMonthlyMonth() {
@@ -1895,8 +1948,11 @@ class ProgressService extends ChangeNotifier {
 
     if (lastPlayedDate == _yesterdayKey()) {
       streak = streak + 1;
-      streakRepairPending = false;
-      brokenStreak = 0;
+      if (streak > streakRepairWindowDays) {
+        streakRepairPending = false;
+        brokenStreak = 0;
+        streakRepairMissedDate = null;
+      }
     } else if (lastPlayedDate != null &&
         missedExactlyOneDay &&
         streak >= minStreakForRepair &&
@@ -1904,11 +1960,13 @@ class ProgressService extends ChangeNotifier {
       // Sem gelo: oferece reparo 1×/mês em vez de zerar na cara.
       brokenStreak = streak;
       streakRepairPending = true;
+      streakRepairMissedDate = _yesterdayKey();
       streak = 1;
     } else {
       streak = 1;
       streakRepairPending = false;
       brokenStreak = 0;
+      streakRepairMissedDate = null;
     }
 
     if (comebackBonusPending) {
@@ -1938,9 +1996,14 @@ class ProgressService extends ChangeNotifier {
     return frozenDates.contains(key);
   }
 
+  bool wasRepairedOnDate(DateTime date) {
+    final key = date.toIso8601String().substring(0, 10);
+    return repairedDates.contains(key);
+  }
+
   /// O gelo cobriu ontem — o card congelado só vale para este buraco.
   bool get yesterdayWasFrozen {
-    return wasFrozenOnDate(DateTime.now().subtract(const Duration(days: 1)));
+    return wasFrozenOnDate(addCivilDays(DateTime.now(), -1));
   }
 
   /// De fato caminhou neste dia civil (não usa missionsToday residual de ontem).
@@ -2005,9 +2068,29 @@ class ProgressService extends ChangeNotifier {
     return lastComebackShownDate != _todayKey();
   }
 
-  /// Oferta de reparo ativa após a missão que “reiniciou” a sequência.
+  /// Oferta de reparo ativa após a missão que “reiniciou” a sequência —
+  /// vale enquanto a nova sequência segue viva, por até
+  /// [streakRepairWindowDays] dias; cair de novo encerra a oferta.
   bool get showStreakRepairOffer =>
-      streakRepairPending && brokenStreak >= minStreakForRepair;
+      streakRepairPending &&
+      brokenStreak >= minStreakForRepair &&
+      streak <= streakRepairWindowDays &&
+      (lastPlayedDate == _todayKey() || lastPlayedDate == _yesterdayKey());
+
+  /// Sequência depois do reparo: a quebrada + os dias desde o recomeço.
+  int get streakRepairRestored => brokenStreak + (streak < 1 ? 1 : streak);
+
+  /// O dia que ficou em branco: o gravado na quebra; sem ele (legado),
+  /// véspera do recomeço (a cena mais recente menos os dias caminhados).
+  DateTime? get streakRepairMissedDay {
+    final recorded = streakRepairMissedDate;
+    final saved = recorded == null ? null : DateTime.tryParse(recorded);
+    if (saved != null) return saved;
+    final key = lastPlayedDate;
+    if (key == null) return null;
+    final d = DateTime.tryParse(key);
+    return d == null ? null : addCivilDays(d, -(streak < 1 ? 1 : streak));
+  }
 
   /// Marca o retorno como visto e agenda bônus na próxima missão do dia.
   Future<void> acknowledgeComeback() async {
@@ -2018,16 +2101,27 @@ class ProgressService extends ChangeNotifier {
     await _save();
   }
 
-  /// Restaura a sequência quebrada (+ o dia de hoje). Consome o reparo do mês.
+  /// Restaura a sequência quebrada (+ os dias desde o recomeço). Consome o
+  /// reparo do mês. Vale antes ou depois da cena de hoje.
   Future<bool> claimStreakRepair() async {
     _ensureStreakRepairMonth();
-    if (!streakRepairPending || brokenStreak < minStreakForRepair) return false;
-    if (!walkedToday) return false;
-    streak = brokenStreak + 1;
+    if (!showStreakRepairOffer) return false;
+    final missed = streakRepairMissedDay;
+    if (missed != null) {
+      final key = missed.toIso8601String().substring(0, 10);
+      if (!repairedDates.contains(key)) {
+        repairedDates = [...repairedDates, key];
+        if (repairedDates.length > 12) {
+          repairedDates = repairedDates.sublist(repairedDates.length - 12);
+        }
+      }
+    }
+    streak = streakRepairRestored;
     streakRepairPending = false;
     streakRepairAvailable = false;
     streakRepairMonth = _monthKey();
     brokenStreak = 0;
+    streakRepairMissedDate = null;
     await _save();
     return true;
   }
@@ -2036,6 +2130,7 @@ class ProgressService extends ChangeNotifier {
     if (!streakRepairPending) return;
     streakRepairPending = false;
     brokenStreak = 0;
+    streakRepairMissedDate = null;
     await _save();
   }
 
@@ -2139,6 +2234,41 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Modo efetivo: sessão (se houver) ou o modo atual da trilha.
+  /// Modo em uso por trilha: o desta sessão por cima do gravado.
+  Map<String, String> get activeTrailModes => {
+    ...trailDifficulties,
+    for (final e in _sessionTrailDifficulties.entries)
+      if (e.value.isNotEmpty) e.key: e.value,
+  };
+
+  /// Seu próximo passo › Aprofundar: grava e fixa o modo seguinte da trilha
+  /// (as cenas recomeçam nele), por cima de uma troca só desta sessão.
+  Future<void> deepenTrail(
+    String trailSlug,
+    String difficultyId, {
+    required List<String> missionSlugs,
+  }) async {
+    _sessionTrailDifficulties = {..._sessionTrailDifficulties}
+      ..remove(trailSlug);
+    await setTrailDifficulty(
+      trailSlug,
+      difficultyId,
+      missionSlugs: missionSlugs,
+      pin: true,
+    );
+    // Sem modo gravado antes (ou já gravado pelo avanço automático), a
+    // troca não zera: a trilha seguiria toda feita, sem cena para dar.
+    final drop = missionSlugs.toSet();
+    if (drop.isNotEmpty && drop.every(completedMissions.contains)) {
+      completedMissions = [
+        for (final s in completedMissions)
+          if (!drop.contains(s)) s,
+      ];
+      await _save();
+      notifyListeners();
+    }
+  }
+
   String? difficultyForTrail(String trailSlug) {
     final session = _sessionTrailDifficulties[trailSlug];
     if (session != null && session.isNotEmpty) return session;
@@ -2238,16 +2368,12 @@ class ProgressService extends ChangeNotifier {
 
   /// Abandona a trilha: zera cenas, modos selados, baús e modo gravado.
   /// Passos e sequência do app permanecem — só o caminho desta trilha some.
+  /// [rankedScenes] fica: refazer a trilha não paga a Caravana de novo.
   Future<void> leaveTrail({
     required String trailSlug,
     required List<String> missionSlugs,
   }) async {
     final drop = missionSlugs.toSet();
-    bool onTrail(String key) {
-      if (drop.contains(key)) return true;
-      final at = key.indexOf('@');
-      return at > 0 && drop.contains(key.substring(0, at));
-    }
 
     completedMissions = [
       for (final s in completedMissions)
@@ -2260,10 +2386,6 @@ class ProgressService extends ChangeNotifier {
     perfectMissions = [
       for (final s in perfectMissions)
         if (!drop.contains(s)) s,
-    ];
-    rankedScenes = [
-      for (final s in rankedScenes)
-        if (!onTrail(s)) s,
     ];
     borrowedMissions = [
       for (final s in borrowedMissions)
@@ -2444,6 +2566,27 @@ class ProgressService extends ChangeNotifier {
     _schedulePersist();
   }
 
+  /// Acerto de primeira no grupo canônico [group] (ver [domainAnswerCorrect]).
+  void recordDomainAnswer({
+    required String group,
+    required String mode,
+    required bool correct,
+  }) {
+    if (group.isEmpty || mode.isEmpty) return;
+    final key = '$group.$mode';
+    domainAnswerTotal = {
+      ...domainAnswerTotal,
+      key: (domainAnswerTotal[key] ?? 0) + 1,
+    };
+    if (correct) {
+      domainAnswerCorrect = {
+        ...domainAnswerCorrect,
+        key: (domainAnswerCorrect[key] ?? 0) + 1,
+      };
+    }
+    _schedulePersist();
+  }
+
   /// Acerto (0–100) numa trilha, ou null se ainda não há respostas nela.
   int? trailAccuracyPercent(String trailSlug) {
     final total = trailAnswerTotal[trailSlug] ?? 0;
@@ -2484,14 +2627,10 @@ class ProgressService extends ChangeNotifier {
   int get daysPlayedThisWeek {
     _ensureWeeklyWeek();
     final now = DateTime.now();
-    final monday = DateTime(
-      now.year,
-      now.month,
-      now.day,
-    ).subtract(Duration(days: now.weekday - 1));
+    final monday = addCivilDays(now, -(now.weekday - 1));
     var count = 0;
     for (var i = 0; i < 7; i++) {
-      if (playedOnDate(monday.add(Duration(days: i)))) count++;
+      if (playedOnDate(addCivilDays(monday, i))) count++;
     }
     return count;
   }
@@ -2913,7 +3052,7 @@ class ProgressService extends ChangeNotifier {
       return DateTime(int.parse(p[0]), int.parse(p[1]), int.parse(p[2]));
     }
 
-    return parse(toYmd).difference(parse(fromYmd)).inDays;
+    return civilDaysBetween(parse(fromYmd), parse(toYmd));
   }
 
   /// Snapshot completo para Firebase (fonte da verdade).
@@ -2944,10 +3083,12 @@ class ProgressService extends ChangeNotifier {
       'streakFreezeAvailable': streakFreezeAvailable,
       'streakFreezeWeek': streakFreezeWeek,
       'frozenDates': frozenDates,
+      'repairedDates': repairedDates,
       'streakRepairAvailable': streakRepairAvailable,
       'streakRepairMonth': streakRepairMonth,
       'streakRepairPending': streakRepairPending,
       'brokenStreak': brokenStreak,
+      'streakRepairMissedDate': streakRepairMissedDate,
       'lastComebackShownDate': lastComebackShownDate,
       'comebackBonusPending': comebackBonusPending,
       'questDay': questDay,
@@ -3009,6 +3150,8 @@ class ProgressService extends ChangeNotifier {
       'answerTotal': answerTotal,
       'trailAnswerCorrect': trailAnswerCorrect,
       'trailAnswerTotal': trailAnswerTotal,
+      'domainAnswerCorrect': domainAnswerCorrect,
+      'domainAnswerTotal': domainAnswerTotal,
       'weeklyReviewsDone': weeklyReviewsDone,
       'dailyReviewsDone': dailyReviewsDone,
       'reviewSlotDays': reviewSlotDays,
@@ -3096,6 +3239,42 @@ class ProgressService extends ChangeNotifier {
     return {...a, ...b}.toList();
   }
 
+  static final _dayKeyPattern = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+  static final _monthKeyPattern = RegExp(r'^\d{4}-\d{2}$');
+
+  static String? _validPeriodKey(String? key, {required bool month}) {
+    if (key == null) return null;
+    final pattern = month ? _monthKeyPattern : _dayKeyPattern;
+    return pattern.hasMatch(key) ? key : null;
+  }
+
+  /// Merge entre aparelhos de contadores por período (dia/semana/mês):
+  /// >0 a nuvem tem o período mais novo, <0 o local, 0 o mesmo período.
+  /// Sem chave válida de um lado (doc antigo) conta como o mesmo período.
+  static int comparePeriodKeys(
+    String? local,
+    String? cloud, {
+    bool month = false,
+  }) {
+    final l = _validPeriodKey(local, month: month);
+    final c = _validPeriodKey(cloud, month: month);
+    if (l == null || c == null) return 0;
+    return c.compareTo(l).sign;
+  }
+
+  /// Chave do período no empate: a válida, preferindo a da nuvem.
+  static String? _tiePeriodKey(
+    String? local,
+    String? cloud, {
+    bool month = false,
+  }) =>
+      _validPeriodKey(cloud, month: month) ??
+      _validPeriodKey(local, month: month) ??
+      cloud ??
+      local;
+
+  static int _maxInt(int a, int? b) => b != null && b > a ? b : a;
+
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
@@ -3115,10 +3294,38 @@ class ProgressService extends ChangeNotifier {
         steps = cloudSteps > steps ? cloudSteps : steps;
       }
     }
-    if (data.containsKey('streak')) {
-      final cloudStreak = (data['streak'] as num?)?.toInt();
-      if (cloudStreak != null && cloudStreak > streak) {
-        streak = cloudStreak;
+    // Sequência, último passo, cenas do dia e oferta de reparo descrevem o
+    // mesmo estado: vêm juntos do lado com o último passo mais novo. No
+    // mesmo dia, a maior sequência (e o reparo desse lado). null/vazio na
+    // nuvem não apaga.
+    final cloudLastRaw = (data['lastPlayedDate'] as String?)?.trim();
+    final cloudLast = (cloudLastRaw?.isEmpty ?? true) ? null : cloudLastRaw;
+    final localLastRaw = lastPlayedDate?.trim();
+    final localLast = (localLastRaw?.isEmpty ?? true) ? null : localLastRaw;
+    final cloudStreak = (data['streak'] as num?)?.toInt();
+    final cloudToday = (data['missionsToday'] as num?)?.toInt();
+    final streakSide = cloudLast == null
+        ? (localLast == null ? 0 : -1)
+        : localLast == null
+        ? 1
+        : cloudLast.compareTo(localLast).sign;
+    final takeCloudStreak =
+        streakSide > 0 ||
+        (streakSide == 0 && cloudStreak != null && cloudStreak >= streak);
+    if (streakSide > 0) {
+      lastPlayedDate = cloudLast;
+      if (cloudStreak != null) streak = cloudStreak;
+      if (cloudToday != null) missionsToday = cloudToday;
+    } else if (streakSide == 0) {
+      streak = _maxInt(streak, cloudStreak);
+      missionsToday = _maxInt(missionsToday, cloudToday);
+    }
+    if (takeCloudStreak) {
+      streakRepairPending =
+          data['streakRepairPending'] as bool? ?? streakRepairPending;
+      brokenStreak = (data['brokenStreak'] as num?)?.toInt() ?? brokenStreak;
+      if (data.containsKey('streakRepairPending')) {
+        streakRepairMissedDate = data['streakRepairMissedDate'] as String?;
       }
     }
     final cloudBest = (data['bestStreak'] as num?)?.toInt() ?? 0;
@@ -3127,16 +3334,6 @@ class ProgressService extends ChangeNotifier {
       cloudBest,
       streak,
     ].reduce((a, b) => a > b ? a : b);
-    if (data.containsKey('lastPlayedDate')) {
-      final cloudLast = (data['lastPlayedDate'] as String?)?.trim();
-      // null/vazio na nuvem não apaga; só avança se a data da nuvem for mais nova.
-      if (cloudLast != null && cloudLast.isNotEmpty) {
-        final local = lastPlayedDate?.trim();
-        if (local == null || local.isEmpty || cloudLast.compareTo(local) > 0) {
-          lastPlayedDate = cloudLast;
-        }
-      }
-    }
     if (data.containsKey('completedMissions')) {
       final cloudMissions = _asStringList(data['completedMissions']);
       if (cloudMissions.isEmpty && completedMissions.isNotEmpty) {
@@ -3145,12 +3342,6 @@ class ProgressService extends ChangeNotifier {
         completedMissions = cloudMissions;
       } else {
         completedMissions = {...completedMissions, ...cloudMissions}.toList();
-      }
-    }
-    if (data.containsKey('missionsToday')) {
-      final cloudToday = (data['missionsToday'] as num?)?.toInt();
-      if (cloudToday != null && cloudToday > missionsToday) {
-        missionsToday = cloudToday;
       }
     }
     if (data.containsKey('userName')) {
@@ -3162,22 +3353,25 @@ class ProgressService extends ChangeNotifier {
         }
       }
     }
-    if (data.containsKey('weeklySteps') || data.containsKey('weeklyXp')) {
-      final cloudWeekly =
-          (data['weeklySteps'] as num?)?.toInt() ??
-          (data['weeklyXp'] as num?)?.toInt();
-      if (cloudWeekly != null && cloudWeekly > weeklySteps) {
-        weeklySteps = cloudWeekly;
-      }
-    }
-    if (data.containsKey('weeklyScenes')) {
-      final cloudScenes = (data['weeklyScenes'] as num?)?.toInt();
-      if (cloudScenes != null && cloudScenes > weeklyScenes) {
-        weeklyScenes = cloudScenes;
-      }
-    }
-    if (data.containsKey('weeklyWeek')) {
-      weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
+    // Contadores da semana valem com a sua semana: mesma semana, máximo;
+    // senão, os contadores vêm junto com a semana mais nova.
+    final localWeek = weeklyWeek;
+    final localWeekSteps = weeklySteps;
+    final localWeekScenes = weeklyScenes;
+    final cloudWeekKey = data['weeklyWeek'] as String?;
+    final weekSide = comparePeriodKeys(localWeek, cloudWeekKey);
+    final cloudWeekly =
+        (data['weeklySteps'] as num?)?.toInt() ??
+        (data['weeklyXp'] as num?)?.toInt();
+    final cloudWeekScenes = (data['weeklyScenes'] as num?)?.toInt();
+    if (weekSide > 0) {
+      weeklyWeek = cloudWeekKey;
+      weeklySteps = cloudWeekly ?? 0;
+      weeklyScenes = cloudWeekScenes ?? 0;
+    } else if (weekSide == 0) {
+      weeklySteps = _maxInt(weeklySteps, cloudWeekly);
+      weeklyScenes = _maxInt(weeklyScenes, cloudWeekScenes);
+      weeklyWeek = _tiePeriodKey(localWeek, cloudWeekKey);
     }
     if (data.containsKey('playDates')) {
       final cloudDates = _asStringList(data['playDates']);
@@ -3211,18 +3405,44 @@ class ProgressService extends ChangeNotifier {
     }
 
     if (version >= 2) {
-      lastWeekSteps =
+      // Semana passada: mesma regra (a semana fechada mais nova vence).
+      final cloudLastWeekKey = data['lastWeekKey'] as String?;
+      final cloudLastWeekSteps =
           (data['lastWeekSteps'] as num?)?.toInt() ??
-          (data['lastWeekXp'] as num?)?.toInt() ??
-          lastWeekSteps;
-      lastWeekScenes =
-          (data['lastWeekScenes'] as num?)?.toInt() ?? lastWeekScenes;
-      lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
-      final cloudMonthly = (data['monthlySteps'] as num?)?.toInt();
-      if (cloudMonthly != null && cloudMonthly > monthlySteps) {
-        monthlySteps = cloudMonthly;
+          (data['lastWeekXp'] as num?)?.toInt();
+      final cloudLastWeekScenes = (data['lastWeekScenes'] as num?)?.toInt();
+      final lastWeekSide = comparePeriodKeys(lastWeekKey, cloudLastWeekKey);
+      if (lastWeekSide > 0) {
+        lastWeekKey = cloudLastWeekKey;
+        lastWeekSteps = cloudLastWeekSteps ?? 0;
+        lastWeekScenes = cloudLastWeekScenes ?? 0;
+      } else if (lastWeekSide == 0) {
+        lastWeekSteps = _maxInt(lastWeekSteps, cloudLastWeekSteps);
+        lastWeekScenes = _maxInt(lastWeekScenes, cloudLastWeekScenes);
+        lastWeekKey = _tiePeriodKey(lastWeekKey, cloudLastWeekKey);
       }
-      monthlyMonth = data['monthlyMonth'] as String? ?? monthlyMonth;
+      // A semana local ficou para trás e a nuvem já a fechou: o que este
+      // aparelho caminhou nela entra na semana passada.
+      if (weekSide > 0 && localWeek != null && localWeek == lastWeekKey) {
+        lastWeekSteps = _maxInt(lastWeekSteps, localWeekSteps);
+        lastWeekScenes = _maxInt(lastWeekScenes, localWeekScenes);
+      }
+
+      // Passos do mês valem com o seu mês (mesma regra da semana).
+      final cloudMonthly = (data['monthlySteps'] as num?)?.toInt();
+      final cloudMonth = data['monthlyMonth'] as String?;
+      final monthSide = comparePeriodKeys(
+        monthlyMonth,
+        cloudMonth,
+        month: true,
+      );
+      if (monthSide > 0) {
+        monthlyMonth = cloudMonth;
+        monthlySteps = cloudMonthly ?? 0;
+      } else if (monthSide == 0) {
+        monthlySteps = _maxInt(monthlySteps, cloudMonthly);
+        monthlyMonth = _tiePeriodKey(monthlyMonth, cloudMonth, month: true);
+      }
       // Âncora mais nova vence; no mesmo dia, a mais baixa (a do 1º passo).
       final cloudDay = data['monthDayKey'] as String?;
       final cloudDayStart = (data['monthDayStartSteps'] as num?)?.toInt();
@@ -3235,23 +3455,49 @@ class ProgressService extends ChangeNotifier {
           monthDayStartSteps = cloudDayStart;
         }
       }
-      streakFreezeAvailable =
-          data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
-      streakFreezeWeek =
-          data['streakFreezeWeek'] as String? ?? streakFreezeWeek;
+      // Gelo: semana de consumo mais nova vence; na mesma semana, gasto em
+      // qualquer aparelho é gasto.
+      final cloudFreezeWeek = data['streakFreezeWeek'] as String?;
+      final cloudFreeze = data['streakFreezeAvailable'] as bool?;
+      final freezeSide = comparePeriodKeys(streakFreezeWeek, cloudFreezeWeek);
+      if (freezeSide > 0) {
+        streakFreezeWeek = cloudFreezeWeek;
+        streakFreezeAvailable = cloudFreeze ?? streakFreezeAvailable;
+      } else if (freezeSide == 0) {
+        streakFreezeAvailable = streakFreezeAvailable && (cloudFreeze ?? true);
+        streakFreezeWeek = _tiePeriodKey(streakFreezeWeek, cloudFreezeWeek);
+      }
       if (data.containsKey('frozenDates')) {
         frozenDates = _unionStringLists(
           frozenDates,
           _asStringList(data['frozenDates']),
         );
       }
-      streakRepairAvailable =
-          data['streakRepairAvailable'] as bool? ?? streakRepairAvailable;
-      streakRepairMonth =
-          data['streakRepairMonth'] as String? ?? streakRepairMonth;
-      streakRepairPending =
-          data['streakRepairPending'] as bool? ?? streakRepairPending;
-      brokenStreak = (data['brokenStreak'] as num?)?.toInt() ?? brokenStreak;
+      if (data.containsKey('repairedDates')) {
+        repairedDates = _unionStringLists(
+          repairedDates,
+          _asStringList(data['repairedDates']),
+        );
+      }
+      // Reparo do mês: mesma regra do gelo, por mês civil.
+      final cloudRepairMonth = data['streakRepairMonth'] as String?;
+      final cloudRepair = data['streakRepairAvailable'] as bool?;
+      final repairSide = comparePeriodKeys(
+        streakRepairMonth,
+        cloudRepairMonth,
+        month: true,
+      );
+      if (repairSide > 0) {
+        streakRepairMonth = cloudRepairMonth;
+        streakRepairAvailable = cloudRepair ?? streakRepairAvailable;
+      } else if (repairSide == 0) {
+        streakRepairAvailable = streakRepairAvailable && (cloudRepair ?? true);
+        streakRepairMonth = _tiePeriodKey(
+          streakRepairMonth,
+          cloudRepairMonth,
+          month: true,
+        );
+      }
       lastComebackShownDate =
           data['lastComebackShownDate'] as String? ?? lastComebackShownDate;
       comebackBonusPending =
@@ -3288,9 +3534,8 @@ class ProgressService extends ChangeNotifier {
         }
       }
 
-      final cloudWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
-      final currentWeek = _weekMondayKey();
-      if (cloudWeek == currentWeek || weeklyWeek == currentWeek) {
+      // Quests da semana seguem a semana escolhida acima.
+      if (weekSide == 0) {
         if (data.containsKey('weeklyProgress')) {
           weeklyProgressMap = _mergeIntMapsMax(
             weeklyProgressMap,
@@ -3303,12 +3548,9 @@ class ProgressService extends ChangeNotifier {
             _asStringList(data['weeklyClaimed']),
           );
         }
-        if (cloudWeek == currentWeek) weeklyWeek = cloudWeek;
-      } else if (data.containsKey('weeklyProgress')) {
+      } else if (weekSide > 0) {
         weeklyProgressMap = _asIntMap(data['weeklyProgress']);
-        if (data.containsKey('weeklyClaimed')) {
-          weeklyClaimed = _asStringList(data['weeklyClaimed']);
-        }
+        weeklyClaimed = _asStringList(data['weeklyClaimed']);
       }
 
       if (data.containsKey('claimedChests')) {
@@ -3687,6 +3929,18 @@ class ProgressService extends ChangeNotifier {
           _asIntMap(data['trailAnswerTotal']),
         );
       }
+      if (data.containsKey('domainAnswerCorrect')) {
+        domainAnswerCorrect = _mergeIntMapsMax(
+          domainAnswerCorrect,
+          _asIntMap(data['domainAnswerCorrect']),
+        );
+      }
+      if (data.containsKey('domainAnswerTotal')) {
+        domainAnswerTotal = _mergeIntMapsMax(
+          domainAnswerTotal,
+          _asIntMap(data['domainAnswerTotal']),
+        );
+      }
       if (data.containsKey('lastMissionSlug')) {
         final slug = data['lastMissionSlug'] as String?;
         if (slug != null && slug.isNotEmpty) {
@@ -3943,6 +4197,8 @@ class ProgressService extends ChangeNotifier {
     answerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
+    domainAnswerCorrect = {};
+    domainAnswerTotal = {};
     weeklyReviewsDone = [];
     dailyReviewsDone = [];
     reviewSlotDays = [];
@@ -3953,6 +4209,7 @@ class ProgressService extends ChangeNotifier {
     mistakeAnswers = {};
     playDates = [];
     frozenDates = [];
+    repairedDates = [];
     seasonWalkDays = {};
     joinedWalks = [];
     streakFreezeAvailable = true;
@@ -3961,6 +4218,7 @@ class ProgressService extends ChangeNotifier {
     streakRepairMonth = null;
     streakRepairPending = false;
     brokenStreak = 0;
+    streakRepairMissedDate = null;
     lastComebackShownDate = null;
     comebackBonusPending = false;
     notificationsPrompted = false;
@@ -4034,6 +4292,7 @@ class ProgressService extends ChangeNotifier {
     if (!journeyGone) return;
     playDates = [];
     frozenDates = [];
+    repairedDates = [];
     lastPlayedDate = null;
     lifetimeQuestionsCorrect = 0;
     lifetimeQuestionsAnswered = 0;
@@ -4041,6 +4300,8 @@ class ProgressService extends ChangeNotifier {
     answerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
+    domainAnswerCorrect = {};
+    domainAnswerTotal = {};
     daysAsCaravanLeader = 0;
     lastLeaderRankDay = null;
     lastMissionSlug = null;

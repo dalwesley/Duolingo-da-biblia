@@ -339,10 +339,16 @@ class TrailProgress {
   /// Trilha do CTA da Home e da faixa da aba Trilhas. Sem Peregrino+
   /// ([plusOpen] falso), pula a trilha Plus cuja próxima cena pede o Plus:
   /// o CTA sempre abre uma cena jogável, nunca o paywall.
+  ///
+  /// Com [trailModes] (modo gravado por trilha), a trilha que a pessoa está
+  /// aprofundando ([isDeepening]) continua no herói.
   static Trail? findActiveTrail(
     List<Trail> trails,
     List<String> completed, {
     Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Iterable<String> borrowed = const [],
     bool plusOpen = true,
   }) {
     bool playable(Trail trail) =>
@@ -358,11 +364,19 @@ class TrailProgress {
           completed,
           clearedTrailModes: clearedTrailModes,
         ) &&
-        !isTrailCompleted(
-          trail,
-          completed,
-          clearedTrailModes: clearedTrailModes,
-        );
+        (!isTrailCompleted(
+              trail,
+              completed,
+              clearedTrailModes: clearedTrailModes,
+            ) ||
+            isDeepening(
+              trail,
+              completed,
+              clearedTrailModes: clearedTrailModes,
+              trailModes: trailModes,
+              pinnedModes: pinnedModes,
+              borrowed: borrowed,
+            ));
     Trail? bySlug(String? slug) =>
         slug == null ? null : trails.where((t) => t.slug == slug).firstOrNull;
 
@@ -409,6 +423,125 @@ class TrailProgress {
     return trails
         .where((t) => t.missionSlugs.isNotEmpty && playable(t))
         .firstOrNull;
+  }
+
+  /// A trilha já tem um modo selado e a pessoa voltou a ela no modo
+  /// seguinte: gravou um modo ainda não selado e o escolheu ([pinnedModes])
+  /// ou já fez cena nele (trocar de modo zera as cenas, então cena feita =
+  /// cena do modo novo). Cena só emprestada ([borrowed]) não conta.
+  static bool isDeepening(
+    Trail trail,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final cleared = clearedTrailModes[trail.slug] ?? const [];
+    if (cleared.isEmpty) return false;
+    final mode = trailModes[trail.slug];
+    if (mode == null || cleared.contains(mode)) return false;
+    final skip = borrowed.toSet();
+    final done = _doneSet(completed);
+    final slugs = missionSlugs(trail);
+    if (slugs.every(done.contains)) return false;
+    return pinnedModes[trail.slug] == mode ||
+        slugs.any((s) => done.contains(s) && !skip.contains(s));
+  }
+
+  /// O modo seguinte ao último selado na trilha, ou null se nenhum foi
+  /// selado ou todos já foram.
+  static TrailDifficulty? nextModeToDeepen(List<String> clearedModes) {
+    if (clearedModes.isEmpty) return null;
+    for (final d in TrailDifficulty.values) {
+      if (!clearedModes.contains(d.id)) return d;
+    }
+    return null;
+  }
+
+  /// Trilhas do carrossel do herói: todas em que a pessoa pode dar a
+  /// próxima cena agora. Ordem: a ativa ([findActiveTrail]), as que está
+  /// aprofundando, as começadas (a mais recente primeiro), depois as
+  /// abertas e ainda não começadas, na ordem do catálogo. Sem Peregrino+
+  /// ([plusOpen] falso), fica de fora a trilha cuja próxima cena pede o Plus.
+  static List<Trail> availableTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+    bool plusOpen = true,
+  }) {
+    bool fits(Trail t) =>
+        !t.comingSoon &&
+        t.missionSlugs.isNotEmpty &&
+        (plusOpen || !nextSceneNeedsPlus(t, completed)) &&
+        getCurrentMission(t, completed) != null;
+    bool walking(Trail t) =>
+        !isTrailCompleted(t, completed, clearedTrailModes: clearedTrailModes) ||
+        isDeepening(
+          t,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+          trailModes: trailModes,
+          pinnedModes: pinnedModes,
+          borrowed: borrowed,
+        );
+    final preferred = preferredTrailSlug;
+    final active = findActiveTrail(
+      trails,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      borrowed: borrowed,
+      plusOpen: plusOpen,
+    );
+    final out = <Trail>[];
+    final seen = <String>{};
+    void add(Trail t) {
+      if (fits(t) && walking(t) && seen.add(t.slug)) out.add(t);
+    }
+
+    if (active != null) add(active);
+    for (final t in trails) {
+      if (isDeepening(
+        t,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+        trailModes: trailModes,
+        pinnedModes: pinnedModes,
+        borrowed: borrowed,
+      )) {
+        add(t);
+      }
+    }
+    for (final t in startedTrails(
+      trails,
+      completed,
+      completedOn: completedOn,
+      borrowed: borrowed,
+      clearedTrailModes: clearedTrailModes,
+    )) {
+      add(t);
+    }
+    for (final t in trails) {
+      // Trilha de um motivo só entra quando é a escolha da pessoa.
+      if (EntryTrails.intentOnly.contains(t.slug) && t.slug != preferred) {
+        continue;
+      }
+      if (isTrailUnlocked(
+        t,
+        trails,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+      )) {
+        add(t);
+      }
+    }
+    return out;
   }
 
   /// Trilhas começadas e não terminadas, a mais recente primeiro: a da

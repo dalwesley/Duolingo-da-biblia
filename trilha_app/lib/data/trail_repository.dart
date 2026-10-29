@@ -1,5 +1,6 @@
 import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
+import 'curated_trails.dart';
 import 'entry_trails.dart';
 
 class TrailRepository {
@@ -10,10 +11,11 @@ class TrailRepository {
     return mergeEntry(remote);
   }
 
-  /// Trilhas por dor vivem no app (`EntryTrails`). Sempre substituem o remoto
-  /// do mesmo slug — senão um stub vazio no Firebase esconde Recomeço/Ansiedade.
+  /// Trilhas por dor (`EntryTrails`) e costuradas (`CuratedTrails`) vivem
+  /// no app. Sempre substituem o remoto do mesmo slug — senão um stub vazio
+  /// no Firebase esconde Recomeço/Ansiedade.
   static List<Trail> mergeEntry(List<Trail> remote) {
-    final overlay = EntryTrails.overlay;
+    final overlay = [...EntryTrails.overlay, ...CuratedTrails.overlay];
     if (overlay.isEmpty) return remote;
     final bySlug = {for (final t in overlay) t.slug: t};
     final merged = <Trail>[

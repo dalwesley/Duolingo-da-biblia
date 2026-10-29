@@ -48,9 +48,9 @@ class ProfileHero extends StatelessWidget {
   /// Selo de Pioneiro: assinante do plano de lançamento. Aparece no lugar
   /// do de Peregrino (é o mesmo Peregrino+, com o preço do começo).
   final bool pioneer;
-  final int steps;
+  final int streak;
   final int missions;
-  final int? accuracyPercent;
+  final int postcards;
 
   /// A barra já está presa acima do scroll (perfil com voltar).
   final bool chromePinned;
@@ -70,9 +70,9 @@ class ProfileHero extends StatelessWidget {
     this.supporter = false,
     this.pilgrim = false,
     this.pioneer = false,
-    required this.steps,
+    required this.streak,
     required this.missions,
-    this.accuracyPercent,
+    required this.postcards,
     this.chromePinned = false,
   });
 
@@ -127,9 +127,9 @@ class ProfileHero extends StatelessWidget {
                   supporter: supporter,
                   pilgrim: pilgrim,
                   pioneer: pioneer,
-                  steps: steps,
+                  streak: streak,
                   missions: missions,
-                  accuracyPercent: accuracyPercent,
+                  postcards: postcards,
                 ),
               ],
             ),
@@ -188,9 +188,9 @@ class _ProfileIdentityCard extends StatelessWidget {
   final bool supporter;
   final bool pilgrim;
   final bool pioneer;
-  final int steps;
+  final int streak;
   final int missions;
-  final int? accuracyPercent;
+  final int postcards;
 
   const _ProfileIdentityCard({
     required this.name,
@@ -204,9 +204,9 @@ class _ProfileIdentityCard extends StatelessWidget {
     this.supporter = false,
     this.pilgrim = false,
     this.pioneer = false,
-    required this.steps,
+    required this.streak,
     required this.missions,
-    this.accuracyPercent,
+    required this.postcards,
   });
 
   @override
@@ -315,11 +315,7 @@ class _ProfileIdentityCard extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           const RelicHairline(),
           const SizedBox(height: AppSpace.md),
-          _HeroStats(
-            steps: steps,
-            missions: missions,
-            accuracyPercent: accuracyPercent,
-          ),
+          _HeroStats(streak: streak, missions: missions, postcards: postcards),
         ],
       ),
     );
@@ -327,28 +323,29 @@ class _ProfileIdentityCard extends StatelessWidget {
 }
 
 class _HeroStats extends StatelessWidget {
-  final int steps;
+  final int streak;
   final int missions;
-  final int? accuracyPercent;
+  final int postcards;
 
   const _HeroStats({
-    required this.steps,
+    required this.streak,
     required this.missions,
-    required this.accuracyPercent,
+    required this.postcards,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    // Ouro só no número de passos; o resto fica na cor do texto.
+    // Quem sou em três números: a sequência (cor dela), as cenas e os
+    // postais (ouro, a coleção).
     final items = <(String, String, CinematicGlyph, Color, Color)>[
       (
-        pilgrimFormatCount(steps),
-        l10n.pilgrimStatSteps,
-        CinematicGlyph.path,
-        AppRoles.reward,
-        AppRoles.reward,
+        pilgrimFormatCount(streak),
+        l10n.profileStatStreak,
+        CinematicGlyph.flame,
+        AppRoles.streak,
+        AppRoles.streak,
       ),
       (
         pilgrimFormatCount(missions),
@@ -357,14 +354,13 @@ class _HeroStats extends StatelessWidget {
         AppRoles.presence,
         a.text,
       ),
-      if (accuracyPercent != null)
-        (
-          '$accuracyPercent%',
-          l10n.pilgrimAccuracyTitle,
-          CinematicGlyph.check,
-          AppRoles.presence,
-          a.text,
-        ),
+      (
+        pilgrimFormatCount(postcards),
+        l10n.postcardsTitle,
+        CinematicGlyph.gem,
+        AppRoles.reward,
+        AppRoles.reward,
+      ),
     ];
     return Row(
       children: [
@@ -421,18 +417,27 @@ class _HeroStats extends StatelessWidget {
   }
 }
 
-/// "Sua sequência": anel da sequência contra o compromisso firmado, a
-/// semana dia a dia e a tendência das últimas 12 semanas (sob demanda).
+/// "Esta semana": anel da sequência contra o compromisso firmado, a semana
+/// dia a dia, o próximo marco (Semente → Fruto), as missões da semana e,
+/// no Peregrino+, a tendência das últimas 12 semanas (sob demanda).
 class ConstancyCard extends StatefulWidget {
   final List<String> playDates;
   final int streak;
   final int goal;
+
+  /// Tendência das últimas 12 semanas (Peregrino+).
+  final bool showHistory;
+
+  /// Missões da semana em curso, dentro do card ("Esta semana").
+  final Widget? quests;
 
   const ConstancyCard({
     super.key,
     required this.playDates,
     required this.streak,
     required this.goal,
+    this.showHistory = true,
+    this.quests,
   });
 
   static const weeks = 12;
@@ -481,6 +486,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
     final streak = widget.streak;
     final ratio = goal <= 0 ? 0.0 : (streak / goal).clamp(0.0, 1.0);
     final done = streak >= goal && goal > 0;
+    final growth = SpiritualGrowth.fromStreak(streak);
 
     return GlassCard(
       tint: AppRoles.streak,
@@ -541,7 +547,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
                             children: [
                               Flexible(
                                 child: Text(
-                                  l10n.profileYourStreak,
+                                  l10n.profileWeekTitle,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: AppTypography.title(
@@ -591,39 +597,66 @@ class _ConstancyCardState extends State<ConstancyCard> {
           ),
           const SizedBox(height: AppSpace.lg),
           _WeekDots(start: monday, today: today, played: played),
-          const SizedBox(height: AppSpace.lg),
-          const ListDivider(),
-          const SizedBox(height: AppSpace.sm),
-          Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: () {
-                ActHaptics.tap();
-                setState(() => _historyOpen = !_historyOpen);
-              },
-              borderRadius: BorderRadius.circular(AppRadii.sm),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
-                child: Row(
-                  children: [
-                    Expanded(child: SectionLabel(l10n.profileWeekHistory)),
-                    RotatedBox(
-                      quarterTurns: _historyOpen ? 3 : 1,
-                      child: ListChevron(color: a.textSecondary),
-                    ),
-                  ],
+          // Próximo marco da sequência (Semente → Fruto), antes um card só.
+          if (growth.nextStage case final next?) ...[
+            const SizedBox(height: AppSpace.lg),
+            Text(
+              growth.daysToNext == 0
+                  ? l10n.growthNextMilestone(next.label)
+                  : l10n.growthNextIn(next.label, growth.daysToNext),
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w800,
+                color: a.text,
+              ),
+            ),
+            const SizedBox(height: 8),
+            RelicProgress(
+              value: growth.progressToNext,
+              accent: AppRoles.streak,
+            ),
+          ],
+          if (widget.quests case final quests?) ...[
+            const SizedBox(height: AppSpace.lg),
+            const ListDivider(),
+            const SizedBox(height: AppSpace.md),
+            quests,
+          ],
+          if (widget.showHistory) ...[
+            const SizedBox(height: AppSpace.lg),
+            const ListDivider(),
+            const SizedBox(height: AppSpace.sm),
+            Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  ActHaptics.tap();
+                  setState(() => _historyOpen = !_historyOpen);
+                },
+                borderRadius: BorderRadius.circular(AppRadii.sm),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+                  child: Row(
+                    children: [
+                      Expanded(child: SectionLabel(l10n.profileWeekHistory)),
+                      RotatedBox(
+                        quarterTurns: _historyOpen ? 3 : 1,
+                        child: ListChevron(color: a.textSecondary),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
-          if (_historyOpen) ...[
-            const SizedBox(height: AppSpace.sm),
-            _WeeksTrend(
-              perWeek: perWeek,
-              walked: walked,
-              weeks: ConstancyCard.weeks,
-              start: start,
-            ),
+            if (_historyOpen) ...[
+              const SizedBox(height: AppSpace.sm),
+              _WeeksTrend(
+                perWeek: perWeek,
+                walked: walked,
+                weeks: ConstancyCard.weeks,
+                start: start,
+              ),
+            ],
           ],
         ],
       ),

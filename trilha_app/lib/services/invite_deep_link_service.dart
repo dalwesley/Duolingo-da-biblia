@@ -86,8 +86,8 @@ class InviteDeepLinkService extends ChangeNotifier {
     if (raw == null || raw.trim().isEmpty) return null;
     final uri = Uri.tryParse(raw.trim());
     if (uri == null) return null;
-    final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
-    final query = uri.queryParameters['c'] ?? uri.queryParameters['code'];
+    final segs = _segments(uri);
+    final query = _query(uri, 'c') ?? _query(uri, 'code');
     if (uri.scheme == scheme) {
       if (uri.host.toLowerCase() == trailGiftHost) {
         return segs.isNotEmpty
@@ -125,15 +125,15 @@ $juntosHttpsUrl
     if (uri != null && uri.scheme == scheme) {
       final host = uri.host.toLowerCase();
       if (host == companionHost || host == 'c' || host == 'companion') {
-        final fromPath = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+        final fromPath = _segments(uri);
         if (fromPath.isNotEmpty) {
           return _normalizeCode(fromPath.first);
         }
-        final q = uri.queryParameters['code'] ?? uri.queryParameters['c'];
+        final q = _query(uri, 'code') ?? _query(uri, 'c');
         return _normalizeCode(q);
       }
       // stway:///companhia/CODE (path-only)
-      final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+      final segs = _segments(uri);
       if (segs.length >= 2 &&
           (segs.first.toLowerCase() == companionHost ||
               segs.first.toLowerCase() == 'c')) {
@@ -153,11 +153,9 @@ $juntosHttpsUrl
       final host = uri.host.toLowerCase();
       if (host == roomHost || host == 'grupo' || host == 'room') {
         return _firstPathCode(uri) ??
-            _normalizeCode(
-              uri.queryParameters['c'] ?? uri.queryParameters['code'],
-            );
+            _normalizeCode(_query(uri, 'c') ?? _query(uri, 'code'));
       }
-      final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+      final segs = _segments(uri);
       if (segs.length >= 2 &&
           (segs.first.toLowerCase() == roomHost ||
               segs.first.toLowerCase() == 'grupo')) {
@@ -167,21 +165,44 @@ $juntosHttpsUrl
     }
 
     if (uri.scheme == 'https' || uri.scheme == 'http') {
-      final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+      final segs = _segments(uri);
       final salaIndex = segs.indexWhere((s) => s.toLowerCase() == roomHost);
       if (salaIndex < 0) return null;
-      final query = uri.queryParameters['c'] ?? uri.queryParameters['code'];
+      final query = _query(uri, 'c') ?? _query(uri, 'code');
       if (query != null && query.isNotEmpty) return _normalizeCode(query);
-      if (salaIndex + 1 < segs.length)
+      if (salaIndex + 1 < segs.length) {
         return _normalizeCode(segs[salaIndex + 1]);
+      }
     }
     return null;
   }
 
   static String? _firstPathCode(Uri uri) {
-    final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+    final segs = _segments(uri);
     if (segs.isEmpty) return null;
     return _normalizeCode(segs.first);
+  }
+
+  /// `%FF` passa no `Uri.tryParse` mas não decodifica: `pathSegments` e
+  /// `queryParameters` jogam FormatException. Link torto = sem código.
+  static List<String> _segments(Uri uri) {
+    try {
+      return uri.pathSegments.where((s) => s.isNotEmpty).toList();
+    } on FormatException {
+      return const [];
+    } on ArgumentError {
+      return const [];
+    }
+  }
+
+  static String? _query(Uri uri, String key) {
+    try {
+      return uri.queryParameters[key];
+    } on FormatException {
+      return null;
+    } on ArgumentError {
+      return null;
+    }
   }
 
   static String? _normalizeCode(String? raw) {
@@ -206,7 +227,17 @@ $juntosHttpsUrl
     );
   }
 
+  /// Link de fora pode vir torto: nunca derruba o app (era fatal no
+  /// Crashlytics — erro no listener do stream não tem quem pegue).
   void _ingestUri(Uri uri) {
+    try {
+      _ingestUriNow(uri);
+    } catch (e) {
+      debugPrint('InviteDeepLink ingest: $e');
+    }
+  }
+
+  void _ingestUriNow(Uri uri) {
     if (uri.scheme == scheme && uri.host.toLowerCase() == webPurchaseHost) {
       _pendingWebPurchaseLink = uri.toString();
       notifyListeners();
@@ -228,9 +259,7 @@ $juntosHttpsUrl
     if (uri.scheme != scheme) return;
     final host = uri.host.toLowerCase();
     // stway://juntos  ou  stway:///juntos
-    final pathSegs = uri.pathSegments
-        .where((s) => s.isNotEmpty)
-        .toList(growable: false);
+    final pathSegs = _segments(uri);
     final pathFirst = pathSegs.isEmpty ? null : pathSegs.first.toLowerCase();
     if (host == juntosHost || pathFirst == juntosHost) {
       _wantJuntosTab = true;

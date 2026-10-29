@@ -3,9 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/bible_canonical_groups.dart';
+import '../data/curated_trails.dart';
 import '../data/mission_study.dart';
 import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
+import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/corner_challenge.dart';
@@ -37,8 +40,11 @@ import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/scene_study_panel.dart';
 import '../widgets/exercise_feedback_dialog.dart';
-import '../widgets/evidence_verse.dart';
+import '../widgets/today_facts.dart';
+import '../widgets/share_insight_card.dart';
+import '../widgets/today_stage.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
 import '../widgets/brand_flip_card.dart';
@@ -52,7 +58,6 @@ import '../screens/celebration_screen.dart';
 import '../screens/main_shell.dart';
 import '../services/tts_service.dart';
 import '../widgets/set_piece.dart';
-import '../widgets/relic_panel.dart';
 import '../widgets/verse_study_sheet.dart';
 import '../screens/difficulty_picker_screen.dart';
 
@@ -103,6 +108,10 @@ class _LessonScreenState extends State<LessonScreen>
   Mission? _baseMission;
   Mission? _mission;
   String? _trailSlug;
+
+  /// Toque duplo no Continuar: celebração e Bônus valem uma vez só.
+  bool _celebrationPushed = false;
+  bool _microDone = false;
   List<String> _pickedIds = [];
   List<Exercise> _exercises = [];
   String _closingInsight = '';
@@ -243,11 +252,15 @@ class _LessonScreenState extends State<LessonScreen>
     }
     if (widget.requiresPlus &&
         !context.read<SubscriptionService>().plusFeaturesOpen) {
-      await Navigator.of(context).pushReplacement(
-        MaterialPageRoute<void>(
-          builder: (_) => const PaywallScreen(source: 'lesson_gate'),
-        ),
-      );
+      // Ainda no initState: navega só depois do primeiro frame.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute<void>(
+            builder: (_) => const PaywallScreen(source: 'lesson_gate'),
+          ),
+        );
+      });
       return;
     }
     await ContentCatalogService.instance.ensureLoaded();
@@ -291,6 +304,9 @@ class _LessonScreenState extends State<LessonScreen>
       await ContentCatalogService.instance.ensureTrailBank(bankTrail);
       if (!mounted) return;
     }
+    // Síntese de A Promessa: perguntas do app, postas no banco agora.
+    final curatedIds = await CuratedTrails.prepareQuestions(mission.slug);
+    if (!mounted) return;
 
     if (widget.skipTrailLock) {
       PlusLog.log(
@@ -320,6 +336,11 @@ class _LessonScreenState extends State<LessonScreen>
           missionSlugs: trail.missionSlugs,
         );
         final alreadyDone = visibleCompleted.contains(widget.missionSlug);
+        // Feita só por empréstimo (A Promessa via cena de origem) não fura
+        // a trava do Plus: o progresso mostra, mas jogar aqui pede Plus.
+        final playedHere =
+            alreadyDone &&
+            !progress.borrowedMissions.contains(widget.missionSlug);
         if (!widget.skipTrailLock && corner == null && roomStudy == null) {
           final unlockedTrail = TrailProgress.isTrailUnlocked(
             trail,
@@ -350,7 +371,7 @@ class _LessonScreenState extends State<LessonScreen>
         // cena já feita, que sempre se pode repetir.
         if (!widget.plusGateDone &&
             !widget.requiresPlus &&
-            !alreadyDone &&
+            !playedHere &&
             !await _plusAllows(trail, corner: corner, roomStudy: roomStudy)) {
           if (!mounted) return;
           await Navigator.of(context).pushReplacement(
@@ -401,7 +422,7 @@ class _LessonScreenState extends State<LessonScreen>
       usesBank: usesBank,
       progress: freshProgress,
       practiceMode: widget.practiceMode,
-      questionIdsOverride: widget.questionIdsOverride,
+      questionIdsOverride: widget.questionIdsOverride ?? curatedIds,
       sceneIndex: sceneIndex,
     );
 
@@ -532,6 +553,16 @@ class _LessonScreenState extends State<LessonScreen>
         MissionStudy.forSlug(mission.resolvedBankSection);
   }
 
+  /// Estudo da cena para o menu do Anan: vale também na prática (refazer a
+  /// cena); reforço e revisão misturam cenas e não têm um estudo só.
+  MissionStudy? get _helpStudy {
+    final mission = _mission;
+    return MissionStudy.forSlug(widget.missionSlug) ??
+        (mission == null
+            ? null
+            : MissionStudy.forSlug(mission.resolvedBankSection));
+  }
+
   int get _maxLamps => _lampCount;
 
   int _scaledSteps(int base, double multiplier) => (base * multiplier).round();
@@ -629,15 +660,25 @@ class _LessonScreenState extends State<LessonScreen>
         'hint_open': _hintOpen ? 1 : 0,
       }),
     );
-    await showAppSheet<void>(
+    final study = _helpStudy;
+    final exit = await showAppSheet<_HelpExit>(
       context,
       builder: (_) => _AnanHelpSheet(
         reference: board.reference,
         text: board.text,
         accent: _gestureChrome,
+        study: study,
+        missionSlug: widget.missionSlug,
       ),
     );
     TtsService.instance.stop();
+    if (exit == _HelpExit.deeper && study != null && mounted) {
+      await showSceneStudySheet(
+        context,
+        study: study,
+        missionSlug: widget.missionSlug,
+      );
+    }
   }
 
   /// Primeiro verso do balão: marca a dica como usada (analytics + estado).
@@ -651,6 +692,26 @@ class _LessonScreenState extends State<LessonScreen>
       }),
     );
     _useHint();
+  }
+
+  /// Seu mapa: o acerto conta no grupo canônico do livro da pergunta
+  /// (cenas emprestadas contam pelo texto, não pela trilha que as costura).
+  Future<void> _recordDomain(
+    ProgressService progress,
+    String? reference,
+    String mode,
+    bool correct,
+  ) async {
+    if (reference == null || reference.trim().isEmpty) return;
+    final ref = await BibleService.instance.resolve(
+      reference,
+      translationId: BibleService.palcoTranslationId,
+    );
+    final group = ref == null
+        ? null
+        : BibleCanonicalGroups.ofBook(ref.bookIndex);
+    if (group == null) return;
+    progress.recordDomainAnswer(group: group.id, mode: mode, correct: correct);
   }
 
   Future<void> _select(String optionId) async {
@@ -762,6 +823,7 @@ class _LessonScreenState extends State<LessonScreen>
           correct: correct,
           trailSlug: _trailSlug,
         );
+        unawaited(_recordDomain(progress, ex.reference, mode, correct));
       }
       unawaited(
         AnalyticsService.instance.logQuestionAnswered(
@@ -862,7 +924,8 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   void _pushCelebration({required bool forced}) {
-    if (_mission == null) return;
+    if (_mission == null || _celebrationPushed) return;
+    _celebrationPushed = true;
     final total = _scoredItemCount.clamp(1, 999);
     final progress = context.read<ProgressService>();
     if (!widget.practiceMode && _pickedIds.isNotEmpty) {
@@ -951,6 +1014,8 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _completeMicro(bool correct) async {
+    if (_microDone) return;
+    _microDone = true;
     if (correct) {
       await context.read<ProgressService>().grantBonusSteps(2);
     }
@@ -1131,16 +1196,22 @@ class _LessonScreenState extends State<LessonScreen>
   Future<void> _insertReview() async {
     if (_reviewInserted || _mission == null) return;
     _reviewInserted = true;
+    // Mesmo banco do compose: trilha emprestada e seção própria da cena.
+    final base = _baseMission;
+    final borrowed = (base?.bankTrailSlug ?? '').trim();
+    final bankTrail = borrowed.isNotEmpty
+        ? borrowed
+        : (_trailSlug ?? 'genesis-1-11');
     final diffId =
         _difficultyMeta?.difficulty ??
         TrailDifficulty.fromId(
-          context.read<ProgressService>().difficultyForTrail(_trailSlug ?? ''),
+          context.read<ProgressService>().difficultyForTrail(bankTrail),
         ) ??
         TrailDifficulty.semente;
     final rev = SessionComposer.reviewFromBank(
-      missionSlug: widget.missionSlug,
+      missionSlug: base?.resolvedBankSection ?? widget.missionSlug,
       difficulty: diffId,
-      trailSlug: _trailSlug ?? 'genesis-1-11',
+      trailSlug: bankTrail,
       usedInSession: _exercises.map((e) => e.id).toSet(),
       // Por gesto visto: Toque com lacuna bloqueia o Completar também.
       usedTypes: _exercises.map(SessionComposer.exerciseSlot).toSet(),
@@ -1430,8 +1501,17 @@ class _LessonScreenState extends State<LessonScreen>
                               key: const ValueKey('insight'),
                               text: _closingInsight,
                               facts: _study?.localizedFacts ?? const [],
-                              passageRef: _study?.passageRef ?? '',
+                              passageRef:
+                                  _study?.passageRef ?? mission.hookRef ?? '',
                               passageText: _study?.passageText ?? '',
+                              art: TrailArt.ofScene(
+                                _trailSlug ?? '',
+                                widget.missionSlug,
+                              ),
+                              veiled: !context
+                                  .read<ProgressService>()
+                                  .postcardsOn
+                                  .containsKey(widget.missionSlug),
                               accent: accent,
                               onContinue: () {
                                 _pushCelebration(forced: _celebrationForced);
@@ -1584,16 +1664,24 @@ class _ActProgress extends StatelessWidget {
   }
 }
 
+/// Como a folha do Anan foi fechada: "Para aprofundar" abre a folha do
+/// estudo da cena logo depois.
+enum _HelpExit { deeper }
+
 /// Texto da cena no Anan: reler, ouvir e estudar — um CTA ouro volta à pergunta.
 class _AnanHelpSheet extends StatelessWidget {
   final String reference;
   final String text;
   final Color accent;
+  final MissionStudy? study;
+  final String missionSlug;
 
   const _AnanHelpSheet({
     required this.reference,
     required this.text,
     required this.accent,
+    required this.study,
+    required this.missionSlug,
   });
 
   @override
@@ -1690,6 +1778,15 @@ class _AnanHelpSheet extends StatelessWidget {
                 ],
               ],
             ),
+            if (study case final study? when SceneStudy.hasContent(study)) ...[
+              const SizedBox(height: AppSpace.sm),
+              GhostCta(
+                label: context.l10n.sceneStudyCta,
+                leading: CinematicGlyph.lamp,
+                expanded: true,
+                onTap: () => Navigator.pop(context, _HelpExit.deeper),
+              ),
+            ],
             const SizedBox(height: AppSpace.sm),
             GhostCta(
               label: context.l10n.lessonExploreSoonCta,
@@ -1879,13 +1976,15 @@ class _IntroPanel extends StatelessWidget {
   }
 }
 
-/// Placa Hoje: o insight da cena e, quando o estudo traz, os fatos que a
-/// pessoa leva. Tocar um fato acende no versículo o trecho que o prova.
-class _InsightPanel extends StatefulWidget {
+/// Fim da cena: a placa Hoje ([TodayStage]) e, quando o estudo traz, os
+/// fatos que a pessoa leva ([TodayFacts]).
+class _InsightPanel extends StatelessWidget {
   final String text;
   final List<StudyFact> facts;
   final String passageRef;
   final String passageText;
+  final String? art;
+  final bool veiled;
   final Color accent;
   final VoidCallback onContinue;
 
@@ -1897,216 +1996,69 @@ class _InsightPanel extends StatefulWidget {
     this.facts = const [],
     this.passageRef = '',
     this.passageText = '',
+    this.art,
+    this.veiled = true,
   });
 
   @override
-  State<_InsightPanel> createState() => _InsightPanelState();
-}
-
-class _InsightPanelState extends State<_InsightPanel> {
-  int? _active;
-
-  /// Placa direta: a [_WitnessPlate] estica com Expanded e, dentro da
-  /// rolagem dos fatos (altura sem limite), quebrava o layout e a tela
-  /// ficava vazia.
-  Widget _insightPlate() {
-    return StagePlate(
-      accent: widget.accent,
-      tint: true,
-      child: Text(
-        widget.text,
-        textAlign: TextAlign.center,
-        style: AppTypography.title(
-          size: 20,
-          height: 1.32,
-          color: widget.accent,
-        ),
-      ),
-    );
-  }
-
-  /// Sem fatos: a frase curta sozinha na placa alta. O Anan fala o que ficou.
-  Widget _insightSpeech() {
-    return AnanSpeech(
-      face: CloudFace.sucesso,
-      child: Text(
-        widget.text,
-        textAlign: TextAlign.center,
-        style: AppTypography.title(
-          size: 20,
-          height: 1.32,
-          color: AnanSpeechBubble.ink,
-        ),
-      ),
-    );
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final facts = widget.facts;
-    final cta = CopperCta(
-      label: context.l10n.commonContinue,
-      onTap: widget.onContinue,
-      trailing: null,
+    final stage = TodayStage(
+      insight: text,
+      art: art,
+      veiled: veiled,
+      reference: passageRef,
+      on: DateTime.now(),
+      accent: accent,
+      height: facts.isEmpty
+          ? null
+          : (MediaQuery.sizeOf(context).height * 0.56).clamp(420.0, 520.0),
+      onShare: text.trim().isEmpty
+          ? null
+          : () {
+              AnalyticsService.instance.logEvent('today_share', {
+                'source': 'scene_end',
+              });
+              shareTodayCard(
+                context,
+                insight: text,
+                verseRef: passageRef,
+                art: art,
+              );
+            },
     );
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RelicChapter(
-            title: context.l10n.commonToday,
-            accent: widget.accent,
-            divided: false,
-          ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.sm),
           Expanded(
             child: facts.isEmpty
-                ? Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Flexible(
-                        fit: FlexFit.loose,
-                        child: Center(
-                          child: SingleChildScrollView(
-                            physics: const BouncingScrollPhysics(),
-                            child: _insightSpeech(),
-                          ),
+                ? stage
+                : SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        stage,
+                        const SizedBox(height: AppSpace.lg),
+                        TodayFacts(
+                          facts: facts,
+                          passageRef: passageRef,
+                          passageText: passageText,
+                          accent: accent,
                         ),
-                      ),
-                      const SizedBox(height: 10),
-                      cta,
-                      const SizedBox(height: AppSpace.sm),
-                    ],
-                  )
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Expanded(
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              _insightPlate(),
-                              const SizedBox(height: AppSpace.lg),
-                              SectionLabel(
-                                context.l10n.lessonFactsLabel,
-                                size: 12,
-                              ),
-                              const SizedBox(height: AppSpace.sm),
-                              for (var i = 0; i < facts.length; i++)
-                                _FactRow(
-                                  text: facts[i].text,
-                                  accent: widget.accent,
-                                  active: _active == i,
-                                  onTap:
-                                      facts[i].evidenceSpan.trim().isEmpty ||
-                                          widget.passageText.trim().isEmpty
-                                      ? null
-                                      : () {
-                                          ActHaptics.tap();
-                                          setState(
-                                            () => _active = _active == i
-                                                ? null
-                                                : i,
-                                          );
-                                        },
-                                ),
-                              AnimatedSize(
-                                duration: AppMotion.standard,
-                                curve: AppMotion.enter,
-                                alignment: Alignment.topCenter,
-                                child: _evidence(),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      cta,
-                      const SizedBox(height: AppSpace.sm),
-                    ],
+                      ],
+                    ),
                   ),
           ),
+          const SizedBox(height: AppSpace.md),
+          CopperCta(
+            label: context.l10n.commonContinue,
+            onTap: onContinue,
+            trailing: null,
+          ),
+          const SizedBox(height: AppSpace.sm),
         ],
-      ),
-    );
-  }
-
-  Widget _evidence() {
-    final i = _active;
-    if (i == null || i >= widget.facts.length) return const SizedBox.shrink();
-    final span = PalcoVerse.swapDivineName(widget.facts[i].evidenceSpan.trim());
-    final verse = SessionComposer.clipFeedbackPassage(
-      PalcoVerse.swapDivineName(widget.passageText.trim()),
-      hint: span,
-      maxWords: 32,
-    );
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.sm),
-      child: EvidenceVerse(
-        key: ValueKey('fact-$i'),
-        reference: widget.passageRef.trim(),
-        verse: verse,
-        accent: AppRoles.presence,
-        highlight: span,
-        highlightColor: AppRoles.presence,
-      ),
-    );
-  }
-}
-
-/// Um fato da placa Hoje. Aceso quando o seu trecho está no versículo.
-class _FactRow extends StatelessWidget {
-  final String text;
-  final Color accent;
-  final bool active;
-  final VoidCallback? onTap;
-
-  const _FactRow({
-    required this.text,
-    required this.accent,
-    required this.active,
-    this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(10),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 7, right: 10),
-              child: AnimatedContainer(
-                duration: AppMotion.standard,
-                width: 6,
-                height: 6,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: active ? AppRoles.presence : accent,
-                ),
-              ),
-            ),
-            Expanded(
-              child: Text(
-                text,
-                style: AppTypography.body(
-                  size: 15,
-                  height: 1.35,
-                  weight: active ? FontWeight.w700 : FontWeight.w500,
-                  color: active ? a.text : a.textSecondary,
-                ),
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

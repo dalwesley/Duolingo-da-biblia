@@ -68,4 +68,33 @@ void main() {
       isNull,
     );
   });
+
+  test('link com escape torto (%FF) não quebra: só não tem código', () {
+    for (final raw in [
+      'stway://passe?c=%FF',
+      'stway://passe/%FF',
+      'https://stway-app.web.app/abrir/passe?c=%E0%A4',
+      'stway://sala?c=%FF',
+      'https://stway-app.web.app/abrir/sala/%FF',
+      'stway://companhia?code=%FF',
+    ]) {
+      expect(InviteDeepLinkService.extractTrailGiftCode(raw), isNull);
+      expect(InviteDeepLinkService.extractRoomCode(raw), isNull);
+      expect(
+        () => InviteDeepLinkService.extractCompanionCode(raw),
+        returnsNormally,
+      );
+      expect(
+        () => InviteDeepLinkService.findTrailGiftCode('oi $raw'),
+        returnsNormally,
+      );
+    }
+    // O resto do link ainda vale quando só um pedaço é torto.
+    expect(
+      InviteDeepLinkService.extractTrailGiftCode(
+        'stway://passe/AB23CD45?x=%FF',
+      ),
+      'AB23CD45',
+    );
+  });
 }

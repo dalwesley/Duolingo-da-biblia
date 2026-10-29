@@ -3916,6 +3916,24 @@ abstract class AppLocalizations {
   /// **'Julgue'**
   String get exerciseVerbJudge;
 
+  /// No description provided for @exerciseZoomLarger.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aumentar letra'**
+  String get exerciseZoomLarger;
+
+  /// No description provided for @exerciseZoomSmaller.
+  ///
+  /// In pt, this message translates to:
+  /// **'Diminuir letra'**
+  String get exerciseZoomSmaller;
+
+  /// No description provided for @exerciseZoomStage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ampliar texto'**
+  String get exerciseZoomStage;
+
   /// No description provided for @explainAnswerLabel.
   ///
   /// In pt, this message translates to:
@@ -4708,11 +4726,47 @@ abstract class AppLocalizations {
   /// **'Salmos e Provérbios em 31 dias'**
   String get guidedPlanPsalmsTitle;
 
+  /// No description provided for @heroEndAllBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novas trilhas chegam em breve. Enquanto isso, revise o que ficou ou leia a Bíblia.'**
+  String get heroEndAllBody;
+
+  /// No description provided for @heroEndAllTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você caminhou todas as trilhas'**
+  String get heroEndAllTitle;
+
+  /// No description provided for @heroEndPlusBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'As próximas trilhas são do Peregrino+. A Bíblia continua aberta para ler.'**
+  String get heroEndPlusBody;
+
+  /// No description provided for @heroEndPlusCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer o Peregrino+'**
+  String get heroEndPlusCta;
+
+  /// No description provided for @heroEndPlusTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você caminhou todas as trilhas abertas'**
+  String get heroEndPlusTitle;
+
   /// No description provided for @homeBibleOfflineSubtitle.
   ///
   /// In pt, this message translates to:
   /// **'Leia sem internet'**
   String get homeBibleOfflineSubtitle;
+
+  /// No description provided for @homeCarouselPosition.
+  ///
+  /// In pt, this message translates to:
+  /// **'{index} de {total}'**
+  String homeCarouselPosition(int index, int total);
 
   /// No description provided for @homeCatalogDownloading.
   ///
@@ -5341,7 +5395,7 @@ abstract class AppLocalizations {
   /// No description provided for @inviteTrailGiftLine.
   ///
   /// In pt, this message translates to:
-  /// **'Quem aceitar ganha uma trilha do Peregrino+ à escolha. É o seu passe deste mês.'**
+  /// **'Quem aceitar escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar. É o seu passe deste mês.'**
   String get inviteTrailGiftLine;
 
   /// No description provided for @inviteTrailGiftShareLine.
@@ -5349,6 +5403,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.'**
   String get inviteTrailGiftShareLine;
+
+  /// No description provided for @inviteTrailGiftTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma trilha de presente'**
+  String get inviteTrailGiftTitle;
 
   /// No description provided for @journalEmpty.
   ///
@@ -9183,6 +9243,108 @@ abstract class AppLocalizations {
   /// **'Trilhas'**
   String get navTrails;
 
+  /// No description provided for @nextStepDeepenCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar'**
+  String get nextStepDeepenCta;
+
+  /// No description provided for @nextStepDeepenLineCaminhada.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam por quê.'**
+  String nextStepDeepenLineCaminhada(int percent);
+
+  /// No description provided for @nextStepDeepenLineProfundezas.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam o que o texto revela.'**
+  String nextStepDeepenLineProfundezas(int percent);
+
+  /// No description provided for @nextStepDeepenTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{trail} em {mode}'**
+  String nextStepDeepenTitle(String trail, String mode);
+
+  /// No description provided for @nextStepEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu próximo passo'**
+  String get nextStepEyebrow;
+
+  /// No description provided for @nextStepLater.
+  ///
+  /// In pt, this message translates to:
+  /// **'Agora não'**
+  String get nextStepLater;
+
+  /// No description provided for @nextStepReinforceCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar'**
+  String get nextStepReinforceCta;
+
+  /// No description provided for @nextStepReinforceLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você acertou {correct} de {total}. São 5 perguntas das suas últimas cenas.'**
+  String nextStepReinforceLine(int correct, int total);
+
+  /// No description provided for @nextStepWeakChoice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar escolher a melhor resposta'**
+  String get nextStepWeakChoice;
+
+  /// No description provided for @nextStepWeakComplete.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar completar o versículo'**
+  String get nextStepWeakComplete;
+
+  /// No description provided for @nextStepWeakConnect.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar ligar um texto ao outro'**
+  String get nextStepWeakConnect;
+
+  /// No description provided for @nextStepWeakInterpret.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar interpretar o texto'**
+  String get nextStepWeakInterpret;
+
+  /// No description provided for @nextStepWeakOrder.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar a ordem dos fatos'**
+  String get nextStepWeakOrder;
+
+  /// No description provided for @nextStepWeakOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar “{gesture}”'**
+  String nextStepWeakOther(String gesture);
+
+  /// No description provided for @nextStepWeakTap.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar a palavra exata'**
+  String get nextStepWeakTap;
+
+  /// No description provided for @nextStepWeakText.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar achar a resposta no texto'**
+  String get nextStepWeakText;
+
+  /// No description provided for @nextStepWeakTrueFalse.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar conferir afirmações'**
+  String get nextStepWeakTrueFalse;
+
   /// No description provided for @notifChannelDesc.
   ///
   /// In pt, this message translates to:
@@ -9957,6 +10119,12 @@ abstract class AppLocalizations {
   /// **'Mudar de plano ou cancelar é na App Store ou no Google Play.'**
   String get paywallManageHint;
 
+  /// No description provided for @paywallMoreComing.
+  ///
+  /// In pt, this message translates to:
+  /// **'E muitos outros benefícios estão a caminho.'**
+  String get paywallMoreComing;
+
   /// No description provided for @paywallOffersFailed.
   ///
   /// In pt, this message translates to:
@@ -9984,13 +10152,13 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkGiftBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sua assinatura libera alguém: escolha uma trilha do Peregrino+ e compartilhe com quem você quiser.'**
+  /// **'Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.'**
   String get paywallPerkGiftBody;
 
   /// No description provided for @paywallPerkGiftTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Libere uma trilha por mês'**
+  /// **'Uma trilha por mês de presente'**
   String get paywallPerkGiftTitle;
 
   /// No description provided for @paywallPerkPlansBody.
@@ -10032,7 +10200,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkReinforceBody.
   ///
   /// In pt, this message translates to:
-  /// **'Você vê onde tropeça. Depois, um treino só daquilo.'**
+  /// **'Você vê onde tropeça. Depois, um treino na medida para você.'**
   String get paywallPerkReinforceBody;
 
   /// No description provided for @paywallPerkReinforceTitle.
@@ -10044,7 +10212,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.'**
+  /// **'O Advento, o Natal, a Páscoa e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
@@ -11427,6 +11595,36 @@ abstract class AppLocalizations {
   /// **'{rank}º no ranking do mês'**
   String profileMonthRank(int rank);
 
+  /// No description provided for @profileNearAlbum.
+  ///
+  /// In pt, this message translates to:
+  /// **'Álbum {trail}'**
+  String profileNearAlbum(String trail);
+
+  /// No description provided for @profileNearAlbumLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} postais · {left, plural, =1{falta 1} other{faltam {left}}}'**
+  String profileNearAlbumLine(int done, int total, int left);
+
+  /// No description provided for @profileNearSeal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selo de {name}'**
+  String profileNearSeal(String name);
+
+  /// No description provided for @profileNearSealLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Na próxima cena de {trail}'**
+  String profileNearSealLine(String trail);
+
+  /// No description provided for @profileNearTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quase lá'**
+  String get profileNearTitle;
+
   /// No description provided for @profileNotes.
   ///
   /// In pt, this message translates to:
@@ -11601,6 +11799,12 @@ abstract class AppLocalizations {
   /// **'Peregrino desde {month} de {year}'**
   String profileSince(String month, int year);
 
+  /// No description provided for @profileStatStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dias seguidos'**
+  String get profileStatStreak;
+
   /// No description provided for @profileStreakGoalDone.
   ///
   /// In pt, this message translates to:
@@ -11630,6 +11834,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Uma cena hoje acende o primeiro dia.'**
   String get profileStreakStart;
+
+  /// No description provided for @profileStudyErrors.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver erros ({count})'**
+  String profileStudyErrors(int count);
+
+  /// No description provided for @profileStudyErrorsNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erros explicados'**
+  String get profileStudyErrorsNone;
+
+  /// No description provided for @profileStudyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meu estudo'**
+  String get profileStudyTitle;
 
   /// No description provided for @profileThisWeek.
   ///
@@ -11715,11 +11937,35 @@ abstract class AppLocalizations {
   /// **'Histórico das semanas'**
   String get profileWeekHistory;
 
+  /// No description provided for @profileWeekTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta semana'**
+  String get profileWeekTitle;
+
   /// No description provided for @profileWeeksWalkedSemantics.
   ///
   /// In pt, this message translates to:
   /// **'{walked} dias caminhados nas últimas {weeks} semanas'**
   String profileWeeksWalkedSemantics(int walked, int weeks);
+
+  /// No description provided for @profileWordFavorites.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 favorito} other{{count} favoritos}}'**
+  String profileWordFavorites(int count);
+
+  /// No description provided for @profileWordNotes.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 anotação} other{{count} anotações}}'**
+  String profileWordNotes(int count);
+
+  /// No description provided for @profileWordShared.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 compartilhado} other{{count} compartilhados}}'**
+  String profileWordShared(int count);
 
   /// No description provided for @profileYourJourney.
   ///
@@ -11738,6 +11984,480 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua sequência'**
   String get profileYourStreak;
+
+  /// No description provided for @promiseTrail01Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tudo começa com uma promessa: terra, descendência e bênção para todas as famílias da terra. Siga esse fio de Abraão até Cristo.'**
+  String get promiseTrail01Intro;
+
+  /// No description provided for @promiseTrail01Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus promete a um homem sem filhos que, por meio dele, todas as famílias da terra serão abençoadas.'**
+  String get promiseTrail01Note;
+
+  /// No description provided for @promiseTrail01Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em ti, todas as famílias'**
+  String get promiseTrail01Title;
+
+  /// No description provided for @promiseTrail02Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrão ainda não tem filho. Deus o leva para fora e manda olhar o céu.'**
+  String get promiseTrail02Intro;
+
+  /// No description provided for @promiseTrail02Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrão creu, e isso lhe foi contado como justiça. Paulo vai voltar a este versículo.'**
+  String get promiseTrail02Note;
+
+  /// No description provided for @promiseTrail02Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conte as estrelas'**
+  String get promiseTrail02Title;
+
+  /// No description provided for @promiseTrail03Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O filho da promessa sobe o monte. A promessa parece em risco.'**
+  String get promiseTrail03Intro;
+
+  /// No description provided for @promiseTrail03Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'No Moriá, Deus provê o cordeiro no lugar do filho, e confirma a promessa com juramento.'**
+  String get promiseTrail03Note;
+
+  /// No description provided for @promiseTrail03Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Senhor proverá'**
+  String get promiseTrail03Title;
+
+  /// No description provided for @promiseTrail04Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Séculos depois, a família de Abraão é um povo escravo no Egito. Parece que a promessa morreu. Deus não esqueceu.'**
+  String get promiseTrail04Intro;
+
+  /// No description provided for @promiseTrail04Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó: a promessa antiga move o resgate.'**
+  String get promiseTrail04Note;
+
+  /// No description provided for @promiseTrail04Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus se lembra'**
+  String get promiseTrail04Title;
+
+  /// No description provided for @promiseTrail05Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Livre do Egito, o povo chega ao Sinai. A promessa ganha forma de aliança.'**
+  String get promiseTrail05Intro;
+
+  /// No description provided for @promiseTrail05Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Israel será um reino de sacerdotes: a bênção de Abraão passa por um povo para alcançar as nações.'**
+  String get promiseTrail05Note;
+
+  /// No description provided for @promiseTrail05Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um povo para as nações'**
+  String get promiseTrail05Title;
+
+  /// No description provided for @promiseTrail06Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Já na terra, Josué reconta a história e chama o povo a escolher a quem servir.'**
+  String get promiseTrail06Intro;
+
+  /// No description provided for @promiseTrail06Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'A terra foi dada; a fidelidade do povo vai falhar. A promessa vai precisar de alguém maior que Israel.'**
+  String get promiseTrail06Note;
+
+  /// No description provided for @promiseTrail06Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Na terra prometida'**
+  String get promiseTrail06Title;
+
+  /// No description provided for @promiseTrail07Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O povo falha, mas Deus não desiste. Agora a promessa se concentra num rei: Davi.'**
+  String get promiseTrail07Intro;
+
+  /// No description provided for @promiseTrail07Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus escolhe o menor dos filhos de Jessé. Da linhagem de Davi virá o rei cujo trono não terá fim (2 Samuel 7).'**
+  String get promiseTrail07Note;
+
+  /// No description provided for @promiseTrail07Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O rei escolhido'**
+  String get promiseTrail07Title;
+
+  /// No description provided for @promiseTrail08Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os profetas anunciam alguém que carrega a culpa dos outros.'**
+  String get promiseTrail08Intro;
+
+  /// No description provided for @promiseTrail08Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como no Moriá, alguém toma o lugar de outro: o Servo é ferido pelas nossas transgressões.'**
+  String get promiseTrail08Note;
+
+  /// No description provided for @promiseTrail08Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Servo ferido'**
+  String get promiseTrail08Title;
+
+  /// No description provided for @promiseTrail09Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'A aliança do Sinai foi quebrada. Deus promete outra.'**
+  String get promiseTrail09Intro;
+
+  /// No description provided for @promiseTrail09Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus promete escrever a lei no coração e perdoar o pecado. Jesus vai chamar o cálice da ceia de nova aliança.'**
+  String get promiseTrail09Note;
+
+  /// No description provided for @promiseTrail09Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma nova aliança'**
+  String get promiseTrail09Title;
+
+  /// No description provided for @promiseTrail10Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mateus abre o Novo Testamento com Jesus, filho de Davi, filho de Abraão. O fio chega a uma pessoa.'**
+  String get promiseTrail10Intro;
+
+  /// No description provided for @promiseTrail10Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Emanuel, Deus conosco: o filho prometido a Abraão e o rei prometido a Davi são o mesmo.'**
+  String get promiseTrail10Note;
+
+  /// No description provided for @promiseTrail10Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Filho de Davi, filho de Abraão'**
+  String get promiseTrail10Title;
+
+  /// No description provided for @promiseTrail11Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O cumprimento chega pequeno: numa manjedoura, anunciado a pastores.'**
+  String get promiseTrail11Intro;
+
+  /// No description provided for @promiseTrail11Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'A grande alegria é para todo o povo: eco da bênção prometida a todas as famílias da terra.'**
+  String get promiseTrail11Note;
+
+  /// No description provided for @promiseTrail11Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alegria para todo o povo'**
+  String get promiseTrail11Title;
+
+  /// No description provided for @promiseTrail12Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Paulo fecha o fio: a promessa feita a Abraão chega a quem crê.'**
+  String get promiseTrail12Intro;
+
+  /// No description provided for @promiseTrail12Note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em Cristo, a bênção de Abraão alcança as nações pela fé. E a promessa ainda aponta para a nova criação.'**
+  String get promiseTrail12Note;
+
+  /// No description provided for @promiseTrail12Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'A bênção chega a você'**
+  String get promiseTrail12Title;
+
+  /// No description provided for @promiseTrailMapCardBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja o que ficou firme em cada parte do fio e o que pede revisão.'**
+  String get promiseTrailMapCardBody;
+
+  /// No description provided for @promiseTrailMapFirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Firme'**
+  String get promiseTrailMapFirm;
+
+  /// No description provided for @promiseTrailMapReview.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 erro para revisar} other{{count} erros para revisar}}'**
+  String promiseTrailMapReview(int count);
+
+  /// No description provided for @promiseTrailMapReviewCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisar'**
+  String get promiseTrailMapReviewCta;
+
+  /// No description provided for @promiseTrailMapReviewIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os erros deste bloco, de novo. Sem pressa.'**
+  String get promiseTrailMapReviewIntro;
+
+  /// No description provided for @promiseTrailMapReviewTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão: {block}'**
+  String promiseTrailMapReviewTitle(String block);
+
+  /// No description provided for @promiseTrailMapSheetBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada bloco mostra os erros que ainda estão na sua revisão. Revise e o bloco fica firme.'**
+  String get promiseTrailMapSheetBody;
+
+  /// No description provided for @promiseTrailMapSynthesis.
+  ///
+  /// In pt, this message translates to:
+  /// **'Síntese'**
+  String get promiseTrailMapSynthesis;
+
+  /// No description provided for @promiseTrailMapTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mapa da Promessa'**
+  String get promiseTrailMapTitle;
+
+  /// No description provided for @promiseTrailModule1.
+  ///
+  /// In pt, this message translates to:
+  /// **'A promessa feita'**
+  String get promiseTrailModule1;
+
+  /// No description provided for @promiseTrailModule2.
+  ///
+  /// In pt, this message translates to:
+  /// **'A promessa guardada'**
+  String get promiseTrailModule2;
+
+  /// No description provided for @promiseTrailModule3.
+  ///
+  /// In pt, this message translates to:
+  /// **'A promessa anunciada'**
+  String get promiseTrailModule3;
+
+  /// No description provided for @promiseTrailModule4.
+  ///
+  /// In pt, this message translates to:
+  /// **'A promessa cumprida'**
+  String get promiseTrailModule4;
+
+  /// No description provided for @promiseTrailQ1A.
+  ///
+  /// In pt, this message translates to:
+  /// **'O cordeiro que Deus provê'**
+  String get promiseTrailQ1A;
+
+  /// No description provided for @promiseTrailQ1B.
+  ///
+  /// In pt, this message translates to:
+  /// **'A obediência que salva'**
+  String get promiseTrailQ1B;
+
+  /// No description provided for @promiseTrailQ1C.
+  ///
+  /// In pt, this message translates to:
+  /// **'O monte como lugar de culto'**
+  String get promiseTrailQ1C;
+
+  /// No description provided for @promiseTrailQ1Correct.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus provê o cordeiro no Moriá; João aponta Jesus como o Cordeiro.'**
+  String get promiseTrailQ1Correct;
+
+  /// No description provided for @promiseTrailQ1Hint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja quem provê e o que é provido.'**
+  String get promiseTrailQ1Hint;
+
+  /// No description provided for @promiseTrailQ1Question.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que Gênesis 22:8 comunica que se liga a João 1:29?'**
+  String get promiseTrailQ1Question;
+
+  /// No description provided for @promiseTrailQ1WrongB.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abraão obedece, mas quem provê o cordeiro é Deus.'**
+  String get promiseTrailQ1WrongB;
+
+  /// No description provided for @promiseTrailQ1WrongC.
+  ///
+  /// In pt, this message translates to:
+  /// **'João não fala do monte: fala do Cordeiro que tira o pecado.'**
+  String get promiseTrailQ1WrongC;
+
+  /// No description provided for @promiseTrailQ2A.
+  ///
+  /// In pt, this message translates to:
+  /// **'A lei do Sinai repetida'**
+  String get promiseTrailQ2A;
+
+  /// No description provided for @promiseTrailQ2B.
+  ///
+  /// In pt, this message translates to:
+  /// **'A nova aliança no sangue de Jesus'**
+  String get promiseTrailQ2B;
+
+  /// No description provided for @promiseTrailQ2C.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma aliança só para os profetas'**
+  String get promiseTrailQ2C;
+
+  /// No description provided for @promiseTrailQ2Correct.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jeremias promete uma nova aliança; na ceia, Jesus diz que ela vem no seu sangue.'**
+  String get promiseTrailQ2Correct;
+
+  /// No description provided for @promiseTrailQ2Hint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Procure a palavra que os dois textos repetem.'**
+  String get promiseTrailQ2Hint;
+
+  /// No description provided for @promiseTrailQ2Question.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que Jeremias 31:31 comunica que se liga a Lucas 22:20?'**
+  String get promiseTrailQ2Question;
+
+  /// No description provided for @promiseTrailQ2WrongA.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jeremias diz que não será como a aliança feita com os pais.'**
+  String get promiseTrailQ2WrongA;
+
+  /// No description provided for @promiseTrailQ2WrongC.
+  ///
+  /// In pt, this message translates to:
+  /// **'A aliança é com a casa de Israel; Jesus a dá aos discípulos no cálice.'**
+  String get promiseTrailQ2WrongC;
+
+  /// No description provided for @promiseTrailQ3A.
+  ///
+  /// In pt, this message translates to:
+  /// **'A bênção fica só com Israel'**
+  String get promiseTrailQ3A;
+
+  /// No description provided for @promiseTrailQ3B.
+  ///
+  /// In pt, this message translates to:
+  /// **'A bênção vem pela circuncisão'**
+  String get promiseTrailQ3B;
+
+  /// No description provided for @promiseTrailQ3C.
+  ///
+  /// In pt, this message translates to:
+  /// **'O evangelho chega às nações pela fé'**
+  String get promiseTrailQ3C;
+
+  /// No description provided for @promiseTrailQ3Correct.
+  ///
+  /// In pt, this message translates to:
+  /// **'Paulo lê Gênesis 12 como o evangelho anunciado a Abraão: as nações abençoadas pela fé.'**
+  String get promiseTrailQ3Correct;
+
+  /// No description provided for @promiseTrailQ3Hint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja quem é abençoado e por qual caminho.'**
+  String get promiseTrailQ3Hint;
+
+  /// No description provided for @promiseTrailQ3Question.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que Gênesis 12:3 comunica que se liga a Gálatas 3:8?'**
+  String get promiseTrailQ3Question;
+
+  /// No description provided for @promiseTrailQ3WrongA.
+  ///
+  /// In pt, this message translates to:
+  /// **'A promessa já dizia todas as famílias da terra.'**
+  String get promiseTrailQ3WrongA;
+
+  /// No description provided for @promiseTrailQ3WrongB.
+  ///
+  /// In pt, this message translates to:
+  /// **'Paulo diz que Deus justifica as nações pela fé.'**
+  String get promiseTrailQ3WrongB;
+
+  /// No description provided for @promiseTrailSynthIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Três pontes para ligar o que foi prometido ao que se cumpriu.'**
+  String get promiseTrailSynthIntro;
+
+  /// No description provided for @promiseTrailSynthNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desde o começo, a bênção prometida a Abraão era para todas as nações.'**
+  String get promiseTrailSynthNote;
+
+  /// No description provided for @promiseTrailSynthObjective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ligar a promessa a Abraão ao seu cumprimento em Cristo.'**
+  String get promiseTrailSynthObjective;
+
+  /// No description provided for @promiseTrailSynthTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Travessia: a promessa inteira'**
+  String get promiseTrailSynthTitle;
+
+  /// No description provided for @promiseTrailTrailDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'De Abraão a Cristo em 12 cenas: o fio que costura a Bíblia. Cada cena também conta na trilha de origem.'**
+  String get promiseTrailTrailDescription;
+
+  /// No description provided for @promiseTrailTrailTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Promessa'**
+  String get promiseTrailTrailTitle;
 
   /// No description provided for @questAccuracySubtitle.
   ///
@@ -12608,6 +13328,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Estudo da semana'**
   String get roomStudyFallbackTitle;
+
+  /// No description provided for @sceneStudyCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para aprofundar'**
+  String get sceneStudyCta;
+
+  /// No description provided for @sceneStudyKeyword.
+  ///
+  /// In pt, this message translates to:
+  /// **'Palavra-chave'**
+  String get sceneStudyKeyword;
+
+  /// No description provided for @sceneStudyLinks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ligações na Bíblia'**
+  String get sceneStudyLinks;
+
+  /// No description provided for @sceneStudyThink.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para pensar'**
+  String get sceneStudyThink;
 
   /// No description provided for @sealsAllRevealed.
   ///
@@ -13875,6 +14619,12 @@ abstract class AppLocalizations {
   /// **'protegido pelo gelo'**
   String get streakDayFrozen;
 
+  /// No description provided for @streakDayRepaired.
+  ///
+  /// In pt, this message translates to:
+  /// **'recuperado'**
+  String get streakDayRepaired;
+
   /// No description provided for @streakDaySemantics.
   ///
   /// In pt, this message translates to:
@@ -13890,13 +14640,13 @@ abstract class AppLocalizations {
   /// No description provided for @streakRepairAction.
   ///
   /// In pt, this message translates to:
-  /// **'Reparar'**
+  /// **'Recuperar'**
   String get streakRepairAction;
 
   /// No description provided for @streakRepairBody.
   ///
   /// In pt, this message translates to:
-  /// **'{broken, plural, =1{Você tinha 1 dia. Restaure para {restored} — 1× neste mês.} other{Você tinha {broken} dias. Restaure para {restored} — 1× neste mês.}}'**
+  /// **'{broken, plural, =1{Por isso sua sequência de 1 dia recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.} other{Por isso sua sequência de {broken} dias recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.}}'**
   String streakRepairBody(int broken, int restored);
 
   /// No description provided for @streakRepairCanReturn.
@@ -13914,20 +14664,26 @@ abstract class AppLocalizations {
   /// No description provided for @streakRepairDismiss.
   ///
   /// In pt, this message translates to:
-  /// **'Deixar'**
-  String get streakRepairDismiss;
+  /// **'{count, plural, =1{Ficar com 1 dia} other{Ficar com {count} dias}}'**
+  String streakRepairDismiss(int count);
 
   /// No description provided for @streakRepairDone.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Sequência restaurada · 1 dia} other{Sequência restaurada · {count} dias}}'**
+  /// **'{count, plural, =1{Sequência de volta · 1 dia} other{Sequência de volta · {count} dias}}'**
   String streakRepairDone(int count);
 
   /// No description provided for @streakRepairTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Reparar sequência'**
+  /// **'Ontem ficou em branco'**
   String get streakRepairTitle;
+
+  /// No description provided for @streakRepairTitleDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'{day} ficou em branco'**
+  String streakRepairTitleDay(String day);
 
   /// Share text the user sends to friends. {signature} is empty or a new line with the user's name.
   ///
@@ -15270,7 +16026,7 @@ abstract class AppLocalizations {
   /// No description provided for @weeklyReviewIntro.
   ///
   /// In pt, this message translates to:
-  /// **'Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.'**
+  /// **'Toque numa cena para reler o “Hoje:” e, no fim, responda 3 perguntas sobre elas.'**
   String get weeklyReviewIntro;
 
   /// No description provided for @weeklyReviewMissionIntro.
@@ -15338,6 +16094,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Hoje: {insight}'**
   String weeklyReviewTodayInsight(String insight);
+
+  /// No description provided for @weeklyReviewTodayNext.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próxima cena'**
+  String get weeklyReviewTodayNext;
+
+  /// No description provided for @weeklyReviewTodayPage.
+  ///
+  /// In pt, this message translates to:
+  /// **'{index} de {total}'**
+  String weeklyReviewTodayPage(int index, int total);
+
+  /// No description provided for @weeklyReviewTodayPrev.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena anterior'**
+  String get weeklyReviewTodayPrev;
 
   /// No description provided for @widgetBackToTrail.
   ///

@@ -1,3 +1,4 @@
+import 'curated_trails.dart';
 import 'scene_art.dart';
 
 /// Pintura de cada trilha: a faixa no topo do card no caminho do grupo.
@@ -97,13 +98,17 @@ class TrailArt {
   static String? of(String slug) => switch (slug) {
     // Única trilha do grupo: usa a pintura do card do grupo.
     'cristologia' => 'assets/art/journey_cristologia.jpg',
+    CuratedTrails.promiseSlug => 'assets/art/journey_promessaCumprimento.jpg',
     _ when _painted.contains(slug) => 'assets/art/trail_$slug.jpg',
     _ => null,
   };
 
   /// Pintura da cena; sem arte própria, a da trilha.
-  static String? ofScene(String trailSlug, String sceneSlug) =>
-      scenesWithArt.contains(sceneSlug)
-      ? 'assets/art/scene_$sceneSlug.jpg'
-      : of(trailSlug);
+  /// Cena costurada ([CuratedTrails]) mostra a pintura da cena de origem.
+  static String? ofScene(String trailSlug, String sceneSlug) {
+    final scene = CuratedTrails.originOf(sceneSlug) ?? sceneSlug;
+    return scenesWithArt.contains(scene)
+        ? 'assets/art/scene_$scene.jpg'
+        : of(trailSlug);
+  }
 }

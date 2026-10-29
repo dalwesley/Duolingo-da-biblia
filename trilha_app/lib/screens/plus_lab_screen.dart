@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../data/curated_trails.dart';
 import '../data/season_walk_catalog.dart';
 import '../data/trail_repository.dart';
 import '../services/league_service.dart';
@@ -23,6 +24,7 @@ import '../widgets/plus_offer_sheet.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import 'lesson_screen.dart';
 import 'paywall_screen.dart';
 import 'support_screen.dart';
 import 'weekly_review_screen.dart';
@@ -476,13 +478,58 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           () => openYearReview(context, force: true),
                         ),
                       ]),
+                      section('A Promessa', [
+                        line(
+                          'Marca as 12 cenas como feitas para abrir a '
+                          'Travessia final. Erre de propósito na síntese '
+                          'para ver o Mapa da Promessa com revisão. '
+                          '"Desfazer" desmarca as 13 cenas.',
+                        ),
+                        button('Ir para a Travessia', () async {
+                          await context.read<ProgressService>().debugMarkScenes(
+                            CuratedTrails.origins.keys.toList(),
+                          );
+                          _toast(
+                            '12 cenas feitas: abra Temas › Promessa e cumprimento',
+                          );
+                        }),
+                        button('Desfazer A Promessa', () async {
+                          await context
+                              .read<ProgressService>()
+                              .debugMarkScenes([
+                                ...CuratedTrails.origins.keys,
+                                CuratedTrails.synthesisSlug,
+                              ], undo: true);
+                          _toast('A Promessa voltou ao começo');
+                        }),
+                      ]),
+                      section('Para aprofundar', [
+                        line(
+                          'Abre "O Cordeiro no trono" (Apocalipse) em modo '
+                          'prática, sem trava de trilha e sem mexer no '
+                          'progresso. Toque no Anan: a folha tem '
+                          'palavra-chave, pergunta e ligações.',
+                        ),
+                        button('Abrir cena com estudo', () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute<void>(
+                              builder: (_) => const LessonScreen(
+                                missionSlug: 'apo-02-cordeiro',
+                                practiceMode: true,
+                                skipTrailLock: true,
+                              ),
+                            ),
+                          );
+                        }),
+                      ]),
                       section('Dados de teste', [
                         line(
                           'Põe 3 cenas na semana da revisão (seg, qua, '
                           'sex) e soma respostas por modo e gesto. Não '
                           'conclui cenas nem dá passos. "Limpar" tira '
                           'todas as cenas da semana da revisão e zera o '
-                          'acerto por modo e gesto.',
+                          'acerto por modo e gesto. Os dois liberam a '
+                          'revisão de hoje, se já foi feita.',
                         ),
                         button(
                           _busy ? 'Criando…' : 'Criar semana de revisão',

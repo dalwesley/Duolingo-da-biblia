@@ -48,6 +48,7 @@ import '../widgets/ui_primitives.dart';
 import '../widgets/wave_hands_overlay.dart';
 import '../widgets/plus_billing_banner.dart';
 import '../widgets/plus_offer_sheet.dart';
+import '../widgets/next_step_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
@@ -143,6 +144,9 @@ class _HomeScreenState extends State<HomeScreen>
             trails,
             progress.completedMissions,
             clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            borrowed: progress.borrowedMissions,
             plusOpen: plusOpen,
           );
           if (active != null) {
@@ -450,6 +454,7 @@ class _HomeScreenState extends State<HomeScreen>
           Navigator.of(context).pop();
           widget.onOpenMission(corner.missionSlug);
         },
+        onSettled: () => Navigator.of(context).pop(),
       ),
     );
   }
@@ -672,12 +677,19 @@ class _HomeScreenState extends State<HomeScreen>
     final plusOpen = listen
         ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
         : context.read<SubscriptionService>().plusFeaturesOpen;
-    final active = TrailProgress.findActiveTrail(
+    // Carrossel do herói: todas as trilhas com próxima cena agora; a 1ª é
+    // a ativa (onde a pessoa está andando).
+    final heroTrails = TrailProgress.availableTrails(
       trails,
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      trailModes: progress.activeTrailModes,
+      pinnedModes: progress.pinnedTrailDifficulties,
+      completedOn: progress.missionCompletedOn,
+      borrowed: progress.borrowedMissions,
       plusOpen: plusOpen,
     );
+    final active = heroTrails.firstOrNull;
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
         : null;
@@ -736,6 +748,34 @@ class _HomeScreenState extends State<HomeScreen>
                     ),
                   ),
                 ),
+                const SizedBox(height: AppSpace.lg),
+                // CTA dominante: missão pronta. O carrossel vai de borda a
+                // borda (os cards vizinhos entram de fora da tela); o resto
+                // fica na coluna do conteúdo.
+                _reveal(
+                  1,
+                  heroTrails.isEmpty
+                      ? Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: AppSpace.screen + gutter,
+                          ),
+                          child: HeroEndCard(
+                            trails: trails,
+                            plusOpen: plusOpen,
+                            onOpenMission: widget.onOpenMission,
+                            onExploreTrails: widget.onOpenTrilhas,
+                          ),
+                        )
+                      : _HeroCarousel(
+                          trails: heroTrails,
+                          completed: progress.completedMissions,
+                          side: AppSpace.screen + gutter,
+                          onOpenMission: widget.onOpenMission,
+                          onExploreTrails: widget.onOpenTrilhas,
+                          goalMet: goalMet,
+                          atRisk: progress.isStreakAtRisk,
+                        ),
+                ),
                 Padding(
                   padding: EdgeInsets.symmetric(
                     horizontal: AppSpace.screen + gutter,
@@ -743,29 +783,23 @@ class _HomeScreenState extends State<HomeScreen>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      const SizedBox(height: AppSpace.lg),
-                      // CTA dominante: missão pronta.
+                      // Chip só quando a temporada já começou e o
+                      // card destaque não está cobrindo o dia.
+                      if (!SeasonWalkFeatureCard.visible(progress))
+                        _reveal(
+                          1,
+                          _WalkHomeCard(heroMissionSlug: current?.slug),
+                        ),
+                      // Seu próximo passo: aprofundar ou reforçar (some
+                      // sozinho quando não há o que sugerir).
                       _reveal(
-                        1,
-                        Column(
-                          children: [
-                            HeroContinueCard(
-                              mission: current,
-                              trailTitle: active?.title ?? '',
-                              trailSlug: active?.slug ?? 'genesis-1-11',
-                              trailColor: active?.color ?? '#1B3A5C',
-                              onTap: current != null
-                                  ? () => widget.onOpenMission(current.slug)
-                                  : null,
-                              onExploreTrails: widget.onOpenTrilhas,
-                              goalMet: goalMet,
-                              atRisk: progress.isStreakAtRisk,
-                            ),
-                            // Chip só quando a temporada já começou e o
-                            // card destaque não está cobrindo o dia.
-                            if (!SeasonWalkFeatureCard.visible(progress))
-                              _WalkHomeCard(heroMissionSlug: current?.slug),
-                          ],
+                        2,
+                        Padding(
+                          padding: const EdgeInsets.only(top: AppSpace.section),
+                          child: NextStepCard(
+                            trails: trails,
+                            onOpenMission: widget.onOpenMission,
+                          ),
                         ),
                       ),
                       if (SeasonWalkFeatureCard.visible(progress)) ...[
@@ -832,6 +866,231 @@ class _HomeScreenState extends State<HomeScreen>
           },
         ),
         WaveHandsOverlay(active: nudge != null),
+      ],
+    );
+  }
+}
+
+/// Herói em carrossel: uma página por trilha com próxima cena. A ativa vem
+/// primeiro; ao mudar a ativa (cena feita), o carrossel volta ao começo.
+/// Vai de borda a borda: o card central fica alinhado à coluna do conteúdo
+/// ([side]) e os vizinhos aparecem dos dois lados, cortados pela tela. Gira
+/// sem fim (depois da última vem a primeira), então sempre há vizinho.
+class _HeroCarousel extends StatefulWidget {
+  final List<Trail> trails;
+  final List<String> completed;
+
+  /// Margem lateral da coluna do conteúdo.
+  final double side;
+  final void Function(String missionSlug) onOpenMission;
+  final VoidCallback? onExploreTrails;
+  final bool goalMet;
+  final bool atRisk;
+
+  const _HeroCarousel({
+    required this.trails,
+    required this.completed,
+    required this.side,
+    required this.onOpenMission,
+    required this.onExploreTrails,
+    required this.goalMet,
+    required this.atRisk,
+  });
+
+  @override
+  State<_HeroCarousel> createState() => _HeroCarouselState();
+}
+
+class _HeroCarouselState extends State<_HeroCarousel> {
+  static const _maxDots = 7;
+
+  /// Espaço entre os cards.
+  static const _gap = AppSpace.sm;
+
+  /// O card central entra este tanto além da coluna, para o vizinho
+  /// aparecer com folga dos dois lados.
+  static const _peek = 10.0;
+
+  /// Página inicial no meio de uma faixa longa: dá para voltar e avançar
+  /// "sem fim" a partir da ativa.
+  static const _loopBase = 10000;
+
+  /// Passa sozinho a cada [_autoEvery]; depois de um toque ou arrasto,
+  /// espera [_idleAfterTouch] antes de voltar a passar.
+  static const _autoEvery = Duration(seconds: 6);
+  static const _idleAfterTouch = Duration(seconds: 12);
+  static const _autoSlide = Duration(milliseconds: 700);
+
+  PageController? _controller;
+  double _fraction = 1;
+  int _page = 0;
+
+  /// Página crua no PageView (sem o módulo): a do centro.
+  int _raw = 0;
+  Timer? _timer;
+  DateTime _lastTouch = DateTime.fromMillisecondsSinceEpoch(0);
+  bool _autoMoving = false;
+
+  /// Lidos no build: aba visível (o shell desliga o TickerMode das abas
+  /// escondidas e sob outra rota) e "reduzir movimento" do sistema.
+  bool _visible = true;
+  bool _reduceMotion = false;
+
+  int get _count => widget.trails.length;
+
+  /// Controller para a largura atual; recriado se a fração mudar (giro da
+  /// tela) ou a lista mudar ([didUpdateWidget] o descarta).
+  PageController _controllerFor(double fraction) {
+    final current = _controller;
+    if (current != null && fraction == _fraction) return current;
+    current?.dispose();
+    _fraction = fraction;
+    _raw = _loopBase * _count + _page;
+    return _controller = PageController(
+      viewportFraction: fraction,
+      initialPage: _raw,
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _syncTimer();
+  }
+
+  void _syncTimer() {
+    _timer?.cancel();
+    _timer = _count > 1 ? Timer.periodic(_autoEvery, (_) => _advance()) : null;
+  }
+
+  void _advance() {
+    final controller = _controller;
+    if (!mounted || controller == null || !controller.hasClients) return;
+    if (!_visible || _reduceMotion) return;
+    if (WidgetsBinding.instance.lifecycleState != AppLifecycleState.resumed) {
+      return;
+    }
+    if (DateTime.now().difference(_lastTouch) < _idleAfterTouch) return;
+    _autoMoving = true;
+    controller
+        .nextPage(duration: _autoSlide, curve: AppMotion.enter)
+        .whenComplete(() => _autoMoving = false);
+  }
+
+  @override
+  void didUpdateWidget(covariant _HeroCarousel oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    final restart =
+        oldWidget.trails.first.slug != widget.trails.first.slug ||
+        oldWidget.trails.length != widget.trails.length;
+    if (restart) {
+      _controller?.dispose();
+      _controller = null;
+      _page = 0;
+      _syncTimer();
+    }
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _controller?.dispose();
+    super.dispose();
+  }
+
+  Widget _card(Trail trail) {
+    final mission = TrailProgress.getCurrentMission(trail, widget.completed);
+    return HeroContinueCard(
+      mission: mission,
+      trailTitle: trail.title,
+      trailSlug: trail.slug,
+      trailColor: trail.color,
+      onTap: mission != null ? () => widget.onOpenMission(mission.slug) : null,
+      onExploreTrails: widget.onExploreTrails,
+      goalMet: widget.goalMet,
+      atRisk: widget.atRisk,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final trails = widget.trails;
+    if (trails.length == 1) {
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: widget.side),
+        child: _card(trails.single),
+      );
+    }
+    _visible = TickerMode.valuesOf(context).enabled;
+    _reduceMotion = MediaQuery.disableAnimationsOf(context);
+    final a = Appearance.of(context);
+    return Column(
+      children: [
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final width = constraints.maxWidth;
+            // Página = card (largura da coluna menos o respiro) + o vão.
+            final card = width - 2 * (widget.side + _peek);
+            final fraction = ((card + _gap) / width).clamp(0.5, 1.0);
+            final controller = _controllerFor(fraction);
+            return SizedBox(
+              height: HeroContinueCard.stageHeight(context),
+              child: Listener(
+                onPointerDown: (_) => _lastTouch = DateTime.now(),
+                child: PageView.builder(
+                  controller: controller,
+                  onPageChanged: (i) {
+                    setState(() {
+                      _raw = i;
+                      _page = i % trails.length;
+                    });
+                    // Só a troca feita pela pessoa vibra e conta.
+                    if (_autoMoving) return;
+                    ActHaptics.tick();
+                    AnalyticsService.instance.logEvent('home_hero_page', {
+                      'trail': trails[_page].slug,
+                      'index': _page,
+                      'count': trails.length,
+                    });
+                  },
+                  itemBuilder: (context, i) => Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: _gap / 2),
+                    child: _card(trails[i % trails.length]),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        const SizedBox(height: AppSpace.sm),
+        Semantics(
+          label: context.l10n.homeCarouselPosition(_page + 1, trails.length),
+          excludeSemantics: true,
+          child: trails.length > _maxDots
+              ? Text(
+                  context.l10n.homeCarouselPosition(_page + 1, trails.length),
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                )
+              : Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    for (var i = 0; i < trails.length; i++)
+                      AnimatedContainer(
+                        duration: AppMotion.quick,
+                        curve: AppMotion.enter,
+                        margin: const EdgeInsets.symmetric(horizontal: 3),
+                        width: i == _page ? 16 : 6,
+                        height: 6,
+                        decoration: BoxDecoration(
+                          color: i == _page
+                              ? a.text
+                              : a.textSecondary.withValues(alpha: 0.4),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
+                      ),
+                  ],
+                ),
+        ),
       ],
     );
   }

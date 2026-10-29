@@ -278,6 +278,8 @@ class BackendService extends ChangeNotifier {
   Future<void> retry() => init();
 
   void _applyUser(User? user) {
+    // Outra conta (ou nenhuma): a memória não é mais a nuvem desta.
+    if (user?.uid != _uid) _hydratedUid = null;
     _uid = user?.uid;
     _available = _uid != null;
     if (_available) lastError = null;
@@ -874,6 +876,10 @@ class BackendService extends ChangeNotifier {
     'usedQuestionIds',
     'answerCorrect',
     'answerTotal',
+    'trailAnswerCorrect',
+    'trailAnswerTotal',
+    'domainAnswerCorrect',
+    'domainAnswerTotal',
     'missionCompletedOn',
     'postcardsOn',
     'postcardRefs',
@@ -1196,6 +1202,21 @@ class BackendService extends ChangeNotifier {
   static const hydrateEmpty = 'empty';
   static const hydrateFailed = 'failed';
 
+  /// Conta cuja nuvem já foi aplicada nesta sessão. Um pull de volta ao
+  /// app que falha não pode calar todo save seguinte: a guarda de não
+  /// sobrescrever a nuvem só vale antes do primeiro hydrate.
+  String? _hydratedUid;
+
+  /// Falha no hydrate: só volta a gravar se esta mesma conta já hidratou.
+  void _restoreCloudReadyAfterFailure(ProgressService progress) {
+    if (_hydratedUid != null && _hydratedUid == _uid) {
+      progress.markCloudHydrated();
+      _authLog('hydrate FAILED but session already hydrated — saves on');
+    } else {
+      progress.markCloudNotReady();
+    }
+  }
+
   /// Re-lê a nuvem (ex.: app voltou ao foreground / abriu a jornada) e, se
   /// mesclou com sucesso, agenda um save para os aparelhos convergirem.
   Future<String> pullLatestProgress(
@@ -1242,7 +1263,8 @@ class BackendService extends ChangeNotifier {
             'missions=${progress.completedMissions.length}',
           );
         }
-        // Sem markCloudHydrated — impede wipe na nuvem.
+        // Sem markCloudHydrated (primeiro hydrate) — impede wipe na nuvem.
+        _restoreCloudReadyAfterFailure(progress);
         return hydrateFailed;
       }
 
@@ -1274,6 +1296,7 @@ class BackendService extends ChangeNotifier {
         await progress.persistLocalCache();
         final restored = await progress.ensureUserNameFromAuth(userDisplayName);
         progress.markCloudHydrated();
+        _hydratedUid = _uid;
         _authLog(
           'hydrate ok steps=${progress.steps} streak=${progress.streak} '
           'missions=${progress.completedMissions.length} '
@@ -1291,6 +1314,7 @@ class BackendService extends ChangeNotifier {
         await progress.applyFromCloud(local);
         await progress.ensureUserNameFromAuth(userDisplayName);
         progress.markCloudHydrated();
+        _hydratedUid = _uid;
         _authLog(
           'hydrate local-cache ok steps=${progress.steps} '
           'missions=${progress.completedMissions.length}',
@@ -1302,6 +1326,7 @@ class BackendService extends ChangeNotifier {
         await progress.applyFromCloud(legacy);
         await progress.ensureUserNameFromAuth(userDisplayName);
         progress.markCloudHydrated();
+        _hydratedUid = _uid;
         _authLog(
           'hydrate legacy ok steps=${progress.steps} '
           'missions=${progress.completedMissions.length} '
@@ -1311,6 +1336,7 @@ class BackendService extends ChangeNotifier {
       }
       await progress.ensureUserNameFromAuth(userDisplayName);
       progress.markCloudHydrated(); // usuário novo — defaults ok para gravar
+      _hydratedUid = _uid;
       return hydrateEmpty;
     } catch (e, st) {
       _authLog('hydrate FAILED: $e\n$st');
@@ -1325,7 +1351,7 @@ class BackendService extends ChangeNotifier {
           );
         }
       } catch (_) {}
-      progress.markCloudNotReady();
+      _restoreCloudReadyAfterFailure(progress);
       return hydrateFailed;
     }
   }
@@ -1828,6 +1854,18 @@ class BackendService extends ChangeNotifier {
       final code = mark.data()?['code'];
       if (code is! String) return null;
       final gift = await _db.doc('trailGifts/$code').get();
+      if (!gift.exists) {
+        // Marco sem passe: quem recebeu excluiu a conta (a função antiga
+        // apagava o passe). Já foi usado — não oferece um envio que a
+        // regra nega (o marco do mês não se recria).
+        return TrailGift(
+          code: code,
+          trailSlug: '',
+          fromUid: _uid!,
+          fromName: '',
+          toName: '',
+        );
+      }
       return TrailGift.fromMap(code, gift.data());
     } catch (e) {
       debugPrint('trailGift fetch: $e');

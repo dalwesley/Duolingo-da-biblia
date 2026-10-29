@@ -62,6 +62,28 @@ void main() {
     expect(correct.text, 'o céu e a terra');
   });
 
+  test('grown answer keeps the option capital so it does not stand out', () {
+    final repaired = repairActOptions(
+      options: const [
+        QuestionOption(id: 'a', text: 'Setenta e cinco anos'),
+        QuestionOption(id: 'b', text: 'Setenta anos'),
+        QuestionOption(id: 'c', text: 'Sessenta e cinco anos'),
+        QuestionOption(id: 'd', text: 'Oitenta anos'),
+      ],
+      correctId: 'a',
+      passage:
+          'Partiu, portanto, Abrão conforme o que o SENHOR lhe ordenara, e Ló o acompanhou. Abrão contava setenta e cinco anos ao deixar Harã.',
+      question: 'Segundo Gênesis 12:4, quantos anos Abrão tinha ao deixar Harã?',
+    );
+    final correct = repaired.options.firstWhere((o) => o.id == 'a');
+    expect(correct.text, 'Setenta e cinco anos');
+  });
+
+  test('matchLeadCase never lowers a proper name', () {
+    expect(matchLeadCase('Deus criou', 'criou'), 'Deus criou');
+    expect(matchLeadCase('o céu e a terra', 'e a terra'), 'o céu e a terra');
+  });
+
   test('naming choice keeps Ismael and drops the verse lead-in', () {
     const passage =
         'Ora, Sarai, mulher de Abrão, não lhe dava filhos; mas tinha uma serva egípcia, que se chamava Agar.';
@@ -165,5 +187,56 @@ void main() {
     );
     expect(SessionComposer.choiceServeable(bad), isFalse);
     expect(SessionComposer.choiceServeable(good), isTrue);
+  });
+
+  test('repair filler never reuses the correct id', () {
+    final repaired = repairActOptions(
+      options: const [
+        QuestionOption(id: 'a', text: 'e'),
+        QuestionOption(id: 'b', text: 'Deus é o centro de tudo'),
+        QuestionOption(id: 'c', text: 'de'),
+      ],
+      correctId: 'b',
+      question: 'O que o trecho afirma?',
+    );
+    final ids = repaired.options.map((o) => o.id).toList();
+    expect(ids.toSet().length, ids.length);
+    expect(repaired.options.where((o) => o.id == 'b').length, 1);
+    expect(
+      repaired.options.firstWhere((o) => o.id == 'b').text,
+      'Deus é o centro de tudo',
+    );
+  });
+
+  test('fromBankQuestion repairs on the same id it grades', () {
+    final ex = SessionComposer.fromBankQuestion(
+      BankQuestion(
+        id: 'genesis-1-11-cam-gen-01-criador-03',
+        difficulty: TrailDifficulty.caminhada,
+        section: 'gen-01-criador',
+        question: 'O que o trecho afirma sobre a criação?',
+        type: ExerciseType.choice,
+        options: const [
+          QuestionOption(id: 'a', text: 'e'),
+          QuestionOption(id: 'b', text: 'Deus é o autor de tudo'),
+          QuestionOption(id: 'c', text: 'de'),
+        ],
+        // `correctOptionId` no default 'a'; quem vale é `correctAnswer`.
+        correctOptionId: 'a',
+        correctAnswer: 'b',
+        feedbackCorrect: 'Correto.',
+        feedbackWrong: const {},
+        verseRef: 'Gênesis 1:1',
+      ),
+      rng: Random(1),
+    );
+    final ids = ex.options.map((o) => o.id).toList();
+    expect(ids.toSet().length, ids.length);
+    expect(ex.correctAnswer, 'b');
+    expect(
+      ex.options.firstWhere((o) => o.id == 'b').text,
+      'Deus é o autor de tudo',
+    );
+    expect(ex.options.any((o) => isWeakDistractor(o.text)), isFalse);
   });
 }

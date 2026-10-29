@@ -186,11 +186,13 @@ String tidyGloss(String gloss) {
   if (colon > 0) {
     final left = s.substring(0, colon).trim();
     final right = s.substring(colon + 1).trim();
-    final leftOk = left.isNotEmpty &&
+    final leftOk =
+        left.isNotEmpty &&
         left.length <= 28 &&
         !left.contains('(') &&
         !RegExp(r'[:/;0-9]').hasMatch(left);
-    final rightOk = right.isNotEmpty &&
+    final rightOk =
+        right.isNotEmpty &&
         right.length <= 28 &&
         right.toLowerCase() != left.toLowerCase();
     if (leftOk && rightOk) {

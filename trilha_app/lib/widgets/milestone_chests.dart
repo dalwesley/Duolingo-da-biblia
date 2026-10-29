@@ -217,6 +217,43 @@ class _ChestOpenSheet extends StatelessWidget {
   }
 }
 
+/// Missões da semana sem moldura: dentro de "Esta semana" no Perfil.
+class WeeklyQuestsList extends StatelessWidget {
+  const WeeklyQuestsList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            Expanded(child: SectionLabel(context.l10n.questWeeklyTitle)),
+            Text(
+              context.l10n.questCountOf(
+                progress.weeklyQuestsCompleted,
+                WeeklyQuestDefs.all.length,
+              ),
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 1.1,
+                color: a.textFaint,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: AppSpace.md),
+        for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
+          if (i > 0) const SizedBox(height: AppSpace.md),
+          WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
+        ],
+      ],
+    );
+  }
+}
+
 class WeeklyQuestsCard extends StatelessWidget {
   const WeeklyQuestsCard({super.key});
 
@@ -253,7 +290,7 @@ class WeeklyQuestsCard extends StatelessWidget {
               const RelicHairline(accent: AppRoles.presence),
               const SizedBox(height: 12),
             ],
-            _WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
+            WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
           ],
         ],
       ),
@@ -261,11 +298,11 @@ class WeeklyQuestsCard extends StatelessWidget {
   }
 }
 
-class _WeeklyQuestRow extends StatelessWidget {
+class WeeklyQuestRow extends StatelessWidget {
   final DailyQuest quest;
   final ProgressService progress;
 
-  const _WeeklyQuestRow({required this.quest, required this.progress});
+  const WeeklyQuestRow({required this.quest, required this.progress});
 
   static const _rewardSlot = 56.0;
 

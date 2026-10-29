@@ -362,4 +362,35 @@ void main() {
     expect(connect.showsStagePrompt, isTrue);
     expect(connect.taskPromptLabel, 'Ponte');
   });
+
+  test('verse tap only when the right option is a target in the verse', () {
+    const passage = 'No princípio, criou Deus o céu e a terra.';
+    const lost = Exercise(
+      id: 'tap-lost',
+      type: ExerciseType.tap,
+      prompt: 'O que Deus criou?',
+      correctAnswer: 'c',
+      passageText: passage,
+      options: [
+        QuestionOption(id: 'a', text: 'princípio'),
+        QuestionOption(id: 'b', text: 'terra'),
+        QuestionOption(id: 'c', text: 'universo'),
+      ],
+    );
+    expect(lost.prefersVerseTap, isFalse);
+
+    const found = Exercise(
+      id: 'find-ok',
+      type: ExerciseType.findInText,
+      prompt: 'Onde está o Criador?',
+      correctAnswer: 'b',
+      passageText: passage,
+      options: [
+        QuestionOption(id: 'a', text: 'princípio'),
+        QuestionOption(id: 'b', text: 'Deus'),
+        QuestionOption(id: 'c', text: 'universo'),
+      ],
+    );
+    expect(found.prefersVerseTap, isTrue);
+  });
 }

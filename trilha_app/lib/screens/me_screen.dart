@@ -16,11 +16,12 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/app_sheet.dart';
 import '../widgets/bible_note_tag.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
+import '../widgets/near_rewards_card.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/profile_plus_cards.dart';
@@ -191,9 +192,12 @@ class _MeScreenState extends State<MeScreen> {
           supporter: sub.isSupporter,
           pilgrim: sub.hasPilgrimBadge,
           pioneer: sub.hasPioneerBadge,
-          steps: progress.steps,
+          streak: progress.streak,
           missions: progress.completedMissions.length,
-          accuracyPercent: accuracy,
+          postcards: {
+            ...progress.missionCompletedOn.keys,
+            ...progress.postcardsOn.keys,
+          }.length,
         )
       else
         pad(
@@ -222,32 +226,21 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
       const SizedBox(height: AppSpace.section),
-      // Peregrino+: sequência semana a semana e acerto por modo/gesto.
-      if (plusOpen) ...[
-        pad(
-          ConstancyCard(
-            playDates: progress.playDates,
-            streak: progress.streak,
-            goal: progress.settings.streakGoal,
-          ),
+      // Esta semana: sequência, próximo marco e missões (grátis); a
+      // tendência de 12 semanas é do Peregrino+.
+      pad(
+        ConstancyCard(
+          playDates: progress.playDates,
+          streak: progress.streak,
+          goal: progress.settings.streakGoal,
+          showHistory: plusOpen,
+          quests: progress.hasOpenWeeklyQuests
+              ? const WeeklyQuestsList()
+              : null,
         ),
-        const SizedBox(height: AppSpace.md),
-        // Marcos da sequência (Semente → Fruto): os mesmos que a caravana
-        // mostra ao abrir o seu perfil.
-        pad(const LivingSeedCard()),
-        const SizedBox(height: AppSpace.md),
-        pad(const ProfileAccuracyCard()),
-        const SizedBox(height: AppSpace.md),
-        pad(const ExplainedErrorsCard()),
-      ] else ...[
-        pad(const LivingSeedCard()),
-        const SizedBox(height: AppSpace.md),
-        pad(const ProfilePlusTeaser()),
-      ],
-      if (progress.hasOpenWeeklyQuests) ...[
-        const SizedBox(height: AppSpace.md),
-        pad(const WeeklyQuestsCard()),
-      ],
+      ),
+      // Quase lá: medalha, selo ou álbum a poucos passos (some se nada).
+      pad(const NearRewardsCard()),
     ];
 
     if (_caravanLoading) {
@@ -281,6 +274,7 @@ class _MeScreenState extends State<MeScreen> {
               CaravanProfileSection.lastMission,
             },
             includeStreakMilestones: false,
+            showTrailPath: false,
             collectionsFirst: true,
             showOwnerPrivacyBanner: false,
             onStartWalking: _backToTrail,
@@ -291,12 +285,12 @@ class _MeScreenState extends State<MeScreen> {
 
     body.addAll([
       const SizedBox(height: AppSpace.section),
-      if (profile != null && !_caravanLoading)
-        pad(const _NaPalavraBlock())
-      else ...[
-        pad(const _FavoritesSection()),
-        pad(const _SharedVersesSection()),
-      ],
+      // Meu estudo (Peregrino+): acerto, ponto forte, reforço e erros.
+      pad(plusOpen ? const ProfileAccuracyCard() : const ProfilePlusTeaser()),
+      const SizedBox(height: AppSpace.md),
+      // Na Palavra numa linha; favoritos, anotações e compartilhados abrem
+      // numa folha.
+      pad(const _NaPalavraLine()),
     ]);
 
     // Só no próprio perfil os cards mostram o olho de privacidade.
@@ -380,8 +374,98 @@ class _MeScreenState extends State<MeScreen> {
   }
 }
 
+/// Na Palavra numa linha: as contagens e um toque para abrir a folha.
+class _NaPalavraLine extends StatelessWidget {
+  const _NaPalavraLine();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final progress = context.watch<ProgressService>();
+    final favorites = progress.parseBookmarks().length;
+    final notes = progress.parseNotes().length;
+    final shared = progress.sharedVerses.length;
+    final parts = [
+      if (favorites > 0) l10n.profileWordFavorites(favorites),
+      if (notes > 0) l10n.profileWordNotes(notes),
+      if (shared > 0) l10n.profileWordShared(shared),
+    ];
+    return GlassCard(
+      padding: AppMetrics.cardPaddingCompact,
+      onTap: () {
+        ActHaptics.tap();
+        showAppSheet<void>(context, builder: (_) => const _NaPalavraSheet());
+      },
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.book,
+            size: AppMetrics.leadingIcon,
+            accent: AppRoles.presence,
+          ),
+          const SizedBox(width: AppSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.profileInTheWord,
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  parts.isEmpty
+                      ? l10n.profileInTheWordWhisper
+                      : parts.join(' · '),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          ListChevron(color: a.textSecondary),
+        ],
+      ),
+    );
+  }
+}
+
+class _NaPalavraSheet extends StatelessWidget {
+  const _NaPalavraSheet();
+
+  @override
+  Widget build(BuildContext context) {
+    return AppSheetPanel(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          AppSheetHeader(center: true, title: context.l10n.profileInTheWord),
+          const SizedBox(height: AppSpace.md),
+          Flexible(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxHeight: MediaQuery.sizeOf(context).height * 0.65,
+              ),
+              child: const SingleChildScrollView(
+                child: _NaPalavraBlock(framed: false),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _NaPalavraBlock extends StatelessWidget {
-  const _NaPalavraBlock();
+  /// Sem moldura nem título: dentro da folha "Na Palavra".
+  final bool framed;
+
+  const _NaPalavraBlock({this.framed = true});
 
   @override
   Widget build(BuildContext context) {
@@ -390,12 +474,10 @@ class _NaPalavraBlock extends StatelessWidget {
     final hasShared = progress.sharedVerses.isNotEmpty;
     final hasNotes = progress.parseNotes().isNotEmpty;
 
-    return RelicPanel(
-      accent: AppRoles.presence,
-      glow: 0.35,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
+    final content = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (framed) ...[
           RelicChapter(
             title: context.l10n.profileInTheWord,
             accent: AppRoles.presence,
@@ -404,22 +486,24 @@ class _NaPalavraBlock extends StatelessWidget {
                 : context.l10n.profileInTheWordWhisper,
           ),
           const SizedBox(height: AppSpace.md),
-          const _FavoritesSection(embedded: true),
-          if (hasNotes) ...[
-            const SizedBox(height: AppSpace.sm),
-            const RelicHairline(),
-            const SizedBox(height: AppSpace.sm),
-            const _NotesSection(),
-          ],
-          if (hasShared && hasBookmarks) ...[
-            const SizedBox(height: AppSpace.sm),
-            const RelicHairline(),
-            const SizedBox(height: AppSpace.sm),
-          ],
-          const _SharedVersesSection(embedded: true),
         ],
-      ),
+        const _FavoritesSection(embedded: true),
+        if (hasNotes) ...[
+          const SizedBox(height: AppSpace.sm),
+          const RelicHairline(),
+          const SizedBox(height: AppSpace.sm),
+          const _NotesSection(),
+        ],
+        if (hasShared && hasBookmarks) ...[
+          const SizedBox(height: AppSpace.sm),
+          const RelicHairline(),
+          const SizedBox(height: AppSpace.sm),
+        ],
+        const _SharedVersesSection(embedded: true),
+      ],
     );
+    if (!framed) return content;
+    return RelicPanel(accent: AppRoles.presence, glow: 0.35, child: content);
   }
 }
 

@@ -5,7 +5,20 @@ Especificação da experiência-modelo do Peregrino+ (ver
 as cenas são gratuitas; o Plus vende a **costura** — ordem narrativa,
 conexões escritas e diagnóstico final.
 
-Status: especificação editorial + de produto. Nenhuma linha de código ainda.
+Status (2026-10-28): v1 no app como **trilha costurada** `a-promessa`
+(`trilha_app/lib/data/curated_trails.dart`), no card "Promessa e cumprimento"
+de Temas. 12 cenas em 4 blocos, cada uma com o banco, o estudo e a pintura da
+cena de origem; terminar uma conta na outra (`CuratedTrails.linkedScenes`).
+Amostra = 1ª cena, como toda trilha do Peregrino+ (não o bloco 1 inteiro).
+As costuras curtas estão nas intros e nas notas de entrada de cada cena
+(`lib/l10n/parts/content_promise_trail.json`). Diagnóstico final feito: a
+13ª cena `promessa-sintese` é uma Travessia com 3 `connect` que vivem no app
+(Gn 22:8 ↔ Jo 1:29, Jr 31:31 ↔ Lc 22:20, Gn 12:3 ↔ Gl 3:8; texto da Bíblia do
+app, entram no banco em memória por `CuratedTrails.prepareQuestions`). Depois
+dela, o cartão "Mapa da Promessa" no mapa da trilha mostra cada bloco firme ou
+com N erros ainda na revisão (`mistakeQuestionIds` pela seção de origem) e
+revisa esses erros em modo prática. Eventos: `premium_walk_map_open`,
+`premium_walk_review`.
 
 ---
 

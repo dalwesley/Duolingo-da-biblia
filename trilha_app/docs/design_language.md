@@ -196,7 +196,8 @@ Tudo que lista o que o Plus dá usa `PlusPerkCard`
 - Os benefícios vêm de `PlusPerk`: caminhadas sazonais (`calendar`),
   revisão semanal (`scroll`), planos de leitura (`book`), sua
   constância (`path`), reforço do ponto
-  fraco (`target`) e selo de apoiador (`gift`). Mesmo ícone, título e frase
+  fraco (`target`), selo de apoiador (`gift`) e uma trilha por mês de
+  presente (`people`, passe de trilha). Mesmo ícone, título e frase
   em todo lugar.
 - Identidade: fundo `accentFill(0.10)`, borda `accentBorder(0.6)`, rótulo
   dourado (`AppRoles.reward`) em caixa alta e ícone emoldurado em dourado.
@@ -283,7 +284,7 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Slogan | **A Bíblia, cena a cena** | — |
 | Recompensa | **medalha**; **selo** só para selos de personagem | conquista, conquistar, emblema, moeda |
 | Pintura da cena guardada ao concluir | **postal** ("Revelar o postal", "Seus postais"); o verso é a nota da pessoa | selo, figurinha, card, carta |
-| Trilha do Plus que quem assina libera para alguém (1 por mês) | **passe de trilha**; ação "Libere esta trilha para alguém", botão **Compartilhar o passe**; slogan "Sua assinatura libera alguém" | presente, cupom, vale, convite |
+| Trilha do Plus que quem assina libera para alguém (1 por mês) | **passe de trilha**; ação "Libere esta trilha para alguém", botão **Compartilhar o passe**; slogan "Sua assinatura libera alguém"; "de presente" só como descrição ("Uma trilha de presente") | cupom, vale, convite (o convite é da companhia) |
 | Modos (UI) | **Observação / Compreensão / Interpretação** | semente, caminhada, profundezas (ids internos); "mudar a trilha" para trocar de modo |
 | Texto bíblico | **Bíblia** (produto, leitura); **Palavra** em frase devocional; **Escrituras** (plural) em estudo | — |
 | Vidas | **lâmpada** | — |

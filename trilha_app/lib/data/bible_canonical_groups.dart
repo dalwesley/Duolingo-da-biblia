@@ -52,56 +52,24 @@ class BibleCanonicalGroups {
 
   static const groups = <BibleCanonGroup>[
     // Antigo Testamento (0–38)
-    BibleCanonGroup(
-      id: 'pentateuco',
-      startIndex: 0,
-      endIndex: 4,
-    ),
-    BibleCanonGroup(
-      id: 'historicos',
-      startIndex: 5,
-      endIndex: 16,
-    ),
-    BibleCanonGroup(
-      id: 'poeticos',
-      startIndex: 17,
-      endIndex: 21,
-    ),
-    BibleCanonGroup(
-      id: 'profetas-maiores',
-      startIndex: 22,
-      endIndex: 26,
-    ),
-    BibleCanonGroup(
-      id: 'profetas-menores',
-      startIndex: 27,
-      endIndex: 38,
-    ),
+    BibleCanonGroup(id: 'pentateuco', startIndex: 0, endIndex: 4),
+    BibleCanonGroup(id: 'historicos', startIndex: 5, endIndex: 16),
+    BibleCanonGroup(id: 'poeticos', startIndex: 17, endIndex: 21),
+    BibleCanonGroup(id: 'profetas-maiores', startIndex: 22, endIndex: 26),
+    BibleCanonGroup(id: 'profetas-menores', startIndex: 27, endIndex: 38),
     // Novo Testamento (39–65)
-    BibleCanonGroup(
-      id: 'evangelhos',
-      startIndex: 39,
-      endIndex: 42,
-    ),
-    BibleCanonGroup(
-      id: 'historia-nt',
-      startIndex: 43,
-      endIndex: 43,
-    ),
-    BibleCanonGroup(
-      id: 'paulinas',
-      startIndex: 44,
-      endIndex: 56,
-    ),
-    BibleCanonGroup(
-      id: 'gerais',
-      startIndex: 57,
-      endIndex: 64,
-    ),
-    BibleCanonGroup(
-      id: 'profecia',
-      startIndex: 65,
-      endIndex: 65,
-    ),
+    BibleCanonGroup(id: 'evangelhos', startIndex: 39, endIndex: 42),
+    BibleCanonGroup(id: 'historia-nt', startIndex: 43, endIndex: 43),
+    BibleCanonGroup(id: 'paulinas', startIndex: 44, endIndex: 56),
+    BibleCanonGroup(id: 'gerais', startIndex: 57, endIndex: 64),
+    BibleCanonGroup(id: 'profecia', startIndex: 65, endIndex: 65),
   ];
+
+  /// Grupo do livro [bookIndex] (0–65), ou null fora do cânon.
+  static BibleCanonGroup? ofBook(int bookIndex) {
+    for (final g in groups) {
+      if (bookIndex >= g.startIndex && bookIndex <= g.endIndex) return g;
+    }
+    return null;
+  }
 }

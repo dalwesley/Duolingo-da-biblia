@@ -220,15 +220,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                         ),
                       ),
                     ]
-                  : onBack != null
-                  ? [
-                      _MenuMark(
-                        glyph: leadingGlyph,
-                        icon: leadingIcon,
-                        accent: mark,
-                      ),
-                      const SizedBox(width: 4),
-                    ]
                   : null,
             ),
     );
@@ -390,13 +381,6 @@ class _InlineChrome extends StatelessWidget {
               accent: chromeAccent,
               glowing: false,
             ),
-          ),
-        ] else if (onBack != null && showLeading) ...[
-          const SizedBox(width: 8),
-          _MenuMark(
-            glyph: leadingGlyph,
-            icon: leadingIcon,
-            accent: chromeAccent,
           ),
         ],
       ],

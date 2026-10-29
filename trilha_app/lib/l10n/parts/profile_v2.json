@@ -1,0 +1,93 @@
+{
+  "profileStatStreak": {
+    "pt": "Dias seguidos",
+    "en": "Day streak",
+    "es": "Días seguidos"
+  },
+  "profileWeekTitle": {
+    "pt": "Esta semana",
+    "en": "This week",
+    "es": "Esta semana"
+  },
+  "profileNearTitle": {
+    "pt": "Quase lá",
+    "en": "Almost there",
+    "es": "Casi ahí"
+  },
+  "profileNearSeal": {
+    "pt": "Selo de {name}",
+    "en": "{name} seal",
+    "es": "Sello de {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "profileNearSealLine": {
+    "pt": "Na próxima cena de {trail}",
+    "en": "In the next scene of {trail}",
+    "es": "En la próxima escena de {trail}",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "profileNearAlbum": {
+    "pt": "Álbum {trail}",
+    "en": "{trail} album",
+    "es": "Álbum {trail}",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "profileNearAlbumLine": {
+    "pt": "{done} de {total} postais · {left, plural, =1{falta 1} other{faltam {left}}}",
+    "en": "{done} of {total} postcards · {left} to go",
+    "es": "{done} de {total} postales · {left, plural, =1{falta 1} other{faltan {left}}}",
+    "placeholders": {
+      "done": "int",
+      "total": "int",
+      "left": "int"
+    }
+  },
+  "profileStudyTitle": {
+    "pt": "Meu estudo",
+    "en": "My study",
+    "es": "Mi estudio"
+  },
+  "profileStudyErrors": {
+    "pt": "Ver erros ({count})",
+    "en": "See mistakes ({count})",
+    "es": "Ver errores ({count})",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileStudyErrorsNone": {
+    "pt": "Erros explicados",
+    "en": "Explained mistakes",
+    "es": "Errores explicados"
+  },
+  "profileWordFavorites": {
+    "pt": "{count, plural, =1{1 favorito} other{{count} favoritos}}",
+    "en": "{count, plural, =1{1 favorite} other{{count} favorites}}",
+    "es": "{count, plural, =1{1 favorito} other{{count} favoritos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileWordNotes": {
+    "pt": "{count, plural, =1{1 anotação} other{{count} anotações}}",
+    "en": "{count, plural, =1{1 note} other{{count} notes}}",
+    "es": "{count, plural, =1{1 nota} other{{count} notas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileWordShared": {
+    "pt": "{count, plural, =1{1 compartilhado} other{{count} compartilhados}}",
+    "en": "{count, plural, =1{1 shared} other{{count} shared}}",
+    "es": "{count, plural, =1{1 compartido} other{{count} compartidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  }
+}

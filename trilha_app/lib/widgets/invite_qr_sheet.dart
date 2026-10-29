@@ -235,25 +235,53 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                 center: true,
               ),
               if (widget.trailGift) ...[
-                const SizedBox(height: 10),
-                InsetPanel(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 10,
+                const SizedBox(height: 12),
+                // Presente em dourado (papel de recompensa): é o que faz a
+                // pessoa aceitar, não pode ler como nota de rodapé.
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12, 12, 14, 12),
+                  decoration: BoxDecoration(
+                    color: AppMetrics.accentFill(
+                      alpha: 0.14,
+                      color: AppRoles.reward,
+                    ),
+                    borderRadius: BorderRadius.circular(AppRadii.md),
+                    border: Border.all(
+                      color: AppMetrics.accentBorder(
+                        alpha: 0.7,
+                        color: AppRoles.reward,
+                      ),
+                      width: AppMetrics.cardBorderWidth,
+                    ),
                   ),
                   child: Row(
                     children: [
                       CinematicIcon(
                         glyph: CinematicGlyph.gift,
-                        size: AppMetrics.iconSm,
+                        size: AppMetrics.leadingIcon,
                         accent: AppRoles.reward,
-                        framed: false,
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 12),
                       Expanded(
-                        child: Text(
-                          context.l10n.inviteTrailGiftLine,
-                          style: AppTypography.body(size: 13, color: a.text),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              context.l10n.inviteTrailGiftTitle,
+                              style: AppTypography.title(
+                                size: 15,
+                                color: AppRoles.reward,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              context.l10n.inviteTrailGiftLine,
+                              style: AppTypography.body(
+                                size: 13,
+                                color: a.text,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],

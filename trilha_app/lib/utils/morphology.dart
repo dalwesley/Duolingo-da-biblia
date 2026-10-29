@@ -14,7 +14,8 @@ String expandMorphology(String? code) {
     final hebrewCompound = raw.startsWith('H') || raw.startsWith('A');
     return segs
         .map((p) {
-          if (p.startsWith('H') || p.startsWith('A')) return expandMorphology(p);
+          if (p.startsWith('H') || p.startsWith('A'))
+            return expandMorphology(p);
           if (hebrewCompound) return _hebrew(p);
           return expandMorphology(p);
         })
@@ -96,8 +97,10 @@ String morphologyPhrase(String? code, {String gloss = ''}) {
       if (stems.contains(c) || tenses.contains(c)) bits.add(c);
     }
     final person = chips
-        .where((c) =>
-            c == l.morphPerson1 || c == l.morphPerson2 || c == l.morphPerson3)
+        .where(
+          (c) =>
+              c == l.morphPerson1 || c == l.morphPerson2 || c == l.morphPerson3,
+        )
         .toList();
     final number = chips.where(
       (c) => c == l.morphSing || c == l.morphPl || c == l.morphDual,
@@ -109,8 +112,8 @@ String morphologyPhrase(String? code, {String gloss = ''}) {
         final label = number.first == l.morphSing
             ? l.morphNumberSingular
             : number.first == l.morphPl
-                ? l.morphNumberPlural
-                : l.morphNumberDual;
+            ? l.morphNumberPlural
+            : l.morphNumberDual;
         bits.add(l.morphPhrasePersonOfNumber(person.first, label));
       }
     }
@@ -274,11 +277,7 @@ String _hebrew(String code) {
       }
     }
     if (j < rest.length) {
-      final number = {
-        's': l.morphSing,
-        'p': l.morphPl,
-        'd': l.morphDual,
-      };
+      final number = {'s': l.morphSing, 'p': l.morphPl, 'd': l.morphDual};
       if (number.containsKey(rest[j])) {
         parts.add(number[rest[j]]!);
         j++;
@@ -379,16 +378,8 @@ void _personNumberGender(String s, List<String> parts) {
     '2': l.morphPerson2,
     '3': l.morphPerson3,
   };
-  final gender = {
-    'm': l.morphMasc,
-    'f': l.morphFem,
-    'c': l.morphNounCommon,
-  };
-  final number = {
-    's': l.morphSing,
-    'p': l.morphPl,
-    'd': l.morphDual,
-  };
+  final gender = {'m': l.morphMasc, 'f': l.morphFem, 'c': l.morphNounCommon};
+  final number = {'s': l.morphSing, 'p': l.morphPl, 'd': l.morphDual};
   if (m.group(1) != null) parts.add(person[m.group(1)]!);
   if (m.group(2) != null) parts.add(gender[m.group(2)]!);
   if (m.group(3) != null) parts.add(number[m.group(3)]!);
@@ -512,16 +503,8 @@ String _greekCng(String s) {
     'A': l.morphCaseAccusative,
     'V': l.morphCaseVocative,
   };
-  final number = {
-    'S': l.morphSing,
-    'P': l.morphPl,
-    'D': l.morphDual,
-  };
-  final gender = {
-    'M': l.morphMasc,
-    'F': l.morphFem,
-    'N': l.morphNeuter,
-  };
+  final number = {'S': l.morphSing, 'P': l.morphPl, 'D': l.morphDual};
+  final gender = {'M': l.morphMasc, 'F': l.morphFem, 'N': l.morphNeuter};
   final out = <String>[];
   out.add(cases[s[0]] ?? s[0]);
   out.add(number[s[1]] ?? s[1]);

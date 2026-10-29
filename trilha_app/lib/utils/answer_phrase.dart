@@ -1,11 +1,17 @@
 import '../models/trail.dart';
 
-final _danglingStart = RegExp(r'^(e|mas|porém|porem|ou|nem)\s+', caseSensitive: false);
+final _danglingStart = RegExp(
+  r'^(e|mas|porém|porem|ou|nem)\s+',
+  caseSensitive: false,
+);
 final _danglingEnd = RegExp(
   r'\s+(e|mas|ou|nem|de|do|da|dos|das|que|para|por|com|os|as|o|a|ao|à)$',
   caseSensitive: false,
 );
-final _hangingPrep = RegExp(r'^(de|do|da|dos|das|sobre)\s+\S+$', caseSensitive: false);
+final _hangingPrep = RegExp(
+  r'^(de|do|da|dos|das|sobre)\s+\S+$',
+  caseSensitive: false,
+);
 final _quote = RegExp(r'[“"«]([^”"»]+)[”"»]');
 final _det = r'(?:o|os|a|as|um|uma|ao|à|às|aos|do|da|dos|das|de|no|na|nos|nas)';
 final _word = r'[\p{L}]+(?:-[\p{L}]+)?';
@@ -29,7 +35,8 @@ String answerKey(String s) {
       .map((w) {
         if (w == 'os' || w == 'o') return 'o';
         if (w == 'as' || w == 'a') return 'a';
-        if (w.endsWith('s') && w.length > 3) return w.substring(0, w.length - 1);
+        if (w.endsWith('s') && w.length > 3)
+          return w.substring(0, w.length - 1);
         return w;
       })
       .join(' ');
@@ -54,13 +61,18 @@ bool isIncompletePhrase(String text) {
     if (t.contains(':') && n >= 4) return false;
     if (t.contains(',') && n >= 5) return false;
     if (n >= 5) return false;
-    if (RegExp(r'^(e|mas|ou|nem)\s+(o|a|os|as|um|uma)\b', caseSensitive: false)
-            .hasMatch(t) &&
+    if (RegExp(
+          r'^(e|mas|ou|nem)\s+(o|a|os|as|um|uma)\b',
+          caseSensitive: false,
+        ).hasMatch(t) &&
         n <= 4) {
       return true;
     }
-    if (RegExp(r'^(e|mas|ou|nem)\s+\p{L}+$', unicode: true, caseSensitive: false)
-        .hasMatch(t)) {
+    if (RegExp(
+      r'^(e|mas|ou|nem)\s+\p{L}+$',
+      unicode: true,
+      caseSensitive: false,
+    ).hasMatch(t)) {
       return false;
     }
     return n <= 3;
@@ -141,7 +153,8 @@ String growInPassage(String passage, String option) {
   if (_hangingPrep.hasMatch(text.trim())) takeLeft();
 
   text = passage.substring(start, end);
-  if (_danglingEnd.hasMatch(text.trim()) || _hangingPrep.hasMatch(text.trim())) {
+  if (_danglingEnd.hasMatch(text.trim()) ||
+      _hangingPrep.hasMatch(text.trim())) {
     final right = passage.substring(end);
     final m = RegExp(
       r'^(?:\s+(?:' + _det + r'\s+)?' + _word + r'){1,7}',
@@ -151,7 +164,9 @@ String growInPassage(String passage, String option) {
     if (m != null) end += m.group(0)!.length;
   }
 
-  text = passage.substring(start, end).replaceAll(RegExp(r'^[\s,;:]+|[\s,;:.]+$'), '');
+  text = passage
+      .substring(start, end)
+      .replaceAll(RegExp(r'^[\s,;:]+|[\s,;:.]+$'), '');
   return text;
 }
 
@@ -171,9 +186,10 @@ bool isNameLikeAnswer(String text) {
   final t = text.trim();
   final words = t.split(RegExp(r'\s+')).where((w) => w.isNotEmpty).toList();
   if (words.isEmpty || words.length > 3) return false;
-  if (RegExp(r'^(não|nao|sim|sem|todos|todas|isso|nenhum|nenhuma)\b',
-          caseSensitive: false)
-      .hasMatch(t)) {
+  if (RegExp(
+    r'^(não|nao|sim|sem|todos|todas|isso|nenhum|nenhuma)\b',
+    caseSensitive: false,
+  ).hasMatch(t)) {
     return false;
   }
   return RegExp(r'^[A-ZÁÉÍÓÚÂÊÔÃÕ]').hasMatch(t);
@@ -195,6 +211,20 @@ bool isVerseFragmentOption(String text, String passage) {
   final p = passage.replaceAll(RegExp(r'\s+'), ' ').trim();
   if (t.isEmpty || p.isEmpty || _words(t) < 3) return false;
   return foldKey(p).contains(foldKey(t));
+}
+
+/// Copia a caixa da inicial de [like] para [text] (`setenta…` → `Setenta…`).
+String matchLeadCase(String text, String like) {
+  final t = text.trim();
+  final l = like.trim();
+  if (t.isEmpty || l.isEmpty) return text;
+  final lead = l[0];
+  if (lead.toUpperCase() == lead.toLowerCase()) return t;
+  final upper = lead == lead.toUpperCase();
+  final head = upper ? t[0].toUpperCase() : t[0].toLowerCase();
+  // Não rebaixa nome próprio do versículo (`Deus`, `Abrão`).
+  if (!upper && t[0] != head) return t;
+  return '$head${t.substring(1)}';
 }
 
 bool _keepFactualAnswer(String option, String question) {
@@ -231,7 +261,8 @@ String preferredAnswer({
               _words(q) <= 10 &&
               !RegExp(r'^[A-ZÁÉÍÓÚÂÊÔÃÕ]').hasMatch(opt))) {
     final inPassage = growInPassage(passage, q);
-    if (inPassage.isNotEmpty && !isIncompletePhrase(inPassage)) return inPassage;
+    if (inPassage.isNotEmpty && !isIncompletePhrase(inPassage))
+      return inPassage;
     if (isIncompletePhrase(opt) && _words(q) <= 10) return q;
   }
   if (grown.isNotEmpty && !isIncompletePhrase(grown)) return grown;
@@ -250,11 +281,16 @@ String preferredAnswer({
   final current =
       options.where((o) => o.id == correctId).map((o) => o.text).firstOrNull ??
       '';
-  final full = preferredAnswer(
-    option: current,
-    quote: quote,
-    passage: passage,
-    question: question,
+  // O trecho vem do versículo com a caixa do meio da frase; a opção certa
+  // não pode destoar das outras só pela inicial.
+  final full = matchLeadCase(
+    preferredAnswer(
+      option: current,
+      quote: quote,
+      passage: passage,
+      question: question,
+    ),
+    current,
   );
 
   final seen = <String>{answerKey(full)};
@@ -290,14 +326,27 @@ String preferredAnswer({
   while (next.length < 3 && i < fallbacks.length) {
     final f = fallbacks[i++];
     if (seen.contains(answerKey(f))) continue;
-    next.add(QuestionOption(id: String.fromCharCode(97 + next.length), text: f));
+    // Id livre: o certo pode ser `b` e o enchimento não pode herdá-lo.
+    final used = next.map((o) => o.id).toSet();
+    var c = 97;
+    while (used.contains(String.fromCharCode(c))) {
+      c++;
+    }
+    next.add(QuestionOption(id: String.fromCharCode(c), text: f));
   }
 
   String? tpl = template;
-  if (tpl != null && tpl.contains('___') && full.isNotEmpty && passage.isNotEmpty) {
-    final hit = _occurrence(passage, full) ?? _occurrence(tpl.replaceAll('___', current), full);
+  if (tpl != null &&
+      tpl.contains('___') &&
+      full.isNotEmpty &&
+      passage.isNotEmpty) {
+    final hit =
+        _occurrence(passage, full) ??
+        _occurrence(tpl.replaceAll('___', current), full);
     if (hit != null && hit.isNotEmpty) {
-      final source = passage.isNotEmpty ? passage : tpl.replaceAll('___', current);
+      final source = passage.isNotEmpty
+          ? passage
+          : tpl.replaceAll('___', current);
       tpl = source.replaceFirst(hit, '___');
     }
   }

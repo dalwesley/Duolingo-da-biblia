@@ -45,9 +45,9 @@
     "es": "Repaso hecho. La próxima semana hay otro."
   },
   "weeklyReviewIntro": {
-    "pt": "Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.",
-    "en": "Reread each scene's “Today:” and answer 3 questions about them.",
-    "es": "Relee el “Hoy:” de cada escena y responde 3 preguntas sobre ellas."
+    "pt": "Toque numa cena para reler o “Hoje:” e, no fim, responda 3 perguntas sobre elas.",
+    "en": "Tap a scene to reread its “Today:”, then answer 3 questions about them.",
+    "es": "Toca una escena para releer su “Hoy:” y, al final, responde 3 preguntas sobre ellas."
   },
   "weeklyReviewPlusBody": {
     "pt": "Com o Peregrino+, você revê o que cada cena ensinou e responde 3 perguntas.",
@@ -105,6 +105,25 @@
     "placeholders": {
       "insight": "String"
     }
+  },
+  "weeklyReviewTodayPage": {
+    "pt": "{index} de {total}",
+    "en": "{index} of {total}",
+    "es": "{index} de {total}",
+    "placeholders": {
+      "index": "int",
+      "total": "int"
+    }
+  },
+  "weeklyReviewTodayPrev": {
+    "pt": "Cena anterior",
+    "en": "Previous scene",
+    "es": "Escena anterior"
+  },
+  "weeklyReviewTodayNext": {
+    "pt": "Próxima cena",
+    "en": "Next scene",
+    "es": "Siguiente escena"
   },
   "homeWeeklyReviewCaption": {
     "pt": "{count, plural, =1{1 cena para rever} other{{count} cenas para rever}}",

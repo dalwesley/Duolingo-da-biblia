@@ -9,7 +9,9 @@ import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
+import 'cloud_mascot.dart';
 import 'stway_brand.dart';
+import 'today_stage.dart';
 import 'ui_primitives.dart';
 
 /// Carta do insight — "Hoje: …" para Stories / WhatsApp.
@@ -18,15 +20,34 @@ class ShareInsightCard extends StatelessWidget {
   final String? verseRef;
   final String? verseText;
 
+  /// Pintura da cena: com ela, o card é a placa Hoje ([TodayStage]) parada,
+  /// com a marca; sem ela, o card de marca de sempre.
+  final String? art;
+
   const ShareInsightCard({
     super.key,
     required this.insight,
     this.verseRef,
     this.verseText,
+    this.art,
   });
+
+  /// Tamanho do card com pintura: 4:5, o postal — cabe inteiro na conversa
+  /// do WhatsApp e no feed.
+  static const artSize = Size(360, 450);
 
   @override
   Widget build(BuildContext context) {
+    if (art != null) {
+      return TodayStage(
+        insight: insight,
+        art: art,
+        reference: verseRef ?? '',
+        on: DateTime.now(),
+        accent: AppRoles.reward,
+        still: true,
+      );
+    }
     // Imagem exportada: arte escura fixa (marca) — tinta clara em qualquer look.
     final a = AppearanceStyle.resolve(AppearanceMode.night);
     final line = insight.trim();
@@ -171,6 +192,66 @@ String _insightShareText(String insight, String? verseRef) {
   if (ref.isNotEmpty) {
     buf.write('\n\n— $ref');
   }
-  buf.write('\n\nCena curta no Stway.');
+  buf.write('\n\nCena curta no Stway · stway.com.br');
   return buf.toString();
+}
+
+/// Monta o card fora da tela, espera a pintura decodificar e compartilha.
+/// Para telas que não têm o card montado (placa Hoje, revisão da semana).
+Future<void> shareTodayCard(
+  BuildContext context, {
+  required String insight,
+  String? verseRef,
+  String? art,
+}) async {
+  final overlay = Overlay.maybeOf(context, rootOverlay: true);
+  if (overlay == null) return;
+  // Tudo que o card desenha já decodificado: a captura sai logo depois de
+  // montar (sem isso, Anan, logo e pintura saíam em branco).
+  if (art != null) {
+    final images = <ImageProvider>[
+      AssetImage(art),
+      ResizeImage(AssetImage(art), width: 24),
+      AssetImage(CloudFace.sucesso.body),
+      const AssetImage('assets/icon/app_icon.png'),
+    ];
+    for (final image in images) {
+      if (!context.mounted) return;
+      try {
+        await precacheImage(image, context);
+      } catch (_) {}
+    }
+  }
+  final size = art != null ? ShareInsightCard.artSize : const Size(360, 360);
+  final key = GlobalKey();
+  final entry = OverlayEntry(
+    builder: (_) => Positioned(
+      left: -4000,
+      top: 0,
+      child: SizedBox(
+        width: size.width,
+        height: size.height,
+        child: RepaintBoundary(
+          key: key,
+          child: ShareInsightCard(
+            insight: insight,
+            verseRef: verseRef,
+            art: art,
+          ),
+        ),
+      ),
+    ),
+  );
+  overlay.insert(entry);
+  try {
+    await WidgetsBinding.instance.endOfFrame;
+    await WidgetsBinding.instance.endOfFrame;
+    await shareInsightImage(
+      boundaryKey: key,
+      insight: insight,
+      verseRef: verseRef,
+    );
+  } finally {
+    entry.remove();
+  }
 }

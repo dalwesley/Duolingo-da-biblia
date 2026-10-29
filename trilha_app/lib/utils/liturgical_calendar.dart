@@ -19,10 +19,7 @@ class LiturgicalMoment {
   final LiturgicalSeason season;
   final String focusRef;
 
-  const LiturgicalMoment({
-    required this.season,
-    required this.focusRef,
-  });
+  const LiturgicalMoment({required this.season, required this.focusRef});
 
   /// Nome da estação no idioma atual.
   String get title {
@@ -85,11 +82,12 @@ class LiturgicalCalendar {
     // Quarto domingo antes do Natal.
     var christmas = DateTime(year, 12, 25);
     var sundays = 0;
-    var d = christmas.subtract(const Duration(days: 1));
+    // Aritmética de calendário: Duration(days:) erra na troca de horário.
+    var d = DateTime(christmas.year, christmas.month, christmas.day - 1);
     while (sundays < 4) {
       if (d.weekday == DateTime.sunday) sundays++;
       if (sundays == 4) return d;
-      d = d.subtract(const Duration(days: 1));
+      d = DateTime(d.year, d.month, d.day - 1);
     }
     return DateTime(year, 11, 30);
   }
@@ -98,9 +96,11 @@ class LiturgicalCalendar {
     final day = date ?? _today;
     final year = day.year;
     final easter = easterSunday(year);
-    final ashWednesday = easter.subtract(const Duration(days: 46));
-    final palmSunday = easter.subtract(const Duration(days: 7));
-    final pentecost = easter.add(const Duration(days: 49));
+    DateTime fromEaster(int n) =>
+        DateTime(easter.year, easter.month, easter.day + n);
+    final ashWednesday = fromEaster(-46);
+    final palmSunday = fromEaster(-7);
+    final pentecost = fromEaster(49);
     final advent = _adventStart(year);
     final epiphany = DateTime(year, 1, 6);
     final christmasStart = DateTime(year, 12, 25);
@@ -153,14 +153,14 @@ class LiturgicalCalendar {
 
   /// Acento de chrome por estação — fio visual da home e da Bíblia.
   static Color accentOf(LiturgicalSeason season) => switch (season) {
-        LiturgicalSeason.advent => AppColors.orchid,
-        LiturgicalSeason.christmas => AppColors.accent,
-        LiturgicalSeason.lent => AppColors.clay,
-        LiturgicalSeason.holyWeek => AppColors.ember,
-        LiturgicalSeason.easter => AppColors.accent,
-        LiturgicalSeason.pentecost => AppColors.coral,
-        LiturgicalSeason.ordinary => AppColors.cedar,
-      };
+    LiturgicalSeason.advent => AppColors.orchid,
+    LiturgicalSeason.christmas => AppColors.accent,
+    LiturgicalSeason.lent => AppColors.clay,
+    LiturgicalSeason.holyWeek => AppColors.ember,
+    LiturgicalSeason.easter => AppColors.accent,
+    LiturgicalSeason.pentecost => AppColors.coral,
+    LiturgicalSeason.ordinary => AppColors.cedar,
+  };
 
   /// Missão extra nos tempos fortes (não no tempo comum).
   static DailyQuest? seasonalQuestToday([DateTime? date]) {

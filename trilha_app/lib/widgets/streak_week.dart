@@ -14,12 +14,14 @@ class StreakWeek extends StatelessWidget {
   /// Se omitido, lê o [ProgressService] local (home).
   final bool Function(DateTime day)? playedOnDate;
   final bool Function(DateTime day)? frozenOnDate;
+  final bool Function(DateTime day)? repairedOnDate;
   final double orbSize;
 
   const StreakWeek({
     super.key,
     this.playedOnDate,
     this.frozenOnDate,
+    this.repairedOnDate,
     this.orbSize = 34,
   });
 
@@ -40,6 +42,8 @@ class StreakWeek extends StatelessWidget {
         playedOnDate?.call(day) ?? progress!.playedOnDate(day);
     bool frozen(DateTime day) =>
         frozenOnDate?.call(day) ?? progress?.wasFrozenOnDate(day) ?? false;
+    bool repaired(DateTime day) =>
+        repairedOnDate?.call(day) ?? progress?.wasRepairedOnDate(day) ?? false;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,9 +55,14 @@ class StreakWeek extends StatelessWidget {
             day.day == today.day;
         final active = played(day);
         final iced = frozen(day);
+        // Dia em branco que o reparo devolveu: a chama da sequência, não
+        // o check de presença — não foi caminhado, foi recuperado.
+        final mended = !active && !iced && repaired(day);
 
         final status = iced
             ? l10n.streakDayFrozen
+            : mended
+            ? l10n.streakDayRepaired
             : active
             ? l10n.questDoneLower
             : l10n.streakDayEmpty;
@@ -67,6 +76,26 @@ class StreakWeek extends StatelessWidget {
             children: [
               if (iced)
                 _FrozenDayOrb(size: orbSize)
+              else if (mended)
+                Container(
+                  width: orbSize,
+                  height: orbSize,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppRoles.streak.withValues(alpha: 0.18),
+                    border: Border.all(
+                      color: AppRoles.streak.withValues(alpha: 0.75),
+                    ),
+                  ),
+                  child: Center(
+                    child: CinematicIcon(
+                      glyph: CinematicGlyph.flame,
+                      size: AppMetrics.iconSm,
+                      accent: AppRoles.streak,
+                      framed: false,
+                    ),
+                  ),
+                )
               else
                 AnimatedContainer(
                   duration: AppMotion.standard,

@@ -29,7 +29,15 @@ class CornerHomeCard extends StatelessWidget {
   final CornerChallenge challenge;
   final VoidCallback? onWalk;
 
-  const CornerHomeCard({super.key, required this.challenge, this.onWalk});
+  /// Convite aceito ou recusado — quem abriu o card numa folha a fecha aqui.
+  final VoidCallback? onSettled;
+
+  const CornerHomeCard({
+    super.key,
+    required this.challenge,
+    this.onWalk,
+    this.onSettled,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -80,10 +88,15 @@ class CornerHomeCard extends StatelessWidget {
         caption: CornerCopy.burstAccepted,
         kicker: challenge.missionTitle,
       );
-      await corners.accept(challenge.id);
+      if (await corners.accept(challenge.id) && context.mounted) {
+        onSettled?.call();
+      }
     }
 
-    void decline() => context.read<CornerService>().decline(challenge.id);
+    Future<void> decline() async {
+      final ok = await context.read<CornerService>().decline(challenge.id);
+      if (ok && context.mounted) onSettled?.call();
+    }
 
     final meDone = live || settled ? challenge.iDone(uid) : false;
     final themDone = live || settled ? challenge.theyDone(uid) : false;
@@ -110,7 +123,7 @@ class CornerHomeCard extends StatelessWidget {
                 },
               ),
             ),
-          _PairRow(
+          CornerPairRow(
             myName: myName,
             theirName: theirName,
             myPhoto: backend.userPhotoUrl,
@@ -125,6 +138,12 @@ class CornerHomeCard extends StatelessWidget {
             meLeft: meLeft,
             themLeft: themLeft,
             showStatus: live || settled,
+            meDays: live || settled
+                ? challenge.myWalkDays(uid, progress.playDates)
+                : null,
+            themDays: live || settled
+                ? challenge.daysOf(challenge.peerId(uid)).length
+                : null,
           ),
           const SizedBox(height: AppSpace.lg),
           Text(
@@ -251,7 +270,8 @@ class _WeekFuse extends StatelessWidget {
 }
 
 /// Os dois lado a lado; fio e bandeira só depois de aceito.
-class _PairRow extends StatelessWidget {
+/// Também no retângulo do Desafio na Home ([DesafioEntry]).
+class CornerPairRow extends StatelessWidget {
   final String myName;
   final String theirName;
   final String? myPhoto;
@@ -267,7 +287,13 @@ class _PairRow extends StatelessWidget {
   final bool themLeft;
   final bool showStatus;
 
-  const _PairRow({
+  /// Dias caminhados na semana do desafio — com eles o fio vira 7 traços por
+  /// lado, acesos do retrato até a bandeira. Sem eles, o fio de sempre.
+  final int? meDays;
+  final int? themDays;
+
+  const CornerPairRow({
+    super.key,
     required this.myName,
     required this.theirName,
     required this.myPhoto,
@@ -282,6 +308,8 @@ class _PairRow extends StatelessWidget {
     required this.meLeft,
     required this.themLeft,
     required this.showStatus,
+    this.meDays,
+    this.themDays,
   });
 
   @override
@@ -296,6 +324,8 @@ class _PairRow extends StatelessWidget {
     final rightDone = incoming ? meDone : themDone;
     final leftLeft = incoming ? themLeft : meLeft;
     final rightLeft = incoming ? meLeft : themLeft;
+    final leftDays = incoming ? themDays : meDays;
+    final rightDays = incoming ? meDays : themDays;
 
     final bond = leftDone && rightDone
         ? BondState.both
@@ -336,7 +366,17 @@ class _PairRow extends StatelessWidget {
                   bottom: awaitingAccept ? null : 0,
                   height: awaitingAccept ? 14 : null,
                   child: Center(
-                    child: pendingEnds != null
+                    child:
+                        pendingEnds == null &&
+                            leftDays != null &&
+                            rightDays != null
+                        ? _RaceThread(
+                            left: leftDone ? _raceDays : leftDays,
+                            right: rightDone ? _raceDays : rightDays,
+                            leftDone: leftDone,
+                            rightDone: rightDone,
+                          )
+                        : pendingEnds != null
                         ? BondThread(
                             state: BondState.idle,
                             left: pendingEnds.$1,
@@ -366,6 +406,106 @@ class _PairRow extends StatelessWidget {
       ],
     );
   }
+}
+
+const _raceDays = 7;
+
+/// Fio da corrida: um traço por dia da semana de cada lado, aceso do retrato
+/// até a bandeira conforme a pessoa caminhou. Quem chegou acende o lado todo.
+class _RaceThread extends StatelessWidget {
+  final int left;
+  final int right;
+  final bool leftDone;
+  final bool rightDone;
+
+  const _RaceThread({
+    required this.left,
+    required this.right,
+    required this.leftDone,
+    required this.rightDone,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return CustomPaint(
+      size: const Size(double.infinity, 14),
+      painter: _RacePainter(
+        left: left.clamp(0, _raceDays),
+        right: right.clamp(0, _raceDays),
+        leftTone: leftDone ? AppRoles.success : AppRoles.reward,
+        rightTone: rightDone ? AppRoles.success : AppRoles.reward,
+        idle: a.textFaint,
+      ),
+    );
+  }
+}
+
+class _RacePainter extends CustomPainter {
+  final int left;
+  final int right;
+  final Color leftTone;
+  final Color rightTone;
+  final Color idle;
+
+  const _RacePainter({
+    required this.left,
+    required this.right,
+    required this.leftTone,
+    required this.rightTone,
+    required this.idle,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final y = size.height / 2;
+    // A bandeira (46) ocupa o meio; cada lado corre até a borda dela.
+    final side = (size.width - 46) / 2 - 4;
+    if (side <= 0) return;
+    const gap = 3.0;
+    final dash = (side - gap * (_raceDays - 1)) / _raceDays;
+    if (dash <= 0) return;
+
+    final off = Paint()
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round
+      ..color = idle.withValues(alpha: 0.35);
+
+    void run(int lit, Color tone, bool fromRight) {
+      final on = Paint()
+        ..strokeWidth = 2.6
+        ..strokeCap = StrokeCap.round
+        ..color = tone;
+      final glow = Paint()
+        ..strokeWidth = 7
+        ..strokeCap = StrokeCap.round
+        ..color = tone.withValues(alpha: 0.2);
+      for (var i = 0; i < _raceDays; i++) {
+        final start = i * (dash + gap);
+        final a = fromRight ? size.width - start - dash : start;
+        final b = a + dash;
+        final p1 = Offset(a + 1, y);
+        final p2 = Offset(b - 1, y);
+        if (i < lit) {
+          canvas.drawLine(p1, p2, glow);
+          canvas.drawLine(p1, p2, on);
+        } else {
+          canvas.drawLine(p1, p2, off);
+        }
+      }
+    }
+
+    run(left, leftTone, false);
+    run(right, rightTone, true);
+  }
+
+  @override
+  bool shouldRepaint(covariant _RacePainter old) =>
+      old.left != left ||
+      old.right != right ||
+      old.leftTone != leftTone ||
+      old.rightTone != rightTone ||
+      old.idle != idle;
 }
 
 /// Ampulheta no meio enquanto o convite não foi aceito.
@@ -555,7 +695,10 @@ class _FinishMarkState extends State<_FinishMark>
       duration: const Duration(milliseconds: 1600),
     )..repeat(reverse: true);
     _glow = _pulse.drive(
-      Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
+      Tween<double>(
+        begin: 0.4,
+        end: 1,
+      ).chain(CurveTween(curve: AppMotion.move)),
     );
   }
 

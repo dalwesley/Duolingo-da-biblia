@@ -72,6 +72,12 @@ ColorFilter _tone({required double saturation, double light = 1}) {
 const sceneVeilDecodeWidth = 36;
 final sceneVeilFilter = _tone(saturation: 0.25, light: 0.8);
 
+/// Véu leve do herói da Hoje: a pintura aparece com cor e forma, só suave
+/// (decode baixo, sem detalhe); a revelação no fim da cena entrega a
+/// nitidez. Mapa, prévias e álbum seguem com o véu pesado.
+const sceneTeaseDecodeWidth = 140;
+final sceneTeaseFilter = _tone(saturation: 0.8, light: 0.92);
+
 /// Pintura de cena com véu enquanto o postal não foi revelado.
 ///
 /// O véu sai do decode em baixíssima resolução (a pintura vira mancha de

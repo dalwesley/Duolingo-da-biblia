@@ -15,6 +15,8 @@
  * Sem segredo, responde 503 e não grava nada.
  */
 
+const { FieldValue } = require('firebase-admin/firestore');
+
 const ENTITLEMENT_ID = 'peregrino_plus';
 const SUPPORT_PREFIX = 'apoio';
 
@@ -56,49 +58,63 @@ function plusStateFromEvent(event) {
     uid = String(event.transferred_to[0] || '').trim();
   }
   if (!uid || uid.startsWith('$RCAnonymousID')) return null;
+  // Sem a lista de entitlements não dá para saber se o evento é do Plus:
+  // ausência não liga nada (antes contava como Plus).
   const entitlements = Array.isArray(event.entitlement_ids)
     ? event.entitlement_ids
     : Array.isArray(event.entitlement_id)
       ? event.entitlement_id
-      : null;
+      : typeof event.entitlement_id === 'string'
+        ? [event.entitlement_id]
+        : null;
   const hasEntitlement =
-    entitlements == null || entitlements.includes(ENTITLEMENT_ID);
+    entitlements != null && entitlements.includes(ENTITLEMENT_ID);
+  const product = String(event.product_id || '');
 
   // Apoio avulso (consumível): não é assinatura, só o selo.
   if (type === 'NON_RENEWING_PURCHASE') {
-    const product = String(event.product_id || '');
     if (!product.startsWith(SUPPORT_PREFIX)) return null;
     return { uid, fields: { supporter: true } };
   }
 
-  if (!hasEntitlement) return null;
   const expiresMs =
     typeof event.expiration_at_ms === 'number' ? event.expiration_at_ms : null;
   const expiresAt = expiresMs ? new Date(expiresMs).toISOString() : null;
   const base = {
-    plusProductId: String(event.product_id || '') || null,
+    plusProductId: product || null,
     plusExpiresAt: expiresAt,
     plusSource: 'revenuecat',
   };
 
   // Assinatura mudou de conta (compra anônima que ganhou login, troca
-  // de usuário da loja): o Plus nasce no destino — e morre na origem,
-  // que vem em `also` para a função gravar junto.
+  // de usuário da loja): o Plus morre na origem, que vem em `also` para
+  // a função gravar junto. No destino só nasce se ainda vale — restaurar
+  // recibo vencido ou de apoio não dá Plus (não há produto vitalício).
+  // Sem nada a ligar no destino, `fields` é null e só a origem é gravada.
   if (type === 'TRANSFER') {
     const from = Array.isArray(event.transferred_from)
       ? event.transferred_from
           .map((u) => String(u || '').trim())
           .filter((u) => u && !u.startsWith('$RCAnonymousID') && u !== uid)
       : [];
+    let fields = null;
+    if (product.startsWith(SUPPORT_PREFIX)) {
+      fields = { supporter: true };
+    } else if (hasEntitlement && expiresMs != null && expiresMs > Date.now()) {
+      fields = { ...base, plusActive: true, plusWillRenew: true };
+    }
+    if (!fields && from.length === 0) return null;
     return {
       uid,
-      fields: { ...base, plusActive: true, plusWillRenew: true },
+      fields,
       also: from.map((u) => ({
         uid: u,
         fields: { plusActive: false, plusWillRenew: false },
       })),
     };
   }
+
+  if (!hasEntitlement) return null;
   // Cobrança falhou mas a loja ainda concede o entitlement (graça da
   // loja): no aparelho a pessoa continua Plus, então o servidor também.
   if (type === 'BILLING_ISSUE') {
@@ -198,7 +214,129 @@ function authorized(header, secret) {
   return header === `Bearer ${bare}` || header === bare;
 }
 
+// ---- Gravação no Firestore (o handler em index.js só confere e chama) ----
+
+/// Lápide da conta excluída (account.js grava antes de apagar o perfil):
+/// evento atrasado do RevenueCat não recria `users/{uid}` de quem saiu.
+/// O uid do Firebase não volta — entrar de novo cria outro.
+const TOMBSTONES = 'deletedAccounts';
+
+/**
+ * Grava o estado Plus só se o evento não for mais velho que o último
+ * aplicado: a RevenueCat pode entregar fora de ordem (reenvio de falha),
+ * e uma EXPIRATION atrasada não pode desligar quem já renovou.
+ * A marca fica em `users/{uid}/server/revenuecat`, fora do alcance do
+ * cliente (sem regra = negado) e apagada junto com a conta.
+ * Só evento de assinatura (mexe em `plusActive`) lê e carimba a marca:
+ * o selo do apoio avulso não pode fazer uma EXPIRATION reenviada parecer
+ * velha. `mustExist`: só grava em doc que já existe (origem do TRANSFER).
+ * Devolve 'stale' (evento velho), 'gone' (conta excluída / doc ausente)
+ * ou null quando gravou.
+ */
+async function writePlusState(db, uid, fields, event, { mustExist = false } = {}) {
+  const userRef = db.doc(`users/${uid}`);
+  const markRef = db.doc(`users/${uid}/server/revenuecat`);
+  const tombRef = db.doc(`${TOMBSTONES}/${uid}`);
+  const subscription = Object.prototype.hasOwnProperty.call(fields, 'plusActive');
+  const at =
+    subscription && event && typeof event.event_timestamp_ms === 'number'
+      ? event.event_timestamp_ms
+      : null;
+  return db.runTransaction(async (tx) => {
+    const tomb = await tx.get(tombRef);
+    if (tomb.exists) return 'gone';
+    if (mustExist) {
+      const user = await tx.get(userRef);
+      if (!user.exists) return 'gone';
+    }
+    if (subscription) {
+      const mark = await tx.get(markRef);
+      const last = mark.exists ? mark.get('lastEventAtMs') : undefined;
+      if (at != null && typeof last === 'number' && at < last) return 'stale';
+    }
+    tx.set(
+      userRef,
+      { ...fields, plusUpdatedAt: FieldValue.serverTimestamp() },
+      { merge: true },
+    );
+    if (at != null) {
+      tx.set(markRef, { lastEventAtMs: at, lastEventType: String(event.type || '') });
+    }
+    return null;
+  });
+}
+
+/**
+ * Primeiro pagamento do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
+ * não soma de novo. Transferência de quem já contou só marca o destino.
+ * Conta excluída não ganha marca nem vaga.
+ */
+async function claimPioneerSlot(db, slot) {
+  const userRef = db.doc(`users/${slot.uid}`);
+  const tombRef = db.doc(`${TOMBSTONES}/${slot.uid}`);
+  const statRef = db.doc('stats/pioneer');
+  const sourceRefs = (slot.from || []).map((uid) => db.doc(`users/${uid}`));
+  await db.runTransaction(async (tx) => {
+    const tomb = await tx.get(tombRef);
+    if (tomb.exists) return;
+    const user = await tx.get(userRef);
+    const sources = [];
+    for (const ref of sourceRefs) sources.push(await tx.get(ref));
+    const stat = await tx.get(statRef);
+    const decision = pioneerClaimDecision({
+      alreadyCounted: user.get('pioneerCounted') === true,
+      sourceCounted: sources.some((s) => s.get('pioneerCounted') === true),
+      count: stat.get('count'),
+      inheritOnly: slot.inheritOnly === true,
+    });
+    if (decision.action === 'skip') return;
+    tx.set(userRef, { pioneerCounted: true }, { merge: true });
+    if (decision.action === 'increment') {
+      tx.set(
+        statRef,
+        {
+          count: decision.count,
+          cap: PIONEER_CAP,
+          updatedAt: FieldValue.serverTimestamp(),
+        },
+        { merge: true },
+      );
+    }
+  });
+}
+
+/**
+ * Aplica um evento já conferido. Devolve null se o evento não muda nada;
+ * senão o resumo para o log.
+ */
+async function applyEvent(db, event) {
+  const state = plusStateFromEvent(event);
+  const slot = pioneerSlotFromEvent(event);
+  if (!state && !slot) return null;
+  let skipped = null;
+  if (state && state.fields) {
+    skipped = await writePlusState(db, state.uid, state.fields, event);
+  }
+  // Escritas companheiras (TRANSFER: desligar a conta de origem). Cada
+  // origem passa pela mesma marca: evento mais velho que o TRANSFER não
+  // a religa, e o TRANSFER atrasado não desliga quem já assinou de novo.
+  // Só em doc que já existe: nada de doc-zumbi de conta excluída.
+  if (state) {
+    for (const extra of state.also || []) {
+      await writePlusState(db, extra.uid, extra.fields, event, { mustExist: true });
+    }
+  }
+  if (slot) await claimPioneerSlot(db, slot);
+  return {
+    uid: (state && state.uid) || slot.uid,
+    pioneer: Boolean(slot),
+    skipped,
+  };
+}
+
 module.exports = {
+  applyEvent,
+  TOMBSTONES,
   plusStateFromEvent,
   pioneerSlotFromEvent,
   pioneerClaimDecision,

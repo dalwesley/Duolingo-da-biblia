@@ -371,7 +371,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                                                 context,
                                               ))
                                           .round()
-                                    : sceneVeilDecodeWidth,
+                                    : sceneTeaseDecodeWidth,
                                 cacheHeight: progress.sceneRevealed
                                     ? (heroHeight *
                                               MediaQuery.devicePixelRatioOf(
@@ -762,6 +762,7 @@ class _Chip extends StatelessWidget {
   }
 }
 
-/// Postal ainda não revelado: tom apagado por cima da pintura em baixa.
+/// Postal ainda não revelado: véu leve (cor quase inteira, pintura em
+/// baixa), para o herói não virar mancha escura.
 Widget _veiledIf(bool veiled, Widget child) =>
-    veiled ? ColorFiltered(colorFilter: sceneVeilFilter, child: child) : child;
+    veiled ? ColorFiltered(colorFilter: sceneTeaseFilter, child: child) : child;

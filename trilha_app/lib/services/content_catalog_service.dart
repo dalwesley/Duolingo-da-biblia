@@ -48,14 +48,32 @@ class ContentCatalogService {
   bool _refreshInFlight = false;
 
   List<BankQuestion>? get bankQuestionsCache => _bankQuestions;
+
+  /// Perguntas que vivem no app (ex.: a síntese de A Promessa). Entram no
+  /// banco em memória por id, sem disco: um refresh pode tirá-las, então
+  /// quem usa chama de novo antes de abrir a cena.
+  void mergeLocalQuestions(List<BankQuestion> local) {
+    if (local.isEmpty) return;
+    final byId = <String, BankQuestion>{
+      for (final q in _bankQuestions ?? const <BankQuestion>[]) q.id: q,
+      for (final q in local) q.id: q,
+    };
+    _bankQuestions = byId.values.toList();
+  }
+
   Map<String, Map<String, dynamic>>? get studiesCache => _studies;
   Map<String, String>? get versesCache => _verses;
 
   bool get _hasTrails => _trails != null && _trails!.isNotEmpty;
 
   /// Shell = trilhas + dificuldades. Banco de atos é sob demanda por trilha.
+  /// Shell completo no disco. Inclui os estudos: se a busca deles falhou
+  /// uma vez (timeout), a versão já ficava gravada e o app pulava a rede
+  /// para sempre — sem contexto, fatos nem "Para aprofundar" nas cenas.
   bool get _catalogShellReady =>
-      _hasTrails && (_difficulties?.isNotEmpty ?? false);
+      _hasTrails &&
+      (_difficulties?.isNotEmpty ?? false) &&
+      (_studies?.isNotEmpty ?? false);
 
   /// Sobe a cada lista de trilhas nova (disco ou rede): telas que guardam
   /// a lista (álbum de postais) pedem de novo.

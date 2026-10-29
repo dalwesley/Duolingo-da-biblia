@@ -1525,6 +1525,9 @@
   "exerciseTypeTrueFalse": "Verdadeiro / Falso",
   "exerciseVerbAnswer": "Responda",
   "exerciseVerbJudge": "Julgue",
+  "exerciseZoomLarger": "Aumentar letra",
+  "exerciseZoomSmaller": "Diminuir letra",
+  "exerciseZoomStage": "Ampliar texto",
   "explainAnswerLabel": "Resposta certa",
   "explainCorrectAnswer": "Resposta certa: {text}",
   "@explainCorrectAnswer": {
@@ -1870,7 +1873,23 @@
   "guidedPlanNewTestamentTitle": "Novo Testamento em 90 dias",
   "guidedPlanPsalmsSubtitle": "Um capítulo de Provérbios e alguns Salmos por dia",
   "guidedPlanPsalmsTitle": "Salmos e Provérbios em 31 dias",
+  "heroEndAllBody": "Novas trilhas chegam em breve. Enquanto isso, revise o que ficou ou leia a Bíblia.",
+  "heroEndAllTitle": "Você caminhou todas as trilhas",
+  "heroEndPlusBody": "As próximas trilhas são do Peregrino+. A Bíblia continua aberta para ler.",
+  "heroEndPlusCta": "Conhecer o Peregrino+",
+  "heroEndPlusTitle": "Você caminhou todas as trilhas abertas",
   "homeBibleOfflineSubtitle": "Leia sem internet",
+  "homeCarouselPosition": "{index} de {total}",
+  "@homeCarouselPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "homeCatalogDownloading": "Baixando…",
   "homeCatalogEmptyBody": "As cenas baixam na primeira abertura. Se a conexão falhar, toque para tentar de novo.",
   "homeCatalogEmptyTitle": "As cenas ainda não chegaram",
@@ -2230,8 +2249,9 @@
   "inviteSheetSubtitleCompanion": "Toque no link, mostre o QR ou envie o card",
   "inviteSheetSubtitleRoom": "Mostre o QR ou envie o código",
   "inviteSomeone": "Alguém",
-  "inviteTrailGiftLine": "Quem aceitar ganha uma trilha do Peregrino+ à escolha. É o seu passe deste mês.",
+  "inviteTrailGiftLine": "Quem aceitar escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar. É o seu passe deste mês.",
   "inviteTrailGiftShareLine": "🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.",
+  "inviteTrailGiftTitle": "Uma trilha de presente",
   "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
   "journalTitle": "Anotações de estudo",
   "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
@@ -3951,6 +3971,64 @@
   },
   "navTogether": "Juntos",
   "navTrails": "Trilhas",
+  "nextStepDeepenCta": "Começar",
+  "nextStepDeepenLineCaminhada": "Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam por quê.",
+  "@nextStepDeepenLineCaminhada": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "nextStepDeepenLineProfundezas": "Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam o que o texto revela.",
+  "@nextStepDeepenLineProfundezas": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "nextStepDeepenTitle": "{trail} em {mode}",
+  "@nextStepDeepenTitle": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      },
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "nextStepEyebrow": "Seu próximo passo",
+  "nextStepLater": "Agora não",
+  "nextStepReinforceCta": "Treinar",
+  "nextStepReinforceLine": "Você acertou {correct} de {total}. São 5 perguntas das suas últimas cenas.",
+  "@nextStepReinforceLine": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "nextStepWeakChoice": "Treinar escolher a melhor resposta",
+  "nextStepWeakComplete": "Treinar completar o versículo",
+  "nextStepWeakConnect": "Treinar ligar um texto ao outro",
+  "nextStepWeakInterpret": "Treinar interpretar o texto",
+  "nextStepWeakOrder": "Treinar a ordem dos fatos",
+  "nextStepWeakOther": "Treinar “{gesture}”",
+  "@nextStepWeakOther": {
+    "placeholders": {
+      "gesture": {
+        "type": "String"
+      }
+    }
+  },
+  "nextStepWeakTap": "Treinar a palavra exata",
+  "nextStepWeakText": "Treinar achar a resposta no texto",
+  "nextStepWeakTrueFalse": "Treinar conferir afirmações",
   "notifChannelDesc": "Meta diária, cenas, prática, memorização e favoritos",
   "notifChannelName": "Lembretes Stway",
   "notifContinueTitle": "Continue de onde parou",
@@ -4282,12 +4360,13 @@
   "paywallLifetimeActive": "Vitalício: não expira.",
   "paywallManage": "Gerenciar assinatura",
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
+  "paywallMoreComing": "E muitos outros benefícios estão a caminho.",
   "paywallOffersFailed": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
   "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
-  "paywallPerkGiftBody": "Sua assinatura libera alguém: escolha uma trilha do Peregrino+ e compartilhe com quem você quiser.",
-  "paywallPerkGiftTitle": "Libere uma trilha por mês",
+  "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.",
+  "paywallPerkGiftTitle": "Uma trilha por mês de presente",
   "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
   "paywallPerkPlansTitle": "Planos de leitura",
   "paywallPerkPostcardsBody": "Compartilhe a revelação do postal em vídeo, pronta para o status e os stories.",
@@ -4300,9 +4379,9 @@
   },
   "paywallPerkRecognitionBody": "Veja quem reconheceu a sua jornada e as suas medalhas.",
   "paywallPerkRecognitionTitle": "Reconhecimento",
-  "paywallPerkReinforceBody": "Você vê onde tropeça. Depois, um treino só daquilo.",
+  "paywallPerkReinforceBody": "Você vê onde tropeça. Depois, um treino na medida para você.",
   "paywallPerkReinforceTitle": "O que você mais erra",
-  "paywallPerkSeasonBody": "O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.",
+  "paywallPerkSeasonBody": "O Advento, o Natal, a Páscoa e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.",
   "paywallPerkSeasonTitle": "Trilhas da estação",
   "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
   "paywallPerkStreakTitle": "Seus dias",
@@ -5049,6 +5128,45 @@
       }
     }
   },
+  "profileNearAlbum": "Álbum {trail}",
+  "@profileNearAlbum": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "profileNearAlbumLine": "{done} de {total} postais · {left, plural, =1{falta 1} other{faltam {left}}}",
+  "@profileNearAlbumLine": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "left": {
+        "type": "int"
+      }
+    }
+  },
+  "profileNearSeal": "Selo de {name}",
+  "@profileNearSeal": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "profileNearSealLine": "Na próxima cena de {trail}",
+  "@profileNearSealLine": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "profileNearTitle": "Quase lá",
   "profileNotes": "Anotações",
   "profileNotesAll": "Todas",
   "profileOfSevenDays": "{count} de 7 dias",
@@ -5130,6 +5248,7 @@
       }
     }
   },
+  "profileStatStreak": "Dias seguidos",
   "profileStreakGoalDone": "Compromisso de {goal} dias cumprido. Siga firme.",
   "@profileStreakGoalDone": {
     "placeholders": {
@@ -5169,6 +5288,16 @@
     }
   },
   "profileStreakStart": "Uma cena hoje acende o primeiro dia.",
+  "profileStudyErrors": "Ver erros ({count})",
+  "@profileStudyErrors": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStudyErrorsNone": "Erros explicados",
+  "profileStudyTitle": "Meu estudo",
   "profileThisWeek": "Esta semana",
   "profileThisWeekLower": "esta semana",
   "profileThisWeekSemantics": "Esta semana: {count} de 7 dias caminhados",
@@ -5190,6 +5319,7 @@
   "profileWdTue": "T",
   "profileWdWed": "Q",
   "profileWeekHistory": "Histórico das semanas",
+  "profileWeekTitle": "Esta semana",
   "profileWeeksWalkedSemantics": "{walked} dias caminhados nas últimas {weeks} semanas",
   "@profileWeeksWalkedSemantics": {
     "placeholders": {
@@ -5201,9 +5331,126 @@
       }
     }
   },
+  "profileWordFavorites": "{count, plural, =1{1 favorito} other{{count} favoritos}}",
+  "@profileWordFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileWordNotes": "{count, plural, =1{1 anotação} other{{count} anotações}}",
+  "@profileWordNotes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileWordShared": "{count, plural, =1{1 compartilhado} other{{count} compartilhados}}",
+  "@profileWordShared": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "profileYourJourney": "Sua jornada",
   "profileYourNumbers": "Seus números",
   "profileYourStreak": "Sua sequência",
+  "promiseTrail01Intro": "Tudo começa com uma promessa: terra, descendência e bênção para todas as famílias da terra. Siga esse fio de Abraão até Cristo.",
+  "promiseTrail01Note": "Deus promete a um homem sem filhos que, por meio dele, todas as famílias da terra serão abençoadas.",
+  "promiseTrail01Title": "Em ti, todas as famílias",
+  "promiseTrail02Intro": "Abrão ainda não tem filho. Deus o leva para fora e manda olhar o céu.",
+  "promiseTrail02Note": "Abrão creu, e isso lhe foi contado como justiça. Paulo vai voltar a este versículo.",
+  "promiseTrail02Title": "Conte as estrelas",
+  "promiseTrail03Intro": "O filho da promessa sobe o monte. A promessa parece em risco.",
+  "promiseTrail03Note": "No Moriá, Deus provê o cordeiro no lugar do filho, e confirma a promessa com juramento.",
+  "promiseTrail03Title": "O Senhor proverá",
+  "promiseTrail04Intro": "Séculos depois, a família de Abraão é um povo escravo no Egito. Parece que a promessa morreu. Deus não esqueceu.",
+  "promiseTrail04Note": "Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó: a promessa antiga move o resgate.",
+  "promiseTrail04Title": "Deus se lembra",
+  "promiseTrail05Intro": "Livre do Egito, o povo chega ao Sinai. A promessa ganha forma de aliança.",
+  "promiseTrail05Note": "Israel será um reino de sacerdotes: a bênção de Abraão passa por um povo para alcançar as nações.",
+  "promiseTrail05Title": "Um povo para as nações",
+  "promiseTrail06Intro": "Já na terra, Josué reconta a história e chama o povo a escolher a quem servir.",
+  "promiseTrail06Note": "A terra foi dada; a fidelidade do povo vai falhar. A promessa vai precisar de alguém maior que Israel.",
+  "promiseTrail06Title": "Na terra prometida",
+  "promiseTrail07Intro": "O povo falha, mas Deus não desiste. Agora a promessa se concentra num rei: Davi.",
+  "promiseTrail07Note": "Deus escolhe o menor dos filhos de Jessé. Da linhagem de Davi virá o rei cujo trono não terá fim (2 Samuel 7).",
+  "promiseTrail07Title": "O rei escolhido",
+  "promiseTrail08Intro": "Os profetas anunciam alguém que carrega a culpa dos outros.",
+  "promiseTrail08Note": "Como no Moriá, alguém toma o lugar de outro: o Servo é ferido pelas nossas transgressões.",
+  "promiseTrail08Title": "O Servo ferido",
+  "promiseTrail09Intro": "A aliança do Sinai foi quebrada. Deus promete outra.",
+  "promiseTrail09Note": "Deus promete escrever a lei no coração e perdoar o pecado. Jesus vai chamar o cálice da ceia de nova aliança.",
+  "promiseTrail09Title": "Uma nova aliança",
+  "promiseTrail10Intro": "Mateus abre o Novo Testamento com Jesus, filho de Davi, filho de Abraão. O fio chega a uma pessoa.",
+  "promiseTrail10Note": "Emanuel, Deus conosco: o filho prometido a Abraão e o rei prometido a Davi são o mesmo.",
+  "promiseTrail10Title": "Filho de Davi, filho de Abraão",
+  "promiseTrail11Intro": "O cumprimento chega pequeno: numa manjedoura, anunciado a pastores.",
+  "promiseTrail11Note": "A grande alegria é para todo o povo: eco da bênção prometida a todas as famílias da terra.",
+  "promiseTrail11Title": "Alegria para todo o povo",
+  "promiseTrail12Intro": "Paulo fecha o fio: a promessa feita a Abraão chega a quem crê.",
+  "promiseTrail12Note": "Em Cristo, a bênção de Abraão alcança as nações pela fé. E a promessa ainda aponta para a nova criação.",
+  "promiseTrail12Title": "A bênção chega a você",
+  "promiseTrailMapCardBody": "Veja o que ficou firme em cada parte do fio e o que pede revisão.",
+  "promiseTrailMapFirm": "Firme",
+  "promiseTrailMapReview": "{count, plural, =1{1 erro para revisar} other{{count} erros para revisar}}",
+  "@promiseTrailMapReview": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "promiseTrailMapReviewCta": "Revisar",
+  "promiseTrailMapReviewIntro": "Os erros deste bloco, de novo. Sem pressa.",
+  "promiseTrailMapReviewTitle": "Revisão: {block}",
+  "@promiseTrailMapReviewTitle": {
+    "placeholders": {
+      "block": {
+        "type": "String"
+      }
+    }
+  },
+  "promiseTrailMapSheetBody": "Cada bloco mostra os erros que ainda estão na sua revisão. Revise e o bloco fica firme.",
+  "promiseTrailMapSynthesis": "Síntese",
+  "promiseTrailMapTitle": "Mapa da Promessa",
+  "promiseTrailModule1": "A promessa feita",
+  "promiseTrailModule2": "A promessa guardada",
+  "promiseTrailModule3": "A promessa anunciada",
+  "promiseTrailModule4": "A promessa cumprida",
+  "promiseTrailQ1A": "O cordeiro que Deus provê",
+  "promiseTrailQ1B": "A obediência que salva",
+  "promiseTrailQ1C": "O monte como lugar de culto",
+  "promiseTrailQ1Correct": "Deus provê o cordeiro no Moriá; João aponta Jesus como o Cordeiro.",
+  "promiseTrailQ1Hint": "Veja quem provê e o que é provido.",
+  "promiseTrailQ1Question": "O que Gênesis 22:8 comunica que se liga a João 1:29?",
+  "promiseTrailQ1WrongB": "Abraão obedece, mas quem provê o cordeiro é Deus.",
+  "promiseTrailQ1WrongC": "João não fala do monte: fala do Cordeiro que tira o pecado.",
+  "promiseTrailQ2A": "A lei do Sinai repetida",
+  "promiseTrailQ2B": "A nova aliança no sangue de Jesus",
+  "promiseTrailQ2C": "Uma aliança só para os profetas",
+  "promiseTrailQ2Correct": "Jeremias promete uma nova aliança; na ceia, Jesus diz que ela vem no seu sangue.",
+  "promiseTrailQ2Hint": "Procure a palavra que os dois textos repetem.",
+  "promiseTrailQ2Question": "O que Jeremias 31:31 comunica que se liga a Lucas 22:20?",
+  "promiseTrailQ2WrongA": "Jeremias diz que não será como a aliança feita com os pais.",
+  "promiseTrailQ2WrongC": "A aliança é com a casa de Israel; Jesus a dá aos discípulos no cálice.",
+  "promiseTrailQ3A": "A bênção fica só com Israel",
+  "promiseTrailQ3B": "A bênção vem pela circuncisão",
+  "promiseTrailQ3C": "O evangelho chega às nações pela fé",
+  "promiseTrailQ3Correct": "Paulo lê Gênesis 12 como o evangelho anunciado a Abraão: as nações abençoadas pela fé.",
+  "promiseTrailQ3Hint": "Veja quem é abençoado e por qual caminho.",
+  "promiseTrailQ3Question": "O que Gênesis 12:3 comunica que se liga a Gálatas 3:8?",
+  "promiseTrailQ3WrongA": "A promessa já dizia todas as famílias da terra.",
+  "promiseTrailQ3WrongB": "Paulo diz que Deus justifica as nações pela fé.",
+  "promiseTrailSynthIntro": "Três pontes para ligar o que foi prometido ao que se cumpriu.",
+  "promiseTrailSynthNote": "Desde o começo, a bênção prometida a Abraão era para todas as nações.",
+  "promiseTrailSynthObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+  "promiseTrailSynthTitle": "Travessia: a promessa inteira",
+  "promiseTrailTrailDescription": "De Abraão a Cristo em 12 cenas: o fio que costura a Bíblia. Cada cena também conta na trilha de origem.",
+  "promiseTrailTrailTitle": "A Promessa",
   "questAccuracySubtitle": "Termine uma cena com 80% de acertos",
   "questAccuracyTitle": "Olho firme",
   "questCountOf": "{done} de {total}",
@@ -5547,6 +5794,10 @@
   "roomNameHintEbd": "Ex.: EBD Jovens",
   "roomNameHintFamilia": "Ex.: Família Souza",
   "roomStudyFallbackTitle": "Estudo da semana",
+  "sceneStudyCta": "Para aprofundar",
+  "sceneStudyKeyword": "Palavra-chave",
+  "sceneStudyLinks": "Ligações na Bíblia",
+  "sceneStudyThink": "Para pensar",
   "sealsAllRevealed": "{done} de {total} — todos os selos revelados.",
   "@sealsAllRevealed": {
     "placeholders": {
@@ -6037,6 +6288,7 @@
   "splashSlogan": "A Bíblia, cena a cena",
   "streakDayEmpty": "sem cena",
   "streakDayFrozen": "protegido pelo gelo",
+  "streakDayRepaired": "recuperado",
   "streakDaySemantics": "{day}: {status}",
   "@streakDaySemantics": {
     "placeholders": {
@@ -6059,8 +6311,8 @@
       }
     }
   },
-  "streakRepairAction": "Reparar",
-  "streakRepairBody": "{broken, plural, =1{Você tinha 1 dia. Restaure para {restored} — 1× neste mês.} other{Você tinha {broken} dias. Restaure para {restored} — 1× neste mês.}}",
+  "streakRepairAction": "Recuperar",
+  "streakRepairBody": "{broken, plural, =1{Por isso sua sequência de 1 dia recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.} other{Por isso sua sequência de {broken} dias recomeçou. Se recuperar, ela volta para {restored} dias. Dá para fazer isso 1× por mês.}}",
   "@streakRepairBody": {
     "placeholders": {
       "broken": {
@@ -6087,8 +6339,15 @@
       }
     }
   },
-  "streakRepairDismiss": "Deixar",
-  "streakRepairDone": "{count, plural, =1{Sequência restaurada · 1 dia} other{Sequência restaurada · {count} dias}}",
+  "streakRepairDismiss": "{count, plural, =1{Ficar com 1 dia} other{Ficar com {count} dias}}",
+  "@streakRepairDismiss": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakRepairDone": "{count, plural, =1{Sequência de volta · 1 dia} other{Sequência de volta · {count} dias}}",
   "@streakRepairDone": {
     "placeholders": {
       "count": {
@@ -6096,7 +6355,15 @@
       }
     }
   },
-  "streakRepairTitle": "Reparar sequência",
+  "streakRepairTitle": "Ontem ficou em branco",
+  "streakRepairTitleDay": "{day} ficou em branco",
+  "@streakRepairTitleDay": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
   "streakShareDays": "{count, plural, =1{🔥 1 dia no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.} other{🔥 {count} dias no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.}}",
   "@streakShareDays": {
     "description": "Share text the user sends to friends. {signature} is empty or a new line with the user's name.",
@@ -6750,7 +7017,7 @@
     }
   },
   "weeklyReviewInsightsHeader": "O “Hoje:” de cada cena",
-  "weeklyReviewIntro": "Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.",
+  "weeklyReviewIntro": "Toque numa cena para reler o “Hoje:” e, no fim, responda 3 perguntas sobre elas.",
   "weeklyReviewMissionIntro": "Três perguntas das cenas desta semana.",
   "weeklyReviewMissionTitle": "Revisão da semana",
   "weeklyReviewNoQuestions": "Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.",
@@ -6789,6 +7056,19 @@
       }
     }
   },
+  "weeklyReviewTodayNext": "Próxima cena",
+  "weeklyReviewTodayPage": "{index} de {total}",
+  "@weeklyReviewTodayPage": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyReviewTodayPrev": "Cena anterior",
   "widgetBackToTrail": "Volte para a trilha",
   "widgetGoalDone": "Meta concluída",
   "widgetKeepStreak": "Mantenha sua sequência",

@@ -462,39 +462,18 @@ exports.revenueCatWebhook = functions
       return;
     }
     const event = req.body && req.body.event;
-    const state = revenueCat.plusStateFromEvent(event);
-    const slot = revenueCat.pioneerSlotFromEvent(event);
-    if (!state && !slot) {
-      // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
-      res.status(200).json({ ok: true, ignored: true });
-      return;
-    }
     try {
-      const db = getFirestore();
-      let stale = false;
-      if (state) {
-        stale = await writePlusState(db, state.uid, state.fields, event);
+      const out = await revenueCat.applyEvent(getFirestore(), event);
+      if (!out) {
+        // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
+        res.status(200).json({ ok: true, ignored: true });
+        return;
       }
-      if (state && !stale) {
-        // Escritas companheiras (TRANSFER: desligar a conta de origem).
-        // Só em doc que já existe: evento atrasado não cria doc-zumbi de
-        // conta excluída só com os campos do Plus.
-        for (const extra of state.also || []) {
-          const ref = db.doc(`users/${extra.uid}`);
-          const snap = await ref.get();
-          if (!snap.exists) continue;
-          await ref.set(
-            { ...extra.fields, plusUpdatedAt: FieldValue.serverTimestamp() },
-            { merge: true },
-          );
-        }
-      }
-      if (slot) await claimPioneerSlot(db, slot);
       logger.info('revenuecat: estado gravado', {
-        uid: (state && state.uid) || slot.uid,
+        uid: out.uid,
         type: event && event.type,
-        pioneer: Boolean(slot),
-        stale,
+        pioneer: out.pioneer,
+        skipped: out.skipped,
       });
       res.status(200).json({ ok: true });
     } catch (err) {
@@ -502,72 +481,6 @@ exports.revenueCatWebhook = functions
       res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
     }
   });
-
-/**
- * Grava o estado Plus só se o evento não for mais velho que o último
- * aplicado: a RevenueCat pode entregar fora de ordem (reenvio de falha),
- * e uma EXPIRATION atrasada não pode desligar quem já renovou.
- * A marca fica em `users/{uid}/server/revenuecat`, fora do alcance do
- * cliente (sem regra = negado) e apagada junto com a conta.
- * Devolve true quando o evento era velho e nada foi gravado.
- */
-async function writePlusState(db, uid, fields, event) {
-  const userRef = db.doc(`users/${uid}`);
-  const markRef = db.doc(`users/${uid}/server/revenuecat`);
-  const at =
-    event && typeof event.event_timestamp_ms === 'number'
-      ? event.event_timestamp_ms
-      : null;
-  return db.runTransaction(async (tx) => {
-    const mark = await tx.get(markRef);
-    const last = mark.get('lastEventAtMs');
-    if (at != null && typeof last === 'number' && at < last) return true;
-    tx.set(
-      userRef,
-      { ...fields, plusUpdatedAt: FieldValue.serverTimestamp() },
-      { merge: true },
-    );
-    if (at != null) {
-      tx.set(markRef, { lastEventAtMs: at, lastEventType: String(event.type || '') });
-    }
-    return false;
-  });
-}
-
-/**
- * Primeiro pagamento do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
- * não soma de novo. Transferência de quem já contou só marca o destino.
- */
-async function claimPioneerSlot(db, slot) {
-  const userRef = db.doc(`users/${slot.uid}`);
-  const statRef = db.doc('stats/pioneer');
-  const sourceRefs = (slot.from || []).map((uid) => db.doc(`users/${uid}`));
-  await db.runTransaction(async (tx) => {
-    const user = await tx.get(userRef);
-    const sources = [];
-    for (const ref of sourceRefs) sources.push(await tx.get(ref));
-    const stat = await tx.get(statRef);
-    const decision = revenueCat.pioneerClaimDecision({
-      alreadyCounted: user.get('pioneerCounted') === true,
-      sourceCounted: sources.some((s) => s.get('pioneerCounted') === true),
-      count: stat.get('count'),
-      inheritOnly: slot.inheritOnly === true,
-    });
-    if (decision.action === 'skip') return;
-    tx.set(userRef, { pioneerCounted: true }, { merge: true });
-    if (decision.action === 'increment') {
-      tx.set(
-        statRef,
-        {
-          count: decision.count,
-          cap: revenueCat.PIONEER_CAP,
-          updatedAt: FieldValue.serverTimestamp(),
-        },
-        { merge: true },
-      );
-    }
-  });
-}
 
 // ---- Caravana: salas e fechamento semanal (league.js) — em pausa ------------
 // Com a base pequena a Caravana é um ranking só, o do mês, e o nível sobe no

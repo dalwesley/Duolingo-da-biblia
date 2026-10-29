@@ -127,9 +127,10 @@ class CornerService extends ChangeNotifier {
       mine = snap.docs
           .map(_fromDoc)
           .where(
-            (c) => !(c.status == CornerStatus.pending &&
-                c.opponentId == uid &&
-                moderation.isBlocked(c.challengerId)),
+            (c) =>
+                !(c.status == CornerStatus.pending &&
+                    c.opponentId == uid &&
+                    moderation.isBlocked(c.challengerId)),
           )
           .toList();
       lastError = null;
@@ -385,6 +386,7 @@ class CornerService extends ChangeNotifier {
         }
       }
     }
+    await _reportWalkDays(progress, uid);
     if (match == null) return;
 
     final iAmChallenger = match.iAmChallenger(uid);
@@ -434,6 +436,8 @@ class CornerService extends ChangeNotifier {
               challengerPhotoUrl: c.challengerPhotoUrl,
               opponentPhotoUrl: c.opponentPhotoUrl,
               withdrawnBy: c.withdrawnBy,
+              challengerDays: c.challengerDays,
+              opponentDays: c.opponentDays,
             )
           else
             c,
@@ -449,6 +453,41 @@ class CornerService extends ChangeNotifier {
     } catch (e) {
       debugPrint('CornerService.reportMissionComplete: $e');
     }
+  }
+
+  /// Grava os dias caminhados nesta semana em cada desafio ainda aberto — o
+  /// outro lado vê os traços do meu fio acenderem até a bandeira.
+  Future<void> _reportWalkDays(ProgressService progress, String uid) async {
+    final days = roomWeekDays(progress.playDates);
+    if (days.isEmpty) return;
+    var changed = false;
+    final next = <CornerChallenge>[];
+    for (final c in mine) {
+      final open = c.isThisWeek && !c.isClosed && !c.iLeft(uid);
+      if (!open || listEquals(c.daysOf(uid), days)) {
+        next.add(c);
+        continue;
+      }
+      final asChallenger = c.iAmChallenger(uid);
+      try {
+        await FirebaseFirestore.instance.doc('corners/${c.id}').set({
+          asChallenger ? 'challengerDays' : 'opponentDays': days,
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+        next.add(
+          asChallenger
+              ? c.copyWith(challengerDays: days)
+              : c.copyWith(opponentDays: days),
+        );
+        changed = true;
+      } catch (e) {
+        debugPrint('CornerService._reportWalkDays: $e');
+        next.add(c);
+      }
+    }
+    if (!changed) return;
+    mine = next;
+    notifyListeners();
   }
 
   static CornerChallenge _fromDoc(DocumentSnapshot<Map<String, dynamic>> doc) {
@@ -475,7 +514,17 @@ class CornerService extends ChangeNotifier {
       withdrawnBy: d['withdrawnBy'] as String?,
       challengerPhotoUrl: d['challengerPhotoUrl'] as String?,
       opponentPhotoUrl: d['opponentPhotoUrl'] as String?,
+      challengerDays: _asDays(d['challengerDays']),
+      opponentDays: _asDays(d['opponentDays']),
     );
+  }
+
+  static List<int> _asDays(dynamic value) {
+    if (value is! List) return const [];
+    return [
+      for (final v in value)
+        if (v is num && v >= 1 && v <= 7) v.toInt(),
+    ];
   }
 
   static CornerStatus _statusOf(String? raw) {

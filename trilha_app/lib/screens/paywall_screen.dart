@@ -226,7 +226,24 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     _LegalLinks(sub: sub),
                     const SizedBox(height: AppSpace.lg),
                   ],
-                  PlusPerkCard(detailed: true, footer: const _FreeForever()),
+                  PlusPerkCard(
+                    detailed: true,
+                    footer: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          context.l10n.paywallMoreComing,
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w700,
+                            color: Appearance.of(context).textSecondary,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.lg),
+                        const _FreeForever(),
+                      ],
+                    ),
+                  ),
                   if (offer) ...[
                     const SizedBox(height: AppSpace.xl),
                     if (promoDate != null) ...[

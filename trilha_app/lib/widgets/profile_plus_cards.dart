@@ -23,8 +23,9 @@ import 'plus_perks.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
-/// Perfil · Peregrino+: acerto de primeira por modo e por gesto, com ponto
-/// forte e o que reforçar.
+/// Perfil · Peregrino+ · "Meu estudo": acerto de primeira por modo, o
+/// gesto firme e o que reforçar, e as duas ações (treinar o ponto fraco e
+/// rever os erros explicados) num card só.
 class ProfileAccuracyCard extends StatelessWidget {
   const ProfileAccuracyCard({super.key});
 
@@ -39,6 +40,7 @@ class ProfileAccuracyCard extends StatelessWidget {
     );
     final strong = stats.strongest;
     final weak = stats.weakest;
+    final mistakes = progress.mistakeQuestionIds.length;
 
     return GlassCard(
       tint: AppRoles.presence,
@@ -47,7 +49,7 @@ class ProfileAccuracyCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           RelicChapter(
-            title: l10n.profileAccuracyHeader,
+            title: l10n.profileStudyTitle,
             divided: false,
             accent: AppRoles.presence,
           ),
@@ -64,34 +66,54 @@ class ProfileAccuracyCard extends StatelessWidget {
               _MeterRow(label: mode.labelPt, accuracy: stats.byMode[mode]!),
               const SizedBox(height: AppSpace.md),
             ],
-            if (strong != null) ...[
-              const SizedBox(height: AppSpace.sm),
-              _Highlight(
-                glyph: CinematicGlyph.rise,
-                label: l10n.profileAccuracyStrongest,
-                gesture: strong.$1,
-                accuracy: strong.$2,
-              ),
-            ],
-            if (weak != null) ...[
-              const SizedBox(height: AppSpace.sm),
-              _Highlight(
-                glyph: CinematicGlyph.target,
-                label: l10n.profileAccuracyToStrengthen,
-                gesture: weak.$1,
-                accuracy: weak.$2,
-              ),
-            ],
-            if (strong == null)
+            if (strong != null || weak != null)
+              Row(
+                children: [
+                  if (strong != null)
+                    Expanded(
+                      child: _Highlight(
+                        glyph: CinematicGlyph.rise,
+                        label: l10n.profileAccuracyStrongest,
+                        gesture: strong.$1,
+                        accuracy: strong.$2,
+                      ),
+                    ),
+                  if (strong != null && weak != null)
+                    const SizedBox(width: AppSpace.sm),
+                  if (weak != null)
+                    Expanded(
+                      child: _Highlight(
+                        glyph: CinematicGlyph.target,
+                        label: l10n.profileAccuracyToStrengthen,
+                        gesture: weak.$1,
+                        accuracy: weak.$2,
+                      ),
+                    ),
+                ],
+              )
+            else
               Text(
                 l10n.profileAccuracyFewGestures(WalkStats.minGestureAnswers),
                 style: AppTypography.body(size: 12, color: a.textFaint),
               ),
-            if (weak != null) ...[
-              const SizedBox(height: AppSpace.md),
-              _ReinforceButton(gesture: weak.$1, mode: stats.weakestMode),
-            ],
           ],
+          const SizedBox(height: AppSpace.md),
+          if (weak != null) ...[
+            _ReinforceButton(gesture: weak.$1, mode: stats.weakestMode),
+            const SizedBox(height: AppSpace.sm),
+          ],
+          GhostCta(
+            label: mistakes == 0
+                ? l10n.profileStudyErrorsNone
+                : l10n.profileStudyErrors(mistakes),
+            leading: CinematicGlyph.lamp,
+            expanded: true,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => const ExplainedErrorsScreen(),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -310,6 +332,95 @@ class _Highlight extends StatelessWidget {
 
 /// Reforço do ponto fraco: até 5 perguntas do gesto mais fraco, das cenas
 /// já feitas (só nos modos que a pessoa já usa), em modo prática.
+/// Reforço do [gesture] (o [mode] mais fraco primeiro): até 5 perguntas das
+/// últimas cenas feitas, em modo prática. Usado pelo cartão de Minha
+/// caminhada e pelo Seu próximo passo da Home.
+Future<void> startReinforce(
+  BuildContext context, {
+  required ExerciseType gesture,
+  TrailDifficulty? mode,
+}) async {
+  const recentScenes = 12;
+  const maxTrails = 4;
+  final progress = context.read<ProgressService>();
+  final trails = await TrailRepository().getTrails();
+  final trailOf = <String, Trail>{
+    for (final t in trails)
+      for (final mod in t.modules)
+        for (final m in mod.missions) m.slug: t,
+  };
+  final recent = progress.completedMissions.reversed
+      .where(trailOf.containsKey)
+      .take(recentScenes)
+      .toList();
+  final trailSlugs = {
+    for (final slug in recent) trailOf[slug]!.slug,
+  }.take(maxTrails).toSet();
+  for (final slug in trailSlugs) {
+    await ContentCatalogService.instance.ensureTrailBank(slug);
+  }
+
+  final pool = <ReinforceCandidate>[];
+  for (final slug in recent) {
+    final trail = trailOf[slug]!.slug;
+    if (!trailSlugs.contains(trail)) continue;
+    final modes = {
+      ?TrailDifficulty.fromId(progress.difficultyForTrail(trail)),
+      for (final id in progress.clearedTrailModes[trail] ?? const <String>[])
+        ?TrailDifficulty.fromId(id),
+    };
+    if (modes.isEmpty) modes.add(TrailDifficulty.semente);
+    for (final mode in modes) {
+      final qs = await QuestionBank.instance.listForMission(
+        difficulty: mode,
+        moduleTitle: null,
+        section: slug,
+        trailSlug: trail,
+      );
+      pool.addAll([
+        for (final q in qs) (id: q.id, type: q.type, mode: q.difficulty),
+      ]);
+    }
+  }
+  final ids = ReinforcePicker.pick(
+    pool: pool,
+    gesture: gesture,
+    mode: mode,
+    mistakes: progress.mistakeQuestionIds.toSet(),
+    used: progress.usedQuestionIds.toSet(),
+  );
+  if (!context.mounted) return;
+  final l10n = context.l10n;
+  if (ids.isEmpty) {
+    showAppToastFor(context, message: l10n.reinforceEmpty);
+    return;
+  }
+  AnalyticsService.instance.logEvent('reinforce_start', {
+    'gesture': gesture.wireId,
+    'mode': mode?.id ?? 'any',
+    'questions': ids.length,
+  });
+  final mission = Mission(
+    slug: 'reinforce-${gesture.wireId}',
+    title: l10n.reinforceMissionTitle(gesture.labelPt),
+    intro: l10n.reinforceMissionIntro(gesture.labelPt),
+    type: 'lesson',
+    stepsReward: 30,
+    questions: const [],
+  );
+  await Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (_) => LessonScreen(
+        missionSlug: mission.slug,
+        practiceMode: true,
+        missionOverride: mission,
+        questionIdsOverride: ids,
+        requiresPlus: true,
+      ),
+    ),
+  );
+}
+
 class _ReinforceButton extends StatefulWidget {
   final ExerciseType gesture;
   final TrailDifficulty? mode;
@@ -321,91 +432,12 @@ class _ReinforceButton extends StatefulWidget {
 }
 
 class _ReinforceButtonState extends State<_ReinforceButton> {
-  static const _recentScenes = 12;
-  static const _maxTrails = 4;
-
   bool _loading = false;
 
   Future<void> _start() async {
     setState(() => _loading = true);
-    final progress = context.read<ProgressService>();
-    final trails = await TrailRepository().getTrails();
-    final trailOf = <String, Trail>{
-      for (final t in trails)
-        for (final mod in t.modules)
-          for (final m in mod.missions) m.slug: t,
-    };
-    final recent = progress.completedMissions.reversed
-        .where(trailOf.containsKey)
-        .take(_recentScenes)
-        .toList();
-    final trailSlugs = {
-      for (final slug in recent) trailOf[slug]!.slug,
-    }.take(_maxTrails).toSet();
-    for (final slug in trailSlugs) {
-      await ContentCatalogService.instance.ensureTrailBank(slug);
-    }
-
-    final pool = <ReinforceCandidate>[];
-    for (final slug in recent) {
-      final trail = trailOf[slug]!.slug;
-      if (!trailSlugs.contains(trail)) continue;
-      final modes = {
-        ?TrailDifficulty.fromId(progress.difficultyForTrail(trail)),
-        for (final id in progress.clearedTrailModes[trail] ?? const <String>[])
-          ?TrailDifficulty.fromId(id),
-      };
-      if (modes.isEmpty) modes.add(TrailDifficulty.semente);
-      for (final mode in modes) {
-        final qs = await QuestionBank.instance.listForMission(
-          difficulty: mode,
-          moduleTitle: null,
-          section: slug,
-          trailSlug: trail,
-        );
-        pool.addAll([
-          for (final q in qs) (id: q.id, type: q.type, mode: q.difficulty),
-        ]);
-      }
-    }
-    final ids = ReinforcePicker.pick(
-      pool: pool,
-      gesture: widget.gesture,
-      mode: widget.mode,
-      mistakes: progress.mistakeQuestionIds.toSet(),
-      used: progress.usedQuestionIds.toSet(),
-    );
-    if (!mounted) return;
-    setState(() => _loading = false);
-    final l10n = context.l10n;
-    if (ids.isEmpty) {
-      showAppToastFor(context, message: l10n.reinforceEmpty);
-      return;
-    }
-    AnalyticsService.instance.logEvent('reinforce_start', {
-      'gesture': widget.gesture.wireId,
-      'mode': widget.mode?.id ?? 'any',
-      'questions': ids.length,
-    });
-    final mission = Mission(
-      slug: 'reinforce-${widget.gesture.wireId}',
-      title: l10n.reinforceMissionTitle(widget.gesture.labelPt),
-      intro: l10n.reinforceMissionIntro(widget.gesture.labelPt),
-      type: 'lesson',
-      stepsReward: 30,
-      questions: const [],
-    );
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => LessonScreen(
-          missionSlug: mission.slug,
-          practiceMode: true,
-          missionOverride: mission,
-          questionIdsOverride: ids,
-          requiresPlus: true,
-        ),
-      ),
-    );
+    await startReinforce(context, gesture: widget.gesture, mode: widget.mode);
+    if (mounted) setState(() => _loading = false);
   }
 
   @override

@@ -419,6 +419,11 @@ class CornerChallenge {
   final String? challengerPhotoUrl;
   final String? opponentPhotoUrl;
 
+  /// Dias da semana do desafio (1 = seg … 7 = dom) em que cada um caminhou —
+  /// os traços do fio até a bandeira.
+  final List<int> challengerDays;
+  final List<int> opponentDays;
+
   const CornerChallenge({
     required this.id,
     required this.challengerId,
@@ -441,12 +446,16 @@ class CornerChallenge {
     this.withdrawnBy,
     this.challengerPhotoUrl,
     this.opponentPhotoUrl,
+    this.challengerDays = const [],
+    this.opponentDays = const [],
   });
 
   CornerChallenge copyWith({
     CornerStatus? status,
     String? withdrawnBy,
     String? opponentPhotoUrl,
+    List<int>? challengerDays,
+    List<int>? opponentDays,
   }) {
     return CornerChallenge(
       id: id,
@@ -470,6 +479,8 @@ class CornerChallenge {
       withdrawnBy: withdrawnBy ?? this.withdrawnBy,
       challengerPhotoUrl: challengerPhotoUrl,
       opponentPhotoUrl: opponentPhotoUrl ?? this.opponentPhotoUrl,
+      challengerDays: challengerDays ?? this.challengerDays,
+      opponentDays: opponentDays ?? this.opponentDays,
     );
   }
 
@@ -538,6 +549,25 @@ class CornerChallenge {
       uid == challengerId ? _done(challengerDoneAt) : _done(opponentDoneAt);
 
   bool theyDone(String uid) => iDone(peerId(uid));
+
+  List<int> daysOf(String uid) =>
+      uid == challengerId ? challengerDays : opponentDays;
+
+  /// Meus dias: na semana corrente vale o histórico local (já conta a cena de
+  /// agora, antes de subir); desafio antigo usa o que ficou gravado.
+  int myWalkDays(String uid, List<String> playDates) {
+    if (!isThisWeek) return daysOf(uid).length;
+    final week = weekStart;
+    final days = <int>{};
+    for (final raw in playDates) {
+      if (raw.length < 10) continue;
+      final key = raw.substring(0, 10);
+      if (key.compareTo(week) < 0) continue;
+      final d = DateTime.tryParse(key);
+      if (d != null) days.add(d.weekday);
+    }
+    return days.length;
+  }
 
   bool get bothDone => _done(challengerDoneAt) && _done(opponentDoneAt);
 

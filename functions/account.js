@@ -6,12 +6,15 @@
  * O app reautentica e chama `user.delete()`. Este módulo roda no gatilho
  * `auth.user().onDelete` e apaga tudo que o peregrino deixou no Firestore:
  * perfil, placares, grupos, companhias, convites, esquinas, passes de trilha e reconhecimentos.
+ * Fica só a lápide `deletedAccounts/{uid}` (sem dado pessoal), para eventos
+ * atrasados de compra não recriarem o perfil.
  *
  * Grupo com outros membros passa a liderança; companhia com parceiro promove
  * o parceiro a anfitrião — os outros não perdem o que construíram.
  */
 
 const { FieldValue, FieldPath } = require('firebase-admin/firestore');
+const { TOMBSTONES } = require('./revenuecat');
 
 const TIERS = ['0', '1', '2', '3', '4'];
 
@@ -136,14 +139,23 @@ async function participantDocs(db, collection, uid) {
   return snap.docs.map((d) => d.ref);
 }
 
-/** Passes de trilha que o uid deu ou recebeu (levam o nome dele). */
+/** Passes de trilha que o uid deu (levam o nome dele). */
 async function trailGiftRefs(db, uid) {
-  const refs = [];
-  for (const field of ['fromUid', 'toUid']) {
-    const snap = await db.collection('trailGifts').where(field, '==', uid).get();
-    refs.push(...snap.docs.map((d) => d.ref));
+  const snap = await db.collection('trailGifts').where('fromUid', '==', uid).get();
+  return snap.docs.map((d) => d.ref);
+}
+
+/**
+ * Passes que o uid recebeu: apagar deixava o `giftMonths` de quem deu
+ * apontando para o nada — o app mostrava o passe como livre e o envio
+ * caía na regra. Fica o passe, sai quem recebeu. `toUid` vazio continua
+ * presente: a regra não deixa outra pessoa resgatar de novo.
+ */
+async function detachReceivedGifts(db, uid) {
+  const snap = await db.collection('trailGifts').where('toUid', '==', uid).get();
+  for (const doc of snap.docs) {
+    await doc.ref.update({ toUid: '', toName: FieldValue.delete() });
   }
-  return refs;
 }
 
 /** Reconhecimentos que o uid deu a outros (levam o nome dele). */
@@ -189,6 +201,13 @@ async function detachAuthorship(db, uid) {
 
 async function purgeUserData(db, uid, logger) {
   const steps = [
+    // Antes do perfil: o webhook do RevenueCat confere a lápide e não
+    // recria `users/{uid}` com evento atrasado (ver revenuecat.js).
+    [
+      'lápide',
+      () =>
+        db.doc(`${TOMBSTONES}/${uid}`).set({ deletedAt: FieldValue.serverTimestamp() }),
+    ],
     ['perfil', () => db.recursiveDelete(db.doc(`users/${uid}`))],
     ['placares', async () => deleteRefs(db, await rankingRefs(db, uid))],
     ['grupos', () => leaveRooms(db, uid)],
@@ -196,6 +215,7 @@ async function purgeUserData(db, uid, logger) {
     ['convites', async () => deleteRefs(db, await participantDocs(db, 'roomInvites', uid))],
     ['esquinas', async () => deleteRefs(db, await participantDocs(db, 'corners', uid))],
     ['passes', async () => deleteRefs(db, await trailGiftRefs(db, uid))],
+    ['passes recebidos', () => detachReceivedGifts(db, uid)],
     ['reconhecimentos', async () => deleteRefs(db, await sentRecognitionRefs(db, uid, logger))],
     ['autoria', () => detachAuthorship(db, uid)],
   ];

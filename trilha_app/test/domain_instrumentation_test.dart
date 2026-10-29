@@ -1,5 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:trilha_app/data/bible_canonical_groups.dart';
+import 'package:trilha_app/services/backend_service.dart';
 import 'package:trilha_app/services/progress_service.dart';
 
 void main() {
@@ -57,6 +59,62 @@ void main() {
       final payload = p.toCloudMap();
       expect(payload['trailAnswerTotal'], {'genesis-1-11': 1});
       expect(payload['trailAnswerCorrect'], {'genesis-1-11': 1});
+    });
+  });
+  group('Seu mapa (acerto por grupo canônico)', () {
+    test('acumula por grupo.modo e viaja no payload', () {
+      final p = ProgressService();
+      p.recordDomainAnswer(group: 'pentateuco', mode: 'semente', correct: true);
+      p.recordDomainAnswer(
+        group: 'pentateuco',
+        mode: 'semente',
+        correct: false,
+      );
+      p.recordDomainAnswer(
+        group: 'evangelhos',
+        mode: 'caminhada',
+        correct: true,
+      );
+      expect(p.domainAnswerTotal['pentateuco.semente'], 2);
+      expect(p.domainAnswerCorrect['pentateuco.semente'], 1);
+      final payload = p.toCloudMap();
+      expect(payload['domainAnswerTotal'], {
+        'pentateuco.semente': 2,
+        'evangelhos.caminhada': 1,
+      });
+    });
+
+    test('recomeçar a trilha não apaga o mapa', () async {
+      final p = ProgressService();
+      p.recordAnswer(
+        mode: 'semente',
+        type: 'tap',
+        correct: true,
+        trailSlug: 'genesis-1-11',
+      );
+      p.recordDomainAnswer(group: 'pentateuco', mode: 'semente', correct: true);
+      await p.leaveTrail(trailSlug: 'genesis-1-11', missionSlugs: const []);
+      expect(p.trailAnswerTotal, isEmpty);
+      expect(p.domainAnswerTotal['pentateuco.semente'], 1);
+    });
+
+    test('livro cai no grupo certo', () {
+      expect(BibleCanonicalGroups.ofBook(0)?.id, 'pentateuco');
+      expect(BibleCanonicalGroups.ofBook(39)?.id, 'evangelhos');
+      expect(BibleCanonicalGroups.ofBook(43)?.id, 'historia-nt');
+      expect(BibleCanonicalGroups.ofBook(65)?.id, 'profecia');
+      expect(BibleCanonicalGroups.ofBook(66), isNull);
+    });
+
+    test('acerto por trilha e por grupo ficam no doc privado', () {
+      final split = BackendService.splitPayload({
+        'trailAnswerCorrect': {'genesis-1-11': 1},
+        'trailAnswerTotal': {'genesis-1-11': 1},
+        'domainAnswerCorrect': {'pentateuco.semente': 1},
+        'domainAnswerTotal': {'pentateuco.semente': 1},
+      });
+      expect(split.public, isEmpty);
+      expect(split.private.keys, hasLength(4));
     });
   });
 }

@@ -14,10 +14,9 @@ import 'cloud_mascot.dart';
 import 'corner_home_card.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
-import 'user_avatar.dart';
 
-/// Retângulo do desafio: eu de um lado, a outra pessoa do outro.
-/// Na Caravana e na Home, a partir do primeiro.
+/// Retângulo do desafio: o que é, quanto resta, os dois no fio e a cena.
+/// Na Caravana e na Home, a partir do primeiro. Toque abre o card completo.
 class DesafioEntry extends StatelessWidget {
   final VoidCallback onTap;
 
@@ -33,114 +32,76 @@ class DesafioEntry extends StatelessWidget {
     final challenge = corners.face;
     if (challenge == null || uid.isEmpty) return const SizedBox.shrink();
 
-    final board = CornerScoreboard.of(corners.mine, uid);
-    final live = corners.homeCard;
-    final status = CornerCopy.stripLine(
-      live: live,
-      uid: uid,
-      days: LeagueService.daysLeft(),
-      won: board.won,
-      lost: board.lost,
-    );
     final them = challenge.peerName(uid);
-    final portrait = progress.settings.portraitStyle;
+    final incoming =
+        challenge.status == CornerStatus.pending && challenge.iAmOpponent(uid);
+    final waiting =
+        challenge.status == CornerStatus.pending &&
+        challenge.iAmChallenger(uid);
+    final settled =
+        challenge.isClosed || (!challenge.isThisWeek && !incoming && !waiting);
+    final live = challenge.status == CornerStatus.active;
+    final days = LeagueService.daysLeft();
+    final when = days <= 1 ? CornerCopy.closesToday : CornerCopy.daysLeft(days);
+
+    final meDone = live || settled ? challenge.iDone(uid) : false;
+    final themDone = live || settled ? challenge.theyDone(uid) : false;
+    final pending = incoming || waiting;
 
     return Semantics(
       button: true,
       label: context.l10n.cornerChallengeWith(CornerCopy.firstName(them)),
       excludeSemantics: true,
       child: GlassCard(
-        glow: challenge.status == CornerStatus.active ? 0.7 : null,
+        glow: live ? 0.7 : null,
         onTap: onTap,
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: _Person(
-                name: progress.userName,
-                photo: backend.userPhotoUrl,
-                seed: uid,
-                style: portrait,
-              ),
-            ),
-            SizedBox(
-              width: 108,
-              child: Column(
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyph.flag,
-                    size: AppMetrics.iconMd,
-                    accent: a.chrome,
-                    framed: false,
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    status,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w700,
-                      color: a.textSecondary,
-                    ),
+            Row(
+              children: [
+                SectionLabel(CornerCopy.kicker),
+                if (!settled) ...[
+                  const SizedBox(width: AppSpace.sm),
+                  SoftBadge(
+                    text: when,
+                    accent: days <= 1 ? AppRoles.risk : a.chrome,
                   ),
                 ],
-              ),
+                const Spacer(),
+                ListChevron(color: a.textFaint),
+              ],
             ),
-            Expanded(
-              child: _Person(
-                name: them,
-                photo: challenge.peerPhoto(uid),
-                seed: challenge.peerId(uid),
-                style: portrait,
-              ),
+            const SizedBox(height: AppSpace.lg),
+            CornerPairRow(
+              myName: progress.userName,
+              theirName: them,
+              myPhoto: backend.userPhotoUrl,
+              theirPhoto: challenge.peerPhoto(uid),
+              mySeed: uid,
+              portrait: progress.settings.portraitStyle,
+              incoming: incoming,
+              awaitingAccept: pending,
+              awaitLabel: incoming
+                  ? CornerCopy.incomingFrom(them)
+                  : waiting
+                  ? CornerCopy.waitingOn(them)
+                  : null,
+              meDone: meDone,
+              themDone: themDone,
+              meLeft: challenge.iLeft(uid),
+              themLeft: challenge.theyLeft(uid),
+              showStatus: live || settled,
+              meDays: live || settled
+                  ? challenge.myWalkDays(uid, progress.playDates)
+                  : null,
+              themDays: live || settled
+                  ? challenge.daysOf(challenge.peerId(uid)).length
+                  : null,
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class _Person extends StatelessWidget {
-  final String name;
-  final String? photo;
-  final String? seed;
-  final PortraitStyle style;
-
-  const _Person({
-    required this.name,
-    required this.photo,
-    required this.seed,
-    required this.style,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final first = CornerCopy.firstName(name);
-    return Column(
-      children: [
-        UserAvatar(
-          name: name,
-          photoUrl: photo,
-          seed: seed,
-          radius: AppMetrics.avatarLg,
-          style: style,
-        ),
-        const SizedBox(height: 6),
-        Text(
-          first.isEmpty ? '—' : first,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 12,
-            letterSpacing: 0.2,
-            color: a.text,
-          ),
-        ),
-      ],
     );
   }
 }

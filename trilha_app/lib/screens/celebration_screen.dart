@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/curated_trails.dart';
 import '../data/entry_trails.dart';
 import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
@@ -398,6 +399,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           SoundService.instance.playComplete(boss: widget.isBoss);
         }
       });
+      // Serviços lidos agora: o resto roda depois de awaits e pode
+      // seguir com a tela já fechada.
+      final backend = context.read<BackendService>();
+      final league = context.read<LeagueService>();
+      final rooms = context.read<RoomService>();
+      final corners = context.read<CornerService>();
       progress
           .completeMission(
             widget.missionSlug,
@@ -405,7 +412,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             isReplay: _noProgress,
             correct: widget.correct,
             total: widget.total,
-            alsoComplete: EntryTrails.linkedScenes(widget.missionSlug),
+            alsoComplete: {
+              ...EntryTrails.linkedScenes(widget.missionSlug),
+              ...CuratedTrails.linkedScenes(widget.missionSlug),
+            },
             mode: trailUsesDifficultyBank(widget.trailSlug)
                 ? progress.difficultyForTrail(widget.trailSlug) ??
                       TrailDifficulty.semente.id
@@ -427,7 +437,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             final now = DateTime.now();
             final today = DateTime(now.year, now.month, now.day);
             final campaign = SeasonWalkCatalog.current(today);
+            // Falha não credita o dia da Caminhada; refazer a cena, sim.
             for (final d in campaign.days) {
+              if (widget.failed) break;
               if (d.missionSlug != widget.missionSlug) continue;
               final date = d.dateOn(campaign.start);
               if (date.isAfter(today)) continue;
@@ -445,14 +457,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               if (seal != null) setState(() => _newSeal = seal);
             }
             // Grava na hora — o debounce de 2s perdia o dia ao reiniciar o app.
-            if (mounted) {
-              final backend = context.read<BackendService>();
-              final league = context.read<LeagueService>();
-              final room = context.read<RoomService>().activeCode;
+            {
               await backend.saveNow(
                 progress,
                 LeagueService.weekKey(),
-                roomCode: room,
+                roomCode: rooms.activeCode,
                 league: league,
               );
               try {
@@ -487,8 +496,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               isReplay: widget.isReplay,
               perfect: widget.perfect,
             );
-            if (!_noProgress && mounted) {
-              final corners = context.read<CornerService>();
+            if (!_noProgress) {
               await corners.reportMissionComplete(
                 progress: progress,
                 missionSlug: widget.missionSlug,
@@ -497,7 +505,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               );
               // Mostra a travessia desta cena assim que eu chego — fechada
               // ("Chegaram juntos") ou ainda esperando a outra pessoa.
-              final uid = context.read<BackendService>().uid ?? '';
+              final uid = backend.uid ?? '';
               CornerChallenge? closed;
               for (final c in corners.mine) {
                 if (c.missionSlug == widget.missionSlug &&
@@ -527,10 +535,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ),
               );
             }
-            if (!mounted) return;
-            if (progress.goalJustReached) {
+            if (mounted && progress.goalJustReached) {
               progress.clearGoalJustReached();
             }
+            // Marca o modo vencido mesmo se a tela já saiu; setState é guardado.
             await _resolveModeSuggestion(progress);
           });
     }
@@ -639,11 +647,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (pieces.isEmpty && postcard == null) return;
     // Deixa a celebração contar os passos antes de chamar a cena grande.
     await Future<void>.delayed(const Duration(milliseconds: 2600));
-    if (postcard != null && mounted) {
+    // Saiu (ou outra rota cobriu a tela) durante a espera: não abre por cima.
+    if (!mounted || _leaving) return;
+    if (ModalRoute.of(context)?.isCurrent == false) return;
+    if (postcard != null) {
       await showPostcardReveal(context, postcard);
     }
     for (var i = 0; i < pieces.length; i++) {
-      if (!mounted) return;
+      if (!mounted || _leaving) return;
+      if (ModalRoute.of(context)?.isCurrent == false) return;
       if (await showSetPiece(context, pieces[i])) {
         await SetPieceMemory.claim(ids[i]);
       }
@@ -685,8 +697,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   Future<void> _acceptNextMode({required bool replayThisStep}) async {
+    if (_leaving) return;
     final next = _nextMode;
     if (next == null) return;
+    _leaving = true;
     final progress = context.read<ProgressService>();
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     if (!mounted) return;
@@ -899,16 +913,28 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   Positioned(
                     left: -4000,
                     top: 0,
-                    child: SizedBox(
-                      width: 320,
-                      height: 320,
-                      child: RepaintBoundary(
-                        key: _insightShareKey,
-                        child: ShareInsightCard(
-                          insight: _todayLine!,
-                          verseRef: _hook?.hookRef,
-                        ),
-                      ),
+                    child: Builder(
+                      builder: (_) {
+                        final art = TrailArt.ofScene(
+                          widget.trailSlug,
+                          widget.missionSlug,
+                        );
+                        final size = art != null
+                            ? ShareInsightCard.artSize
+                            : const Size(320, 320);
+                        return SizedBox(
+                          width: size.width,
+                          height: size.height,
+                          child: RepaintBoundary(
+                            key: _insightShareKey,
+                            child: ShareInsightCard(
+                              insight: _todayLine!,
+                              verseRef: _hook?.hookRef,
+                              art: art,
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 SafeArea(
