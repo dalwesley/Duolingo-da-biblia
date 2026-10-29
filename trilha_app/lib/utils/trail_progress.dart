@@ -204,6 +204,8 @@ class TrailProgress {
     if (CatalogAccess.openAllForTesting) return true;
     // Trilha do motivo do onboarding é porta: nunca espera outra trilha.
     if (EntryTrails.intentOnly.contains(trail.slug)) return true;
+    // Passe de trilha: quem liberou deu a trilha inteira, sem fila.
+    if (PlusAccess.giftedTrails.contains(trail.slug)) return true;
     if (_alreadyWalked(
       trail,
       completed,

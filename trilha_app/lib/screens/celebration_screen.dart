@@ -7,6 +7,7 @@ import '../data/entry_trails.dart';
 import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
+import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
@@ -37,6 +38,7 @@ import '../widgets/confetti_overlay.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/mascot_bubble.dart';
+import '../widgets/postcard.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/share_insight_card.dart';
@@ -65,6 +67,13 @@ class CelebrationScreen extends StatefulWidget {
   final bool failed;
   final String? todayInsight;
 
+  /// Título da cena, para o postal.
+  final String? sceneTitle;
+
+  /// Referência bíblica do postal (vazia = postal sem marca na Bíblia).
+  /// `null` = este fim não dá postal (prática, revisão).
+  final String? postcardRef;
+
   const CelebrationScreen({
     super.key,
     required this.missionSlug,
@@ -77,6 +86,8 @@ class CelebrationScreen extends StatefulWidget {
     this.perfect = false,
     this.failed = false,
     this.todayInsight,
+    this.sceneTitle,
+    this.postcardRef,
   });
 
   @override
@@ -97,6 +108,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _leaving = false;
   String? _medalLine;
   CharacterSeal? _newSeal;
+
+  /// Postal revelado por esta cena (1ª vez), mostrado depois da contagem.
+  Postcard? _newPostcard;
   CornerChallenge? _closedCorner;
   final _sealShareKey = GlobalKey();
   final _insightShareKey = GlobalKey();
@@ -316,12 +330,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       );
       if (!mounted) return;
       if (code != null && code.isNotEmpty) {
+        final invite = companions.companions
+            .where((c) => c.code == code)
+            .firstOrNull;
         await showInviteQrSheet(
           context,
           code: code,
           title: context.l10n.celebrationInviteTitle,
           subtitle: context.l10n.celebrationInviteSubtitle,
           inviterName: progress.userName,
+          trailGift: invite?.giftCode != null,
         );
       }
     }
@@ -349,6 +367,20 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       _awardedSteps = _noProgress
           ? (widget.steps * 0.35).round().clamp(5, widget.steps)
           : widget.steps;
+      final postcardRef = widget.postcardRef;
+      if (!widget.failed &&
+          !_noProgress &&
+          postcardRef != null &&
+          !progress.postcardsOn.containsKey(widget.missionSlug)) {
+        _newPostcard = Postcard(
+          slug: widget.missionSlug,
+          title: widget.sceneTitle ?? '',
+          ref: postcardRef,
+          insight: (widget.todayInsight ?? '').trim(),
+          art: TrailArt.ofScene(widget.trailSlug, widget.missionSlug),
+          on: DateTime.now(),
+        );
+      }
       if (widget.failed) {
         _hookResolved = true;
       } else {
@@ -378,6 +410,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ? progress.difficultyForTrail(widget.trailSlug) ??
                       TrailDifficulty.semente.id
                 : null,
+            postcardRef: _newPostcard == null ? null : widget.postcardRef,
           )
           .then((awarded) async {
             if (mounted && awarded > 0) {
@@ -602,9 +635,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
     }
 
-    if (pieces.isEmpty) return;
+    final postcard = _newPostcard;
+    if (pieces.isEmpty && postcard == null) return;
     // Deixa a celebração contar os passos antes de chamar a cena grande.
     await Future<void>.delayed(const Duration(milliseconds: 2600));
+    if (postcard != null && mounted) {
+      await showPostcardReveal(context, postcard);
+    }
     for (var i = 0; i < pieces.length; i++) {
       if (!mounted) return;
       if (await showSetPiece(context, pieces[i])) {

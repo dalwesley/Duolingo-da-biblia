@@ -21,6 +21,7 @@ import 'cinematic_icon.dart';
 import 'character_seals_strip.dart';
 import 'living_seed_card.dart';
 import 'juntos_chrome.dart';
+import 'postcard_album.dart';
 import 'relic_panel.dart';
 import 'streak_week.dart';
 import 'ui_primitives.dart';
@@ -146,23 +147,33 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
   }
 }
 
-/// Selos e medalhas no mesmo cofre: uma tampa dourada, duas gavetas.
+/// Selos e medalhas no mesmo cofre: uma tampa dourada, duas gavetas. No
+/// perfil próprio, uma terceira: os postais (privados, sem olho).
 class PilgrimChest extends StatefulWidget {
   final Widget seals;
   final Widget medals;
+  final Widget? postcards;
 
-  const PilgrimChest({super.key, required this.seals, required this.medals});
+  const PilgrimChest({
+    super.key,
+    required this.seals,
+    required this.medals,
+    this.postcards,
+  });
 
   @override
   State<PilgrimChest> createState() => _PilgrimChestState();
 }
 
 class _PilgrimChestState extends State<PilgrimChest> {
-  var _seals = false;
+  var _tab = 0;
 
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final postcards = widget.postcards;
+    final tab = postcards == null && _tab == 2 ? 0 : _tab;
+    final seals = tab == 1;
     return RelicPanel(
       accent: AppRoles.reward,
       glow: 0.7,
@@ -173,20 +184,24 @@ class _PilgrimChestState extends State<PilgrimChest> {
             title: l10n.pilgrimCollections,
             accent: AppRoles.reward,
             divided: false,
-            action: PrivacyEye(
-              sections: {
-                _seals
-                    ? CaravanProfileSection.trails
-                    : CaravanProfileSection.medals,
-              },
-              label: _seals ? l10n.pilgrimSealsAndTrails : l10n.medalVaultTitle,
-            ),
+            action: tab == 2
+                ? null
+                : PrivacyEye(
+                    sections: {
+                      seals
+                          ? CaravanProfileSection.trails
+                          : CaravanProfileSection.medals,
+                    },
+                    label: seals
+                        ? l10n.pilgrimSealsAndTrails
+                        : l10n.medalVaultTitle,
+                  ),
           ),
           const SizedBox(height: AppSpace.md),
           AppSegmentedTabs(
-            index: _seals ? 1 : 0,
+            index: tab,
             accent: AppRoles.reward,
-            onChanged: (i) => setState(() => _seals = i == 1),
+            onChanged: (i) => setState(() => _tab = i),
             items: [
               (
                 label: l10n.medalVaultTitle,
@@ -195,10 +210,21 @@ class _PilgrimChestState extends State<PilgrimChest> {
                 alert: false,
               ),
               (label: l10n.sealsTitle, glyph: null, mark: null, alert: false),
+              if (postcards != null)
+                (
+                  label: l10n.postcardsTitle,
+                  glyph: null,
+                  mark: null,
+                  alert: false,
+                ),
             ],
           ),
           const SizedBox(height: AppSpace.lg),
-          if (_seals) widget.seals else widget.medals,
+          switch (tab) {
+            1 => widget.seals,
+            2 => postcards!,
+            _ => widget.medals,
+          },
         ],
       ),
     );
@@ -275,7 +301,13 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       );
 
       if (showSeals && showMedals) {
-        add(PilgrimChest(seals: seals, medals: medals));
+        add(
+          PilgrimChest(
+            seals: seals,
+            medals: medals,
+            postcards: isOwner ? const PostcardAlbum() : null,
+          ),
+        );
       } else if (showSeals) {
         add(seals);
       } else if (showMedals) {
@@ -1101,9 +1133,7 @@ class _OpenTrailRow extends StatelessWidget {
                 style: AppTypography.label(
                   size: 11,
                   letterSpacing: 0.8,
-                  color: trail.isComplete
-                      ? AppRoles.reward
-                      : AppRoles.presence,
+                  color: trail.isComplete ? AppRoles.reward : AppRoles.presence,
                 ),
               ),
             ],

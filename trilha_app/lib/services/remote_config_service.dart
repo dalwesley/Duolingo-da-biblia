@@ -20,6 +20,7 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyGroupsEnabled = 'groups_enabled';
   static const _keyCompanionEnabled = 'companion_enabled';
   static const _keyChallengeEnabled = 'challenge_enabled';
+  static const _keyYearReviewFrom = 'year_review_from';
 
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
@@ -29,6 +30,7 @@ class RemoteConfigService extends ChangeNotifier {
     _keyGroupsEnabled: false,
     _keyCompanionEnabled: false,
     _keyChallengeEnabled: false,
+    _keyYearReviewFrom: '',
   };
 
   FirebaseRemoteConfig? _rc;
@@ -133,6 +135,17 @@ class RemoteConfigService extends ChangeNotifier {
   /// Último dia (YYYY-MM-DD, inclusive) de venda do Pioneiro. Vazio ou
   /// inválido: sem prazo, vale só o teto de vagas.
   DateTime? get pioneerUntil => _date(_keyPioneerUntil);
+
+  /// Primeiro dia (YYYY-MM-DD) em que a retrospectiva do ano abre. Vazio ou
+  /// inválido: fechada.
+  DateTime? get yearReviewFrom => _date(_keyYearReviewFrom);
+
+  bool get yearReviewOpen {
+    final from = yearReviewFrom;
+    if (from == null) return false;
+    final now = DateTime.now();
+    return !DateTime(now.year, now.month, now.day).isBefore(from);
+  }
 
   DateTime? _date(String key) {
     final raw = _string(key).trim();

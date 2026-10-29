@@ -35,6 +35,9 @@ Future<void> showInviteQrSheet(
   String? shareMessage,
   String? inviterName,
   bool companionMode = true,
+
+  /// O convite leva o passe de trilha do mês (quem chama tem o Plus).
+  bool trailGift = false,
 }) {
   return showAppSheet<void>(
     context,
@@ -45,6 +48,7 @@ Future<void> showInviteQrSheet(
       shareMessage: shareMessage,
       inviterName: inviterName,
       companionMode: companionMode,
+      trailGift: trailGift,
     ),
   );
 }
@@ -56,6 +60,7 @@ class _InviteQrSheet extends StatefulWidget {
   final String? shareMessage;
   final String? inviterName;
   final bool companionMode;
+  final bool trailGift;
 
   const _InviteQrSheet({
     required this.code,
@@ -64,6 +69,7 @@ class _InviteQrSheet extends StatefulWidget {
     this.shareMessage,
     this.inviterName,
     required this.companionMode,
+    this.trailGift = false,
   });
 
   @override
@@ -90,9 +96,12 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
       return widget.shareMessage ??
           context.l10n.inviteRoomShareText(widget.code, _installUrl);
     }
-    return context.l10n
+    final text = context.l10n
         .inviteCompanionShareText(_name, _inviteLink, _installUrl)
         .trim();
+    return widget.trailGift
+        ? '$text\n\n${context.l10n.inviteTrailGiftShareLine}'
+        : text;
   }
 
   @override
@@ -225,6 +234,32 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                         : context.l10n.inviteSheetSubtitleRoom),
                 center: true,
               ),
+              if (widget.trailGift) ...[
+                const SizedBox(height: 10),
+                InsetPanel(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10,
+                  ),
+                  child: Row(
+                    children: [
+                      CinematicIcon(
+                        glyph: CinematicGlyph.gift,
+                        size: AppMetrics.iconSm,
+                        accent: AppRoles.reward,
+                        framed: false,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          context.l10n.inviteTrailGiftLine,
+                          style: AppTypography.body(size: 13, color: a.text),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               const SizedBox(height: 14),
               if (widget.companionMode)
                 Row(

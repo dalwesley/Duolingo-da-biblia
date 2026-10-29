@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 
 /// Deep links: `stway://companhia/CODIGO` · `stway://sala/CODIGO` · `stway://juntos`
 /// · `stway://redeem_web_purchase?…` (Peregrino+ comprado no site)
+/// · `stway://passe/CODIGO` (passe de trilha do Peregrino+)
 /// Link https do grupo (câmera / WhatsApp): [roomHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
@@ -18,18 +19,23 @@ class InviteDeepLinkService extends ChangeNotifier {
   /// Link de resgate que o RevenueCat manda depois da compra no site.
   static const webPurchaseHost = 'redeem_web_purchase';
 
+  /// Passe de trilha: alguém com o Peregrino+ liberou uma trilha.
+  static const trailGiftHost = 'passe';
+
   final _appLinks = AppLinks();
   StreamSubscription<Uri>? _sub;
 
   String? _pendingCompanionCode;
   String? _pendingRoomCode;
   String? _pendingWebPurchaseLink;
+  String? _pendingTrailGiftCode;
   bool _wantJuntosTab = false;
   bool _wantCompanhiaTab = false;
   bool _wantGruposTab = false;
 
   String? get pendingCompanionCode => _pendingCompanionCode;
   String? get pendingRoomCode => _pendingRoomCode;
+  String? get pendingTrailGiftCode => _pendingTrailGiftCode;
 
   /// Link tocável no WhatsApp / QR — convite.
   static String companionUri(String code) =>
@@ -40,8 +46,7 @@ class InviteDeepLinkService extends ChangeNotifier {
 
   /// Link https clicável no WhatsApp — redireciona para [juntosUri].
   /// Hosting: `admin/public/abrir/juntos/` → Firebase Hosting.
-  static const juntosHttpsUrl =
-      'https://trilha-biblia.web.app/abrir/juntos/';
+  static const juntosHttpsUrl = 'https://trilha-biblia.web.app/abrir/juntos/';
 
   /// Página que a câmera abre e redireciona para [roomUri].
   /// Hosting: `site/abrir/sala/` → stway-app.web.app.
@@ -53,12 +58,63 @@ class InviteDeepLinkService extends ChangeNotifier {
   static String roomHttpsUrl(String code) =>
       '$roomHttpsBase?c=${Uri.encodeQueryComponent(code.trim().toUpperCase())}';
 
+  /// Página do passe (WhatsApp): abre [trailGiftUri] ou leva à loja.
+  /// Hosting: `site/abrir/passe/` → stway-app.web.app.
+  static const trailGiftHttpsBase = 'https://stway-app.web.app/abrir/passe';
+
+  static String trailGiftUri(String code) =>
+      '$scheme://$trailGiftHost/${code.trim().toUpperCase()}';
+
+  static String trailGiftHttpsUrl(String code) =>
+      '$trailGiftHttpsBase?c=${Uri.encodeQueryComponent(code.trim().toUpperCase())}';
+
+  /// Código do passe num texto colado: o link dentro da mensagem do
+  /// WhatsApp, ou só as 8 letras. Palavra solta não vira código.
+  static String? findTrailGiftCode(String? raw) {
+    if (raw == null) return null;
+    for (final token in raw.split(RegExp(r'\s+'))) {
+      final code = extractTrailGiftCode(token);
+      if (code != null) return code;
+    }
+    final plain = raw.trim().toUpperCase();
+    // Só o alfabeto do passe (sem 0/O/1/I): "OBRIGADO" não é código.
+    return RegExp(r'^[A-HJ-NP-Z2-9]{8}$').hasMatch(plain) ? plain : null;
+  }
+
+  /// Código do passe em `stway://passe/CODIGO` ou `https://…/abrir/passe?c=`.
+  static String? extractTrailGiftCode(String? raw) {
+    if (raw == null || raw.trim().isEmpty) return null;
+    final uri = Uri.tryParse(raw.trim());
+    if (uri == null) return null;
+    final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+    final query = uri.queryParameters['c'] ?? uri.queryParameters['code'];
+    if (uri.scheme == scheme) {
+      if (uri.host.toLowerCase() == trailGiftHost) {
+        return segs.isNotEmpty
+            ? _normalizeCode(segs.first)
+            : _normalizeCode(query);
+      }
+      if (segs.length >= 2 && segs.first.toLowerCase() == trailGiftHost) {
+        return _normalizeCode(segs[1]);
+      }
+      return null;
+    }
+    if (uri.scheme == 'https' || uri.scheme == 'http') {
+      final i = segs.indexWhere((s) => s.toLowerCase() == trailGiftHost);
+      if (i < 0) return null;
+      if (query != null && query.isNotEmpty) return _normalizeCode(query);
+      if (i + 1 < segs.length) return _normalizeCode(segs[i + 1]);
+    }
+    return null;
+  }
+
   /// Bloco padrão pro fim das mensagens de Animar.
   static String openAppFooter() {
     return '''
 Abre o Stway:
 $juntosHttpsUrl
-'''.trim();
+'''
+        .trim();
   }
 
   /// Extrai código de URI ou texto solto.
@@ -97,7 +153,9 @@ $juntosHttpsUrl
       final host = uri.host.toLowerCase();
       if (host == roomHost || host == 'grupo' || host == 'room') {
         return _firstPathCode(uri) ??
-            _normalizeCode(uri.queryParameters['c'] ?? uri.queryParameters['code']);
+            _normalizeCode(
+              uri.queryParameters['c'] ?? uri.queryParameters['code'],
+            );
       }
       final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
       if (segs.length >= 2 &&
@@ -114,7 +172,8 @@ $juntosHttpsUrl
       if (salaIndex < 0) return null;
       final query = uri.queryParameters['c'] ?? uri.queryParameters['code'];
       if (query != null && query.isNotEmpty) return _normalizeCode(query);
-      if (salaIndex + 1 < segs.length) return _normalizeCode(segs[salaIndex + 1]);
+      if (salaIndex + 1 < segs.length)
+        return _normalizeCode(segs[salaIndex + 1]);
     }
     return null;
   }
@@ -127,8 +186,10 @@ $juntosHttpsUrl
 
   static String? _normalizeCode(String? raw) {
     if (raw == null) return null;
-    final match = RegExp(r'[A-Z0-9]{4,8}', caseSensitive: false)
-        .firstMatch(raw.toUpperCase());
+    final match = RegExp(
+      r'[A-Z0-9]{4,8}',
+      caseSensitive: false,
+    ).firstMatch(raw.toUpperCase());
     return match?.group(0);
   }
 
@@ -151,6 +212,14 @@ $juntosHttpsUrl
       notifyListeners();
       return;
     }
+    // Antes do convite de companhia: sem isto `stway://passe/X` virava
+    // código de companhia ("STWAY").
+    final giftCode = extractTrailGiftCode(uri.toString());
+    if (giftCode != null) {
+      _pendingTrailGiftCode = giftCode;
+      notifyListeners();
+      return;
+    }
     final roomCode = extractRoomCode(uri.toString());
     if (roomCode != null) {
       offerRoomCode(roomCode);
@@ -159,10 +228,10 @@ $juntosHttpsUrl
     if (uri.scheme != scheme) return;
     final host = uri.host.toLowerCase();
     // stway://juntos  ou  stway:///juntos
-    final pathSegs =
-        uri.pathSegments.where((s) => s.isNotEmpty).toList(growable: false);
-    final pathFirst =
-        pathSegs.isEmpty ? null : pathSegs.first.toLowerCase();
+    final pathSegs = uri.pathSegments
+        .where((s) => s.isNotEmpty)
+        .toList(growable: false);
+    final pathFirst = pathSegs.isEmpty ? null : pathSegs.first.toLowerCase();
     if (host == juntosHost || pathFirst == juntosHost) {
       _wantJuntosTab = true;
       _wantCompanhiaTab = true;
@@ -230,6 +299,13 @@ $juntosHttpsUrl
     final link = _pendingWebPurchaseLink;
     _pendingWebPurchaseLink = null;
     return link;
+  }
+
+  /// MainShell consome o passe de trilha pendente (uma vez).
+  String? takePendingTrailGiftCode() {
+    final code = _pendingTrailGiftCode;
+    _pendingTrailGiftCode = null;
+    return code;
   }
 
   /// LeagueScreen consome o código pendente (uma vez).

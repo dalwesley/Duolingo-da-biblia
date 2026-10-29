@@ -1,0 +1,235 @@
+{
+  "postcardEyebrow": {
+    "pt": "Novo postal",
+    "en": "New postcard",
+    "es": "Nueva postal",
+    "description": "Rótulo acima do título da cena na revelação do postal (docs/postais.md)"
+  },
+  "postcardReveal": {
+    "pt": "Revelar o postal",
+    "en": "Reveal the postcard",
+    "es": "Revelar la postal",
+    "description": "Botão que revela a pintura da cena no fim da cena"
+  },
+  "postcardTapHint": {
+    "pt": "Toque no postal para revelar",
+    "en": "Tap the postcard to reveal it",
+    "es": "Toca la postal para revelarla",
+    "description": "Dica sob o postal ainda velado"
+  },
+  "postcardsTitle": {
+    "pt": "Postais",
+    "en": "Postcards",
+    "es": "Postales",
+    "description": "Aba do Cofre com o álbum de postais (docs/postais.md)"
+  },
+  "postcardRedo": {
+    "pt": "Refazer a cena",
+    "en": "Replay the scene",
+    "es": "Repetir la escena",
+    "description": "Botão no postal aberto pelo álbum"
+  },
+  "postcardsEmptyTitle": {
+    "pt": "Seus postais ficam aqui",
+    "en": "Your postcards live here",
+    "es": "Tus postales viven aquí",
+    "description": "Álbum vazio"
+  },
+  "postcardsEmptyBody": {
+    "pt": "Conclua uma cena para revelar o primeiro.",
+    "en": "Finish a scene to reveal your first one.",
+    "es": "Completa una escena para revelar la primera.",
+    "description": "Álbum vazio, texto"
+  },
+  "postcardsCount": {
+    "pt": "{done} de {total}",
+    "en": "{done} of {total}",
+    "es": "{done} de {total}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    },
+    "description": "Postais revelados na trilha"
+  },
+  "postcardYouWereHere": {
+    "pt": "Você esteve aqui",
+    "en": "You were here",
+    "es": "Estuviste aquí",
+    "description": "Rótulo do postal aberto pelo selinho no versículo da Bíblia"
+  },
+  "postcardShareText": {
+    "pt": "{insight}\n{ref}\n\nUm postal da minha caminhada no Stway.",
+    "en": "{insight}\n{ref}\n\nA postcard from my walk on Stway.",
+    "es": "{insight}\n{ref}\n\nUna postal de mi camino en Stway.",
+    "placeholders": {
+      "insight": "String",
+      "ref": "String"
+    },
+    "description": "Texto que acompanha a imagem do postal compartilhado"
+  },
+  "paywallPerkPostcardsTitle": {
+    "pt": "Postal animado",
+    "en": "Animated postcard",
+    "es": "Postal animada",
+    "description": "Benefício Plus: vídeo do postal"
+  },
+  "paywallPerkPostcardsBody": {
+    "pt": "Compartilhe a revelação do postal em vídeo, pronta para o status e os stories.",
+    "en": "Share your postcard reveal as a video, ready for status and stories.",
+    "es": "Comparte la revelación de tu postal en video, lista para estados e historias.",
+    "description": "Benefício Plus, texto"
+  },
+  "yearReviewEyebrow": {
+    "pt": "Retrospectiva",
+    "en": "Year in review",
+    "es": "Resumen del año",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewTitle": {
+    "pt": "Sua caminhada em {year}",
+    "en": "Your walk in {year}",
+    "es": "Tu camino en {year}",
+    "placeholders": {
+      "year": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPostcards": {
+    "pt": "{count, plural, =1{1 postal} other{{count} postais}}",
+    "en": "{count, plural, =1{1 postcard} other{{count} postcards}}",
+    "es": "{count, plural, =1{1 postal} other{{count} postales}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDays": {
+    "pt": "em {count, plural, =1{1 dia} other{{count} dias}} de caminhada",
+    "en": "across {count, plural, =1{1 day} other{{count} days}} of walking",
+    "es": "en {count, plural, =1{1 día} other{{count} días}} de camino",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewFirstLast": {
+    "pt": "Do primeiro, {first}, ao mais recente, {last}.",
+    "en": "From the first, {first}, to the latest, {last}.",
+    "es": "Desde la primera, {first}, hasta la más reciente, {last}.",
+    "placeholders": {
+      "first": "String",
+      "last": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewBookEyebrow": {
+    "pt": "O livro onde você mais esteve",
+    "en": "The book you visited most",
+    "es": "El libro donde más estuviste",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeEyebrow": {
+    "pt": "Onde você mais acerta",
+    "en": "Where you get it right most",
+    "es": "Donde más aciertas",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeLine": {
+    "pt": "{pct}% de acerto de primeira",
+    "en": "{pct}% right on the first try",
+    "es": "{pct}% de acierto a la primera",
+    "placeholders": {
+      "pct": "int"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewEndBody": {
+    "pt": "Cada postal é um passo seu com Deus. Que venha {next}!",
+    "en": "Every postcard is a step you took with God. Here's to {next}!",
+    "es": "Cada postal es un paso tuyo con Dios. ¡Que venga {next}!",
+    "placeholders": {
+      "next": "String"
+    },
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewLocked": {
+    "pt": "O resto da sua retrospectiva está no Peregrino+",
+    "en": "The rest of your year in review is in Peregrino+",
+    "es": "El resto de tu resumen del año está en Peregrino+",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewOpen": {
+    "pt": "Ver a retrospectiva",
+    "en": "See your year in review",
+    "es": "Ver el resumen del año",
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "postcardShareChip": {
+    "pt": "Postal {index} de {total} · {trail}",
+    "en": "Postcard {index} of {total} · {trail}",
+    "es": "Postal {index} de {total} · {trail}",
+    "placeholders": {
+      "index": "int",
+      "total": "int",
+      "trail": "String"
+    },
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareTagline": {
+    "pt": "Um postal da minha caminhada",
+    "en": "A postcard from my walk",
+    "es": "Una postal de mi camino",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareTo": {
+    "pt": "Para: você",
+    "en": "To: you",
+    "es": "Para: ti",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareFrom": {
+    "pt": "De: {name}",
+    "en": "From: {name}",
+    "es": "De: {name}",
+    "placeholders": {
+      "name": "String"
+    },
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareSheetTitle": {
+    "pt": "Como quer enviar o postal?",
+    "en": "How do you want to send it?",
+    "es": "¿Cómo quieres enviar la postal?",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideo": {
+    "pt": "Postal animado",
+    "en": "Animated postcard",
+    "es": "Postal animada",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideoPlus": {
+    "pt": "Peregrino+",
+    "en": "Peregrino+",
+    "es": "Peregrino+",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareImage": {
+    "pt": "Imagem",
+    "en": "Image",
+    "es": "Imagen",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareRendering": {
+    "pt": "Preparando o vídeo…",
+    "en": "Preparing the video…",
+    "es": "Preparando el video…",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideoFailed": {
+    "pt": "Não deu para gerar o vídeo. Enviei a imagem.",
+    "en": "Couldn't make the video. Sent the image instead.",
+    "es": "No se pudo crear el video. Envié la imagen.",
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  }
+}

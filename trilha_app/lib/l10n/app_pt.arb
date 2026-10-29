@@ -2230,6 +2230,8 @@
   "inviteSheetSubtitleCompanion": "Toque no link, mostre o QR ou envie o card",
   "inviteSheetSubtitleRoom": "Mostre o QR ou envie o código",
   "inviteSomeone": "Alguém",
+  "inviteTrailGiftLine": "Quem aceitar ganha uma trilha do Peregrino+ à escolha. É o seu passe deste mês.",
+  "inviteTrailGiftShareLine": "🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.",
   "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
   "journalTitle": "Anotações de estudo",
   "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
@@ -4284,8 +4286,18 @@
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
   "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
+  "paywallPerkGiftBody": "Sua assinatura libera alguém: escolha uma trilha do Peregrino+ e compartilhe com quem você quiser.",
+  "paywallPerkGiftTitle": "Libere uma trilha por mês",
   "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
   "paywallPerkPlansTitle": "Planos de leitura",
+  "paywallPerkPostcardsBody": "Compartilhe a revelação do postal em vídeo, pronta para o status e os stories.",
+  "@paywallPerkPostcardsBody": {
+    "description": "Benefício Plus, texto"
+  },
+  "paywallPerkPostcardsTitle": "Postal animado",
+  "@paywallPerkPostcardsTitle": {
+    "description": "Benefício Plus: vídeo do postal"
+  },
   "paywallPerkRecognitionBody": "Veja quem reconheceu a sua jornada e as suas medalhas.",
   "paywallPerkRecognitionTitle": "Reconhecimento",
   "paywallPerkReinforceBody": "Você vê onde tropeça. Depois, um treino só daquilo.",
@@ -4871,6 +4883,118 @@
   "portraitPhoto": "Foto",
   "portraitPhotoHint": "A foto da sua conta",
   "portraitTitle": "Como você aparece no perfil",
+  "postcardEyebrow": "Novo postal",
+  "@postcardEyebrow": {
+    "description": "Rótulo acima do título da cena na revelação do postal (docs/postais.md)"
+  },
+  "postcardRedo": "Refazer a cena",
+  "@postcardRedo": {
+    "description": "Botão no postal aberto pelo álbum"
+  },
+  "postcardReveal": "Revelar o postal",
+  "@postcardReveal": {
+    "description": "Botão que revela a pintura da cena no fim da cena"
+  },
+  "postcardShareChip": "Postal {index} de {total} · {trail}",
+  "@postcardShareChip": {
+    "description": "Card de compartilhar do postal (docs/postais.md)",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "postcardShareFrom": "De: {name}",
+  "@postcardShareFrom": {
+    "description": "Card de compartilhar do postal (docs/postais.md)",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "postcardShareImage": "Imagem",
+  "@postcardShareImage": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareRendering": "Preparando o vídeo…",
+  "@postcardShareRendering": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareSheetTitle": "Como quer enviar o postal?",
+  "@postcardShareSheetTitle": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareTagline": "Um postal da minha caminhada",
+  "@postcardShareTagline": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareText": "{insight}\n{ref}\n\nUm postal da minha caminhada no Stway.",
+  "@postcardShareText": {
+    "description": "Texto que acompanha a imagem do postal compartilhado",
+    "placeholders": {
+      "insight": {
+        "type": "String"
+      },
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "postcardShareTo": "Para: você",
+  "@postcardShareTo": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideo": "Postal animado",
+  "@postcardShareVideo": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideoFailed": "Não deu para gerar o vídeo. Enviei a imagem.",
+  "@postcardShareVideoFailed": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardShareVideoPlus": "Peregrino+",
+  "@postcardShareVideoPlus": {
+    "description": "Card de compartilhar do postal (docs/postais.md)"
+  },
+  "postcardTapHint": "Toque no postal para revelar",
+  "@postcardTapHint": {
+    "description": "Dica sob o postal ainda velado"
+  },
+  "postcardYouWereHere": "Você esteve aqui",
+  "@postcardYouWereHere": {
+    "description": "Rótulo do postal aberto pelo selinho no versículo da Bíblia"
+  },
+  "postcardsCount": "{done} de {total}",
+  "@postcardsCount": {
+    "description": "Postais revelados na trilha",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "postcardsEmptyBody": "Conclua uma cena para revelar o primeiro.",
+  "@postcardsEmptyBody": {
+    "description": "Álbum vazio, texto"
+  },
+  "postcardsEmptyTitle": "Seus postais ficam aqui",
+  "@postcardsEmptyTitle": {
+    "description": "Álbum vazio"
+  },
+  "postcardsTitle": "Postais",
+  "@postcardsTitle": {
+    "description": "Aba do Cofre com o álbum de postais (docs/postais.md)"
+  },
   "practiceEmptyBody": "Continue as cenas. Quando errar, a pergunta volta aqui.",
   "practiceEmptyTitle": "Nenhum erro guardado ainda",
   "practiceIntro": "Volte às perguntas em que você errou. Cada acerto limpa a pergunta da fila.",
@@ -6103,6 +6227,69 @@
       }
     }
   },
+  "trailGiftCardBody": "Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.",
+  "trailGiftCardTitle": "Libere esta trilha para alguém",
+  "trailGiftCodeSubtitle": "Cole a mensagem com o link do passe ou digite o código de 8 letras.",
+  "trailGiftEyebrow": "Passe de trilha",
+  "trailGiftFailed": "Não foi possível abrir o passe. Tente de novo.",
+  "trailGiftInvalid": "Este passe não existe. Confira o link.",
+  "trailGiftNeedsAccount": "Entre na sua conta para receber o passe. Depois abra o link de novo.",
+  "trailGiftNotNeeded": "Você já tem esta trilha. O passe fica para outra pessoa.",
+  "trailGiftOwn": "Este passe é seu. Compartilhe com alguém.",
+  "trailGiftPickSubtitle": "Escolha qual trilha do Peregrino+ é sua. Ela fica aberta inteira, sem prazo.",
+  "trailGiftPickTitle": "{name} te deu uma trilha",
+  "@trailGiftPickTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftReceivedBody": "{name} liberou esta trilha para você. Ela é sua, inteira e sem prazo.",
+  "@trailGiftReceivedBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftSendFailed": "Não foi possível criar o passe. Tente de novo.",
+  "trailGiftShareCta": "Compartilhar o passe",
+  "trailGiftShareSubject": "Uma trilha do Stway para você",
+  "trailGiftShareText": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}",
+  "@trailGiftShareText": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftSheetBody": "Quem receber caminha nesta trilha inteira, sem pagar e sem prazo. Você tem 1 passe por mês.",
+  "trailGiftSheetSwap": "Seu passe deste mês está guardado para {trail} e ninguém o recebeu ainda. Compartilhar esta trilha no lugar?",
+  "@trailGiftSheetSwap": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftSheetSwapOpen": "Seu passe deste mês está no seu convite de companhia e ninguém aceitou ainda. Compartilhar esta trilha no lugar?",
+  "trailGiftSheetUsed": "Neste mês você liberou {trail} para {name}. Um novo passe chega no dia 1º.",
+  "@trailGiftSheetUsed": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "trailGiftSomeone": "Alguém",
+  "trailGiftTaken": "Outra pessoa já recebeu este passe.",
   "trailMapCrossing": "Travessia",
   "@trailMapCrossing": {
     "description": "Boss/review scene at the end of a stage"
@@ -6645,5 +6832,82 @@
     }
   },
   "widgetTrailWaitsTomorrow": "A trilha espera amanhã",
-  "widgetWeekdayInitials": "S,T,Q,Q,S,S,D"
+  "widgetWeekdayInitials": "S,T,Q,Q,S,S,D",
+  "yearReviewBookEyebrow": "O livro onde você mais esteve",
+  "@yearReviewBookEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewDays": "em {count, plural, =1{1 dia} other{{count} dias}} de caminhada",
+  "@yearReviewDays": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewEndBody": "Cada postal é um passo seu com Deus. Que venha {next}!",
+  "@yearReviewEndBody": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "next": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewEyebrow": "Retrospectiva",
+  "@yearReviewEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewFirstLast": "Do primeiro, {first}, ao mais recente, {last}.",
+  "@yearReviewFirstLast": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "yearReviewLocked": "O resto da sua retrospectiva está no Peregrino+",
+  "@yearReviewLocked": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeEyebrow": "Onde você mais acerta",
+  "@yearReviewModeEyebrow": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewModeLine": "{pct}% de acerto de primeira",
+  "@yearReviewModeLine": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewOpen": "Ver a retrospectiva",
+  "@yearReviewOpen": {
+    "description": "Retrospectiva do ano (docs/postais.md)"
+  },
+  "yearReviewPostcards": "{count, plural, =1{1 postal} other{{count} postais}}",
+  "@yearReviewPostcards": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yearReviewTitle": "Sua caminhada em {year}",
+  "@yearReviewTitle": {
+    "description": "Retrospectiva do ano (docs/postais.md)",
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  }
 }

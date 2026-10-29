@@ -42,6 +42,10 @@ class WalkCompanion {
   /// Dias (`YYYY-MM-DD`) em que o parceiro caminhou nesta semana.
   final List<String> theirWalkDates;
 
+  /// Passe de trilha aberto que vai com o convite (quem chamou tem o
+  /// Peregrino+): quem aceitar escolhe uma trilha do Plus.
+  final String? giftCode;
+
   static const milestones = [3, 7, 14, 30, 60, 100];
 
   /// Os dois ganham na jornada só se a dupla fechar os 7 dias (seg–dom).
@@ -68,6 +72,7 @@ class WalkCompanion {
     this.partnerUid,
     this.myWalkDates = const [],
     this.theirWalkDates = const [],
+    this.giftCode,
   });
 
   /// Ambos caminharam hoje — a companhia está viva.

@@ -140,4 +140,30 @@ void main() {
     expect(PlusAccess.waitsOnPlus(exodus, genesis), isFalse);
     expect(PlusAccess.waitsOnPlus(fasting, null), isFalse);
   });
+
+  test('passe de trilha abre a trilha do Plus só para quem recebeu', () {
+    Trail make(String slug) => Trail(
+      slug: slug,
+      title: slug,
+      description: '',
+      icon: '',
+      order: 1,
+      comingSoon: false,
+      color: '#000000',
+      realmId: 'vida-crista',
+      categoryId: 'oracao',
+      modules: const [],
+    );
+    final prayer = make('oracao');
+    final fasting = make('jejum');
+    addTearDown(() => PlusAccess.giftedTrails = const {});
+
+    PlusAccess.giftedTrails = {'oracao'};
+    expect(PlusAccess.trailInPlus(prayer), isTrue);
+    expect(PlusAccess.trailIsPlus(prayer), isFalse);
+    expect(PlusAccess.missionNeedsPlus(prayer, 'qualquer'), isFalse);
+    expect(PlusAccess.trailIsPlus(fasting), isTrue);
+    // Jejum espera Oração, que agora termina sem o Plus.
+    expect(PlusAccess.waitsOnPlus(fasting, prayer), isFalse);
+  });
 }

@@ -17,6 +17,12 @@ class ContentCatalogService {
   static final ContentCatalogService instance = ContentCatalogService._();
 
   static const _prefsVersionKey = 'content_catalog_version';
+
+  /// Formato do cache em disco. Suba quando o cache passar a guardar campos
+  /// novos: aparelho com formato antigo baixa o catálogo de novo, mesmo sem
+  /// versão nova no servidor. 2 = cenas com frase "Hoje" e entrada.
+  static const _cacheFormat = 2;
+  static const _prefsFormatKey = 'content_catalog_cache_format';
   static const _fileTrails = 'content_trails.json';
   static const _fileBank = 'content_bank.json';
   static const _fileStudies = 'content_studies.json';
@@ -46,11 +52,17 @@ class ContentCatalogService {
   Map<String, String>? get versesCache => _verses;
 
   bool get _hasTrails => _trails != null && _trails!.isNotEmpty;
+
   /// Shell = trilhas + dificuldades. Banco de atos é sob demanda por trilha.
   bool get _catalogShellReady =>
       _hasTrails && (_difficulties?.isNotEmpty ?? false);
 
+  /// Sobe a cada lista de trilhas nova (disco ou rede): telas que guardam
+  /// a lista (álbum de postais) pedem de novo.
+  final trailsRevision = ValueNotifier<int>(0);
+
   void _signalTrails() {
+    trailsRevision.value++;
     final gate = _trailsReady;
     if (gate != null && !gate.isCompleted) gate.complete();
   }
@@ -174,10 +186,7 @@ class ContentCatalogService {
     );
     if (!_hasTrails) {
       // Gate pode ter sido sinalizado vazio (cache miss) — espera o refresh acabar.
-      await refresh.timeout(
-        const Duration(seconds: 25),
-        onTimeout: () {},
-      );
+      await refresh.timeout(const Duration(seconds: 25), onTimeout: () {});
     }
     return List.unmodifiable(_trails ?? const []);
   }
@@ -283,6 +292,7 @@ class ContentCatalogService {
     try {
       final prefs = await SharedPreferences.getInstance();
       _version = prefs.getInt(_prefsVersionKey);
+      if (prefs.getInt(_prefsFormatKey) != _cacheFormat) _version = null;
 
       // Migração one-shot: prefs antigos → disco (evita SharedPreferences >1–2MB).
       await _migrateLegacyPrefs(prefs);
@@ -290,10 +300,11 @@ class ContentCatalogService {
       final trailsRaw = await _readCacheFile(_fileTrails);
       if (trailsRaw != null && trailsRaw.isNotEmpty) {
         final list = await _decodeJson(trailsRaw) as List;
-        _trails = list
-            .map((e) => Trail.fromJson(Map<String, dynamic>.from(e as Map)))
-            .toList()
-          ..sort((a, b) => a.order.compareTo(b.order));
+        _trails =
+            list
+                .map((e) => Trail.fromJson(Map<String, dynamic>.from(e as Map)))
+                .toList()
+              ..sort((a, b) => a.order.compareTo(b.order));
       }
       _signalTrails();
 
@@ -400,8 +411,7 @@ class ContentCatalogService {
           data['realm'] ??= data['realmId'];
           data['category'] ??= data['categoryId'];
           return Trail.fromJson(data);
-        }).toList()
-          ..sort((a, b) => a.order.compareTo(b.order));
+        }).toList()..sort((a, b) => a.order.compareTo(b.order));
         _trails = list;
         debugPrint('ContentCatalog: trails ${list.length}');
       }
@@ -496,6 +506,9 @@ class ContentCatalogService {
       final prefs = await SharedPreferences.getInstance();
       if (_version != null) await prefs.setInt(_prefsVersionKey, _version!);
       if (_trails != null && !bankOnly) {
+        await prefs.setInt(_prefsFormatKey, _cacheFormat);
+      }
+      if (_trails != null && !bankOnly) {
         final encoded = await _encodeJson(
           _trails!
               .map(
@@ -525,6 +538,18 @@ class ContentCatalogService {
                                   'intro': ms.intro,
                                   'type': ms.type,
                                   'xpReward': ms.stepsReward,
+                                  // Sem estes, o app aberto pelo cache
+                                  // perdia a frase "Hoje" e o versículo de
+                                  // entrada até o refresh chegar.
+                                  'objective': ms.objective,
+                                  'centralInsight': ms.centralInsight,
+                                  'hookRef': ms.hookRef,
+                                  'hookVerse': ms.hookVerse,
+                                  'hookNote': ms.hookNote,
+                                  'hookThread': ms.hookThread,
+                                  'echoQuestion': ms.echoQuestion,
+                                  'bankSection': ms.bankSection,
+                                  'bankTrailSlug': ms.bankTrailSlug,
                                   'questions': ms.questions
                                       .map(
                                         (q) => {

@@ -11,6 +11,7 @@ import '../firebase_options.dart';
 import '../l10n/l10n_global.dart';
 import '../models/recognition.dart';
 import '../models/study_room.dart';
+import '../models/trail_gift.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
 import '../utils/plus_access.dart';
@@ -874,6 +875,9 @@ class BackendService extends ChangeNotifier {
     'answerCorrect',
     'answerTotal',
     'missionCompletedOn',
+    'postcardsOn',
+    'postcardRefs',
+    'giftedTrails',
     'borrowedMissions',
     'weeklyReviewsDone',
     'memoryScores',
@@ -1811,6 +1815,174 @@ class BackendService extends ChangeNotifier {
     return UserBackupResult.found({...?public.data, ...private});
   }
 
+  // ---- Passe de trilha (Peregrino+) -------------------------------------
+  // Regras em firestore.rules (trailGifts, giftMonths): só quem tem o Plus
+  // no doc público cria; um passe por mês (UTC); um resgate por passe.
+
+  /// O passe deste mês de quem está logado (dado ou ainda guardado).
+  Future<TrailGift?> fetchMonthTrailGift() async {
+    if (!isActive) return null;
+    try {
+      final month = TrailGift.monthKey(DateTime.now());
+      final mark = await _db.doc('users/$_uid/giftMonths/$month').get();
+      final code = mark.data()?['code'];
+      if (code is! String) return null;
+      final gift = await _db.doc('trailGifts/$code').get();
+      return TrailGift.fromMap(code, gift.data());
+    } catch (e) {
+      debugPrint('trailGift fetch: $e');
+      return null;
+    }
+  }
+
+  /// Cria o passe do mês para [trailSlug]. Se o do mês ainda não foi
+  /// resgatado, troca a trilha dele. Devolve o passe do mês (resgatado ou
+  /// não) ou null na falha (rede, regra: sem Plus no doc público).
+  Future<TrailGift?> sendTrailGift({
+    required String trailSlug,
+    required String fromName,
+  }) async {
+    if (!isActive) return null;
+    final current = await fetchMonthTrailGift();
+    try {
+      if (current != null) {
+        if (current.redeemed || current.trailSlug == trailSlug) return current;
+        await _db.doc('trailGifts/${current.code}').update({
+          'trailSlug': trailSlug,
+        });
+        return current.withTrail(trailSlug);
+      }
+      final month = TrailGift.monthKey(DateTime.now());
+      final code = TrailGift.newCode();
+      final name = fromName.trim();
+      final gift = TrailGift(
+        code: code,
+        trailSlug: trailSlug,
+        fromUid: _uid!,
+        fromName: name.length > 40 ? name.substring(0, 40) : name,
+      );
+      final batch = _db.batch();
+      batch.set(_db.doc('trailGifts/$code'), {
+        'fromUid': gift.fromUid,
+        'fromName': gift.fromName,
+        'trailSlug': trailSlug,
+        'month': month,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+      batch.set(_db.doc('users/$_uid/giftMonths/$month'), {
+        'code': code,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+      await batch.commit();
+      return gift;
+    } catch (e) {
+      debugPrint('trailGift send: $e');
+      return null;
+    }
+  }
+
+  /// Resgata o passe [code] para quem está logado. A checagem de Plus e de
+  /// trilha já aberta fica com quem chama (o passe não deve ser gasto).
+  ///
+  /// Passe aberto (`trailSlug` vazio, o do convite de companhia): quem
+  /// recebe escolhe a trilha em [chosenTrail].
+  Future<({TrailGiftRedeem outcome, TrailGift? gift})> redeemTrailGift(
+    String code, {
+    required String toName,
+    String? chosenTrail,
+  }) async {
+    if (!isActive) return (outcome: TrailGiftRedeem.needsAccount, gift: null);
+    final uid = _uid!;
+    final ref = _db.doc('trailGifts/$code');
+    try {
+      return await _db.runTransaction((tx) async {
+        final snap = await tx.get(ref);
+        final gift = TrailGift.fromMap(code, snap.data());
+        if (gift == null) return (outcome: TrailGiftRedeem.invalid, gift: null);
+        if (gift.fromUid == uid) {
+          return (outcome: TrailGiftRedeem.own, gift: gift);
+        }
+        final toUid = snap.data()?['toUid'];
+        if (toUid is String) {
+          return (
+            outcome: toUid == uid
+                ? TrailGiftRedeem.done
+                : TrailGiftRedeem.taken,
+            gift: gift,
+          );
+        }
+        final open = gift.trailSlug.isEmpty;
+        if (open && (chosenTrail == null || chosenTrail.isEmpty)) {
+          return (outcome: TrailGiftRedeem.invalid, gift: gift);
+        }
+        final name = toName.trim();
+        tx.update(ref, {
+          'toUid': uid,
+          'toName': name.length > 40 ? name.substring(0, 40) : name,
+          'redeemedAt': FieldValue.serverTimestamp(),
+          if (open) 'trailSlug': chosenTrail,
+        });
+        return (
+          outcome: TrailGiftRedeem.done,
+          gift: open ? gift.withTrail(chosenTrail!) : gift,
+        );
+      });
+    } catch (e) {
+      debugPrint('trailGift redeem: $e');
+      return (outcome: TrailGiftRedeem.failed, gift: null);
+    }
+  }
+
+  /// Põe o passe do mês, aberto, no convite de companhia [companionCode].
+  /// Só quando o mês ainda não tem passe ou o dele já é aberto e ninguém
+  /// recebeu: um passe já guardado para uma trilha (talvez já enviado)
+  /// não é mexido. Devolve o código do passe ou null.
+  Future<String?> attachOpenTrailGift(
+    String companionCode, {
+    required String fromName,
+  }) async {
+    if (!isActive) return null;
+    final current = await fetchMonthTrailGift();
+    if (current != null && (current.redeemed || current.trailSlug.isNotEmpty)) {
+      return null;
+    }
+    final gift =
+        current ?? await sendTrailGift(trailSlug: '', fromName: fromName);
+    if (gift == null) return null;
+    try {
+      await _db.doc('companies/$companionCode').update({'giftCode': gift.code});
+      return gift.code;
+    } catch (e) {
+      debugPrint('trailGift attach: $e');
+      return null;
+    }
+  }
+
+  /// Passe que veio no convite de companhia [companionCode], se veio.
+  Future<String?> companionGiftCode(String companionCode) async {
+    if (!isActive) return null;
+    try {
+      final snap = await _db.doc('companies/$companionCode').get();
+      final code = snap.data()?['giftCode'];
+      return code is String && code.isNotEmpty ? code : null;
+    } catch (e) {
+      debugPrint('trailGift companion: $e');
+      return null;
+    }
+  }
+
+  /// Só lê o passe (para conferir a trilha antes de gastar o resgate).
+  Future<TrailGift?> fetchTrailGift(String code) async {
+    if (!isActive) return null;
+    try {
+      final snap = await _db.doc('trailGifts/$code').get();
+      return TrailGift.fromMap(code, snap.data());
+    } catch (e) {
+      debugPrint('trailGift get: $e');
+      return null;
+    }
+  }
+
   /// Outro peregrino tem o Peregrino+? Lê o doc público (webhook). Falha
   /// de rede conta como não: a cena cai no paywall, não abre de graça.
   Future<bool> pilgrimHasPlus(String uid) async {
@@ -2002,6 +2174,7 @@ class BackendService extends ChangeNotifier {
           : _weekDateList(
               isHost ? data['guestWalkDates'] : data['hostWalkDates'],
             ),
+      giftCode: data['giftCode'] is String ? data['giftCode'] as String : null,
     );
   }
 

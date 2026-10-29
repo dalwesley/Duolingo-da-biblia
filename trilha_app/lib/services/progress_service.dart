@@ -16,6 +16,7 @@ import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
 import '../utils/content_filter.dart';
+import '../utils/plus_access.dart';
 import '../utils/season_walk_debug.dart';
 import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
@@ -407,6 +408,37 @@ class ProgressService extends ChangeNotifier {
 
   /// Dia (YYYY-MM-DD) em que cada cena foi feita pela primeira vez.
   Map<String, String> missionCompletedOn = {};
+
+  /// Postais da caminhada: dia (YYYY-MM-DD) em que cada cena revelou o seu
+  /// postal. Não some ao trocar de modo nem ao sair da trilha.
+  Map<String, String> postcardsOn = {};
+
+  /// Referência bíblica de cada postal ("Rute 1:16"), para marcar a Bíblia.
+  Map<String, String> postcardRefs = {};
+
+  /// Passes de trilha recebidos: slug da trilha → nome de quem liberou.
+  /// A trilha do Peregrino+ fica aberta inteira, para sempre. Espelhado em
+  /// [PlusAccess.giftedTrails], que é o que as travas consultam.
+  Map<String, String> get giftedTrails => _giftedTrails;
+  Map<String, String> _giftedTrails = {};
+  set giftedTrails(Map<String, String> value) {
+    _giftedTrails = value;
+    PlusAccess.giftedTrails = value.keys.toSet();
+  }
+
+  /// Guarda o passe de trilha que alguém liberou (já resgatado no servidor).
+  Future<void> receiveTrailGift(String trailSlug, String fromName) async {
+    if (_giftedTrails.containsKey(trailSlug)) return;
+    giftedTrails = {..._giftedTrails, trailSlug: fromName};
+    await _save();
+  }
+
+  /// A pintura da cena aparece sem véu: o postal já foi revelado (ou a cena
+  /// foi feita antes dos postais existirem).
+  bool sceneRevealed(String slug) =>
+      postcardsOn.containsKey(slug) ||
+      missionCompletedOn.containsKey(slug) ||
+      completedMissions.contains(slug);
 
   /// Acerto de primeira por "modo.gesto" (ex.: `semente.tap`).
   Map<String, int> answerCorrect = {};
@@ -1100,6 +1132,9 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    postcardsOn = {};
+    postcardRefs = {};
+    giftedTrails = {};
     answerCorrect = {};
     answerTotal = {};
     trailAnswerCorrect = {};
@@ -2239,9 +2274,7 @@ class ProgressService extends ChangeNotifier {
         if (!drop.contains(e.key)) e.key: e.value,
     };
 
-    final chestIds = {
-      for (final m in TrailMilestone.all) m.chestId(trailSlug),
-    };
+    final chestIds = {for (final m in TrailMilestone.all) m.chestId(trailSlug)};
     claimedChests = [
       for (final id in claimedChests)
         if (!chestIds.contains(id)) id,
@@ -2589,6 +2622,7 @@ class ProgressService extends ChangeNotifier {
     int total = 0,
     Iterable<String> alsoComplete = const [],
     String? mode,
+    String? postcardRef,
   }) async {
     var awarded = 0;
     var ranked = false;
@@ -2644,6 +2678,11 @@ class ProgressService extends ChangeNotifier {
             for (final s in [slug, ...linked]) s: today,
             ...missionCompletedOn,
           };
+          if (postcardRef != null && !postcardsOn.containsKey(slug)) {
+            postcardsOn = {...postcardsOn, slug: today};
+            final ref = postcardRef.trim();
+            if (ref.isNotEmpty) postcardRefs = {...postcardRefs, slug: ref};
+          }
           final rankKey = mode == null ? slug : '$slug@$mode';
           if (!rankedScenes.contains(rankKey)) {
             rankedScenes = [...rankedScenes, rankKey];
@@ -2963,6 +3002,9 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsCorrect': lifetimeQuestionsCorrect,
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'missionCompletedOn': missionCompletedOn,
+      'postcardsOn': postcardsOn,
+      'postcardRefs': postcardRefs,
+      'giftedTrails': giftedTrails,
       'answerCorrect': answerCorrect,
       'answerTotal': answerTotal,
       'trailAnswerCorrect': trailAnswerCorrect,
@@ -3586,6 +3628,23 @@ class ProgressService extends ChangeNotifier {
         }
         missionCompletedOn = merged;
       }
+      if (data.containsKey('postcardsOn')) {
+        // Como a cena: fica o dia em que o postal foi revelado pela 1ª vez.
+        final merged = Map<String, String>.from(postcardsOn);
+        for (final e in _asStringMap(data['postcardsOn']).entries) {
+          final cur = merged[e.key];
+          if (cur == null || e.value.compareTo(cur) < 0) {
+            merged[e.key] = e.value;
+          }
+        }
+        postcardsOn = merged;
+      }
+      if (data.containsKey('postcardRefs')) {
+        postcardRefs = {..._asStringMap(data['postcardRefs']), ...postcardRefs};
+      }
+      if (data.containsKey('giftedTrails')) {
+        giftedTrails = {..._asStringMap(data['giftedTrails']), ...giftedTrails};
+      }
       if (data.containsKey('answerCorrect')) {
         answerCorrect = _mergeIntMapsMax(
           answerCorrect,
@@ -3878,6 +3937,8 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    postcardsOn = {};
+    postcardRefs = {};
     answerCorrect = {};
     answerTotal = {};
     trailAnswerCorrect = {};

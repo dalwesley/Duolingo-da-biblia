@@ -26,6 +26,7 @@ import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/plus_perks.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 
 /// Paywall do Peregrino+. Abre por Ajustes, pelos recursos bloqueados e
@@ -879,6 +880,12 @@ class _LegalLinks extends StatelessWidget {
         TextCta(
           label: l10n.paywallRestore,
           onTap: sub.loading ? null : () => _restore(context),
+          color: a.text,
+        ),
+        // Passe de trilha recebido antes de instalar o app.
+        TextCta(
+          label: l10n.inviteHaveCodeTitle,
+          onTap: () => enterTrailGiftCode(context),
           color: a.text,
         ),
         TextCta(

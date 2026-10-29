@@ -43,6 +43,7 @@ import '../widgets/mode_emblem.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/trail_gift.dart';
 import '../widgets/trail_map_path.dart';
 import '../widgets/ui_primitives.dart';
 import 'difficulty_picker_screen.dart';
@@ -146,6 +147,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     );
     final plusOpen = context.select(
       (SubscriptionService s) => s.plusFeaturesOpen,
+    );
+    final subscriber = context.select(
+      (SubscriptionService s) => s.isPeregrinoPlus,
     );
 
     if (_trail == null || _checkingDifficulty) {
@@ -395,6 +399,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
+                                if (subscriber &&
+                                    PlusAccess.trailInPlus(trail)) ...[
+                                  TrailGiftCard(trail: trail),
+                                  const SizedBox(height: AppSpace.lg),
+                                ],
                                 MilestoneChestsCard(
                                   trailSlug: trail.slug,
                                   done: prog.done,
@@ -450,6 +459,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                               ).pushNamed('/lesson', arguments: slug),
                               currentKey: _currentKey,
                               currentSlug: currentSlug,
+                              revealed: progress.sceneRevealed,
                               plusLocked: plusOpen
                                   ? null
                                   : (slug) => PlusAccess.missionNeedsPlus(
@@ -527,6 +537,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           ? l10n.journeyBeyondHorizon
           : l10n.trailMapSceneLockedBody(current.localizedTitle),
       art: TrailArt.ofScene(trail.slug, mission.slug),
+      artVeiled: !context.read<ProgressService>().sceneRevealed(mission.slug),
       accent: accent,
       eyebrow: mission.isBoss
           ? l10n.trailMapCrossing
@@ -572,6 +583,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           : mission.subtitle,
       source: 'trail_sheet',
       art: TrailArt.ofScene(trail.slug, mission.slug),
+      artVeiled: !context.read<ProgressService>().sceneRevealed(mission.slug),
       eyebrow: mission.isBoss
           ? l10n.trailMapCrossing
           : '${l10n.commonScene} ${journeyRomanNumeral(index + 1)}',

@@ -18,6 +18,7 @@ import 'cinematic_backdrop.dart';
 import 'cinematic_icon.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
+import 'postcard.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
@@ -198,6 +199,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
         nextSceneTitle: p.nextSceneTitle,
         lastInsight: p.lastInsight,
         lastEchoQuestion: p.lastEchoQuestion,
+        sceneRevealed: p.sceneRevealed(mission.slug),
         lastPlayedDate: p.lastPlayedDate,
         streakRiskCountdown: p.streakRiskCountdown,
         streak: p.streak,
@@ -354,35 +356,41 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         fit: StackFit.expand,
                         children: [
                           if (sceneArt != null)
-                            Image.asset(
-                              sceneArt,
-                              fit: BoxFit.cover,
-                              alignment: const Alignment(0, -0.1),
-                              gaplessPlayback: true,
-                              filterQuality: FilterQuality.medium,
-                              cacheWidth:
-                                  (MediaQuery.sizeOf(context).width *
-                                          MediaQuery.devicePixelRatioOf(
-                                            context,
-                                          ))
-                                      .round(),
-                              cacheHeight:
-                                  (heroHeight *
-                                          MediaQuery.devicePixelRatioOf(
-                                            context,
-                                          ))
-                                      .round(),
-                              // Já em cache: aparece direto. Primeira vez:
-                              // entra suave sobre o chão escuro.
-                              frameBuilder: (context, child, frame, sync) =>
-                                  sync
-                                  ? child
-                                  : AnimatedOpacity(
-                                      opacity: frame == null ? 0 : 1,
-                                      duration: AppMotion.slow,
-                                      curve: AppMotion.enter,
-                                      child: child,
-                                    ),
+                            _veiledIf(
+                              !progress.sceneRevealed,
+                              Image.asset(
+                                sceneArt,
+                                fit: BoxFit.cover,
+                                alignment: const Alignment(0, -0.1),
+                                gaplessPlayback: true,
+                                filterQuality: FilterQuality.medium,
+                                // Postal ainda não revelado: pintura velada.
+                                cacheWidth: progress.sceneRevealed
+                                    ? (MediaQuery.sizeOf(context).width *
+                                              MediaQuery.devicePixelRatioOf(
+                                                context,
+                                              ))
+                                          .round()
+                                    : sceneVeilDecodeWidth,
+                                cacheHeight: progress.sceneRevealed
+                                    ? (heroHeight *
+                                              MediaQuery.devicePixelRatioOf(
+                                                context,
+                                              ))
+                                          .round()
+                                    : null,
+                                // Já em cache: aparece direto. Primeira vez:
+                                // entra suave sobre o chão escuro.
+                                frameBuilder: (context, child, frame, sync) =>
+                                    sync
+                                    ? child
+                                    : AnimatedOpacity(
+                                        opacity: frame == null ? 0 : 1,
+                                        duration: AppMotion.slow,
+                                        curve: AppMotion.enter,
+                                        child: child,
+                                      ),
+                              ),
                             )
                           else
                             ArtLift(
@@ -753,3 +761,7 @@ class _Chip extends StatelessWidget {
     );
   }
 }
+
+/// Postal ainda não revelado: tom apagado por cima da pintura em baixa.
+Widget _veiledIf(bool veiled, Widget child) =>
+    veiled ? ColorFiltered(colorFilter: sceneVeilFilter, child: child) : child;

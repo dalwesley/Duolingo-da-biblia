@@ -1,0 +1,149 @@
+{
+  "trailGiftEyebrow": {
+    "pt": "Passe de trilha",
+    "en": "Trail pass",
+    "es": "Pase de ruta"
+  },
+  "trailGiftCardTitle": {
+    "pt": "Libere esta trilha para alguém",
+    "en": "Give this trail to someone",
+    "es": "Libera esta ruta para alguien"
+  },
+  "trailGiftCardBody": {
+    "pt": "Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.",
+    "en": "Your subscription opens the way for someone: 1 Peregrino+ trail a month, whole, for whoever you choose.",
+    "es": "Tu suscripción abre el camino a alguien: 1 ruta de Peregrino+ al mes, completa, para quien elijas."
+  },
+  "trailGiftSheetBody": {
+    "pt": "Quem receber caminha nesta trilha inteira, sem pagar e sem prazo. Você tem 1 passe por mês.",
+    "en": "Whoever receives it walks this whole trail, free and with no deadline. You have 1 pass a month.",
+    "es": "Quien lo reciba recorre esta ruta completa, sin pagar y sin plazo. Tienes 1 pase al mes."
+  },
+  "trailGiftSheetSwap": {
+    "pt": "Seu passe deste mês está guardado para {trail} e ninguém o recebeu ainda. Compartilhar esta trilha no lugar?",
+    "en": "This month's pass is set for {trail} and nobody has received it yet. Share this trail instead?",
+    "es": "Tu pase de este mes está reservado para {trail} y nadie lo ha recibido aún. ¿Compartir esta ruta en su lugar?",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "trailGiftSheetUsed": {
+    "pt": "Neste mês você liberou {trail} para {name}. Um novo passe chega no dia 1º.",
+    "en": "This month you gave {trail} to {name}. A new pass arrives on the 1st.",
+    "es": "Este mes liberaste {trail} para {name}. Un nuevo pase llega el día 1.",
+    "placeholders": {
+      "trail": "String",
+      "name": "String"
+    }
+  },
+  "trailGiftShareCta": {
+    "pt": "Compartilhar o passe",
+    "en": "Share the pass",
+    "es": "Compartir el pase"
+  },
+  "trailGiftShareText": {
+    "pt": "Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}",
+    "en": "I unlocked the {trail} trail on Stway for you 🎁 It's yours, all of it. Open it here: {link}",
+    "es": "Te liberé la ruta {trail} en Stway 🎁 Es tuya, completa. Ábrela aquí: {link}",
+    "placeholders": {
+      "trail": "String",
+      "link": "String"
+    }
+  },
+  "trailGiftShareSubject": {
+    "pt": "Uma trilha do Stway para você",
+    "en": "A Stway trail for you",
+    "es": "Una ruta de Stway para ti"
+  },
+  "trailGiftSendFailed": {
+    "pt": "Não foi possível criar o passe. Tente de novo.",
+    "en": "Couldn't create the pass. Try again.",
+    "es": "No fue posible crear el pase. Inténtalo de nuevo."
+  },
+  "trailGiftReceivedBody": {
+    "pt": "{name} liberou esta trilha para você. Ela é sua, inteira e sem prazo.",
+    "en": "{name} unlocked this trail for you. It's yours, whole and with no deadline.",
+    "es": "{name} liberó esta ruta para ti. Es tuya, completa y sin plazo.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "trailGiftSomeone": {
+    "pt": "Alguém",
+    "en": "Someone",
+    "es": "Alguien"
+  },
+  "trailGiftNeedsAccount": {
+    "pt": "Entre na sua conta para receber o passe. Depois abra o link de novo.",
+    "en": "Sign in to receive the pass. Then open the link again.",
+    "es": "Inicia sesión para recibir el pase. Luego abre el enlace de nuevo."
+  },
+  "trailGiftInvalid": {
+    "pt": "Este passe não existe. Confira o link.",
+    "en": "This pass doesn't exist. Check the link.",
+    "es": "Este pase no existe. Revisa el enlace."
+  },
+  "trailGiftOwn": {
+    "pt": "Este passe é seu. Compartilhe com alguém.",
+    "en": "This pass is yours. Share it with someone.",
+    "es": "Este pase es tuyo. Compártelo con alguien."
+  },
+  "trailGiftTaken": {
+    "pt": "Outra pessoa já recebeu este passe.",
+    "en": "Someone else already received this pass.",
+    "es": "Otra persona ya recibió este pase."
+  },
+  "trailGiftNotNeeded": {
+    "pt": "Você já tem esta trilha. O passe fica para outra pessoa.",
+    "en": "You already have this trail. The pass stays for someone else.",
+    "es": "Ya tienes esta ruta. El pase queda para otra persona."
+  },
+  "trailGiftFailed": {
+    "pt": "Não foi possível abrir o passe. Tente de novo.",
+    "en": "Couldn't open the pass. Try again.",
+    "es": "No fue posible abrir el pase. Inténtalo de nuevo."
+  },
+  "paywallPerkGiftTitle": {
+    "pt": "Libere uma trilha por mês",
+    "en": "Give a trail every month",
+    "es": "Libera una ruta al mes"
+  },
+  "paywallPerkGiftBody": {
+    "pt": "Sua assinatura libera alguém: escolha uma trilha do Peregrino+ e compartilhe com quem você quiser.",
+    "en": "Your subscription opens the way for someone: pick a Peregrino+ trail and share it with whoever you want.",
+    "es": "Tu suscripción abre el camino a alguien: elige una ruta de Peregrino+ y compártela con quien quieras."
+  },
+  "trailGiftCodeSubtitle": {
+    "pt": "Cole a mensagem com o link do passe ou digite o código de 8 letras.",
+    "en": "Paste the message with the pass link or type the 8-letter code.",
+    "es": "Pega el mensaje con el enlace del pase o escribe el código de 8 letras."
+  },
+  "trailGiftPickTitle": {
+    "pt": "{name} te deu uma trilha",
+    "en": "{name} gave you a trail",
+    "es": "{name} te regaló una ruta",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "trailGiftPickSubtitle": {
+    "pt": "Escolha qual trilha do Peregrino+ é sua. Ela fica aberta inteira, sem prazo.",
+    "en": "Choose which Peregrino+ trail is yours. It stays open, whole, with no deadline.",
+    "es": "Elige qué ruta de Peregrino+ es tuya. Queda abierta completa, sin plazo."
+  },
+  "trailGiftSheetSwapOpen": {
+    "pt": "Seu passe deste mês está no seu convite de companhia e ninguém aceitou ainda. Compartilhar esta trilha no lugar?",
+    "en": "This month's pass is in your companion invite and nobody has accepted yet. Share this trail instead?",
+    "es": "Tu pase de este mes está en tu invitación de compañía y nadie la aceptó aún. ¿Compartir esta ruta en su lugar?"
+  },
+  "inviteTrailGiftLine": {
+    "pt": "Quem aceitar ganha uma trilha do Peregrino+ à escolha. É o seu passe deste mês.",
+    "en": "Whoever accepts gets a Peregrino+ trail of their choice. It's your pass for this month.",
+    "es": "Quien acepte gana una ruta de Peregrino+ a su elección. Es tu pase de este mes."
+  },
+  "inviteTrailGiftShareLine": {
+    "pt": "🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.",
+    "en": "🎁 When you accept, you get a Peregrino+ trail on me. You pick which one.",
+    "es": "🎁 Al aceptar, ganas una ruta de Peregrino+ por mi cuenta. Tú eliges cuál."
+  }
+}

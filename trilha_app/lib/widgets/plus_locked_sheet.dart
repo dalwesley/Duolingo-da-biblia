@@ -3,6 +3,7 @@ import '../l10n/app_language.dart';
 import '../screens/paywall_screen.dart';
 import 'cinematic_icon.dart';
 import 'path_preview_sheet.dart';
+import 'trail_gift.dart';
 import 'ui_primitives.dart';
 
 /// Toque numa trilha ou cena que pede o Peregrino+ (fora da estação em
@@ -14,6 +15,7 @@ Future<void> showPlusLockedSheet(
   required String description,
   required String source,
   String? art,
+  bool artVeiled = false,
   String? eyebrow,
   Color? accent,
   CinematicGlyph? glyph,
@@ -26,23 +28,40 @@ Future<void> showPlusLockedSheet(
     description: description,
     detail: l10n.plusLockedSheetBody,
     art: art,
+    artVeiled: artVeiled,
     eyebrow: eyebrow,
     accent: accent,
     glyph: glyph,
     chips: chips,
     footer: Builder(
-      builder: (sheet) => CopperCta(
-        label: l10n.plusLockedSheetCta,
-        leading: CinematicGlyph.plus,
-        expanded: true,
-        onTap: () {
-          Navigator.of(sheet).pop();
-          Navigator.of(context).push(
-            MaterialPageRoute<void>(
-              builder: (_) => PaywallScreen(source: source),
+      builder: (sheet) => Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          CopperCta(
+            label: l10n.plusLockedSheetCta,
+            leading: CinematicGlyph.plus,
+            expanded: true,
+            onTap: () {
+              Navigator.of(sheet).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => PaywallScreen(source: source),
+                ),
+              );
+            },
+          ),
+          // Alguém liberou esta trilha com um passe de trilha.
+          Center(
+            child: TextCta(
+              label: l10n.inviteHaveCodeTitle,
+              onTap: () {
+                Navigator.of(sheet).pop();
+                enterTrailGiftCode(context);
+              },
             ),
-          );
-        },
+          ),
+        ],
       ),
     ),
   );

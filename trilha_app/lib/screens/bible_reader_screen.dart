@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/postcard_index.dart';
 import '../l10n/app_language.dart';
 import '../models/bible_note.dart';
 import '../services/bible_service.dart';
@@ -17,6 +18,7 @@ import '../widgets/cloud_mascot.dart';
 import '../widgets/bible_note_tag.dart';
 import '../widgets/bible_passage_picker.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/postcard.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
@@ -72,6 +74,9 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
   /// Versículos pedidos pela referência (só no capítulo de origem).
   ({int bookIndex, int chapter, int start, int end})? _highlight;
 
+  /// Postais da caminhada por (livro, capítulo): selinho no versículo.
+  Map<(int, int), List<BiblePostcardMark>> _postcards = const {};
+
   /// Chrome (topo/dock) em notifier: esconder ao rolar não reconstrói o
   /// PageView nem os versículos.
   final _chrome = ValueNotifier<bool>(true);
@@ -123,6 +128,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
       }
     });
     _goTo(ref.bookIndex, ref.chapter, animate: false);
+    unawaited(_loadPostcards());
+  }
+
+  Future<void> _loadPostcards() async {
+    final marks = await PostcardIndex.build(context.read<ProgressService>());
+    if (!mounted) return;
+    setState(() => _postcards = marks);
   }
 
   Future<void> _reloadKeepingPlace() async {
@@ -390,6 +402,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                   reading: reading,
                   highlightStart: showHl ? hl.start : null,
                   highlightEnd: showHl ? hl.end : null,
+                  postcards: _postcards[(_bookIndex, chapter)] ?? const [],
                   next: _nextAfter(chapter),
                   onComplete: _completeChapter,
                   onNext: () => _step(_nextAfter(chapter)),
@@ -530,6 +543,9 @@ class _ChapterPage extends StatefulWidget {
   final BibleReadingStyle reading;
   final int? highlightStart;
   final int? highlightEnd;
+
+  /// Postais deste capítulo, em ordem de versículo.
+  final List<BiblePostcardMark> postcards;
   final ({int bookIndex, int chapter})? next;
   final Future<void> Function() onComplete;
   final VoidCallback onNext;
@@ -544,6 +560,7 @@ class _ChapterPage extends StatefulWidget {
     required this.reading,
     required this.highlightStart,
     required this.highlightEnd,
+    this.postcards = const [],
     required this.next,
     required this.onComplete,
     required this.onNext,
@@ -662,6 +679,18 @@ class _ChapterPageState extends State<_ChapterPage> {
   List<String>? _wordsFor;
   int _words = 0;
 
+  /// Selinho no versículo: o postal da cena, "Você esteve aqui".
+  void _openPostcard(Postcard card) {
+    ActHaptics.tap();
+    showPostcardDetail(
+      context,
+      card,
+      eyebrow: context.l10n.postcardYouWereHere,
+      onRedo: () =>
+          Navigator.of(context).pushNamed('/lesson', arguments: card.slug),
+    );
+  }
+
   /// Blocos já montados: o TTS troca o versículo lido a cada frase e o
   /// setState reconstruía o capítulo inteiro (até 176 blocos). Mesma
   /// instância = Flutter pula o bloco; só os que mudaram reconstroem.
@@ -674,8 +703,10 @@ class _ChapterPageState extends State<_ChapterPage> {
     required bool highlighted,
     required bool saved,
     required Color? noteColor,
+    BiblePostcardMark? postcard,
   }) {
     final number = i + 1;
+    final pin = postcard != null && postcard.start == number;
     final sig = (
       text,
       reading,
@@ -685,6 +716,8 @@ class _ChapterPageState extends State<_ChapterPage> {
       saved,
       noteColor,
       _verseKeys[i],
+      postcard?.card.slug,
+      pin,
     );
     final hit = _blocks[i];
     if (hit != null && hit.$1 == sig) return hit.$2;
@@ -698,6 +731,11 @@ class _ChapterPageState extends State<_ChapterPage> {
       speaking: _speaking == number,
       saved: saved,
       noteColor: noteColor,
+      postcard: postcard?.card,
+      pin: pin,
+      onPostcardTap: postcard == null
+          ? null
+          : () => _openPostcard(postcard.card),
       onTap: () => _openVerse(number),
     );
     _blocks[i] = (sig, block);
@@ -803,6 +841,9 @@ class _ChapterPageState extends State<_ChapterPage> {
           );
         }
         final i = index - 1;
+        final postcard = widget.postcards
+            .where((m) => m.covers(i + 1))
+            .firstOrNull;
         return _verseBlock(
           i,
           verses[i],
@@ -813,6 +854,7 @@ class _ChapterPageState extends State<_ChapterPage> {
               i + 1 <= (widget.highlightEnd ?? widget.highlightStart!),
           saved: saved.contains(i + 1),
           noteColor: noteColors[i + 1],
+          postcard: postcard,
         );
       },
     );
@@ -830,6 +872,12 @@ class _VerseBlock extends StatelessWidget {
 
   /// Cor do tema da anotação — pinta fundo e fio, por cima do favorito.
   final Color? noteColor;
+
+  /// Versículo de uma cena com postal: sublinhado; o primeiro leva o
+  /// selinho ([pin]), que abre o postal.
+  final Postcard? postcard;
+  final bool pin;
+  final VoidCallback? onPostcardTap;
   final VoidCallback onTap;
 
   const _VerseBlock({
@@ -842,6 +890,9 @@ class _VerseBlock extends StatelessWidget {
     required this.speaking,
     required this.saved,
     required this.noteColor,
+    this.postcard,
+    this.pin = false,
+    this.onPostcardTap,
     required this.onTap,
   });
 
@@ -888,6 +939,24 @@ class _VerseBlock extends StatelessWidget {
           child: Text.rich(
             TextSpan(
               children: [
+                if (pin && postcard != null)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.middle,
+                    child: Semantics(
+                      button: true,
+                      label: context.l10n.postcardYouWereHere,
+                      child: GestureDetector(
+                        onTap: onPostcardTap,
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Transform.rotate(
+                            angle: -0.06,
+                            child: PostcardPin(postcard: postcard!),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 TextSpan(
                   text: '$number  ',
                   style: reading.numberStyle.copyWith(
@@ -896,7 +965,18 @@ class _VerseBlock extends StatelessWidget {
                     color: speaking ? reading.ink : reading.verseNumber,
                   ),
                 ),
-                TextSpan(text: text, style: reading.verseStyle),
+                TextSpan(
+                  text: text,
+                  style: postcard == null
+                      ? reading.verseStyle
+                      : reading.verseStyle.copyWith(
+                          decoration: TextDecoration.underline,
+                          decorationColor: AppRoles.reward.withValues(
+                            alpha: 0.7,
+                          ),
+                          decorationThickness: 1.4,
+                        ),
+                ),
               ],
             ),
           ),

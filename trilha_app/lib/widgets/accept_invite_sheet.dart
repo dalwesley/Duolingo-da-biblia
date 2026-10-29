@@ -11,20 +11,40 @@ import 'invite_qr_sheet.dart' show inviteCodeStyle;
 import 'ui_primitives.dart';
 
 /// Sheet para aceitar convite: colar código (clipboard), digitar ou escanear QR.
+///
+/// [extract] lê o código de um texto (link, mensagem colada); o padrão é o
+/// da companhia. [subtitle] troca a frase; [scan] false esconde o QR.
 Future<String?> showAcceptInviteSheet(
   BuildContext context, {
   String? initialCode,
+  String? subtitle,
+  String? Function(String?) extract =
+      InviteDeepLinkService.extractCompanionCode,
+  bool scan = true,
 }) {
   return showAppSheet<String>(
     context,
-    builder: (ctx) => _AcceptInviteSheet(initialCode: initialCode),
+    builder: (ctx) => _AcceptInviteSheet(
+      initialCode: initialCode,
+      subtitle: subtitle,
+      extract: extract,
+      scan: scan,
+    ),
   );
 }
 
 class _AcceptInviteSheet extends StatefulWidget {
   final String? initialCode;
+  final String? subtitle;
+  final String? Function(String?) extract;
+  final bool scan;
 
-  const _AcceptInviteSheet({this.initialCode});
+  const _AcceptInviteSheet({
+    this.initialCode,
+    this.subtitle,
+    required this.extract,
+    required this.scan,
+  });
 
   @override
   State<_AcceptInviteSheet> createState() => _AcceptInviteSheetState();
@@ -36,7 +56,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   @override
   void initState() {
     super.initState();
-    final seed = InviteDeepLinkService.extractCompanionCode(widget.initialCode);
+    final seed = widget.extract(widget.initialCode);
     if (seed != null) {
       _controller.text = seed;
     } else {
@@ -47,7 +67,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   Future<void> _tryClipboard() async {
     try {
       final data = await Clipboard.getData(Clipboard.kTextPlain);
-      final code = InviteDeepLinkService.extractCompanionCode(data?.text);
+      final code = widget.extract(data?.text);
       if (!mounted || code == null || _controller.text.isNotEmpty) return;
       setState(() => _controller.text = code);
     } catch (_) {}
@@ -61,7 +81,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
 
   void _submit([String? raw]) {
     final code =
-        InviteDeepLinkService.extractCompanionCode(raw ?? _controller.text) ??
+        widget.extract(raw ?? _controller.text) ??
         (raw ?? _controller.text).trim().toUpperCase();
     if (code.isEmpty) return;
     Navigator.pop(context, code);
@@ -91,7 +111,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
         children: [
           AppSheetHeader(
             title: context.l10n.inviteHaveCodeTitle,
-            subtitle: context.l10n.inviteHaveCodeSubtitle,
+            subtitle: widget.subtitle ?? context.l10n.inviteHaveCodeSubtitle,
             center: true,
           ),
           const SizedBox(height: AppSpace.screen),
@@ -127,13 +147,15 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             ),
             onSubmitted: _submit,
           ),
-          const SizedBox(height: AppSpace.md),
-          GhostCta(
-            label: context.l10n.inviteScanQr,
-            onTap: _scanQr,
-            leading: CinematicGlyph.qr,
-            expanded: true,
-          ),
+          if (widget.scan) ...[
+            const SizedBox(height: AppSpace.md),
+            GhostCta(
+              label: context.l10n.inviteScanQr,
+              onTap: _scanQr,
+              leading: CinematicGlyph.qr,
+              expanded: true,
+            ),
+          ],
           const SizedBox(height: AppSpace.md),
           CopperCta(
             label: context.l10n.inviteJoinCta,

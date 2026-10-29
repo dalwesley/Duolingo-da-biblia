@@ -220,6 +220,15 @@ class AnalyticsService {
     'has_plus': hasPlus ? 1 : 0,
   });
 
+  /// Passe de trilha: `send` (quem assina compartilhou) ou `redeem` (quem
+  /// recebeu abriu o link), com o resultado.
+  Future<void> logTrailGift({
+    required String action,
+    required String trail,
+    required String result,
+  }) =>
+      _log('trail_gift', {'action': action, 'trail': trail, 'result': result});
+
   Future<void> logEvent(String name, [Map<String, Object>? params]) =>
       _log(name, params);
 

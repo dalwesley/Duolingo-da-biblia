@@ -6,6 +6,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'postcard.dart';
 import 'ui_primitives.dart';
 
 /// Folha grande de prévia — tema, trilha ou estação.
@@ -16,6 +17,9 @@ Future<void> showPathPreviewSheet(
   required String title,
   required String description,
   String? art,
+
+  /// Pintura de cena cujo postal ainda não foi revelado.
+  bool artVeiled = false,
   Color? accent,
   String? eyebrow,
   String? statusLabel,
@@ -37,6 +41,7 @@ Future<void> showPathPreviewSheet(
       title: title,
       description: description,
       art: art,
+      artVeiled: artVeiled,
       accent: accent,
       eyebrow: eyebrow,
       statusLabel: statusLabel,
@@ -53,6 +58,7 @@ class PathPreviewSheet extends StatelessWidget {
   final String title;
   final String description;
   final String? art;
+  final bool artVeiled;
   final Color? accent;
   final String? eyebrow;
   final String? statusLabel;
@@ -67,6 +73,7 @@ class PathPreviewSheet extends StatelessWidget {
     required this.title,
     required this.description,
     this.art,
+    this.artVeiled = false,
     this.accent,
     this.eyebrow,
     this.statusLabel,
@@ -99,7 +106,8 @@ class PathPreviewSheet extends StatelessWidget {
         .map((l) => l.trim())
         .where((l) => l.isNotEmpty)
         .toList();
-    final bottom = footer ??
+    final bottom =
+        footer ??
         (statusLabel != null && statusLabel!.trim().isNotEmpty
             ? Align(
                 alignment: Alignment.centerLeft,
@@ -237,16 +245,12 @@ class PathPreviewSheet extends StatelessWidget {
                           fit: StackFit.expand,
                           children: [
                             if (art != null)
-                              Image.asset(
+                              SceneArtImage(
                                 art!,
-                                fit: BoxFit.cover,
+                                veiled: artVeiled,
                                 alignment: const Alignment(0, -0.15),
-                                gaplessPlayback: true,
-                                filterQuality: FilterQuality.medium,
-                                errorBuilder: (_, _, _) => _ArtFallback(
-                                  accent: tone,
-                                  glyph: glyph,
-                                ),
+                                errorBuilder: (_, _, _) =>
+                                    _ArtFallback(accent: tone, glyph: glyph),
                               )
                             else
                               _ArtFallback(accent: tone, glyph: glyph),

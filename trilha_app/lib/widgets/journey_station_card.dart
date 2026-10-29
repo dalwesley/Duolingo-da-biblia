@@ -8,6 +8,7 @@ import '../utils/difficulty_visuals.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'postcard.dart';
 import 'ui_primitives.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
@@ -34,6 +35,9 @@ class JourneyStationCard extends StatelessWidget {
 
   /// Pintura da trilha, em faixa no topo do card.
   final String? art;
+
+  /// Pintura de cena cujo postal ainda não foi revelado: aparece velada.
+  final bool artVeiled;
 
   /// Numeral romano grande no fundo (I, II…).
   final String? watermark;
@@ -62,6 +66,7 @@ class JourneyStationCard extends StatelessWidget {
     this.chrome,
     this.glyph,
     this.art,
+    this.artVeiled = false,
     this.watermark,
     this.plusLocked = false,
     this.showMeter = false,
@@ -274,10 +279,9 @@ class JourneyStationCard extends StatelessWidget {
           : const [0.55, 0.28, 0.16];
       final dpr = MediaQuery.devicePixelRatioOf(context);
       final cacheW = (MediaQuery.sizeOf(context).width * dpr).round();
-      final painting = Image.asset(
+      final painting = SceneArtImage(
         art!,
-        fit: BoxFit.cover,
-        alignment: Alignment.center,
+        veiled: artVeiled,
         // Decode na resolução do card — JPGs de cena são bem maiores.
         cacheWidth: cacheW,
         cacheHeight: (160 * dpr).round(),

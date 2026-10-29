@@ -3370,6 +3370,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get inviteSomeone => 'Someone';
 
   @override
+  String get inviteTrailGiftLine =>
+      'Whoever accepts gets a Peregrino+ trail of their choice. It\'s your pass for this month.';
+
+  @override
+  String get inviteTrailGiftShareLine =>
+      '🎁 When you accept, you get a Peregrino+ trail on me. You pick which one.';
+
+  @override
   String get journalEmpty =>
       'When you lock in a scene, your answer is saved here.';
 
@@ -6346,11 +6354,25 @@ class AppLocalizationsEn extends AppLocalizations {
       'Each mistake stays saved, with the right answer and why.';
 
   @override
+  String get paywallPerkGiftBody =>
+      'Your subscription opens the way for someone: pick a Peregrino+ trail and share it with whoever you want.';
+
+  @override
+  String get paywallPerkGiftTitle => 'Give a trail every month';
+
+  @override
   String get paywallPerkPlansBody =>
       'The Gospels in 30 days, the New Testament in 90, and other paths.';
 
   @override
   String get paywallPerkPlansTitle => 'Reading plans';
+
+  @override
+  String get paywallPerkPostcardsBody =>
+      'Share your postcard reveal as a video, ready for status and stories.';
+
+  @override
+  String get paywallPerkPostcardsTitle => 'Animated postcard';
 
   @override
   String get paywallPerkRecognitionBody =>
@@ -7171,6 +7193,75 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portraitTitle => 'How you appear on your profile';
+
+  @override
+  String get postcardEyebrow => 'New postcard';
+
+  @override
+  String get postcardRedo => 'Replay the scene';
+
+  @override
+  String get postcardReveal => 'Reveal the postcard';
+
+  @override
+  String postcardShareChip(int index, int total, String trail) {
+    return 'Postcard $index of $total · $trail';
+  }
+
+  @override
+  String postcardShareFrom(String name) {
+    return 'From: $name';
+  }
+
+  @override
+  String get postcardShareImage => 'Image';
+
+  @override
+  String get postcardShareRendering => 'Preparing the video…';
+
+  @override
+  String get postcardShareSheetTitle => 'How do you want to send it?';
+
+  @override
+  String get postcardShareTagline => 'A postcard from my walk';
+
+  @override
+  String postcardShareText(String insight, String ref) {
+    return '$insight\n$ref\n\nA postcard from my walk on Stway.';
+  }
+
+  @override
+  String get postcardShareTo => 'To: you';
+
+  @override
+  String get postcardShareVideo => 'Animated postcard';
+
+  @override
+  String get postcardShareVideoFailed =>
+      'Couldn\'t make the video. Sent the image instead.';
+
+  @override
+  String get postcardShareVideoPlus => 'Peregrino+';
+
+  @override
+  String get postcardTapHint => 'Tap the postcard to reveal it';
+
+  @override
+  String get postcardYouWereHere => 'You were here';
+
+  @override
+  String postcardsCount(int done, int total) {
+    return '$done of $total';
+  }
+
+  @override
+  String get postcardsEmptyBody => 'Finish a scene to reveal your first one.';
+
+  @override
+  String get postcardsEmptyTitle => 'Your postcards live here';
+
+  @override
+  String get postcardsTitle => 'Postcards';
 
   @override
   String get practiceEmptyBody =>
@@ -9084,6 +9175,89 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get trailGiftCardBody =>
+      'Your subscription opens the way for someone: 1 Peregrino+ trail a month, whole, for whoever you choose.';
+
+  @override
+  String get trailGiftCardTitle => 'Give this trail to someone';
+
+  @override
+  String get trailGiftCodeSubtitle =>
+      'Paste the message with the pass link or type the 8-letter code.';
+
+  @override
+  String get trailGiftEyebrow => 'Trail pass';
+
+  @override
+  String get trailGiftFailed => 'Couldn\'t open the pass. Try again.';
+
+  @override
+  String get trailGiftInvalid => 'This pass doesn\'t exist. Check the link.';
+
+  @override
+  String get trailGiftNeedsAccount =>
+      'Sign in to receive the pass. Then open the link again.';
+
+  @override
+  String get trailGiftNotNeeded =>
+      'You already have this trail. The pass stays for someone else.';
+
+  @override
+  String get trailGiftOwn => 'This pass is yours. Share it with someone.';
+
+  @override
+  String get trailGiftPickSubtitle =>
+      'Choose which Peregrino+ trail is yours. It stays open, whole, with no deadline.';
+
+  @override
+  String trailGiftPickTitle(String name) {
+    return '$name gave you a trail';
+  }
+
+  @override
+  String trailGiftReceivedBody(String name) {
+    return '$name unlocked this trail for you. It\'s yours, whole and with no deadline.';
+  }
+
+  @override
+  String get trailGiftSendFailed => 'Couldn\'t create the pass. Try again.';
+
+  @override
+  String get trailGiftShareCta => 'Share the pass';
+
+  @override
+  String get trailGiftShareSubject => 'A Stway trail for you';
+
+  @override
+  String trailGiftShareText(String trail, String link) {
+    return 'I unlocked the $trail trail on Stway for you 🎁 It\'s yours, all of it. Open it here: $link';
+  }
+
+  @override
+  String get trailGiftSheetBody =>
+      'Whoever receives it walks this whole trail, free and with no deadline. You have 1 pass a month.';
+
+  @override
+  String trailGiftSheetSwap(String trail) {
+    return 'This month\'s pass is set for $trail and nobody has received it yet. Share this trail instead?';
+  }
+
+  @override
+  String get trailGiftSheetSwapOpen =>
+      'This month\'s pass is in your companion invite and nobody has accepted yet. Share this trail instead?';
+
+  @override
+  String trailGiftSheetUsed(String trail, String name) {
+    return 'This month you gave $trail to $name. A new pass arrives on the 1st.';
+  }
+
+  @override
+  String get trailGiftSomeone => 'Someone';
+
+  @override
+  String get trailGiftTaken => 'Someone else already received this pass.';
+
+  @override
   String get trailMapCrossing => 'Crossing';
 
   @override
@@ -9766,4 +9940,62 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get widgetWeekdayInitials => 'M,T,W,T,F,S,S';
+
+  @override
+  String get yearReviewBookEyebrow => 'The book you visited most';
+
+  @override
+  String yearReviewDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '1 day',
+    );
+    return 'across $_temp0 of walking';
+  }
+
+  @override
+  String yearReviewEndBody(String next) {
+    return 'Every postcard is a step you took with God. Here\'s to $next!';
+  }
+
+  @override
+  String get yearReviewEyebrow => 'Year in review';
+
+  @override
+  String yearReviewFirstLast(String first, String last) {
+    return 'From the first, $first, to the latest, $last.';
+  }
+
+  @override
+  String get yearReviewLocked =>
+      'The rest of your year in review is in Peregrino+';
+
+  @override
+  String get yearReviewModeEyebrow => 'Where you get it right most';
+
+  @override
+  String yearReviewModeLine(int pct) {
+    return '$pct% right on the first try';
+  }
+
+  @override
+  String get yearReviewOpen => 'See your year in review';
+
+  @override
+  String yearReviewPostcards(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count postcards',
+      one: '1 postcard',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String yearReviewTitle(String year) {
+    return 'Your walk in $year';
+  }
 }

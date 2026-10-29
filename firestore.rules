@@ -449,6 +449,76 @@ service cloud.firestore {
       allow read, write: if isSignedIn() && request.auth.uid == uid;
     }
 
+    // Passe de trilha (Peregrino+): quem assina libera 1 trilha por mês
+    // para outra pessoa. O id é o código do link. O marco do mês em
+    // users/{uid}/giftMonths/{mês UTC} nasce junto com o passe (batch) e
+    // não muda: segura o segundo passe no mesmo mês. Um resgate por passe.
+    // Passe aberto (trailSlug vazio) vai no convite de companhia: quem
+    // resgata escolhe a trilha.
+    function giftMonthNow() {
+      return string(request.time.year()) + '-'
+        + (request.time.month() < 10 ? '0' : '')
+        + string(request.time.month());
+    }
+
+    function giftTrailSlugOk(slug) {
+      return slug is string && slug.matches('^[a-z0-9-]{1,80}$');
+    }
+
+    match /trailGifts/{code} {
+      allow get: if isSignedIn();
+      allow create: if isSignedIn()
+        && code.matches('^[A-Z0-9]{8}$')
+        && request.resource.data.keys().hasOnly([
+          'fromUid', 'fromName', 'trailSlug', 'month', 'createdAt'
+        ])
+        && request.resource.data.fromUid == request.auth.uid
+        && request.resource.data.fromName is string
+        && request.resource.data.fromName.size() <= 40
+        && (request.resource.data.trailSlug == ''
+            || giftTrailSlugOk(request.resource.data.trailSlug))
+        && request.resource.data.month == giftMonthNow()
+        && request.resource.data.createdAt == request.time
+        // Plus vem do webhook no doc público; o cliente não grava isso.
+        && userExists()
+        && userData().get('plusActive', false) == true
+        && getAfter(/databases/$(database)/documents/users/$(request.auth.uid)/giftMonths/$(giftMonthNow())).data.code == code;
+      allow update: if isSignedIn()
+        && !('toUid' in resource.data)
+        && (
+          // Quem deu troca a trilha enquanto ninguém recebeu.
+          (request.auth.uid == resource.data.fromUid
+            && request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['trailSlug'])
+            && giftTrailSlugOk(request.resource.data.trailSlug))
+          // Quem recebe resgata uma vez; no passe aberto, escolhe a trilha.
+          || (request.auth.uid != resource.data.fromUid
+            && request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['toUid', 'toName', 'redeemedAt', 'trailSlug'])
+            && giftTrailSlugOk(request.resource.data.trailSlug)
+            && (resource.data.trailSlug == ''
+                || request.resource.data.trailSlug == resource.data.trailSlug)
+            && request.resource.data.toUid == request.auth.uid
+            && request.resource.data.toName is string
+            && request.resource.data.toName.size() <= 40
+            && request.resource.data.redeemedAt == request.time)
+        );
+      allow delete: if false;
+    }
+
+    match /users/{uid}/giftMonths/{month} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow create: if isSignedIn()
+        && request.auth.uid == uid
+        && month == giftMonthNow()
+        && request.resource.data.keys().hasOnly(['code', 'createdAt'])
+        && request.resource.data.code is string
+        && request.resource.data.createdAt == request.time
+        && !exists(/databases/$(database)/documents/trailGifts/$(request.resource.data.code))
+        && existsAfter(/databases/$(database)/documents/trailGifts/$(request.resource.data.code));
+      allow update, delete: if false;
+    }
+
     match /users/{uid}/blocks/{blockedUid} {
       allow read, delete: if isSignedIn() && request.auth.uid == uid;
       allow create, update: if isSignedIn()

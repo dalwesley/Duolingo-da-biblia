@@ -26,6 +26,7 @@ import '../widgets/ui_primitives.dart';
 import 'paywall_screen.dart';
 import 'support_screen.dart';
 import 'weekly_review_screen.dart';
+import 'year_review_screen.dart';
 
 /// Laboratório do Peregrino+ — só em build de desenvolvimento ([kDebugMode]).
 ///
@@ -182,7 +183,11 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
         advent.subtract(const Duration(days: 7)),
       ),
       ('day1', 'Dia 1 da caminhada', advent),
-      ('day10', 'Dia 10 (calendário aberto)', advent.add(const Duration(days: 9))),
+      (
+        'day10',
+        'Dia 10 (calendário aberto)',
+        advent.add(const Duration(days: 9)),
+      ),
       ('real', 'Relógio real', null),
     ];
   }
@@ -458,6 +463,17 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                               ? '● Usar o Remote Config'
                               : 'Usar o Remote Config',
                           () => _setPromo(sub, override: false),
+                        ),
+                      ]),
+                      section('Postais', [
+                        line(
+                          'Abre a retrospectiva do ano corrente agora, '
+                          'mesmo antes de year_review_from e com menos '
+                          'de 3 postais.',
+                        ),
+                        button(
+                          'Abrir retrospectiva do ano',
+                          () => openYearReview(context, force: true),
                         ),
                       ]),
                       section('Dados de teste', [

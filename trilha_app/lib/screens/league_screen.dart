@@ -13,6 +13,7 @@ import '../models/pilgrim_medal_models.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
+import '../services/subscription_service.dart';
 import '../services/medal_engagement_service.dart';
 import '../services/moderation_service.dart';
 import '../services/progress_service.dart';
@@ -45,6 +46,7 @@ import '../widgets/invite_qr_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/season_walk_together.dart';
+import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
@@ -755,6 +757,8 @@ class _LeagueScreenState extends State<LeagueScreen>
               context,
               code: ordered[i].code,
               inviterName: progress.userName,
+              trailGift:
+                  ordered[i].awaitingPartner && ordered[i].giftCode != null,
             ),
             onNudge: () => showCompanionNudgeSheet(
               context,
@@ -871,7 +875,10 @@ class _LeagueScreenState extends State<LeagueScreen>
   Future<void> _createCompanion(BuildContext context) async {
     final progress = context.read<ProgressService>();
     final service = context.read<CompanionService>();
-    final created = await service.createInvite(progress);
+    final created = await service.createInvite(
+      progress,
+      withTrailGift: context.read<SubscriptionService>().isPeregrinoPlus,
+    );
     if (!context.mounted) return;
     if (created == null) {
       showAppToastFor(
@@ -890,6 +897,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       context,
       code: created.code,
       inviterName: progress.userName,
+      trailGift: created.giftCode != null,
     );
   }
 
@@ -931,6 +939,13 @@ class _LeagueScreenState extends State<LeagueScreen>
       }
     }
     await showCompanionFormedSheet(context, partnerName: joined?.displayName);
+    if (!context.mounted) return;
+    // Quem chamou tem o Plus: o convite trouxe uma trilha à escolha.
+    final giftCode = await context.read<BackendService>().companionGiftCode(
+      code.trim().toUpperCase(),
+    );
+    if (giftCode == null || !context.mounted) return;
+    await redeemTrailGiftLink(context, giftCode);
   }
 
   Future<bool> _confirmLeaveAllCompanions(BuildContext context, int count) {

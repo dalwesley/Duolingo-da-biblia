@@ -19,5 +19,6 @@ class MainActivity : FlutterActivity() {
                     else -> result.notImplemented()
                 }
             }
+        PostcardVideoEncoder.register(flutterEngine.dartExecutor.binaryMessenger)
     }
 }

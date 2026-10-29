@@ -18,8 +18,7 @@ class CompanionSyncResult {
     this.weekTogetherBonusGranted = false,
   });
 
-  bool get hasFeedback =>
-      referralCodes.isNotEmpty || weekTogetherBonusGranted;
+  bool get hasFeedback => referralCodes.isNotEmpty || weekTogetherBonusGranted;
 }
 
 /// Companhia — uma dupla de caminhada (friend streak de passos).
@@ -164,7 +163,12 @@ class CompanionService extends ChangeNotifier {
     isHost: true,
   );
 
-  Future<WalkCompanion?> createInvite(ProgressService progress) async {
+  /// [withTrailGift]: quem chama tem o Peregrino+ — o convite leva o passe
+  /// de trilha do mês, aberto (quem aceitar escolhe a trilha).
+  Future<WalkCompanion?> createInvite(
+    ProgressService progress, {
+    bool withTrailGift = false,
+  }) async {
     lastError = null;
     if (!canAdd) {
       lastError = L10n.current.companionErrorAlreadyHave;
@@ -186,6 +190,12 @@ class CompanionService extends ChangeNotifier {
       lastError = L10n.current.companionErrorCreateInvite;
       notifyListeners();
       return null;
+    }
+    if (withTrailGift) {
+      await backend.attachOpenTrailGift(
+        created.code,
+        fromName: progress.userName,
+      );
     }
     final codes = [...await _loadCodes(), created.code];
     await _saveCodes(codes, progress: progress);

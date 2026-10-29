@@ -453,17 +453,25 @@ class JuntosHalo extends StatefulWidget {
 
 class _JuntosHaloState extends State<JuntosHalo>
     with SingleTickerProviderStateMixin {
-  late final AnimationController _pulse = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 1800),
-  );
-  late final Animation<double> _glow = _pulse.drive(
-    Tween<double>(begin: 0.45, end: 1).chain(CurveTween(curve: AppMotion.move)),
-  );
+  // Criado no initState, nunca preguiçoso: apagado (lit false) o
+  // controller só nascia no dispose, e o vsync procurava o TickerMode num
+  // elemento já desativado.
+  late final AnimationController _pulse;
+  late final Animation<double> _glow;
 
   @override
   void initState() {
     super.initState();
+    _pulse = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1800),
+    );
+    _glow = _pulse.drive(
+      Tween<double>(
+        begin: 0.45,
+        end: 1,
+      ).chain(CurveTween(curve: AppMotion.move)),
+    );
     if (widget.lit) _pulse.repeat(reverse: true);
   }
 

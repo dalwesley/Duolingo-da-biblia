@@ -41,6 +41,10 @@ class TrailMapPath extends StatelessWidget {
   /// Nome do modo ativo ("Observação"), sob o título de cada cena.
   final String? modeLabel;
 
+  /// Postal da cena já revelado; sem ele, a pintura aparece velada.
+  /// `null` = nenhuma pintura velada.
+  final bool Function(String slug)? revealed;
+
   const TrailMapPath({
     super.key,
     required this.missions,
@@ -57,6 +61,7 @@ class TrailMapPath extends StatelessWidget {
     this.plusLocked,
     this.onPlusTap,
     this.onLockedTap,
+    this.revealed,
   });
 
   bool _completed(String slug) => completedMissions.contains(slug);
@@ -131,6 +136,7 @@ class TrailMapPath extends StatelessWidget {
         watermark: roman,
         glyph: glyph,
         art: TrailArt.ofScene(trailSlug, mission.slug),
+        artVeiled: !(revealed?.call(mission.slug) ?? true),
         state: state,
         accent: accent,
         glow: glow,

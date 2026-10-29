@@ -282,6 +282,8 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Lembrete do app no horário | **lembrar** ("Lembrar às 20h") | chamar |
 | Slogan | **A Bíblia, cena a cena** | — |
 | Recompensa | **medalha**; **selo** só para selos de personagem | conquista, conquistar, emblema, moeda |
+| Pintura da cena guardada ao concluir | **postal** ("Revelar o postal", "Seus postais"); o verso é a nota da pessoa | selo, figurinha, card, carta |
+| Trilha do Plus que quem assina libera para alguém (1 por mês) | **passe de trilha**; ação "Libere esta trilha para alguém", botão **Compartilhar o passe**; slogan "Sua assinatura libera alguém" | presente, cupom, vale, convite |
 | Modos (UI) | **Observação / Compreensão / Interpretação** | semente, caminhada, profundezas (ids internos); "mudar a trilha" para trocar de modo |
 | Texto bíblico | **Bíblia** (produto, leitura); **Palavra** em frase devocional; **Escrituras** (plural) em estudo | — |
 | Vidas | **lâmpada** | — |
@@ -405,6 +407,7 @@ Glossário por idioma (mesma regra "uma palavra, um sentido"):
 | lâmpada | lamp | lámpara |
 | lamparina | oil lamp | candil |
 | medalha / selo / cofre | medal / seal / vault | medalla / sello / cofre |
+| postal | postcard | postal |
 | peregrino | pilgrim | peregrino |
 | Observação / Compreensão / Interpretação | Observation / Understanding / Interpretation | Observación / Comprensión / Interpretación |
 | Ajustes | Settings | Ajustes |

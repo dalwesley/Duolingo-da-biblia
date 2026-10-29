@@ -5338,6 +5338,18 @@ abstract class AppLocalizations {
   /// **'Alguém'**
   String get inviteSomeone;
 
+  /// No description provided for @inviteTrailGiftLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem aceitar ganha uma trilha do Peregrino+ à escolha. É o seu passe deste mês.'**
+  String get inviteTrailGiftLine;
+
+  /// No description provided for @inviteTrailGiftShareLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.'**
+  String get inviteTrailGiftShareLine;
+
   /// No description provided for @journalEmpty.
   ///
   /// In pt, this message translates to:
@@ -9969,6 +9981,18 @@ abstract class AppLocalizations {
   /// **'Cada erro fica guardado, com a resposta certa e o porquê.'**
   String get paywallPerkExplainBody;
 
+  /// No description provided for @paywallPerkGiftBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua assinatura libera alguém: escolha uma trilha do Peregrino+ e compartilhe com quem você quiser.'**
+  String get paywallPerkGiftBody;
+
+  /// No description provided for @paywallPerkGiftTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Libere uma trilha por mês'**
+  String get paywallPerkGiftTitle;
+
   /// No description provided for @paywallPerkPlansBody.
   ///
   /// In pt, this message translates to:
@@ -9980,6 +10004,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Planos de leitura'**
   String get paywallPerkPlansTitle;
+
+  /// Benefício Plus, texto
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhe a revelação do postal em vídeo, pronta para o status e os stories.'**
+  String get paywallPerkPostcardsBody;
+
+  /// Benefício Plus: vídeo do postal
+  ///
+  /// In pt, this message translates to:
+  /// **'Postal animado'**
+  String get paywallPerkPostcardsTitle;
 
   /// No description provided for @paywallPerkRecognitionBody.
   ///
@@ -11150,6 +11186,126 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Como você aparece no perfil'**
   String get portraitTitle;
+
+  /// Rótulo acima do título da cena na revelação do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo postal'**
+  String get postcardEyebrow;
+
+  /// Botão no postal aberto pelo álbum
+  ///
+  /// In pt, this message translates to:
+  /// **'Refazer a cena'**
+  String get postcardRedo;
+
+  /// Botão que revela a pintura da cena no fim da cena
+  ///
+  /// In pt, this message translates to:
+  /// **'Revelar o postal'**
+  String get postcardReveal;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Postal {index} de {total} · {trail}'**
+  String postcardShareChip(int index, int total, String trail);
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'De: {name}'**
+  String postcardShareFrom(String name);
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Imagem'**
+  String get postcardShareImage;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Preparando o vídeo…'**
+  String get postcardShareRendering;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Como quer enviar o postal?'**
+  String get postcardShareSheetTitle;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Um postal da minha caminhada'**
+  String get postcardShareTagline;
+
+  /// Texto que acompanha a imagem do postal compartilhado
+  ///
+  /// In pt, this message translates to:
+  /// **'{insight}\n{ref}\n\nUm postal da minha caminhada no Stway.'**
+  String postcardShareText(String insight, String ref);
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Para: você'**
+  String get postcardShareTo;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Postal animado'**
+  String get postcardShareVideo;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para gerar o vídeo. Enviei a imagem.'**
+  String get postcardShareVideoFailed;
+
+  /// Card de compartilhar do postal (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+'**
+  String get postcardShareVideoPlus;
+
+  /// Dica sob o postal ainda velado
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque no postal para revelar'**
+  String get postcardTapHint;
+
+  /// Rótulo do postal aberto pelo selinho no versículo da Bíblia
+  ///
+  /// In pt, this message translates to:
+  /// **'Você esteve aqui'**
+  String get postcardYouWereHere;
+
+  /// Postais revelados na trilha
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total}'**
+  String postcardsCount(int done, int total);
+
+  /// Álbum vazio, texto
+  ///
+  /// In pt, this message translates to:
+  /// **'Conclua uma cena para revelar o primeiro.'**
+  String get postcardsEmptyBody;
+
+  /// Álbum vazio
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus postais ficam aqui'**
+  String get postcardsEmptyTitle;
+
+  /// Aba do Cofre com o álbum de postais (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Postais'**
+  String get postcardsTitle;
 
   /// No description provided for @practiceEmptyBody.
   ///
@@ -14181,6 +14337,138 @@ abstract class AppLocalizations {
   /// **'Ontem: {text}'**
   String tomorrowYesterday(String text);
 
+  /// No description provided for @trailGiftCardBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua assinatura libera alguém: 1 trilha do Peregrino+ por mês, inteira, para quem você escolher.'**
+  String get trailGiftCardBody;
+
+  /// No description provided for @trailGiftCardTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Libere esta trilha para alguém'**
+  String get trailGiftCardTitle;
+
+  /// No description provided for @trailGiftCodeSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cole a mensagem com o link do passe ou digite o código de 8 letras.'**
+  String get trailGiftCodeSubtitle;
+
+  /// No description provided for @trailGiftEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Passe de trilha'**
+  String get trailGiftEyebrow;
+
+  /// No description provided for @trailGiftFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível abrir o passe. Tente de novo.'**
+  String get trailGiftFailed;
+
+  /// No description provided for @trailGiftInvalid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este passe não existe. Confira o link.'**
+  String get trailGiftInvalid;
+
+  /// No description provided for @trailGiftNeedsAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre na sua conta para receber o passe. Depois abra o link de novo.'**
+  String get trailGiftNeedsAccount;
+
+  /// No description provided for @trailGiftNotNeeded.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você já tem esta trilha. O passe fica para outra pessoa.'**
+  String get trailGiftNotNeeded;
+
+  /// No description provided for @trailGiftOwn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este passe é seu. Compartilhe com alguém.'**
+  String get trailGiftOwn;
+
+  /// No description provided for @trailGiftPickSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha qual trilha do Peregrino+ é sua. Ela fica aberta inteira, sem prazo.'**
+  String get trailGiftPickSubtitle;
+
+  /// No description provided for @trailGiftPickTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} te deu uma trilha'**
+  String trailGiftPickTitle(String name);
+
+  /// No description provided for @trailGiftReceivedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} liberou esta trilha para você. Ela é sua, inteira e sem prazo.'**
+  String trailGiftReceivedBody(String name);
+
+  /// No description provided for @trailGiftSendFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível criar o passe. Tente de novo.'**
+  String get trailGiftSendFailed;
+
+  /// No description provided for @trailGiftShareCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar o passe'**
+  String get trailGiftShareCta;
+
+  /// No description provided for @trailGiftShareSubject.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma trilha do Stway para você'**
+  String get trailGiftShareSubject;
+
+  /// No description provided for @trailGiftShareText.
+  ///
+  /// In pt, this message translates to:
+  /// **'Liberei pra você a trilha {trail} no Stway 🎁 É sua, inteira. Abre pelo link: {link}'**
+  String trailGiftShareText(String trail, String link);
+
+  /// No description provided for @trailGiftSheetBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem receber caminha nesta trilha inteira, sem pagar e sem prazo. Você tem 1 passe por mês.'**
+  String get trailGiftSheetBody;
+
+  /// No description provided for @trailGiftSheetSwap.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu passe deste mês está guardado para {trail} e ninguém o recebeu ainda. Compartilhar esta trilha no lugar?'**
+  String trailGiftSheetSwap(String trail);
+
+  /// No description provided for @trailGiftSheetSwapOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu passe deste mês está no seu convite de companhia e ninguém aceitou ainda. Compartilhar esta trilha no lugar?'**
+  String get trailGiftSheetSwapOpen;
+
+  /// No description provided for @trailGiftSheetUsed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Neste mês você liberou {trail} para {name}. Um novo passe chega no dia 1º.'**
+  String trailGiftSheetUsed(String trail, String name);
+
+  /// No description provided for @trailGiftSomeone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém'**
+  String get trailGiftSomeone;
+
+  /// No description provided for @trailGiftTaken.
+  ///
+  /// In pt, this message translates to:
+  /// **'Outra pessoa já recebeu este passe.'**
+  String get trailGiftTaken;
+
   /// Boss/review scene at the end of a stage
   ///
   /// In pt, this message translates to:
@@ -15128,6 +15416,72 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'S,T,Q,Q,S,S,D'**
   String get widgetWeekdayInitials;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'O livro onde você mais esteve'**
+  String get yearReviewBookEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'em {count, plural, =1{1 dia} other{{count} dias}} de caminhada'**
+  String yearReviewDays(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada postal é um passo seu com Deus. Que venha {next}!'**
+  String yearReviewEndBody(String next);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Retrospectiva'**
+  String get yearReviewEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Do primeiro, {first}, ao mais recente, {last}.'**
+  String yearReviewFirstLast(String first, String last);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'O resto da sua retrospectiva está no Peregrino+'**
+  String get yearReviewLocked;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Onde você mais acerta'**
+  String get yearReviewModeEyebrow;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{pct}% de acerto de primeira'**
+  String yearReviewModeLine(int pct);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a retrospectiva'**
+  String get yearReviewOpen;
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 postal} other{{count} postais}}'**
+  String yearReviewPostcards(int count);
+
+  /// Retrospectiva do ano (docs/postais.md)
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua caminhada em {year}'**
+  String yearReviewTitle(String year);
 }
 
 class _AppLocalizationsDelegate

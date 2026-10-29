@@ -12,6 +12,8 @@ import 'ui_primitives.dart';
 /// Toda tela que lista o Plus usa [PlusPerkCard]; nada de lista própria.
 enum PlusPerk {
   themeTrails,
+  postcards,
+  giftTrail,
   season,
   weeklyReview,
   readingPlans,
@@ -21,9 +23,11 @@ enum PlusPerk {
   badge,
   recognition;
 
-  /// Os três que abrem as listas curtas (ofertas, aviso, perfil).
+  /// Os que abrem as listas curtas (ofertas, aviso, perfil).
   static const highlights = [
     PlusPerk.themeTrails,
+    PlusPerk.postcards,
+    PlusPerk.giftTrail,
     PlusPerk.season,
     PlusPerk.readingPlans,
     PlusPerk.weeklyReview,
@@ -39,6 +43,8 @@ enum PlusPerk {
     PlusPerk.explainErrors => CinematicGlyph.lamp,
     PlusPerk.badge => CinematicGlyph.gift,
     PlusPerk.recognition => CinematicGlyph.heart,
+    PlusPerk.postcards => CinematicGlyph.share,
+    PlusPerk.giftTrail => CinematicGlyph.people,
   };
 
   String title(AppLocalizations l10n) => switch (this) {
@@ -51,6 +57,8 @@ enum PlusPerk {
     PlusPerk.explainErrors => l10n.explainErrorsTitle,
     PlusPerk.badge => l10n.paywallPerkBadgeTitle,
     PlusPerk.recognition => l10n.paywallPerkRecognitionTitle,
+    PlusPerk.postcards => l10n.paywallPerkPostcardsTitle,
+    PlusPerk.giftTrail => l10n.paywallPerkGiftTitle,
   };
 
   String body(AppLocalizations l10n) => switch (this) {
@@ -63,6 +71,8 @@ enum PlusPerk {
     PlusPerk.explainErrors => l10n.paywallPerkExplainBody,
     PlusPerk.badge => l10n.paywallPerkBadgeBody,
     PlusPerk.recognition => l10n.paywallPerkRecognitionBody,
+    PlusPerk.postcards => l10n.paywallPerkPostcardsBody,
+    PlusPerk.giftTrail => l10n.paywallPerkGiftBody,
   };
 }
 

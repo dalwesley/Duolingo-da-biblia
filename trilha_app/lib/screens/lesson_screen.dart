@@ -873,6 +873,11 @@ class _LessonScreenState extends State<LessonScreen>
         (_baseMission != null &&
             (progress.isSessionReplayMission(_baseMission!.slug) ||
                 progress.isMissionCompleted(_baseMission!.slug)));
+    // Postal: só cena de verdade (prática não revela). A referência vem do
+    // estudo; sem ele, a do versículo de entrada — se for referência mesmo.
+    final postcardRef = [_study?.passageRef, _mission!.hookRef]
+        .map((r) => (r ?? '').trim())
+        .firstWhere((r) => RegExp(r'\d').hasMatch(r), orElse: () => '');
     final maxLamps = _maxLamps;
     final steps = ProgressService.computeLessonSteps(
       baseSteps: _mission!.stepsReward,
@@ -894,6 +899,8 @@ class _LessonScreenState extends State<LessonScreen>
           perfect: !forced && _correctCount == total && _lamps == maxLamps,
           failed: _outOfLamps && !widget.practiceMode,
           todayInsight: _mission!.centralInsight,
+          sceneTitle: _mission!.title,
+          postcardRef: widget.practiceMode ? null : postcardRef,
         ),
       ),
     );

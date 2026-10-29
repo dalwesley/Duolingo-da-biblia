@@ -13,12 +13,23 @@ class PlusAccess {
   /// com o plano base (`plus_founder_annual:annual`).
   static const pioneerProductId = 'plus_founder_annual';
 
+  /// Trilhas que alguém com o Peregrino+ liberou para este peregrino
+  /// (passe de trilha). Espelho de `ProgressService.giftedTrails`, que
+  /// grava aqui a cada mudança.
+  static Set<String> giftedTrails = const {};
+
+  /// A trilha faz parte do Peregrino+ (sem olhar os passes recebidos).
   /// O card da Bíblia (Antigo e Novo Testamento, todos os livros) é grátis.
   /// Os temas, Vida Cristã e Teologia são Peregrino+. As cenas do
   /// Sermão continuam grátis pela trilha de Mateus. As trilhas de entrada
   /// (motivo do onboarding e dores) são a porta do app: grátis inteiras.
-  static bool trailIsPlus(Trail trail) =>
+  static bool trailInPlus(Trail trail) =>
       trail.journey.requiresPlus && !EntryTrails.slugs.contains(trail.slug);
+
+  /// A trilha pede o Plus para este peregrino: é do Plus e ninguém a
+  /// liberou para ele com um passe.
+  static bool trailIsPlus(Trail trail) =>
+      trailInPlus(trail) && !giftedTrails.contains(trail.slug);
 
   /// A cena pede Plus? Numa trilha Plus, a 1ª cena é amostra grátis.
   static bool missionNeedsPlus(Trail trail, String missionSlug) {

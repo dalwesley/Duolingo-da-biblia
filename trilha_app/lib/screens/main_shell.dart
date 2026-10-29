@@ -32,6 +32,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/set_piece.dart';
 import '../services/content_catalog_service.dart';
@@ -105,6 +106,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   String _languageCode = 'pt';
   bool _routeCurrent = true;
   bool _medalCheckPending = false;
+
+  /// Já avisou que o passe de trilha espera o login (uma vez por sessão).
+  bool _trailGiftWaitShown = false;
 
   final _repo = TrailRepository();
   Timer? _phaseTimer;
@@ -215,12 +219,38 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final backend = _backendRef;
     if (backend == null || !backend.isActive) return;
     NotificationService.instance.emitRemoteToken();
+    // Passe aberto antes do login (ou na partida a frio) espera a conta.
+    unawaited(_redeemTrailGiftIfPending());
   }
 
   void _onInviteDeepLink() {
     if (!mounted) return;
     _openJuntosIfInvitePending();
     unawaited(_redeemWebPurchaseIfPending());
+    unawaited(_redeemTrailGiftIfPending());
+  }
+
+  /// Passe de trilha: alguém com o Peregrino+ liberou uma trilha. Sem
+  /// conta, o código fica guardado e o resgate roda depois do login.
+  Future<void> _redeemTrailGiftIfPending() async {
+    final links = InviteDeepLinkService.instance;
+    if (links.pendingTrailGiftCode == null) return;
+    final backend = context.read<BackendService>();
+    if (!backend.isActive) {
+      if (!backend.isInitializing && !_trailGiftWaitShown) {
+        _trailGiftWaitShown = true;
+        await showAppToastFor(
+          context,
+          message: context.l10n.trailGiftNeedsAccount,
+          glyph: CinematicGlyph.gift,
+          tone: AppToastTone.warn,
+        );
+      }
+      return;
+    }
+    final code = links.takePendingTrailGiftCode();
+    if (code == null) return;
+    await redeemTrailGiftLink(context, code);
   }
 
   /// Peregrino+ comprado no site: o link de resgate liga a compra à conta.
