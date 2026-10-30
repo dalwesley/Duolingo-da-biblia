@@ -4840,6 +4840,12 @@ abstract class AppLocalizations {
   /// **'~3 min'**
   String get homeHeroMinutes;
 
+  /// No description provided for @homeHeroPlusLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta trilha segue no Peregrino+'**
+  String get homeHeroPlusLine;
+
   /// No description provided for @homeHeroProtect.
   ///
   /// In pt, this message translates to:
@@ -9290,6 +9296,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Você acertou {correct} de {total}. São 5 perguntas das suas últimas cenas.'**
   String nextStepReinforceLine(int correct, int total);
+
+  /// No description provided for @nextStepReinforcePlusCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar com o Peregrino+'**
+  String get nextStepReinforcePlusCta;
 
   /// No description provided for @nextStepWeakChoice.
   ///

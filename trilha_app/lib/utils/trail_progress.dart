@@ -544,6 +544,42 @@ class TrailProgress {
     return out;
   }
 
+  /// Vitrine do Peregrino+ (sem Plus): trilhas já começadas cuja próxima
+  /// cena pede o Plus — as que [availableTrails] deixa de fora. Entram no
+  /// fim da lista, depois de tudo o que dá para andar de graça.
+  static List<Trail> plusTeaserTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final started = {
+      for (final t in startedTrails(
+        trails,
+        completed,
+        completedOn: completedOn,
+        borrowed: borrowed,
+        clearedTrailModes: clearedTrailModes,
+      ))
+        t.slug,
+    };
+    return [
+      for (final t in availableTrails(
+        trails,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+        trailModes: trailModes,
+        pinnedModes: pinnedModes,
+        completedOn: completedOn,
+        borrowed: borrowed,
+      ))
+        if (started.contains(t.slug) && nextSceneNeedsPlus(t, completed)) t,
+    ];
+  }
+
   /// Trilhas começadas e não terminadas, a mais recente primeiro: a da
   /// última cena, depois pelo dia da última cena feita ([completedOn]).
   /// Cena só emprestada ([borrowed]) não abre a trilha.

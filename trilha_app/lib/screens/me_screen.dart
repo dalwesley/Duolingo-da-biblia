@@ -32,6 +32,7 @@ import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
+import 'paywall_screen.dart';
 import 'settings_screen.dart';
 
 /// Abre o perfil completo do usuário (avatar na home ou card na caravana).
@@ -234,6 +235,11 @@ class _MeScreenState extends State<MeScreen> {
           streak: progress.streak,
           goal: progress.settings.streakGoal,
           showHistory: plusOpen,
+          onPlusHistory: () => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const PaywallScreen(source: 'profile_trend'),
+            ),
+          ),
           quests: progress.hasOpenWeeklyQuests
               ? const WeeklyQuestsList()
               : null,

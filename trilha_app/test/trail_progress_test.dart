@@ -764,5 +764,18 @@ void main() {
       TrailProgress.findActiveTrail(all, [], plusOpen: false)?.slug,
       'sermao-do-monte',
     );
+
+    // Vitrine: sem Plus o Sermão sai da lista livre e vira vitrine; sem
+    // cena feita nele, não há vitrine.
+    expect(
+      TrailProgress.availableTrails(all, [
+        's1',
+      ], plusOpen: false).map((t) => t.slug),
+      isNot(contains('sermao-do-monte')),
+    );
+    expect(TrailProgress.plusTeaserTrails(all, ['s1']).map((t) => t.slug), [
+      'sermao-do-monte',
+    ]);
+    expect(TrailProgress.plusTeaserTrails(all, []), isEmpty);
   });
 }

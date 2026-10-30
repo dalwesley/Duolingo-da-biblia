@@ -242,8 +242,7 @@ class CornerProposal {
 /// Porta do desafio: mesma trilha em andamento + a mesma próxima cena.
 class CornerMatch {
   /// Ignora a exigência de mesma trilha/cena (o limite de 1 desafio vale sempre).
-  /// TODO: desligar depois de validar o fluxo no aparelho.
-  static const forceOpenForPreview = true;
+  static const forceOpenForPreview = false;
 
   static CornerProposal? propose({
     required List<Trail> catalog,

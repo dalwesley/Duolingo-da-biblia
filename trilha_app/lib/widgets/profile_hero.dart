@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -428,6 +429,10 @@ class ConstancyCard extends StatefulWidget {
   /// Tendência das últimas 12 semanas (Peregrino+).
   final bool showHistory;
 
+  /// Sem [showHistory]: a tendência aparece desfocada, com cadeado, e o
+  /// toque chama isto (o paywall). Null esconde a vitrine.
+  final VoidCallback? onPlusHistory;
+
   /// Missões da semana em curso, dentro do card ("Esta semana").
   final Widget? quests;
 
@@ -437,6 +442,7 @@ class ConstancyCard extends StatefulWidget {
     required this.streak,
     required this.goal,
     this.showHistory = true,
+    this.onPlusHistory,
     this.quests,
   });
 
@@ -621,6 +627,68 @@ class _ConstancyCardState extends State<ConstancyCard> {
             const ListDivider(),
             const SizedBox(height: AppSpace.md),
             quests,
+          ],
+          if (!widget.showHistory && widget.onPlusHistory != null) ...[
+            const SizedBox(height: AppSpace.lg),
+            const ListDivider(),
+            const SizedBox(height: AppSpace.sm),
+            Semantics(
+              button: true,
+              label: '${l10n.profileWeekHistory} · ${l10n.paywallTitle}',
+              excludeSemantics: true,
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () {
+                  ActHaptics.tap();
+                  widget.onPlusHistory!();
+                },
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: AppSpace.sm,
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: SectionLabel(l10n.profileWeekHistory),
+                          ),
+                          const CinematicIcon(
+                            glyph: CinematicGlyph.lock,
+                            size: AppMetrics.iconSm,
+                            accent: AppRoles.reward,
+                            framed: false,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.sm),
+                    // A tendência da própria pessoa, desfocada: dá para ver
+                    // que existe, não para ler.
+                    ImageFiltered(
+                      imageFilter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                      child: _WeeksTrend(
+                        perWeek: perWeek,
+                        walked: walked,
+                        weeks: ConstancyCard.weeks,
+                        start: start,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      l10n.heroEndPlusCta,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w800,
+                        color: AppRoles.reward,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
           if (widget.showHistory) ...[
             const SizedBox(height: AppSpace.lg),

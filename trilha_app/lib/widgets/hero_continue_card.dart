@@ -35,6 +35,10 @@ class HeroContinueCard extends StatefulWidget {
   final bool goalMet;
   final bool atRisk;
 
+  /// Vitrine do Peregrino+: a próxima cena da trilha pede o Plus. O card
+  /// fica em dia (sem poeira nem gelo), com cadeado, e o CTA chama o Plus.
+  final bool plusLocked;
+
   const HeroContinueCard({
     super.key,
     required this.mission,
@@ -45,6 +49,7 @@ class HeroContinueCard extends StatefulWidget {
     this.onExploreTrails,
     this.goalMet = false,
     this.atRisk = false,
+    this.plusLocked = false,
   });
 
   /// Altura estimada do header da Home acima do hero (saudação + pulso +
@@ -208,12 +213,15 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final hasFreeze = progress.hasFreeze;
     final walkedToday = progress.walkedToday;
     final returningAfterGap = progress.returningAfterGap;
-    final mood = resolveHeroCardMood(
-      atRisk: widget.atRisk,
-      yesterdayFrozen: progress.yesterdayFrozen,
-      walkedToday: walkedToday,
-      returningAfterGap: returningAfterGap,
-    );
+    final locked = widget.plusLocked;
+    final mood = locked
+        ? HeroCardMood.alive
+        : resolveHeroCardMood(
+            atRisk: widget.atRisk,
+            yesterdayFrozen: progress.yesterdayFrozen,
+            walkedToday: walkedToday,
+            returningAfterGap: returningAfterGap,
+          );
     if (mood == HeroCardMood.alive && !AppMotion.reduced(context)) {
       if (!_pulseController.isAnimating) {
         _pulseController.repeat(reverse: true);
@@ -225,30 +233,33 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final style = HeroCardMoodStyle.of(mood, a, atRisk: widget.atRisk);
 
     // Em dia: o cartão é o trailer de amanhã — o ouro convida a abrir agora.
-    final resting = widget.goalMet && mood == HeroCardMood.alive;
+    final resting = !locked && widget.goalMet && mood == HeroCardMood.alive;
     final arrived =
+        !locked &&
         !walkedToday &&
         TomorrowHook.promisedArrived(
           promisedTitle: progress.nextSceneTitle,
           currentTitle: mission.localizedTitle,
         );
-    final yesterday = !walkedToday
+    final yesterday = !locked && !walkedToday
         ? TomorrowHook.yesterdayLine(progress.lastInsight)
         : null;
     final echoDoor = !walkedToday && arrived
         ? TomorrowHook.echoDoorLine(progress.lastEchoQuestion)
         : null;
     final l10n = context.l10n;
-    final ctaLabel = switch (mood) {
-      HeroCardMood.frozen => l10n.commonContinue,
-      HeroCardMood.dusty => l10n.commonContinue,
-      HeroCardMood.alive =>
-        resting || walkedToday
-            ? l10n.commonNextScene
-            : progress.lastPlayedDate == null
-            ? l10n.commonStart
-            : l10n.commonContinue,
-    };
+    final ctaLabel = locked
+        ? l10n.heroEndPlusCta
+        : switch (mood) {
+            HeroCardMood.frozen => l10n.commonContinue,
+            HeroCardMood.dusty => l10n.commonContinue,
+            HeroCardMood.alive =>
+              resting || walkedToday
+                  ? l10n.commonNextScene
+                  : progress.lastPlayedDate == null
+                  ? l10n.commonStart
+                  : l10n.commonContinue,
+          };
     // Rodapé só é recompensa quando promete passos extras.
     final footerColor = resting ? AppRoles.reward : style.footer;
     // Mesma pintura do card da cena no mapa; sem arte de cena, a da trilha.
@@ -279,20 +290,22 @@ class _HeroContinueCardState extends State<HeroContinueCard>
         ? TomorrowHook.pullOf(mission)
         : (_readerTease ?? TomorrowHook.teaseOf(mission));
 
-    final stepLabel = switch (mood) {
-      HeroCardMood.frozen => style.stepLabel,
-      HeroCardMood.dusty => style.stepLabel,
-      HeroCardMood.alive =>
-        resting
-            ? l10n.homeHeroTomorrow
-            : echoDoor != null
-            ? l10n.homeHeroEcho
-            : arrived
-            ? l10n.commonToday
-            : walkedToday
-            ? l10n.homeMoodAlive
-            : l10n.homeHeroReady,
-    };
+    final stepLabel = locked
+        ? l10n.paywallTitle
+        : switch (mood) {
+            HeroCardMood.frozen => style.stepLabel,
+            HeroCardMood.dusty => style.stepLabel,
+            HeroCardMood.alive =>
+              resting
+                  ? l10n.homeHeroTomorrow
+                  : echoDoor != null
+                  ? l10n.homeHeroEcho
+                  : arrived
+                  ? l10n.commonToday
+                  : walkedToday
+                  ? l10n.homeMoodAlive
+                  : l10n.homeHeroReady,
+          };
 
     final heroHeight = HeroContinueCard.stageHeight(context);
     // Palco baixo (telas ~800dp com header): título em 2 linhas, sem cortar.
@@ -447,7 +460,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                                         );
                                       },
                                       child: CinematicIcon(
-                                        glyph: visuals.glyph,
+                                        glyph: locked
+                                            ? CinematicGlyph.lock
+                                            : visuals.glyph,
                                         size: AppMetrics.iconSm,
                                         accent: AppRoles.chrome,
                                         glowing: false,
@@ -590,7 +605,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             const SizedBox(height: 10),
                             Center(
                               child: Text(
-                                resting
+                                locked
+                                    ? l10n.homeHeroPlusLine
+                                    : resting
                                     ? l10n.homeHeroExtraSteps(
                                         mission.stepsReward,
                                       )

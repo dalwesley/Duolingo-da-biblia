@@ -3033,6 +3033,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeHeroMinutes => '~3 min';
 
   @override
+  String get homeHeroPlusLine => 'Esta trilha segue no Peregrino+';
+
+  @override
   String get homeHeroProtect => 'Protege a sequência · ~3 min';
 
   @override
@@ -5909,6 +5912,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String nextStepReinforceLine(int correct, int total) {
     return 'Você acertou $correct de $total. São 5 perguntas das suas últimas cenas.';
   }
+
+  @override
+  String get nextStepReinforcePlusCta => 'Treinar com o Peregrino+';
 
   @override
   String get nextStepWeakChoice => 'Treinar escolher a melhor resposta';

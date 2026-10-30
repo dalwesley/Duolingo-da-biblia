@@ -384,27 +384,37 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final plusOpen = tabListens
         ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
         : context.read<SubscriptionService>().plusFeaturesOpen;
-    final active = TrailProgress.findActiveTrail(
+    // Trilhas abertas = carrossel da Hoje: todas com próxima cena agora
+    // (a 1ª é a ativa, a da faixa); sem Plus, no fim, as começadas que
+    // pararam no Plus, com a etiqueta.
+    final freeTrails = TrailProgress.availableTrails(
       trails,
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      trailModes: progress.activeTrailModes,
+      pinnedModes: progress.pinnedTrailDifficulties,
+      completedOn: progress.missionCompletedOn,
+      borrowed: progress.borrowedMissions,
       plusOpen: plusOpen,
     );
+    final openTrails = [
+      ...freeTrails,
+      if (!plusOpen)
+        ...TrailProgress.plusTeaserTrails(
+          trails,
+          progress.completedMissions,
+          clearedTrailModes: progress.clearedTrailModes,
+          trailModes: progress.activeTrailModes,
+          pinnedModes: progress.pinnedTrailDifficulties,
+          completedOn: progress.missionCompletedOn,
+          borrowed: progress.borrowedMissions,
+        ),
+    ];
+    final active = freeTrails.firstOrNull;
     final current = active == null
         ? null
         : TrailProgress.getCurrentMission(active, progress.completedMissions);
     final activeJourney = active?.journey;
-    // Trilhas abertas: a da faixa primeiro, depois as começadas.
-    final openTrails = [
-      ?active,
-      ...TrailProgress.startedTrails(
-        trails,
-        progress.completedMissions,
-        completedOn: progress.missionCompletedOn,
-        borrowed: progress.borrowedMissions,
-        clearedTrailModes: progress.clearedTrailModes,
-      ).where((t) => t.slug != active?.slug),
-    ];
     // Todo card aparece; sem trilha publicada ainda, fica "Em breve"
     // (como Teologia hoje) e vai para o fim da linha — o que já dá para
     // andar vem primeiro, na ordem do catálogo.

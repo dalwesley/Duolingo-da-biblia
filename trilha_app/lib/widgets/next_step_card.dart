@@ -10,6 +10,7 @@ import '../models/trail.dart';
 import '../screens/paywall_screen.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/next_step.dart';
@@ -132,6 +133,10 @@ class _NextStepCardState extends State<NextStepCard> {
       _logged = step.key;
       AnalyticsService.instance.logEvent('next_step_view', {'step': step.key});
     }
+    // Reforço é do Peregrino+: sem ele, a sugestão fica e leva ao paywall.
+    final plusOpen = context.select(
+      (SubscriptionService s) => s.plusFeaturesOpen,
+    );
     final l10n = context.l10n;
     final (title, body, cta, onTap) = switch (step) {
       DeepenStep() => (
@@ -143,12 +148,22 @@ class _NextStepCardState extends State<NextStepCard> {
       ReinforceStep() => (
         _weakTitle(l10n, step.gesture),
         l10n.nextStepReinforceLine(step.accuracy.correct, step.accuracy.total),
-        l10n.nextStepReinforceCta,
+        plusOpen ? l10n.nextStepReinforceCta : l10n.nextStepReinforcePlusCta,
         () {
           AnalyticsService.instance.logEvent('next_step_reinforce', {
             'gesture': step.gesture.wireId,
             'percent': step.accuracy.percent,
+            'plus': plusOpen,
           });
+          if (!plusOpen) {
+            ActHaptics.tap();
+            return Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) =>
+                    const PaywallScreen(source: 'next_step_reinforce'),
+              ),
+            );
+          }
           return startReinforce(
             context,
             gesture: step.gesture,

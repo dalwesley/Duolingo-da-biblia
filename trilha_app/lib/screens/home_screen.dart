@@ -51,6 +51,7 @@ import '../widgets/plus_offer_sheet.dart';
 import '../widgets/next_step_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
+import 'paywall_screen.dart';
 import 'practice_screen.dart';
 import 'weekly_review_screen.dart';
 import 'season_walk_screen.dart';
@@ -689,6 +690,19 @@ class _HomeScreenState extends State<HomeScreen>
       borrowed: progress.borrowedMissions,
       plusOpen: plusOpen,
     );
+    // Sem Plus, a trilha começada que parou no Plus vira o último card,
+    // com cadeado: a vitrine nunca toma o lugar do que dá para andar.
+    final plusTeasers = plusOpen || heroTrails.isEmpty
+        ? const <Trail>[]
+        : TrailProgress.plusTeaserTrails(
+            trails,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          );
     final active = heroTrails.firstOrNull;
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
@@ -767,7 +781,8 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                         )
                       : _HeroCarousel(
-                          trails: heroTrails,
+                          trails: [...heroTrails, ...plusTeasers],
+                          plusLocked: {for (final t in plusTeasers) t.slug},
                           completed: progress.completedMissions,
                           side: AppSpace.screen + gutter,
                           onOpenMission: widget.onOpenMission,
@@ -878,6 +893,9 @@ class _HomeScreenState extends State<HomeScreen>
 /// sem fim (depois da última vem a primeira), então sempre há vizinho.
 class _HeroCarousel extends StatefulWidget {
   final List<Trail> trails;
+
+  /// Trilhas de vitrine: a próxima cena pede o Peregrino+.
+  final Set<String> plusLocked;
   final List<String> completed;
 
   /// Margem lateral da coluna do conteúdo.
@@ -889,6 +907,7 @@ class _HeroCarousel extends StatefulWidget {
 
   const _HeroCarousel({
     required this.trails,
+    this.plusLocked = const {},
     required this.completed,
     required this.side,
     required this.onOpenMission,
@@ -1000,12 +1019,22 @@ class _HeroCarouselState extends State<_HeroCarousel> {
 
   Widget _card(Trail trail) {
     final mission = TrailProgress.getCurrentMission(trail, widget.completed);
+    final locked = widget.plusLocked.contains(trail.slug);
     return HeroContinueCard(
       mission: mission,
       trailTitle: trail.title,
       trailSlug: trail.slug,
       trailColor: trail.color,
-      onTap: mission != null ? () => widget.onOpenMission(mission.slug) : null,
+      plusLocked: locked,
+      onTap: locked
+          ? () => Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => const PaywallScreen(source: 'home_hero_plus'),
+              ),
+            )
+          : mission != null
+          ? () => widget.onOpenMission(mission.slug)
+          : null,
       onExploreTrails: widget.onExploreTrails,
       goalMet: widget.goalMet,
       atRisk: widget.atRisk,
