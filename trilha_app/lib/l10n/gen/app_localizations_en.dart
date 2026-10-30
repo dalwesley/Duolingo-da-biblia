@@ -6471,7 +6471,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallFreeForever =>
-      'The Bible and the book trails stay free. Always.';
+      'The Bible, book by book, and the entry trails stay free — one trail at a time. Always.';
 
   @override
   String get paywallHeadline => 'Keep your pace';
@@ -6570,7 +6570,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermon on the Mount, Prayer, Family and other Christian life paths, whole.';
+      'Sermon on the Mount, The Promise, Prayer, Family, Church History and other paths — whole from the first scene.';
 
   @override
   String get paywallPerkThemesTitle => 'Theme trails';
@@ -7220,7 +7220,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get plusLockedSheetBody =>
-      'This trail is part of Pilgrim+. The Bible and the book trails stay free.';
+      'This trail is part of Pilgrim+. The Bible, book by book, and the entry trails stay free — one trail at a time.';
 
   @override
   String get plusLockedSheetCta => 'See Pilgrim+';
@@ -7245,13 +7245,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get plusNoticeEndingTitle => 'Your free Pilgrim+ is ending';
 
   @override
-  String get plusNoticeFreeBible => 'The full Bible';
+  String get plusNoticeFreeBible => 'The Bible, book by book';
 
   @override
   String get plusNoticeFreeHeader => 'Still free, always';
 
   @override
-  String get plusNoticeFreeScenes => 'Every scene and trail, in all 3 modes';
+  String get plusNoticeFreeScenes =>
+      'One trail at a time, in all 3 modes — plus the entry trails';
 
   @override
   String get plusNoticeFreeSocial => 'Caravan and study partner';

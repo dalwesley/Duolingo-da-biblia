@@ -94,6 +94,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       return;
     }
     if (!mounted) return;
+    // Grátis: a vaga fecha já no mapa (depois de Sair + entrar), não só
+    // no "Começar". Sem isso o herói pode parecer trocado e a porta de
+    // entrada (Ansiedade) ainda abre porque a escolha não gravou.
+    if (trail != null && !PlusAccess.trailInPlus(trail)) {
+      final progress = context.read<ProgressService>();
+      if (!context.read<SubscriptionService>().plusFeaturesOpen) {
+        await progress.reserveTrailChoice(trail.slug);
+        if (!mounted) return;
+      }
+    }
     setState(() => _trail = trail);
 
     if (_fromBank) {

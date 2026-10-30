@@ -44,19 +44,21 @@ como benefício pago de uma fase futura. Não se vende o que ainda não existe.
 > Toda a Bíblia, livro por livro, é grátis.
 > Os caminhos por tema, as jornadas e as revisões são o Peregrino+.
 
-- **Território (grátis):** as áreas Antigo Testamento e Novo Testamento.
-- **Rota (Plus):** todo o resto: Vida Cristã, Teologia e as trilhas por
-  dor (Ansiedade, Recomeço), **Sermão do Monte incluso** (decidido em
-  21 out 2026: é trilha temática; Mateus 5–7 segue grátis pela trilha do
-  NT). Amostra grátis: **a 1ª cena de cada trilha** Plus; da 2ª em
-  diante, o toque abre o paywall (`PlusAccess.missionNeedsPlus`,
-  checado no `LessonScreen` — vale para mapa, Home e deep link).
-- A regra é pela área (`realm`), não pela trilha: área nova fora de AT/NT
-  já nasce Plus. Trilha Plus não espera pré-requisito de outra área (quem
-  assina não precisa terminar Atos para abrir História da Igreja); a
-  ordem dentro do próprio caminho continua, e o cadeado diz o que falta
-  (“Termine História da Igreja para abrir”). A Caminhada de temporada usa cenas dessas trilhas e
-  segue a regra própria dela (dias 1–3 grátis), não a da trilha.
+- **Território (grátis):** as áreas Antigo Testamento e Novo Testamento
+  (livro a livro). **Uma trilha por vez** no grátis.
+- **Portas de entrada (grátis inteiras):** Ansiedade, Conhecer a Deus,
+  Entender a Bíblia — depois desembocam no cânon ou no Plus.
+- **Rota (Plus):** Temas (ex.: A Promessa), Vida Cristã (Sermão do Monte,
+  Oração, Família, História da Igreja…) e Teologia. Mateus 5–7 segue
+  grátis pela trilha de Mateus no NT. **Sem amostra:** trilha Plus pede
+  o Plus desde a 1ª cena (`PlusAccess.missionNeedsPlus` — mapa, Home e
+  deep link). O trial da loja faz o papel de teste.
+- A regra é pela área/card (`TrailJourney.requiresPlus`), não só pelo
+  `realm`: área nova fora de AT/NT já nasce Plus (exceto as portas de
+  entrada). Trilha Plus não espera pré-requisito de outra área; a ordem
+  dentro do próprio caminho continua. A Caminhada de temporada usa cenas
+  dessas trilhas e segue a regra própria dela (só o 1º dia grátis), não
+  a da trilha.
 - Cena dentro de rota paga continua alcançável grátis pela trilha do seu
   livro. O Plus vende seleção, ordem, estudo e destino — nunca a cena.
 
@@ -101,34 +103,36 @@ calendário de temporadas), montada de cenas que já existem nas trilhas:
 ## O que continua grátis
 
 - Cena do dia, sequência, missões, gelo, lâmpadas, reparo, Strong
-- Cânon nos 3 modos (Observação / Compreensão / Interpretação)
+- Cânon nos 3 modos (Observação / Compreensão / Interpretação), **uma
+  trilha por vez**
 - Bíblia offline, busca, versículos salvos, áudio da cena (passagem + “Hoje:”)
 - Memorização de versículos (flashcards com SRS leve) e fila de erros
 - O plano de leitura da Bíblia inteira (canônico ou cronológico) + lembrete
-- Os 3 primeiros dias de cada Caminhada de temporada
-- A 1ª cena de cada trilha temática — amostra permanente
+- O 1º dia de cada Caminhada de temporada
+- Portas de entrada inteiras (Ansiedade, Conhecer a Deus, Entender a Bíblia)
 - 1 companhia, Caravana, grupo básico, Desafio
 
 ## Divisão grátis × Plus
 
 | Funcionalidade | Grátis | Peregrino+ |
 |---|---|---|
-| Missão diária e trilhas bíblicas | Completo | Completo |
+| Missão diária e trilhas bíblicas | Completo, **1 trilha por vez** | Quantas quiser ao mesmo tempo |
+| Portas de entrada | Inteiras | Inteiras |
 | Leitura e explicação das respostas | Completo | Completo |
 | Memorização de versículos | Básica (deck atual) | Revisões adaptativas e agendadas |
 | Revisão de erros | Básica (fila de erros) | Plano de revisão personalizado |
 | Planos de formação | Bíblia inteira + amostra dos guiados | Guiados completos e planos por objetivo |
 | Conexões bíblicas | Dentro das missões (gesto connect) | Estudos e explorações aprofundadas |
-| Caminhadas | Dias 1–3 de cada temporada | Temporadas completas + Caminhadas Premium |
-| Trilhas temáticas (Vida Cristã, Teologia, Sermão do Monte) | 1ª cena de cada trilha | Trilhas temáticas completas (passagens sempre grátis pelo AT/NT) |
+| Caminhadas | 1º dia de cada temporada | Temporadas completas + Caminhadas Premium |
+| Temas / Vida Cristã / Teologia (Sermão, A Promessa, Oração…) | Fechadas (sem amostra) | Trilhas inteiras desde a 1ª cena (passagens sempre grátis pelo AT/NT) |
 | Desafios e conquistas | Regulares | Experiências especiais |
 | Comunidade | Grupos e interação básica | Jornadas cooperativas especiais (Fase 3) |
 | Progresso | XP, sequência e trilhas | Análise de aprendizagem por tema (Fase 2) |
 
 Todos os livros da Bíblia são grátis, os poéticos (Jó, Salmos, Provérbios,
 Eclesiastes, Cantares) inclusive: ficam no card do Antigo Testamento. As
-trilhas de entrada (Ansiedade, Recomeço, Conhecer a Deus, Entender a
-Bíblia) são grátis inteiras.
+portas de entrada (Ansiedade, Conhecer a Deus, Entender a Bíblia) são
+grátis inteiras.
 
 **Cena Plus liberada por quem paga.** A trava do Peregrino+ vale em todo
 caminho (mapa, Home, deep link, grupo, Travessia). Duas exceções, uma cena
@@ -256,7 +260,7 @@ intencional): ninguém fica preso sem ter o que comprar.
 
 O Plus de hoje, organizado pelos pilares 1 e 2:
 
-- Caminhadas de temporada completas (dias 1–3 grátis) + revisão da temporada
+- Caminhadas de temporada completas (1º dia grátis) + revisão da temporada
 - Revisão inteligente **semanal** (fecha a semana de estudo; na
   temporada, o fechamento da semana da Caminhada a substitui — a
   Revisão do Dia foi aposentada: um fluxo de revisão por semana basta),

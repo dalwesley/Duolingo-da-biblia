@@ -401,6 +401,12 @@ class _LessonScreenState extends State<LessonScreen>
           return;
         }
         if (!mounted) return;
+        // Reserva a vaga já na abertura: outra trilha grátis não começa
+        // enquanto esta intro estiver no ar.
+        if (_choosesTrail && !alreadyDone) {
+          await progress.reserveTrailChoice(trail.slug);
+          if (!mounted) return;
+        }
       }
     }
 

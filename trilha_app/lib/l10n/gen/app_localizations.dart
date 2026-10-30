@@ -10176,7 +10176,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFreeForever.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia e as trilhas de cada livro continuam grátis. Sempre.'**
+  /// **'A Bíblia, livro a livro, e as portas de entrada continuam grátis — uma trilha por vez. Sempre.'**
   String get paywallFreeForever;
 
   /// No description provided for @paywallHeadline.
@@ -10344,7 +10344,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkThemesBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã, inteiras.'**
+  /// **'Sermão do Monte, A Promessa, Oração, Família, História da Igreja e outras rotas — inteiras desde a 1ª cena.'**
   String get paywallPerkThemesBody;
 
   /// No description provided for @paywallPerkThemesTitle.
@@ -11268,7 +11268,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusLockedSheetBody.
   ///
   /// In pt, this message translates to:
-  /// **'Esta trilha faz parte do Peregrino+. A Bíblia e as trilhas de cada livro continuam grátis.'**
+  /// **'Esta trilha faz parte do Peregrino+. A Bíblia, livro a livro, e as portas de entrada continuam grátis — uma trilha por vez.'**
   String get plusLockedSheetBody;
 
   /// No description provided for @plusLockedSheetCta.
@@ -11310,7 +11310,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusNoticeFreeBible.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia completa'**
+  /// **'A Bíblia, livro a livro'**
   String get plusNoticeFreeBible;
 
   /// No description provided for @plusNoticeFreeHeader.
@@ -11322,7 +11322,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusNoticeFreeScenes.
   ///
   /// In pt, this message translates to:
-  /// **'Todas as cenas e trilhas, nos 3 modos'**
+  /// **'Uma trilha por vez, nos 3 modos — e as portas de entrada'**
   String get plusNoticeFreeScenes;
 
   /// No description provided for @plusNoticeFreeSocial.

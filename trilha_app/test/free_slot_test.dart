@@ -59,6 +59,18 @@ void main() {
     expect(TrailProgress.freeSlotBlocker(mateus, trails, const []), isNull);
   });
 
+  test('reserve on open blocks another free trail', () {
+    expect(
+      TrailProgress.freeSlotBlocker(
+        mateus,
+        trails,
+        const [],
+        chosenAt: {'genesis': day1},
+      )?.slug,
+      'genesis',
+    );
+  });
+
   test('the principal blocks starting another', () {
     expect(
       TrailProgress.freeSlotBlocker(

@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:trilha_app/models/user_intent.dart';
 import 'package:trilha_app/services/progress_service.dart';
+import 'package:trilha_app/utils/trail_progress.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -76,5 +78,50 @@ void main() {
     final order = p.trailChosenAt.entries.toList()
       ..sort((a, b) => a.value.compareTo(b.value));
     expect(order.map((e) => e.key), ['genesis', 'ansiedade']);
+  });
+
+  test('sair da trilha: a nuvem não devolve escolha nem cena', () async {
+    final p = ProgressService();
+    await p.completeMission('genesis-1', 10, chooseTrail: 'genesis');
+    await p.leaveTrail(trailSlug: 'genesis', missionSlugs: ['genesis-1']);
+    expect(p.completedMissions, isEmpty);
+    expect(p.trailChosenAt, isEmpty);
+    expect(p.trailsLeftAt.containsKey('genesis'), isTrue);
+    expect(p.leftMissionSlugs, ['genesis-1']);
+
+    await p.applyFromCloud({
+      'version': 2,
+      'completedMissions': ['genesis-1', 'mateus-1'],
+      'trailChosenAt': {'genesis': '2026-10-01T09:00:00'},
+      'trailChoicesSeedV': 2,
+    });
+    expect(p.completedMissions, ['mateus-1']);
+    expect(p.trailChosenAt.containsKey('genesis'), isFalse);
+  });
+
+  test('reservar na abertura trava a vaga antes de completar', () async {
+    final p = ProgressService();
+    await p.reserveTrailChoice('genesis');
+    expect(p.trailChosenAt.keys, ['genesis']);
+    await p.completeMission('genesis-1', 10, chooseTrail: 'genesis');
+    expect(p.trailChosenAt.keys, ['genesis']);
+  });
+
+  test('outra trilha na vaga limpa o motivo de entrada', () async {
+    final p = ProgressService()
+      ..settings = const AppSettings(intent: UserIntent.peace);
+    expect(TrailProgress.preferredTrailSlug, 'ansiedade');
+    await p.reserveTrailChoice('genesis-1-11');
+    expect(p.settings.intent, isNull);
+    expect(TrailProgress.preferredTrailSlug, isNull);
+    expect(p.toCloudMap()['settings'], containsPair('intent', ''));
+  });
+
+  test('reservar a própria porta do motivo mantém o motivo', () async {
+    final p = ProgressService()
+      ..settings = const AppSettings(intent: UserIntent.know);
+    await p.reserveTrailChoice('conhecer-a-deus');
+    expect(p.settings.intent, UserIntent.know);
+    expect(TrailProgress.preferredTrailSlug, 'conhecer-a-deus');
   });
 }

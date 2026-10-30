@@ -271,19 +271,29 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   bool _entryForkShown = false;
 
+  /// Resultado da folha no fim da porta (motivo → Plus ou caminho grátis).
+  static const _forkNone = 0;
+  static const _forkNavigated = 1;
+  static const _forkDismissed = 2;
+
   /// Fim da trilha do motivo, sem o Plus, com destino do Plus: oferece o
-  /// Plus ou o caminho grátis. true: já navegou.
-  Future<bool> _offerEntryFork() async {
-    if (_entryForkShown || _noProgress) return false;
+  /// Plus ou o caminho grátis. A flag só grava depois de uma escolha
+  /// real — dismiss volta à Home e Continuar pode mostrar a folha de novo.
+  Future<int> _offerEntryFork() async {
+    if (_entryForkShown || _noProgress) return _forkNone;
     final canon = EntryTrails.continuesTo[widget.missionSlug];
     final freeSlug = EntryTrails.freeContinuesTo[widget.missionSlug];
-    if (canon == null || freeSlug == null) return false;
-    if (context.read<SubscriptionService>().plusFeaturesOpen) return false;
+    if (canon == null || freeSlug == null) return _forkNone;
+    if (context.read<SubscriptionService>().plusFeaturesOpen) {
+      return _forkNone;
+    }
     final progress = context.read<ProgressService>();
     final trails = await TrailRepository().getTrails();
-    if (!mounted) return false;
+    if (!mounted) return _forkNone;
     final plusTrail = trails.where((t) => t.slug == canon).firstOrNull;
-    if (plusTrail == null || !PlusAccess.trailIsPlus(plusTrail)) return false;
+    if (plusTrail == null || !PlusAccess.trailIsPlus(plusTrail)) {
+      return _forkNone;
+    }
     final completed = progress.completedMissions;
     bool walkable(Trail t) =>
         !t.comingSoon &&
@@ -308,14 +318,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           borrowed: progress.borrowedMissions,
           plusOpen: false,
         );
-    if (freeTrail == null) return false;
-    _entryForkShown = true;
+    if (freeTrail == null) return _forkNone;
     final choice = await showEntryForkSheet(
       context,
       plusTrail: plusTrail,
       freeTrail: freeTrail,
     );
-    if (!mounted || choice == null) return false;
+    if (!mounted) return _forkNavigated;
+    if (choice == null) return _forkDismissed;
+    _entryForkShown = true;
     _leaving = true;
     unawaited(
       Navigator.of(context).pushReplacement(
@@ -326,12 +337,19 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         ),
       ),
     );
-    return true;
+    return _forkNavigated;
   }
 
   Future<void> _leaveCelebration({required bool toTrailMap}) async {
     if (_leaving) return;
-    if (await _offerEntryFork()) return;
+    final fork = await _offerEntryFork();
+    if (fork == _forkNavigated) return;
+    if (fork == _forkDismissed) {
+      _leaving = true;
+      if (!mounted) return;
+      Navigator.of(context).popUntil((r) => r.isFirst);
+      return;
+    }
     if (_leaving) return;
     _leaving = true;
     try {
@@ -352,7 +370,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   Future<void> _openTomorrow() async {
     if (_leaving) return;
-    if (await _offerEntryFork()) return;
+    final fork = await _offerEntryFork();
+    if (fork == _forkNavigated) return;
+    if (fork == _forkDismissed) {
+      _leaving = true;
+      if (!mounted) return;
+      Navigator.of(context).popUntil((r) => r.isFirst);
+      return;
+    }
     if (_leaving) return;
     final slug = (_hook?.missionSlug ?? '').trim();
     if (slug.isEmpty) {

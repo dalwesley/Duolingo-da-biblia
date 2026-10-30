@@ -6518,7 +6518,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallFreeForever =>
-      'La Biblia y las rutas de cada libro siguen gratis. Siempre.';
+      'La Biblia, libro a libro, y las rutas de entrada siguen gratis — una ruta a la vez. Siempre.';
 
   @override
   String get paywallHeadline => 'Mantén tu ritmo';
@@ -6617,7 +6617,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermón del Monte, Oración, Familia y otras rutas de Vida Cristiana, completas.';
+      'Sermón del Monte, La Promesa, Oración, Familia, Historia de la Iglesia y otras rutas — completas desde la 1ª escena.';
 
   @override
   String get paywallPerkThemesTitle => 'Rutas por tema';
@@ -7268,7 +7268,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plusLockedSheetBody =>
-      'Esta ruta es parte de Peregrino+. La Biblia y las rutas de cada libro siguen gratis.';
+      'Esta ruta es parte de Peregrino+. La Biblia, libro a libro, y las rutas de entrada siguen gratis — una ruta a la vez.';
 
   @override
   String get plusLockedSheetCta => 'Conocer Peregrino+';
@@ -7293,14 +7293,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get plusNoticeEndingTitle => 'Tu Peregrino+ gratis está terminando';
 
   @override
-  String get plusNoticeFreeBible => 'La Biblia completa';
+  String get plusNoticeFreeBible => 'La Biblia, libro a libro';
 
   @override
   String get plusNoticeFreeHeader => 'Sigue gratis, siempre';
 
   @override
   String get plusNoticeFreeScenes =>
-      'Todas las escenas y rutas, en los 3 modos';
+      'Una ruta a la vez, en los 3 modos — y las rutas de entrada';
 
   @override
   String get plusNoticeFreeSocial => 'Caravana y compañía';

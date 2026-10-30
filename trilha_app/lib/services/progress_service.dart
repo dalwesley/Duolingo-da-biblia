@@ -85,6 +85,7 @@ class AppSettings {
     PortraitStyle? portraitStyle,
     AppLanguage? language,
     UserIntent? intent,
+    bool clearIntent = false,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -98,7 +99,7 @@ class AppSettings {
       bibleReadingNight: bibleReadingNight ?? this.bibleReadingNight,
       portraitStyle: portraitStyle ?? this.portraitStyle,
       language: language ?? this.language,
-      intent: intent ?? this.intent,
+      intent: clearIntent ? null : (intent ?? this.intent),
     );
   }
 }
@@ -418,9 +419,17 @@ class ProgressService extends ChangeNotifier {
 
   /// Minhas trilhas: quando cada uma foi escolhida (ISO). A ordem da
   /// escolha decide a principal, a 1ª ([TrailProgress.myTrails]). Entra
-  /// na 1ª cena feita pela própria trilha (Caminhada, grupo e Desafio não
+  /// ao abrir a 1ª cena pela própria trilha (Caminhada, grupo e Desafio não
   /// escolhem); sai ao sair da trilha ou ao fechar um modo.
   Map<String, String> trailChosenAt = {};
+
+  /// Quando a pessoa saiu de cada trilha (ISO). A nuvem não devolve
+  /// escolha nem cenas apagadas enquanto este marco valer.
+  Map<String, String> trailsLeftAt = {};
+
+  /// Cenas zeradas por [leaveTrail]: o merge com a nuvem não as traz de
+  /// volta até a pessoa refazer cada uma.
+  List<String> leftMissionSlugs = [];
 
   /// Versão da semente de Minhas trilhas já aplicada. A 1ª perdia as
   /// trilhas antigas quando uma escolha nova chegava antes dela.
@@ -438,11 +447,38 @@ class ProgressService extends ChangeNotifier {
     trailChoicesSeedV = trailChoicesSeedCurrent;
     trailChosenAt = {
       for (var i = 0; i < orderedSlugs.length; i++)
-        if (!trailChosenAt.containsKey(orderedSlugs[i]))
+        if (!trailChosenAt.containsKey(orderedSlugs[i]) &&
+            !trailsLeftAt.containsKey(orderedSlugs[i]))
           orderedSlugs[i]:
               '1970-01-01T00:00:00.${i.toString().padLeft(3, '0')}',
       ...trailChosenAt,
     };
+    await _save();
+    notifyListeners();
+  }
+
+  /// Reserva a vaga ao abrir a cena (antes de completar): trava as outras
+  /// trilhas grátis. Refazer depois de [leaveTrail] limpa o túmulo.
+  ///
+  /// Se a vaga for outra trilha que a porta do motivo, o motivo some: ele
+  /// só define a entrada; ficar gravado puxava a porta de novo na Home.
+  Future<void> reserveTrailChoice(String trailSlug) async {
+    final slug = trailSlug.trim();
+    if (slug.isEmpty) return;
+    trailsLeftAt = {...trailsLeftAt}..remove(slug);
+    if (!trailChosenAt.containsKey(slug)) {
+      trailChosenAt = {
+        ...trailChosenAt,
+        slug: DateTime.now().toIso8601String(),
+      };
+    }
+    final intent = settings.intent;
+    final leftEntry =
+        intent != null && intent.entryTrailSlug != slug;
+    if (leftEntry) {
+      settings = settings.copyWith(clearIntent: true);
+      await _persistSettingsLocal();
+    }
     await _save();
     notifyListeners();
   }
@@ -1208,6 +1244,8 @@ class ProgressService extends ChangeNotifier {
     completedMissions = [];
     missionCompletedOn = {};
     trailChosenAt = {};
+    trailsLeftAt = {};
+    leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
     postcardRefs = {};
@@ -2410,7 +2448,10 @@ class ProgressService extends ChangeNotifier {
     required List<String> missionSlugs,
   }) async {
     final drop = missionSlugs.toSet();
+    final leftAt = DateTime.now().toIso8601String();
     trailChosenAt = {...trailChosenAt}..remove(trailSlug);
+    trailsLeftAt = {...trailsLeftAt, trailSlug: leftAt};
+    leftMissionSlugs = {...leftMissionSlugs, ...drop}.toList();
 
     completedMissions = [
       for (final s in completedMissions)
@@ -2828,15 +2869,22 @@ class ProgressService extends ChangeNotifier {
     String? chooseTrail,
   }) async {
     var awarded = 0;
-    // 1ª cena feita pela própria trilha: ela entra em Minhas trilhas.
-    if (!isReplay &&
-        chooseTrail != null &&
-        chooseTrail.isNotEmpty &&
-        !trailChosenAt.containsKey(chooseTrail)) {
-      trailChosenAt = {
-        ...trailChosenAt,
-        chooseTrail: DateTime.now().toIso8601String(),
-      };
+    // 1ª cena pela própria trilha (ou reserva na abertura): Minhas trilhas.
+    if (!isReplay && chooseTrail != null && chooseTrail.isNotEmpty) {
+      trailsLeftAt = {...trailsLeftAt}..remove(chooseTrail);
+      if (!trailChosenAt.containsKey(chooseTrail)) {
+        trailChosenAt = {
+          ...trailChosenAt,
+          chooseTrail: DateTime.now().toIso8601String(),
+        };
+      }
+    }
+    if (leftMissionSlugs.isNotEmpty) {
+      final clear = {slug, ...alsoComplete};
+      leftMissionSlugs = [
+        for (final s in leftMissionSlugs)
+          if (!clear.contains(s)) s,
+      ];
     }
     var ranked = false;
     await _batch(() async {
@@ -3218,6 +3266,8 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'missionCompletedOn': missionCompletedOn,
       'trailChosenAt': trailChosenAt,
+      'trailsLeftAt': trailsLeftAt,
+      'leftMissionSlugs': leftMissionSlugs,
       'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
       'postcardRefs': postcardRefs,
@@ -3250,7 +3300,9 @@ class ProgressService extends ChangeNotifier {
         if (settings.bibleReadingNight != null)
           'bibleReadingNight': settings.bibleReadingNight,
         'portraitStyle': settings.portraitStyle.storageKey,
-        if (settings.intent != null) 'intent': settings.intent!.storageKey,
+        // Sempre grava ('' = limpo): omitir a chave fazia o merge
+        // devolver o motivo antigo; null some no Firestore.
+        'intent': settings.intent?.storageKey ?? '',
       },
     };
   }
@@ -3410,14 +3462,37 @@ class ProgressService extends ChangeNotifier {
       cloudBest,
       streak,
     ].reduce((a, b) => a > b ? a : b);
+    if (data.containsKey('trailsLeftAt')) {
+      final merged = Map<String, String>.from(trailsLeftAt);
+      for (final e in _asStringMap(data['trailsLeftAt']).entries) {
+        final cur = merged[e.key];
+        if (cur == null || e.value.compareTo(cur) > 0) {
+          merged[e.key] = e.value;
+        }
+      }
+      trailsLeftAt = merged;
+    }
+    if (data.containsKey('leftMissionSlugs')) {
+      leftMissionSlugs = {
+        ...leftMissionSlugs,
+        ..._asStringList(data['leftMissionSlugs']),
+      }.toList();
+    }
     if (data.containsKey('completedMissions')) {
       final cloudMissions = _asStringList(data['completedMissions']);
-      if (cloudMissions.isEmpty && completedMissions.isNotEmpty) {
+      final suppressed = leftMissionSlugs.toSet();
+      final local = completedMissions.toSet();
+      // Túmulo: a nuvem não devolve cena que o leave apagou, até refazer.
+      final accepted = [
+        for (final s in cloudMissions)
+          if (!suppressed.contains(s) || local.contains(s)) s,
+      ];
+      if (accepted.isEmpty && completedMissions.isNotEmpty) {
         // mantém local
       } else if (completedMissions.isEmpty) {
-        completedMissions = cloudMissions;
+        completedMissions = accepted;
       } else {
-        completedMissions = {...completedMissions, ...cloudMissions}.toList();
+        completedMissions = {...completedMissions, ...accepted}.toList();
       }
     }
     if (data.containsKey('userName')) {
@@ -3962,11 +4037,21 @@ class ProgressService extends ChangeNotifier {
       }
       if (data.containsKey('trailChosenAt')) {
         // Fica a escolha mais antiga: a ordem da principal não pula.
+        // Leave depois da escolha: a nuvem não a ressuscita.
         final merged = Map<String, String>.from(trailChosenAt);
         for (final e in _asStringMap(data['trailChosenAt']).entries) {
+          final leftAt = trailsLeftAt[e.key];
+          if (leftAt != null && leftAt.compareTo(e.value) >= 0) continue;
           final cur = merged[e.key];
           if (cur == null || e.value.compareTo(cur) < 0) {
             merged[e.key] = e.value;
+          }
+        }
+        for (final slug in trailsLeftAt.keys) {
+          final chosen = merged[slug];
+          final leftAt = trailsLeftAt[slug]!;
+          if (chosen != null && leftAt.compareTo(chosen) >= 0) {
+            merged.remove(slug);
           }
         }
         trailChosenAt = merged;
@@ -4106,8 +4191,9 @@ class ProgressService extends ChangeNotifier {
           language: s.containsKey('language')
               ? AppLanguageX.fromStorage(s['language'] as String?)
               : settings.language,
-          intent:
-              UserIntentX.tryParse(s['intent'] as String?) ?? settings.intent,
+          intent: s.containsKey('intent')
+              ? UserIntentX.tryParse(s['intent'] as String?)
+              : settings.intent,
         );
       }
     }
@@ -4281,6 +4367,8 @@ class ProgressService extends ChangeNotifier {
     completedMissions = [];
     missionCompletedOn = {};
     trailChosenAt = {};
+    trailsLeftAt = {};
+    leftMissionSlugs = [];
     trailChoicesSeedV = 0;
     postcardsOn = {};
     postcardRefs = {};
