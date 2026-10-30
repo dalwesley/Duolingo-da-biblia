@@ -1897,6 +1897,27 @@ class AppLocalizationsPt extends AppLocalizations {
   String get dustUiNoFreeze3 => 'A sequência espera · uma cena alcança';
 
   @override
+  String entryForkBody(String plusTrail, String freeTrail) {
+    return 'O caminho continua em $plusTrail, no Peregrino+. Ou siga de graça por $freeTrail.';
+  }
+
+  @override
+  String get entryForkEyebrow => 'Próximo passo';
+
+  @override
+  String entryForkFree(String trail) {
+    return 'Seguir de graça por $trail';
+  }
+
+  @override
+  String entryForkPlus(String trail) {
+    return 'Seguir em $trail com o Peregrino+';
+  }
+
+  @override
+  String get entryForkTitle => 'Para onde seguir agora?';
+
+  @override
   String get entryMissionDorAnsia01CentralInsight => 'O tesouro puxa o coração';
 
   @override
@@ -5868,6 +5889,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passiva deponente';
 
   @override
+  String get myTrailsGift => 'Presente';
+
+  @override
+  String get myTrailsPrincipal => 'Principal';
+
+  @override
+  String get myTrailsSecondary => 'Secundária';
+
+  @override
   String get navBible => 'Bíblia';
 
   @override
@@ -6401,6 +6431,31 @@ class AppLocalizationsPt extends AppLocalizations {
   String get onboardingYourPace => 'Seu ritmo';
 
   @override
+  String oneTrailBody(String walking, String target) {
+    return 'Você está caminhando em $walking. Para começar $target, termine $walking ou saia dela.';
+  }
+
+  @override
+  String get oneTrailEyebrow => 'Uma trilha por vez';
+
+  @override
+  String oneTrailKeep(String trail) {
+    return 'Continuar em $trail';
+  }
+
+  @override
+  String oneTrailLeave(String trail) {
+    return 'Sair de $trail';
+  }
+
+  @override
+  String get oneTrailPlusLine =>
+      'No Peregrino+, você caminha em várias trilhas ao mesmo tempo, sem perder o que já fez.';
+
+  @override
+  String get oneTrailTitle => 'Você já está em uma trilha';
+
+  @override
   String get paywallAlreadyPlus => 'Você já é Peregrino+';
 
   @override
@@ -6498,6 +6553,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallPerkGiftTitle => 'Uma trilha por mês de presente';
 
   @override
+  String get paywallPerkManyTrailsBody =>
+      'No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.';
+
+  @override
+  String get paywallPerkManyTrailsTitle => 'Várias trilhas ao mesmo tempo';
+
+  @override
   String get paywallPerkPlansBody =>
       'Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.';
 
@@ -6541,7 +6603,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.';
+      'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã, inteiras.';
 
   @override
   String get paywallPerkThemesTitle => 'Trilhas por tema';
@@ -9743,6 +9805,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trailGiftOwn => 'Este passe é seu. Compartilhe com alguém.';
 
   @override
+  String trailGiftPending(String trail) {
+    return 'Termine $trail, que você recebeu, para receber outro passe. Este passe continua com quem enviou.';
+  }
+
+  @override
   String get trailGiftPickSubtitle =>
       'Escolha qual trilha do Peregrino+ é sua. Ela fica aberta inteira, sem prazo.';
 
@@ -9922,11 +9989,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get trailsLeaveAwareness =>
-      'Estou ciente de que vou perder o progresso desta trilha';
+      'Estou ciente de que vou perder o progresso, as medalhas e os selos desta trilha';
 
   @override
   String get trailsLeaveBody =>
-      'O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.';
+      'Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.';
 
   @override
   String get trailsLeaveConfirm => 'Sair';

@@ -15,6 +15,7 @@ import '../services/backend_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../utils/trail_progress.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -193,7 +194,11 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
   final progress = context.read<ProgressService>();
   final l10n = context.l10n;
 
-  Future<void> fail(TrailGiftRedeem outcome, {String trail = ''}) {
+  Future<void> fail(
+    TrailGiftRedeem outcome, {
+    String trail = '',
+    String pendingTitle = '',
+  }) {
     unawaited(
       AnalyticsService.instance.logTrailGift(
         action: 'redeem',
@@ -209,6 +214,7 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
         TrailGiftRedeem.own => l10n.trailGiftOwn,
         TrailGiftRedeem.taken => l10n.trailGiftTaken,
         TrailGiftRedeem.notNeeded => l10n.trailGiftNotNeeded,
+        TrailGiftRedeem.pendingGift => l10n.trailGiftPending(pendingTitle),
         TrailGiftRedeem.failed || TrailGiftRedeem.done => l10n.trailGiftFailed,
       },
       glyph: CinematicGlyph.gift,
@@ -238,6 +244,16 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
   if (trail == null || !progress.giftedTrails.containsKey(trail.slug)) {
     if (context.read<SubscriptionService>().isPeregrinoPlus) {
       return fail(TrailGiftRedeem.notNeeded, trail: peek.trailSlug);
+    }
+    // Um passe por vez: o recebido antes precisa terminar.
+    final pending = await _unfinishedGift(progress);
+    if (!context.mounted) return;
+    if (pending != null) {
+      return fail(
+        TrailGiftRedeem.pendingGift,
+        trail: peek.trailSlug,
+        pendingTitle: pending.localizedTitle,
+      );
     }
     String? chosen;
     if (trail == null) {
@@ -303,6 +319,23 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
       ),
     ),
   );
+}
+
+/// Trilha recebida por passe e ainda não terminada, ou null.
+Future<Trail?> _unfinishedGift(ProgressService progress) async {
+  final repo = TrailRepository();
+  for (final slug in progress.giftedTrails.keys) {
+    final trail = await repo.getTrailBySlug(slug);
+    if (trail == null || trail.comingSoon) continue;
+    if (!TrailProgress.isTrailCompleted(
+      trail,
+      progress.completedMissions,
+      clearedTrailModes: progress.clearedTrailModes,
+    )) {
+      return trail;
+    }
+  }
+  return null;
 }
 
 /// Passe aberto: quem recebeu escolhe uma trilha do Peregrino+.

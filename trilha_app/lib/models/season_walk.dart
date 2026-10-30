@@ -87,8 +87,8 @@ class SeasonWalkAccess {
   /// Dia da temporada que só o Peregrino+ abre. A cena segue livre na trilha.
   final bool needsPlus;
 
-  /// Os três primeiros dias são de todo mundo. O 4º pede o Plus.
-  static const freeDays = 3;
+  /// O 1º dia é de todo mundo. Do 2º em diante, o Plus.
+  static const freeDays = 1;
 
   const SeasonWalkAccess({
     required this.playable,

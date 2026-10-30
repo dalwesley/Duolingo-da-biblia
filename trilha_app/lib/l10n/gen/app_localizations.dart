@@ -2986,6 +2986,36 @@ abstract class AppLocalizations {
   /// **'A sequência espera · uma cena alcança'**
   String get dustUiNoFreeze3;
 
+  /// No description provided for @entryForkBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O caminho continua em {plusTrail}, no Peregrino+. Ou siga de graça por {freeTrail}.'**
+  String entryForkBody(String plusTrail, String freeTrail);
+
+  /// No description provided for @entryForkEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próximo passo'**
+  String get entryForkEyebrow;
+
+  /// No description provided for @entryForkFree.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seguir de graça por {trail}'**
+  String entryForkFree(String trail);
+
+  /// No description provided for @entryForkPlus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seguir em {trail} com o Peregrino+'**
+  String entryForkPlus(String trail);
+
+  /// No description provided for @entryForkTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para onde seguir agora?'**
+  String get entryForkTitle;
+
   /// No description provided for @entryMissionDorAnsia01CentralInsight.
   ///
   /// In pt, this message translates to:
@@ -9225,6 +9255,24 @@ abstract class AppLocalizations {
   /// **'passiva deponente'**
   String get morphVoicePassiveDeponent;
 
+  /// No description provided for @myTrailsGift.
+  ///
+  /// In pt, this message translates to:
+  /// **'Presente'**
+  String get myTrailsGift;
+
+  /// No description provided for @myTrailsPrincipal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Principal'**
+  String get myTrailsPrincipal;
+
+  /// No description provided for @myTrailsSecondary.
+  ///
+  /// In pt, this message translates to:
+  /// **'Secundária'**
+  String get myTrailsSecondary;
+
   /// No description provided for @navBible.
   ///
   /// In pt, this message translates to:
@@ -10011,6 +10059,42 @@ abstract class AppLocalizations {
   /// **'Seu ritmo'**
   String get onboardingYourPace;
 
+  /// No description provided for @oneTrailBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está caminhando em {walking}. Para começar {target}, termine {walking} ou saia dela.'**
+  String oneTrailBody(String walking, String target);
+
+  /// No description provided for @oneTrailEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma trilha por vez'**
+  String get oneTrailEyebrow;
+
+  /// No description provided for @oneTrailKeep.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continuar em {trail}'**
+  String oneTrailKeep(String trail);
+
+  /// No description provided for @oneTrailLeave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair de {trail}'**
+  String oneTrailLeave(String trail);
+
+  /// No description provided for @oneTrailPlusLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'No Peregrino+, você caminha em várias trilhas ao mesmo tempo, sem perder o que já fez.'**
+  String get oneTrailPlusLine;
+
+  /// No description provided for @oneTrailTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você já está em uma trilha'**
+  String get oneTrailTitle;
+
   /// No description provided for @paywallAlreadyPlus.
   ///
   /// In pt, this message translates to:
@@ -10173,6 +10257,18 @@ abstract class AppLocalizations {
   /// **'Uma trilha por mês de presente'**
   String get paywallPerkGiftTitle;
 
+  /// No description provided for @paywallPerkManyTrailsBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.'**
+  String get paywallPerkManyTrailsBody;
+
+  /// No description provided for @paywallPerkManyTrailsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Várias trilhas ao mesmo tempo'**
+  String get paywallPerkManyTrailsTitle;
+
   /// No description provided for @paywallPerkPlansBody.
   ///
   /// In pt, this message translates to:
@@ -10248,7 +10344,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkThemesBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.'**
+  /// **'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã, inteiras.'**
   String get paywallPerkThemesBody;
 
   /// No description provided for @paywallPerkThemesTitle.
@@ -15159,6 +15255,12 @@ abstract class AppLocalizations {
   /// **'Este passe é seu. Compartilhe com alguém.'**
   String get trailGiftOwn;
 
+  /// No description provided for @trailGiftPending.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termine {trail}, que você recebeu, para receber outro passe. Este passe continua com quem enviou.'**
+  String trailGiftPending(String trail);
+
   /// No description provided for @trailGiftPickSubtitle.
   ///
   /// In pt, this message translates to:
@@ -15438,13 +15540,13 @@ abstract class AppLocalizations {
   /// No description provided for @trailsLeaveAwareness.
   ///
   /// In pt, this message translates to:
-  /// **'Estou ciente de que vou perder o progresso desta trilha'**
+  /// **'Estou ciente de que vou perder o progresso, as medalhas e os selos desta trilha'**
   String get trailsLeaveAwareness;
 
   /// No description provided for @trailsLeaveBody.
   ///
   /// In pt, this message translates to:
-  /// **'O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.'**
+  /// **'Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.'**
   String get trailsLeaveBody;
 
   /// No description provided for @trailsLeaveConfirm.

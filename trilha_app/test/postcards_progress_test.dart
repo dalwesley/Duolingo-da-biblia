@@ -53,15 +53,23 @@ void main() {
       },
     );
 
-    test('sair da trilha não apaga o postal', () async {
+    test('sair da trilha apaga o postal e a celebração da medalha', () async {
       final p = ProgressService();
       await p.completeMission('cena-1', 50, postcardRef: 'Gênesis 1:1');
+      p.celebratedMedalIds = [
+        'track:trail:genesis-1-11:0',
+        'track:path:streak_3',
+      ];
+      p.vaultCompleteCelebratedIds = ['trail:genesis-1-11', 'journey'];
 
       await p.leaveTrail(trailSlug: 'genesis-1-11', missionSlugs: ['cena-1']);
 
       expect(p.completedMissions, isNot(contains('cena-1')));
-      expect(p.postcardsOn.containsKey('cena-1'), isTrue);
-      expect(p.sceneRevealed('cena-1'), isTrue);
+      expect(p.postcardsOn.containsKey('cena-1'), isFalse);
+      expect(p.postcardRefs.containsKey('cena-1'), isFalse);
+      expect(p.sceneRevealed('cena-1'), isFalse);
+      expect(p.celebratedMedalIds, ['track:path:streak_3']);
+      expect(p.vaultCompleteCelebratedIds, ['journey']);
     });
   });
 

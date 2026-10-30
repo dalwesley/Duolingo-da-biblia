@@ -384,19 +384,31 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final plusOpen = tabListens
         ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
         : context.read<SubscriptionService>().plusFeaturesOpen;
-    // Trilhas abertas = carrossel da Hoje: todas com próxima cena agora
-    // (a 1ª é a ativa, a da faixa); sem Plus, no fim, as começadas que
-    // pararam no Plus, com a etiqueta.
-    final freeTrails = TrailProgress.availableTrails(
-      trails,
-      progress.completedMissions,
-      clearedTrailModes: progress.clearedTrailModes,
-      trailModes: progress.activeTrailModes,
-      pinnedModes: progress.pinnedTrailDifficulties,
-      completedOn: progress.missionCompletedOn,
-      borrowed: progress.borrowedMissions,
-      plusOpen: plusOpen,
-    );
+    // Trilhas abertas: com Plus, o carrossel completo; sem Plus, uma só
+    // (a da vaga ou a ativa) + no fim as começadas que pararam no Plus.
+    final freeTrails = plusOpen
+        ? TrailProgress.plusOpenTrails(
+            trails,
+            progress.completedMissions,
+            chosenAt: progress.trailChosenAt,
+            seeded: progress.trailChoicesSeeded,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          )
+        : TrailProgress.freeOpenTrails(
+            trails,
+            progress.completedMissions,
+            chosenAt: progress.trailChosenAt,
+            seeded: progress.trailChoicesSeeded,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          );
     final openTrails = [
       ...freeTrails,
       if (!plusOpen)

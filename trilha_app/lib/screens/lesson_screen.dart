@@ -38,6 +38,7 @@ import '../utils/trail_progress.dart';
 import '../widgets/anan_speech.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
+import '../widgets/free_slot_gate.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/scene_study_panel.dart';
@@ -108,6 +109,9 @@ class _LessonScreenState extends State<LessonScreen>
   Mission? _baseMission;
   Mission? _mission;
   String? _trailSlug;
+
+  /// A cena veio pela própria trilha (não Caminhada, grupo ou Desafio).
+  bool _choosesTrail = false;
 
   /// Toque duplo no Continuar: celebração e Bônus valem uma vez só.
   bool _celebrationPushed = false;
@@ -379,6 +383,21 @@ class _LessonScreenState extends State<LessonScreen>
               builder: (_) => const PaywallScreen(source: 'trail'),
             ),
           );
+          return;
+        }
+        if (!mounted) return;
+        // Cena aberta pela própria trilha: conta para Minhas trilhas e
+        // pede a vaga do grátis. Fica de fora o que outro fluxo abriu
+        // (Caminhada, grupo, Desafio).
+        _choosesTrail =
+            !widget.skipTrailLock &&
+            !widget.plusGateDone &&
+            !widget.requiresPlus &&
+            corner == null &&
+            roomStudy == null;
+        if (_choosesTrail &&
+            !alreadyDone &&
+            !await ensureFreeSlotAllows(context, trail, trails: trails)) {
           return;
         }
         if (!mounted) return;
@@ -964,6 +983,7 @@ class _LessonScreenState extends State<LessonScreen>
           todayInsight: _mission!.centralInsight,
           sceneTitle: _mission!.title,
           postcardRef: widget.practiceMode ? null : postcardRef,
+          choosesTrail: _choosesTrail,
         ),
       ),
     );

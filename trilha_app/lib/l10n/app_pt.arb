@@ -1337,6 +1337,35 @@
   "dustUiNoFreeze1": "Sequência em risco · caminhe agora",
   "dustUiNoFreeze2": "Sem gelo · uma cena protege",
   "dustUiNoFreeze3": "A sequência espera · uma cena alcança",
+  "entryForkBody": "O caminho continua em {plusTrail}, no Peregrino+. Ou siga de graça por {freeTrail}.",
+  "@entryForkBody": {
+    "placeholders": {
+      "plusTrail": {
+        "type": "String"
+      },
+      "freeTrail": {
+        "type": "String"
+      }
+    }
+  },
+  "entryForkEyebrow": "Próximo passo",
+  "entryForkFree": "Seguir de graça por {trail}",
+  "@entryForkFree": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "entryForkPlus": "Seguir em {trail} com o Peregrino+",
+  "@entryForkPlus": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "entryForkTitle": "Para onde seguir agora?",
   "entryMissionDorAnsia01CentralInsight": "O tesouro puxa o coração",
   "entryMissionDorAnsia01HookNote": "O cuidado do Pai é o argumento contra a ansiedade — não a ausência de necessidade.",
   "entryMissionDorAnsia01Intro": "Onde está o tesouro, está o coração. Jesus une Mamom e o amanhã.",
@@ -3960,6 +3989,9 @@
   "morphVoiceMiddlePassive": "médio-passiva",
   "morphVoicePassive": "passiva",
   "morphVoicePassiveDeponent": "passiva deponente",
+  "myTrailsGift": "Presente",
+  "myTrailsPrincipal": "Principal",
+  "myTrailsSecondary": "Secundária",
   "navBible": "Bíblia",
   "navTabWithNews": "{tab}, com novidades",
   "@navTabWithNews": {
@@ -4314,6 +4346,36 @@
   "onboardingTomorrowBody": "O hábito nasce quando você volta.\nFirme com você mesmo um começo.",
   "onboardingTomorrowWord": "Amanhã",
   "onboardingYourPace": "Seu ritmo",
+  "oneTrailBody": "Você está caminhando em {walking}. Para começar {target}, termine {walking} ou saia dela.",
+  "@oneTrailBody": {
+    "placeholders": {
+      "walking": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "oneTrailEyebrow": "Uma trilha por vez",
+  "oneTrailKeep": "Continuar em {trail}",
+  "@oneTrailKeep": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "oneTrailLeave": "Sair de {trail}",
+  "@oneTrailLeave": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "oneTrailPlusLine": "No Peregrino+, você caminha em várias trilhas ao mesmo tempo, sem perder o que já fez.",
+  "oneTrailTitle": "Você já está em uma trilha",
   "paywallAlreadyPlus": "Você já é Peregrino+",
   "paywallAppleEula": "Termos da Apple (EULA)",
   "paywallAutoRenew": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
@@ -4369,6 +4431,8 @@
   "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
   "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.",
   "paywallPerkGiftTitle": "Uma trilha por mês de presente",
+  "paywallPerkManyTrailsBody": "No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.",
+  "paywallPerkManyTrailsTitle": "Várias trilhas ao mesmo tempo",
   "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
   "paywallPerkPlansTitle": "Planos de leitura",
   "paywallPerkPostcardsBody": "Compartilhe a revelação do postal em vídeo, pronta para o status e os stories.",
@@ -4387,7 +4451,7 @@
   "paywallPerkSeasonTitle": "Trilhas da estação",
   "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
   "paywallPerkStreakTitle": "Seus dias",
-  "paywallPerkThemesBody": "Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.",
+  "paywallPerkThemesBody": "Sermão do Monte, Oração, Família e outras rotas da Vida Cristã, inteiras.",
   "paywallPerkThemesTitle": "Trilhas por tema",
   "paywallPerkWeeklyBody": "Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.",
   "paywallPerkWeeklyTitle": "Revisão da semana",
@@ -6505,6 +6569,14 @@
   "trailGiftNeedsAccount": "Entre na sua conta para receber o passe. Depois abra o link de novo.",
   "trailGiftNotNeeded": "Você já tem esta trilha. O passe fica para outra pessoa.",
   "trailGiftOwn": "Este passe é seu. Compartilhe com alguém.",
+  "trailGiftPending": "Termine {trail}, que você recebeu, para receber outro passe. Este passe continua com quem enviou.",
+  "@trailGiftPending": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
   "trailGiftPickSubtitle": "Escolha qual trilha do Peregrino+ é sua. Ela fica aberta inteira, sem prazo.",
   "trailGiftPickTitle": "{name} te deu uma trilha",
   "@trailGiftPickTitle": {
@@ -6655,8 +6727,8 @@
     }
   },
   "trailsLearnMore": "Saiba mais",
-  "trailsLeaveAwareness": "Estou ciente de que vou perder o progresso desta trilha",
-  "trailsLeaveBody": "O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.",
+  "trailsLeaveAwareness": "Estou ciente de que vou perder o progresso, as medalhas e os selos desta trilha",
+  "trailsLeaveBody": "Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.",
   "trailsLeaveConfirm": "Sair",
   "trailsLeaveCta": "Sair da trilha",
   "@trailsLeaveCta": {

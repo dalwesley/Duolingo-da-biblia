@@ -2122,6 +2122,17 @@ class _OptionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final short = MediaQuery.sizeOf(context).height < 740;
+    final base = a.onDark
+        ? AppColors.night.withValues(alpha: 0.78)
+        : a.cardFill;
+    // Selecionado: o tom por cima da mesma base dos outros. Só o tom,
+    // translúcido, deixava o fundo do caminho atravessar o card.
+    final fill = on
+        ? Color.alphaBlend(
+            AppMetrics.accentFill(color: a.selected, alpha: 0.12),
+            base,
+          )
+        : base;
     return Semantics(
       button: true,
       selected: on,
@@ -2136,16 +2147,11 @@ class _OptionCard extends StatelessWidget {
           height: short ? 52 : 58,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: BoxDecoration(
-            color: on
-                ? AppMetrics.accentFill(color: a.selected, alpha: 0.12)
-                : (a.onDark
-                      ? AppColors.night.withValues(alpha: 0.78)
-                      : a.cardFill),
+            color: fill,
             borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(
-              color: on
-                  ? AppMetrics.accentBorder(color: a.selected, alpha: 0.7)
-                  : a.cardBorder,
+              color: on ? a.selected : a.cardBorder,
+              width: on ? 1.6 : 1,
             ),
           ),
           child: Row(

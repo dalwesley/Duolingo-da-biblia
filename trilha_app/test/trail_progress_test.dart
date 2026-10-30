@@ -710,7 +710,7 @@ void main() {
     expect(withBorrowed.map((t) => t.slug), ['exodo', 'genesis-1-11']);
   });
 
-  test('without Plus the CTA skips a Plus trail past its sample', () {
+  test('without Plus the CTA skips a Plus trail, first scene included', () {
     final genesis = contentTrail(slug: 'genesis-12-50', mission: 'g1');
     final base = contentTrail(
       slug: 'sermao-do-monte',
@@ -758,11 +758,11 @@ void main() {
       TrailProgress.findActiveTrail(all, ['s1'], plusOpen: false)?.slug,
       'genesis-12-50',
     );
-    // A amostra (1ª cena) continua oferecida sem Plus.
+    // Sem amostra: nem a 1ª cena do Sermão é oferecida sem Plus.
     TrailProgress.lastPlayedMissionSlug = null;
     expect(
       TrailProgress.findActiveTrail(all, [], plusOpen: false)?.slug,
-      'sermao-do-monte',
+      'genesis-12-50',
     );
 
     // Vitrine: sem Plus o Sermão sai da lista livre e vira vitrine; sem

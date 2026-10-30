@@ -31,12 +31,10 @@ class PlusAccess {
   static bool trailIsPlus(Trail trail) =>
       trailInPlus(trail) && !giftedTrails.contains(trail.slug);
 
-  /// A cena pede Plus? Numa trilha Plus, a 1ª cena é amostra grátis.
-  static bool missionNeedsPlus(Trail trail, String missionSlug) {
-    if (!trailIsPlus(trail)) return false;
-    final slugs = trail.missionSlugs;
-    return slugs.isNotEmpty && slugs.first != missionSlug;
-  }
+  /// A cena pede Plus? Numa trilha Plus, todas pedem: não há cena de
+  /// amostra (o teste grátis da loja faz esse papel).
+  static bool missionNeedsPlus(Trail trail, String missionSlug) =>
+      trailIsPlus(trail) && trail.missionSlugs.contains(missionSlug);
 
   /// [trail] está fechada esperando [blocker], que só termina com o Plus?
   /// Sem o Plus, "Termine [blocker] para abrir" não tem como acontecer.

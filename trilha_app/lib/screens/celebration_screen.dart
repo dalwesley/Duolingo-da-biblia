@@ -27,6 +27,8 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
+import '../models/trail.dart';
+import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
 import '../models/corner_challenge.dart';
@@ -51,7 +53,9 @@ import '../widgets/set_piece.dart';
 import '../widgets/user_avatar.dart';
 import '../services/subscription_service.dart';
 import 'lesson_screen.dart';
+import 'paywall_screen.dart';
 import 'trail_map_screen.dart';
+import '../widgets/one_trail_sheet.dart';
 import 'support_screen.dart';
 
 class CelebrationScreen extends StatefulWidget {
@@ -75,6 +79,9 @@ class CelebrationScreen extends StatefulWidget {
   /// `null` = este fim não dá postal (prática, revisão).
   final String? postcardRef;
 
+  /// A cena veio pela própria trilha: a 1ª feita a põe em Minhas trilhas.
+  final bool choosesTrail;
+
   const CelebrationScreen({
     super.key,
     required this.missionSlug,
@@ -89,6 +96,7 @@ class CelebrationScreen extends StatefulWidget {
     this.todayInsight,
     this.sceneTitle,
     this.postcardRef,
+    this.choosesTrail = false,
   });
 
   @override
@@ -261,7 +269,69 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     super.dispose();
   }
 
+  bool _entryForkShown = false;
+
+  /// Fim da trilha do motivo, sem o Plus, com destino do Plus: oferece o
+  /// Plus ou o caminho grátis. true: já navegou.
+  Future<bool> _offerEntryFork() async {
+    if (_entryForkShown || _noProgress) return false;
+    final canon = EntryTrails.continuesTo[widget.missionSlug];
+    final freeSlug = EntryTrails.freeContinuesTo[widget.missionSlug];
+    if (canon == null || freeSlug == null) return false;
+    if (context.read<SubscriptionService>().plusFeaturesOpen) return false;
+    final progress = context.read<ProgressService>();
+    final trails = await TrailRepository().getTrails();
+    if (!mounted) return false;
+    final plusTrail = trails.where((t) => t.slug == canon).firstOrNull;
+    if (plusTrail == null || !PlusAccess.trailIsPlus(plusTrail)) return false;
+    final completed = progress.completedMissions;
+    bool walkable(Trail t) =>
+        !t.comingSoon &&
+        !PlusAccess.trailIsPlus(t) &&
+        !TrailProgress.isTrailCompleted(
+          t,
+          completed,
+          clearedTrailModes: progress.clearedTrailModes,
+        ) &&
+        TrailProgress.isTrailUnlocked(
+          t,
+          trails,
+          completed,
+          clearedTrailModes: progress.clearedTrailModes,
+        );
+    final freeTrail =
+        trails.where((t) => t.slug == freeSlug && walkable(t)).firstOrNull ??
+        TrailProgress.findActiveTrail(
+          trails,
+          completed,
+          clearedTrailModes: progress.clearedTrailModes,
+          borrowed: progress.borrowedMissions,
+          plusOpen: false,
+        );
+    if (freeTrail == null) return false;
+    _entryForkShown = true;
+    final choice = await showEntryForkSheet(
+      context,
+      plusTrail: plusTrail,
+      freeTrail: freeTrail,
+    );
+    if (!mounted || choice == null) return false;
+    _leaving = true;
+    unawaited(
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute<void>(
+          builder: (_) => choice == EntryForkChoice.plus
+              ? const PaywallScreen(source: 'entry_fork')
+              : TrailMapScreen(slug: freeTrail.slug),
+        ),
+      ),
+    );
+    return true;
+  }
+
   Future<void> _leaveCelebration({required bool toTrailMap}) async {
+    if (_leaving) return;
+    if (await _offerEntryFork()) return;
     if (_leaving) return;
     _leaving = true;
     try {
@@ -281,6 +351,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   Future<void> _openTomorrow() async {
+    if (_leaving) return;
+    if (await _offerEntryFork()) return;
     if (_leaving) return;
     final slug = (_hook?.missionSlug ?? '').trim();
     if (slug.isEmpty) {
@@ -421,6 +493,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                       TrailDifficulty.semente.id
                 : null,
             postcardRef: _newPostcard == null ? null : widget.postcardRef,
+            chooseTrail: widget.choosesTrail ? widget.trailSlug : null,
           )
           .then((awarded) async {
             if (mounted && awarded > 0) {

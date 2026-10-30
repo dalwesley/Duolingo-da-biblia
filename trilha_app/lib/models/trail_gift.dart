@@ -84,5 +84,9 @@ enum TrailGiftRedeem {
   /// outra pessoa.
   notNeeded,
 
+  /// Quem abriu ainda não terminou a trilha que já recebeu: um passe por
+  /// vez. Este fica com quem enviou.
+  pendingGift,
+
   failed,
 }

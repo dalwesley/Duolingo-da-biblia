@@ -416,6 +416,37 @@ class ProgressService extends ChangeNotifier {
   /// Dia (YYYY-MM-DD) em que cada cena foi feita pela primeira vez.
   Map<String, String> missionCompletedOn = {};
 
+  /// Minhas trilhas: quando cada uma foi escolhida (ISO). A ordem da
+  /// escolha decide a principal, a 1ª ([TrailProgress.myTrails]). Entra
+  /// na 1ª cena feita pela própria trilha (Caminhada, grupo e Desafio não
+  /// escolhem); sai ao sair da trilha ou ao fechar um modo.
+  Map<String, String> trailChosenAt = {};
+
+  /// Versão da semente de Minhas trilhas já aplicada. A 1ª perdia as
+  /// trilhas antigas quando uma escolha nova chegava antes dela.
+  int trailChoicesSeedV = 0;
+  static const trailChoicesSeedCurrent = 2;
+
+  /// A lista já recebeu as trilhas começadas antes de haver escolha.
+  bool get trailChoicesSeeded => trailChoicesSeedV >= trailChoicesSeedCurrent;
+
+  /// Quem já tinha trilhas começadas antes da escolha existir: entram na
+  /// frente das escolhidas depois, na ordem de [orderedSlugs] (1º dia
+  /// jogado). Escolha já gravada fica onde está.
+  Future<void> seedTrailChoices(List<String> orderedSlugs) async {
+    if (trailChoicesSeeded) return;
+    trailChoicesSeedV = trailChoicesSeedCurrent;
+    trailChosenAt = {
+      for (var i = 0; i < orderedSlugs.length; i++)
+        if (!trailChosenAt.containsKey(orderedSlugs[i]))
+          orderedSlugs[i]:
+              '1970-01-01T00:00:00.${i.toString().padLeft(3, '0')}',
+      ...trailChosenAt,
+    };
+    await _save();
+    notifyListeners();
+  }
+
   /// Postais da caminhada: dia (YYYY-MM-DD) em que cada cena revelou o seu
   /// postal. Não some ao trocar de modo nem ao sair da trilha.
   Map<String, String> postcardsOn = {};
@@ -1176,6 +1207,8 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    trailChosenAt = {};
+    trailChoicesSeedV = 0;
     postcardsOn = {};
     postcardRefs = {};
     giftedTrails = {};
@@ -2366,14 +2399,18 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Abandona a trilha: zera cenas, modos selados, baús e modo gravado.
-  /// Passos e sequência do app permanecem — só o caminho desta trilha some.
-  /// [rankedScenes] fica: refazer a trilha não paga a Caravana de novo.
+  /// Abandona a trilha: zera cenas, modos, baús, postais, celebrações de
+  /// medalha/selo desta trilha e o modo gravado. Passos e sequência do app
+  /// permanecem. [rankedScenes] fica: refazer a trilha não paga a Caravana
+  /// de novo. Medalhas e selos de personagem são derivados do progresso —
+  /// ao zerar as cenas, somem; limpar [celebratedMedalIds] evita que a
+  /// celebração fique engolida se a pessoa refizer a trilha.
   Future<void> leaveTrail({
     required String trailSlug,
     required List<String> missionSlugs,
   }) async {
     final drop = missionSlugs.toSet();
+    trailChosenAt = {...trailChosenAt}..remove(trailSlug);
 
     completedMissions = [
       for (final s in completedMissions)
@@ -2395,11 +2432,34 @@ class ProgressService extends ChangeNotifier {
       for (final e in missionReflections.entries)
         if (!drop.contains(e.key)) e.key: e.value,
     };
+    postcardsOn = {
+      for (final e in postcardsOn.entries)
+        if (!drop.contains(e.key)) e.key: e.value,
+    };
+    postcardRefs = {
+      for (final e in postcardRefs.entries)
+        if (!drop.contains(e.key)) e.key: e.value,
+    };
 
     final chestIds = {for (final m in TrailMilestone.all) m.chestId(trailSlug)};
     claimedChests = [
       for (final id in claimedChests)
         if (!chestIds.contains(id)) id,
+    ];
+
+    final trailVault = PilgrimMedalCatalog.trailVaultId(trailSlug);
+    final trailTrack = PilgrimMedalCatalog.trailTrackId(trailSlug);
+    bool medalOfTrail(String id) =>
+        id == trailVault ||
+        id.startsWith('$trailVault:') ||
+        id.startsWith('$trailTrack:');
+    celebratedMedalIds = [
+      for (final id in celebratedMedalIds)
+        if (!medalOfTrail(id)) id,
+    ];
+    vaultCompleteCelebratedIds = [
+      for (final id in vaultCompleteCelebratedIds)
+        if (id != trailVault) id,
     ];
 
     clearedTrailModes = {...clearedTrailModes}..remove(trailSlug);
@@ -2490,6 +2550,9 @@ class ProgressService extends ChangeNotifier {
       ...clearedTrailModes,
       trailSlug: [...current, difficultyId],
     };
+    // Modo fechado: a trilha sai de Minhas trilhas. Aprofundar é escolher
+    // de novo, no fim da fila.
+    trailChosenAt = {...trailChosenAt}..remove(trailSlug);
     if (pinnedTrailDifficulties[trailSlug] == difficultyId) {
       pinnedTrailDifficulties = {...pinnedTrailDifficulties}..remove(trailSlug);
     }
@@ -2762,8 +2825,19 @@ class ProgressService extends ChangeNotifier {
     Iterable<String> alsoComplete = const [],
     String? mode,
     String? postcardRef,
+    String? chooseTrail,
   }) async {
     var awarded = 0;
+    // 1ª cena feita pela própria trilha: ela entra em Minhas trilhas.
+    if (!isReplay &&
+        chooseTrail != null &&
+        chooseTrail.isNotEmpty &&
+        !trailChosenAt.containsKey(chooseTrail)) {
+      trailChosenAt = {
+        ...trailChosenAt,
+        chooseTrail: DateTime.now().toIso8601String(),
+      };
+    }
     var ranked = false;
     await _batch(() async {
       _ensureQuestDay();
@@ -3143,6 +3217,8 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsCorrect': lifetimeQuestionsCorrect,
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'missionCompletedOn': missionCompletedOn,
+      'trailChosenAt': trailChosenAt,
+      'trailChoicesSeedV': trailChoicesSeedV,
       'postcardsOn': postcardsOn,
       'postcardRefs': postcardRefs,
       'giftedTrails': giftedTrails,
@@ -3884,6 +3960,19 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('postcardRefs')) {
         postcardRefs = {..._asStringMap(data['postcardRefs']), ...postcardRefs};
       }
+      if (data.containsKey('trailChosenAt')) {
+        // Fica a escolha mais antiga: a ordem da principal não pula.
+        final merged = Map<String, String>.from(trailChosenAt);
+        for (final e in _asStringMap(data['trailChosenAt']).entries) {
+          final cur = merged[e.key];
+          if (cur == null || e.value.compareTo(cur) < 0) {
+            merged[e.key] = e.value;
+          }
+        }
+        trailChosenAt = merged;
+      }
+      final seedV = (data['trailChoicesSeedV'] as num?)?.toInt() ?? 0;
+      if (seedV > trailChoicesSeedV) trailChoicesSeedV = seedV;
       if (data.containsKey('giftedTrails')) {
         giftedTrails = {..._asStringMap(data['giftedTrails']), ...giftedTrails};
       }
@@ -4191,6 +4280,8 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    trailChosenAt = {};
+    trailChoicesSeedV = 0;
     postcardsOn = {};
     postcardRefs = {};
     answerCorrect = {};

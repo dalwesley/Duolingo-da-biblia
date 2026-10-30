@@ -291,11 +291,14 @@ class TrailProgress {
   /// ([EntryTrails.continuesTo]), depois a seguinte no mesmo caminho. Sem
   /// isto, quem fechava Gênesis 1–11 caía no começo do catálogo (Ansiedade).
   static List<Trail> successorsOf(Trail trail, List<Trail> allTrails) {
-    final target = trail.missionSlugs.isEmpty
-        ? null
-        : EntryTrails.continuesTo[trail.missionSlugs.last];
+    final last = trail.missionSlugs.isEmpty ? null : trail.missionSlugs.last;
+    final target = EntryTrails.continuesTo[last];
+    // Destino do Plus: o caminho grátis vem logo atrás (quem filtra o Plus
+    // cai nele, não no começo do catálogo).
+    final free = EntryTrails.freeContinuesTo[last];
     return [
       if (target != null) ...allTrails.where((t) => t.slug == target),
+      if (free != null) ...allTrails.where((t) => t.slug == free),
       for (final peer in allTrails)
         if (peer.journey == trail.journey &&
             _previousContentTrail(peer, allTrails)?.slug == trail.slug)
@@ -618,6 +621,255 @@ class TrailProgress {
       return y.day.compareTo(x.day);
     });
     return [for (final s in started) s.trail];
+  }
+
+  /// Trilhas começadas antes de existir a escolha (Minhas trilhas), na
+  /// ordem do 1º dia jogado em cada uma: semente da lista para quem já
+  /// usava o app. Começada e não terminada, ou aprofundando com cena no
+  /// modo novo. Cena só emprestada não conta.
+  static List<String> legacyChoices(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final skip = borrowed.toSet();
+    final played = _doneSet(completed).difference(skip);
+    String firstDay(Trail t) {
+      var day = '';
+      for (final slug in t.missionSlugs) {
+        if (!played.contains(slug)) continue;
+        // Sem data: cena de antes do campo existir, logo das mais antigas.
+        final d = completedOn[slug] ?? '0000';
+        if (day.isEmpty || d.compareTo(day) < 0) day = d;
+      }
+      return day;
+    }
+
+    final picked = <({Trail trail, String day, int order})>[];
+    for (var i = 0; i < trails.length; i++) {
+      final t = trails[i];
+      if (t.comingSoon || !t.missionSlugs.any(played.contains)) continue;
+      final walking =
+          !isTrailCompleted(
+            t,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+          ) ||
+          isDeepening(
+            t,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+            trailModes: trailModes,
+            pinnedModes: pinnedModes,
+            borrowed: borrowed,
+          );
+      if (walking) picked.add((trail: t, day: firstDay(t), order: i));
+    }
+    picked.sort((a, b) {
+      final byDay = a.day.compareTo(b.day);
+      return byDay != 0 ? byDay : a.order.compareTo(b.order);
+    });
+    return [for (final p in picked) p.trail.slug];
+  }
+
+  /// Minhas trilhas, na ordem em que foram escolhidas: a 1ª é a
+  /// principal, as outras são secundárias. Terminada (sem aprofundar)
+  /// sai da lista. Sem semente ainda ([seeded] false), as trilhas de
+  /// [legacyChoices] vêm na frente das escolhidas.
+  static List<Trail> myTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final bySlug = {for (final t in trails) t.slug: t};
+    final entries = chosenAt.entries.toList()
+      ..sort((a, b) => a.value.compareTo(b.value));
+    final chosen = [for (final e in entries) e.key];
+    // Sem semente ainda: as começadas antes da escolha vêm na frente (o
+    // mesmo que [ProgressService.seedTrailChoices] vai gravar).
+    final order = seeded
+        ? chosen
+        : [
+            for (final slug in legacyChoices(
+              trails,
+              completed,
+              clearedTrailModes: clearedTrailModes,
+              trailModes: trailModes,
+              pinnedModes: pinnedModes,
+              completedOn: completedOn,
+              borrowed: borrowed,
+            ))
+              if (!chosenAt.containsKey(slug)) slug,
+            ...chosen,
+          ];
+    final out = <Trail>[];
+    for (final slug in order) {
+      final t = bySlug[slug];
+      if (t == null || t.comingSoon || t.missionSlugs.isEmpty) continue;
+      final open =
+          !isTrailCompleted(
+            t,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+          ) ||
+          isDeepening(
+            t,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+            trailModes: trailModes,
+            pinnedModes: pinnedModes,
+            borrowed: borrowed,
+          );
+      if (open) out.add(t);
+    }
+    return out;
+  }
+
+  /// Com o Peregrino+: Minhas trilhas na ordem (principal, depois as
+  /// secundárias) e então o resto que dá para começar ([availableTrails]).
+  static List<Trail> plusOpenTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final available = availableTrails(
+      trails,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      completedOn: completedOn,
+      borrowed: borrowed,
+      plusOpen: true,
+    );
+    final mine = myTrails(
+      trails,
+      completed,
+      chosenAt: chosenAt,
+      seeded: seeded,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      completedOn: completedOn,
+      borrowed: borrowed,
+    );
+    final first = [
+      for (final m in mine)
+        if (available.any((t) => t.slug == m.slug)) m,
+    ];
+    return [
+      ...first,
+      for (final t in available)
+        if (!first.any((m) => m.slug == t.slug)) t,
+    ];
+  }
+
+  /// A principal do grátis: a 1ª de [mine] que não é do Peregrino+ (nem
+  /// recebida por passe, que anda por fora da vaga).
+  static Trail? freePrincipal(List<Trail> mine) =>
+      mine.where((t) => !PlusAccess.trailInPlus(t)).firstOrNull;
+
+  /// O que o grátis vê como trilha aberta (faixa Trilhas / herói): a
+  /// principal e as recebidas por passe ainda abertas. Sem principal, a
+  /// ativa do CTA — não o catálogo inteiro de trilhas desbloqueadas.
+  static List<Trail> freeOpenTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final mine = myTrails(
+      trails,
+      completed,
+      chosenAt: chosenAt,
+      seeded: seeded,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      completedOn: completedOn,
+      borrowed: borrowed,
+    );
+    final principal =
+        freePrincipal(mine) ??
+        findActiveTrail(
+          trails,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+          trailModes: trailModes,
+          pinnedModes: pinnedModes,
+          borrowed: borrowed,
+          plusOpen: false,
+        );
+    final gifts = [
+      for (final t in [...mine, ...trails])
+        if (PlusAccess.giftedTrails.contains(t.slug) &&
+            !isTrailCompleted(
+              t,
+              completed,
+              clearedTrailModes: clearedTrailModes,
+            ))
+          t,
+    ];
+    final out = <Trail>[];
+    for (final t in [?principal, ...gifts]) {
+      if (!out.any((o) => o.slug == t.slug)) out.add(t);
+    }
+    return out;
+  }
+
+  /// Sem o Peregrino+, uma trilha por vez: a principal que impede
+  /// [target], ou null. A principal é a 1ª escolhida ([myTrails]); quem
+  /// perdeu o Plus fica só com ela. Trilha recebida por passe anda por
+  /// fora da vaga; trilha que pede o Plus fica com a trava do Plus.
+  static Trail? freeSlotBlocker(
+    Trail target,
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    if (PlusAccess.trailInPlus(target)) return null;
+    final principal = freePrincipal(
+      myTrails(
+        trails,
+        completed,
+        chosenAt: chosenAt,
+        seeded: seeded,
+        clearedTrailModes: clearedTrailModes,
+        trailModes: trailModes,
+        pinnedModes: pinnedModes,
+        completedOn: completedOn,
+        borrowed: borrowed,
+      ),
+    );
+    if (principal == null || principal.slug == target.slug) return null;
+    return principal;
   }
 
   static bool isMissionUnlocked(

@@ -32,10 +32,10 @@ void main() {
     }
   });
 
-  test('fica no card Promessa e cumprimento, do Plus, com amostra', () {
+  test('fica no card Promessa e cumprimento, do Plus desde a 1ª cena', () {
     expect(promise.journey, TrailJourney.promessaCumprimento);
     expect(PlusAccess.trailIsPlus(promise), isTrue);
-    expect(PlusAccess.missionNeedsPlus(promise, 'promessa-01'), isFalse);
+    expect(PlusAccess.missionNeedsPlus(promise, 'promessa-01'), isTrue);
     expect(PlusAccess.missionNeedsPlus(promise, 'promessa-02'), isTrue);
   });
 

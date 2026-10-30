@@ -1897,6 +1897,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dustUiNoFreeze3 => 'The streak is waiting · one scene catches up';
 
   @override
+  String entryForkBody(String plusTrail, String freeTrail) {
+    return 'The path continues in $plusTrail, with Pilgrim+. Or keep going for free through $freeTrail.';
+  }
+
+  @override
+  String get entryForkEyebrow => 'Next step';
+
+  @override
+  String entryForkFree(String trail) {
+    return 'Continue for free through $trail';
+  }
+
+  @override
+  String entryForkPlus(String trail) {
+    return 'Continue in $trail with Pilgrim+';
+  }
+
+  @override
+  String get entryForkTitle => 'Where to next?';
+
+  @override
   String get entryMissionDorAnsia01CentralInsight => 'Treasure pulls the heart';
 
   @override
@@ -5832,6 +5853,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passive deponent';
 
   @override
+  String get myTrailsGift => 'Gift';
+
+  @override
+  String get myTrailsPrincipal => 'Main';
+
+  @override
+  String get myTrailsSecondary => 'Secondary';
+
+  @override
   String get navBible => 'Bible';
 
   @override
@@ -6368,6 +6398,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingYourPace => 'Your pace';
 
   @override
+  String oneTrailBody(String walking, String target) {
+    return 'You\'re walking $walking. To start $target, finish $walking or leave it.';
+  }
+
+  @override
+  String get oneTrailEyebrow => 'One trail at a time';
+
+  @override
+  String oneTrailKeep(String trail) {
+    return 'Keep going in $trail';
+  }
+
+  @override
+  String oneTrailLeave(String trail) {
+    return 'Leave $trail';
+  }
+
+  @override
+  String get oneTrailPlusLine =>
+      'With Pilgrim+, you walk several trails at once, without losing what you\'ve done.';
+
+  @override
+  String get oneTrailTitle => 'You\'re already on a trail';
+
+  @override
   String get paywallAlreadyPlus => 'You\'re already Pilgrim+';
 
   @override
@@ -6465,6 +6520,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallPerkGiftTitle => 'A trail to give every month';
 
   @override
+  String get paywallPerkManyTrailsBody =>
+      'Free is one trail at a time. With Pilgrim+, walk as many as you like, each at its own pace.';
+
+  @override
+  String get paywallPerkManyTrailsTitle => 'Several trails at once';
+
+  @override
   String get paywallPerkPlansBody =>
       'The Gospels in 30 days, the New Testament in 90, and other paths.';
 
@@ -6508,7 +6570,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermon on the Mount, Prayer, Family and other Christian life paths. The first scene of each is free.';
+      'Sermon on the Mount, Prayer, Family and other Christian life paths, whole.';
 
   @override
   String get paywallPerkThemesTitle => 'Theme trails';
@@ -9703,6 +9765,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trailGiftOwn => 'This pass is yours. Share it with someone.';
 
   @override
+  String trailGiftPending(String trail) {
+    return 'Finish $trail, which you received, to get another pass. This pass stays with whoever sent it.';
+  }
+
+  @override
   String get trailGiftPickSubtitle =>
       'Choose which Peregrino+ trail is yours. It stays open, whole, with no deadline.';
 
@@ -9881,11 +9948,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trailsLeaveAwareness =>
-      'I understand I\'ll lose this trail\'s progress';
+      'I understand I\'ll lose this trail\'s progress, medals and seals';
 
   @override
   String get trailsLeaveBody =>
-      'Progress on this trail will be cleared — scenes, modes and chests. Your steps and streak stay. This can\'t be undone.';
+      'Everything on this trail goes — scenes, modes, chests, medals, seals and postcards. Your steps and streak stay. This can\'t be undone.';
 
   @override
   String get trailsLeaveConfirm => 'Leave';

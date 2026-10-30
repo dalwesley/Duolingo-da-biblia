@@ -43,6 +43,7 @@ import '../widgets/plus_locked_sheet.dart';
 import '../widgets/promise_map.dart';
 import '../widgets/mode_emblem.dart';
 import '../widgets/mode_selector.dart';
+import '../widgets/free_slot_gate.dart';
 import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_gift.dart';
@@ -87,6 +88,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     // Prefetch do banco enquanto o mapa monta — a cena abre sem esperar.
     unawaited(ContentCatalogService.instance.ensureTrailBank(widget.slug));
     final trail = await _repo.getTrailBySlug(widget.slug);
+    if (!mounted) return;
+    if (trail != null &&
+        !await ensureFreeSlotAllows(context, trail)) {
+      return;
+    }
     if (!mounted) return;
     setState(() => _trail = trail);
 

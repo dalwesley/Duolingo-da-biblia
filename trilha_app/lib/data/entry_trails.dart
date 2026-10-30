@@ -15,13 +15,13 @@ class EntryTrails {
     'entrada-biblia-07': 'genesis-1-11',
   };
 
+  /// Quando o destino de [continuesTo] é do Peregrino+, o caminho grátis
+  /// oferecido junto (o texto do Sermão vive em Mateus).
+  static const freeContinuesTo = {'dor-ansia-05': 'mateus'};
+
   /// Todas as trilhas de entrada: grátis inteiras ([PlusAccess]) e sem
   /// pré-requisito de outra área ([TrailProgress]).
-  static const slugs = {
-    'ansiedade',
-    'conhecer-a-deus',
-    'entender-a-biblia',
-  };
+  static const slugs = {'ansiedade', 'conhecer-a-deus', 'entender-a-biblia'};
 
   /// Trilhas de um motivo só: viram a ativa da Home só para quem o escolheu.
   /// Vivem em Temas (card próprio) e ficam sempre abertas.

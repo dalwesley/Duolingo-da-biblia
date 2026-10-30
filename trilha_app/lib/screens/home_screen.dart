@@ -21,6 +21,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/plus_offers.dart';
 import '../utils/liturgical_calendar.dart';
+import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
 import '../models/daily_quest.dart';
@@ -284,6 +285,62 @@ class _HomeScreenState extends State<HomeScreen>
       final route = ModalRoute.of(context);
       if (route == null || !route.isCurrent) return;
       widget.onOpenMission(slug);
+    });
+  }
+
+  /// Principal / secundária / presente — só quando há mais de uma das
+  /// minhas no carrossel (uma só não precisa de rótulo).
+  Map<String, String> _trailRoles(
+    ProgressService progress,
+    List<Trail> trails,
+    List<Trail> shown,
+  ) {
+    final l10n = context.l10n;
+    final mine = TrailProgress.myTrails(
+      trails,
+      progress.completedMissions,
+      chosenAt: progress.trailChosenAt,
+      seeded: progress.trailChoicesSeeded,
+      clearedTrailModes: progress.clearedTrailModes,
+      trailModes: progress.activeTrailModes,
+      pinnedModes: progress.pinnedTrailDifficulties,
+      completedOn: progress.missionCompletedOn,
+      borrowed: progress.borrowedMissions,
+    );
+    final roles = <String, String>{};
+    String? principal;
+    for (final t in mine) {
+      if (!shown.any((s) => s.slug == t.slug)) continue;
+      if (PlusAccess.giftedTrails.contains(t.slug)) {
+        roles[t.slug] = l10n.myTrailsGift;
+      } else if (principal == null) {
+        principal = t.slug;
+        roles[t.slug] = l10n.myTrailsPrincipal;
+      } else {
+        roles[t.slug] = l10n.myTrailsSecondary;
+      }
+    }
+    return roles.length > 1 ? roles : const {};
+  }
+
+  /// Quem já usava o app ganha Minhas trilhas a partir das trilhas que
+  /// já tinha começado, na ordem do 1º dia jogado em cada uma.
+  void _maybeSeedTrailChoices(ProgressService progress, List<Trail> trails) {
+    if (progress.trailChoicesSeeded || progress.completedMissions.isEmpty) {
+      return;
+    }
+    final order = TrailProgress.legacyChoices(
+      trails,
+      progress.completedMissions,
+      clearedTrailModes: progress.clearedTrailModes,
+      trailModes: progress.activeTrailModes,
+      pinnedModes: progress.pinnedTrailDifficulties,
+      completedOn: progress.missionCompletedOn,
+      borrowed: progress.borrowedMissions,
+    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      unawaited(progress.seedTrailChoices(order));
     });
   }
 
@@ -680,16 +737,30 @@ class _HomeScreenState extends State<HomeScreen>
         : context.read<SubscriptionService>().plusFeaturesOpen;
     // Carrossel do herói: todas as trilhas com próxima cena agora; a 1ª é
     // a ativa (onde a pessoa está andando).
-    final heroTrails = TrailProgress.availableTrails(
-      trails,
-      progress.completedMissions,
-      clearedTrailModes: progress.clearedTrailModes,
-      trailModes: progress.activeTrailModes,
-      pinnedModes: progress.pinnedTrailDifficulties,
-      completedOn: progress.missionCompletedOn,
-      borrowed: progress.borrowedMissions,
-      plusOpen: plusOpen,
-    );
+    // Sem Plus, uma trilha por vez no herói — não o catálogo inteiro em 0.
+    final heroTrails = plusOpen
+        ? TrailProgress.plusOpenTrails(
+            trails,
+            progress.completedMissions,
+            chosenAt: progress.trailChosenAt,
+            seeded: progress.trailChoicesSeeded,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          )
+        : TrailProgress.freeOpenTrails(
+            trails,
+            progress.completedMissions,
+            chosenAt: progress.trailChosenAt,
+            seeded: progress.trailChoicesSeeded,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          );
     // Sem Plus, a trilha começada que parou no Plus vira o último card,
     // com cadeado: a vitrine nunca toma o lugar do que dá para andar.
     final plusTeasers = plusOpen || heroTrails.isEmpty
@@ -710,6 +781,7 @@ class _HomeScreenState extends State<HomeScreen>
     final goalMet = progress.dailyGoalMet;
 
     if (listen) {
+      _maybeSeedTrailChoices(progress, trails);
       _maybeOpenFirstScene(progress, current?.slug);
       _maybeShowComeback(progress, missionSlug: current?.slug);
       _maybePromptReminders(progress);
@@ -784,6 +856,7 @@ class _HomeScreenState extends State<HomeScreen>
                           trails: [...heroTrails, ...plusTeasers],
                           plusLocked: {for (final t in plusTeasers) t.slug},
                           completed: progress.completedMissions,
+                          roles: _trailRoles(progress, trails, heroTrails),
                           side: AppSpace.screen + gutter,
                           onOpenMission: widget.onOpenMission,
                           onExploreTrails: widget.onOpenTrilhas,
@@ -898,6 +971,10 @@ class _HeroCarousel extends StatefulWidget {
   final Set<String> plusLocked;
   final List<String> completed;
 
+  /// Papel de cada trilha em Minhas trilhas (principal, secundária,
+  /// presente), ao lado do nome no card.
+  final Map<String, String> roles;
+
   /// Margem lateral da coluna do conteúdo.
   final double side;
   final void Function(String missionSlug) onOpenMission;
@@ -909,6 +986,7 @@ class _HeroCarousel extends StatefulWidget {
     required this.trails,
     this.plusLocked = const {},
     required this.completed,
+    this.roles = const {},
     required this.side,
     required this.onOpenMission,
     required this.onExploreTrails,
@@ -1022,7 +1100,10 @@ class _HeroCarouselState extends State<_HeroCarousel> {
     final locked = widget.plusLocked.contains(trail.slug);
     return HeroContinueCard(
       mission: mission,
-      trailTitle: trail.title,
+      trailTitle: switch (widget.roles[trail.slug]) {
+        final role? => '${trail.localizedTitle} · $role',
+        null => trail.localizedTitle,
+      },
       trailSlug: trail.slug,
       trailColor: trail.color,
       plusLocked: locked,

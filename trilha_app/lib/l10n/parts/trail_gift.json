@@ -150,5 +150,13 @@
     "pt": "Uma trilha de presente",
     "en": "A trail as a gift",
     "es": "Una ruta de regalo"
+  },
+  "trailGiftPending": {
+    "pt": "Termine {trail}, que você recebeu, para receber outro passe. Este passe continua com quem enviou.",
+    "en": "Finish {trail}, which you received, to get another pass. This pass stays with whoever sent it.",
+    "es": "Termina {trail}, que recibiste, para recibir otro pase. Este pase sigue con quien lo envió.",
+    "placeholders": {
+      "trail": "String"
+    }
   }
 }

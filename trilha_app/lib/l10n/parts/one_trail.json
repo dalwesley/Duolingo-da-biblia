@@ -1,0 +1,102 @@
+{
+  "oneTrailEyebrow": {
+    "pt": "Uma trilha por vez",
+    "en": "One trail at a time",
+    "es": "Una ruta a la vez"
+  },
+  "oneTrailTitle": {
+    "pt": "Você já está em uma trilha",
+    "en": "You're already on a trail",
+    "es": "Ya estás en una ruta"
+  },
+  "oneTrailBody": {
+    "pt": "Você está caminhando em {walking}. Para começar {target}, termine {walking} ou saia dela.",
+    "en": "You're walking {walking}. To start {target}, finish {walking} or leave it.",
+    "es": "Estás caminando en {walking}. Para empezar {target}, termina {walking} o sal de ella.",
+    "placeholders": {
+      "walking": "String",
+      "target": "String"
+    }
+  },
+  "oneTrailPlusLine": {
+    "pt": "No Peregrino+, você caminha em várias trilhas ao mesmo tempo, sem perder o que já fez.",
+    "en": "With Pilgrim+, you walk several trails at once, without losing what you've done.",
+    "es": "Con Peregrino+, caminas en varias rutas a la vez, sin perder lo que ya hiciste."
+  },
+  "oneTrailKeep": {
+    "pt": "Continuar em {trail}",
+    "en": "Keep going in {trail}",
+    "es": "Seguir en {trail}",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "oneTrailLeave": {
+    "pt": "Sair de {trail}",
+    "en": "Leave {trail}",
+    "es": "Salir de {trail}",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "paywallPerkManyTrailsTitle": {
+    "pt": "Várias trilhas ao mesmo tempo",
+    "en": "Several trails at once",
+    "es": "Varias rutas a la vez"
+  },
+  "paywallPerkManyTrailsBody": {
+    "pt": "No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.",
+    "en": "Free is one trail at a time. With Pilgrim+, walk as many as you like, each at its own pace.",
+    "es": "En el gratis es una ruta a la vez. Con Peregrino+, caminas en cuantas quieras, cada una a su ritmo."
+  },
+  "entryForkEyebrow": {
+    "pt": "Próximo passo",
+    "en": "Next step",
+    "es": "Próximo paso"
+  },
+  "entryForkTitle": {
+    "pt": "Para onde seguir agora?",
+    "en": "Where to next?",
+    "es": "¿Hacia dónde seguir ahora?"
+  },
+  "entryForkBody": {
+    "pt": "O caminho continua em {plusTrail}, no Peregrino+. Ou siga de graça por {freeTrail}.",
+    "en": "The path continues in {plusTrail}, with Pilgrim+. Or keep going for free through {freeTrail}.",
+    "es": "El camino sigue en {plusTrail}, con Peregrino+. O sigue gratis por {freeTrail}.",
+    "placeholders": {
+      "plusTrail": "String",
+      "freeTrail": "String"
+    }
+  },
+  "entryForkPlus": {
+    "pt": "Seguir em {trail} com o Peregrino+",
+    "en": "Continue in {trail} with Pilgrim+",
+    "es": "Seguir en {trail} con Peregrino+",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "entryForkFree": {
+    "pt": "Seguir de graça por {trail}",
+    "en": "Continue for free through {trail}",
+    "es": "Seguir gratis por {trail}",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
+  "myTrailsPrincipal": {
+    "pt": "Principal",
+    "en": "Main",
+    "es": "Principal"
+  },
+  "myTrailsSecondary": {
+    "pt": "Secundária",
+    "en": "Secondary",
+    "es": "Secundaria"
+  },
+  "myTrailsGift": {
+    "pt": "Presente",
+    "en": "Gift",
+    "es": "Regalo"
+  }
+}

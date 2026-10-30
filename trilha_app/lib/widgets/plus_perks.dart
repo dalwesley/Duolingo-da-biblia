@@ -11,6 +11,7 @@ import 'ui_primitives.dart';
 /// Os benefícios do Peregrino+ — fonte única de ícone, título e frase.
 /// Toda tela que lista o Plus usa [PlusPerkCard]; nada de lista própria.
 enum PlusPerk {
+  manyTrails,
   themeTrails,
   postcards,
   giftTrail,
@@ -25,15 +26,16 @@ enum PlusPerk {
 
   /// Os que abrem as listas curtas (ofertas, aviso, perfil).
   static const highlights = [
+    PlusPerk.manyTrails,
     PlusPerk.themeTrails,
     PlusPerk.postcards,
     PlusPerk.giftTrail,
     PlusPerk.season,
     PlusPerk.readingPlans,
-    PlusPerk.weeklyReview,
   ];
 
   CinematicGlyph get glyph => switch (this) {
+    PlusPerk.manyTrails => CinematicGlyph.compass,
     PlusPerk.themeTrails => CinematicGlyph.path,
     PlusPerk.season => CinematicGlyph.calendar,
     PlusPerk.weeklyReview => CinematicGlyph.scroll,
@@ -48,6 +50,7 @@ enum PlusPerk {
   };
 
   String title(AppLocalizations l10n) => switch (this) {
+    PlusPerk.manyTrails => l10n.paywallPerkManyTrailsTitle,
     PlusPerk.themeTrails => l10n.paywallPerkThemesTitle,
     PlusPerk.season => l10n.paywallPerkSeasonTitle,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyTitle,
@@ -62,6 +65,7 @@ enum PlusPerk {
   };
 
   String body(AppLocalizations l10n) => switch (this) {
+    PlusPerk.manyTrails => l10n.paywallPerkManyTrailsBody,
     PlusPerk.themeTrails => l10n.paywallPerkThemesBody,
     PlusPerk.season => l10n.paywallPerkSeasonBody,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyBody,

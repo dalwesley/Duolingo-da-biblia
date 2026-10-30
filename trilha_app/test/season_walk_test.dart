@@ -48,11 +48,11 @@ void main() {
       }
     });
 
-    test('without Plus, days 1–3 stay open and day 4 asks for it', () {
+    test('without Plus, day 1 stays open and day 2 asks for it', () {
       final start = LiturgicalCalendar.adventStart(2026);
       final c = SeasonWalkCatalog.advent(start);
       final today = start.add(const Duration(days: 9));
-      for (var i = 1; i <= 3; i++) {
+      for (var i = 1; i <= 1; i++) {
         final access = SeasonWalkCatalog.access(
           campaign: c,
           index: i,
@@ -61,7 +61,7 @@ void main() {
         );
         expect(access.playable, isTrue, reason: 'day $i');
       }
-      for (var i = 4; i <= 10; i++) {
+      for (var i = 2; i <= 10; i++) {
         final access = SeasonWalkCatalog.access(
           campaign: c,
           index: i,

@@ -70,27 +70,27 @@ void main() {
     }
   });
 
-  test('temáticos são Plus, com a 1ª cena de amostra', () {
+  test('temáticos são Plus desde a 1ª cena', () {
     final themes = _trail(TrailRealm.novoTestamento.id, categoryId: 'panorama');
     expect(themes.journey, TrailJourney.panorama);
     expect(PlusAccess.trailIsPlus(themes), isTrue);
-    expect(PlusAccess.missionNeedsPlus(themes, 'm1'), isFalse);
+    expect(PlusAccess.missionNeedsPlus(themes, 'm1'), isTrue);
     expect(PlusAccess.missionNeedsPlus(themes, 'm2'), isTrue);
   });
 
-  test('tema é Plus, com a 1ª cena de amostra', () {
+  test('tema é Plus desde a 1ª cena', () {
     for (final realm in [TrailRealm.vidaCrista, TrailRealm.teologia]) {
       final t = _trail(realm.id);
       expect(PlusAccess.trailIsPlus(t), isTrue);
-      expect(PlusAccess.missionNeedsPlus(t, 'm1'), isFalse);
+      expect(PlusAccess.missionNeedsPlus(t, 'm1'), isTrue);
       expect(PlusAccess.missionNeedsPlus(t, 'm2'), isTrue);
       expect(PlusAccess.missionNeedsPlus(t, 'm3'), isTrue);
     }
   });
 
-  test('próxima cena pede Plus só depois da amostra', () {
+  test('sem amostra: a próxima cena de um tema já pede Plus', () {
     final t = _trail(TrailRealm.vidaCrista.id);
-    expect(TrailProgress.nextSceneNeedsPlus(t, []), isFalse);
+    expect(TrailProgress.nextSceneNeedsPlus(t, []), isTrue);
     expect(TrailProgress.nextSceneNeedsPlus(t, ['m1']), isTrue);
     expect(TrailProgress.nextSceneNeedsPlus(t, ['m1', 'm2', 'm3']), isFalse);
     expect(
