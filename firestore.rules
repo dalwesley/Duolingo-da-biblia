@@ -164,6 +164,13 @@ service cloud.firestore {
             ? !('plusWillRenew' in request.resource.data)
             : request.resource.data.get('plusWillRenew', null)
                 == resource.data.get('plusWillRenew', null))
+        // Teste grátis: só o webhook marca. Sem isto, o cliente fingia
+        // não estar em trial e liberava passe de trilha.
+        && (resource == null
+            ? !('plusInTrial' in request.resource.data)
+                || request.resource.data.plusInTrial == false
+            : request.resource.data.get('plusInTrial', false)
+                == resource.data.get('plusInTrial', false))
         // Vaga do Pioneiro: só o webhook marca. O cliente não se conta.
         && (resource == null
             ? !('pioneerCounted' in request.resource.data)
@@ -174,7 +181,16 @@ service cloud.firestore {
         && (resource == null
             ? !('desbravador' in request.resource.data)
             : request.resource.data.get('desbravador', false)
-                == resource.data.get('desbravador', false));
+                == resource.data.get('desbravador', false))
+        // giftedTrails no público: nunca. Mora no private (legado) ou em
+        // users/{uid}/giftedTrails/{slug}. Mapa vazio passa: a 1.0.40
+        // manda `giftedTrails: {}` em todo save.
+        && (resource == null
+            ? !('giftedTrails' in request.resource.data)
+              || request.resource.data.giftedTrails == {}
+            : !('giftedTrails' in request.resource.data)
+              || request.resource.data.giftedTrails
+                  == resource.data.get('giftedTrails', {}));
     }
 
     // Contagem do Pioneiro (primeiras compras de plus_founder_annual).
@@ -445,8 +461,23 @@ service cloud.firestore {
     // Dados pessoais (e-mail, token, reflexões, erros, códigos de sala e
     // companhia, configurações): só o dono lê e grava. Functions usam o
     // Admin SDK e não passam por aqui.
+    // giftedTrails no private é legado (só leitura): o cliente não muda —
+    // senão qualquer um se dava todas as trilhas Plus. O mapa vivo mora
+    // em users/{uid}/giftedTrails/{slug}, criado só no resgate.
+    function privateGiftedTrailsOk() {
+      return resource == null
+        ? !('giftedTrails' in request.resource.data)
+          || request.resource.data.giftedTrails == {}
+        : !('giftedTrails' in request.resource.data)
+          || request.resource.data.giftedTrails
+              == resource.data.get('giftedTrails', {});
+    }
+
     match /users/{uid}/private/{doc} {
-      allow read, write: if isSignedIn() && request.auth.uid == uid;
+      allow read: if isSignedIn() && request.auth.uid == uid;
+      allow write: if isSignedIn()
+        && request.auth.uid == uid
+        && privateGiftedTrailsOk();
     }
 
     // Passe de trilha (Peregrino+): quem assina libera 1 trilha por mês
@@ -465,6 +496,27 @@ service cloud.firestore {
       return slug is string && slug.matches('^[a-z0-9-]{1,80}$');
     }
 
+    // Trilha liberada por passe: nasce no mesmo batch/tx do resgate.
+    // O cliente não inventa slug — o passe tem que estar (ou ficar)
+    // resgatado por este uid com o mesmo trailSlug.
+    match /users/{uid}/giftedTrails/{trailSlug} {
+      allow read: if isSignedIn() && request.auth.uid == uid;
+      allow create: if isSignedIn()
+        && request.auth.uid == uid
+        && giftTrailSlugOk(trailSlug)
+        && request.resource.data.keys().hasOnly([
+          'fromName', 'code', 'redeemedAt'
+        ])
+        && request.resource.data.fromName is string
+        && request.resource.data.fromName.size() <= 40
+        && request.resource.data.code is string
+        && request.resource.data.code.matches('^[A-Z0-9]{8}$')
+        && request.resource.data.redeemedAt == request.time
+        && getAfter(/databases/$(database)/documents/trailGifts/$(request.resource.data.code)).data.toUid == uid
+        && getAfter(/databases/$(database)/documents/trailGifts/$(request.resource.data.code)).data.trailSlug == trailSlug;
+      allow update, delete: if false;
+    }
+
     match /trailGifts/{code} {
       allow get: if isSignedIn();
       allow create: if isSignedIn()
@@ -480,8 +532,10 @@ service cloud.firestore {
         && request.resource.data.month == giftMonthNow()
         && request.resource.data.createdAt == request.time
         // Plus vem do webhook no doc público; o cliente não grava isso.
+        // Teste grátis não dá passe: plusInTrial (webhook) bloqueia.
         && userExists()
         && userData().get('plusActive', false) == true
+        && userData().get('plusInTrial', false) != true
         && getAfter(/databases/$(database)/documents/users/$(request.auth.uid)/giftMonths/$(giftMonthNow())).data.code == code;
       allow update: if isSignedIn()
         && !('toUid' in resource.data)

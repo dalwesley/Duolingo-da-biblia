@@ -780,6 +780,96 @@ class TrailProgress {
     ];
   }
 
+  /// Começo natural de quem não tem trilha nenhuma: o início da Bíblia.
+  static const starterTrailSlug = 'genesis-1-11';
+
+  /// Sugestão para quem está sem trilha sua (nunca escolheu, ou saiu de
+  /// todas). Com última cena ou motivo do onboarding, vale
+  /// [findActiveTrail] (a trilha seguinte, a do motivo). Sem nenhum dos
+  /// dois, Gênesis 1–11 — não a 1ª do catálogo, que é Ansiedade.
+  static Trail? starterSuggestion(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Iterable<String> borrowed = const [],
+    bool plusOpen = true,
+  }) {
+    if (lastPlayedMissionSlug == null && preferredTrailSlug == null) {
+      final starter = trails
+          .where((t) => t.slug == starterTrailSlug)
+          .firstOrNull;
+      if (starter != null &&
+          !starter.comingSoon &&
+          getCurrentMission(starter, completed) != null &&
+          (plusOpen || !nextSceneNeedsPlus(starter, completed)) &&
+          isTrailUnlocked(
+            starter,
+            trails,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+          ) &&
+          !isTrailCompleted(
+            starter,
+            completed,
+            clearedTrailModes: clearedTrailModes,
+          )) {
+        return starter;
+      }
+    }
+    return findActiveTrail(
+      trails,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      borrowed: borrowed,
+      plusOpen: plusOpen,
+    );
+  }
+
+  /// Herói da Home e folha da aba Trilhas com o Peregrino+: Minhas
+  /// trilhas com cena por fazer, na ordem da escolha. Sem nenhuma (nunca
+  /// escolheu, ou "Sair de todas"), só a [starterSuggestion] — as trilhas
+  /// só desbloqueadas não aparecem como "suas".
+  static List<Trail> plusMyOpenTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+  }) {
+    final mine = [
+      for (final t in myTrails(
+        trails,
+        completed,
+        chosenAt: chosenAt,
+        seeded: seeded,
+        clearedTrailModes: clearedTrailModes,
+        trailModes: trailModes,
+        pinnedModes: pinnedModes,
+        completedOn: completedOn,
+        borrowed: borrowed,
+      ))
+        if (getCurrentMission(t, completed) != null) t,
+    ];
+    if (mine.isNotEmpty) return mine;
+    final starter = starterSuggestion(
+      trails,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      borrowed: borrowed,
+    );
+    return [?starter];
+  }
+
   /// A principal do grátis: a 1ª de [mine] que não é do Peregrino+ (nem
   /// recebida por passe, que anda por fora da vaga).
   static Trail? freePrincipal(List<Trail> mine) =>
@@ -787,7 +877,7 @@ class TrailProgress {
 
   /// O que o grátis vê como trilha aberta (faixa Trilhas / herói): a
   /// principal e as recebidas por passe ainda abertas. Sem principal, a
-  /// ativa do CTA — não o catálogo inteiro de trilhas desbloqueadas.
+  /// [starterSuggestion] — não o catálogo inteiro de trilhas desbloqueadas.
   static List<Trail> freeOpenTrails(
     List<Trail> trails,
     List<String> completed, {
@@ -812,7 +902,7 @@ class TrailProgress {
     );
     final principal =
         freePrincipal(mine) ??
-        findActiveTrail(
+        starterSuggestion(
           trails,
           completed,
           clearedTrailModes: clearedTrailModes,
@@ -842,6 +932,10 @@ class TrailProgress {
   /// [target], ou null. A principal é a 1ª escolhida ([myTrails]); quem
   /// perdeu o Plus fica só com ela. Trilha recebida por passe anda por
   /// fora da vaga; trilha que pede o Plus fica com a trava do Plus.
+  ///
+  /// [allowCompletedTarget]: revisita de trilha já concluída (mapa,
+  /// selo, álbum) não pede "Sair" da principal. Aprofundar / reabrir
+  /// passa `false` — senão a vaga libera e o progresso zera em silêncio.
   static Trail? freeSlotBlocker(
     Trail target,
     List<Trail> trails,
@@ -853,8 +947,25 @@ class TrailProgress {
     Map<String, String> pinnedModes = const {},
     Map<String, String> completedOn = const {},
     Iterable<String> borrowed = const [],
+    bool allowCompletedTarget = true,
   }) {
     if (PlusAccess.trailInPlus(target)) return null;
+    if (allowCompletedTarget &&
+        isTrailCompleted(
+          target,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        ) &&
+        !isDeepening(
+          target,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+          trailModes: trailModes,
+          pinnedModes: pinnedModes,
+          borrowed: borrowed,
+        )) {
+      return null;
+    }
     final principal = freePrincipal(
       myTrails(
         trails,

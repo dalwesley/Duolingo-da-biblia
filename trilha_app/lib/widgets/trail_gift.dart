@@ -127,6 +127,17 @@ Future<void> showTrailGiftSheet(BuildContext context, Trail trail) async {
 }
 
 Future<void> _shareTrailGift(BuildContext context, Trail trail) async {
+  final sub = context.read<SubscriptionService>();
+  // Espelha a rule: teste grátis não cria passe (evita PERMISSION_DENIED).
+  if (!sub.canShareTrailGift) {
+    await showAppToastFor(
+      context,
+      message: context.l10n.trailGiftSendFailed,
+      glyph: CinematicGlyph.wrong,
+      tone: AppToastTone.warn,
+    );
+    return;
+  }
   final backend = context.read<BackendService>();
   final name = context.read<ProgressService>().userName;
   final gift = await backend.sendTrailGift(
@@ -242,8 +253,21 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
   }
 
   if (trail == null || !progress.giftedTrails.containsKey(trail.slug)) {
-    if (context.read<SubscriptionService>().isPeregrinoPlus) {
+    final sub = context.read<SubscriptionService>();
+    // Link aberto com o app fechado: a loja ainda não respondeu. Espera
+    // um pouco antes de decidir (assinante não gasta o passe).
+    if (!sub.storeAnswered) {
+      await sub.waitStoreAnswer();
+      if (!context.mounted) return;
+    }
+    // Já tem Plus de verdade, ou build sem loja (tudo aberto): não gaste.
+    // Promo de lançamento ainda resgata — o passe fica depois da promo.
+    if (sub.isPeregrinoPlus || !sub.isConfigured) {
       return fail(TrailGiftRedeem.notNeeded, trail: peek.trailSlug);
+    }
+    // Loja ainda não respondeu: pode ser assinante. Falha sem resgatar.
+    if (!sub.storeAnswered) {
+      return fail(TrailGiftRedeem.failed, trail: peek.trailSlug);
     }
     // Um passe por vez: o recebido antes precisa terminar.
     final pending = await _unfinishedGift(progress);

@@ -79,7 +79,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get authMissingIdToken =>
-      'Google no devolvió idToken. Revisa que el SHA-1 de Play esté en Firebase.';
+      'No se pudo iniciar sesión con Google. Inténtalo de nuevo.';
 
   @override
   String get authNetworkReset =>
@@ -10012,6 +10012,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trailsLearnMore => 'Más información';
 
   @override
+  String get trailsLeaveAllAwareness =>
+      'Entiendo que perderé el progreso, las medallas y los sellos de mis rutas abiertas';
+
+  @override
+  String get trailsLeaveAllBody =>
+      'Todo de tus rutas abiertas desaparece — escenas, modos, cofres, medallas, sellos y postales. Las rutas terminadas, tus pasos y racha se mantienen. No se puede deshacer.';
+
+  @override
+  String get trailsLeaveAllCta => 'Salir de todas las rutas';
+
+  @override
+  String get trailsLeaveAllDone =>
+      'Listo. Elige una ruta para empezar de nuevo.';
+
+  @override
+  String get trailsLeaveAllTitle => '¿Salir de todas las rutas?';
+
+  @override
   String get trailsLeaveAwareness =>
       'Entiendo que perderé el progreso, las medallas y los sellos de esta ruta';
 
@@ -10159,6 +10177,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String trailsStreakAtRisk(String countdown) {
     return 'La racha termina en $countdown';
   }
+
+  @override
+  String get trailsSuggestedStart => 'Sugerencia para empezar';
 
   @override
   String trailsTrailNumber(String roman) {

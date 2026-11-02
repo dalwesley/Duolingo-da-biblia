@@ -89,21 +89,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     unawaited(ContentCatalogService.instance.ensureTrailBank(widget.slug));
     final trail = await _repo.getTrailBySlug(widget.slug);
     if (!mounted) return;
-    if (trail != null &&
-        !await ensureFreeSlotAllows(context, trail)) {
+    if (trail != null && !await ensureFreeSlotAllows(context, trail)) {
       return;
     }
     if (!mounted) return;
-    // Grátis: a vaga fecha já no mapa (depois de Sair + entrar), não só
-    // no "Começar". Sem isso o herói pode parecer trocado e a porta de
-    // entrada (Ansiedade) ainda abre porque a escolha não gravou.
-    if (trail != null && !PlusAccess.trailInPlus(trail)) {
-      final progress = context.read<ProgressService>();
-      if (!context.read<SubscriptionService>().plusFeaturesOpen) {
-        await progress.reserveTrailChoice(trail.slug);
-        if (!mounted) return;
-      }
-    }
     setState(() => _trail = trail);
 
     if (_fromBank) {
@@ -121,6 +110,36 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         widget.slug,
         missionSlugs: trail?.missionSlugs ?? const [],
       );
+      if (!mounted) return;
+    }
+
+    // Grátis: a vaga fecha só depois do seletor (ou sem banco). Antes,
+    // voltar no seletor já gravava a trilha como principal e apagava o
+    // motivo do onboarding.
+    if (!mounted) return;
+    if (trail != null && !PlusAccess.trailInPlus(trail)) {
+      final progress = context.read<ProgressService>();
+      // Lido depois do advancePastClearedMode: trilha concluída que só
+      // está sendo vista não toma a vaga (a cena pede quando jogar).
+      final onlyViewing =
+          TrailProgress.isTrailCompleted(
+            trail,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+          ) &&
+          !TrailProgress.isDeepening(
+            trail,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            borrowed: progress.borrowedMissions,
+          );
+      if (!onlyViewing &&
+          !context.read<SubscriptionService>().plusFeaturesOpen) {
+        await progress.reserveTrailChoice(trail.slug);
+        if (!mounted) return;
+      }
     }
 
     if (mounted) setState(() => _checkingDifficulty = false);
@@ -166,8 +185,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final plusOpen = context.select(
       (SubscriptionService s) => s.plusFeaturesOpen,
     );
-    final subscriber = context.select(
-      (SubscriptionService s) => s.isPeregrinoPlus,
+    // Passe só com Plus pago: teste grátis não doa (rules + webhook).
+    final canGift = context.select(
+      (SubscriptionService s) => s.isPeregrinoPlus && !s.plusInTrial,
     );
 
     if (_trail == null || _checkingDifficulty) {
@@ -429,7 +449,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                if (subscriber &&
+                                if (canGift &&
                                     PlusAccess.trailInPlus(trail)) ...[
                                   TrailGiftCard(trail: trail),
                                   const SizedBox(height: AppSpace.lg),

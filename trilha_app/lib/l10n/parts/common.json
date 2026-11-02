@@ -194,9 +194,9 @@
     "es": "Inicio de sesión en curso."
   },
   "authMissingIdToken": {
-    "pt": "Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.",
-    "en": "Google didn't return an idToken. Check that the Play SHA-1 is in Firebase.",
-    "es": "Google no devolvió idToken. Revisa que el SHA-1 de Play esté en Firebase."
+    "pt": "Não deu para entrar com o Google. Tente de novo.",
+    "en": "Couldn't sign in with Google. Please try again.",
+    "es": "No se pudo iniciar sesión con Google. Inténtalo de nuevo."
   },
   "authEnableProviders": {
     "pt": "Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.",

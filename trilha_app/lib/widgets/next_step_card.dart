@@ -14,9 +14,11 @@ import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/next_step.dart';
+import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
 import 'act_feel.dart';
 import 'cloud_mascot.dart';
+import 'free_slot_gate.dart';
 import 'immersive_background.dart';
 import 'profile_plus_cards.dart';
 import 'ui_primitives.dart';
@@ -33,6 +35,24 @@ Future<void> startDeepen(
   String source = 'next_step',
 }) async {
   ActHaptics.tap();
+  final sub = context.read<SubscriptionService>();
+  // Vaga e Plus ANTES de zerar o progresso: senão "Sair"/paywall deixam
+  // a trilha reaberta sem cena jogável, ou o grátis perde a principal.
+  if (PlusAccess.trailIsPlus(step.trail) && !sub.plusFeaturesOpen) {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => PaywallScreen(source: source)),
+    );
+    return;
+  }
+  if (!await ensureFreeSlotAllows(
+    context,
+    step.trail,
+    reopening: true,
+    replaceRoute: false,
+  )) {
+    return;
+  }
+  if (!context.mounted) return;
   final progress = context.read<ProgressService>();
   AnalyticsService.instance.logEvent('next_step_deepen', {
     'trail': step.trail.slug,

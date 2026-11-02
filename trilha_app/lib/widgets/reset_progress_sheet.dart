@@ -35,7 +35,12 @@ Future<bool> showLeaveTrailSheet(BuildContext context) {
   return _showDangerSheet(context, _DangerKind.leaveTrail);
 }
 
-enum _DangerKind { resetProgress, deleteAccount, leaveTrail }
+/// Sai de todas as trilhas abertas de uma vez — o mesmo ritual.
+Future<bool> showLeaveAllTrailsSheet(BuildContext context) {
+  return _showDangerSheet(context, _DangerKind.leaveAllTrails);
+}
+
+enum _DangerKind { resetProgress, deleteAccount, leaveTrail, leaveAllTrails }
 
 Future<bool> _showDangerSheet(
   BuildContext context,
@@ -109,6 +114,11 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
         l10n.trailsLeaveTitle,
         l10n.trailsLeaveBody,
         l10n.trailsLeaveAwareness,
+      ),
+      _DangerKind.leaveAllTrails => (
+        l10n.trailsLeaveAllTitle,
+        l10n.trailsLeaveAllBody,
+        l10n.trailsLeaveAllAwareness,
       ),
       _DangerKind.resetProgress => (
         l10n.resetTitle,

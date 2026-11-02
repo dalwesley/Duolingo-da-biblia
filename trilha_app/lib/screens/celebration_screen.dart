@@ -656,10 +656,18 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         trails: catalog,
         completed: completed,
         clearedTrailModes: progress.clearedTrailModes,
+        trailModes: progress.activeTrailModes,
+        pinnedModes: progress.pinnedTrailDifficulties,
+        chosenAt: progress.trailChosenAt,
+        seeded: progress.trailChoicesSeeded,
+        completedOn: progress.missionCompletedOn,
+        borrowed: progress.borrowedMissions,
         justFinishedSlug: widget.missionSlug,
         plusOpen: plusOpen,
       );
       if (hook == null) {
+        // Promessa antiga não fica no lembrete nem no widget.
+        await progress.setNextScene(title: '', tease: '');
         if (mounted) setState(() => _hookResolved = true);
         return;
       }

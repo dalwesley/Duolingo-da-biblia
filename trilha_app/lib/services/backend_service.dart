@@ -921,11 +921,15 @@ class BackendService extends ChangeNotifier {
   /// (regra ainda não publicada), o público segue como antes — nada se perde.
   Future<void> _writeUserDocs(Map<String, dynamic> full) async {
     final split = splitPayload(full);
+    // giftedTrails não sobe no private: a regra trava o campo (legado) e
+    // o mapa vivo mora em users/{uid}/giftedTrails/{slug} no resgate.
+    final private = Map<String, dynamic>.from(split.private)
+      ..remove('giftedTrails');
     var privateOk = false;
     try {
       await _db
           .doc(_privatePath)
-          .set(split.private, SetOptions(merge: true))
+          .set(private, SetOptions(merge: true))
           .timeout(const Duration(seconds: 12));
       privateOk = true;
     } catch (e) {
@@ -933,7 +937,7 @@ class BackendService extends ChangeNotifier {
     }
     final public = privateOk
         ? {...split.public, for (final k in privateKeys) k: FieldValue.delete()}
-        : {...split.public, ...split.private};
+        : {...split.public, ...private};
     await _db
         .doc('users/$_uid')
         .set(public, SetOptions(merge: true))
@@ -1290,6 +1294,12 @@ class BackendService extends ChangeNotifier {
             'steps=${local['steps'] ?? local['xp']})',
           );
           await progress.applyFromCloud(local);
+        }
+        // Entitlements de passe (subcoleção): o private legado pode ter
+        // a cópia antiga; a subcoleção é a fonte que o cliente não forja.
+        final gifted = await fetchGiftedTrails();
+        if (gifted.isNotEmpty) {
+          progress.giftedTrails = {...gifted, ...progress.giftedTrails};
         }
         if (league != null) await league.applyFromCloud(data);
         await progress.clearLegacyLocalPrefs();
@@ -1933,7 +1943,7 @@ class BackendService extends ChangeNotifier {
     final uid = _uid!;
     final ref = _db.doc('trailGifts/$code');
     try {
-      return await _db.runTransaction((tx) async {
+      final result = await _db.runTransaction((tx) async {
         final snap = await tx.get(ref);
         final gift = TrailGift.fromMap(code, snap.data());
         if (gift == null) return (outcome: TrailGiftRedeem.invalid, gift: null);
@@ -1954,20 +1964,77 @@ class BackendService extends ChangeNotifier {
           return (outcome: TrailGiftRedeem.invalid, gift: gift);
         }
         final name = toName.trim();
+        final slug = open ? chosenTrail! : gift.trailSlug;
         tx.update(ref, {
           'toUid': uid,
           'toName': name.length > 40 ? name.substring(0, 40) : name,
           'redeemedAt': FieldValue.serverTimestamp(),
           if (open) 'trailSlug': chosenTrail,
         });
+        // Entitlement da trilha: só nasce com o resgate (rules). O private
+        // legado não aceita mais escrita de giftedTrails pelo cliente.
+        tx.set(_db.doc('users/$uid/giftedTrails/$slug'), {
+          'fromName': gift.fromName.length > 40
+              ? gift.fromName.substring(0, 40)
+              : gift.fromName,
+          'code': code,
+          'redeemedAt': FieldValue.serverTimestamp(),
+        });
         return (
           outcome: TrailGiftRedeem.done,
           gift: open ? gift.withTrail(chosenTrail!) : gift,
         );
       });
+      // Já era deste uid (reabriu o link): garante o doc do entitlement.
+      if (result.outcome == TrailGiftRedeem.done && result.gift != null) {
+        await _ensureGiftedTrailDoc(
+          uid: uid,
+          slug: result.gift!.trailSlug,
+          fromName: result.gift!.fromName,
+          code: code,
+        );
+      }
+      return result;
     } catch (e) {
       debugPrint('trailGift redeem: $e');
       return (outcome: TrailGiftRedeem.failed, gift: null);
+    }
+  }
+
+  /// Cria `users/{uid}/giftedTrails/{slug}` se ainda não existir (re-link).
+  Future<void> _ensureGiftedTrailDoc({
+    required String uid,
+    required String slug,
+    required String fromName,
+    required String code,
+  }) async {
+    if (slug.isEmpty) return;
+    try {
+      final ref = _db.doc('users/$uid/giftedTrails/$slug');
+      final snap = await ref.get();
+      if (snap.exists) return;
+      await ref.set({
+        'fromName': fromName.length > 40 ? fromName.substring(0, 40) : fromName,
+        'code': code,
+        'redeemedAt': FieldValue.serverTimestamp(),
+      });
+    } catch (e) {
+      debugPrint('trailGift ensure gifted: $e');
+    }
+  }
+
+  /// Passes resgatados (mapa slug → quem liberou). Fonte do entitlement.
+  Future<Map<String, String>> fetchGiftedTrails() async {
+    if (!isActive) return const {};
+    try {
+      final snap = await _db.collection('users/$_uid/giftedTrails').get();
+      return {
+        for (final doc in snap.docs)
+          doc.id: (doc.data()['fromName'] as String?) ?? '',
+      };
+    } catch (e) {
+      debugPrint('trailGift gifted list: $e');
+      return const {};
     }
   }
 

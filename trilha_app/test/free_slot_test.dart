@@ -107,6 +107,92 @@ void main() {
     );
   });
 
+  test('revisiting a finished trail does not demand leaving the principal', () {
+    expect(
+      TrailProgress.freeSlotBlocker(
+        genesis,
+        trails,
+        ['genesis-1', 'genesis-2', 'mateus-1'],
+        chosenAt: {'mateus': day1, 'genesis': day2},
+      ),
+      isNull,
+    );
+  });
+
+  test('reopening a finished trail still respects the free slot', () {
+    expect(
+      TrailProgress.freeSlotBlocker(
+        genesis,
+        trails,
+        ['genesis-1', 'genesis-2', 'mateus-1'],
+        chosenAt: {'mateus': day1, 'genesis': day2},
+        allowCompletedTarget: false,
+      )?.slug,
+      'mateus',
+    );
+  });
+
+  test(
+    'map advanced a sealed trail: playing its scene still asks the slot',
+    () {
+      // Observação selada, o mapa passou para Compreensão sem fixar e zerou
+      // as cenas: ver passa, jogar (reopening) pede a vaga.
+      const cleared = {
+        'genesis': ['semente'],
+      };
+      const modes = {'genesis': 'caminhada'};
+      Trail? blocker({required bool allowCompleted}) =>
+          TrailProgress.freeSlotBlocker(
+            genesis,
+            trails,
+            ['mateus-1'],
+            chosenAt: {'mateus': day1},
+            clearedTrailModes: cleared,
+            trailModes: modes,
+            allowCompletedTarget: allowCompleted,
+          );
+      expect(blocker(allowCompleted: true), isNull);
+      expect(blocker(allowCompleted: false)?.slug, 'mateus');
+    },
+  );
+
+  test('Plus hero lists only my trails, never the unlocked catalog', () {
+    final mine = TrailProgress.plusMyOpenTrails(
+      trails,
+      ['mateus-1'],
+      chosenAt: {'mateus': day1},
+    );
+    expect(mine.map((t) => t.slug), ['mateus']);
+  });
+
+  test('Plus with no trail of mine shows a single suggestion', () {
+    final none = TrailProgress.plusMyOpenTrails(trails, const []);
+    expect(none, hasLength(1));
+  });
+
+  test('no trail, no last scene, no intent: Gênesis 1–11 is the start', () {
+    final starter = _trail('genesis-1-11');
+    TrailProgress.preferredTrailSlug = null;
+    final pick = TrailProgress.starterSuggestion([
+      ansiedade,
+      starter,
+      mateus,
+    ], const []);
+    expect(pick?.slug, 'genesis-1-11');
+  });
+
+  test('with an intent, the suggestion is the intent trail', () {
+    final starter = _trail('genesis-1-11');
+    TrailProgress.preferredTrailSlug = 'ansiedade';
+    addTearDown(() => TrailProgress.preferredTrailSlug = null);
+    final pick = TrailProgress.starterSuggestion([
+      ansiedade,
+      starter,
+      mateus,
+    ], const []);
+    expect(pick?.slug, 'ansiedade');
+  });
+
   test('the principal is the first chosen, not the last played', () {
     TrailProgress.lastPlayedMissionSlug = 'genesis-1';
     final chosen = {'ansiedade': day1, 'genesis': day2};

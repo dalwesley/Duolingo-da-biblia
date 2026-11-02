@@ -5,10 +5,13 @@ import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../models/user_intent.dart';
+import '../services/backend_service.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../utils/plus_access.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
@@ -24,6 +27,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/path_preview_sheet.dart';
+import '../widgets/reset_progress_sheet.dart';
 import '../widgets/realm_world_atmosphere.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/trail_suggestion_sheet.dart';
@@ -330,10 +334,60 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                 ),
               ),
             ),
+            if (_leavableSlugs(trails, progress).isNotEmpty) ...[
+              const SizedBox(height: AppSpace.sm),
+              Center(
+                child: TextCta(
+                  label: sheetContext.l10n.trailsLeaveAllCta,
+                  danger: true,
+                  onTap: () {
+                    Navigator.of(sheetContext).pop();
+                    _leaveAllTrails(trails);
+                  },
+                ),
+              ),
+            ],
             SizedBox(height: MediaQuery.viewPaddingOf(sheetContext).bottom),
           ],
         ),
       ),
+    );
+  }
+
+  /// Trilhas que "Sair de todas" zera: as da folha com cena feita ou modo
+  /// selado, mais as escolhidas (Minhas trilhas). As só desbloqueadas,
+  /// sem nada feito, não têm o que perder.
+  Set<String> _leavableSlugs(List<Trail> shown, ProgressService progress) => {
+    for (final t in shown)
+      if (TrailProgress.getLiveProgress(t, progress.completedMissions).done >
+              0 ||
+          (progress.clearedTrailModes[t.slug] ?? const []).isNotEmpty)
+        t.slug,
+    ...progress.trailChosenAt.keys,
+  };
+
+  Future<void> _leaveAllTrails(List<Trail> shown) async {
+    final progress = context.read<ProgressService>();
+    final slugs = _leavableSlugs(shown, progress);
+    if (slugs.isEmpty) return;
+    if (!await showLeaveAllTrailsSheet(context)) return;
+    if (!mounted) return;
+    for (final t in _trails ?? const <Trail>[]) {
+      if (!slugs.contains(t.slug)) continue;
+      await progress.leaveTrail(
+        trailSlug: t.slug,
+        missionSlugs: t.missionSlugs,
+      );
+    }
+    if (!mounted) return;
+    final backend = context.read<BackendService>();
+    final league = context.read<LeagueService>();
+    await backend.saveNow(progress, LeagueService.weekKey(), league: league);
+    if (!mounted) return;
+    await showAppToastFor(
+      context,
+      message: context.l10n.trailsLeaveAllDone,
+      glyph: CinematicGlyph.check,
     );
   }
 
@@ -384,10 +438,12 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final plusOpen = tabListens
         ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
         : context.read<SubscriptionService>().plusFeaturesOpen;
-    // Trilhas abertas: com Plus, o carrossel completo; sem Plus, uma só
-    // (a da vaga ou a ativa) + no fim as começadas que pararam no Plus.
+    // Trilhas abertas: com Plus, Minhas trilhas (sem as só sugeridas —
+    // "Sair de todas" esvazia a folha); nenhuma escolhida, a 1ª sugestão.
+    // Sem Plus, uma só (a da vaga ou a ativa) + no fim as começadas que
+    // pararam no Plus.
     final freeTrails = plusOpen
-        ? TrailProgress.plusOpenTrails(
+        ? TrailProgress.plusMyOpenTrails(
             trails,
             progress.completedMissions,
             chosenAt: progress.trailChosenAt,
@@ -492,6 +548,14 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                         progress.completedMissions,
                       ),
                       openCount: openTrails.length,
+                      suggestion:
+                          !progress.trailChosenAt.containsKey(active.slug) &&
+                          !PlusAccess.giftedTrails.contains(active.slug) &&
+                          TrailProgress.getLiveProgress(
+                                active,
+                                progress.completedMissions,
+                              ).done ==
+                              0,
                       // Mais de uma aberta: escolhe na folha; senão, o mapa.
                       onTap: openTrails.length > 1
                           ? () => _showOpenTrails(openTrails, progress)
@@ -1212,11 +1276,15 @@ class _NowPlayingStrip extends StatefulWidget {
   /// abertas" e o toque abre a escolha.
   final int openCount;
 
+  /// A trilha não é sua (nem começada nem escolhida): o app só sugere.
+  final bool suggestion;
+
   const _NowPlayingStrip({
     required this.trail,
     required this.mission,
     required this.progress,
     this.openCount = 1,
+    this.suggestion = false,
     required this.onTap,
   });
 
@@ -1262,6 +1330,8 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
     final many = widget.openCount > 1;
     final label = many
         ? context.l10n.trailsOpenTitle
+        : widget.suggestion
+        ? context.l10n.trailsSuggestedStart
         : context.l10n.trailsInProgress;
     final p = widget.progress;
     final title = many

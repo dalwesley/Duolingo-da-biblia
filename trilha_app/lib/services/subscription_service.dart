@@ -77,11 +77,25 @@ class SubscriptionService extends ChangeNotifier {
     super.notifyListeners();
   }
 
+  Timer? _dayTick;
+
   SubscriptionService() {
     RemoteConfigService.instance.addListener(notifyListeners);
     unawaited(_restoreLocalState());
     if (kDebugMode) unawaited(_debugRestore());
     _listenPioneerCount();
+  }
+
+  /// Promo de lançamento e Pioneiro mudam na virada do dia: com o app
+  /// aberto, um Timer na meia-noite local redesenha a UI.
+  void _armDayTick() {
+    _dayTick?.cancel();
+    final now = DateTime.now();
+    final next = DateTime(now.year, now.month, now.day + 1, 0, 0, 1);
+    _dayTick = Timer(next.difference(now), () {
+      notifyListeners();
+      _armDayTick();
+    });
   }
 
   /// Histórico primeiro (o mais antigo), cache depois (o mais recente):
@@ -218,6 +232,35 @@ class SubscriptionService extends ChangeNotifier {
   /// lançamento ou cache dentro da validade/graça (ver [PlusAccess]).
   bool get hasPlus => isPeregrinoPlus || launchPromoActive;
 
+  /// Pode criar passe de trilha: Plus pago, fora do teste. Espelha a
+  /// regra `plusActive && !plusInTrial` no Firestore.
+  bool get canShareTrailGift => isPeregrinoPlus && !plusInTrial;
+
+  /// A loja já devolveu CustomerInfo nesta sessão (ou cache aplicável).
+  bool get storeAnswered => _storeAnswered || _plusFromCache;
+
+  /// Espera a 1ª resposta da loja (link aberto com o app fechado chega
+  /// antes do CustomerInfo). `true` se respondeu dentro de [timeout].
+  Future<bool> waitStoreAnswer({
+    Duration timeout = const Duration(seconds: 8),
+  }) async {
+    if (storeAnswered || !isConfigured) return storeAnswered;
+    final done = Completer<void>();
+    void check() {
+      if (storeAnswered && !done.isCompleted) done.complete();
+    }
+
+    addListener(check);
+    try {
+      await done.future.timeout(timeout);
+    } on TimeoutException {
+      // Sem resposta: quem chamou decide.
+    } finally {
+      removeListener(check);
+    }
+    return storeAnswered;
+  }
+
   /// Algum selo (laboratório e checagens genéricas).
   bool get hasBadge => isPeregrinoPlus || isSupporter;
 
@@ -333,6 +376,7 @@ class SubscriptionService extends ChangeNotifier {
   @override
   void dispose() {
     RemoteConfigService.instance.removeListener(notifyListeners);
+    _dayTick?.cancel();
     unawaited(_pioneerListen?.cancel());
     super.dispose();
   }
@@ -342,6 +386,8 @@ class SubscriptionService extends ChangeNotifier {
   /// SDK terminar de configurar — a compra ficava num id anônimo, sem
   /// webhook (servidor ignora anônimo) e sem vaga de Pioneiro.
   Future<void> init({String? uid}) {
+    // No init, não no construtor: o service dos testes não deixa Timer.
+    if (_dayTick == null) _armDayTick();
     final run = _bindChain.then((_) => _initNow(uid));
     _bindChain = run.catchError((Object _) {});
     return run;
@@ -435,11 +481,9 @@ class SubscriptionService extends ChangeNotifier {
     _hadAccount = true;
     // Cache de outra conta neste aparelho não atravessa a troca: sem
     // isto, a pessoa nova herdava o Plus até a loja responder — e para
-    // sempre, se a resposta falhasse.
-    if (_plusFromCache &&
-        _cachedUid != null &&
-        _cachedUid!.isNotEmpty &&
-        _cachedUid != uid) {
+    // sempre, se a resposta falhasse. Cache sem uid (legado) também
+    // cai: não dá para saber se era desta conta.
+    if (_plusFromCache && _cachedUid != uid) {
       _clearLocalPlus();
     }
     if (!isConfigured) return;
@@ -604,6 +648,9 @@ class SubscriptionService extends ChangeNotifier {
       // nem o da conta anterior neste aparelho.
       if (_storeAnswered || isPeregrinoPlus) return;
       _cachedUid = (m['uid'] ?? '').isEmpty ? null : m['uid'];
+      // Já há conta ligada e o cache é de outra (ou sem dono): não herda.
+      final bound = _boundUid ?? _wantedUid;
+      if (bound != null && _cachedUid != bound) return;
       isSupporter = m['supporter'] == 'true';
       if (!active) {
         // Plus que acabou com o app fechado (além da graça): a data do
@@ -764,8 +811,11 @@ class SubscriptionService extends ChangeNotifier {
     notifyListeners();
 
     final expiration = entitlement?.expirationDate;
+    // Só avisa quem ainda vai renovar: cancelou no teste não precisa do
+    // "teste termina amanhã" — o acesso acaba sem cobrança.
     if (entitlement != null &&
         entitlement.periodType == PeriodType.trial &&
+        entitlement.willRenew &&
         expiration != null) {
       final when = DateTime.tryParse(expiration);
       if (when != null) {

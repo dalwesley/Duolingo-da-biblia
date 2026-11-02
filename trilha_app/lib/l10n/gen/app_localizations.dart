@@ -223,7 +223,7 @@ abstract class AppLocalizations {
   /// No description provided for @authMissingIdToken.
   ///
   /// In pt, this message translates to:
-  /// **'Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.'**
+  /// **'Não deu para entrar com o Google. Tente de novo.'**
   String get authMissingIdToken;
 
   /// No description provided for @authNetworkReset.
@@ -15537,6 +15537,36 @@ abstract class AppLocalizations {
   /// **'Saiba mais'**
   String get trailsLearnMore;
 
+  /// No description provided for @trailsLeaveAllAwareness.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estou ciente de que vou perder o progresso, as medalhas e os selos das trilhas abertas'**
+  String get trailsLeaveAllAwareness;
+
+  /// No description provided for @trailsLeaveAllBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tudo das trilhas abertas some — cenas, modos, baús, medalhas, selos e postais. Trilhas concluídas, passos e sequência do app permanecem. Não dá para desfazer.'**
+  String get trailsLeaveAllBody;
+
+  /// Quiet danger CTA at the end of the open-trails sheet
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair de todas as trilhas'**
+  String get trailsLeaveAllCta;
+
+  /// No description provided for @trailsLeaveAllDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pronto. Escolha uma trilha para recomeçar.'**
+  String get trailsLeaveAllDone;
+
+  /// No description provided for @trailsLeaveAllTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair de todas as trilhas?'**
+  String get trailsLeaveAllTitle;
+
   /// No description provided for @trailsLeaveAwareness.
   ///
   /// In pt, this message translates to:
@@ -15710,6 +15740,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sequência cai em {countdown}'**
   String trailsStreakAtRisk(String countdown);
+
+  /// Trilhas tab card label when the trail is a suggestion, not one of the user's trails
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugestão para começar'**
+  String get trailsSuggestedStart;
 
   /// Trail number in Roman numerals
   ///

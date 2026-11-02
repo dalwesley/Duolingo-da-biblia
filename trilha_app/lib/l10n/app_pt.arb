@@ -31,7 +31,7 @@
   },
   "authInvalidCredential": "Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.",
   "authLoginInProgress": "Login em andamento.",
-  "authMissingIdToken": "Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.",
+  "authMissingIdToken": "Não deu para entrar com o Google. Tente de novo.",
   "authNetworkReset": "Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.",
   "authNoInternet": "Sem conexão com a internet. Verifique o Wi‑Fi/dados do aparelho.",
   "authTooManyRequests": "Muitas tentativas. Aguarde um pouco e tente de novo.",
@@ -6727,6 +6727,14 @@
     }
   },
   "trailsLearnMore": "Saiba mais",
+  "trailsLeaveAllAwareness": "Estou ciente de que vou perder o progresso, as medalhas e os selos das trilhas abertas",
+  "trailsLeaveAllBody": "Tudo das trilhas abertas some — cenas, modos, baús, medalhas, selos e postais. Trilhas concluídas, passos e sequência do app permanecem. Não dá para desfazer.",
+  "trailsLeaveAllCta": "Sair de todas as trilhas",
+  "@trailsLeaveAllCta": {
+    "description": "Quiet danger CTA at the end of the open-trails sheet"
+  },
+  "trailsLeaveAllDone": "Pronto. Escolha uma trilha para recomeçar.",
+  "trailsLeaveAllTitle": "Sair de todas as trilhas?",
   "trailsLeaveAwareness": "Estou ciente de que vou perder o progresso, as medalhas e os selos desta trilha",
   "trailsLeaveBody": "Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.",
   "trailsLeaveConfirm": "Sair",
@@ -6879,6 +6887,10 @@
         "type": "String"
       }
     }
+  },
+  "trailsSuggestedStart": "Sugestão para começar",
+  "@trailsSuggestedStart": {
+    "description": "Trilhas tab card label when the trail is a suggestion, not one of the user's trails"
   },
   "trailsTrailNumber": "Trilha {roman}",
   "@trailsTrailNumber": {

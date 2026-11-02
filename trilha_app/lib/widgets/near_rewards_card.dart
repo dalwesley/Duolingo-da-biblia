@@ -7,15 +7,19 @@ import '../l10n/app_language.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
+import '../screens/paywall_screen.dart';
 import '../screens/trail_map_screen.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/plus_access.dart';
 import '../utils/trail_progress.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'free_slot_gate.dart';
 import 'medal_unlock_sheet.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
@@ -63,9 +67,34 @@ class NearRewardsCard extends StatefulWidget {
 class _NearRewardsCardState extends State<NearRewardsCard> {
   late final Future<List<Trail>> _trails = TrailRepository().getTrails();
 
-  Future<void> _openTrail(BuildContext context, String slug) => Navigator.of(
-    context,
-  ).push(MaterialPageRoute<void>(builder: (_) => TrailMapScreen(slug: slug)));
+  /// Usa o context do State, não o da linha: o "Sair" muda a lista e a
+  /// linha tocada pode sumir antes de o mapa abrir.
+  Future<void> _openTrail(String slug, {required List<Trail> trails}) async {
+    final trail = trails.where((t) => t.slug == slug).firstOrNull;
+    if (trail == null) return;
+    final sub = context.read<SubscriptionService>();
+    // Grátis: paywall / folha com push (não replacement) — o Perfil fica.
+    if (PlusAccess.trailIsPlus(trail) && !sub.plusFeaturesOpen) {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'profile_near'),
+        ),
+      );
+      return;
+    }
+    if (!await ensureFreeSlotAllows(
+      context,
+      trail,
+      trails: trails,
+      replaceRoute: false,
+    )) {
+      return;
+    }
+    if (!mounted) return;
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => TrailMapScreen(slug: slug)));
+  }
 
   List<_Near> _items(ProgressService p, String uid, List<Trail> trails) {
     final l10n = context.l10n;
@@ -131,7 +160,7 @@ class _NearRewardsCardState extends State<NearRewardsCard> {
           progress: 0.9,
           remaining: 1,
           kind: 'seal',
-          open: (context) => _openTrail(context, trail.slug),
+          open: (_) => _openTrail(trail.slug, trails: trails),
         ),
       );
     }
@@ -155,7 +184,7 @@ class _NearRewardsCardState extends State<NearRewardsCard> {
           progress: done / total,
           remaining: left,
           kind: 'album',
-          open: (context) => _openTrail(context, t.slug),
+          open: (_) => _openTrail(t.slug, trails: trails),
         ),
       );
     }

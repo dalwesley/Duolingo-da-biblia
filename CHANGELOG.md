@@ -9,6 +9,25 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.41] — 2026-11-02
+
+### Fixed
+- Vaga do grátis: voltar no seletor de modo não reserva a trilha nem apaga o motivo; trilha concluída abre o mapa sem a folha "uma trilha por vez", mas jogar cena nova nela conta a vaga; "Sair" da principal confere de novo a vaga antes de seguir
+- "Próxima cena", gancho de amanhã, lembrete e widget só prometem cena que a vaga deixa jogar; sem cena, a promessa antiga é apagada
+- Aprofundar confere Plus e vaga antes de zerar o progresso; "Quase lá" respeita as travas
+- Passe de trilha: o direito à trilha mora em `users/{uid}/giftedTrails/{slug}` e só nasce no resgate (o cliente não grava mais `giftedTrails`); teste grátis não cria passe (`plusInTrial` no webhook); resgate espera a loja responder e não gasta passe de quem já assina
+- Android: links `stway://passe/…` e `stway://hoje` abrem o app
+- Aviso de fim do teste só para quem vai renovar; promo e Pioneiro atualizam na virada do dia; cache de Plus sem dono não passa para outra conta
+- Login: mensagem de erro do Google sem jargão de desenvolvedor
+
+### Added
+- Aba Trilhas: "Sair de todas as trilhas" no fim da folha das trilhas abertas, com a mesma confirmação de 10 s
+
+### Changed
+- Com Plus, a folha "Suas trilhas abertas" e o carrossel da Home mostram só Minhas trilhas; sem nenhuma, uma sugestão só
+- Sem trilha, última cena nem motivo, a sugestão é Gênesis 1–11 (antes, Ansiedade, a 1ª do catálogo); o card mostra "Sugestão para começar"
+- Android: remove `ACCESS_ADSERVICES_AD_ID` e `ACCESS_ADSERVICES_ATTRIBUTION` (o app não usa publicidade)
+
 ## [1.0.39] — 2026-10-27
 
 ### Added

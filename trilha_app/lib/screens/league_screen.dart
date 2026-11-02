@@ -877,7 +877,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     final service = context.read<CompanionService>();
     final created = await service.createInvite(
       progress,
-      withTrailGift: context.read<SubscriptionService>().isPeregrinoPlus,
+      withTrailGift: context.read<SubscriptionService>().canShareTrailGift,
     );
     if (!context.mounted) return;
     if (created == null) {

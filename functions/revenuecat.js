@@ -80,6 +80,10 @@ function plusStateFromEvent(event) {
   const expiresMs =
     typeof event.expiration_at_ms === 'number' ? event.expiration_at_ms : null;
   const expiresAt = expiresMs ? new Date(expiresMs).toISOString() : null;
+  // Teste grátis: o passe de trilha exige Plus pago. plusInTrial trava
+  // a create em firestore.rules — quem inicia o teste e cancela não
+  // doa trilhas Plus nos 14 dias (nem 2 se atravessar o mês).
+  const inTrial = String(event.period_type || '') === 'TRIAL';
   const base = {
     plusProductId: product || null,
     plusExpiresAt: expiresAt,
@@ -101,7 +105,12 @@ function plusStateFromEvent(event) {
     if (product.startsWith(SUPPORT_PREFIX)) {
       fields = { supporter: true };
     } else if (hasEntitlement && expiresMs != null && expiresMs > Date.now()) {
-      fields = { ...base, plusActive: true, plusWillRenew: true };
+      fields = {
+        ...base,
+        plusActive: true,
+        plusWillRenew: true,
+        plusInTrial: inTrial,
+      };
     }
     if (!fields && from.length === 0) return null;
     return {
@@ -109,7 +118,11 @@ function plusStateFromEvent(event) {
       fields,
       also: from.map((u) => ({
         uid: u,
-        fields: { plusActive: false, plusWillRenew: false },
+        fields: {
+          plusActive: false,
+          plusWillRenew: false,
+          plusInTrial: false,
+        },
       })),
     };
   }
@@ -118,24 +131,52 @@ function plusStateFromEvent(event) {
   // Cobrança falhou mas a loja ainda concede o entitlement (graça da
   // loja): no aparelho a pessoa continua Plus, então o servidor também.
   if (type === 'BILLING_ISSUE') {
-    return { uid, fields: { ...base, plusActive: true, plusWillRenew: false } };
-  }
-  if (ACTIVATE.has(type)) {
-    return { uid, fields: { ...base, plusActive: true, plusWillRenew: true } };
-  }
-  if (STILL_ACTIVE.has(type)) {
-    // Cancelou ≠ acabou: o acesso vai até a data de fim.
     return {
       uid,
       fields: {
         ...base,
-        plusActive: expiresAt == null || expiresAt > new Date().toISOString(),
+        plusActive: true,
         plusWillRenew: false,
+        plusInTrial: inTrial,
+      },
+    };
+  }
+  if (ACTIVATE.has(type)) {
+    return {
+      uid,
+      fields: {
+        ...base,
+        plusActive: true,
+        plusWillRenew: true,
+        plusInTrial: inTrial,
+      },
+    };
+  }
+  if (STILL_ACTIVE.has(type)) {
+    // Cancelou ≠ acabou: o acesso vai até a data de fim.
+    const active =
+      expiresAt == null || expiresAt > new Date().toISOString();
+    return {
+      uid,
+      fields: {
+        ...base,
+        plusActive: active,
+        plusWillRenew: false,
+        // Sem acesso, não há trial; com acesso, o period_type do evento.
+        plusInTrial: active && inTrial,
       },
     };
   }
   if (DEACTIVATE.has(type)) {
-    return { uid, fields: { ...base, plusActive: false, plusWillRenew: false } };
+    return {
+      uid,
+      fields: {
+        ...base,
+        plusActive: false,
+        plusWillRenew: false,
+        plusInTrial: false,
+      },
+    };
   }
   return null;
 }

@@ -62,7 +62,7 @@ class _CompanionInvitePromptSheetState
     await progress.markCompanionInviteOffered();
     final created = await companions.createInvite(
       progress,
-      withTrailGift: context.read<SubscriptionService>().isPeregrinoPlus,
+      withTrailGift: context.read<SubscriptionService>().canShareTrailGift,
     );
     if (!mounted) return;
     if (created == null) {

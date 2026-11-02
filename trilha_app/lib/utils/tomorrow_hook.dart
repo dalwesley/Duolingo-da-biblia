@@ -289,6 +289,12 @@ class TomorrowHook {
     required List<Trail> trails,
     required List<String> completed,
     Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailModes = const {},
+    Map<String, String> pinnedModes = const {},
+    Map<String, String> chosenAt = const {},
+    bool seeded = true,
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
     String? justFinishedSlug,
     bool plusOpen = true,
   }) {
@@ -296,17 +302,39 @@ class TomorrowHook {
     final finished = (justFinishedSlug ?? '').trim();
     final todayInsight = finished.isEmpty ? null : insightOf(trails, finished);
 
+    // Sem Plus: só promete cena que a vaga deixa jogar. Cena do Advento
+    // (ou outra trilha fora da principal) não vira "Próxima cena" nem
+    // lembrete — senão o botão cai na folha "uma trilha por vez".
+    bool slotOk(Trail t) {
+      if (plusOpen) return true;
+      return TrailProgress.freeSlotBlocker(
+            t,
+            trails,
+            completed,
+            chosenAt: chosenAt,
+            seeded: seeded,
+            clearedTrailModes: clearedTrailModes,
+            trailModes: trailModes,
+            pinnedModes: pinnedModes,
+            completedOn: completedOn,
+            borrowed: borrowed,
+            allowCompletedTarget: false,
+          ) ==
+          null;
+    }
+
+    bool playable(Trail t) =>
+        (plusOpen || !TrailProgress.nextSceneNeedsPlus(t, completed)) &&
+        slotOk(t);
+
     // Celebração: o amanhã é a próxima cena DA trilha que acabou —
     // não a primeira trilha "ativa" do catálogo (Ansiedade vinha antes).
-    // Sem Plus, a próxima cena paga não vira promessa de amanhã.
+    // Sem Plus, a próxima cena paga / fora da vaga não vira promessa.
     final homeTrail = finished.isEmpty
         ? null
         : trails
               .where((t) => t.missionSlugs.contains(finished))
-              .where(
-                (t) =>
-                    plusOpen || !TrailProgress.nextSceneNeedsPlus(t, completed),
-              )
+              .where(playable)
               .firstOrNull;
     final active =
         homeTrail ??
@@ -314,16 +342,32 @@ class TomorrowHook {
           trails,
           completed,
           clearedTrailModes: clearedTrailModes,
+          trailModes: trailModes,
+          pinnedModes: pinnedModes,
+          borrowed: borrowed,
           plusOpen: plusOpen,
         );
-    if (active == null) return null;
+    final resolved = active != null && playable(active)
+        ? active
+        : TrailProgress.freeOpenTrails(
+            trails,
+            completed,
+            chosenAt: chosenAt,
+            seeded: seeded,
+            clearedTrailModes: clearedTrailModes,
+            trailModes: trailModes,
+            pinnedModes: pinnedModes,
+            completedOn: completedOn,
+            borrowed: borrowed,
+          ).where(playable).firstOrNull;
+    if (resolved == null) return null;
 
-    final next = TrailProgress.getCurrentMission(active, completed);
+    final next = TrailProgress.getCurrentMission(resolved, completed);
     if (next != null) {
       return fromMission(
         next: next,
-        trailTitle: active.title,
-        trailSlug: active.slug,
+        trailTitle: resolved.title,
+        trailSlug: resolved.slug,
         trailJustCompleted: false,
         todayInsight: todayInsight,
       );
@@ -332,7 +376,7 @@ class TomorrowHook {
     // A seguinte no caminho, só se já abre (e não pede o Plus logo de
     // cara). O `unlockAfter` apontava para trilha ainda fechada (Evangelhos
     // → Salmos, que espera Jó).
-    Trail? successor = TrailProgress.successorsOf(active, trails)
+    Trail? successor = TrailProgress.successorsOf(resolved, trails)
         .where(
           (t) =>
               !t.comingSoon &&
@@ -348,16 +392,19 @@ class TomorrowHook {
                 completed,
                 clearedTrailModes: clearedTrailModes,
               ) &&
-              (plusOpen || !TrailProgress.nextSceneNeedsPlus(t, completed)),
+              playable(t),
         )
         .firstOrNull;
     successor ??= TrailProgress.findActiveTrail(
-      trails.where((t) => t.slug != active.slug).toList(),
+      trails.where((t) => t.slug != resolved.slug).toList(),
       completed,
       clearedTrailModes: clearedTrailModes,
+      trailModes: trailModes,
+      pinnedModes: pinnedModes,
+      borrowed: borrowed,
       plusOpen: plusOpen,
     );
-    if (successor == null) return null;
+    if (successor == null || !playable(successor)) return null;
     final first = TrailProgress.getCurrentMission(successor, completed);
     if (first == null) return null;
     return fromMission(

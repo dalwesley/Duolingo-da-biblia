@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <!-- Remove AD_ID mesclado por SDKs (ex.: Analytics); app não usa publicidade. -->
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove"/>
     <application
         android:label="STWAY"
         android:name="${applicationName}"
@@ -46,6 +48,10 @@
                 <data android:scheme="stway" android:host="sala"/>
                 <data android:scheme="stway" android:host="grupo"/>
                 <data android:scheme="stway" android:host="redeem_web_purchase"/>
+                <!-- Passe de trilha: stway://passe/CODIGO -->
+                <data android:scheme="stway" android:host="passe"/>
+                <!-- Botão "Abrir no Stway" do site: stway://hoje -->
+                <data android:scheme="stway" android:host="hoje"/>
             </intent-filter>
         </activity>
         <receiver

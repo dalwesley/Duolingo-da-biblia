@@ -131,6 +131,12 @@ class _HomeScreenState extends State<HomeScreen>
           trails: trails,
           completed: progress.completedMissions,
           clearedTrailModes: progress.clearedTrailModes,
+          trailModes: progress.activeTrailModes,
+          pinnedModes: progress.pinnedTrailDifficulties,
+          chosenAt: progress.trailChosenAt,
+          seeded: progress.trailChoicesSeeded,
+          completedOn: progress.missionCompletedOn,
+          borrowed: progress.borrowedMissions,
           plusOpen: plusOpen,
         );
         if (hook != null) {
@@ -156,6 +162,10 @@ class _HomeScreenState extends State<HomeScreen>
               ContentCatalogService.instance.ensureTrailBank(active.slug),
             );
           }
+        } else {
+          // Sem cena para prometer: o lembrete e o widget não ficam com a
+          // promessa antiga (ex.: cena do Advento fora da vaga).
+          unawaited(progress.setNextScene(title: '', tease: ''));
         }
       }
     }
@@ -326,18 +336,21 @@ class _HomeScreenState extends State<HomeScreen>
   /// Quem já usava o app ganha Minhas trilhas a partir das trilhas que
   /// já tinha começado, na ordem do 1º dia jogado em cada uma.
   void _maybeSeedTrailChoices(ProgressService progress, List<Trail> trails) {
-    if (progress.trailChoicesSeeded || progress.completedMissions.isEmpty) {
-      return;
-    }
-    final order = TrailProgress.legacyChoices(
-      trails,
-      progress.completedMissions,
-      clearedTrailModes: progress.clearedTrailModes,
-      trailModes: progress.activeTrailModes,
-      pinnedModes: progress.pinnedTrailDifficulties,
-      completedOn: progress.missionCompletedOn,
-      borrowed: progress.borrowedMissions,
-    );
+    if (progress.trailChoicesSeeded) return;
+    // Conta nova (sem cenas): ainda grava a versão da semente. Sem isso,
+    // a 1ª reserva (ex.: Advento numa janela estreita) corre sem semente
+    // e pode virar principal na frente do motivo do onboarding.
+    final order = progress.completedMissions.isEmpty
+        ? const <String>[]
+        : TrailProgress.legacyChoices(
+            trails,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+            trailModes: progress.activeTrailModes,
+            pinnedModes: progress.pinnedTrailDifficulties,
+            completedOn: progress.missionCompletedOn,
+            borrowed: progress.borrowedMissions,
+          );
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       unawaited(progress.seedTrailChoices(order));
@@ -735,11 +748,11 @@ class _HomeScreenState extends State<HomeScreen>
     final plusOpen = listen
         ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
         : context.read<SubscriptionService>().plusFeaturesOpen;
-    // Carrossel do herói: todas as trilhas com próxima cena agora; a 1ª é
-    // a ativa (onde a pessoa está andando).
+    // Carrossel do herói: Minhas trilhas (a 1ª é a principal); sem
+    // nenhuma, uma sugestão — o mesmo que a folha da aba Trilhas.
     // Sem Plus, uma trilha por vez no herói — não o catálogo inteiro em 0.
     final heroTrails = plusOpen
-        ? TrailProgress.plusOpenTrails(
+        ? TrailProgress.plusMyOpenTrails(
             trails,
             progress.completedMissions,
             chosenAt: progress.trailChosenAt,

@@ -19,7 +19,21 @@ test('compra inicial ativa o Plus pelo entitlement, sem olhar preço/SKU', () =>
   assert.equal(out.uid, 'uid1');
   assert.equal(out.fields.plusActive, true);
   assert.equal(out.fields.plusWillRenew, true);
+  assert.equal(out.fields.plusInTrial, false);
   assert.equal(out.fields.plusExpiresAt, iso(future));
+});
+
+test('teste grátis ativa o Plus mas marca plusInTrial (sem passe)', () => {
+  const out = RC.plusStateFromEvent({
+    type: 'INITIAL_PURCHASE',
+    app_user_id: 'uid1',
+    product_id: 'plus_annual',
+    entitlement_ids: ['peregrino_plus'],
+    period_type: 'TRIAL',
+    expiration_at_ms: future,
+  });
+  assert.equal(out.fields.plusActive, true);
+  assert.equal(out.fields.plusInTrial, true);
 });
 
 test('cancelar mantém ativo até vencer, sem renovar', () => {
@@ -32,6 +46,18 @@ test('cancelar mantém ativo até vencer, sem renovar', () => {
   });
   assert.equal(out.fields.plusActive, true);
   assert.equal(out.fields.plusWillRenew, false);
+  assert.equal(out.fields.plusInTrial, false);
+
+  const trialCancel = RC.plusStateFromEvent({
+    type: 'CANCELLATION',
+    app_user_id: 'uid1',
+    product_id: 'p',
+    entitlement_ids: ['peregrino_plus'],
+    period_type: 'TRIAL',
+    expiration_at_ms: future,
+  });
+  assert.equal(trialCancel.fields.plusActive, true);
+  assert.equal(trialCancel.fields.plusInTrial, true);
 
   const expired = RC.plusStateFromEvent({
     type: 'CANCELLATION',
@@ -41,6 +67,7 @@ test('cancelar mantém ativo até vencer, sem renovar', () => {
     expiration_at_ms: past,
   });
   assert.equal(expired.fields.plusActive, false);
+  assert.equal(expired.fields.plusInTrial, false);
 });
 
 test('expiração desliga', () => {
@@ -51,6 +78,7 @@ test('expiração desliga', () => {
     expiration_at_ms: past,
   });
   assert.equal(out.fields.plusActive, false);
+  assert.equal(out.fields.plusInTrial, false);
 });
 
 test('evento de outro entitlement é ignorado', () => {
@@ -128,7 +156,14 @@ test('transferência desliga a conta de origem', () => {
   });
   assert.equal(out.uid, 'uid-novo');
   assert.deepEqual(out.also, [
-    { uid: 'uid-velho', fields: { plusActive: false, plusWillRenew: false } },
+    {
+      uid: 'uid-velho',
+      fields: {
+        plusActive: false,
+        plusWillRenew: false,
+        plusInTrial: false,
+      },
+    },
   ]);
 });
 
@@ -144,7 +179,14 @@ test('transferência de assinatura vencida não liga o destino, só desliga a or
   assert.equal(out.uid, 'uid-novo');
   assert.equal(out.fields, null);
   assert.deepEqual(out.also, [
-    { uid: 'uid-velho', fields: { plusActive: false, plusWillRenew: false } },
+    {
+      uid: 'uid-velho',
+      fields: {
+        plusActive: false,
+        plusWillRenew: false,
+        plusInTrial: false,
+      },
+    },
   ]);
 });
 

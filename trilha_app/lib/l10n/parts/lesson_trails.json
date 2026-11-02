@@ -115,6 +115,32 @@
     "en": "I understand I'll lose this trail's progress, medals and seals",
     "es": "Entiendo que perderé el progreso, las medallas y los sellos de esta ruta"
   },
+  "trailsLeaveAllCta": {
+    "pt": "Sair de todas as trilhas",
+    "en": "Leave all trails",
+    "es": "Salir de todas las rutas",
+    "description": "Quiet danger CTA at the end of the open-trails sheet"
+  },
+  "trailsLeaveAllTitle": {
+    "pt": "Sair de todas as trilhas?",
+    "en": "Leave all trails?",
+    "es": "¿Salir de todas las rutas?"
+  },
+  "trailsLeaveAllBody": {
+    "pt": "Tudo das trilhas abertas some — cenas, modos, baús, medalhas, selos e postais. Trilhas concluídas, passos e sequência do app permanecem. Não dá para desfazer.",
+    "en": "Everything on your open trails goes — scenes, modes, chests, medals, seals and postcards. Finished trails, your steps and streak stay. This can't be undone.",
+    "es": "Todo de tus rutas abiertas desaparece — escenas, modos, cofres, medallas, sellos y postales. Las rutas terminadas, tus pasos y racha se mantienen. No se puede deshacer."
+  },
+  "trailsLeaveAllAwareness": {
+    "pt": "Estou ciente de que vou perder o progresso, as medalhas e os selos das trilhas abertas",
+    "en": "I understand I'll lose the progress, medals and seals of my open trails",
+    "es": "Entiendo que perderé el progreso, las medallas y los sellos de mis rutas abiertas"
+  },
+  "trailsLeaveAllDone": {
+    "pt": "Pronto. Escolha uma trilha para recomeçar.",
+    "en": "Done. Pick a trail to start again.",
+    "es": "Listo. Elige una ruta para empezar de nuevo."
+  },
   "trailsLeaveConfirm": {
     "pt": "Sair",
     "en": "Leave",
@@ -368,6 +394,12 @@
     "pt": "Em andamento",
     "en": "In progress",
     "es": "En curso"
+  },
+  "trailsSuggestedStart": {
+    "pt": "Sugestão para começar",
+    "en": "Suggested start",
+    "es": "Sugerencia para empezar",
+    "description": "Trilhas tab card label when the trail is a suggestion, not one of the user's trails"
   },
   "trailsOpenTitle": {
     "pt": "Suas trilhas abertas",

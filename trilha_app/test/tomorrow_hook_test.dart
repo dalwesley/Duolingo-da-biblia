@@ -310,4 +310,29 @@ void main() {
     expect(hook!.title, 'O arbusto que arde');
     expect(hook.tease, contains('nome'));
   });
+
+  test('without Plus, hook stays on the free principal, not another trail', () {
+    final advent = _trail(
+      slug: 'advento',
+      missions: [
+        _m(slug: 'adv-1', title: 'Espera', insight: 'A espera forma'),
+        _m(
+          slug: 'adv-2',
+          title: 'Chegada',
+          hookNote: 'A luz entra na casa.',
+          insight: 'Deus vem perto',
+        ),
+      ],
+    );
+    final hook = TomorrowHook.resolve(
+      trails: [genesis, advent],
+      completed: ['imagem', 'adv-1'],
+      chosenAt: {'genesis-1-11': '2026-10-01T09:00:00'},
+      justFinishedSlug: 'adv-1',
+      plusOpen: false,
+    );
+    expect(hook, isNotNull);
+    expect(hook!.trailSlug, 'genesis-1-11');
+    expect(hook.title, 'A serpente no jardim');
+  });
 }

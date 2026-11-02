@@ -20,10 +20,18 @@ import 'reset_progress_sheet.dart';
 ///
 /// `true`: pode seguir. `false`: a rota já saiu (voltou, paywall ou mapa
 /// da trilha em andamento). Com Plus, ou sem outra trilha na vaga, passa.
+///
+/// [reopening]: aprofundar / reabrir trilha concluída — a vaga conta
+/// mesmo com o alvo já terminado (ver [TrailProgress.freeSlotBlocker]).
 Future<bool> ensureFreeSlotAllows(
   BuildContext context,
   Trail target, {
   List<Trail>? trails,
+  bool reopening = false,
+
+  /// `true` quando a rota atual é o mapa/cena que está abrindo (volta
+  /// ou paywall substituem). `false` na Home/Perfil: push por cima.
+  bool replaceRoute = true,
 }) async {
   if (context.read<SubscriptionService>().plusFeaturesOpen) return true;
   final progress = context.read<ProgressService>();
@@ -42,6 +50,7 @@ Future<bool> ensureFreeSlotAllows(
     pinnedModes: progress.pinnedTrailDifficulties,
     completedOn: progress.missionCompletedOn,
     borrowed: progress.borrowedMissions,
+    allowCompletedTarget: !reopening,
   );
   if (walking == null) return true;
   PlusLog.log(
@@ -55,44 +64,53 @@ Future<bool> ensureFreeSlotAllows(
   );
   if (!context.mounted) return false;
   final nav = Navigator.of(context);
+  Future<void> go(Route<void> route) async {
+    if (replaceRoute) {
+      unawaited(nav.pushReplacement(route));
+    } else {
+      unawaited(nav.push(route));
+    }
+  }
+
   switch (choice) {
     case OneTrailChoice.leave:
       final leave = await showLeaveTrailSheet(context);
       if (!context.mounted) return false;
       if (!leave) {
-        nav.pop();
+        if (replaceRoute) nav.pop();
         return false;
       }
       await progress.leaveTrail(
         trailSlug: walking.slug,
         missionSlugs: walking.missionSlugs,
       );
-      await backend.saveNow(
-        progress,
-        LeagueService.weekKey(),
-        league: league,
+      await backend.saveNow(progress, LeagueService.weekKey(), league: league);
+      if (!context.mounted) return false;
+      // Quem foi Plus pode ter outra secundária grátis, que vira a
+      // principal agora: confere de novo antes de quem chamou zerar algo.
+      return ensureFreeSlotAllows(
+        context,
+        target,
+        trails: all,
+        reopening: reopening,
+        replaceRoute: replaceRoute,
       );
-      return context.mounted;
     case OneTrailChoice.plus:
-      unawaited(
-        nav.pushReplacement(
-          MaterialPageRoute<void>(
-            builder: (_) => const PaywallScreen(source: 'one_trail'),
-          ),
+      await go(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'one_trail'),
         ),
       );
       return false;
     case OneTrailChoice.keepWalking:
-      unawaited(
-        nav.pushReplacement(
-          MaterialPageRoute<void>(
-            builder: (_) => TrailMapScreen(slug: walking.slug),
-          ),
+      await go(
+        MaterialPageRoute<void>(
+          builder: (_) => TrailMapScreen(slug: walking.slug),
         ),
       );
       return false;
     case null:
-      nav.pop();
+      if (replaceRoute) nav.pop();
       return false;
   }
 }

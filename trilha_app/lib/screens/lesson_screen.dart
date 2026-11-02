@@ -328,6 +328,8 @@ class _LessonScreenState extends State<LessonScreen>
     final roomStudy = widget.practiceMode
         ? null
         : context.read<RoomService>().roomStudying(widget.missionSlug);
+    // Reserva depois do seletor: ver bloco abaixo.
+    String? pendingTrailReserve;
     if (!widget.practiceMode &&
         widget.missionOverride == null &&
         trailSlug != null) {
@@ -397,15 +399,20 @@ class _LessonScreenState extends State<LessonScreen>
             roomStudy == null;
         if (_choosesTrail &&
             !alreadyDone &&
-            !await ensureFreeSlotAllows(context, trail, trails: trails)) {
+            // Jogar cena não feita conta a vaga, mesmo em trilha
+            // concluída: o mapa já pode ter zerado o modo seguinte.
+            !await ensureFreeSlotAllows(
+              context,
+              trail,
+              trails: trails,
+              reopening: true,
+            )) {
           return;
         }
         if (!mounted) return;
-        // Reserva a vaga já na abertura: outra trilha grátis não começa
-        // enquanto esta intro estiver no ar.
+        // Reserva depois do seletor (abaixo): voltar no modo não grava a vaga.
         if (_choosesTrail && !alreadyDone) {
-          await progress.reserveTrailChoice(trail.slug);
-          if (!mounted) return;
+          pendingTrailReserve = trail.slug;
         }
       }
     }
@@ -435,6 +442,13 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     if (!mounted) return;
+    // Grátis: a vaga fecha só depois do seletor (quando houver). Sem banco,
+    // fecha aqui — a intro já está no ar.
+    final reserveSlug = pendingTrailReserve;
+    if (reserveSlug != null) {
+      await progress.reserveTrailChoice(reserveSlug);
+      if (!mounted) return;
+    }
     final freshProgress = context.read<ProgressService>();
     final slugs = trailForMode?.missionSlugs ?? const <String>[];
     var sceneIndex = slugs.indexOf(mission.slug);
