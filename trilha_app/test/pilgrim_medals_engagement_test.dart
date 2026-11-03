@@ -165,7 +165,7 @@ void main() {
       final expanded = PilgrimMedalCatalog.expandCelebratedIds([
         'journey:word:chapters_25',
       ]);
-      expect(expanded, contains('track:word:chapters_1'));
+      expect(expanded, contains('track:word:chapters_3'));
       expect(expanded, contains('track:word:chapters_25'));
       expect(expanded, isNot(contains('track:word:chapters_7')));
       expect(expanded, isNot(contains('track:word:book')));
@@ -176,7 +176,7 @@ void main() {
         'track:word:1',
       ]);
       expect(expanded, contains('track:word:chapters_25'));
-      expect(expanded, contains('track:word:chapters_1'));
+      expect(expanded, contains('track:word:chapters_3'));
       expect(expanded, isNot(contains('track:word:chapters_7')));
     });
 

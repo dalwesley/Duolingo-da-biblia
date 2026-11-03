@@ -3146,41 +3146,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeReviewTitle => 'Revisar erros';
 
   @override
-  String homeSeasonChipDoneSemantics(String season, int day, String dayTitle) {
-    return '$season. Dia $day feito: $dayTitle';
-  }
-
-  @override
-  String homeSeasonChipOpenSemantics(String season, int day, String dayTitle) {
-    return '$season. Dia $day: $dayTitle';
-  }
-
-  @override
-  String homeSeasonChipSemantics(String season) {
-    return '$season · abrir leitura da estação';
-  }
-
-  @override
-  String homeSeasonDayDone(int day, String title) {
-    return 'Dia $day feito · $title';
-  }
-
-  @override
-  String homeSeasonDayLine(int day, String title) {
-    return 'Dia $day · $title';
-  }
-
-  @override
-  String homeSeasonDayOf(int day, int total, String title) {
-    return 'Dia $day de $total · $title';
-  }
-
-  @override
-  String homeSeasonDayOfDone(int day, int total, String title) {
-    return 'Dia $day de $total feito · $title';
-  }
-
-  @override
   String get homeSeeTrails => 'Ver trilhas';
 
   @override
@@ -3205,6 +3170,26 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeSupportAgainBody =>
+      'Seu selo continua. Um novo apoio ajuda a manter o Stway grátis.';
+
+  @override
+  String get homeSupportAgainCta => 'Apoiar de novo';
+
+  @override
+  String get homeSupportAgainTitle => 'Volte a apoiar';
+
+  @override
+  String get homeSupportBody =>
+      'Seu apoio mantém o Stway grátis para quem não pode pagar.';
+
+  @override
+  String get homeSupportCta => 'Apoiar o Stway';
+
+  @override
+  String get homeSupportTitle => 'Ajude a continuar';
 
   @override
   String get homeTrailDoneBody => 'Escolha a próxima e continue aprendendo.';
@@ -3555,6 +3540,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get juntosCaravanMonthBody =>
       'Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.';
+
+  @override
+  String get juntosCaravanMonthCloses => 'Fecha em';
 
   @override
   String get juntosCaravanMonthTitle => 'Quem mais caminhou neste mês?';
@@ -4640,13 +4628,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalFormationPerfect10Title => 'Olho firme';
 
   @override
-  String get medalFormationPerfect1Title => 'Cena nítida';
-
-  @override
   String get medalFormationPerfect25Hint => '25 cenas com 100% de acertos';
 
   @override
   String get medalFormationPerfect25Title => 'Tudo certo';
+
+  @override
+  String get medalFormationPerfect3Title => 'Passos nítidos';
 
   @override
   String get medalFounderHint => 'Testou o Stway antes do lançamento';
@@ -4804,7 +4792,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalMemoryVerse15Title => 'Palavra guardada';
 
   @override
-  String get medalMemoryVerse1Title => 'Primeiro verso';
+  String get medalMemoryVerse3Title => 'Versos no coração';
 
   @override
   String get medalMemoryVerse50Title => 'Escritura viva';
@@ -4835,7 +4823,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalPathStreak30Title => 'Mês constante';
 
   @override
-  String get medalPathStreak3Title => 'Três dias firmes';
+  String get medalPathStreak7Title => 'Semana firme';
 
   @override
   String get medalPerfectBossHint => 'Venceu uma travessia com 100% de acertos';
@@ -5177,7 +5165,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalWitnessShare10Title => 'Semeador';
 
   @override
-  String get medalWitnessShare1Title => 'Palavra levada';
+  String get medalWitnessShare3Title => 'Palavra levada';
 
   @override
   String get medalWitnessShare50Title => 'Voz na caravana';
@@ -5186,10 +5174,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalWordChapters100Title => 'Leitor constante';
 
   @override
-  String get medalWordChapters1Title => 'Primeira Palavra';
+  String get medalWordChapters25Title => 'Leitor atento';
 
   @override
-  String get medalWordChapters25Title => 'Leitor atento';
+  String get medalWordChapters3Title => 'Palavra aberta';
 
   @override
   String get memoryCard => 'Carta';
@@ -10317,6 +10305,30 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get verseStudyVerseUnavailable =>
       'Versículo indisponível nesta tradução.';
+
+  @override
+  String get walkCountdownDays => 'dias';
+
+  @override
+  String get walkCountdownHours => 'horas';
+
+  @override
+  String get walkCountdownLabel => 'Abre em';
+
+  @override
+  String get walkCountdownMinutes => 'min';
+
+  @override
+  String get walkCountdownSeconds => 'seg';
+
+  @override
+  String get walkCrowdEmpty => 'Ninguém entrou ainda.\nSeja o primeiro.';
+
+  @override
+  String get walkCrowdHeader => 'Quem vai caminhar junto';
+
+  @override
+  String get walkCrowdListSubtitle => 'Toque em alguém para ver o perfil.';
 
   @override
   String walkTogetherDayOf(int day, int total) {

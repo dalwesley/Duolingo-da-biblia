@@ -1,10 +1,10 @@
-# Calibração de medalhas v3.2
+# Calibração de medalhas v3.3
 
-**Vigente no app** (16 set/2026). Arquitetura: [`MEDALHAS.md`](MEDALHAS.md).
+**Vigente no app** (3 nov/2026). Arquitetura: [`MEDALHAS.md`](MEDALHAS.md).
 
-Faísca acende o emblema. Conquista é moeda que **não some**. Palavra no cofre mede hábito de capítulos, não catálogo de livros.
+Faísca acende o emblema **sem sheet**. Conquista (prata+) é moeda que **não some** e abre celebração. Palavra no cofre mede hábito de capítulos, não catálogo de livros.
 
-Primeiro gesto em 1–3 sessões (faísca). Próximo passo visível (~20% restantes). Uma linha na celebração se o ato moveu a escada.
+Primeiro gesto real em ~1 semana (faísca). Próximo passo visível (~20% restantes). Uma linha na celebração se o ato moveu a escada.
 
 ## Escadas da jornada
 
@@ -15,35 +15,35 @@ Medalha mede hábito de leitura (capítulos). Livro concluído não vira medalha
 
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Bronze | 1 capítulo |
+| Faísca | Bronze | 3 capítulos |
 | Conquista | Prata | 25 capítulos |
 | Conquista | Ouro | 100 capítulos |
 
 ### Formação (`track:formation`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Bronze | 1 cena perfeita |
+| Faísca | Bronze | 3 cenas perfeitas |
 | Conquista | Prata | 10 cenas perfeitas |
 | Conquista | Ouro | 25 cenas perfeitas |
 
 ### Caminho (`track:path`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Bronze | 3 dias |
+| Faísca | Bronze | 7 dias |
 | Conquista | Prata | 14 dias |
 | Conquista | Ouro | 30 dias |
 
 ### Testemunho (`track:witness`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Bronze | 1 compartilhamento |
+| Faísca | Bronze | 3 compartilhamentos |
 | Conquista | Prata | 10 |
 | Conquista | Ouro | 50 |
 
 ### Memória (`track:memory`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Bronze | 1 versículo |
+| Faísca | Bronze | 3 versículos |
 | Conquista | Prata | 15 |
 | Conquista | Ouro | 50 |
 
@@ -67,10 +67,10 @@ Visível de 29 nov a 24 dez 2026 (+ 7 dias de graça). Depois só se houver prog
 
 Rara: 7 dias seguidos no Advento.
 
-## Raras (Mirra)
+## Raras (Mirra / Aurora)
 | ID | Título | Marco |
 |----|--------|-------|
-| `discovery:founder` | Pioneiro | Entrou até 2026 — **sem sheet** |
+| `discovery:founder` | **Desbravador** | `users/{uid}.desbravador` (testou antes do lançamento) — **sem sheet** |
 | `discovery:comeback` | Volta firme | Retorno após 21+ dias |
 | `discovery:bible_before` | Palavra antes | Capítulo no mesmo dia, antes da missão |
 | `discovery:andando_na_luz` | Andando na luz | 85%+ em 50+ questões |
@@ -82,10 +82,12 @@ Rara: 7 dias seguidos no Advento.
 
 AT/NT e “livro completo” **não** são medalhas.
 
+**Pioneiro** no perfil = selo do plano Plus de lançamento (`plus_founder_annual`), não esta medalha.
+
 ## Princípios
 1. Prefixo consecutivo — nunca pintar ouro sem a faísca.
 2. Um emblema por família (e um por trilha). O emblema **evolui**; não há álbum de moedas do mesmo eixo.
-3. Sheet ao tocar: um emblema + escada Bronze/Prata/Ouro. Celebração: o degrau novo e o próximo passo — sem medalha dentro de medalha.
+3. Sheet ao tocar: um emblema + escada Bronze/Prata/Ouro. Celebração: só degrau de conquista (prata+) — faísca da jornada é silenciosa. Trilha e temporada (porta do Advento) ainda abrem a folha no 1º degrau.
 4. Near-miss no ponto da ação: uma linha no Hoje e no mapa se faltam ≤3. Celebração: uma linha, não card.
-5. Pioneiro silencioso. Surpresa no fluxo real: Palavra antes da missão.
+5. Desbravador silencioso (marca de servidor). Surpresa no fluxo real: Palavra antes da missão.
 6. Medalha não coleciona título bíblico. Palavra mede capítulos.

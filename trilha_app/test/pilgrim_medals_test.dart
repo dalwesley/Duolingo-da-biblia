@@ -66,7 +66,7 @@ void main() {
       ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
           );
-      expect(word.currentLevel?.id, 'track:word:chapters_1');
+      expect(word.currentLevel?.id, 'track:word:chapters_3');
       expect(word.currentLevel?.isSpark, isTrue);
     });
 
@@ -122,7 +122,7 @@ void main() {
       const profile = CaravanPilgrimProfile(
         name: 'Ana',
         steps: 10,
-        streak: 3,
+        streak: 7,
         daysAsCaravanLeader: 1,
       );
 
@@ -133,7 +133,7 @@ void main() {
             (t) => t.track.id == PilgrimMedalCatalog.trackPathId,
           );
       expect(path.levelIndex, 0);
-      expect(path.currentLevel?.id, 'track:path:streak_3');
+      expect(path.currentLevel?.id, 'track:path:streak_7');
       expect(path.isComplete, isFalse);
 
       final rares = PilgrimMedals.evaluateVaults(
@@ -164,7 +164,7 @@ void main() {
       expect(formation.currentLevel?.isSpark, isTrue);
     });
 
-    test('boss 100% does not complete formation', () {
+    test('boss 100% alone does not light formation spark', () {
       const profile = CaravanPilgrimProfile(
         name: 'Ana',
         steps: 10,
@@ -177,8 +177,8 @@ void main() {
       ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
           );
-      expect(formation.levelIndex, 0);
-      expect(formation.isComplete, isFalse);
+      expect(formation.levelIndex, -1);
+      expect(formation.hasStarted, isFalse);
     });
 
     test('journey tracks share bronze silver gold', () {
@@ -215,11 +215,11 @@ void main() {
       expect(formation.isComplete, isFalse);
     });
 
-    test('memory starts at one verse spark', () {
+    test('memory starts at three verse spark', () {
       const profile = CaravanPilgrimProfile(
         name: 'Ana',
         steps: 1,
-        memoryMasteredCount: 1,
+        memoryMasteredCount: 3,
       );
       final memory = PilgrimMedals.evaluateVaults(
         profile: profile,
@@ -227,7 +227,7 @@ void main() {
       ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackMemoryId,
           );
-      expect(memory.currentLevel?.id, 'track:memory:verse_1');
+      expect(memory.currentLevel?.id, 'track:memory:verse_3');
       expect(memory.currentLevel?.isSpark, isTrue);
     });
 
@@ -244,7 +244,7 @@ void main() {
             (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
           );
       final trophies = PilgrimMedals.trophyTiles(word);
-      expect(trophies.map((t) => t.id), isNot(contains('track:word:chapters_1')));
+      expect(trophies.map((t) => t.id), isNot(contains('track:word:chapters_3')));
       expect(trophies.map((t) => t.id), contains('track:word:chapters_25'));
       expect(trophies.where((t) => t.unlocked).length, 1);
     });
@@ -253,22 +253,22 @@ void main() {
       const profile = CaravanPilgrimProfile(
         name: 'Test',
         steps: 10,
-        sharedVerseCount: 1,
+        sharedVerseCount: 3,
       );
 
       final pending = PilgrimMedals.newTierUps(
         profile,
-        {'track:witness:share_1'},
+        {'track:witness:share_3'},
         const [],
       );
       expect(
         pending.map((t) => t.celebrationId),
-        isNot(contains('track:witness:share_1')),
+        isNot(contains('track:witness:share_3')),
       );
       expect(
         PilgrimMedals.newTierUps(profile, const {}, const [])
             .map((t) => t.celebrationId),
-        contains('track:witness:share_1'),
+        contains('track:witness:share_3'),
       );
     });
 
@@ -276,7 +276,7 @@ void main() {
       const profile = CaravanPilgrimProfile(
         name: 'Test',
         steps: 10,
-        sharedVerseCount: 1,
+        sharedVerseCount: 3,
       );
 
       final pending = PilgrimMedals.newTierUps(
@@ -292,9 +292,9 @@ void main() {
         name: 'Test',
         steps: 10,
         bibleChaptersRead: 22,
-        perfectMissions: ['gen-01'],
+        perfectMissions: ['gen-01', 'gen-02', 'gen-03'],
         sharedVerseCount: 3,
-        memoryMasteredCount: 1,
+        memoryMasteredCount: 3,
       );
 
       final proximity = PilgrimMedals.nearestLocked(

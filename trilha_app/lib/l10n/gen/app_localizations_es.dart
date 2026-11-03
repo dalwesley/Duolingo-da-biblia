@@ -3155,41 +3155,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get homeReviewTitle => 'Repasar errores';
 
   @override
-  String homeSeasonChipDoneSemantics(String season, int day, String dayTitle) {
-    return '$season. Día $day hecho: $dayTitle';
-  }
-
-  @override
-  String homeSeasonChipOpenSemantics(String season, int day, String dayTitle) {
-    return '$season. Día $day: $dayTitle';
-  }
-
-  @override
-  String homeSeasonChipSemantics(String season) {
-    return '$season · abrir la lectura de la temporada litúrgica';
-  }
-
-  @override
-  String homeSeasonDayDone(int day, String title) {
-    return 'Día $day hecho · $title';
-  }
-
-  @override
-  String homeSeasonDayLine(int day, String title) {
-    return 'Día $day · $title';
-  }
-
-  @override
-  String homeSeasonDayOf(int day, int total, String title) {
-    return 'Día $day de $total · $title';
-  }
-
-  @override
-  String homeSeasonDayOfDone(int day, int total, String title) {
-    return 'Día $day de $total hecho · $title';
-  }
-
-  @override
   String get homeSeeTrails => 'Ver rutas';
 
   @override
@@ -3214,6 +3179,26 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeSupportAgainBody =>
+      'Tu sello sigue. Un nuevo apoyo ayuda a mantener Stway gratis.';
+
+  @override
+  String get homeSupportAgainCta => 'Apoyar de nuevo';
+
+  @override
+  String get homeSupportAgainTitle => 'Vuelve a apoyar';
+
+  @override
+  String get homeSupportBody =>
+      'Tu apoyo mantiene Stway gratis para quien no puede pagar.';
+
+  @override
+  String get homeSupportCta => 'Apoyar Stway';
+
+  @override
+  String get homeSupportTitle => 'Ayuda a continuar';
 
   @override
   String get homeTrailDoneBody => 'Elige la siguiente y sigue aprendiendo.';
@@ -3564,6 +3549,9 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get juntosCaravanMonthBody =>
       'Cada escena nueva suma pasos. La flecha verde muestra quién subió hoy. Se reinicia cada día 1 — quien acaba de llegar también puede liderar.';
+
+  @override
+  String get juntosCaravanMonthCloses => 'Cierra en';
 
   @override
   String get juntosCaravanMonthTitle => '¿Quién caminó más este mes?';
@@ -4652,13 +4640,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalFormationPerfect10Title => 'Ojo firme';
 
   @override
-  String get medalFormationPerfect1Title => 'Escena nítida';
-
-  @override
   String get medalFormationPerfect25Hint => '25 escenas con 100% de aciertos';
 
   @override
   String get medalFormationPerfect25Title => 'Todo correcto';
+
+  @override
+  String get medalFormationPerfect3Title => 'Pasos nítidos';
 
   @override
   String get medalFounderHint => 'Probaste Stway antes del lanzamiento';
@@ -4817,7 +4805,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalMemoryVerse15Title => 'Palabra guardada';
 
   @override
-  String get medalMemoryVerse1Title => 'Primer versículo';
+  String get medalMemoryVerse3Title => 'Versículos en el corazón';
 
   @override
   String get medalMemoryVerse50Title => 'Escritura viva';
@@ -4849,7 +4837,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalPathStreak30Title => 'Mes constante';
 
   @override
-  String get medalPathStreak3Title => 'Tres días firmes';
+  String get medalPathStreak7Title => 'Semana firme';
 
   @override
   String get medalPerfectBossHint =>
@@ -5192,7 +5180,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalWitnessShare10Title => 'Sembrador';
 
   @override
-  String get medalWitnessShare1Title => 'Palabra llevada';
+  String get medalWitnessShare3Title => 'Palabra llevada';
 
   @override
   String get medalWitnessShare50Title => 'Voz en la caravana';
@@ -5201,10 +5189,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalWordChapters100Title => 'Lector constante';
 
   @override
-  String get medalWordChapters1Title => 'Primera Palabra';
+  String get medalWordChapters25Title => 'Lector atento';
 
   @override
-  String get medalWordChapters25Title => 'Lector atento';
+  String get medalWordChapters3Title => 'Palabra abierta';
 
   @override
   String get memoryCard => 'Tarjeta';
@@ -10343,6 +10331,30 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get verseStudyVerseUnavailable =>
       'Versículo no disponible en esta traducción.';
+
+  @override
+  String get walkCountdownDays => 'días';
+
+  @override
+  String get walkCountdownHours => 'horas';
+
+  @override
+  String get walkCountdownLabel => 'Abre en';
+
+  @override
+  String get walkCountdownMinutes => 'min';
+
+  @override
+  String get walkCountdownSeconds => 'seg';
+
+  @override
+  String get walkCrowdEmpty => 'Nadie entró todavía.\nSé el primero.';
+
+  @override
+  String get walkCrowdHeader => 'Quién caminará junto';
+
+  @override
+  String get walkCrowdListSubtitle => 'Toca a alguien para ver su perfil.';
 
   @override
   String walkTogetherDayOf(int day, int total) {

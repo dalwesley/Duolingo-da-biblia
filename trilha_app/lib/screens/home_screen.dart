@@ -49,13 +49,13 @@ import '../widgets/ui_primitives.dart';
 import '../widgets/wave_hands_overlay.dart';
 import '../widgets/plus_billing_banner.dart';
 import '../widgets/plus_offer_sheet.dart';
+import '../widgets/home_support_banner.dart';
 import '../widgets/next_step_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'paywall_screen.dart';
 import 'practice_screen.dart';
 import 'weekly_review_screen.dart';
-import 'season_walk_screen.dart';
 
 /// Home — um único trabalho: a próxima cena.
 class HomeScreen extends StatefulWidget {
@@ -727,7 +727,6 @@ class _HomeScreenState extends State<HomeScreen>
           mistakes: p.mistakeQuestionIds.length,
           missionsToday: p.missionsToday,
           walkedToday: p.walkedToday,
-          seasonWalk: SeasonWalkFeatureCard.visible(p),
         ),
       );
     }
@@ -884,29 +883,20 @@ class _HomeScreenState extends State<HomeScreen>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      // Chip só quando a temporada já começou e o
-                      // card destaque não está cobrindo o dia.
-                      if (!SeasonWalkFeatureCard.visible(progress))
-                        _reveal(
-                          1,
-                          _WalkHomeCard(heroMissionSlug: current?.slug),
-                        ),
                       // Seu próximo passo: aprofundar ou reforçar (some
-                      // sozinho quando não há o que sugerir).
+                      // sozinho, com o espaço, quando não há o que sugerir).
                       _reveal(
                         2,
-                        Padding(
-                          padding: const EdgeInsets.only(top: AppSpace.section),
-                          child: NextStepCard(
-                            trails: trails,
-                            onOpenMission: widget.onOpenMission,
-                          ),
+                        NextStepCard(
+                          trails: trails,
+                          onOpenMission: widget.onOpenMission,
+                          topGap: AppSpace.section,
                         ),
                       ),
-                      if (SeasonWalkFeatureCard.visible(progress)) ...[
-                        const SizedBox(height: AppSpace.section),
-                        _reveal(2, const SeasonWalkFeatureCard()),
-                      ],
+                      // Estação sempre na Home: contagem até a próxima, ou o
+                      // dia da caminhada quando ela está aberta.
+                      const SizedBox(height: AppSpace.section),
+                      _reveal(2, const SeasonWalkFeatureCard()),
                       if (cornerFace != null) ...[
                         const SizedBox(height: AppSpace.section),
                         _reveal(
@@ -959,6 +949,10 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                         ),
                       ],
+                      // Apoio: 1×/semana; apoiador espera o cooldown e
+                      // volta com "Volte a apoiar". Some sozinho se a loja
+                      // não tiver o offering.
+                      _reveal(4, const HomeSupportBanner()),
                     ],
                   ),
                 ),
@@ -1379,126 +1373,6 @@ class _ShimmerBox extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-}
-
-class _WalkHomeCard extends StatelessWidget {
-  final String? heroMissionSlug;
-
-  const _WalkHomeCard({this.heroMissionSlug});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final today = context.select((ProgressService p) => p.seasonToday);
-    final campaign = SeasonWalkCatalog.current(today);
-    if (!campaign.contains(today)) return const SizedBox.shrink();
-    final index = campaign.dayIndexOn(today);
-    final day = index == null ? null : campaign.dayAt(index);
-    final ymd =
-        '${today.year.toString().padLeft(4, '0')}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
-    // Só o "feito hoje" — não reconstrói a cada resposta da cena.
-    final done = context.select(
-      (ProgressService p) =>
-          day != null &&
-          (p.isWalkDateDone(campaign.id, ymd) ||
-              p.isMissionCompleted(day.missionSlug)),
-    );
-    final sameAsHero =
-        day != null &&
-        heroMissionSlug != null &&
-        day.missionSlug == heroMissionSlug;
-
-    final l10n = context.l10n;
-    // A missão do hero já é o dia da Caminhada — não duplica o CTA.
-    if (sameAsHero) {
-      return Padding(
-        padding: const EdgeInsets.only(top: 4),
-        child: TextCta(
-          label: done
-              ? l10n.homeSeasonDayOfDone(
-                  index!,
-                  campaign.length,
-                  campaign.title,
-                )
-              : l10n.homeSeasonDayOf(index!, campaign.length, campaign.title),
-          onTap: () => openSeasonWalk(context),
-          color: a.textSecondary,
-        ),
-      );
-    }
-
-    // Toque no card inteiro (antes o InkWell ficava dentro do padding).
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.sm),
-      child: Semantics(
-        button: true,
-        label: day == null
-            ? '${campaign.title}. ${campaign.subtitle}'
-            : done
-            ? l10n.homeSeasonChipDoneSemantics(
-                campaign.title,
-                index!,
-                day.title,
-              )
-            : l10n.homeSeasonChipOpenSemantics(
-                campaign.title,
-                index!,
-                day.title,
-              ),
-        excludeSemantics: true,
-        child: GlassCard(
-          padding: AppMetrics.cardPaddingCompact,
-          onTap: () => openSeasonWalk(context),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.calendar,
-                size: AppMetrics.leadingIcon,
-                accent: a.chrome,
-              ),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      campaign.title,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 14, color: a.text),
-                    ),
-                    Text(
-                      day == null
-                          ? campaign.subtitle
-                          : done
-                          ? l10n.homeSeasonDayDone(index!, day.title)
-                          : l10n.homeSeasonDayLine(index!, day.title),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: AppSpace.sm),
-              if (done)
-                const CinematicIcon(
-                  glyph: CinematicGlyph.check,
-                  size: AppMetrics.iconMd,
-                  accent: AppRoles.success,
-                  framed: false,
-                )
-              else
-                ListChevron(color: a.textSecondary),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

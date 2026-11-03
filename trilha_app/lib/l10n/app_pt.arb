@@ -2020,92 +2020,6 @@
     }
   },
   "homeReviewTitle": "Revisar erros",
-  "homeSeasonChipDoneSemantics": "{season}. Dia {day} feito: {dayTitle}",
-  "@homeSeasonChipDoneSemantics": {
-    "placeholders": {
-      "season": {
-        "type": "String"
-      },
-      "day": {
-        "type": "int"
-      },
-      "dayTitle": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonChipOpenSemantics": "{season}. Dia {day}: {dayTitle}",
-  "@homeSeasonChipOpenSemantics": {
-    "placeholders": {
-      "season": {
-        "type": "String"
-      },
-      "day": {
-        "type": "int"
-      },
-      "dayTitle": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonChipSemantics": "{season} · abrir leitura da estação",
-  "@homeSeasonChipSemantics": {
-    "placeholders": {
-      "season": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonDayDone": "Dia {day} feito · {title}",
-  "@homeSeasonDayDone": {
-    "placeholders": {
-      "day": {
-        "type": "int"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonDayLine": "Dia {day} · {title}",
-  "@homeSeasonDayLine": {
-    "placeholders": {
-      "day": {
-        "type": "int"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonDayOf": "Dia {day} de {total} · {title}",
-  "@homeSeasonDayOf": {
-    "placeholders": {
-      "day": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
-  "homeSeasonDayOfDone": "Dia {day} de {total} feito · {title}",
-  "@homeSeasonDayOfDone": {
-    "placeholders": {
-      "day": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
   "homeSeeTrails": "Ver trilhas",
   "homeStatAtRisk": "em risco",
   "homeStatFreeze": "gelo",
@@ -2119,6 +2033,12 @@
       }
     }
   },
+  "homeSupportAgainBody": "Seu selo continua. Um novo apoio ajuda a manter o Stway grátis.",
+  "homeSupportAgainCta": "Apoiar de novo",
+  "homeSupportAgainTitle": "Volte a apoiar",
+  "homeSupportBody": "Seu apoio mantém o Stway grátis para quem não pode pagar.",
+  "homeSupportCta": "Apoiar o Stway",
+  "homeSupportTitle": "Ajude a continuar",
   "homeTrailDoneBody": "Escolha a próxima e continue aprendendo.",
   "homeTrailDoneTitle": "Trilha concluída",
   "homeWeeklyReviewCaption": "{count, plural, =1{1 cena para rever} other{{count} cenas para rever}}",
@@ -2364,6 +2284,7 @@
   "juntosCaravanInviteCta": "Chamar para a caravana",
   "juntosCaravanLoadError": "Não foi possível carregar a caravana. Puxe para atualizar.",
   "juntosCaravanMonthBody": "Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.",
+  "juntosCaravanMonthCloses": "Fecha em",
   "juntosCaravanMonthTitle": "Quem mais caminhou neste mês?",
   "juntosCaravanPilgrimsCount": "{count, plural, =1{1 peregrino da caravana} other{{count} peregrinos da caravana}}",
   "@juntosCaravanPilgrimsCount": {
@@ -3144,9 +3065,9 @@
   "medalComebackHint": "A porta estava aberta — voltou após 21 dias ou mais",
   "medalComebackTitle": "Volta firme",
   "medalFormationPerfect10Title": "Olho firme",
-  "medalFormationPerfect1Title": "Cena nítida",
   "medalFormationPerfect25Hint": "25 cenas com 100% de acertos",
   "medalFormationPerfect25Title": "Tudo certo",
+  "medalFormationPerfect3Title": "Passos nítidos",
   "medalFounderHint": "Testou o Stway antes do lançamento",
   "medalFounderTitle": "Desbravador",
   "medalHeadlineDiscovery": "Descoberta",
@@ -3248,7 +3169,7 @@
     }
   },
   "medalMemoryVerse15Title": "Palavra guardada",
-  "medalMemoryVerse1Title": "Primeiro verso",
+  "medalMemoryVerse3Title": "Versos no coração",
   "medalMemoryVerse50Title": "Escritura viva",
   "medalMysteryHint": "Revelam-se no caminho — sem dica no cofre.",
   "medalMysteryTitle": "{count, plural, =1{Uma descoberta} other{{count} descobertas}}",
@@ -3269,7 +3190,7 @@
   },
   "medalPathStreak14Title": "Duas semanas",
   "medalPathStreak30Title": "Mês constante",
-  "medalPathStreak3Title": "Três dias firmes",
+  "medalPathStreak7Title": "Semana firme",
   "medalPerfectBossHint": "Venceu uma travessia com 100% de acertos",
   "medalPerfectBossTitle": "Prova impecável",
   "medalProximityAction": "{count, plural, =1{Falta {units} · {track}} other{Faltam {units} · {track}}}",
@@ -3522,11 +3443,11 @@
   "medalWalkingInLightHint": "Manteve 85%+ de acertos (mín. 50 questões)",
   "medalWalkingInLightTitle": "Andando na luz",
   "medalWitnessShare10Title": "Semeador",
-  "medalWitnessShare1Title": "Palavra levada",
+  "medalWitnessShare3Title": "Palavra levada",
   "medalWitnessShare50Title": "Voz na caravana",
   "medalWordChapters100Title": "Leitor constante",
-  "medalWordChapters1Title": "Primeira Palavra",
   "medalWordChapters25Title": "Leitor atento",
+  "medalWordChapters3Title": "Palavra aberta",
   "memoryCard": "Carta",
   "memoryDoneSummary": "{known} firmes · {learning} em progresso",
   "@memoryDoneSummary": {
@@ -6987,6 +6908,14 @@
   "verseStudyTabWord": "Palavra",
   "verseStudyThisForm": "Nesta forma",
   "verseStudyVerseUnavailable": "Versículo indisponível nesta tradução.",
+  "walkCountdownDays": "dias",
+  "walkCountdownHours": "horas",
+  "walkCountdownLabel": "Abre em",
+  "walkCountdownMinutes": "min",
+  "walkCountdownSeconds": "seg",
+  "walkCrowdEmpty": "Ninguém entrou ainda.\nSeja o primeiro.",
+  "walkCrowdHeader": "Quem vai caminhar junto",
+  "walkCrowdListSubtitle": "Toque em alguém para ver o perfil.",
   "walkTogetherDayOf": "Dia {day} de {total}",
   "@walkTogetherDayOf": {
     "placeholders": {

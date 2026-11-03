@@ -45,6 +45,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/season_countdown.dart';
 import '../widgets/season_walk_together.dart';
 import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
@@ -500,7 +501,6 @@ class _LeagueScreenState extends State<LeagueScreen>
       (ProgressService p) => (
         p.userName,
         p.currentWeekSteps,
-        p.currentWeekScenes,
         p.currentMonthSteps,
         p.monthStartOfToday,
         p.lastPlayedDate,
@@ -540,15 +540,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         _reveal(1, const SeasonWalkTogetherCard()),
         const SizedBox(height: AppSpace.md),
       ],
-      _reveal(
-        1,
-        _CaravanStageCard(
-          tier: league.tier,
-          isMaxTier: league.isMaxTier,
-          steadyWeeks: league.steadyWeeks,
-          weekScenes: progress.currentWeekScenes,
-        ),
-      ),
+      _reveal(1, const _CaravanStageCard()),
       const SizedBox(height: AppSpace.md),
     ];
 
@@ -1638,24 +1630,42 @@ class _CompanhiaStageCard extends StatelessWidget {
   }
 }
 
-/// Stage da Caravana — mesmo padrão da Companhia: abas + descrição.
+/// Stage da Caravana — ranking do mês + nível (semanas firmes).
 class _CaravanStageCard extends StatelessWidget {
-  final LeagueTier tier;
-  final bool isMaxTier;
-  final int steadyWeeks;
-  final int weekScenes;
+  const _CaravanStageCard();
 
-  const _CaravanStageCard({
-    required this.tier,
-    required this.isMaxTier,
-    required this.steadyWeeks,
-    required this.weekScenes,
-  });
+  /// Meia-noite local do dia 1 do próximo mês (quando o ranking zera).
+  static DateTime _monthClosesAt([DateTime? now]) {
+    final n = now ?? DateTime.now();
+    return DateTime(n.year, n.month + 1, 1);
+  }
+
+  /// Preview das fases: `null` = calendário real; `0` azul, `1` amarelo, `2` vermelho.
+  static const int? _previewUrgencyPart = null;
+
+  /// Mês em 3 terços: azul → amarelo → vermelho. Última semana pisca.
+  static (Color tone, bool blink) _monthUrgency([DateTime? now]) {
+    final n = now ?? DateTime.now();
+    final daysInMonth = DateTime(n.year, n.month + 1, 0).day;
+    final part = _previewUrgencyPart ?? ((n.day - 1) * 3) ~/ daysInMonth;
+    final tone = switch (part) {
+      0 => AppRoles.presence, // azul — início
+      1 => AppRoles.reward, // amarelo — meio
+      _ => AppRoles.risk, // vermelho — fim
+    };
+    final blink = n.day > daysInMonth - 7;
+    return (tone, blink);
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
+    final (tone, blink) = _monthUrgency();
+    final league = context.watch<LeagueService>();
+    final weekScenes = context.select(
+      (ProgressService p) => p.currentWeekScenes,
+    );
     return GlassCard(
       tint: AppRoles.presence,
       glow: 0.32,
@@ -1665,25 +1675,38 @@ class _CaravanStageCard extends StatelessWidget {
           Text(
             l10n.juntosCaravanMonthTitle,
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, color: a.text),
+            style: AppTypography.display(size: 22, color: a.text),
           ),
-          const SizedBox(height: AppSpace.sm),
+          const SizedBox(height: 4),
           Text(
             l10n.juntosCaravanMonthBody,
             textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             style: AppTypography.body(
               size: 13,
-              height: 1.45,
+              height: 1.35,
               color: a.textSecondary,
             ),
           ),
-          const SizedBox(height: AppSpace.lg),
-          const ListDivider(),
           const SizedBox(height: AppSpace.md),
+          SeasonCountdown(
+            opens: _monthClosesAt(),
+            color: tone,
+            muted: a.textSecondary,
+            accent: a.chrome,
+            large: true,
+            centered: true,
+            blink: blink,
+            label: l10n.juntosCaravanMonthCloses,
+          ),
+          const SizedBox(height: AppSpace.md),
+          const ListDivider(),
+          const SizedBox(height: AppSpace.sm),
           _CaravanLevel(
-            tier: tier,
-            isMaxTier: isMaxTier,
-            steadyWeeks: steadyWeeks,
+            tier: league.tier,
+            isMaxTier: league.isMaxTier,
+            steadyWeeks: league.steadyWeeks,
             weekScenes: weekScenes,
           ),
         ],
@@ -1727,17 +1750,17 @@ class _CaravanLevel extends StatelessWidget {
     return Row(
       children: [
         IconWell(
-          size: 44,
+          size: 40,
           accent: AppRoles.presence,
           glowing: true,
-          child: CinematicIcon(
+          child: const CinematicIcon(
             glyph: CinematicGlyph.tree,
             size: AppMetrics.iconMd,
             accent: AppRoles.presence,
             framed: false,
           ),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: 10),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1747,35 +1770,37 @@ class _CaravanLevel extends StatelessWidget {
                 size: 10,
                 color: AppRoles.presence,
               ),
-              const SizedBox(height: 3),
+              const SizedBox(height: 2),
               Text(
                 steadyLine,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 style: AppTypography.title(size: 14, color: a.text),
               ),
-              if (!isMaxTier) ...[
-                const SizedBox(height: 2),
+              if (!isMaxTier)
                 Text(
                   weekLine,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   style: AppTypography.body(
                     size: 12,
                     weight: FontWeight.w700,
                     color: weekFirm ? AppRoles.success : a.textFaint,
                   ),
                 ),
-              ],
             ],
           ),
         ),
         if (!isMaxTier) ...[
-          const SizedBox(width: 8),
+          const SizedBox(width: 6),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               for (var i = 0; i < total; i++)
                 Container(
-                  width: 10,
-                  height: 10,
-                  margin: const EdgeInsets.only(left: 4),
+                  width: 9,
+                  height: 9,
+                  margin: const EdgeInsets.only(left: 3),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: i < steadyWeeks

@@ -24,4 +24,15 @@ class SeasonWalkDebug {
     if (!kDebugMode) return;
     _today = day == null ? null : DateTime(day.year, day.month, day.day);
   }
+
+  static int? _crowd;
+
+  /// Laboratório: quantos peregrinos fingir na folha da Estação (`null` =
+  /// os de verdade). Só nesta sessão.
+  static int? get crowd => kDebugMode ? _crowd : null;
+
+  static void bindCrowd(int? count) {
+    if (!kDebugMode) return;
+    _crowd = count;
+  }
 }

@@ -89,7 +89,10 @@ void main() {
     });
 
     test('locked days tease the trail without spoiling the scene title', () {
-      expect(SeasonWalkCatalog.trailTeaser('evangelhos'), 'Os Quatro Evangelhos');
+      expect(
+        SeasonWalkCatalog.trailTeaser('evangelhos'),
+        'Os Quatro Evangelhos',
+      );
       expect(SeasonWalkCatalog.trailTeaser('genesis-1-11'), 'Gênesis 1–11');
       final start = LiturgicalCalendar.adventStart(2026);
       final c = SeasonWalkCatalog.advent(start);
@@ -104,9 +107,35 @@ void main() {
       SeasonWalkDebug.bind(cardDay);
       addTearDown(() => SeasonWalkDebug.bind(null));
       final c = SeasonWalkCatalog.current();
-      expect(SeasonWalkTogetherCard.visibleOn(c, SeasonWalkDebug.today()), isTrue);
+      expect(
+        SeasonWalkTogetherCard.visibleOn(c, SeasonWalkDebug.today()),
+        isTrue,
+      );
       expect(c.dayIndexOn(SeasonWalkDebug.today()), isNull);
       expect(c.start, start);
+    });
+
+    test('after Christmas the Home counts down to next Advent', () {
+      final c = SeasonWalkCatalog.current(DateTime(2026, 12, 26));
+      expect(c.start, LiturgicalCalendar.adventStart(2027));
+      expect(c.id, 'advento-2027');
+    });
+
+    test('the Advent that just ended still credits for a week', () {
+      final ended = SeasonWalkCatalog.justEnded(DateTime(2026, 12, 26));
+      expect(ended?.id, 'advento-2026');
+      expect(
+        SeasonWalkCatalog.justEnded(DateTime(2026, 12, 31))?.id,
+        'advento-2026',
+      );
+      expect(SeasonWalkCatalog.justEnded(DateTime(2027, 1, 1)), isNull);
+      expect(SeasonWalkCatalog.justEnded(DateTime(2026, 12, 24)), isNull);
+    });
+
+    test('grace of a December Advent crosses New Year', () {
+      // 2028 começa em 3/12; 26 dias vão até 28/12, graça até 4/1.
+      final ended = SeasonWalkCatalog.justEnded(DateTime(2029, 1, 2));
+      expect(ended?.id, 'advento-2028');
     });
 
     test('in September the 40-day walk is gone; Advent is next', () {
@@ -127,7 +156,11 @@ void main() {
         expect(EntryTrails.continuesTo[t.missionSlugs.last], isNotNull);
       }
       // Motivos: banco próprio (section = slug da cena).
-      for (final slug in ['ansiedade', 'conhecer-a-deus', 'entender-a-biblia']) {
+      for (final slug in [
+        'ansiedade',
+        'conhecer-a-deus',
+        'entender-a-biblia',
+      ]) {
         for (final m in bySlug[slug]!.modules.expand((mod) => mod.missions)) {
           expect(m.bankSection, isNull);
           expect(m.bankTrailSlug, isNull);
@@ -185,17 +218,20 @@ void main() {
       expect(EntryTrails.continuesTo['dor-ansia-05'], 'sermao-do-monte');
     });
 
-    test('anxiety contentment scene keeps its own section, not Filipenses bank', () {
-      final m = EntryTrails.overlay
-          .firstWhere((t) => t.slug == 'ansiedade')
-          .modules
-          .first
-          .missions
-          .firstWhere((x) => x.slug == 'dor-ansia-02');
-      expect(m.hookRef, 'Filipenses 4:12–13');
-      expect(m.bankSection, isNull);
-      expect(m.resolvedBankSection, 'dor-ansia-02');
-    });
+    test(
+      'anxiety contentment scene keeps its own section, not Filipenses bank',
+      () {
+        final m = EntryTrails.overlay
+            .firstWhere((t) => t.slug == 'ansiedade')
+            .modules
+            .first
+            .missions
+            .firstWhere((x) => x.slug == 'dor-ansia-02');
+        expect(m.hookRef, 'Filipenses 4:12–13');
+        expect(m.bankSection, isNull);
+        expect(m.resolvedBankSection, 'dor-ansia-02');
+      },
+    );
   });
 
   group('Walk review picker', () {

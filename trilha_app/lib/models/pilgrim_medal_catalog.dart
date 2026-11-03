@@ -4,7 +4,7 @@ import '../utils/liturgical_calendar.dart';
 import '../widgets/cinematic_icon.dart';
 import 'pilgrim_medal_models.dart';
 
-/// Catálogo v3.2 — faísca + conquistas; Palavra mede hábito, não título bíblico.
+/// Catálogo v3.3 — faísca silenciosa + conquistas; Palavra mede hábito, não título bíblico.
 class PilgrimMedalCatalog {
   PilgrimMedalCatalog._();
 
@@ -46,68 +46,71 @@ class PilgrimMedalCatalog {
 
   /// Ids semânticos atuais (e raras) a partir de ids v2.
   static const v2ToSemantic = <String, String>{
-    'journey:word:first_chapter': 'track:word:chapters_1',
+    'journey:word:first_chapter': 'track:word:chapters_3',
     'journey:word:chapters_25': 'track:word:chapters_25',
     'journey:word:book': 'track:word:chapters_25',
     'journey:word:gospel': 'track:word:chapters_25',
-    'journey:word:nt_book': 'track:word:chapters_1',
-    'journey:form:first_perfect': 'track:formation:perfect_1',
-    'journey:form:perfect_5': 'track:formation:perfect_1',
+    'journey:word:nt_book': 'track:word:chapters_3',
+    'journey:form:first_perfect': 'track:formation:perfect_3',
+    'journey:form:perfect_5': 'track:formation:perfect_3',
     'journey:form:perfect_25': 'track:formation:perfect_25',
     'journey:form:accuracy': 'discovery:andando_na_luz',
     'journey:form:perfect_boss': 'discovery:perfect_boss',
-    'journey:path:streak_7': 'track:path:streak_3',
+    'journey:path:streak_7': 'track:path:streak_7',
     'journey:path:streak_30': 'track:path:streak_30',
     'journey:path:leader': 'discovery:leader',
-    'journey:witness:share_1': 'track:witness:share_1',
+    'journey:witness:share_1': 'track:witness:share_3',
     'journey:witness:share_10': 'track:witness:share_10',
-    'journey:memory:5': 'track:memory:verse_1',
+    'journey:memory:5': 'track:memory:verse_3',
     'journey:memory:20': 'track:memory:verse_15',
   };
 
   /// Índices numéricos v3 (pré-v3.1) → id semântico. O significado antigo
   /// (não o novo índice) é o que importa na migração.
   static const legacyNumericToSemantic = <String, String>{
-    'track:word:0': 'track:word:chapters_1',
+    'track:word:0': 'track:word:chapters_3',
     'track:word:1': 'track:word:chapters_25',
     'track:word:2': 'track:word:chapters_25',
     'track:word:3': 'track:word:chapters_25',
-    'track:word:4': 'track:word:chapters_1',
-    'track:word:5': 'track:word:chapters_1',
-    'track:formation:0': 'track:formation:perfect_1',
-    'track:formation:1': 'track:formation:perfect_1',
+    'track:word:4': 'track:word:chapters_3',
+    'track:word:5': 'track:word:chapters_3',
+    'track:formation:0': 'track:formation:perfect_3',
+    'track:formation:1': 'track:formation:perfect_3',
     'track:formation:2': 'track:formation:perfect_25',
     'track:formation:3': 'discovery:andando_na_luz',
     'track:formation:4': 'discovery:perfect_boss',
-    'track:path:0': 'track:path:streak_3',
-    'track:path:1': 'track:path:streak_3',
-    'track:path:2': 'track:path:streak_3',
+    'track:path:0': 'track:path:streak_7',
+    'track:path:1': 'track:path:streak_7',
+    'track:path:2': 'track:path:streak_7',
     'track:path:3': 'track:path:streak_30',
     'track:path:4': 'track:path:streak_90',
     'track:path:5': 'discovery:leader',
-    'track:witness:0': 'track:witness:share_1',
+    'track:witness:0': 'track:witness:share_3',
     'track:witness:1': 'track:witness:share_10',
     'track:witness:2': 'track:witness:share_10',
     'track:witness:3': 'track:witness:share_50',
-    'track:memory:0': 'track:memory:verse_1',
+    'track:memory:0': 'track:memory:verse_3',
     'track:memory:1': 'track:memory:verse_15',
     'track:memory:2': 'track:memory:verse_15',
     'track:memory:3': 'track:memory:verse_50',
   };
 
-  /// Degraus aposentados (v3.1) → o que ainda existe.
+  /// Degraus aposentados → o que ainda existe (v3.2 → v3.3 inclusive).
   static const retiredToCurrent = <String, String>{
-    'track:word:chapters_7': 'track:word:chapters_1',
+    'track:word:chapters_1': 'track:word:chapters_3',
+    'track:word:chapters_7': 'track:word:chapters_3',
     'track:word:book': 'track:word:chapters_25',
     'track:word:gospel': 'track:word:chapters_25',
-    'discovery:word_ot': 'track:word:chapters_1',
-    'discovery:word_nt': 'track:word:chapters_1',
-    'track:formation:perfect_5': 'track:formation:perfect_1',
-    'track:path:streak_7': 'track:path:streak_3',
+    'discovery:word_ot': 'track:word:chapters_3',
+    'discovery:word_nt': 'track:word:chapters_3',
+    'track:formation:perfect_1': 'track:formation:perfect_3',
+    'track:formation:perfect_5': 'track:formation:perfect_3',
+    'track:path:streak_3': 'track:path:streak_7',
     'track:path:streak_90': 'track:path:streak_30',
-    'track:witness:share_3': 'track:witness:share_1',
+    'track:witness:share_1': 'track:witness:share_3',
     'track:witness:share_25': 'track:witness:share_10',
-    'track:memory:verse_5': 'track:memory:verse_1',
+    'track:memory:verse_1': 'track:memory:verse_3',
+    'track:memory:verse_5': 'track:memory:verse_3',
     'track:memory:verse_30': 'track:memory:verse_15',
   };
 
@@ -190,10 +193,10 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:word:chapters_1',
+          id: 'track:word:chapters_3',
           tier: PilgrimMedalTier.bronze,
-          title: L10n.current.medalWordChapters1Title,
-          hint: L10n.current.medalHintReadChapters(1),
+          title: L10n.current.medalWordChapters3Title,
+          hint: L10n.current.medalHintReadChapters(3),
           glyph: CinematicGlyph.bookmarked,
           rung: PilgrimMedalRung.spark,
         ),
@@ -222,10 +225,10 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:formation:perfect_1',
+          id: 'track:formation:perfect_3',
           tier: PilgrimMedalTier.bronze,
-          title: L10n.current.medalFormationPerfect1Title,
-          hint: L10n.current.medalHintPerfectScenes(1),
+          title: L10n.current.medalFormationPerfect3Title,
+          hint: L10n.current.medalHintPerfectScenes(3),
           glyph: CinematicGlyph.check,
           rung: PilgrimMedalRung.spark,
         ),
@@ -254,10 +257,10 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:path:streak_3',
+          id: 'track:path:streak_7',
           tier: PilgrimMedalTier.bronze,
-          title: L10n.current.medalPathStreak3Title,
-          hint: L10n.current.medalHintStreak(3),
+          title: L10n.current.medalPathStreak7Title,
+          hint: L10n.current.medalHintStreak(7),
           glyph: CinematicGlyph.sneaker,
           rung: PilgrimMedalRung.spark,
         ),
@@ -286,10 +289,10 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:witness:share_1',
+          id: 'track:witness:share_3',
           tier: PilgrimMedalTier.bronze,
-          title: L10n.current.medalWitnessShare1Title,
-          hint: L10n.current.medalHintShareVerses(1),
+          title: L10n.current.medalWitnessShare3Title,
+          hint: L10n.current.medalHintShareVerses(3),
           glyph: CinematicGlyph.plane,
           rung: PilgrimMedalRung.spark,
         ),
@@ -318,10 +321,10 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:memory:verse_1',
+          id: 'track:memory:verse_3',
           tier: PilgrimMedalTier.bronze,
-          title: L10n.current.medalMemoryVerse1Title,
-          hint: L10n.current.medalHintMemorizeVerses(1),
+          title: L10n.current.medalMemoryVerse3Title,
+          hint: L10n.current.medalHintMemorizeVerses(3),
           glyph: CinematicGlyph.quote,
           rung: PilgrimMedalRung.spark,
         ),

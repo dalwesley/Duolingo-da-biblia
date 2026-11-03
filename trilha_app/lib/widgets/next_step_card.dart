@@ -79,10 +79,14 @@ class NextStepCard extends StatefulWidget {
   final List<Trail> trails;
   final void Function(String missionSlug) onOpenMission;
 
+  /// Espaço acima do card — só existe quando há sugestão.
+  final double topGap;
+
   const NextStepCard({
     super.key,
     required this.trails,
     required this.onOpenMission,
+    this.topGap = 0,
   });
 
   @override
@@ -192,13 +196,16 @@ class _NextStepCardState extends State<NextStepCard> {
         },
       ),
     };
-    return _NextStepPanel(
-      face: step is DeepenStep ? CloudFace.sucesso : CloudFace.feliz,
-      title: title,
-      body: body,
-      cta: cta,
-      onTap: onTap,
-      onLater: () => _snooze(step),
+    return Padding(
+      padding: EdgeInsets.only(top: widget.topGap),
+      child: _NextStepPanel(
+        face: step is DeepenStep ? CloudFace.sucesso : CloudFace.feliz,
+        title: title,
+        body: body,
+        cta: cta,
+        onTap: onTap,
+        onLater: () => _snooze(step),
+      ),
     );
   }
 }

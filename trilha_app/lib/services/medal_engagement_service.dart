@@ -160,6 +160,17 @@ class MedalEngagementService {
   ) async {
     for (final tierUp in medals.PilgrimMedals.collapsedNewTierUps(pending)) {
       if (!context.mounted) break;
+      // Faísca da jornada acende o emblema sem sheet — celebração começa na
+      // prata. Trilha e temporada (porta do Advento) seguem com a folha.
+      if (tierUp.level.isSpark &&
+          tierUp.track.kind == PilgrimVaultKind.journey) {
+        for (final up in pending) {
+          if (up.track.id == tierUp.track.id) {
+            await progress.markMedalCelebrated(up.celebrationId);
+          }
+        }
+        continue;
+      }
       _showingSheet = true;
       await showTrackTierUpSheet(context, tierUp);
       _showingSheet = false;

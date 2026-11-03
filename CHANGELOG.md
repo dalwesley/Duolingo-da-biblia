@@ -9,6 +9,23 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.42] — 2026-11-03
+
+### Added
+- Estação (Advento) na Home o ano todo: antes do início, cadeado translúcido e contagem regressiva ao vivo (dias, horas, min, seg); depois do Natal conta até o Advento do ano seguinte (cena atrasada do que acabou ainda conta o dia por 7 dias)
+- Folha da Estação em tela quase cheia: pintura viva (aproximação lenta e estrelas), título sobre a arte com datas e tema, contagem em placas e "Quem vai caminhar junto" com uma bolinha (retrato do perfil) por inscrito; a sua no centro, com halo
+- Tocar numa bolinha abre o perfil (o seu ou a vitrine da Caravana); o "+N" abre a lista de todos os inscritos, carregada aos poucos
+- Laboratório (debug): fingir 0/8/30/300 peregrinos na folha da Estação
+- Faixa de apoio no pé da Home: 1×/semana; quem apoiou volta a ver depois de 8 semanas, com "Volte a apoiar"
+- Caravana: contagem até o fechamento do ranking do mês (azul → amarelo → vermelho; a última semana pisca)
+
+### Changed
+- Card da Estação sem o botão amarelo; durante a temporada mostra o dia e uma seta translúcida
+- Sai o chip "dia X de Y" da Home (o card da Estação cobre a temporada)
+- "Seu próximo passo" só ocupa espaço quando há sugestão (some o vão duplo entre o herói e o card seguinte)
+- Medalhas v3.3: faísca da jornada pede 3 (capítulos, cenas perfeitas, compartilhamentos, versículos) e 7 dias seguidos, e acende sem folha; celebração começa na prata. Ids antigos (celebrados e reconhecimentos) migram para os novos degraus
+- `discovery:founder` vira Desbravador (marca do servidor); Pioneiro fica como selo do plano de lançamento
+
 ## [1.0.41] — 2026-11-02
 
 ### Fixed

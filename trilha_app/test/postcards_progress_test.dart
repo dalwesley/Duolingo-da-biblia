@@ -58,7 +58,7 @@ void main() {
       await p.completeMission('cena-1', 50, postcardRef: 'Gênesis 1:1');
       p.celebratedMedalIds = [
         'track:trail:genesis-1-11:0',
-        'track:path:streak_3',
+        'track:path:streak_7',
       ];
       p.vaultCompleteCelebratedIds = ['trail:genesis-1-11', 'journey'];
 
@@ -68,7 +68,7 @@ void main() {
       expect(p.postcardsOn.containsKey('cena-1'), isFalse);
       expect(p.postcardRefs.containsKey('cena-1'), isFalse);
       expect(p.sceneRevealed('cena-1'), isFalse);
-      expect(p.celebratedMedalIds, ['track:path:streak_3']);
+      expect(p.celebratedMedalIds, ['track:path:streak_7']);
       expect(p.vaultCompleteCelebratedIds, ['journey']);
     });
   });

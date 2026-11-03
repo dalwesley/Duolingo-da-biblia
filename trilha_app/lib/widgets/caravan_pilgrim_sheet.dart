@@ -24,6 +24,7 @@ import 'ui_primitives.dart';
 import 'user_moderation_sheet.dart';
 
 /// Vitrine social — só para outros peregrinos da caravana.
+/// [rank] 0 = fora do ranking (ex.: aberto da Caminhada sazonal).
 Future<void> showCaravanPilgrimSheet(
   BuildContext context, {
   required LeagueEntry entry,
@@ -113,7 +114,7 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
     final sheetHeight = MediaQuery.sizeOf(context).height * 0.82 - 32;
     final profile = _profile;
     // Pódio (1–3) acende em metal; do 4º em diante o halo é chrome neutro.
-    final podium = widget.rank <= 3;
+    final podium = widget.rank > 0 && widget.rank <= 3;
     final rankColor = podium ? pilgrimRankAccent(widget.rank) : AppRoles.chrome;
 
     return AppSheetPanel(

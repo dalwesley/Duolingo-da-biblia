@@ -9,60 +9,29 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
+import '../utils/season_walk_debug.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
-import 'path_preview_sheet.dart';
+import 'season_countdown.dart';
+import 'season_walk_sheet.dart';
 import 'season_walk_together.dart';
 import 'ui_primitives.dart';
 
 /// Card destaque da Caminhada sazonal na Home — fora de "Mais para hoje".
 ///
-/// Mesmo espírito do fluxo de Trilhas: paisagem, título grande, CTA dourado.
-/// Aparece na janela de [SeasonWalkTogetherCard.leadDays] até o fim.
+/// Mesmo espírito do fluxo de Trilhas: paisagem, título grande. Fica sempre
+/// na Home: antes do início, cadeado e contagem regressiva até a abertura;
+/// durante a temporada, o dia e o progresso.
 class SeasonWalkFeatureCard extends StatefulWidget {
   const SeasonWalkFeatureCard({super.key});
-
-  /// Visível na Home (pré-início ou durante a temporada).
-  static bool visible(ProgressService progress) {
-    final today = progress.seasonToday;
-    final campaign = SeasonWalkCatalog.current(today);
-    return SeasonWalkTogetherCard.visibleOn(campaign, today);
-  }
 
   @override
   State<SeasonWalkFeatureCard> createState() => _SeasonWalkFeatureCardState();
 }
 
-class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _pulse = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 1800),
-  );
-  late final Animation<double> _glow = _pulse.drive(
-    Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
-  );
+class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
   bool _pressed = false;
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    final reduced = AppMotion.reduced(context);
-    final tickersOn = TickerMode.valuesOf(context).enabled;
-    if (reduced || !tickersOn) {
-      _pulse.stop();
-      _pulse.value = 0.7;
-    } else if (!_pulse.isAnimating) {
-      _pulse.repeat(reverse: true);
-    }
-  }
-
-  @override
-  void dispose() {
-    _pulse.dispose();
-    super.dispose();
-  }
 
   void _open(SeasonWalkCampaign campaign, DateTime today) {
     ActHaptics.confirm();
@@ -71,39 +40,18 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
       openSeasonWalk(context);
       return;
     }
-    final l10n = context.l10n;
-    final accent = LiturgicalCalendar.accentOf(
-      campaign.kind == SeasonWalkKind.advent
-          ? LiturgicalSeason.advent
-          : LiturgicalSeason.lent,
-    );
-    final daysUntil = SeasonWalkTogetherCard.daysUntilStart(campaign, today);
-    showPathPreviewSheet(
-      context,
-      title: campaign.title,
-      description:
-          '${l10n.walkTogetherStartsIn(daysUntil)}. ${campaign.subtitle}',
-      art: SeasonWalkCatalog.artAsset(campaign.kind),
-      accent: accent,
-      eyebrow: l10n.walkTogetherKicker,
-      glyph: CinematicGlyph.calendar,
-      footer: const SeasonWalkTogetherCard(bare: true),
-    );
+    showSeasonWalkSheet(context, campaign: campaign, seasonToday: today);
   }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final today = context.select((ProgressService p) => p.seasonToday);
+    // select só assina o relógio do Laboratório; o dia vem fresco a cada
+    // build (o valor guardado ficava velho depois da meia-noite).
+    context.select((ProgressService p) => p.seasonToday);
+    final today = SeasonWalkDebug.today();
     final campaign = SeasonWalkCatalog.current(today);
-    if (!SeasonWalkTogetherCard.visibleOn(campaign, today)) {
-      return const SizedBox.shrink();
-    }
-
-    final joined = context.select(
-      (ProgressService p) => p.hasJoinedWalk(campaign.id),
-    );
     final doneDays = context.select(
       (ProgressService p) => p.walkDatesFor(campaign.id).length,
     );
@@ -162,7 +110,8 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                                   MediaQuery.devicePixelRatioOf(context))
                               .round(),
                       cacheHeight:
-                          (220 * MediaQuery.devicePixelRatioOf(context)).round(),
+                          (220 * MediaQuery.devicePixelRatioOf(context))
+                              .round(),
                     ),
                   ),
                   // Véu só sob o texto — a pintura abre cedo à direita.
@@ -197,14 +146,8 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: morning
-                              ? const [
-                                  Color(0x00FFFFFF),
-                                  Color(0x59FFFFFF),
-                                ]
-                              : const [
-                                  Color(0x0006080C),
-                                  Color(0x7306080C),
-                                ],
+                              ? const [Color(0x00FFFFFF), Color(0x59FFFFFF)]
+                              : const [Color(0x0006080C), Color(0x7306080C)],
                           stops: const [0.55, 1.0],
                         ),
                       ),
@@ -257,17 +200,29 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                                 ),
                               ),
                               const SizedBox(height: 4),
-                              Text(
-                                status,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
+                              if (running)
+                                Text(
+                                  status,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.body(
+                                    size: 13,
+                                    weight: FontWeight.w700,
+                                    color: ink.text,
+                                  ),
+                                )
+                              else
+                                SeasonCountdown(
+                                  opens: campaign.start,
+                                  seasonToday: today,
                                   color: ink.text,
+                                  muted: ink.textSecondary,
+                                  // Abriu com a Home na tela: vira o dia 1.
+                                  onDone: () {
+                                    if (mounted) setState(() {});
+                                  },
                                 ),
-                              ),
-                              const SizedBox(height: 2),
+                              const SizedBox(height: 4),
                               Text(
                                 pitch,
                                 maxLines: 2,
@@ -291,54 +246,27 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                           ),
                         ),
                         const SizedBox(width: 14),
-                        RepaintBoundary(
-                          child: SizedBox(
-                            width: 50,
-                            height: 50,
-                            child: Stack(
-                              clipBehavior: Clip.none,
-                              alignment: Alignment.center,
-                              children: [
-                                const Positioned.fill(
-                                  child: DecoratedBox(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: AppRoles.action,
-                                    ),
-                                  ),
-                                ),
-                                FadeTransition(
-                                  opacity: _glow,
-                                  child: DecoratedBox(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: AppRoles.action.withValues(
-                                            alpha: 0.46,
-                                          ),
-                                          blurRadius: 18,
-                                          spreadRadius: 2,
-                                        ),
-                                      ],
-                                    ),
-                                    child: const SizedBox(
-                                      width: 50,
-                                      height: 50,
-                                    ),
-                                  ),
-                                ),
-                                Center(
-                                  child: CinematicIcon(
-                                    glyph: running || joined
-                                        ? CinematicGlyph.forward
-                                        : CinematicGlyph.path,
-                                    size: AppMetrics.iconMd,
-                                    accent: AppRoles.onAction,
-                                    framed: false,
-                                  ),
-                                ),
-                              ],
+                        // Selo translúcido: cadeado até abrir, seta depois.
+                        Container(
+                          width: 44,
+                          height: 44,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: ink.text.withValues(alpha: 0.12),
+                            border: Border.all(
+                              color: ink.text.withValues(alpha: 0.22),
+                            ),
+                          ),
+                          alignment: Alignment.center,
+                          child: Opacity(
+                            opacity: 0.8,
+                            child: CinematicIcon(
+                              glyph: running
+                                  ? CinematicGlyph.forward
+                                  : CinematicGlyph.lock,
+                              size: AppMetrics.iconMd,
+                              accent: ink.text,
+                              framed: false,
                             ),
                           ),
                         ),

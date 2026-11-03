@@ -534,21 +534,28 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             }
             final now = DateTime.now();
             final today = DateTime(now.year, now.month, now.day);
-            final campaign = SeasonWalkCatalog.current(today);
-            // Falha não credita o dia da Caminhada; refazer a cena, sim.
-            for (final d in campaign.days) {
+            // Depois do Natal a Home já conta até a próxima; a que acabou
+            // há pouco ainda credita o dia atrasado.
+            final campaigns = [
+              SeasonWalkCatalog.current(today),
+              ?SeasonWalkCatalog.justEnded(today),
+            ];
+            for (final campaign in campaigns) {
+              // Falha não credita o dia da Caminhada; refazer a cena, sim.
               if (widget.failed) break;
-              if (d.missionSlug != widget.missionSlug) continue;
-              final date = d.dateOn(campaign.start);
-              if (date.isAfter(today)) continue;
-              final ymd =
-                  '${date.year.toString().padLeft(4, '0')}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
-              // A cena é grátis na trilha: quem fez, fez — o dia da
-              // Caminhada é creditado mesmo sem Plus (a entrada pela
-              // temporada e a revisão seguem do Peregrino+). Assinar
-              // depois encontra a caminhada andando, não zerada.
-              await progress.markWalkDate(campaign.id, ymd);
-              break;
+              for (final d in campaign.days) {
+                if (d.missionSlug != widget.missionSlug) continue;
+                final date = d.dateOn(campaign.start);
+                if (date.isAfter(today)) continue;
+                final ymd =
+                    '${date.year.toString().padLeft(4, '0')}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
+                // A cena é grátis na trilha: quem fez, fez — o dia da
+                // Caminhada é creditado mesmo sem Plus (a entrada pela
+                // temporada e a revisão seguem do Peregrino+). Assinar
+                // depois encontra a caminhada andando, não zerada.
+                await progress.markWalkDate(campaign.id, ymd);
+                break;
+              }
             }
             if (firstSealEncounter && mounted) {
               final seal = CharacterSeals.forMission(widget.missionSlug);

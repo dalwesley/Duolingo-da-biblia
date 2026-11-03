@@ -1,13 +1,13 @@
 # STWAY — Sistema de medalhas (v2 → v3.2)
 
-**Status:** **v3.2 no app** — faísca + conquistas; Palavra mede capítulos, não catálogo de livros  
-**Atualizado:** 28 set/2026  
+**Status:** **v3.3 no app** — faísca silenciosa + conquistas; Palavra mede capítulos, não catálogo de livros  
+**Atualizado:** 3 nov/2026  
 **Fonte de verdade dos marcos/IDs:** [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md)
 
 Nota de vocabulário: no app a unidade curta é **cena** (código `Mission`). Critérios que falam “missão” abaixo = mesma unidade.
 
 Este arquivo descreve **arquitetura** (cofres, famílias, loops, persistência).  
-As tabelas de IDs v2 mais abaixo são **históricas** — o app não as usa mais. Critérios vigentes = calibração v3.2 (prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Pioneiro sem sheet).
+As tabelas de IDs v2 mais abaixo são **históricas** — o app não as usa mais. Critérios vigentes = calibração v3.3 (prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Desbravador sem sheet).
 
 ### O que já está no código (set/2026)
 
@@ -212,7 +212,7 @@ Vinculado a temporada com data (`season:advento-2026`, `season:quaresma-2027`).
 | `discovery:room_host` | Sala acesa | Bronze | Criar sala e ≥3 membros caminharem na semana | Secreta |
 | `discovery:bible_before_mission` | Palavra antes | Bronze | Ler capítulo do dia antes da missão | Secreta |
 | `discovery:reflection` | Escrito no coração | Bronze | 10 reflexões no diário | Secreta |
-| `discovery:founder` | Pioneiro | Ouro | Conta criada no 1º ano do app | Especial (one-shot) |
+| `discovery:founder` | Desbravador | Aurora | `users/{uid}.desbravador` (testou antes do lançamento) | Especial (one-shot, silenciosa) |
 
 **Regras:**
 
@@ -402,6 +402,6 @@ Não abrir fase nova de medalha antes do D7. Caminhada = Advento/Quaresma, não 
 | Cofre por trilha? | **Sim** — 4 medalhas template por trilha ativa |
 | Especiais / sazonais / secretas? | **Sim** — cofres `season` e `discovery` separados |
 | O que acontece quando “acaba”? | Acaba **um cofre**, não o jogo; surgem trilhas e temporadas novas |
-| Quantas medalhas no total? | Escadas v3.2 (não 14 globais) + 4 níveis/trilha + sazonal + raras — ver calibração |
+| Quantas medalhas no total? | Escadas v3.3 (não 14 globais) + 4 níveis/trilha + sazonal + raras — ver calibração |
 
 **Próximo passo:** nenhum de medalha. Prova D7. Calendário da Caminhada = Advento/Quaresma.

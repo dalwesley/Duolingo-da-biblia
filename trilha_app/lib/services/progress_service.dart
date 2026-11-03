@@ -4455,7 +4455,7 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Jornada zerada não guarda medalha. Só o Pioneiro fica, via [firstOpenDate].
+  /// Jornada zerada não guarda medalha. Só o Desbravador fica, via [desbravador].
   /// Datas soltas não contam: um reset antigo apagava missões e deixava
   /// acertos, liderança, modos e dias — e as descobertas continuavam.
   void _dropOrphanedWalkStats() {

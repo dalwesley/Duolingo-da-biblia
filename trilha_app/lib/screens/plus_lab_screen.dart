@@ -15,6 +15,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
+import '../utils/home_support.dart';
 import '../utils/plus_offers.dart';
 import '../utils/season_walk_debug.dart';
 import '../widgets/cinematic_icon.dart';
@@ -338,6 +339,20 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                                 : label,
                             () => _setSeasonClock(day, _ymd(day)),
                           ),
+                        line(
+                          'Peregrinos na folha da Estação: '
+                          '${SeasonWalkDebug.crowd ?? 'reais'}',
+                        ),
+                        for (final n in [null, 0, 8, 30, 300])
+                          button(
+                            n == null
+                                ? 'Peregrinos reais'
+                                : 'Fingir $n peregrinos',
+                            () {
+                              setState(() => SeasonWalkDebug.bindCrowd(n));
+                              _toast('Abra o card da Estação na Home');
+                            },
+                          ),
                         if (SeasonWalkDebug.active)
                           line(
                             'Campanha: ${SeasonWalkCatalog.current(progress.seasonToday).title}',
@@ -547,6 +562,10 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button('Zerar ofertas vistas', () async {
                           await resetPlusOfferState();
                           _toast('Ofertas zeradas');
+                        }),
+                        button('Zerar faixa de apoio (Home)', () async {
+                          await HomeSupport.resetState();
+                          _toast('Faixa de apoio zerada');
                         }),
                         button(
                           'Mostrar: 7 cenas',

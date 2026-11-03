@@ -246,14 +246,6 @@
     "en": "freeze",
     "es": "hielo"
   },
-  "homeSeasonChipSemantics": {
-    "pt": "{season} · abrir leitura da estação",
-    "en": "{season} · open the season reading",
-    "es": "{season} · abrir la lectura de la temporada litúrgica",
-    "placeholders": {
-      "season": "String"
-    }
-  },
   "comebackEyebrow": {
     "pt": "O peregrino",
     "en": "The pilgrim",
@@ -593,64 +585,6 @@
     "en": "Downloading…",
     "es": "Descargando…"
   },
-  "homeSeasonDayOfDone": {
-    "pt": "Dia {day} de {total} feito · {title}",
-    "en": "Day {day} of {total} done · {title}",
-    "es": "Día {day} de {total} hecho · {title}",
-    "placeholders": {
-      "day": "int",
-      "total": "int",
-      "title": "String"
-    }
-  },
-  "homeSeasonDayOf": {
-    "pt": "Dia {day} de {total} · {title}",
-    "en": "Day {day} of {total} · {title}",
-    "es": "Día {day} de {total} · {title}",
-    "placeholders": {
-      "day": "int",
-      "total": "int",
-      "title": "String"
-    }
-  },
-  "homeSeasonDayDone": {
-    "pt": "Dia {day} feito · {title}",
-    "en": "Day {day} done · {title}",
-    "es": "Día {day} hecho · {title}",
-    "placeholders": {
-      "day": "int",
-      "title": "String"
-    }
-  },
-  "homeSeasonDayLine": {
-    "pt": "Dia {day} · {title}",
-    "en": "Day {day} · {title}",
-    "es": "Día {day} · {title}",
-    "placeholders": {
-      "day": "int",
-      "title": "String"
-    }
-  },
-  "homeSeasonChipDoneSemantics": {
-    "pt": "{season}. Dia {day} feito: {dayTitle}",
-    "en": "{season}. Day {day} done: {dayTitle}",
-    "es": "{season}. Día {day} hecho: {dayTitle}",
-    "placeholders": {
-      "season": "String",
-      "day": "int",
-      "dayTitle": "String"
-    }
-  },
-  "homeSeasonChipOpenSemantics": {
-    "pt": "{season}. Dia {day}: {dayTitle}",
-    "en": "{season}. Day {day}: {dayTitle}",
-    "es": "{season}. Día {day}: {dayTitle}",
-    "placeholders": {
-      "season": "String",
-      "day": "int",
-      "dayTitle": "String"
-    }
-  },
   "homeMoreToday": {
     "pt": "Mais para hoje",
     "en": "More for today",
@@ -784,5 +718,35 @@
     "pt": "Ver menos",
     "en": "See less",
     "es": "Ver menos"
+  },
+  "homeSupportTitle": {
+    "pt": "Ajude a continuar",
+    "en": "Help keep it going",
+    "es": "Ayuda a continuar"
+  },
+  "homeSupportBody": {
+    "pt": "Seu apoio mantém o Stway grátis para quem não pode pagar.",
+    "en": "Your support keeps Stway free for those who can't pay.",
+    "es": "Tu apoyo mantiene Stway gratis para quien no puede pagar."
+  },
+  "homeSupportCta": {
+    "pt": "Apoiar o Stway",
+    "en": "Support Stway",
+    "es": "Apoyar Stway"
+  },
+  "homeSupportAgainTitle": {
+    "pt": "Volte a apoiar",
+    "en": "Support again",
+    "es": "Vuelve a apoyar"
+  },
+  "homeSupportAgainBody": {
+    "pt": "Seu selo continua. Um novo apoio ajuda a manter o Stway grátis.",
+    "en": "Your badge stays. Supporting again helps keep Stway free.",
+    "es": "Tu sello sigue. Un nuevo apoyo ayuda a mantener Stway gratis."
+  },
+  "homeSupportAgainCta": {
+    "pt": "Apoiar de novo",
+    "en": "Give again",
+    "es": "Apoyar de nuevo"
   }
 }

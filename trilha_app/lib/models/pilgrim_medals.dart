@@ -494,7 +494,7 @@ class PilgrimMedals {
 
   static bool _wordLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.bibleChaptersRead >= 1,
+        0 => profile.bibleChaptersRead >= 3,
         1 => profile.bibleChaptersRead >= 25,
         2 => profile.bibleChaptersRead >= 100,
         _ => false,
@@ -502,7 +502,7 @@ class PilgrimMedals {
 
   static bool _formationLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.perfectMissions.isNotEmpty,
+        0 => profile.perfectMissions.length >= 3,
         1 => profile.perfectMissions.length >= 10,
         2 => profile.perfectMissions.length >= 25,
         _ => false,
@@ -510,7 +510,7 @@ class PilgrimMedals {
 
   static bool _pathLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.streakRecord >= 3,
+        0 => profile.streakRecord >= 7,
         1 => profile.streakRecord >= 14,
         2 => profile.streakRecord >= 30,
         _ => false,
@@ -518,7 +518,7 @@ class PilgrimMedals {
 
   static bool _witnessLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.sharedVerseCount >= 1,
+        0 => profile.sharedVerseCount >= 3,
         1 => profile.sharedVerseCount >= 10,
         2 => profile.sharedVerseCount >= 50,
         _ => false,
@@ -526,7 +526,7 @@ class PilgrimMedals {
 
   static bool _memoryLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.memoryMasteredCount >= 1,
+        0 => profile.memoryMasteredCount >= 3,
         1 => profile.memoryMasteredCount >= 15,
         2 => profile.memoryMasteredCount >= 50,
         _ => false,

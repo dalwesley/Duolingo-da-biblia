@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../data/season_walk_catalog.dart';
 import '../firebase_options.dart';
 import '../l10n/l10n_global.dart';
+import '../models/pilgrim_medal_catalog.dart';
 import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/trail_gift.dart';
@@ -93,6 +94,23 @@ class SeasonWalkPulse {
     required this.walkers,
     required this.walkedToday,
     required this.daysTogether,
+  });
+}
+
+/// Peregrino que entrou na Caminhada (`seasonWalks/{id}/walkers/{uid}`).
+class SeasonWalker {
+  final String uid;
+  final String name;
+  final PortraitStyle portraitStyle;
+
+  /// Doc de origem — passe em `after` para buscar a página seguinte.
+  final Object? cursor;
+
+  const SeasonWalker({
+    required this.uid,
+    required this.name,
+    required this.portraitStyle,
+    this.cursor,
   });
 }
 
@@ -1113,9 +1131,13 @@ class BackendService extends ChangeNotifier {
     );
     // Caminhada coletiva: um doc por peregrino que entrou, para a Caravana
     // contar quem está junto e quem caminhou hoje.
-    final walk = SeasonWalkCatalog.current();
-    if (progress.hasJoinedWalk(walk.id) &&
-        !DateTime.now().isAfter(walk.end.add(const Duration(days: 1)))) {
+    // A que acabou há pouco ainda sobe dia atrasado (a Home já conta até a
+    // próxima).
+    for (final walk in [
+      SeasonWalkCatalog.current(),
+      ?SeasonWalkCatalog.justEnded(),
+    ]) {
+      if (!progress.hasJoinedWalk(walk.id)) continue;
       final dates = [...progress.walkDatesFor(walk.id)]..sort();
       await _putRankingDoc('seasonWalks/${walk.id}/walkers/$_uid', {
         'uid': _uid,
@@ -2192,6 +2214,39 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Quem entrou na Caminhada, mais recentes primeiro. Vazio sem rede.
+  Future<List<SeasonWalker>> fetchSeasonWalkers(
+    String campaignId, {
+    int limit = 60,
+    Object? after,
+  }) async {
+    if (!isActive) return const [];
+    try {
+      var query = _db
+          .collection('seasonWalks/$campaignId/walkers')
+          .orderBy('updatedAt', descending: true);
+      if (after is DocumentSnapshot) query = query.startAfterDocument(after);
+      final snap = await query
+          .limit(limit)
+          .get()
+          .timeout(const Duration(seconds: 10));
+      return [
+        for (final d in snap.docs)
+          SeasonWalker(
+            uid: d.id,
+            name: (d.data()['name'] as String?)?.trim() ?? '',
+            portraitStyle: PortraitStyleX.fromStorage(
+              d.data()['portraitStyle'] as String?,
+            ),
+            cursor: d,
+          ),
+      ];
+    } catch (e) {
+      debugPrint('Peregrinos da Caminhada falharam: $e');
+      return const [];
+    }
+  }
+
   /// Ranking geral do mês (`monthlyLeagues/{mês}`) — zera todo dia 1, então
   /// quem chegou agora também disputa. Exclui o próprio usuário.
   Future<List<CloudPlayer>> fetchMonthlyPlayers({int limit = 50}) async {
@@ -2678,7 +2733,12 @@ class BackendService extends ChangeNotifier {
     final kind = RecognitionKind.parse(data['kind'] as String?);
     final fromUid = (data['fromUid'] as String?)?.trim() ?? '';
     final toUid = (data['toUid'] as String?)?.trim() ?? '';
-    final subjectKey = (data['subjectKey'] as String?)?.trim() ?? '';
+    final rawSubject = (data['subjectKey'] as String?)?.trim() ?? '';
+    // Medalha de degrau aposentado (ex.: faísca de 3 dias, v3.2) conta no
+    // degrau que a substituiu.
+    final subjectKey = kind == RecognitionKind.medal
+        ? PilgrimMedalCatalog.retiredToCurrent[rawSubject] ?? rawSubject
+        : rawSubject;
     if (kind == null || fromUid.isEmpty || toUid.isEmpty) return null;
     if (!Recognition.validSubject(kind, subjectKey)) return null;
     DateTime? createdAt;

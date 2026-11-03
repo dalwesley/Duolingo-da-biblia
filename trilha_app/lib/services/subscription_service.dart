@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../l10n/l10n_global.dart';
+import '../utils/home_support.dart';
 import '../utils/plus_access.dart';
 import 'analytics_service.dart';
 import 'notification_service.dart';
@@ -912,7 +913,15 @@ class SubscriptionService extends ChangeNotifier {
   /// Compra de apoio avulsa. `true` se concluiu.
   Future<bool> purchaseSupport(Package package) async {
     lastError = null;
-    if (_debugFakeStore) return _debugFakePurchase(() => isSupporter = true);
+    if (_debugFakeStore) {
+      final ok = await _debugFakePurchase(() => isSupporter = true);
+      if (ok) {
+        // Depois do notify do fake: grava data e avisa de novo a faixa.
+        await HomeSupport.markSupported();
+        notifyListeners();
+      }
+      return ok;
+    }
     if (!await _storeOnWantedAccount()) {
       lastError = L10n.current.paywallPurchaseFailed;
       notifyListeners();
@@ -930,6 +939,8 @@ class SubscriptionService extends ChangeNotifier {
     track('start');
     try {
       final result = await Purchases.purchase(PurchaseParams.package(package));
+      // Prefs antes do notify do finally — senão a faixa "again" lê data velha.
+      await HomeSupport.markSupported();
       _onCustomerInfo(result.customerInfo);
       track('success');
       PlusLog.log('apoio', '$productId concluído');

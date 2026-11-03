@@ -60,14 +60,25 @@ class ComingSoonTrailsCard extends StatelessWidget {
 }
 
 /// Faixa sólida de doação — distinta do slot tracejado de lançamentos.
+/// [title]/[body]/[cta] opcionais: a Home usa copy própria (pedido e retorno).
 class DonateCard extends StatelessWidget {
   final VoidCallback onDonate;
+  final String? title;
+  final String? body;
+  final String? cta;
 
-  const DonateCard({super.key, required this.onDonate});
+  const DonateCard({
+    super.key,
+    required this.onDonate,
+    this.title,
+    this.body,
+    this.cta,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     // Doar não é recompensa nem a ação da tela: card neutro; o amarelo fica
     // só no botão.
     return GlassCard(
@@ -87,12 +98,12 @@ class DonateCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      context.l10n.trailsDonateTitle,
+                      title ?? l10n.trailsDonateTitle,
                       style: AppTypography.title(size: 16, color: a.text),
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      context.l10n.trailsDonateBody,
+                      body ?? l10n.trailsDonateBody,
                       style: AppTypography.body(
                         size: 13,
                         height: 1.35,
@@ -106,7 +117,7 @@ class DonateCard extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           CopperCta(
-            label: context.l10n.trailsDonateCta,
+            label: cta ?? l10n.trailsDonateCta,
             leading: CinematicGlyph.gift,
             trailing: null,
             dense: true,

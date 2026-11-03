@@ -112,12 +112,12 @@ void main() {
         subjectKey: 'track:path:streak_14',
       );
       const otherMedal = Recognition(
-        id: 'lia_pedro_medal_track:path:streak_3',
+        id: 'lia_pedro_medal_track:path:streak_7',
         fromUid: 'lia',
         fromName: 'Lia',
         toUid: 'pedro',
         kind: RecognitionKind.medal,
-        subjectKey: 'track:path:streak_3',
+        subjectKey: 'track:path:streak_7',
       );
       const walk = Recognition(
         id: 'ana_pedro_walk_2026-09-22',
@@ -140,7 +140,7 @@ void main() {
         countRecognitions(
           [medal, otherMedal],
           kind: RecognitionKind.medal,
-          subjectKeys: {'track:path:streak_14', 'track:path:streak_3'},
+          subjectKeys: {'track:path:streak_14', 'track:path:streak_7'},
         ),
         2,
       );
@@ -188,7 +188,7 @@ void main() {
       const profile = CaravanPilgrimProfile(name: 'Lia', steps: 40, streak: 14);
       final medals = recognizableMedals(profile: profile, catalog: const []);
       final ids = medals.map((medal) => medal.id).toList();
-      expect(ids, contains('track:path:streak_3'));
+      expect(ids, contains('track:path:streak_7'));
       expect(ids, contains('track:path:streak_14'));
       expect(ids, isNot(contains('track:path:streak_30')));
     });

@@ -64,8 +64,11 @@ class SeasonWalkCatalog {
     final day = now == null
         ? SeasonWalkDebug.today()
         : DateTime(now.year, now.month, now.day);
-    final adventStart = LiturgicalCalendar.adventStart(day.year);
-    return [advent(adventStart)];
+    // O do ano que vem entra para a Home contar até ele depois do Natal.
+    return [
+      advent(LiturgicalCalendar.adventStart(day.year)),
+      advent(LiturgicalCalendar.adventStart(day.year + 1)),
+    ];
   }
 
   /// Campanha visível: janela ativa, senão a próxima.
@@ -86,6 +89,26 @@ class SeasonWalkCatalog {
       }
     }
     return next ?? campaigns.last;
+  }
+
+  /// Dias depois do fim em que a temporada ainda credita cena atrasada e
+  /// sobe o peregrino — mesma graça das medalhas do Advento.
+  static const graceDays = 7;
+
+  /// Temporada que acabou há até [graceDays] dias ([current] já aponta a
+  /// próxima). Null fora dessa janela.
+  static SeasonWalkCampaign? justEnded([DateTime? now]) {
+    final day = now == null
+        ? SeasonWalkDebug.today()
+        : DateTime(now.year, now.month, now.day);
+    // Ano anterior também: um Advento que começa em dezembro pode acabar
+    // depois do Natal e a graça cruzar o Ano-Novo.
+    for (final year in [day.year - 1, day.year]) {
+      final c = advent(LiturgicalCalendar.adventStart(year));
+      final graceEnd = DateTime(c.end.year, c.end.month, c.end.day + graceDays);
+      if (day.isAfter(c.end) && !day.isAfter(graceEnd)) return c;
+    }
+    return null;
   }
 
   static SeasonWalkAccess access({

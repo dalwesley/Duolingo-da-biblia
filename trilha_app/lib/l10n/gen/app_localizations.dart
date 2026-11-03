@@ -4990,48 +4990,6 @@ abstract class AppLocalizations {
   /// **'Revisar erros'**
   String get homeReviewTitle;
 
-  /// No description provided for @homeSeasonChipDoneSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'{season}. Dia {day} feito: {dayTitle}'**
-  String homeSeasonChipDoneSemantics(String season, int day, String dayTitle);
-
-  /// No description provided for @homeSeasonChipOpenSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'{season}. Dia {day}: {dayTitle}'**
-  String homeSeasonChipOpenSemantics(String season, int day, String dayTitle);
-
-  /// No description provided for @homeSeasonChipSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'{season} · abrir leitura da estação'**
-  String homeSeasonChipSemantics(String season);
-
-  /// No description provided for @homeSeasonDayDone.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dia {day} feito · {title}'**
-  String homeSeasonDayDone(int day, String title);
-
-  /// No description provided for @homeSeasonDayLine.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dia {day} · {title}'**
-  String homeSeasonDayLine(int day, String title);
-
-  /// No description provided for @homeSeasonDayOf.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dia {day} de {total} · {title}'**
-  String homeSeasonDayOf(int day, int total, String title);
-
-  /// No description provided for @homeSeasonDayOfDone.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dia {day} de {total} feito · {title}'**
-  String homeSeasonDayOfDone(int day, int total, String title);
-
   /// No description provided for @homeSeeTrails.
   ///
   /// In pt, this message translates to:
@@ -5067,6 +5025,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}'**
   String homeStepsSemantics(int count);
+
+  /// No description provided for @homeSupportAgainBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu selo continua. Um novo apoio ajuda a manter o Stway grátis.'**
+  String get homeSupportAgainBody;
+
+  /// No description provided for @homeSupportAgainCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apoiar de novo'**
+  String get homeSupportAgainCta;
+
+  /// No description provided for @homeSupportAgainTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Volte a apoiar'**
+  String get homeSupportAgainTitle;
+
+  /// No description provided for @homeSupportBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu apoio mantém o Stway grátis para quem não pode pagar.'**
+  String get homeSupportBody;
+
+  /// No description provided for @homeSupportCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apoiar o Stway'**
+  String get homeSupportCta;
+
+  /// No description provided for @homeSupportTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajude a continuar'**
+  String get homeSupportTitle;
 
   /// No description provided for @homeTrailDoneBody.
   ///
@@ -5631,6 +5625,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.'**
   String get juntosCaravanMonthBody;
+
+  /// No description provided for @juntosCaravanMonthCloses.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fecha em'**
+  String get juntosCaravanMonthCloses;
 
   /// No description provided for @juntosCaravanMonthTitle.
   ///
@@ -7335,12 +7335,6 @@ abstract class AppLocalizations {
   /// **'Olho firme'**
   String get medalFormationPerfect10Title;
 
-  /// No description provided for @medalFormationPerfect1Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cena nítida'**
-  String get medalFormationPerfect1Title;
-
   /// No description provided for @medalFormationPerfect25Hint.
   ///
   /// In pt, this message translates to:
@@ -7352,6 +7346,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Tudo certo'**
   String get medalFormationPerfect25Title;
+
+  /// No description provided for @medalFormationPerfect3Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Passos nítidos'**
+  String get medalFormationPerfect3Title;
 
   /// No description provided for @medalFounderHint.
   ///
@@ -7539,11 +7539,11 @@ abstract class AppLocalizations {
   /// **'Palavra guardada'**
   String get medalMemoryVerse15Title;
 
-  /// No description provided for @medalMemoryVerse1Title.
+  /// No description provided for @medalMemoryVerse3Title.
   ///
   /// In pt, this message translates to:
-  /// **'Primeiro verso'**
-  String get medalMemoryVerse1Title;
+  /// **'Versos no coração'**
+  String get medalMemoryVerse3Title;
 
   /// No description provided for @medalMemoryVerse50Title.
   ///
@@ -7581,11 +7581,11 @@ abstract class AppLocalizations {
   /// **'Mês constante'**
   String get medalPathStreak30Title;
 
-  /// No description provided for @medalPathStreak3Title.
+  /// No description provided for @medalPathStreak7Title.
   ///
   /// In pt, this message translates to:
-  /// **'Três dias firmes'**
-  String get medalPathStreak3Title;
+  /// **'Semana firme'**
+  String get medalPathStreak7Title;
 
   /// No description provided for @medalPerfectBossHint.
   ///
@@ -7983,11 +7983,11 @@ abstract class AppLocalizations {
   /// **'Semeador'**
   String get medalWitnessShare10Title;
 
-  /// No description provided for @medalWitnessShare1Title.
+  /// No description provided for @medalWitnessShare3Title.
   ///
   /// In pt, this message translates to:
   /// **'Palavra levada'**
-  String get medalWitnessShare1Title;
+  String get medalWitnessShare3Title;
 
   /// No description provided for @medalWitnessShare50Title.
   ///
@@ -8001,17 +8001,17 @@ abstract class AppLocalizations {
   /// **'Leitor constante'**
   String get medalWordChapters100Title;
 
-  /// No description provided for @medalWordChapters1Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Primeira Palavra'**
-  String get medalWordChapters1Title;
-
   /// No description provided for @medalWordChapters25Title.
   ///
   /// In pt, this message translates to:
   /// **'Leitor atento'**
   String get medalWordChapters25Title;
+
+  /// No description provided for @medalWordChapters3Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Palavra aberta'**
+  String get medalWordChapters3Title;
 
   /// No description provided for @memoryCard.
   ///
@@ -16022,6 +16022,54 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Versículo indisponível nesta tradução.'**
   String get verseStudyVerseUnavailable;
+
+  /// No description provided for @walkCountdownDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'dias'**
+  String get walkCountdownDays;
+
+  /// No description provided for @walkCountdownHours.
+  ///
+  /// In pt, this message translates to:
+  /// **'horas'**
+  String get walkCountdownHours;
+
+  /// No description provided for @walkCountdownLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abre em'**
+  String get walkCountdownLabel;
+
+  /// No description provided for @walkCountdownMinutes.
+  ///
+  /// In pt, this message translates to:
+  /// **'min'**
+  String get walkCountdownMinutes;
+
+  /// No description provided for @walkCountdownSeconds.
+  ///
+  /// In pt, this message translates to:
+  /// **'seg'**
+  String get walkCountdownSeconds;
+
+  /// No description provided for @walkCrowdEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém entrou ainda.\nSeja o primeiro.'**
+  String get walkCrowdEmpty;
+
+  /// No description provided for @walkCrowdHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem vai caminhar junto'**
+  String get walkCrowdHeader;
+
+  /// No description provided for @walkCrowdListSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque em alguém para ver o perfil.'**
+  String get walkCrowdListSubtitle;
 
   /// No description provided for @walkTogetherDayOf.
   ///
