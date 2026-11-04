@@ -58,19 +58,21 @@ class DesafioEntry extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                SectionLabel(CornerCopy.kicker),
-                if (!settled) ...[
-                  const SizedBox(width: AppSpace.sm),
-                  SoftBadge(
-                    text: when,
-                    accent: days <= 1 ? AppRoles.risk : a.chrome,
-                  ),
+            CardHeader(
+              label: CornerCopy.kicker,
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (!settled) ...[
+                    SoftBadge(
+                      text: when,
+                      accent: days <= 1 ? AppRoles.risk : a.chrome,
+                    ),
+                    const SizedBox(width: AppSpace.sm),
+                  ],
+                  ListChevron(color: a.textFaint),
                 ],
-                const Spacer(),
-                ListChevron(color: a.textFaint),
-              ],
+              ),
             ),
             const SizedBox(height: AppSpace.lg),
             CornerPairRow(
@@ -162,6 +164,7 @@ class CornerBoard extends StatelessWidget {
             CornerHomeCard(
               challenge: board.open[i],
               onWalk: () => onOpenMission(board.open[i].missionSlug),
+              actionsBelow: true,
             ),
           ],
         if (board.closed.isNotEmpty) ...[

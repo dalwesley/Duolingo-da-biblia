@@ -3,8 +3,12 @@ import 'package:provider/provider.dart';
 
 import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
+import '../models/caravan_pilgrim_profile.dart';
+import '../models/pilgrim_medals.dart';
 import '../models/season_walk.dart';
+import '../models/trail.dart';
 import '../screens/season_walk_screen.dart';
+import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -22,9 +26,36 @@ import 'ui_primitives.dart';
 ///
 /// Mesmo espírito do fluxo de Trilhas: paisagem, título grande. Fica sempre
 /// na Home: antes do início, cadeado e contagem regressiva até a abertura;
-/// durante a temporada, o dia e o progresso.
+/// durante a temporada, o dia, o progresso e a próxima medalha da estação
+/// (o cofre sazonal mora aqui — sem linha própria em "Mais para hoje").
 class SeasonWalkFeatureCard extends StatefulWidget {
-  const SeasonWalkFeatureCard({super.key});
+  final List<Trail> trails;
+
+  const SeasonWalkFeatureCard({super.key, required this.trails});
+
+  /// Trilho do cofre da estação ativo — null fora da janela.
+  static PilgrimTrackState? seasonMedalTrack(
+    BuildContext context,
+    List<Trail> catalog, {
+    required ProgressService progress,
+  }) {
+    final uid = context.read<BackendService>().uid ?? '';
+    final profile = CaravanPilgrimProfile.fromProgress(
+      progress: progress,
+      uid: uid,
+    );
+    final vaults = PilgrimMedals.evaluateVaults(
+      profile: profile,
+      catalog: catalog,
+      ctx: PilgrimMedalEvalContext.fromProgress(progress),
+    );
+    for (final v in vaults) {
+      if (v.vault.kind == PilgrimVaultKind.season && v.tracks.isNotEmpty) {
+        return v.tracks.first;
+      }
+    }
+    return null;
+  }
 
   @override
   State<SeasonWalkFeatureCard> createState() => _SeasonWalkFeatureCardState();
@@ -72,12 +103,33 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
     final progress = running
         ? (doneDays / campaign.length).clamp(0.0, 1.0)
         : null;
+    // Medalhas da estação só contam com ela aberta.
+    final medal = running
+        ? SeasonWalkFeatureCard.seasonMedalTrack(
+            context,
+            widget.trails,
+            progress: context.watch<ProgressService>(),
+          )
+        : null;
+    final nextMedal = medal?.nextLevel;
+    final medalLine = medal == null
+        ? null
+        : medal.isComplete
+        ? medal.currentLevel?.title
+        : nextMedal == null
+        ? null
+        : l10n.medalVaultNextSemantics(nextMedal.title);
     final morning = a.look == AppearanceLook.morning;
     final ink = morning ? a : AppearanceStyle.resolve(AppearanceMode.night);
 
     return Semantics(
       button: true,
-      label: '${campaign.title}. $status. $pitch',
+      label: [
+        campaign.title,
+        status,
+        pitch,
+        ?medalLine,
+      ].join('. '),
       excludeSemantics: true,
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
@@ -240,6 +292,36 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
                                   height: 6,
                                   color: accent,
                                   trackColor: accent.withValues(alpha: 0.22),
+                                ),
+                              ],
+                              if (medalLine != null) ...[
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    CinematicIcon(
+                                      glyph: medal!.isComplete
+                                          ? CinematicGlyph.check
+                                          : nextMedal!.glyph,
+                                      size: 14,
+                                      accent: medal.isComplete
+                                          ? AppRoles.success
+                                          : accent,
+                                      framed: false,
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Expanded(
+                                      child: Text(
+                                        medalLine,
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTypography.body(
+                                          size: 12,
+                                          weight: FontWeight.w700,
+                                          color: ink.text,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ],

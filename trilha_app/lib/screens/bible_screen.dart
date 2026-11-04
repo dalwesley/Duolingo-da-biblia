@@ -844,22 +844,17 @@ class _ContinueHero extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: SectionLabel(
-                  fresh
-                      ? context.l10n.bibleHeroStartHere
-                      : context.l10n.bibleHeroContinueReading,
-                  color: a.sectionLabel,
-                ),
-              ),
-              if (!fresh && read > 0)
-                Text(
-                  context.l10n.bibleReadOf(read, total),
-                  style: AppTypography.body(size: 12, color: a.textFaint),
-                ),
-            ],
+          CardHeader(
+            label: fresh
+                ? context.l10n.bibleHeroStartHere
+                : context.l10n.bibleHeroContinueReading,
+            accent: tone,
+            trailing: !fresh && read > 0
+                ? Text(
+                    context.l10n.bibleReadOf(read, total),
+                    style: AppTypography.body(size: 12, color: a.textFaint),
+                  )
+                : null,
           ),
           const SizedBox(height: AppSpace.xs),
           Row(
@@ -1104,7 +1099,6 @@ class _PlansCatalogState extends State<_PlansCatalog> {
         children: [
           CardHeader(
             label: l10n.plansCatalogHeader,
-            glyph: CinematicGlyph.calendar,
             trailing: sub.showsPlus
                 ? SoftBadge(
                     text: l10n.paywallTitle,

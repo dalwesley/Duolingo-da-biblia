@@ -393,19 +393,13 @@ class _SetupPlanBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              CardHeader(
-                label: context.l10n.planSectionOrder,
-                glyph: CinematicGlyph.book,
-              ),
+              SectionLabel(context.l10n.planSectionOrder),
               const SizedBox(height: AppSpace.sm),
               _OrderToggle(value: order, onChanged: onOrder),
               const SizedBox(height: AppSpace.md),
               const ListDivider(),
               const SizedBox(height: AppSpace.md),
-              CardHeader(
-                label: context.l10n.planSectionTime,
-                glyph: CinematicGlyph.hourglass,
-              ),
+              SectionLabel(context.l10n.planSectionTime),
               const SizedBox(height: AppSpace.sm),
               Wrap(
                 spacing: 8,
@@ -715,10 +709,7 @@ class _ActivePlanBody extends StatelessWidget {
             children: [
               // No guiado o dia já vem pronto: sem ajuste de tempo.
               if (guided == null) ...[
-                CardHeader(
-                  label: l10n.planTimePerDay,
-                  glyph: CinematicGlyph.hourglass,
-                ),
+                SectionLabel(l10n.planTimePerDay),
                 const SizedBox(height: AppSpace.sm),
                 Wrap(
                   spacing: 8,
@@ -736,10 +727,7 @@ class _ActivePlanBody extends StatelessWidget {
                 const ListDivider(),
                 const SizedBox(height: AppSpace.md),
               ],
-              CardHeader(
-                label: l10n.planReminderHeader,
-                glyph: CinematicGlyph.bell,
-              ),
+              SectionLabel(l10n.planReminderHeader),
               const SizedBox(height: AppSpace.xs),
               Text(
                 l10n.planReminderBody,

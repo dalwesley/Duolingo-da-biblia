@@ -20,7 +20,7 @@ cobre o caso, estenda o componente (novo parâmetro), não copie o visual.
 | Herói de tela / celebração | display 28 (recompensa: 24) |
 | Título de sheet | `AppSheetHeader` (title 20; celebração display 28) |
 | Título de seção (grupo de cards no perfil) | `RelicChapter` (barra 3×18 + title 16) |
-| Título de card | `RelicChapter(divided: false)` — traço na cor do card + title 16; sem ícone |
+| Título de card | `CardHeader` — traço 3×18 na cor do card + title 16; `trailing` p/ badge/contagem/chevron; sem ícone (mesmo desenho de `RelicChapter(divided: false)`) |
 | Título de row de lista | title 14 · legenda body 12 |
 | Eyebrow / rótulo pequeno em maiúsculas | `SectionLabel` (label 11) — string em caixa normal |
 | Texto corrido | body 14 (denso: 13) |
@@ -90,8 +90,18 @@ Regras (gesto na cena):
   outro card; `onRetry` mostra "Tentar de novo"). Nunca texto vermelho solto.
 - Seleção sobre placa clara (respostas da cena): fill `AppRoles.action`
   (ouro do Verificar). Contorno `selectedOnLight` é legado.
-- Título de seção/card: `RelicChapter` (ou `SectionLabel` para eyebrow). Sem
-  marcas próprias por tela.
+- Título de seção/card: `RelicChapter` (seção) / `CardHeader` (card). Sem
+  marcas próprias por tela. Card que tem nome leva o traço — mesmo com
+  manchete display logo abaixo (Estudo da semana → "A prática do Pai Nosso",
+  como Cofre → "Gênesis 1–11"). Herói com nome em display também leva o traço,
+  na altura da 1ª linha (card do grupo), e as linhas abaixo alinham ao texto
+  (recuo 13). Ficam SEM traço:
+  - rótulos de sub-bloco dentro de um card (vários por card, ou abaixo de
+    divisor no herói, ex.: Semana do grupo) — `SectionLabel`;
+  - card guiado por visual à esquerda (ícone de entrada, disco, Anan, anel,
+    avatar): o visual já marca o card, eyebrow fica ao lado;
+  - celebração/banner/CTA.
+  Eyebrow nunca é o título único de um card.
 - Barra de progresso: `AppProgressBar` (6 compacto / 16 padrão). `RelicProgress`
   só como filete decorativo, nunca para o mesmo dado que outra tela mostra em barra.
 

@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
@@ -233,86 +235,130 @@ class _CopperCtaState extends State<CopperCta> {
             borderRadius: BorderRadius.circular(AppRadii.md),
             boxShadow: glow,
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: w.expanded ? MainAxisSize.max : MainAxisSize.min,
-            children: [
-              if (w.busy) ...[
-                const SizedBox(
-                  width: 18,
-                  height: 18,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                    color: AppColors.inkOnAccent,
+          child: w.expanded && w.subtitle == null && w.leadingMark == null
+              ? CtaEdgeRow(
+                  lead: w.busy
+                      ? const SizedBox(
+                          width: 18,
+                          height: 18,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: AppColors.inkOnAccent,
+                          ),
+                        )
+                      : (w.leading == null
+                            ? null
+                            : CinematicIcon(
+                                glyph: w.leading!,
+                                size: w.dense ? 16 : 18,
+                                accent: ink,
+                                framed: false,
+                              )),
+                  leadWidth: w.busy ? 18 : (w.dense ? 16 : 18),
+                  trail: w.busy
+                      ? null
+                      : (w.showArrow || w.trailing != null
+                            ? CinematicIcon(
+                                glyph: w.showArrow
+                                    ? CinematicGlyph.forward
+                                    : w.trailing!,
+                                size: w.showArrow ? 18 : 16,
+                                accent: ink,
+                                framed: false,
+                              )
+                            : null),
+                  trailWidth: w.showArrow ? 18 : 16,
+                  label: Text(
+                    w.label,
+                    textAlign: TextAlign.center,
+                    style: CopperCta.labelStyle(size: fontSize, color: ink),
                   ),
-                ),
-                const SizedBox(width: 10),
-              ] else if (w.leadingMark != null) ...[
-                w.leadingMark!,
-                const SizedBox(width: 10),
-              ] else if (w.leading != null) ...[
-                CinematicIcon(
-                  glyph: w.leading!,
-                  size: w.subtitle != null ? 20 : (w.dense ? 16 : 18),
-                  accent: ink,
-                  framed: false,
-                ),
-                const SizedBox(width: 8),
-              ],
-              Flexible(
-                fit: w.subtitle == null ? FlexFit.tight : FlexFit.loose,
-                child: w.subtitle == null
-                    ? Text(
-                        w.label,
-                        textAlign: TextAlign.center,
-                        style: CopperCta.labelStyle(size: fontSize, color: ink),
-                      )
-                    : Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            w.label,
-                            maxLines: 1,
-                            softWrap: false,
-                            overflow: TextOverflow.ellipsis,
-                            style: CopperCta.labelStyle(
-                              size: fontSize,
-                              color: ink,
-                            ),
-                          ),
-                          Text(
-                            w.subtitle!,
-                            maxLines: 1,
-                            softWrap: false,
-                            overflow: TextOverflow.ellipsis,
-                            style: CopperCta.labelStyle(
-                              size: fontSize,
-                              color: ink,
-                            ),
-                          ),
-                        ],
+                )
+              : Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: w.expanded
+                      ? MainAxisSize.max
+                      : MainAxisSize.min,
+                  children: [
+                    if (w.busy) ...[
+                      const SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: AppColors.inkOnAccent,
+                        ),
                       ),
-              ),
-              if (!w.busy && w.showArrow) ...[
-                const SizedBox(width: 8),
-                CinematicIcon(
-                  glyph: CinematicGlyph.forward,
-                  size: 18,
-                  accent: ink,
-                  framed: false,
+                      const SizedBox(width: 10),
+                    ] else if (w.leadingMark != null) ...[
+                      w.leadingMark!,
+                      const SizedBox(width: 10),
+                    ] else if (w.leading != null) ...[
+                      CinematicIcon(
+                        glyph: w.leading!,
+                        size: w.subtitle != null ? 20 : (w.dense ? 16 : 18),
+                        accent: ink,
+                        framed: false,
+                      ),
+                      const SizedBox(width: 8),
+                    ],
+                    Flexible(
+                      fit: w.subtitle == null ? FlexFit.tight : FlexFit.loose,
+                      child: w.subtitle == null
+                          ? Text(
+                              w.label,
+                              textAlign: TextAlign.center,
+                              style: CopperCta.labelStyle(
+                                size: fontSize,
+                                color: ink,
+                              ),
+                            )
+                          : Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  w.label,
+                                  maxLines: 1,
+                                  softWrap: false,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: CopperCta.labelStyle(
+                                    size: fontSize,
+                                    color: ink,
+                                  ),
+                                ),
+                                Text(
+                                  w.subtitle!,
+                                  maxLines: 1,
+                                  softWrap: false,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: CopperCta.labelStyle(
+                                    size: fontSize,
+                                    color: ink,
+                                  ),
+                                ),
+                              ],
+                            ),
+                    ),
+                    if (!w.busy && w.showArrow) ...[
+                      const SizedBox(width: 8),
+                      CinematicIcon(
+                        glyph: CinematicGlyph.forward,
+                        size: 18,
+                        accent: ink,
+                        framed: false,
+                      ),
+                    ] else if (!w.busy && w.trailing != null) ...[
+                      const SizedBox(width: 8),
+                      CinematicIcon(
+                        glyph: w.trailing!,
+                        size: 16,
+                        accent: ink,
+                        framed: false,
+                      ),
+                    ],
+                  ],
                 ),
-              ] else if (!w.busy && w.trailing != null) ...[
-                const SizedBox(width: 8),
-                CinematicIcon(
-                  glyph: w.trailing!,
-                  size: 16,
-                  accent: ink,
-                  framed: false,
-                ),
-              ],
-            ],
-          ),
         ),
       ),
     );
@@ -332,6 +378,57 @@ class _CopperCtaState extends State<CopperCta> {
         onTapCancel: enabled ? () => _press(false) : null,
         child: child,
       ),
+    );
+  }
+}
+
+/// Miolo dos botões largos: ícone colado na borda esquerda, seta (se houver)
+/// na direita e o rótulo centrado no botão inteiro — as duas pontas reservam
+/// a mesma largura, então o texto não desliza quando só há ícone de um lado.
+class CtaEdgeRow extends StatelessWidget {
+  final Widget? lead;
+  final double leadWidth;
+  final Widget? trail;
+  final double trailWidth;
+  final Widget label;
+
+  static const _gap = 8.0;
+
+  const CtaEdgeRow({
+    super.key,
+    this.lead,
+    this.leadWidth = 0,
+    this.trail,
+    this.trailWidth = 0,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (lead == null && trail == null) {
+      return Row(children: [Expanded(child: label)]);
+    }
+    final slot =
+        math.max(
+          lead == null ? 0.0 : leadWidth,
+          trail == null ? 0.0 : trailWidth,
+        ) +
+        _gap;
+    return Row(
+      children: [
+        SizedBox(
+          width: slot,
+          child: Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: lead,
+          ),
+        ),
+        Expanded(child: label),
+        SizedBox(
+          width: slot,
+          child: Align(alignment: AlignmentDirectional.centerEnd, child: trail),
+        ),
+      ],
     );
   }
 }
@@ -387,6 +484,14 @@ class OutlineCta extends StatelessWidget {
         ? ink
         : (color != null ? ink.withValues(alpha: 0.75) : a.textFaint);
 
+    final labelText = Text(
+      uppercase ? label.toUpperCase() : label,
+      textAlign: TextAlign.center,
+      style: uppercase
+          ? AppTypography.cta(size: 13, color: textColor)
+          : CopperCta.labelStyle(size: 15, color: textColor),
+    );
+
     final child = AnimatedOpacity(
       duration: AppMotion.quick,
       opacity: enabled || color != null ? 1 : 0.7,
@@ -400,28 +505,34 @@ class OutlineCta extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: border),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
-          children: [
-            if (leading != null) ...[
-              CinematicIcon(
-                glyph: leading!,
-                size: 18,
-                accent: textColor,
-                framed: false,
+        child: expanded
+            ? CtaEdgeRow(
+                lead: leading == null
+                    ? null
+                    : CinematicIcon(
+                        glyph: leading!,
+                        size: 18,
+                        accent: textColor,
+                        framed: false,
+                      ),
+                leadWidth: 18,
+                label: labelText,
+              )
+            : Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (leading != null) ...[
+                    CinematicIcon(
+                      glyph: leading!,
+                      size: 18,
+                      accent: textColor,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 8),
+                  ],
+                  labelText,
+                ],
               ),
-              const SizedBox(width: 8),
-            ],
-            Text(
-              uppercase ? label.toUpperCase() : label,
-              textAlign: TextAlign.center,
-              style: uppercase
-                  ? AppTypography.cta(size: 13, color: textColor)
-                  : CopperCta.labelStyle(size: 15, color: textColor),
-            ),
-          ],
-        ),
       ),
     );
 
@@ -481,7 +592,13 @@ class GhostCta extends StatelessWidget {
     final ink = foreground ?? (danger ? AppColors.error : a.text);
     final border =
         borderColor ??
-        (danger ? AppColors.error.withValues(alpha: 0.45) : a.cardBorder);
+        (danger ? AppColors.error.withValues(alpha: 0.6) : a.cardBorder);
+    // Placa sólida: vermelho misturado à cor do card, nunca vidro — sobre a
+    // pintura de fundo o botão some se o fundo for translúcido.
+    final dangerFill = Color.alphaBlend(
+      AppColors.error.withValues(alpha: a.onDark ? 0.16 : 0.08),
+      a.cardFill,
+    );
 
     return Material(
       color: Colors.transparent,
@@ -507,36 +624,28 @@ class GhostCta extends StatelessWidget {
           decoration: BoxDecoration(
             color:
                 fill ??
-                (danger
-                    ? AppColors.error.withValues(alpha: 0.08)
-                    : a.cardFillSoft),
+                (danger ? dangerFill : a.cardFillSoft),
             borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(color: border),
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              if (leading != null) ...[
-                CinematicIcon(
-                  glyph: leading!,
-                  size: 16,
-                  accent: ink,
-                  framed: false,
-                ),
-                const SizedBox(width: 8),
-              ],
-              Flexible(
-                child: Text(
-                  label,
-                  textAlign: TextAlign.center,
-                  style: CopperCta.labelStyle(
-                    size: matchCopper ? 16 : 14,
-                    color: ink,
+          child: CtaEdgeRow(
+            lead: leading == null
+                ? null
+                : CinematicIcon(
+                    glyph: leading!,
+                    size: 16,
+                    accent: ink,
+                    framed: false,
                   ),
-                ),
+            leadWidth: 16,
+            label: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: CopperCta.labelStyle(
+                size: matchCopper ? 16 : 14,
+                color: ink,
               ),
-            ],
+            ),
           ),
         ),
       ),
@@ -848,40 +957,57 @@ class SoftBadge extends StatelessWidget {
   }
 }
 
-/// Cabeçalho de card: label à esquerda + badge à direita.
+/// Título de card — o ÚNICO jeito de nomear um card: traço vertical na cor
+/// do card + title 16, [trailing] à direita (badge, contagem, chevron).
+/// Mesmo desenho de `RelicChapter(divided: false)`; sem ícone.
+///
+/// Não é para: eyebrow sobre manchete (use [SectionLabel] + display), rótulo
+/// de sub-bloco num card de ajustes ([SectionLabel]) nem card de entrada com
+/// ícone à esquerda (o ícone já marca o card).
 class CardHeader extends StatelessWidget {
   final String label;
   final Widget? trailing;
-  final CinematicGlyph? glyph;
+
+  /// Cor do traço. Padrão: chrome. Passe o tom do card quando ele tem um.
   final Color? accent;
 
   const CardHeader({
     super.key,
     required this.label,
     this.trailing,
-    this.glyph,
     this.accent,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final mark = accent ?? a.sectionLabel;
-    return Row(
-      children: [
-        if (glyph != null) ...[
-          CinematicIcon(
-            glyph: glyph!,
-            size: 16,
-            accent: mark,
-            framed: false,
-            glowing: false,
+    return Semantics(
+      header: true,
+      child: Row(
+        children: [
+          Container(
+            width: 3,
+            height: 18,
+            decoration: BoxDecoration(
+              color: accent ?? a.chrome,
+              borderRadius: BorderRadius.circular(AppRadii.hair),
+            ),
           ),
-          const SizedBox(width: 8),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.title(size: 16, color: a.text),
+            ),
+          ),
+          if (trailing != null) ...[
+            const SizedBox(width: AppSpace.sm),
+            trailing!,
+          ],
         ],
-        Expanded(child: SectionLabel(label, color: accent)),
-        ?trailing,
-      ],
+      ),
     );
   }
 }

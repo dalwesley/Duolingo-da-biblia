@@ -447,6 +447,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       unawaited(_syncCompanionAndCelebrateReferral(progress));
       unawaited(context.read<CornerService>().refresh());
       rooms.ensureInviteListener();
+      context.read<CompanionService>().ensureInviteListener();
 
       await backend.settleAndSyncLeague(
         progress,
@@ -581,7 +582,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       photoUrl: photoUrl,
       onProfileTap: index == 0 ? _openProfile : null,
       showLeading: true,
-      chromeAccent: appearance.chrome,
+      // Marca da aba = mesmo tom da aba ativa no nav (MainBottomNav).
+      chromeAccent: switch (index) {
+        0 => appearance.ink(AppRoles.navToday),
+        1 => appearance.ink(AppRoles.navTrails),
+        2 => appearance.ink(AppRoles.navBible),
+        3 => appearance.ink(AppRoles.navTogether),
+        _ => appearance.ink(AppRoles.navSettings),
+      },
       leadingGlyph: switch (index) {
         0 => CinematicGlyph.home,
         1 => CinematicGlyph.path,

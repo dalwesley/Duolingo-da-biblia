@@ -469,6 +469,27 @@
     "en": "Not yet",
     "es": "Aún no"
   },
+  "groupSeatViewProfile": {
+    "pt": "Ver perfil",
+    "en": "View profile",
+    "es": "Ver perfil"
+  },
+  "groupSeatMakeLeader": {
+    "pt": "Passar a liderança para {name}",
+    "en": "Hand leadership to {name}",
+    "es": "Pasar el liderazgo a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "groupSeatMakeLeaderBody": {
+    "pt": "{name} passa a marcar o estudo, a meta e acenar para o grupo. Você continua na lista.",
+    "en": "{name} will set the study and goal and wave to the group. You stay on the list.",
+    "es": "{name} marcará el estudio y la meta y saludará al grupo. Tú sigues en la lista.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
   "groupSeatAlreadyWaved": {
     "pt": "Você já acenou para {name} hoje.",
     "en": "You already waved to {name} today.",
@@ -514,6 +535,21 @@
     "pt": "Todos do grupo recebem a mesma cena, mesmo quem ainda não chegou nela.",
     "en": "Everyone in the group gets the same scene, even those who haven't reached it yet.",
     "es": "Todos en el grupo reciben la misma escena, incluso quien aún no llegó a ella."
+  },
+  "groupPickerSearchHint": {
+    "pt": "Buscar trilha ou livro",
+    "en": "Search a trail or book",
+    "es": "Buscar ruta o libro"
+  },
+  "groupPickerSearchEmpty": {
+    "pt": "Nenhuma trilha com esse nome.",
+    "en": "No trail with that name.",
+    "es": "Ninguna ruta con ese nombre."
+  },
+  "groupPickerTabMine": {
+    "pt": "Suas trilhas",
+    "en": "Your trails",
+    "es": "Tus rutas"
   },
   "groupPickerPreviewLabel": {
     "pt": "O grupo vai ver",
@@ -621,9 +657,9 @@
     "es": "Invitar personas"
   },
   "groupCallSubtitle": {
-    "pt": "O convite aparece no app. Ou mande o link no WhatsApp.",
-    "en": "The invite shows up in the app. Or send the link on WhatsApp.",
-    "es": "La invitación aparece en la app. O envía el enlace por WhatsApp."
+    "pt": "O convite aparece no app. Ou compartilhe o QR code e o código.",
+    "en": "The invite shows up in the app. Or share the QR code and the code.",
+    "es": "La invitación aparece en la app. O comparte el código QR y el código."
   },
   "groupCallEmpty": {
     "pt": "Ninguém da caravana para chamar agora.",
@@ -657,5 +693,57 @@
     "pt": "Chamar",
     "en": "Invite",
     "es": "Invitar"
+  },
+  "nudgeWriteOwn": {
+    "pt": "Escrever o meu",
+    "en": "Write my own",
+    "es": "Escribir el mío"
+  },
+  "nudgeWriteHint": {
+    "pt": "Escreva para {name}",
+    "en": "Write to {name}",
+    "es": "Escribe a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "groupMembersTitle": {
+    "pt": "Integrantes",
+    "en": "Members",
+    "es": "Integrantes"
+  },
+  "groupMemberDidStudy": {
+    "pt": "Fez o estudo da semana",
+    "en": "Did this week's study",
+    "es": "Hizo el estudio de la semana"
+  },
+  "juntosRoomWeekLabel": {
+    "pt": "Semana do grupo",
+    "en": "Group week",
+    "es": "Semana del grupo"
+  },
+  "juntosRoomStudiedCount": {
+    "pt": "{done} de {total} estudaram",
+    "en": "{done} of {total} studied",
+    "es": "{done} de {total} estudiaron",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "groupCallShareCta": {
+    "pt": "Compartilhar · QR code e código",
+    "en": "Share · QR code and code",
+    "es": "Compartir · código QR y código"
+  },
+  "groupMenuSwapStudy": {
+    "pt": "Trocar estudo da semana",
+    "en": "Change study of the week",
+    "es": "Cambiar estudio de la semana"
+  },
+  "groupMenuPickStudy": {
+    "pt": "Escolher estudo da semana",
+    "en": "Choose study of the week",
+    "es": "Elegir estudio de la semana"
   }
 }

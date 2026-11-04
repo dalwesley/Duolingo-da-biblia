@@ -1,19 +1,23 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import '../l10n/app_language.dart';
 import '../services/app_update_service.dart';
+import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'companion_formed_sheet.dart';
 import 'ui_primitives.dart';
 import 'stway_brand.dart';
 
@@ -36,6 +40,9 @@ Future<void> showInviteQrSheet(
   String? inviterName,
   bool companionMode = true,
 
+  /// Título do card (preview + imagem). Grupo usa o nome do grupo.
+  String? headline,
+
   /// O convite leva o passe de trilha do mês (quem chama tem o Plus).
   bool trailGift = false,
 }) {
@@ -48,6 +55,7 @@ Future<void> showInviteQrSheet(
       shareMessage: shareMessage,
       inviterName: inviterName,
       companionMode: companionMode,
+      headline: headline,
       trailGift: trailGift,
     ),
   );
@@ -60,6 +68,7 @@ class _InviteQrSheet extends StatefulWidget {
   final String? shareMessage;
   final String? inviterName;
   final bool companionMode;
+  final String? headline;
   final bool trailGift;
 
   const _InviteQrSheet({
@@ -69,6 +78,7 @@ class _InviteQrSheet extends StatefulWidget {
     this.shareMessage,
     this.inviterName,
     required this.companionMode,
+    this.headline,
     this.trailGift = false,
   });
 
@@ -79,6 +89,11 @@ class _InviteQrSheet extends StatefulWidget {
 class _InviteQrSheetState extends State<_InviteQrSheet> {
   final _boundaryKey = GlobalKey();
   bool _busy = false;
+
+  /// Companhia: confere de tempos em tempos se alguém já entrou — o app não
+  /// escuta a companhia ao vivo, e convite com gente dentro não se oferece.
+  Timer? _watch;
+  bool _closing = false;
 
   String get _name {
     final n = widget.inviterName?.trim() ?? '';
@@ -107,11 +122,53 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
   @override
   void initState() {
     super.initState();
+    if (widget.companionMode) {
+      _watch = Timer.periodic(
+        const Duration(seconds: 8),
+        (_) => _partnerJoined(),
+      );
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       precacheImage(const AssetImage('assets/icon/splash_bg.png'), context);
       precacheImage(const AssetImage('assets/icon/app_icon.png'), context);
     });
+  }
+
+  @override
+  void dispose() {
+    _watch?.cancel();
+    super.dispose();
+  }
+
+  /// `true` se alguém já entrou por este código: fecha a folha e celebra a
+  /// companhia formada no lugar do convite.
+  Future<bool> _partnerJoined() async {
+    if (!widget.companionMode || _closing) return false;
+    final service = context.read<CompanionService>();
+    await service.refresh();
+    if (!mounted || _closing) return _closing;
+    final live = service.companions
+        .where((c) => c.code == widget.code)
+        .firstOrNull;
+    if (live == null || live.awaitingPartner) return false;
+    _closing = true;
+    _watch?.cancel();
+    final navigator = Navigator.of(context);
+    final route = ModalRoute.of(context);
+    final host = navigator.overlay?.context;
+    // Fecha só esta folha. pop() tiraria a rota do topo — se a folha já
+    // estava saindo (toque fora, arrasto), era a tela de baixo que saía.
+    if (route == null || !route.isActive) return true;
+    if (route.isCurrent) {
+      navigator.pop();
+    } else {
+      navigator.removeRoute(route);
+    }
+    if (host != null && host.mounted) {
+      await showCompanionFormedSheet(host, partnerName: live.displayName);
+    }
+    return true;
   }
 
   Future<void> _copyCode() async {
@@ -128,26 +185,27 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
   Future<void> _shareInvite() async {
     if (_busy) return;
     setState(() => _busy = true);
+    // Antes de mandar o convite, confere se a vaga ainda está aberta.
+    if (await _partnerJoined()) return;
+    if (!mounted) return;
     final text = widget.shareMessage ?? _defaultShareText;
     final subject = context.l10n.inviteShareSubject;
     try {
       XFile? imageFile;
-      if (widget.companionMode) {
-        await Future<void>.delayed(const Duration(milliseconds: 40));
-        await WidgetsBinding.instance.endOfFrame;
-        final boundary =
-            _boundaryKey.currentContext?.findRenderObject()
-                as RenderRepaintBoundary?;
-        if (boundary != null) {
-          final image = await boundary.toImage(pixelRatio: 3);
-          final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
-          if (bytes != null) {
-            final file = File(
-              '${Directory.systemTemp.path}/stway_convite_${widget.code}.png',
-            );
-            await file.writeAsBytes(bytes.buffer.asUint8List());
-            imageFile = XFile(file.path, mimeType: 'image/png');
-          }
+      await Future<void>.delayed(const Duration(milliseconds: 40));
+      await WidgetsBinding.instance.endOfFrame;
+      final boundary =
+          _boundaryKey.currentContext?.findRenderObject()
+              as RenderRepaintBoundary?;
+      if (boundary != null) {
+        final image = await boundary.toImage(pixelRatio: 3);
+        final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
+        if (bytes != null) {
+          final file = File(
+            '${Directory.systemTemp.path}/stway_convite_${widget.code}.png',
+          );
+          await file.writeAsBytes(bytes.buffer.asUint8List());
+          imageFile = XFile(file.path, mimeType: 'image/png');
         }
       }
       await SharePlus.instance.share(
@@ -193,27 +251,27 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
       clipBehavior: Clip.none,
       children: [
         // Card rico só para o share (Opacity 0 ainda pinta → toImage funciona).
-        if (widget.companionMode)
-          Positioned(
-            left: 0,
-            top: 0,
-            child: IgnorePointer(
-              child: Opacity(
-                opacity: 0,
-                child: SizedBox(
-                  width: 360,
-                  child: RepaintBoundary(
-                    key: _boundaryKey,
-                    child: InviteShareCard(
-                      code: widget.code,
-                      inviterName: _name,
-                      installHint: true,
-                    ),
+        Positioned(
+          left: 0,
+          top: 0,
+          child: IgnorePointer(
+            child: Opacity(
+              opacity: 0,
+              child: SizedBox(
+                width: 360,
+                child: RepaintBoundary(
+                  key: _boundaryKey,
+                  child: InviteShareCard(
+                    code: widget.code,
+                    inviterName: _name,
+                    headline: widget.headline,
+                    installHint: true,
                   ),
                 ),
               ),
             ),
           ),
+        ),
         AppSheetPanel(
           padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
@@ -229,9 +287,7 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                 title: widget.title ?? context.l10n.inviteReadyTitle,
                 subtitle:
                     widget.subtitle ??
-                    (widget.companionMode
-                        ? context.l10n.inviteSheetSubtitleCompanion
-                        : context.l10n.inviteSheetSubtitleRoom),
+                    context.l10n.inviteSheetSubtitleCompanion,
                 center: true,
               ),
               if (widget.trailGift) ...[
@@ -289,22 +345,20 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                 ),
               ],
               const SizedBox(height: 14),
-              if (widget.companionMode)
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: _InvitePreviewTile(
-                        code: widget.code,
-                        inviterName: _name,
-                      ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: _InvitePreviewTile(
+                      code: widget.code,
+                      inviterName: _name,
+                      headline: widget.headline,
                     ),
-                    const SizedBox(width: 12),
-                    _qr(size: 108),
-                  ],
-                )
-              else
-                Center(child: _qr(size: 168)),
+                  ),
+                  const SizedBox(width: 12),
+                  _qr(size: 108),
+                ],
+              ),
               const SizedBox(height: 12),
               GestureDetector(
                 onTap: _copyCode,
@@ -354,8 +408,13 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
 class _InvitePreviewTile extends StatelessWidget {
   final String code;
   final String inviterName;
+  final String? headline;
 
-  const _InvitePreviewTile({required this.code, required this.inviterName});
+  const _InvitePreviewTile({
+    required this.code,
+    required this.inviterName,
+    this.headline,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -410,7 +469,9 @@ class _InvitePreviewTile extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    context.l10n.inviteCardHeadline,
+                    headline ?? context.l10n.inviteCardHeadline,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: AppTypography.display(size: 18, color: a.text),
                   ),
                   const SizedBox(height: 2),
@@ -518,6 +579,8 @@ class InviteShareCard extends StatelessWidget {
                     const SizedBox(height: 22),
                     Text(
                       headline ?? context.l10n.inviteCardHeadline,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
                       style: AppTypography.display(size: 28, color: a.text)
                           .copyWith(
                             shadows: [

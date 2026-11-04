@@ -1080,6 +1080,13 @@ class AppLocalizationsEs extends AppLocalizations {
       'Esperando que alguien entre con el código';
 
   @override
+  String get companionCallSubtitle =>
+      'Un solo lugar: llamar a otra persona deshace la invitación anterior.';
+
+  @override
+  String get companionCallTitle => 'Llamar a caminar juntos';
+
+  @override
   String companionDaysTogether(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -1131,6 +1138,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Código inválido o la compañía ya está completa.';
 
   @override
+  String get companionErrorLeave =>
+      'No se pudo salir de la compañía. Revisa tu conexión.';
+
+  @override
   String get companionErrorLoad =>
       'No se pudo actualizar tu compañía. Revisa la conexión.';
 
@@ -1151,6 +1162,22 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get companionFallbackName => 'Compañero';
+
+  @override
+  String companionInviteBody(String name) {
+    return '$name te invitó a caminar juntos';
+  }
+
+  @override
+  String companionInviteCalled(String name) {
+    return 'Llamaste a $name. Cuando acepte, empieza la compañía.';
+  }
+
+  @override
+  String get companionInviteGone => 'Esta invitación ya no está abierta.';
+
+  @override
+  String get companionInviteLabel => 'Invitación de compañía';
 
   @override
   String get companionNextStepTogether => '¿Damos el próximo paso juntos?';
@@ -1340,7 +1367,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String cornerBoardEmptyBody(int count) {
-    return 'En la caravana, abre a alguien en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +$count pasos.';
+    return 'Elige a alguien de la caravana en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +$count pasos.';
   }
 
   @override
@@ -1354,7 +1381,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Ningún desafío esta semana. Invita a alguien de la caravana.';
 
   @override
-  String get cornerBoardOpenCaravan => 'Ver la caravana';
+  String get cornerBoardPickCta => 'Elegir a quién desafiar';
 
   @override
   String get cornerBurstAccepted => 'Desafío aceptado';
@@ -1476,6 +1503,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get cornerOtherPersonLower => 'la otra persona';
+
+  @override
+  String get cornerPickCta => 'Desafiar';
+
+  @override
+  String get cornerPickEmpty => 'Nadie en la caravana aún.';
+
+  @override
+  String get cornerPickSubtitle =>
+      'Solo puedes desafiar a quien está en la misma escena que tú.';
+
+  @override
+  String get cornerPickTitle => '¿A quién vas a desafiar?';
 
   @override
   String cornerRecordArrived(int count) {
@@ -2610,8 +2650,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get groupCallShareCta => 'Compartir · código QR y código';
+
+  @override
   String get groupCallSubtitle =>
-      'La invitación aparece en la app. O envía el enlace por WhatsApp.';
+      'La invitación aparece en la app. O comparte el código QR y el código.';
 
   @override
   String get groupCallTitle => 'Invitar personas';
@@ -2700,6 +2743,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get groupMemberDidStudy => 'Hizo el estudio de la semana';
+
+  @override
+  String get groupMembersTitle => 'Integrantes';
+
+  @override
   String get groupMenuClearStudy => 'Quitar estudio de la semana';
 
   @override
@@ -2731,7 +2780,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupMenuLeave => 'Salir del grupo';
 
   @override
+  String get groupMenuPickStudy => 'Elegir estudio de la semana';
+
+  @override
   String get groupMenuSetGoal => 'Definir meta de la semana';
+
+  @override
+  String get groupMenuSwapStudy => 'Cambiar estudio de la semana';
 
   @override
   String get groupMenuTransfer => 'Pasar el liderazgo';
@@ -2763,6 +2818,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupPickerPreviewLabel => 'El grupo verá';
 
   @override
+  String get groupPickerSearchEmpty => 'Ninguna ruta con ese nombre.';
+
+  @override
+  String get groupPickerSearchHint => 'Buscar ruta o libro';
+
+  @override
+  String get groupPickerTabMine => 'Tus rutas';
+
+  @override
   String groupRosterSemantics(String name, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -2785,6 +2849,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupSeatIdle => 'aún no estudió esta semana';
 
   @override
+  String groupSeatMakeLeader(String name) {
+    return 'Pasar el liderazgo a $name';
+  }
+
+  @override
+  String groupSeatMakeLeaderBody(String name) {
+    return '$name marcará el estudio y la meta y saludará al grupo. Tú sigues en la lista.';
+  }
+
+  @override
   String get groupSeatNever => 'aún no estudió';
 
   @override
@@ -2798,6 +2872,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get groupSeatToday => 'estudió hoy';
+
+  @override
+  String get groupSeatViewProfile => 'Ver perfil';
 
   @override
   String get groupSeatWeek => 'estudió esta semana';
@@ -3039,8 +3116,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Faltan $count escenas para la meta',
-      one: 'Falta 1 escena para la meta',
+      other: 'Faltan $count escenas para la meta de hoy',
+      one: 'Falta 1 escena para la meta de hoy',
     );
     return '$_temp0';
   }
@@ -3526,6 +3603,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get juntosBondYourTurn => 'Tu turno';
 
   @override
+  String get juntosCallFromCaravan => 'Llamar a alguien de la Caravana';
+
+  @override
   String get juntosCancelInvite => 'Cancelar invitación';
 
   @override
@@ -3631,6 +3711,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String juntosCodeTapToCopy(String code) {
     return 'Código $code. Toca para copiar';
   }
+
+  @override
+  String get juntosCompanionEmptyBody =>
+      'Invita a alguien a caminar contigo. El día en que los dos estudian, el hilo se enciende y la racha crece.';
+
+  @override
+  String get juntosCompanionEmptyTitle => 'Ninguna compañía aún';
 
   @override
   String get juntosCompanionExplainerBody =>
@@ -3967,11 +4054,19 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String juntosRoomStudiedCount(int done, int total) {
+    return '$done de $total estudiaron';
+  }
+
+  @override
   String get juntosRoomStudySet => 'Estudio marcado para el grupo';
 
   @override
   String get juntosRoomStudySetError =>
       'No se pudo marcar el estudio. Inténtalo de nuevo.';
+
+  @override
+  String get juntosRoomWeekLabel => 'Semana del grupo';
 
   @override
   String get juntosRoomsEmptyBody =>
@@ -3999,7 +4094,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get juntosSeenToday => 'Visto hoy';
 
   @override
-  String get juntosShowQrShare => 'Mostrar QR y compartir';
+  String get juntosShowQrShare => 'Compartir';
 
   @override
   String get juntosSomeone => 'Alguien';
@@ -6226,6 +6321,14 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String nudgeWriteHint(String name) {
+    return 'Escribe a $name';
+  }
+
+  @override
+  String get nudgeWriteOwn => 'Escribir el mío';
+
+  @override
   String get offlineBody =>
       'La primera vez que lo abres, Stway descarga el currículo de la nube. Necesita internet una vez — después queda en tu dispositivo.';
 
@@ -7715,8 +7818,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       left,
       locale: localeName,
-      other: 'Faltan $left para el compromiso de $goal días.',
-      one: 'Falta 1 para el compromiso de $goal días.',
+      other: 'Faltan $left días para cumplir el compromiso de $goal días.',
+      one: 'Falta 1 día para cumplir el compromiso de $goal días.',
     );
     return '$_temp0';
   }
@@ -7756,31 +7859,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileTodayLower => 'hoy';
 
   @override
-  String get profileWdFri => 'V';
-
-  @override
-  String get profileWdMon => 'L';
-
-  @override
-  String get profileWdSat => 'S';
-
-  @override
-  String get profileWdSun => 'D';
-
-  @override
-  String get profileWdThu => 'J';
-
-  @override
-  String get profileWdTue => 'M';
-
-  @override
-  String get profileWdWed => 'X';
-
-  @override
   String get profileWeekHistory => 'Historial de semanas';
-
-  @override
-  String get profileWeekTitle => 'Esta semana';
 
   @override
   String profileWeeksWalkedSemantics(int walked, int weeks) {
@@ -8712,39 +8791,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sealsTitle => 'Sellos';
-
-  @override
-  String get seasonChallengeDoneBody =>
-      'Desafío de la temporada concluido. Bien caminado.';
-
-  @override
-  String get seasonChallengeEmptyBody =>
-      'El próximo llega con la nueva temporada litúrgica.';
-
-  @override
-  String get seasonChallengeEmptyTitle => 'Ningún desafío de temporada ahora';
-
-  @override
-  String get seasonChallengeInProgress => 'Desafío de la temporada en curso';
-
-  @override
-  String get seasonChallengeInvite => 'Invitar al desafío';
-
-  @override
-  String seasonChallengePathPercent(int percent) {
-    return '$percent% del camino';
-  }
-
-  @override
-  String get seasonChallengeSeeProgress => 'Ver progreso';
-
-  @override
-  String seasonChallengeShareBody(String title, String footer) {
-    return '🕯️ Entré al desafío $title en Stway.\n\n¿Caminamos juntos en esta temporada?\n\n$footer';
-  }
-
-  @override
-  String get seasonChallengeTitle => 'Desafío de la temporada';
 
   @override
   String seasonDayLine(int day, String title) {

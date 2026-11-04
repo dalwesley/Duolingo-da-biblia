@@ -11,11 +11,13 @@ import '../data/mission_study.dart';
 import '../services/bible_service.dart';
 import '../services/league_service.dart';
 import '../services/moderation_service.dart';
+import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/content_filter.dart';
+import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -43,6 +45,10 @@ class RoomStudyCard extends StatelessWidget {
   final VoidCallback onPick;
   final VoidCallback onOpen;
 
+  /// Topo do card (nome do grupo + menu). Com ele, o card vira o herói do
+  /// grupo e "Trocar" sai daqui — mora no menu do topo.
+  final Widget? header;
+
   const RoomStudyCard({
     super.key,
     required this.room,
@@ -51,13 +57,29 @@ class RoomStudyCard extends StatelessWidget {
     required this.isLeader,
     required this.onPick,
     required this.onOpen,
+    this.header,
   });
+
+  /// Com [header]: topo curto e à direita (o botão de opções de 48 já traz o
+  /// respiro); o corpo recupera o recuo direito.
+  static EdgeInsets cardPaddingFor(Widget? header) => header == null
+      ? AppMetrics.cardPadding
+      : AppMetrics.cardPadding.copyWith(top: AppSpace.sm, right: 6);
+
+  static Widget bodyFor(Widget? header, Widget body) => header == null
+      ? body
+      : Padding(padding: const EdgeInsets.only(right: 12), child: body);
 
   @override
   Widget build(BuildContext context) {
     final s = study;
     if (s == null) {
-      return _EmptyStage(room: room, isLeader: isLeader, onPick: onPick);
+      return _EmptyStage(
+        room: room,
+        isLeader: isLeader,
+        onPick: onPick,
+        header: header,
+      );
     }
 
     final a = Appearance.of(context);
@@ -67,109 +89,106 @@ class RoomStudyCard extends StatelessWidget {
         if (m.didStudy(s)) m,
     ];
     final meDone = doneList.any((m) => m.isUser);
-    final verse = s.verse?.trim();
 
     // Palco neutro enquanto falta estudar; teal (presença) quando fiz.
+    final head = header;
     return GlassCard(
       tint: meDone ? AppRoles.presence : a.chrome,
       glow: meDone ? 0.3 : 0.75,
       elevated: !meDone,
+      padding: cardPaddingFor(head),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              SectionLabel(context.l10n.groupWeekStudy),
-              const Spacer(),
-              if (isLeader)
-                TextCta(
-                  label: context.l10n.groupStudySwap,
-                  leading: CinematicGlyph.pencil,
-                  onTap: onPick,
-                ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                s.title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.display(
-                  size: 24,
-                  height: 1.08,
-                  color: a.text,
-                ),
-              ),
-              if (verse != null && verse.isNotEmpty) ...[
-                const SizedBox(height: AppSpace.md),
-                _VerseStage(text: verse, reference: s.verseRef),
-              ] else if (s.verseRef != null && s.verseRef!.isNotEmpty) ...[
-                const SizedBox(height: 4),
-                Text(
-                  s.verseRef!,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w700,
-                    color: a.textSecondary,
-                  ),
-                ),
-              ],
-              if (s.note != null && s.note!.isNotEmpty) ...[
-                const SizedBox(height: AppSpace.md),
-                _LeaderNote(
-                  title: context.l10n.groupLeaderNoteTitle(
-                    room.kind.leaderTitle,
-                    _firstName(room.ownerName),
-                  ),
-                  note: s.note!,
-                ),
-              ],
-              if (total > 0) ...[
-                const SizedBox(height: AppSpace.lg),
-                Row(
-                  children: [
-                    _FaceRow(people: doneList),
-                    if (doneList.isNotEmpty) const SizedBox(width: AppSpace.sm),
-                    Expanded(
-                      child: Text(
-                        doneList.isEmpty
-                            ? context.l10n.groupStudyNobodyYet
-                            : context.l10n.groupStudyDoneCount(
-                                doneList.length,
-                                total,
-                              ),
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w700,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ),
-                  ],
+          if (head != null)
+            head
+          else
+            CardHeader(
+              label: context.l10n.groupWeekStudy,
+              accent: meDone ? AppRoles.presence : null,
+              trailing: isLeader
+                  ? TextCta(
+                      label: context.l10n.groupStudySwap,
+                      leading: CinematicGlyph.pencil,
+                      onTap: onPick,
+                    )
+                  : null,
+            ),
+          bodyFor(
+            head,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Enxuto: rótulo + referência numa linha, o tema, o recado em
+                // 2 linhas e quem já fez. O trecho completo abre no estudo.
+                if (head != null) const SizedBox(height: AppSpace.lg),
+                SectionLabel(
+                  [
+                    context.l10n.groupWeekStudy,
+                    if (s.verseRef != null && s.verseRef!.trim().isNotEmpty)
+                      s.verseRef!.trim(),
+                  ].join(' · '),
+                  maxLines: 1,
                 ),
                 const SizedBox(height: AppSpace.sm),
-                AppProgressBar(
-                  value: (doneList.length / total).clamp(0.0, 1.0),
-                  color: AppRoles.presence,
+                Text(
+                  s.title,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.display(
+                    size: 24,
+                    height: 1.08,
+                    color: a.text,
+                  ),
                 ),
+                if (s.note != null && s.note!.isNotEmpty) ...[
+                  const SizedBox(height: AppSpace.md),
+                  _LeaderNote(
+                    title: context.l10n.groupLeaderNoteTitle(
+                      room.kind.leaderTitle,
+                      _firstName(room.ownerName),
+                    ),
+                    note: s.note!,
+                  ),
+                ],
+                if (doneList.isNotEmpty) ...[
+                  const SizedBox(height: AppSpace.md),
+                  Row(
+                    children: [
+                      _FaceRow(people: doneList),
+                      const SizedBox(width: AppSpace.sm),
+                      Expanded(
+                        child: Text(
+                          context.l10n.groupStudyDoneCount(
+                            doneList.length,
+                            total,
+                          ),
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w700,
+                            color: AppRoles.presence,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+                const SizedBox(height: AppSpace.lg),
+                if (meDone)
+                  GhostCta(
+                    label: context.l10n.groupStudyAgain,
+                    leading: CinematicGlyph.check,
+                    expanded: true,
+                    onTap: onOpen,
+                  )
+                else
+                  CopperCta(
+                    label: context.l10n.groupStudyCta,
+                    onTap: onOpen,
+                    leading: CinematicGlyph.book,
+                  ),
               ],
-              const SizedBox(height: AppSpace.lg),
-              if (meDone)
-                GhostCta(
-                  label: context.l10n.groupStudyAgain,
-                  leading: CinematicGlyph.check,
-                  expanded: true,
-                  onTap: onOpen,
-                )
-              else
-                CopperCta(
-                  label: context.l10n.groupStudyCta,
-                  onTap: onOpen,
-                  leading: CinematicGlyph.book,
-                ),
-            ],
+            ),
           ),
         ],
       ),
@@ -182,45 +201,66 @@ class _EmptyStage extends StatelessWidget {
   final StudyRoom room;
   final bool isLeader;
   final VoidCallback onPick;
+  final Widget? header;
 
   const _EmptyStage({
     required this.room,
     required this.isLeader,
     required this.onPick,
+    this.header,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final head = header;
     return GlassCard(
       glow: isLeader ? 0.55 : null,
       tint: isLeader ? a.chrome : null,
+      padding: RoomStudyCard.cardPaddingFor(head),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SectionLabel(context.l10n.groupWeekStudy),
-          const SizedBox(height: AppSpace.md),
-          CustomPaint(
-            painter: _DashedFramePainter(color: a.textFaint),
-            child: EmptyState(
-              title: isLeader
-                  ? context.l10n.groupEmptyLeaderTitle
-                  : context.l10n.groupEmptyMemberTitle,
-              body: isLeader
-                  ? context.l10n.groupEmptyLeaderBody
-                  : context.l10n.groupEmptyMemberBody(room.kind.leaderTitle),
+          if (head != null)
+            head
+          else
+            CardHeader(label: context.l10n.groupWeekStudy),
+          RoomStudyCard.bodyFor(
+            head,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                if (head != null) ...[
+                  const SizedBox(height: AppSpace.lg),
+                  SectionLabel(context.l10n.groupWeekStudy),
+                ],
+                const SizedBox(height: AppSpace.md),
+                CustomPaint(
+                  painter: _DashedFramePainter(color: a.textFaint),
+                  child: EmptyState(
+                    title: isLeader
+                        ? context.l10n.groupEmptyLeaderTitle
+                        : context.l10n.groupEmptyMemberTitle,
+                    body: isLeader
+                        ? context.l10n.groupEmptyLeaderBody
+                        : context.l10n.groupEmptyMemberBody(
+                            room.kind.leaderTitle,
+                          ),
+                  ),
+                ),
+                if (isLeader) ...[
+                  const SizedBox(height: AppSpace.lg),
+                  CopperCta(
+                    label: context.l10n.groupPickStudyCta,
+                    onTap: onPick,
+                    leading: CinematicGlyph.book,
+                    trailing: null,
+                    dense: true,
+                  ),
+                ],
+              ],
             ),
           ),
-          if (isLeader) ...[
-            const SizedBox(height: AppSpace.lg),
-            CopperCta(
-              label: context.l10n.groupPickStudyCta,
-              onTap: onPick,
-              leading: CinematicGlyph.book,
-              trailing: null,
-              dense: true,
-            ),
-          ],
         ],
       ),
     );
@@ -231,7 +271,6 @@ class _EmptyStage extends StatelessWidget {
 class _VerseStage extends StatelessWidget {
   final String text;
   final String? reference;
-
   const _VerseStage({super.key, required this.text, this.reference});
 
   @override
@@ -281,48 +320,62 @@ class _VerseStage extends StatelessWidget {
   }
 }
 
-class _LeaderNote extends StatelessWidget {
+/// Recado de quem conduz: aspas + texto em 2 linhas, sem painel. Toque
+/// abre o recado inteiro. "Responsável Fulano" fica só no leitor de tela.
+class _LeaderNote extends StatefulWidget {
   final String title;
   final String note;
 
   const _LeaderNote({required this.title, required this.note});
 
   @override
+  State<_LeaderNote> createState() => _LeaderNoteState();
+}
+
+class _LeaderNoteState extends State<_LeaderNote> {
+  bool _open = false;
+
+  @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return InsetPanel(
-      padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 2),
-            child: CinematicIcon(
-              glyph: CinematicGlyph.mail,
-              size: AppMetrics.iconSm,
-              accent: a.chrome,
-              framed: false,
-            ),
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SectionLabel(title, size: 10),
-                const SizedBox(height: 3),
-                Text(
-                  note,
+    return Semantics(
+      label: '${widget.title}: ${widget.note}',
+      excludeSemantics: true,
+      button: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => setState(() => _open = !_open),
+        child: AnimatedSize(
+          duration: AppMotion.quick,
+          alignment: Alignment.topCenter,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.quote,
+                  size: AppMetrics.iconSm,
+                  accent: a.chrome,
+                  framed: false,
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  widget.note,
+                  maxLines: _open ? null : 2,
+                  overflow: _open ? null : TextOverflow.ellipsis,
                   style: AppTypography.body(
                     size: 14,
                     height: 1.4,
-                    color: a.text,
+                    color: a.textSecondary,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -396,9 +449,12 @@ class _DashedFramePainter extends CustomPainter {
 
 // ───────────────────────── Pessoa do grupo ─────────────────────────
 
-/// Toque numa pessoa do grupo: quem é, como está e (se for o caso) chamar.
-/// Devolve `true` quando a pessoa escolheu chamar.
-Future<bool?> showRoomSeatSheet(
+/// O que a pessoa escolheu na folha de alguém do grupo.
+enum RoomSeatAction { wave, profile, transfer, moderate }
+
+/// Toque numa pessoa do grupo: quem é, como está e o que dá para fazer
+/// (acenar, ver o perfil, passar a liderança, denunciar ou bloquear).
+Future<RoomSeatAction?> showRoomSeatSheet(
   BuildContext context, {
   required RoomMember member,
   required String status,
@@ -407,11 +463,15 @@ Future<bool?> showRoomSeatSheet(
   required RoomStudy? study,
   required bool canCall,
   required bool alreadyCalled,
+  bool canViewProfile = false,
+  bool canTransfer = false,
+  bool canModerate = false,
 }) {
-  return showAppSheet<bool>(
+  return showAppSheet<RoomSeatAction>(
     context,
     builder: (ctx) {
       final a = Appearance.of(ctx);
+      void pick(RoomSeatAction action) => Navigator.pop(ctx, action);
       final today = member.walkedToday();
       final first = _firstName(member.name);
       final quiet =
@@ -445,9 +505,18 @@ Future<bool?> showRoomSeatSheet(
                         ]
                       : null,
                 ),
-                child: quiet
-                    ? HeroCardColorGrade(mood: HeroCardMood.dusty, child: face)
-                    : face,
+                child: _SeatFace(
+                  onTap: canViewProfile
+                      ? () => pick(RoomSeatAction.profile)
+                      : null,
+                  semanticsLabel: ctx.l10n.groupSeatViewProfile,
+                  child: quiet
+                      ? HeroCardColorGrade(
+                          mood: HeroCardMood.dusty,
+                          child: face,
+                        )
+                      : face,
+                ),
               ),
             ),
             const SizedBox(height: AppSpace.md),
@@ -510,7 +579,7 @@ Future<bool?> showRoomSeatSheet(
               const SizedBox(height: AppSpace.lg),
               CopperCta(
                 label: ctx.l10n.nudgeTitle(first),
-                onTap: () => Navigator.pop(ctx, true),
+                onTap: () => pick(RoomSeatAction.wave),
                 leading: CinematicGlyph.bell,
                 trailing: null,
               ),
@@ -522,11 +591,121 @@ Future<bool?> showRoomSeatSheet(
                 style: AppTypography.body(size: 13, color: a.textFaint),
               ),
             ],
+            if (canViewProfile || canTransfer || canModerate) ...[
+              const SizedBox(height: AppSpace.md),
+              if (canViewProfile)
+                _SeatActionRow(
+                  label: ctx.l10n.groupSeatViewProfile,
+                  glyph: CinematicGlyph.people,
+                  onTap: () => pick(RoomSeatAction.profile),
+                ),
+              if (canTransfer)
+                _SeatActionRow(
+                  label: ctx.l10n.groupSeatMakeLeader(first),
+                  glyph: CinematicGlyph.crown,
+                  onTap: () => pick(RoomSeatAction.transfer),
+                ),
+              if (canModerate)
+                _SeatActionRow(
+                  label: ctx.l10n.moderationMenuLabel,
+                  glyph: CinematicGlyph.flag,
+                  faint: true,
+                  onTap: () => pick(RoomSeatAction.moderate),
+                ),
+            ],
           ],
         ),
       );
     },
   );
+}
+
+/// Rosto da folha: tocar abre o perfil (quando há perfil para ver).
+class _SeatFace extends StatelessWidget {
+  final Widget child;
+  final VoidCallback? onTap;
+  final String semanticsLabel;
+
+  const _SeatFace({
+    required this.child,
+    required this.onTap,
+    required this.semanticsLabel,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (onTap == null) return child;
+    return Semantics(
+      button: true,
+      label: semanticsLabel,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          onTap!();
+        },
+        child: child,
+      ),
+    );
+  }
+}
+
+/// Linha discreta de ação na folha da pessoa (ícone, rótulo, seta).
+class _SeatActionRow extends StatelessWidget {
+  final String label;
+  final CinematicGlyph glyph;
+  final VoidCallback onTap;
+  final bool faint;
+
+  const _SeatActionRow({
+    required this.label,
+    required this.glyph,
+    required this.onTap,
+    this.faint = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Semantics(
+      button: true,
+      label: label,
+      excludeSemantics: true,
+      child: InkWell(
+        onTap: () {
+          ActHaptics.tap();
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: glyph,
+                size: AppMetrics.iconMd,
+                accent: faint ? a.textFaint : a.chrome,
+                framed: false,
+              ),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 14,
+                    color: faint ? a.textSecondary : a.text,
+                  ),
+                ),
+              ),
+              ListChevron(color: a.textFaint),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class _SeatStat extends StatelessWidget {
@@ -838,9 +1017,17 @@ class _RoomStudyPicker extends StatefulWidget {
 class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   late final Future<List<Trail>> _trails = TrailRepository().getTrails();
   final _note = TextEditingController();
+  final _search = TextEditingController();
   String? _noteError;
   Trail? _trail;
   Mission? _mission;
+
+  /// Aba das trilhas: null = Suas trilhas; senão a prateleira da aba Trilhas.
+  TrailShelf? _shelf;
+  bool _shelfPicked = false;
+
+  /// Grupo aberto na aba Bíblia (um por vez).
+  TrailCategory? _openGroup;
 
   /// Palco da cena (ref + trecho) — o mesmo que a missão abre.
   ({String? ref, String? verse})? _stage;
@@ -848,6 +1035,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   @override
   void dispose() {
     _note.dispose();
+    _search.dispose();
     super.dispose();
   }
 
@@ -1003,35 +1191,216 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
     );
   }
 
+  /// Categoria da trilha dentro do seu card (dado antigo cai no 1º).
+  static TrailCategory _categoryOf(Trail t) {
+    final journey = t.journey;
+    final c = TrailCategory.tryFromId(t.categoryId);
+    return c != null && journey.categories.contains(c)
+        ? c
+        : journey.categories.first;
+  }
+
+  /// Minúsculas sem acento — "genesis" acha "Gênesis".
+  static String _fold(String s) {
+    const from = 'áàâãäéèêëíìîïóòôõöúùûüçñ';
+    const to = 'aaaaaeeeeiiiiooooouuuucn';
+    final lower = s.toLowerCase();
+    final out = StringBuffer();
+    for (final ch in lower.split('')) {
+      final i = from.indexOf(ch);
+      out.write(i < 0 ? ch : to[i]);
+    }
+    return out.toString();
+  }
+
+  Widget _trailRow(Trail t) => _PickRow(
+    leading: _TrailDisc(visuals: TrailVisuals.forTrail(t)),
+    title: t.localizedTitle,
+    subtitle: context.l10n.commonScenes(t.missionSlugs.length),
+    onTap: () {
+      FocusScope.of(context).unfocus();
+      setState(() => _trail = t);
+    },
+  );
+
   Widget _trailList(List<Trail> all, AppearanceStyle a) {
     final trails = [
       for (final t in all)
         if (!t.comingSoon && t.missionSlugs.isNotEmpty) t,
     ];
-    return ListView(
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: AppSpace.sm),
-          child: Text(
-            context.l10n.groupPickerIntro,
-            style: AppTypography.body(size: 13, color: a.textSecondary),
-          ),
-        ),
-        for (final realm in TrailRealm.values)
-          if (trails.any((t) => TrailRealm.fromId(t.realmId) == realm)) ...[
+    final progress = context.watch<ProgressService>();
+    final mine = [
+      for (final t in TrailProgress.myTrails(
+        all,
+        progress.completedMissions,
+        chosenAt: progress.trailChosenAt,
+        seeded: progress.trailChoicesSeeded,
+        clearedTrailModes: progress.clearedTrailModes,
+        trailModes: progress.activeTrailModes,
+        pinnedModes: progress.pinnedTrailDifficulties,
+        completedOn: progress.missionCompletedOn,
+        borrowed: progress.borrowedMissions,
+      ))
+        if (trails.contains(t)) t,
+    ];
+    // As mesmas prateleiras da aba Trilhas (não o `realm` gravado: Temas
+    // mora em Vida Cristã ou no AT/NT).
+    final shelves = [
+      for (final shelf in TrailShelf.values)
+        if (trails.any((t) => t.journey.shelf == shelf)) shelf,
+    ];
+    TrailShelf? shelf = _shelfPicked
+        ? _shelf
+        : (mine.isNotEmpty ? null : shelves.firstOrNull);
+    if (shelf == null && mine.isEmpty) shelf = shelves.firstOrNull;
+
+    final query = _fold(_search.text.trim());
+    final searching = query.isNotEmpty;
+
+    final List<Widget> rows;
+    if (searching) {
+      final hits = [
+        for (final t in trails)
+          if (_fold(t.localizedTitle).contains(query) ||
+              _fold(_categoryOf(t).label).contains(query))
+            t,
+      ];
+      rows = hits.isEmpty
+          ? [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
+                child: Text(
+                  context.l10n.groupPickerSearchEmpty,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(size: 13, color: a.textSecondary),
+                ),
+              ),
+            ]
+          : [for (final t in hits) _trailRow(t)];
+    } else if (shelf == null) {
+      rows = [for (final t in mine) _trailRow(t)];
+    } else if (shelf == TrailShelf.biblia) {
+      rows = [
+        for (final journey in TrailJourney.forShelf(shelf))
+          if (trails.any((t) => t.journey == journey)) ...[
             Padding(
-              padding: const EdgeInsets.only(top: AppSpace.md, bottom: 4),
-              child: SectionLabel(realm.label),
+              padding: EdgeInsets.only(
+                top: journey == TrailJourney.antigoTestamento ? 0 : AppSpace.md,
+                bottom: AppSpace.sm,
+              ),
+              child: SectionLabel(journey.realm.label),
             ),
-            for (final t in trails)
-              if (TrailRealm.fromId(t.realmId) == realm)
-                _PickRow(
-                  leading: _TrailDisc(visuals: TrailVisuals.forTrail(t)),
-                  title: t.localizedTitle,
-                  subtitle: context.l10n.commonScenes(t.missionSlugs.length),
-                  onTap: () => setState(() => _trail = t),
+            for (final category in journey.categories)
+              if (trails.any(
+                (t) => t.journey == journey && _categoryOf(t) == category,
+              ))
+                _PickGroup(
+                  title: category.label,
+                  visuals: TrailVisuals.forSlug('', categoryId: category.id),
+                  expanded: _openGroup == category,
+                  onToggle: () => setState(
+                    () => _openGroup = _openGroup == category ? null : category,
+                  ),
+                  trails: [
+                    for (final t in trails)
+                      if (t.journey == journey && _categoryOf(t) == category) t,
+                  ],
+                  rowFor: _trailRow,
                 ),
           ],
+      ];
+    } else {
+      rows = [
+        for (final journey in TrailJourney.forShelf(shelf))
+          for (final t in trails)
+            if (t.journey == journey) _trailRow(t),
+      ];
+    }
+
+    String shelfLabel(TrailShelf s) => switch (s) {
+      TrailShelf.biblia => context.l10n.trailsShelfBible,
+      TrailShelf.tematicos => context.l10n.trailsHubThemes,
+      TrailShelf.vidaCrista => TrailRealm.vidaCrista.label,
+      TrailShelf.teologia => context.l10n.trailsHubStudy,
+    };
+
+    Widget chip(String label, TrailShelf? value) => Padding(
+      padding: const EdgeInsets.only(right: AppSpace.sm),
+      child: AppSelectChip(
+        label: label,
+        selected: shelf == value,
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+        onTap: () {
+          ActHaptics.tap();
+          setState(() {
+            _shelfPicked = true;
+            _shelf = value;
+          });
+        },
+      ),
+    );
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          context.l10n.groupPickerIntro,
+          style: AppTypography.body(size: 13, color: a.textSecondary),
+        ),
+        const SizedBox(height: AppSpace.md),
+        TextField(
+          controller: _search,
+          textInputAction: TextInputAction.search,
+          style: AppTypography.body(size: 14, color: a.text),
+          onChanged: (_) => setState(() {}),
+          decoration: InputDecoration(
+            isDense: true,
+            hintText: context.l10n.groupPickerSearchHint,
+            prefixIcon: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: CinematicIcon(
+                glyph: CinematicGlyph.search,
+                size: AppMetrics.iconSm,
+                accent: a.textFaint,
+                framed: false,
+              ),
+            ),
+            prefixIconConstraints: const BoxConstraints(minWidth: 40),
+            suffixIcon: searching
+                ? IconButton(
+                    tooltip: context.l10n.commonClose,
+                    onPressed: () => setState(_search.clear),
+                    icon: CinematicIcon(
+                      glyph: CinematicGlyph.close,
+                      size: AppMetrics.iconSm,
+                      accent: a.textFaint,
+                      framed: false,
+                    ),
+                  )
+                : null,
+          ),
+        ),
+        if (!searching) ...[
+          const SizedBox(height: AppSpace.sm),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                if (mine.isNotEmpty)
+                  chip(context.l10n.groupPickerTabMine, null),
+                for (final s in shelves) chip(shelfLabel(s), s),
+              ],
+            ),
+          ),
+        ],
+        const SizedBox(height: AppSpace.xs),
+        Expanded(
+          child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+            padding: const EdgeInsets.only(top: AppSpace.md),
+            children: rows,
+          ),
+        ),
       ],
     );
   }
@@ -1042,7 +1411,10 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
         for (final mod in trail.modules)
           if (mod.missions.isNotEmpty) ...[
             Padding(
-              padding: const EdgeInsets.only(top: AppSpace.md, bottom: 4),
+              padding: const EdgeInsets.only(
+                top: AppSpace.md,
+                bottom: AppSpace.sm,
+              ),
               child: SectionLabel(mod.localizedTitle),
             ),
             for (final m in mod.missions)
@@ -1134,57 +1506,172 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   }
 }
 
+/// Item padrão do seletor: card com selo (40), título, linha de apoio e
+/// seta. Trilha, grupo da Bíblia e cena usam o mesmo formato.
 class _PickRow extends StatelessWidget {
-  final Widget? leading;
+  final Widget leading;
   final String title;
   final String? subtitle;
   final VoidCallback onTap;
 
+  /// Seta à direita; null = chevron padrão.
+  final Widget? trailing;
+
+  /// Contorno de destaque (grupo aberto).
+  final Color? highlight;
+  final bool? expanded;
+
   const _PickRow({
-    this.leading,
+    required this.leading,
     required this.title,
     this.subtitle,
     required this.onTap,
+    this.trailing,
+    this.highlight,
+    this.expanded,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(AppRadii.sm),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
-        child: Row(
-          children: [
-            if (leading != null) ...[leading!, const SizedBox(width: 14)],
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    final radius = BorderRadius.circular(AppRadii.md);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.sm),
+      child: Semantics(
+        button: true,
+        expanded: expanded,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: () {
+              ActHaptics.tap();
+              onTap();
+            },
+            borderRadius: radius,
+            child: Ink(
+              decoration: BoxDecoration(
+                color: a.insetFill,
+                borderRadius: radius,
+                border: Border.all(
+                  color: highlight?.withValues(alpha: 0.5) ?? a.insetBorder,
+                ),
+              ),
+              padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
+              child: Row(
                 children: [
-                  Text(
-                    title,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(size: 14, color: a.text),
-                  ),
-                  if (subtitle != null && subtitle!.trim().isNotEmpty)
-                    Text(
-                      subtitle!,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textSecondary,
-                      ),
+                  SizedBox(width: 40, height: 40, child: leading),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          title,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.title(size: 14, color: a.text),
+                        ),
+                        if (subtitle != null && subtitle!.trim().isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 2),
+                            child: Text(
+                              subtitle!,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.body(
+                                size: 12,
+                                color: a.textSecondary,
+                              ),
+                            ),
+                          ),
+                      ],
                     ),
+                  ),
+                  const SizedBox(width: AppSpace.sm),
+                  trailing ?? ListChevron(color: a.textFaint),
                 ],
               ),
             ),
-            ListChevron(color: a.textFaint),
-          ],
+          ),
         ),
       ),
+    );
+  }
+}
+
+/// Grupo recolhível do seletor (categoria da Bíblia): o mesmo card das
+/// trilhas, com "N trilhas · títulos"; abre as trilhas por baixo, recuadas.
+class _PickGroup extends StatelessWidget {
+  final String title;
+  final TrailVisuals visuals;
+  final bool expanded;
+  final VoidCallback onToggle;
+  final List<Trail> trails;
+  final Widget Function(Trail) rowFor;
+
+  const _PickGroup({
+    required this.title,
+    required this.visuals,
+    required this.expanded,
+    required this.onToggle,
+    required this.trails,
+    required this.rowFor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final still = MediaQuery.disableAnimationsOf(context);
+    final duration = still ? Duration.zero : const Duration(milliseconds: 220);
+    final count = context.l10n.trailsRealmTrailCount(trails.length);
+    final names = [
+      for (final t in trails)
+        if (t.localizedTitle.toLowerCase() != title.toLowerCase())
+          t.localizedTitle,
+    ];
+    final subtitle = names.isEmpty ? count : '$count · ${names.join(' · ')}';
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _PickRow(
+          leading: _TrailDisc(visuals: visuals),
+          title: title,
+          subtitle: subtitle,
+          onTap: onToggle,
+          expanded: expanded,
+          highlight: expanded ? visuals.accent : null,
+          trailing: AnimatedRotation(
+            turns: expanded ? 0.25 : 0,
+            duration: duration,
+            curve: AppMotion.enter,
+            child: ListChevron(color: a.textFaint),
+          ),
+        ),
+        AnimatedSize(
+          duration: duration,
+          curve: AppMotion.enter,
+          alignment: Alignment.topCenter,
+          child: expanded
+              ? Container(
+                  margin: const EdgeInsets.only(left: 31, bottom: AppSpace.xs),
+                  padding: const EdgeInsets.only(left: 12),
+                  decoration: BoxDecoration(
+                    border: Border(
+                      left: BorderSide(
+                        color: visuals.accent.withValues(alpha: 0.35),
+                        width: 2,
+                      ),
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [for (final t in trails) rowFor(t)],
+                  ),
+                )
+              : const SizedBox(width: double.infinity),
+        ),
+      ],
     );
   }
 }
@@ -1232,8 +1719,8 @@ class _SceneNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 34,
-      height: 34,
+      width: 40,
+      height: 40,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: accent.withValues(alpha: 0.12),
@@ -1248,12 +1735,13 @@ class _SceneNumber extends StatelessWidget {
 
 // ───────────────────────── Menu do grupo ─────────────────────────
 
-enum RoomMenuAction { copyCode, edit, goal, clearStudy, transfer, leave, close }
+/// Menu do card: só o que o líder conduz. Copiar, sair e encerrar ficam
+/// no fim da página.
+enum RoomMenuAction { pickStudy, edit, goal, clearStudy, transfer }
 
 Future<RoomMenuAction?> showRoomMenu(
   BuildContext context, {
   required StudyRoom room,
-  required bool isLeader,
   required bool hasStudy,
   required bool canTransfer,
 }) {
@@ -1298,58 +1786,40 @@ Future<RoomMenuAction?> showRoomMenu(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             AppSheetHeader(title: room.name),
-            const SizedBox(height: AppSpace.sm),
-            item(
-              RoomMenuAction.copyCode,
-              ctx.l10n.groupMenuCopyCode(room.code),
-              CinematicGlyph.copy,
-            ),
-            if (isLeader) ...[
-              Padding(
-                padding: const EdgeInsets.only(top: AppSpace.md, bottom: 2),
-                child: SectionLabel(ctx.l10n.groupMenuLeadSection),
-              ),
-              item(
-                RoomMenuAction.edit,
-                ctx.l10n.groupMenuEdit,
-                CinematicGlyph.pencil,
-              ),
-              item(
-                RoomMenuAction.goal,
-                room.weeklyGoalSteps != null
-                    ? ctx.l10n.groupMenuGoal(room.weeklyGoalSteps!)
-                    : ctx.l10n.groupMenuSetGoal,
-                CinematicGlyph.target,
-              ),
-              if (hasStudy)
-                item(
-                  RoomMenuAction.clearStudy,
-                  ctx.l10n.groupMenuClearStudy,
-                  CinematicGlyph.close,
-                ),
-              if (canTransfer)
-                item(
-                  RoomMenuAction.transfer,
-                  ctx.l10n.groupMenuTransfer,
-                  CinematicGlyph.crown,
-                ),
-            ],
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: AppSpace.sm),
-              child: ListDivider(),
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpace.md, bottom: 2),
+              child: SectionLabel(ctx.l10n.groupMenuLeadSection),
             ),
             item(
-              RoomMenuAction.leave,
-              ctx.l10n.groupMenuLeave,
-              CinematicGlyph.back,
-              danger: true,
+              RoomMenuAction.pickStudy,
+              hasStudy
+                  ? ctx.l10n.groupMenuSwapStudy
+                  : ctx.l10n.groupMenuPickStudy,
+              CinematicGlyph.book,
             ),
-            if (isLeader)
+            item(
+              RoomMenuAction.edit,
+              ctx.l10n.groupMenuEdit,
+              CinematicGlyph.pencil,
+            ),
+            item(
+              RoomMenuAction.goal,
+              room.weeklyGoalSteps != null
+                  ? ctx.l10n.groupMenuGoal(room.weeklyGoalSteps!)
+                  : ctx.l10n.groupMenuSetGoal,
+              CinematicGlyph.target,
+            ),
+            if (hasStudy)
               item(
-                RoomMenuAction.close,
-                ctx.l10n.groupMenuClose,
-                CinematicGlyph.stop,
-                danger: true,
+                RoomMenuAction.clearStudy,
+                ctx.l10n.groupMenuClearStudy,
+                CinematicGlyph.close,
+              ),
+            if (canTransfer)
+              item(
+                RoomMenuAction.transfer,
+                ctx.l10n.groupMenuTransfer,
+                CinematicGlyph.crown,
               ),
           ],
         ),
@@ -1458,7 +1928,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SectionLabel(context.l10n.groupInviteLabel),
+          CardHeader(label: context.l10n.groupInviteLabel),
           const SizedBox(height: AppSpace.sm),
           Row(
             children: [
@@ -1638,9 +2108,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             ),
             const SizedBox(height: AppSpace.md),
             if (people.isEmpty)
-              EmptyState(
-                title: context.l10n.groupCallEmpty,
-              )
+              EmptyState(title: context.l10n.groupCallEmpty)
             else
               Flexible(
                 child: ListView(
@@ -1648,7 +2116,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
                   padding: EdgeInsets.zero,
                   children: [
                     for (final person in people)
-                      _CaravanInviteRow(
+                      CaravanInviteRow(
                         person: person,
                         pending: pending.contains(person.uid),
                         busy: _busy.contains(person.uid),
@@ -1689,10 +2157,12 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
               ),
             ],
             const SizedBox(height: AppSpace.md),
-            GhostCta(
-              label: context.l10n.commonSendWhatsApp,
-              leading: CinematicGlyph.share,
-              expanded: true,
+            // Abre a folha do convite: QR code, código para copiar e link.
+            CopperCta(
+              label: context.l10n.groupCallShareCta,
+              leading: CinematicGlyph.qr,
+              trailing: null,
+              dense: true,
               onTap: full ? null : widget.onShareLink,
             ),
           ],
@@ -1702,7 +2172,9 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
   }
 }
 
-class _CaravanInviteRow extends StatelessWidget {
+/// Uma pessoa da Caravana com "Chamar" (ou "Convite enviado · Desfazer").
+/// Grupos e Companhia.
+class CaravanInviteRow extends StatelessWidget {
   final LeagueEntry person;
   final bool pending;
   final bool busy;
@@ -1710,7 +2182,8 @@ class _CaravanInviteRow extends StatelessWidget {
   final VoidCallback onInvite;
   final VoidCallback onCancel;
 
-  const _CaravanInviteRow({
+  const CaravanInviteRow({
+    super.key,
     required this.person,
     required this.pending,
     required this.busy,

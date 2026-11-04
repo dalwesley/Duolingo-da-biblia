@@ -343,11 +343,25 @@ service cloud.firestore {
       allow create: if isSignedIn()
         && request.resource.data.hostId == request.auth.uid;
       allow update: if isSignedIn()
+        // Companhia encerrada não volta: ninguém mexe mais (só o host apaga).
+        && !('endedAt' in resource.data)
         && (resource.data.hostId == request.auth.uid
             || resource.data.guestId == request.auth.uid
             || (resource.data.guestId == null
                 && request.resource.data.guestId == request.auth.uid))
-        && request.resource.data.hostId == resource.data.hostId;
+        && request.resource.data.hostId == resource.data.hostId
+        // Sair encerra a dupla para os dois: só endedAt/endedBy, assinado
+        // por quem sai.
+        && (!('endedAt' in request.resource.data)
+            || (request.resource.data.endedAt == request.time
+                && request.resource.data.endedBy == request.auth.uid
+                && request.resource.data.diff(resource.data).affectedKeys()
+                    .hasOnly(['endedAt', 'endedBy', 'updatedAt'])))
+        // Aceno: texto curto (pronto ou escrito no Peregrino+). O push
+        // passa pelo filtro na function onCompanionNudge.
+        && (!('nudgeMessage' in request.resource.data)
+            || (request.resource.data.nudgeMessage is string
+                && request.resource.data.nudgeMessage.size() <= 140));
       allow delete: if isSignedIn()
         && resource.data.hostId == request.auth.uid;
     }
@@ -453,6 +467,75 @@ service cloud.firestore {
             && request.resource.data.participantIds == resource.data.participantIds
             && request.resource.data.status in ['pending', 'cancelled']
             && roomInviteShape(request.resource.data))
+        );
+      allow delete: if false;
+    }
+
+    // Convite de companhia pelo nome (chamar alguém da Caravana). Um doc
+    // por código: a companhia tem uma vaga, chamar outra pessoa troca o
+    // destinatário. Quem recebe aceita entrando pelo código (regra de
+    // companies) e marca aqui.
+    match /companionInvites/{code} {
+      function openCompanyOfMine(c) {
+        let company = get(/databases/$(database)/documents/companies/$(c));
+        return company.data.hostId == request.auth.uid
+          && company.data.get('guestId', null) == null;
+      }
+
+      function companionInviteShape(data) {
+        return data.keys().hasOnly([
+            'code', 'fromUid', 'fromName', 'fromPhotoUrl', 'toUid', 'toName',
+            'participantIds', 'status', 'createdAt'
+          ])
+          && data.keys().hasAll([
+            'code', 'fromUid', 'fromName', 'toUid', 'toName',
+            'participantIds', 'status', 'createdAt'
+          ])
+          && data.code == code
+          && data.fromUid == request.auth.uid
+          && data.toUid is string
+          && data.toUid.size() > 0
+          && data.toUid.size() <= 128
+          && data.toUid != request.auth.uid
+          && data.fromName is string
+          && data.fromName.size() > 0
+          && data.fromName.size() <= 120
+          && data.toName is string
+          && data.toName.size() > 0
+          && data.toName.size() <= 120
+          && data.participantIds is list
+          && data.participantIds.size() == 2
+          && data.participantIds.hasAll([request.auth.uid, data.toUid])
+          && data.createdAt is timestamp;
+      }
+
+      allow read: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds;
+      // Dono do convite aberto (sem ninguém dentro) chama ou troca quem
+      // chamou; quem bloqueou não pode ser chamado.
+      allow create: if isSignedIn()
+        && request.resource.data.status == 'pending'
+        && companionInviteShape(request.resource.data)
+        && !blockedBy(request.resource.data.toUid)
+        && openCompanyOfMine(code);
+      allow update: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds
+        && (
+          // Quem recebeu: aceita ou recusa, sem mexer no resto.
+          (request.auth.uid == resource.data.toUid
+            && resource.data.status == 'pending'
+            && request.resource.data.status in ['accepted', 'declined']
+            && request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['status']))
+          // Quem chamou: chama de novo (outra pessoa ou a mesma) ou desfaz.
+          || (request.auth.uid == resource.data.fromUid
+            && ((request.resource.data.status == 'pending'
+                  && companionInviteShape(request.resource.data)
+                  && !blockedBy(request.resource.data.toUid)
+                  && openCompanyOfMine(code))
+                || (request.resource.data.status == 'cancelled'
+                  && request.resource.data.diff(resource.data).affectedKeys()
+                      .hasOnly(['status']))))
         );
       allow delete: if false;
     }

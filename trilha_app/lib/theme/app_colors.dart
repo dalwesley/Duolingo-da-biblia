@@ -234,11 +234,13 @@ class AppRoles {
   static const lamp = Color(0xFFFFB547);
 
   /// Tom de cada aba da nav inferior — só acende na aba ativa; as inativas
-  /// ficam em [AppearanceStyle.iconMuted]. Ajustes usa o próprio chrome.
+  /// ficam em [AppearanceStyle.iconMuted]. Nenhum tom é azul — azul é o
+  /// fundo do app, e uma aba azul parece apagada.
   static const navToday = lamp;
-  static const navTrails = Color(0xFFE0915E);
-  static const navBible = AppColors.primaryLight;
+  static const navTrails = Color(0xFFFF7062);
+  static const navBible = Color(0xFFB592FF);
   static const navTogether = AppColors.cedar;
+  static const navSettings = Color(0xFF9BDB6A);
 
   static const observation = AppColors.sprout;
   static const comprehension = AppColors.coral;

@@ -762,9 +762,9 @@
     "es": "Una escena hoy enciende el primer día."
   },
   "profileStreakRemaining": {
-    "pt": "{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}",
-    "en": "{left} left for the {goal}-day commitment.",
-    "es": "{left, plural, =1{Falta 1 para el compromiso de {goal} días.} other{Faltan {left} para el compromiso de {goal} días.}}",
+    "pt": "{left, plural, =1{Falta 1 dia para cumprir o compromisso de {goal} dias.} other{Faltam {left} dias para cumprir o compromisso de {goal} dias.}}",
+    "en": "{left, plural, =1{1 day left to keep your {goal}-day commitment.} other{{left} days left to keep your {goal}-day commitment.}}",
+    "es": "{left, plural, =1{Falta 1 día para cumplir el compromiso de {goal} días.} other{Faltan {left} días para cumplir el compromiso de {goal} días.}}",
     "placeholders": {
       "left": "int",
       "goal": "int"
@@ -834,41 +834,6 @@
       "walked": "int",
       "weeks": "int"
     }
-  },
-  "profileWdMon": {
-    "pt": "S",
-    "en": "M",
-    "es": "L"
-  },
-  "profileWdTue": {
-    "pt": "T",
-    "en": "T",
-    "es": "M"
-  },
-  "profileWdWed": {
-    "pt": "Q",
-    "en": "W",
-    "es": "X"
-  },
-  "profileWdThu": {
-    "pt": "Q",
-    "en": "T",
-    "es": "J"
-  },
-  "profileWdFri": {
-    "pt": "S",
-    "en": "F",
-    "es": "V"
-  },
-  "profileWdSat": {
-    "pt": "S",
-    "en": "S",
-    "es": "S"
-  },
-  "profileWdSun": {
-    "pt": "D",
-    "en": "S",
-    "es": "D"
   },
   "profileAccuracyHeader": {
     "pt": "Seu acerto",

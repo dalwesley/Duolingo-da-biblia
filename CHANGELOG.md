@@ -9,6 +9,35 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.43] — 2026-11-04
+
+### Added
+- Companhia: chamar alguém da Caravana pelo nome (`companionInvites`), com push; uma vaga só — chamar outra pessoa troca o destinatário
+- Convites recebidos em Juntos (aceitar/recusar); sair encerra a dupla para os dois (`endedAt`/`endedBy`)
+- Aceno escrito (Peregrino+), com filtro de conteúdo no app e na function; bloqueado não recebe push
+- Desafio: folha para escolher quem desafiar na Caravana; CTAs da aba Desafio fora do card (como Grupo/Companhia)
+- Grupo: folha da pessoa (perfil, aceno, passar liderança); seletor de estudo com busca e abas; menu “Trocar estudo”
+- `CardHeader` unificado (Bíblia, Ajustes, Juntos, perfil); `CtaEdgeRow` para CTAs largos embaixo do card
+
+### Changed
+- Juntos (Companhia, Grupo, Caravana) redesenhado: herói do grupo, semana do grupo, lista de integrantes e QR/código no compartilhar
+- Perfil: selos quebram linha abaixo do nome; sequência mostra risco e gelo
+- Nav: cada aba com tom próprio (chrome do shell acompanha); Bíblia/Trilhas deixam de usar azul (fundo do app)
+- Carrossel da Home: com 2 trilhas não faz loop infinito (não parece haver 3)
+- Onboarding: quem já anda trilha pula a pergunta de motivo
+- Remote Config: `ensureLoaded` antes de flags no arranque frio (ex.: convite pela câmera)
+- Sai o tile “Desafio da estação” da Home (a Estação cobre a temporada)
+
+### Fixed
+- Sair da companhia: se a nuvem falhar, a dupla não some só de um lado
+- Folha do QR da companhia fecha e celebra quando alguém entra pelo código
+- Convites ao vivo (companhia e grupo): escuta que morre em erro (ex.: `PERMISSION_DENIED`) reabre no próximo retorno ao app
+
+### Infra
+- `firestore.rules`: `companionInvites`, encerramento imutável da companhia, limite do aceno escrito
+- Functions: `onCompanionInvite`, filtro de aceno + bloqueio em `onCompanionNudge`
+- Sem republicar banco de perguntas (V3 já no Firestore)
+
 ## [1.0.42] — 2026-11-03
 
 ### Added

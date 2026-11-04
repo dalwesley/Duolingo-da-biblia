@@ -174,7 +174,11 @@ class CornerCopy {
   static String get boardEmptyTitle => _l.cornerBoardEmptyTitle;
   static String get boardEmptyBody =>
       _l.cornerBoardEmptyBody(cornerArrivalBonusSteps);
-  static String get boardOpenCaravan => _l.cornerBoardOpenCaravan;
+  static String get boardPickCta => _l.cornerBoardPickCta;
+  static String get pickTitle => _l.cornerPickTitle;
+  static String get pickSubtitle => _l.cornerPickSubtitle;
+  static String get pickEmpty => _l.cornerPickEmpty;
+  static String get pickCta => _l.cornerPickCta;
   static String get boardIdle => _l.cornerBoardIdle;
   static String get stripIdle => _l.cornerStripIdle;
 

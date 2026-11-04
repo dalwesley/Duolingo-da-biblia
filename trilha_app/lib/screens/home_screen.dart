@@ -43,7 +43,6 @@ import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/streak_repair_banner.dart';
-import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/wave_hands_overlay.dart';
@@ -547,10 +546,6 @@ class _HomeScreenState extends State<HomeScreen>
     final questsTotal = DailyQuestDefs.all.length;
     final questsDone = goalMet ? DailyQuestsCard.doneCount(progress) : 0;
     final questsAllDone = questsDone >= questsTotal;
-    final season = goalMet
-        ? SeasonChallengeBanner.seasonVault(context, trails, progress: progress)
-        : null;
-    final seasonTrack = season?.tracks.first;
     final reviewScenes = progress.weeklyReviewReady
         ? progress
               .missionsCompletedInWeek(progress.weeklyReviewWeekKey())
@@ -620,28 +615,6 @@ class _HomeScreenState extends State<HomeScreen>
               },
             ),
           ),
-        ),
-      if (goalMet)
-        _MoreTile(
-          glyph: CinematicGlyph.crown,
-          title: season?.vault.title ?? l10n.seasonChallengeTitle,
-          caption: seasonTrack == null
-              ? l10n.seasonChallengeSeeProgress
-              : seasonTrack.isComplete
-              ? l10n.questDone
-              : l10n.seasonChallengePathPercent(
-                  (seasonTrack.progress * 100).round(),
-                ),
-          color: seasonTrack?.isComplete == true ? AppRoles.success : a.chrome,
-          meter: seasonTrack == null
-              ? null
-              : seasonTrack.isComplete
-              ? 1
-              : seasonTrack.progress,
-          meterColor: seasonTrack == null || seasonTrack.isComplete
-              ? null
-              : SeasonChallengeBanner.trackAccent(seasonTrack),
-          onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       // A fila de erros é grátis para todo mundo — inclusive assinante.
       // Uma revisão por vez: com a da semana na lista, os erros esperam.
@@ -896,7 +869,7 @@ class _HomeScreenState extends State<HomeScreen>
                       // Estação sempre na Home: contagem até a próxima, ou o
                       // dia da caminhada quando ela está aberta.
                       const SizedBox(height: AppSpace.section),
-                      _reveal(2, const SeasonWalkFeatureCard()),
+                      _reveal(2, SeasonWalkFeatureCard(trails: trails)),
                       if (cornerFace != null) ...[
                         const SizedBox(height: AppSpace.section),
                         _reveal(
@@ -1042,6 +1015,10 @@ class _HeroCarouselState extends State<_HeroCarousel> {
 
   int get _count => widget.trails.length;
 
+  /// Faixa sem fim só com 3+ trilhas. Com 2, o vizinho dos dois lados seria
+  /// a mesma trilha e pareceria haver 3 cards.
+  bool get _loops => _count > 2;
+
   /// Controller para a largura atual; recriado se a fração mudar (giro da
   /// tela) ou a lista mudar ([didUpdateWidget] o descarta).
   PageController _controllerFor(double fraction) {
@@ -1049,7 +1026,7 @@ class _HeroCarouselState extends State<_HeroCarousel> {
     if (current != null && fraction == _fraction) return current;
     current?.dispose();
     _fraction = fraction;
-    _raw = _loopBase * _count + _page;
+    _raw = _loops ? _loopBase * _count + _page : _page;
     return _controller = PageController(
       viewportFraction: fraction,
       initialPage: _raw,
@@ -1076,8 +1053,9 @@ class _HeroCarouselState extends State<_HeroCarousel> {
     }
     if (DateTime.now().difference(_lastTouch) < _idleAfterTouch) return;
     _autoMoving = true;
+    final next = !_loops && _raw >= _count - 1 ? 0 : _raw + 1;
     controller
-        .nextPage(duration: _autoSlide, curve: AppMotion.enter)
+        .animateToPage(next, duration: _autoSlide, curve: AppMotion.enter)
         .whenComplete(() => _autoMoving = false);
   }
 
@@ -1156,6 +1134,7 @@ class _HeroCarouselState extends State<_HeroCarousel> {
                 onPointerDown: (_) => _lastTouch = DateTime.now(),
                 child: PageView.builder(
                   controller: controller,
+                  itemCount: _loops ? null : trails.length,
                   onPageChanged: (i) {
                     setState(() {
                       _raw = i;
@@ -1201,7 +1180,7 @@ class _HeroCarouselState extends State<_HeroCarousel> {
                         decoration: BoxDecoration(
                           color: i == _page
                               ? a.text
-                              : a.textSecondary.withValues(alpha: 0.4),
+                              : a.text.withValues(alpha: 0.3),
                           borderRadius: BorderRadius.circular(3),
                         ),
                       ),
@@ -1394,9 +1373,6 @@ class _MoreTile {
   /// > 1 divide a barra em gomos (tarefas contáveis); 0 = barra contínua.
   final int segments;
 
-  /// Cor da barra quando difere do tom da linha (nível do desafio).
-  final Color? meterColor;
-
   const _MoreTile({
     required this.glyph,
     required this.title,
@@ -1407,7 +1383,6 @@ class _MoreTile {
     this.badge,
     this.meter,
     this.segments = 0,
-    this.meterColor,
   });
 }
 
@@ -1455,10 +1430,7 @@ class _MoreTodayState extends State<_MoreToday> {
                   AppSpace.lg,
                   0,
                 ),
-                child: Semantics(
-                  header: true,
-                  child: SectionLabel(context.l10n.homeMoreToday),
-                ),
+                child: CardHeader(label: context.l10n.homeMoreToday),
               ),
               for (var i = 0; i < tiles.length; i++) ...[
                 if (i > 0)
@@ -1628,9 +1600,7 @@ class _MoreTileRowState extends State<_MoreTileRow> {
                       _MoreTileMeter(
                         value: tile.meter!,
                         segments: tile.segments,
-                        color: tile.meterColor != null
-                            ? a.ink(tile.meterColor!)
-                            : tone,
+                        color: tone,
                       ),
                     ],
                   ],

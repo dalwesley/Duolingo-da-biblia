@@ -186,24 +186,6 @@ class PilgrimIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (pioneer || pilgrim) ...[
-                          const SizedBox(width: AppSpace.sm),
-                          SoftBadge(
-                            text: pioneer
-                                ? l10n.pioneerBadge
-                                : l10n.pilgrimBadge,
-                            glyph: CinematicGlyph.plus,
-                            accent: AppRoles.reward,
-                          ),
-                        ],
-                        if (supporter) ...[
-                          const SizedBox(width: AppSpace.sm),
-                          SoftBadge(
-                            text: l10n.supporterBadge,
-                            glyph: CinematicGlyph.gift,
-                            accent: AppRoles.reward,
-                          ),
-                        ],
                         if (recognizeWalkToUid != null &&
                             recognizeWalkDate != null)
                           RecognizeHeartButton(
@@ -214,6 +196,31 @@ class PilgrimIdentityCard extends StatelessWidget {
                           ),
                       ],
                     ),
+                    // Selos quebram linha abaixo do nome — dois selos
+                    // lado a lado não cabem com o nome em telas estreitas.
+                    if (pioneer || pilgrim || supporter) ...[
+                      const SizedBox(height: AppSpace.sm),
+                      Wrap(
+                        spacing: AppSpace.sm,
+                        runSpacing: AppSpace.xs,
+                        children: [
+                          if (pioneer || pilgrim)
+                            SoftBadge(
+                              text: pioneer
+                                  ? l10n.pioneerBadge
+                                  : l10n.pilgrimBadge,
+                              glyph: CinematicGlyph.plus,
+                              accent: AppRoles.reward,
+                            ),
+                          if (supporter)
+                            SoftBadge(
+                              text: l10n.supporterBadge,
+                              glyph: CinematicGlyph.gift,
+                              accent: AppRoles.reward,
+                            ),
+                        ],
+                      ),
+                    ],
                     if (whisper != null) ...[
                       const SizedBox(height: AppSpace.xs + 2),
                       Text(

@@ -47,6 +47,8 @@ class StreakWeek extends StatelessWidget {
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      // Topo alinhado: só hoje tem rótulo, e a altura dele segue a fonte.
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: List.generate(7, (i) {
         final day = DateTime(monday.year, monday.month, monday.day + i);
         final isToday =
@@ -135,19 +137,20 @@ class StreakWeek extends StatelessWidget {
                           ),
                   ),
                 ),
-              SizedBox(
-                height: 14,
-                child: isToday
-                    ? Text(
-                        context.l10n.profileTodayLower,
-                        style: AppTypography.label(
-                          size: 10,
-                          letterSpacing: 0.2,
-                          color: AppRoles.presence.withValues(alpha: 0.9),
-                        ),
-                      )
-                    : null,
-              ),
+              // Sem altura fixa: com a fonte do sistema maior, 14px cortava
+              // o "hoje" ao meio.
+              if (isToday) ...[
+                const SizedBox(height: 2),
+                Text(
+                  context.l10n.profileTodayLower,
+                  maxLines: 1,
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0.2,
+                    color: AppRoles.presence.withValues(alpha: 0.9),
+                  ),
+                ),
+              ],
             ],
           ),
         );

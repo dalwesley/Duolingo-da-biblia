@@ -216,9 +216,9 @@
     "es": "meta"
   },
   "homeGoalLeft": {
-    "pt": "{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}",
-    "en": "{count, plural, =1{1 scene left for your goal} other{{count} scenes left for your goal}}",
-    "es": "{count, plural, =1{Falta 1 escena para la meta} other{Faltan {count} escenas para la meta}}",
+    "pt": "{count, plural, =1{Falta 1 cena para a meta de hoje} other{Faltam {count} cenas para a meta de hoje}}",
+    "en": "{count, plural, =1{1 scene left for today's goal} other{{count} scenes left for today's goal}}",
+    "es": "{count, plural, =1{Falta 1 escena para la meta de hoy} other{Faltan {count} escenas para la meta de hoy}}",
     "placeholders": {
       "count": "int"
     }

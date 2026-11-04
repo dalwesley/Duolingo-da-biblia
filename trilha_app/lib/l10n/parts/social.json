@@ -374,17 +374,37 @@
     "es": "Ningún desafío aún"
   },
   "cornerBoardEmptyBody": {
-    "pt": "Na caravana, abra alguém na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
-    "en": "In the caravan, open someone on the same scene and invite them to the challenge. Whoever arrives by Sunday gets +{count} steps.",
-    "es": "En la caravana, abre a alguien en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +{count} pasos.",
+    "pt": "Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
+    "en": "Pick someone from the caravan on the same scene and invite them to the challenge. Whoever arrives by Sunday gets +{count} steps.",
+    "es": "Elige a alguien de la caravana en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +{count} pasos.",
     "placeholders": {
       "count": "int"
     }
   },
-  "cornerBoardOpenCaravan": {
-    "pt": "Ver a caravana",
-    "en": "See the caravan",
-    "es": "Ver la caravana"
+  "cornerBoardPickCta": {
+    "pt": "Escolher quem desafiar",
+    "en": "Pick who to challenge",
+    "es": "Elegir a quién desafiar"
+  },
+  "cornerPickTitle": {
+    "pt": "Quem você vai desafiar?",
+    "en": "Who will you challenge?",
+    "es": "¿A quién vas a desafiar?"
+  },
+  "cornerPickSubtitle": {
+    "pt": "Só dá para desafiar quem está na mesma cena que você.",
+    "en": "You can only challenge someone on the same scene as you.",
+    "es": "Solo puedes desafiar a quien está en la misma escena que tú."
+  },
+  "cornerPickEmpty": {
+    "pt": "Ninguém na caravana ainda.",
+    "en": "No one in the caravan yet.",
+    "es": "Nadie en la caravana aún."
+  },
+  "cornerPickCta": {
+    "pt": "Desafiar",
+    "en": "Challenge",
+    "es": "Desafiar"
   },
   "cornerBoardIdle": {
     "pt": "Nenhum desafio nesta semana. Chame alguém da caravana.",

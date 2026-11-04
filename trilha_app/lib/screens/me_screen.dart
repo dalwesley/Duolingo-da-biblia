@@ -227,7 +227,7 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
       const SizedBox(height: AppSpace.section),
-      // Esta semana: sequência, próximo marco e missões (grátis); a
+      // Sequência: pulso, semana, próximo marco e missões (grátis); a
       // tendência de 12 semanas é do Peregrino+.
       pad(
         ConstancyCard(
@@ -243,6 +243,9 @@ class _MeScreenState extends State<MeScreen> {
           quests: progress.hasOpenWeeklyQuests
               ? const WeeklyQuestsList()
               : null,
+          atRisk: progress.isStreakAtRisk,
+          freezeAvailable: progress.streakFreezeAvailable,
+          freezeUsed: progress.streakFreezeUsedThisWeek,
         ),
       ),
       // Quase lá: medalha, selo ou álbum a poucos passos (some se nada).
@@ -941,18 +944,21 @@ class _FoldHeader extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadii.sm),
           child: ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 44),
-            child: Row(
-              children: [
-                Expanded(child: SectionLabel(label)),
-                CountBadge('$count', filled: false, color: AppRoles.presence),
-                const SizedBox(width: AppSpace.sm),
-                AnimatedRotation(
-                  turns: open ? 0.25 : 0,
-                  duration: still ? Duration.zero : AppMotion.quick,
-                  curve: AppMotion.enter,
-                  child: ListChevron(color: a.textSecondary),
-                ),
-              ],
+            child: CardHeader(
+              label: label,
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CountBadge('$count', filled: false, color: AppRoles.presence),
+                  const SizedBox(width: AppSpace.sm),
+                  AnimatedRotation(
+                    turns: open ? 0.25 : 0,
+                    duration: still ? Duration.zero : AppMotion.quick,
+                    curve: AppMotion.enter,
+                    child: ListChevron(color: a.textSecondary),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

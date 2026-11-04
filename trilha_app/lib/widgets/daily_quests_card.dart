@@ -40,7 +40,6 @@ class DailyQuestsCard extends StatelessWidget {
         children: [
           CardHeader(
             label: context.l10n.questDailyTitle,
-            glyph: CinematicGlyph.target,
             trailing: CountBadge(
               '$doneCount/${quests.length}',
               color: doneCount >= quests.length

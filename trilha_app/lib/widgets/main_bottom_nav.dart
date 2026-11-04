@@ -61,7 +61,7 @@ class MainBottomNav extends StatelessWidget {
       (
         glyph: CinematicGlyph.tune,
         label: l10n.settingsTitle,
-        tone: style.chrome,
+        tone: AppRoles.navSettings,
       ),
     ];
 

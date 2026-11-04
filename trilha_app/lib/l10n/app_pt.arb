@@ -636,6 +636,8 @@
   "commonTryAgain": "Tentar de novo",
   "commonYou": "Você",
   "companionAwaitingCode": "Aguardando alguém entrar com o código",
+  "companionCallSubtitle": "Uma vaga só: chamar outra pessoa desfaz o convite anterior.",
+  "companionCallTitle": "Chamar para caminhar junto",
   "companionDaysTogether": "{count, plural, =1{1 dia caminhando juntos} other{{count} dias caminhando juntos}}",
   "@companionDaysTogether": {
     "placeholders": {
@@ -661,12 +663,31 @@
   "companionErrorAlreadyHave": "Você já tem uma companhia.",
   "companionErrorCreateInvite": "Não foi possível criar o convite.",
   "companionErrorInvalidCode": "Código inválido ou companhia já está completa.",
+  "companionErrorLeave": "Não foi possível sair da companhia. Confira a internet.",
   "companionErrorLoad": "Não foi possível atualizar sua companhia. Confira a internet.",
   "companionErrorSignInCreate": "Entre com Google para criar uma companhia.",
   "companionErrorSignInJoin": "Entre com Google para entrar numa companhia.",
   "companionErrorSignInWave": "Entre na conta para acenar no app.",
   "companionErrorWave": "Não foi possível enviar o aceno.",
   "companionFallbackName": "Companheiro",
+  "companionInviteBody": "{name} te chamou para caminhar junto",
+  "@companionInviteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionInviteCalled": "Você chamou {name}. Quando aceitar, a companhia começa.",
+  "@companionInviteCalled": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionInviteGone": "Esse convite não está mais aberto.",
+  "companionInviteLabel": "Convite de companhia",
   "companionNextStepTogether": "Vamos dar o próximo passo juntos?",
   "companionPartnerAway": "{days, plural, =1{Faz 1 dia sem estudar — a trilha sente falta de {name}} other{Faz {days} dias sem estudar — a trilha sente falta de {name}}}",
   "@companionPartnerAway": {
@@ -839,7 +860,7 @@
   },
   "cornerActionFailed": "Não foi possível concluir. Tente de novo.",
   "cornerArrivedMark": "Chegou",
-  "cornerBoardEmptyBody": "Na caravana, abra alguém na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
+  "cornerBoardEmptyBody": "Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
   "@cornerBoardEmptyBody": {
     "placeholders": {
       "count": {
@@ -850,7 +871,7 @@
   "cornerBoardEmptyTitle": "Nenhum desafio ainda",
   "cornerBoardFilterEmpty": "Nenhum ainda",
   "cornerBoardIdle": "Nenhum desafio nesta semana. Chame alguém da caravana.",
-  "cornerBoardOpenCaravan": "Ver a caravana",
+  "cornerBoardPickCta": "Escolher quem desafiar",
   "cornerBurstAccepted": "Desafio aceito",
   "cornerBurstLeft": "Você saiu do desafio",
   "cornerBurstSent": "Convite enviado",
@@ -936,6 +957,10 @@
   "cornerOnTheWay": "A caminho",
   "cornerOtherPerson": "A outra pessoa",
   "cornerOtherPersonLower": "a outra pessoa",
+  "cornerPickCta": "Desafiar",
+  "cornerPickEmpty": "Ninguém na caravana ainda.",
+  "cornerPickSubtitle": "Só dá para desafiar quem está na mesma cena que você.",
+  "cornerPickTitle": "Quem você vai desafiar?",
   "cornerRecordArrived": "{count, plural, =1{1 completa} other{{count} completas}}",
   "@cornerRecordArrived": {
     "placeholders": {
@@ -1636,7 +1661,8 @@
       }
     }
   },
-  "groupCallSubtitle": "O convite aparece no app. Ou mande o link no WhatsApp.",
+  "groupCallShareCta": "Compartilhar · QR code e código",
+  "groupCallSubtitle": "O convite aparece no app. Ou compartilhe o QR code e o código.",
   "groupCallTitle": "Chamar pessoas",
   "groupCaptionNotYet": "ainda não",
   "groupCaptionToday": "hoje",
@@ -1700,6 +1726,8 @@
       }
     }
   },
+  "groupMemberDidStudy": "Fez o estudo da semana",
+  "groupMembersTitle": "Integrantes",
   "groupMenuClearStudy": "Tirar estudo da semana",
   "groupMenuClose": "Encerrar o grupo",
   "groupMenuCopyCode": "Copiar código {code}",
@@ -1721,7 +1749,9 @@
   },
   "groupMenuLeadSection": "Conduzir o grupo",
   "groupMenuLeave": "Sair do grupo",
+  "groupMenuPickStudy": "Escolher estudo da semana",
   "groupMenuSetGoal": "Definir meta da semana",
+  "groupMenuSwapStudy": "Trocar estudo da semana",
   "groupMenuTransfer": "Passar a liderança",
   "groupNewTitle": "Novo grupo",
   "groupPickStudyCta": "Escolher o estudo",
@@ -1731,6 +1761,9 @@
   "groupPickerNoteHint": "Opcional. Ex.: Leiam até quarta, conversamos na quinta.",
   "groupPickerNoteLabel": "Recado para o grupo",
   "groupPickerPreviewLabel": "O grupo vai ver",
+  "groupPickerSearchEmpty": "Nenhuma trilha com esse nome.",
+  "groupPickerSearchHint": "Buscar trilha ou livro",
+  "groupPickerTabMine": "Suas trilhas",
   "groupRosterSemantics": "{count, plural, =1{{name}, 1 dia nesta semana} other{{name}, {count} dias nesta semana}}",
   "@groupRosterSemantics": {
     "placeholders": {
@@ -1752,11 +1785,28 @@
   },
   "groupSeatDaysInWeek": "Dias na semana",
   "groupSeatIdle": "ainda não estudou nesta semana",
+  "groupSeatMakeLeader": "Passar a liderança para {name}",
+  "@groupSeatMakeLeader": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupSeatMakeLeaderBody": "{name} passa a marcar o estudo, a meta e acenar para o grupo. Você continua na lista.",
+  "@groupSeatMakeLeaderBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "groupSeatNever": "ainda não estudou",
   "groupSeatSteps": "Passos",
   "groupSeatStudyDone": "Feito",
   "groupSeatStudyNotYet": "Ainda não",
   "groupSeatToday": "estudou hoje",
+  "groupSeatViewProfile": "Ver perfil",
   "groupSeatWeek": "estudou nesta semana",
   "groupSetupKindLabel": "Para que é o grupo",
   "groupSetupLimitHint": "Até {limit} pessoas. Grupo grande? Abra outro — discipulado acontece em grupo pequeno.",
@@ -1928,7 +1978,7 @@
   },
   "homeFreezeSheetBody": "Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.",
   "homeFreezeSheetTitle": "O gelo cobriu ontem",
-  "homeGoalLeft": "{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}",
+  "homeGoalLeft": "{count, plural, =1{Falta 1 cena para a meta de hoje} other{Faltam {count} cenas para a meta de hoje}}",
   "@homeGoalLeft": {
     "placeholders": {
       "count": {
@@ -2277,6 +2327,7 @@
   "juntosBondNotStudying": "Sem estudar",
   "juntosBondNotYet": "Ainda não",
   "juntosBondYourTurn": "Sua vez",
+  "juntosCallFromCaravan": "Chamar alguém da Caravana",
   "juntosCancelInvite": "Cancelar convite",
   "juntosCancelInviteError": "Não foi possível cancelar o convite. Tente de novo.",
   "juntosCaravanEmptyBody": "O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma companhia.",
@@ -2345,6 +2396,8 @@
       }
     }
   },
+  "juntosCompanionEmptyBody": "Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.",
+  "juntosCompanionEmptyTitle": "Nenhuma companhia ainda",
   "juntosCompanionExplainerBody": "Uma companhia de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.",
   "juntosCompanionExplainerTitle": "Quem caminha ao seu lado?",
   "juntosCompanionFallback": "Companheiro",
@@ -2599,8 +2652,20 @@
       }
     }
   },
+  "juntosRoomStudiedCount": "{done} de {total} estudaram",
+  "@juntosRoomStudiedCount": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "juntosRoomStudySet": "Estudo marcado para o grupo",
   "juntosRoomStudySetError": "Não foi possível marcar o estudo. Tente de novo.",
+  "juntosRoomWeekLabel": "Semana do grupo",
   "juntosRoomsEmptyBody": "Um grupo fechado: célula, discipulado ou EBD. Marque a cena da semana e veja quem estudou — o convite vai no app ou no WhatsApp.",
   "juntosRoomsEmptyEyebrow": "Célula · Discipulado · EBD",
   "juntosRoomsEmptyTitle": "Quem estuda com você?",
@@ -2608,7 +2673,7 @@
   "juntosRoomsOfflineFoot": "Sem login, o código não funciona",
   "juntosRoomsOfflineTitle": "Entre para criar o grupo",
   "juntosSeenToday": "Visto hoje",
-  "juntosShowQrShare": "Mostrar QR e compartilhar",
+  "juntosShowQrShare": "Compartilhar",
   "juntosSomeone": "Alguém",
   "juntosStudiedThisWeek": "estudaram nesta semana",
   "juntosStudyToday": "Estudar hoje",
@@ -4176,6 +4241,15 @@
       }
     }
   },
+  "nudgeWriteHint": "Escreva para {name}",
+  "@nudgeWriteHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "nudgeWriteOwn": "Escrever o meu",
   "offlineBody": "Na primeira abertura, o Stway baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.",
   "offlineDownloadFailed": "Não foi possível baixar as cenas. Tente de novo em instantes.",
   "offlineDownloading": "Baixando…",
@@ -5263,7 +5337,7 @@
       }
     }
   },
-  "profileStreakRemaining": "{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}",
+  "profileStreakRemaining": "{left, plural, =1{Falta 1 dia para cumprir o compromisso de {goal} dias.} other{Faltam {left} dias para cumprir o compromisso de {goal} dias.}}",
   "@profileStreakRemaining": {
     "placeholders": {
       "left": {
@@ -5298,15 +5372,7 @@
   "profileThreeMonthsAgo": "há 3 meses",
   "profileTitle": "Perfil",
   "profileTodayLower": "hoje",
-  "profileWdFri": "S",
-  "profileWdMon": "S",
-  "profileWdSat": "S",
-  "profileWdSun": "D",
-  "profileWdThu": "Q",
-  "profileWdTue": "T",
-  "profileWdWed": "Q",
   "profileWeekHistory": "Histórico das semanas",
-  "profileWeekTitle": "Esta semana",
   "profileWeeksWalkedSemantics": "{walked} dias caminhados nas últimas {weeks} semanas",
   "@profileWeeksWalkedSemantics": {
     "placeholders": {
@@ -5837,32 +5903,6 @@
     }
   },
   "sealsTitle": "Selos",
-  "seasonChallengeDoneBody": "Desafio da estação concluído. Bem caminhado.",
-  "seasonChallengeEmptyBody": "O próximo chega com a nova estação litúrgica.",
-  "seasonChallengeEmptyTitle": "Nenhum desafio da estação agora",
-  "seasonChallengeInProgress": "Desafio da estação em andamento",
-  "seasonChallengeInvite": "Chamar para o desafio",
-  "seasonChallengePathPercent": "{percent}% do caminho",
-  "@seasonChallengePathPercent": {
-    "placeholders": {
-      "percent": {
-        "type": "int"
-      }
-    }
-  },
-  "seasonChallengeSeeProgress": "Ver progresso",
-  "seasonChallengeShareBody": "🕯️ Entrei no desafio {title} no Stway.\n\nVamos caminhar juntos nesta estação?\n\n{footer}",
-  "@seasonChallengeShareBody": {
-    "placeholders": {
-      "title": {
-        "type": "String"
-      },
-      "footer": {
-        "type": "String"
-      }
-    }
-  },
-  "seasonChallengeTitle": "Desafio da estação",
   "seasonDayLine": "Dia {day} · {title}",
   "@seasonDayLine": {
     "placeholders": {

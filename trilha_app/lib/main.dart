@@ -109,6 +109,8 @@ class TrilhaApp extends StatelessWidget {
           update: (_, backend, subscription, previous) {
             final companions =
                 previous ?? CompanionService(backend, subscription);
+            // Convite direto (chamar pelo nome) chega ao vivo.
+            companions.ensureInviteListener();
             // Só refresca quando a sessão fica ativa (não a cada saveNow).
             if (backend.isActive && !companions.cloudSynced) {
               companions.refresh();

@@ -13,10 +13,12 @@ import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'home_player_header.dart' show PulseStat;
 import 'immersive_background.dart';
 import 'pilgrim_profile_sections.dart';
 import 'profile_privacy.dart';
 import 'relic_panel.dart';
+import 'streak_week.dart';
 import 'top_bar.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
@@ -247,41 +249,42 @@ class _ProfileIdentityCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Flexible(
-                          child: Text(
-                            name,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.display(
-                              size: 24,
-                              weight: FontWeight.w800,
-                              height: 1.05,
-                              color: a.text,
-                            ),
-                          ),
-                        ),
-                        if (pioneer || pilgrim) ...[
-                          const SizedBox(width: AppSpace.sm),
-                          SoftBadge(
-                            text: pioneer
-                                ? l10n.pioneerBadge
-                                : l10n.pilgrimBadge,
-                            glyph: CinematicGlyph.plus,
-                            accent: AppRoles.reward,
-                          ),
-                        ],
-                        if (supporter) ...[
-                          const SizedBox(width: AppSpace.sm),
-                          SoftBadge(
-                            text: l10n.supporterBadge,
-                            glyph: CinematicGlyph.gift,
-                            accent: AppRoles.reward,
-                          ),
-                        ],
-                      ],
+                    Text(
+                      name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.display(
+                        size: 24,
+                        weight: FontWeight.w800,
+                        height: 1.05,
+                        color: a.text,
+                      ),
                     ),
+                    // Selos quebram linha abaixo do nome — dois selos
+                    // lado a lado não cabem com o nome em telas estreitas.
+                    if (pioneer || pilgrim || supporter) ...[
+                      const SizedBox(height: AppSpace.sm),
+                      Wrap(
+                        spacing: AppSpace.sm,
+                        runSpacing: AppSpace.xs,
+                        children: [
+                          if (pioneer || pilgrim)
+                            SoftBadge(
+                              text: pioneer
+                                  ? l10n.pioneerBadge
+                                  : l10n.pilgrimBadge,
+                              glyph: CinematicGlyph.plus,
+                              accent: AppRoles.reward,
+                            ),
+                          if (supporter)
+                            SoftBadge(
+                              text: l10n.supporterBadge,
+                              glyph: CinematicGlyph.gift,
+                              accent: AppRoles.reward,
+                            ),
+                        ],
+                      ),
+                    ],
                     if (epithetText.isNotEmpty) ...[
                       const SizedBox(height: AppSpace.xs),
                       Text(
@@ -418,9 +421,10 @@ class _HeroStats extends StatelessWidget {
   }
 }
 
-/// "Esta semana": anel da sequência contra o compromisso firmado, a semana
-/// dia a dia, o próximo marco (Semente → Fruto), as missões da semana e,
-/// no Peregrino+, a tendência das últimas 12 semanas (sob demanda).
+/// "Sequência": anel da sequência contra o compromisso firmado, o mesmo
+/// pulso da Home (risco + gelo), a semana dia a dia ([StreakWeek], igual à
+/// Home), o próximo marco (Semente → Fruto), as missões da semana e, no
+/// Peregrino+, a tendência das últimas 12 semanas (sob demanda).
 class ConstancyCard extends StatefulWidget {
   final List<String> playDates;
   final int streak;
@@ -433,8 +437,17 @@ class ConstancyCard extends StatefulWidget {
   /// toque chama isto (o paywall). Null esconde a vitrine.
   final VoidCallback? onPlusHistory;
 
-  /// Missões da semana em curso, dentro do card ("Esta semana").
+  /// Missões da semana em curso, dentro do card.
   final Widget? quests;
+
+  /// Mesmo estado do pulso da Home: sem cena hoje e a sequência cai à
+  /// meia-noite.
+  final bool atRisk;
+
+  /// Gelo da semana: ainda disponível / já gasto. Sem nenhum dos dois, o
+  /// gelo não aparece (mesma regra da Home).
+  final bool freezeAvailable;
+  final bool freezeUsed;
 
   const ConstancyCard({
     super.key,
@@ -444,6 +457,9 @@ class ConstancyCard extends StatefulWidget {
     this.showHistory = true,
     this.onPlusHistory,
     this.quests,
+    this.atRisk = false,
+    this.freezeAvailable = false,
+    this.freezeUsed = false,
   });
 
   static const weeks = 12;
@@ -493,10 +509,15 @@ class _ConstancyCardState extends State<ConstancyCard> {
     final ratio = goal <= 0 ? 0.0 : (streak / goal).clamp(0.0, 1.0);
     final done = streak >= goal && goal > 0;
     final growth = SpiritualGrowth.fromStreak(streak);
+    final atRisk = widget.atRisk;
+    final freezeUsed = widget.freezeUsed;
+    final showFreeze = freezeUsed || widget.freezeAvailable;
 
     return GlassCard(
       tint: AppRoles.streak,
       glow: 0.45,
+      // Em risco, a mesma borda de alerta da Home.
+      borderColor: atRisk ? AppRoles.risk : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -553,7 +574,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
                             children: [
                               Flexible(
                                 child: Text(
-                                  l10n.profileWeekTitle,
+                                  l10n.pilgrimStreak,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: AppTypography.title(
@@ -601,8 +622,39 @@ class _ConstancyCardState extends State<ConstancyCard> {
               ),
             ],
           ),
+          // Pulso igual ao da Home: "2 dias em risco" e o gelo.
+          if (atRisk || showFreeze) ...[
+            const SizedBox(height: AppSpace.md),
+            MergeSemantics(
+              child: Row(
+                children: [
+                  if (atRisk)
+                    PulseStat(
+                      glyph: CinematicGlyph.flame,
+                      accent: AppRoles.streak,
+                      value: l10n.commonDays(streak),
+                      hint: l10n.homeStatAtRisk,
+                      hintColor: AppRoles.risk,
+                    ),
+                  const Spacer(),
+                  if (showFreeze)
+                    PulseStat(
+                      glyph: CinematicGlyph.frost,
+                      accent: freezeUsed ? a.textFaint : a.chrome,
+                      value: '1',
+                      hint: freezeUsed
+                          ? l10n.homeStatFreezeUsed
+                          : l10n.homeStatFreeze,
+                    ),
+                ],
+              ),
+            ),
+          ],
           const SizedBox(height: AppSpace.lg),
-          _WeekDots(start: monday, today: today, played: played),
+          _WeekHeader(start: monday, played: played),
+          const SizedBox(height: AppSpace.md),
+          // O mesmo componente da Home: azul = estudou, cristal = gelo.
+          const StreakWeek(),
           // Próximo marco da sequência (Semente → Fruto), antes um card só.
           if (growth.nextStage case final next?) ...[
             const SizedBox(height: AppSpace.lg),
@@ -732,145 +784,38 @@ class _ConstancyCardState extends State<ConstancyCard> {
   }
 }
 
-/// Esta semana, dia a dia (S T Q Q S S D): o mesmo idioma das bolinhas da
-/// Home — acesa com check, hoje com anel, futuro apagado.
-class _WeekDots extends StatelessWidget {
+/// "ESTA SEMANA · 2 de 7 dias" — os dias moram no [StreakWeek] logo abaixo.
+class _WeekHeader extends StatelessWidget {
   final DateTime start;
-  final DateTime today;
   final Set<String> played;
 
-  const _WeekDots({
-    required this.start,
-    required this.today,
-    required this.played,
-  });
+  const _WeekHeader({required this.start, required this.played});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final letters = [
-      l10n.profileWdMon,
-      l10n.profileWdTue,
-      l10n.profileWdWed,
-      l10n.profileWdThu,
-      l10n.profileWdFri,
-      l10n.profileWdSat,
-      l10n.profileWdSun,
-    ];
-    final days = [for (var i = 0; i < 7; i++) start.add(Duration(days: i))];
-    final count = days
-        .where((d) => played.contains(ConstancyCard._key(d)))
-        .length;
+    final count = [
+      for (var i = 0; i < 7; i++) start.add(Duration(days: i)),
+    ].where((d) => played.contains(ConstancyCard._key(d))).length;
     return Semantics(
       label: l10n.profileThisWeekSemantics(count),
       excludeSemantics: true,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      child: Row(
         children: [
-          Row(
-            children: [
-              SectionLabel(l10n.profileThisWeek),
-              const Spacer(),
-              Text(
-                l10n.profileOfSevenDays(count),
-                style: AppTypography.body(
-                  size: 12,
-                  weight: FontWeight.w700,
-                  color: count > 0 ? AppRoles.streak : a.textFaint,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.md),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              for (var i = 0; i < 7; i++)
-                _DayDot(
-                  letter: letters[i],
-                  on: played.contains(ConstancyCard._key(days[i])),
-                  isToday: days[i] == today,
-                  future: days[i].isAfter(today),
-                ),
-            ],
+          SectionLabel(l10n.profileThisWeek),
+          const Spacer(),
+          Text(
+            l10n.profileOfSevenDays(count),
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              // Presença, como as bolinhas — não a cor da sequência.
+              color: count > 0 ? AppRoles.presence : a.textFaint,
+            ),
           ),
         ],
       ),
-    );
-  }
-}
-
-class _DayDot extends StatelessWidget {
-  final String letter;
-  final bool on;
-  final bool isToday;
-  final bool future;
-
-  const _DayDot({
-    required this.letter,
-    required this.on,
-    required this.isToday,
-    required this.future,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    const size = 34.0;
-    return Column(
-      children: [
-        Container(
-          width: size,
-          height: size,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: on
-                ? AppRoles.streak
-                : future
-                ? Colors.transparent
-                : a.divider,
-            border: on
-                ? null
-                : Border.all(
-                    color: isToday
-                        ? AppRoles.streak
-                        : future
-                        ? a.divider
-                        : Colors.transparent,
-                    width: isToday ? 2 : 1,
-                  ),
-            boxShadow: on
-                ? [
-                    BoxShadow(
-                      color: AppRoles.streak.withValues(alpha: 0.4),
-                      blurRadius: 10,
-                    ),
-                  ]
-                : null,
-          ),
-          child: on
-              ? const CinematicIcon(
-                  glyph: CinematicGlyph.check,
-                  size: AppMetrics.iconSm,
-                  accent: AppColors.textOnDark,
-                  framed: false,
-                )
-              : null,
-        ),
-        const SizedBox(height: 6),
-        Text(
-          isToday ? context.l10n.profileTodayLower : letter,
-          style: AppTypography.body(
-            size: 11,
-            weight: FontWeight.w800,
-            color: isToday
-                ? AppRoles.streak
-                : (future ? a.textFaint : a.textSecondary),
-          ),
-        ),
-      ],
     );
   }
 }

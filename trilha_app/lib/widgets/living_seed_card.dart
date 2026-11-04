@@ -116,7 +116,7 @@ class LivingSeedCard extends StatelessWidget {
                     weight: FontWeight.w900,
                     color: accent,
                     height: 1,
-                  ),
+                  ).copyWith(fontFeatures: const [FontFeature.liningFigures()]),
                 ),
                 Text(
                   context.l10n.growthDayUnit(growth.streak).trim(),
@@ -154,7 +154,7 @@ class LivingSeedCard extends StatelessWidget {
                     weight: FontWeight.w900,
                     color: accent,
                     height: 1,
-                  ),
+                  ).copyWith(fontFeatures: const [FontFeature.liningFigures()]),
                 ),
                 Text(
                   context.l10n.growthDayUnit(growth.streak).trim(),

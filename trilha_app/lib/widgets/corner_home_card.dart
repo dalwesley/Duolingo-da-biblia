@@ -32,11 +32,16 @@ class CornerHomeCard extends StatelessWidget {
   /// Convite aceito ou recusado — quem abriu o card numa folha a fecha aqui.
   final VoidCallback? onSettled;
 
+  /// Aba Desafio: as ações saem do card e vão para baixo dele, como no
+  /// Grupo e na Companhia. Na folha da Home ficam dentro.
+  final bool actionsBelow;
+
   const CornerHomeCard({
     super.key,
     required this.challenge,
     this.onWalk,
     this.onSettled,
+    this.actionsBelow = false,
   });
 
   @override
@@ -98,12 +103,81 @@ class CornerHomeCard extends StatelessWidget {
       if (ok && context.mounted) onSettled?.call();
     }
 
+    void withdraw() =>
+        confirmCornerWithdraw(context, challenge: challenge, myUid: uid);
+
     final meDone = live || settled ? challenge.iDone(uid) : false;
     final themDone = live || settled ? challenge.theyDone(uid) : false;
     final meLeft = challenge.iLeft(uid);
     final themLeft = challenge.theyLeft(uid);
 
-    return GlassCard(
+    /// Dentro do card: rodapé com TextCta. Embaixo: CTAs largos, mesmo
+    /// arranjo do Grupo (amarelo, depois os de saída).
+    List<Widget> actions({required bool inside}) => [
+      if (incoming) ...[
+        const SizedBox(height: AppSpace.lg),
+        HoldToConfirmCta(
+          label: CornerCopy.holdAccept,
+          leading: CinematicGlyph.check,
+          onConfirm: acceptBlocked ? null : accept,
+        ),
+        if (acceptBlocked) ...[
+          const SizedBox(height: 6),
+          Text(
+            CornerCopy.busyAccept,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(size: 12, color: a.textSecondary),
+          ),
+        ],
+      ] else if (canWalk) ...[
+        SizedBox(height: inside ? AppSpace.lg : AppSpace.md),
+        CopperCta(
+          label: CornerCopy.walk,
+          leading: CinematicGlyph.path,
+          trailing: null,
+          dense: true,
+          onTap: primary,
+        ),
+      ],
+      if (incoming) ...[
+        if (inside) ...[
+          const SizedBox(height: AppSpace.xs),
+          Center(
+            child: TextCta(label: CornerCopy.decline, onTap: decline),
+          ),
+        ] else ...[
+          const SizedBox(height: AppSpace.sm),
+          GhostCta(
+            label: CornerCopy.decline,
+            leading: CinematicGlyph.close,
+            expanded: true,
+            onTap: decline,
+          ),
+        ],
+      ] else if (canWithdraw) ...[
+        if (inside) ...[
+          SizedBox(height: hasCta ? AppSpace.xs : AppSpace.md),
+          Center(
+            child: TextCta(
+              label: CornerCopy.withdraw,
+              danger: true,
+              onTap: withdraw,
+            ),
+          ),
+        ] else ...[
+          SizedBox(height: hasCta ? AppSpace.sm : AppSpace.md),
+          GhostCta(
+            label: CornerCopy.withdraw,
+            leading: CinematicGlyph.close,
+            danger: true,
+            expanded: true,
+            onTap: withdraw,
+          ),
+        ],
+      ],
+    ];
+
+    final card = GlassCard(
       glow: live ? 0.7 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -169,52 +243,16 @@ class CornerHomeCard extends StatelessWidget {
             const SizedBox(height: AppSpace.md),
             _WeekFuse(daysLeft: days, label: when),
           ],
-          if (incoming) ...[
-            const SizedBox(height: AppSpace.lg),
-            HoldToConfirmCta(
-              label: CornerCopy.holdAccept,
-              leading: CinematicGlyph.check,
-              onConfirm: acceptBlocked ? null : accept,
-            ),
-            if (acceptBlocked) ...[
-              const SizedBox(height: 6),
-              Text(
-                CornerCopy.busyAccept,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(size: 12, color: a.textSecondary),
-              ),
-            ],
-          ] else if (canWalk) ...[
-            const SizedBox(height: AppSpace.lg),
-            CopperCta(
-              label: CornerCopy.walk,
-              leading: CinematicGlyph.path,
-              trailing: null,
-              dense: true,
-              onTap: primary,
-            ),
-          ],
-          if (incoming) ...[
-            const SizedBox(height: AppSpace.xs),
-            Center(
-              child: TextCta(label: CornerCopy.decline, onTap: decline),
-            ),
-          ] else if (canWithdraw) ...[
-            SizedBox(height: hasCta ? AppSpace.xs : AppSpace.md),
-            Center(
-              child: TextCta(
-                label: CornerCopy.withdraw,
-                danger: true,
-                onTap: () => confirmCornerWithdraw(
-                  context,
-                  challenge: challenge,
-                  myUid: uid,
-                ),
-              ),
-            ),
-          ],
+          if (!actionsBelow) ...actions(inside: true),
         ],
       ),
+    );
+    if (!actionsBelow) return card;
+    final below = actions(inside: false);
+    if (below.isEmpty) return card;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [card, ...below],
     );
   }
 }
@@ -389,7 +427,7 @@ class CornerPairRow extends StatelessWidget {
                 if (awaitingAccept)
                   _WaitingMark(label: awaitLabel)
                 else
-                  _FinishMark(lit: leftDone && rightDone),
+                  RaceMark(lit: leftDone && rightDone),
               ],
             ),
           ),
@@ -427,14 +465,42 @@ class _RaceThread extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return RaceDashes(
+      left: left,
+      right: right,
+      leftTone: leftDone ? AppRoles.success : AppRoles.reward,
+      rightTone: rightDone ? AppRoles.success : AppRoles.reward,
+    );
+  }
+}
+
+/// Os 7 traços de cada lado, acesos do retrato para o meio ([left] e
+/// [right] = quantos). O meio fica livre para um [RaceMark] de 46.
+/// Desafio (corrida da semana) e Companhia (dias de cada um na semana).
+class RaceDashes extends StatelessWidget {
+  final int left;
+  final int right;
+  final Color leftTone;
+  final Color rightTone;
+
+  const RaceDashes({
+    super.key,
+    required this.left,
+    required this.right,
+    required this.leftTone,
+    required this.rightTone,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return CustomPaint(
       size: const Size(double.infinity, 14),
       painter: _RacePainter(
         left: left.clamp(0, _raceDays),
         right: right.clamp(0, _raceDays),
-        leftTone: leftDone ? AppRoles.success : AppRoles.reward,
-        rightTone: rightDone ? AppRoles.success : AppRoles.reward,
+        leftTone: leftTone,
+        rightTone: rightTone,
         idle: a.textFaint,
       ),
     );
@@ -672,17 +738,25 @@ class _Walker extends StatelessWidget {
   }
 }
 
-/// Bandeira de chegada no meio do fio. Acende inteira quando os dois chegam.
-class _FinishMark extends StatefulWidget {
+/// Marco no meio do fio — respira sempre; acende inteiro no [litTone]
+/// quando os dois chegam. Sem [glyph], a bandeira de chegada do Desafio.
+class RaceMark extends StatefulWidget {
   final bool lit;
+  final Color litTone;
+  final CinematicGlyph? glyph;
 
-  const _FinishMark({required this.lit});
+  const RaceMark({
+    super.key,
+    required this.lit,
+    this.litTone = AppRoles.success,
+    this.glyph,
+  });
 
   @override
-  State<_FinishMark> createState() => _FinishMarkState();
+  State<RaceMark> createState() => _RaceMarkState();
 }
 
-class _FinishMarkState extends State<_FinishMark>
+class _RaceMarkState extends State<RaceMark>
     with SingleTickerProviderStateMixin {
   late final AnimationController _pulse;
   late final Animation<double> _glow;
@@ -712,7 +786,7 @@ class _FinishMarkState extends State<_FinishMark>
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final boost = widget.lit ? 1.0 : 0.0;
-    final tone = widget.lit ? AppRoles.success : a.chrome;
+    final tone = widget.lit ? widget.litTone : a.chrome;
     return SizedBox(
       width: 46,
       height: 46,
@@ -754,9 +828,21 @@ class _FinishMarkState extends State<_FinishMark>
                     width: 1.4,
                   ),
                 ),
-                child: CustomPaint(
-                  painter: _FinishFlagPainter(wave: _pulse.value, color: tone),
-                ),
+                child: widget.glyph == null
+                    ? CustomPaint(
+                        painter: _FinishFlagPainter(
+                          wave: _pulse.value,
+                          color: tone,
+                        ),
+                      )
+                    : Center(
+                        child: CinematicIcon(
+                          glyph: widget.glyph!,
+                          size: AppMetrics.iconMd,
+                          accent: tone,
+                          framed: false,
+                        ),
+                      ),
               );
             },
           ),

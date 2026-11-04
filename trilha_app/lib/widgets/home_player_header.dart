@@ -149,7 +149,7 @@ class HomePlayerHeader extends StatelessWidget {
           MergeSemantics(
             child: Row(
               children: [
-                _Stat(
+                PulseStat(
                   glyph: CinematicGlyph.flame,
                   accent: AppRoles.streak,
                   value: l10n.commonDays(streak),
@@ -157,14 +157,14 @@ class HomePlayerHeader extends StatelessWidget {
                   hintColor: a.textSecondary,
                 ),
                 const Spacer(),
-                _Stat(
+                PulseStat(
                   glyph: CinematicGlyph.check,
                   accent: goalMet ? AppRoles.presence : a.chrome,
                   value: '$done/$goal',
                   hint: l10n.homeStatGoal,
                 ),
-                const SizedBox(width: AppSpace.md),
-                _Stat(
+                const SizedBox(width: AppSpace.lg),
+                PulseStat(
                   glyph: CinematicGlyph.frost,
                   accent: freezeUsed ? a.textFaint : a.chrome,
                   value: '$freezeCount',
@@ -199,14 +199,16 @@ class HomePlayerHeader extends StatelessWidget {
   }
 }
 
-class _Stat extends StatelessWidget {
+/// Um número do pulso (sequência, meta, gelo) — Home e perfil usam o mesmo.
+class PulseStat extends StatelessWidget {
   final CinematicGlyph glyph;
   final Color accent;
   final String value;
   final String? hint;
   final Color? hintColor;
 
-  const _Stat({
+  const PulseStat({
+    super.key,
     required this.glyph,
     required this.accent,
     required this.value,

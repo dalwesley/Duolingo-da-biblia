@@ -6,6 +6,7 @@ const { getMessaging } = require('firebase-admin/messaging');
 const functions = require('firebase-functions/v1');
 const { logger } = require('firebase-functions');
 const { defineSecret } = require('firebase-functions/params');
+const { isAllowed } = require('./content_filter');
 
 /**
  * Token FCM do peregrino: `users/{uid}/private/data` (app novo) ou
@@ -53,6 +54,13 @@ exports.onCompanionNudge = functions.firestore
     }
 
     const db = getFirestore();
+    // Quem bloqueou não recebe nada de quem foi bloqueado (App Store 1.2).
+    const blocked = await db.doc(`users/${toId}/blocks/${fromId}`).get();
+    if (blocked.exists) {
+      logger.info('aceno de bloqueado, sem push', { toId });
+      return;
+    }
+
     const token = await fcmTokenOf(db, toId);
     if (!token || typeof token !== 'string') {
       logger.info('destinatário sem token FCM', { toId });
@@ -62,7 +70,9 @@ exports.onCompanionNudge = functions.firestore
     const fromName = (after.nudgeFromName || 'Companheiro')
       .trim()
       .split(/\s+/)[0];
-    const body = message || 'Um aceno na trilha. Vem caminhar.';
+    // Texto escrito (Peregrino+) passa pelo filtro; barrado vira o padrão.
+    const fallback = 'Um aceno na trilha. Vem caminhar.';
+    const body = message && isAllowed(message) ? message : fallback;
 
     try {
       await getMessaging().send({
@@ -248,6 +258,75 @@ exports.onRoomNudge = functions.firestore
       });
     } catch (err) {
       logger.error('falha no push de chamado do grupo', err);
+    }
+  });
+
+/**
+ * Convite de companhia pelo nome (chamar alguém da Caravana). Avisa quando
+ * o convite fica pendente para alguém novo — inclusive quando quem chamou
+ * troca o destinatário.
+ */
+exports.onCompanionInvite = functions.firestore
+  .document('companionInvites/{code}')
+  .onWrite(async (change, context) => {
+    const after = change.after.exists ? change.after.data() : null;
+    if (!after || after.status !== 'pending') return;
+    const before = change.before.exists ? change.before.data() : null;
+    if (before && before.status === 'pending' && before.toUid === after.toUid) {
+      return;
+    }
+
+    const toId = (after.toUid || '').trim();
+    const fromId = (after.fromUid || '').trim();
+    if (!toId || !fromId || toId === fromId) return;
+
+    const db = getFirestore();
+    const blocked = await db.doc(`users/${toId}/blocks/${fromId}`).get();
+    if (blocked.exists) {
+      logger.info('convite de companhia de bloqueado, sem push', { toId });
+      return;
+    }
+    const token = await fcmTokenOf(db, toId);
+    if (!token || typeof token !== 'string') {
+      logger.info('convite de companhia sem token FCM', { toId });
+      return;
+    }
+
+    const fromName =
+      (after.fromName || 'Alguém').trim().split(/\s+/)[0] || 'Alguém';
+
+    try {
+      await getMessaging().send({
+        token,
+        notification: {
+          title: `${fromName} te chamou`,
+          body: 'Para caminhar junto na companhia. O convite está em Juntos.',
+        },
+        data: {
+          action: 'league',
+          type: 'companhia-convite',
+        },
+        android: {
+          priority: 'high',
+          notification: {
+            channelId: 'trilha_habits',
+            sound: 'default',
+          },
+        },
+        apns: {
+          payload: {
+            aps: {
+              sound: 'default',
+            },
+          },
+        },
+      });
+      logger.info('push de convite de companhia enviado', {
+        toId,
+        code: context.params.code,
+      });
+    } catch (err) {
+      logger.error('falha no push de convite de companhia', err);
     }
   });
 

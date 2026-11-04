@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
@@ -76,73 +77,143 @@ class RoomWeekBar extends StatelessWidget {
   }
 }
 
-/// Quem está no grupo, uma linha por pessoa: rosto, nome e a barra da
-/// semana, que enche a cada dia de estudo.
-class RoomRoster extends StatelessWidget {
+/// Lista de quem está no grupo: uma linha por pessoa (rosto, status e as
+/// bolinhas da semana) e, no fim, o convite. Sem card próprio — mora no card
+/// do grupo, sob [RoomWeekLetters].
+///
+/// A ordem vem pronta de quem chama e não muda com o placar: ninguém troca
+/// de lugar ao longo da semana.
+class RoomMembersList extends StatelessWidget {
   final List<RoomMember> members;
   final String? myPhotoUrl;
   final PortraitStyle myStyle;
   final String? leaderId;
+  final String leaderTitle;
+  final RoomStudy? study;
   final ValueChanged<RoomMember>? onTap;
 
-  const RoomRoster({
+  /// `null` quando o grupo está cheio.
+  final VoidCallback? onInvite;
+
+  const RoomMembersList({
     super.key,
     required this.members,
     this.myPhotoUrl,
     this.myStyle = PortraitStyle.photo,
     this.leaderId,
+    required this.leaderTitle,
+    this.study,
     this.onTap,
+    this.onInvite,
   });
 
-  /// Quem mais caminhou na semana primeiro; empate, quem estudou hoje.
-  static List<RoomMember> ordered(List<RoomMember> members) {
-    final list = [...members];
-    list.sort((a, b) {
-      final d = b.daysThisWeek.compareTo(a.daysThisWeek);
-      if (d != 0) return d;
-      final t = (b.walkedToday() ? 1 : 0).compareTo(a.walkedToday() ? 1 : 0);
-      if (t != 0) return t;
-      final s = b.steps.compareTo(a.steps);
-      if (s != 0) return s;
-      return a.name.toLowerCase().compareTo(b.name.toLowerCase());
-    });
-    return list;
-  }
+  /// Recuo horizontal de cada linha — alinhe [RoomWeekLetters] com ele.
+  static const double inset = 8;
 
   @override
   Widget build(BuildContext context) {
-    final rows = ordered(members);
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        for (var i = 0; i < rows.length; i++)
-          _RosterRow(
-            member: rows[i],
+        for (var i = 0; i < members.length; i++)
+          _MemberRow(
+            member: members[i],
             index: i,
-            isLeader: rows[i].uid == leaderId,
-            photoUrl: rows[i].isUser
-                ? (myPhotoUrl ?? rows[i].photoUrl)
-                : rows[i].photoUrl,
-            style: rows[i].isUser ? myStyle : rows[i].portraitStyle,
-            onTap: onTap == null ? null : () => onTap!(rows[i]),
+            isLeader: members[i].uid == leaderId,
+            leaderTitle: leaderTitle,
+            study: study,
+            photoUrl: members[i].isUser
+                ? (myPhotoUrl ?? members[i].photoUrl)
+                : members[i].photoUrl,
+            style: members[i].isUser ? myStyle : members[i].portraitStyle,
+            onTap: onTap == null ? null : () => onTap!(members[i]),
+          ),
+        const SizedBox(height: AppSpace.xs),
+        if (onInvite != null)
+          _InviteRow(onTap: onInvite!)
+        else
+          Padding(
+            padding: const EdgeInsets.fromLTRB(inset, AppSpace.sm, inset, 0),
+            child: Text(
+              l10n.juntosRoomFull,
+              style: AppTypography.body(
+                size: 12,
+                height: 1.3,
+                weight: FontWeight.w700,
+                color: a.textSecondary,
+              ),
+            ),
           ),
       ],
     );
   }
 }
 
-class _RosterRow extends StatelessWidget {
+/// Largura de cada dia na coluna da semana (cabeçalho e bolinhas).
+const double _kDaySlot = 11;
+const double _kDayGap = 2;
+const double _kWeekWidth = _kDaySlot * 7 + _kDayGap * 6;
+
+/// S T Q Q S S D sobre as bolinhas de cada pessoa; hoje em destaque.
+class RoomWeekLetters extends StatelessWidget {
+  const RoomWeekLetters({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final today = DateTime.now().weekday;
+    final narrow = DateFormat(
+      'EEEEE',
+      Localizations.localeOf(context).toLanguageTag(),
+    );
+    // 1 de janeiro de 2024 foi segunda: dia d da semana = 2024-01-d.
+    String label(int d) => narrow.format(DateTime(2024, 1, d)).toUpperCase();
+    return ExcludeSemantics(
+      child: SizedBox(
+        width: _kWeekWidth,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            for (var d = 1; d <= 7; d++)
+              SizedBox(
+                width: _kDaySlot,
+                child: Text(
+                  label(d),
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.visible,
+                  softWrap: false,
+                  style: AppTypography.label(
+                    size: 9,
+                    letterSpacing: 0,
+                    color: d == today ? a.text : a.textFaint,
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _MemberRow extends StatelessWidget {
   final RoomMember member;
   final int index;
   final bool isLeader;
+  final String leaderTitle;
+  final RoomStudy? study;
   final String? photoUrl;
   final PortraitStyle style;
   final VoidCallback? onTap;
 
-  const _RosterRow({
+  const _MemberRow({
     required this.member,
     required this.index,
     required this.isLeader,
+    required this.leaderTitle,
+    required this.study,
     required this.photoUrl,
     required this.style,
     this.onTap,
@@ -153,20 +224,13 @@ class _RosterRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final state = seatStateOf(member);
-    final days = member.daysThisWeek;
-    final quiet = state == SeatState.quiet;
-    final idle = member.daysSinceWalk();
     final l10n = context.l10n;
+    final state = seatStateOf(member);
+    final quiet = state == SeatState.quiet;
     final name = member.isUser ? l10n.commonYou : member.name;
-
-    final caption = switch (state) {
-      SeatState.today => l10n.groupCaptionToday,
-      SeatState.week => null,
-      SeatState.quiet =>
-        idle == null ? l10n.groupCaptionNotYet : l10n.groupDaysAway(idle),
-      SeatState.idle => null,
-    };
+    final raw = seatLabel(member);
+    final status = raw.isEmpty ? raw : raw[0].toUpperCase() + raw.substring(1);
+    final didStudy = member.didStudy(study);
 
     // Anel de presença: teal quando estudou hoje.
     Widget face = UserAvatar(
@@ -184,9 +248,17 @@ class _RosterRow extends StatelessWidget {
       );
     }
 
+    final semantics = [
+      l10n.groupRosterSemantics(name, member.daysThisWeek),
+      if (isLeader) leaderTitle,
+      status,
+      if (didStudy) l10n.groupMemberDidStudy,
+    ].join('. ');
+
     return Semantics(
       button: onTap != null,
-      label: l10n.groupRosterSemantics(name, days),
+      label: semantics,
+      excludeSemantics: true,
       child: InkWell(
         onTap: onTap == null
             ? null
@@ -196,12 +268,11 @@ class _RosterRow extends StatelessWidget {
               },
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+          padding: const EdgeInsets.symmetric(vertical: 9, horizontal: 8),
           decoration: member.isUser
               ? BoxDecoration(
-                  color: a.selected.withValues(alpha: 0.08),
+                  color: a.selected.withValues(alpha: 0.07),
                   borderRadius: BorderRadius.circular(AppRadii.md),
-                  border: Border.all(color: a.selected.withValues(alpha: 0.4)),
                 )
               : null,
           child: Row(
@@ -213,7 +284,7 @@ class _RosterRow extends StatelessWidget {
                   clipBehavior: Clip.none,
                   children: [
                     Center(child: face),
-                    // Coroa = dono do grupo (papel, não prêmio): chrome.
+                    // Coroa = quem conduz o grupo (papel, não prêmio): chrome.
                     if (isLeader)
                       Positioned(
                         right: -2,
@@ -240,64 +311,67 @@ class _RosterRow extends StatelessWidget {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: AppTypography.title(
-                              size: 14,
+                              size: 15,
                               color: quiet ? a.textSecondary : a.text,
                             ),
                           ),
                         ),
-                        if (caption != null) ...[
+                        if (isLeader) ...[
                           const SizedBox(width: 6),
-                          Flexible(
+                          // Teto: nome longo não some atrás do papel.
+                          ConstrainedBox(
+                            constraints: const BoxConstraints(maxWidth: 84),
                             child: Text(
-                              '· $caption',
+                              leaderTitle,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
-                              style: AppTypography.body(
-                                size: 11,
-                                weight: FontWeight.w700,
-                                color: state == SeatState.today
-                                    ? AppRoles.presence
-                                    : a.textFaint,
+                              style: AppTypography.label(
+                                size: 9,
+                                letterSpacing: 0.4,
+                                color: a.chrome,
                               ),
                             ),
                           ),
                         ],
                       ],
                     ),
-                    const SizedBox(height: 7),
-                    _WeekTrack(
-                      days: days,
-                      today: state == SeatState.today,
-                      delay: index,
+                    const SizedBox(height: 3),
+                    Row(
+                      children: [
+                        if (didStudy) ...[
+                          const CinematicIcon(
+                            glyph: CinematicGlyph.book,
+                            size: 12,
+                            accent: AppRoles.presence,
+                            framed: false,
+                          ),
+                          const SizedBox(width: 4),
+                        ],
+                        Flexible(
+                          child: Text(
+                            didStudy && state != SeatState.today
+                                ? l10n.groupMemberDidStudy
+                                : status,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.body(
+                              size: 12,
+                              weight: FontWeight.w700,
+                              color: state == SeatState.today || didStudy
+                                  ? AppRoles.presence
+                                  : quiet
+                                  ? a.textFaint
+                                  : a.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
-              const SizedBox(width: 12),
-              SizedBox(
-                width: 44,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(
-                      '$days',
-                      style: AppTypography.display(
-                        size: 20,
-                        height: 1,
-                        color: days > 0 ? a.text : a.textFaint,
-                      ),
-                    ),
-                    Text(
-                      l10n.groupDayUnit(days).trim(),
-                      style: AppTypography.label(
-                        size: 10,
-                        letterSpacing: 0.4,
-                        color: a.textFaint,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              const SizedBox(width: 10),
+              _WeekDots(member: member, delay: index),
             ],
           ),
         ),
@@ -306,107 +380,155 @@ class _RosterRow extends StatelessWidget {
   }
 }
 
-/// Trilho de 7 dias. Enche da esquerda para a direita conforme os dias de
-/// estudo da semana; a ponta brilha quando a pessoa estudou hoje.
-class _WeekTrack extends StatelessWidget {
-  final int days;
-  final bool today;
+/// Sete bolinhas (seg → dom): cheia = estudou nesse dia; hoje com contorno;
+/// dias que ainda vêm ficam só no traço.
+class _WeekDots extends StatelessWidget {
+  final RoomMember member;
   final int delay;
 
-  const _WeekTrack({
-    required this.days,
-    required this.today,
-    required this.delay,
-  });
+  const _WeekDots({required this.member, required this.delay});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final target = (days / 7).clamp(0.0, 1.0);
-    final reduce = MediaQuery.of(context).disableAnimations;
-    return SizedBox(
-      height: 10,
-      width: double.infinity,
-      child: TweenAnimationBuilder<double>(
-        tween: Tween(begin: 0, end: target),
-        duration: reduce
-            ? Duration.zero
-            : Duration(milliseconds: 700 + 90 * delay.clamp(0, 8)),
-        curve: AppMotion.enter,
-        builder: (context, v, _) => CustomPaint(
-          painter: _TrackPainter(
-            value: v,
-            track: a.progressTrack,
-            tick: a.cardBorder,
-            glow: today && v >= target - 0.001 && target > 0,
+    final today = DateTime.now().weekday;
+    final days = {
+      ...member.weekDays,
+      // Dado antigo sem os dias: ao menos o de hoje aparece.
+      if (member.weekDays.isEmpty && member.walkedToday()) today,
+    };
+    final still = MediaQuery.disableAnimationsOf(context);
+    final dots = SizedBox(
+      width: _kWeekWidth,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          for (var d = 1; d <= 7; d++)
+            SizedBox(
+              width: _kDaySlot,
+              height: _kDaySlot,
+              child: Center(
+                child: AnimatedContainer(
+                  duration: still
+                      ? Duration.zero
+                      : Duration(milliseconds: 300 + 40 * delay.clamp(0, 8)),
+                  width: 9,
+                  height: 9,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: days.contains(d)
+                        ? AppRoles.presence
+                        : d > today
+                        ? Colors.transparent
+                        : a.progressTrack,
+                    border: d == today && !days.contains(d)
+                        ? Border.all(color: a.selected, width: 1.5)
+                        : d > today
+                        ? Border.all(color: a.cardBorder)
+                        : null,
+                    boxShadow: d == today && days.contains(d)
+                        ? [
+                            BoxShadow(
+                              color: AppRoles.presence.withValues(alpha: 0.55),
+                              blurRadius: 6,
+                            ),
+                          ]
+                        : null,
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+    // Letras em cima das bolinhas, na própria linha de cada pessoa.
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [const RoomWeekLetters(), const SizedBox(height: 3), dots],
+    );
+  }
+}
+
+/// Última linha da lista: o lugar vazio que chama mais gente.
+class _InviteRow extends StatelessWidget {
+  final VoidCallback onTap;
+
+  const _InviteRow({required this.onTap});
+
+  static const double _face = AppMetrics.avatarMd * 2;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    return Semantics(
+      button: true,
+      label: l10n.groupCallTitle,
+      excludeSemantics: true,
+      child: InkWell(
+        onTap: () {
+          ActHaptics.tap();
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 9, horizontal: 8),
+          child: Row(
+            children: [
+              SizedBox(
+                width: _face + 4,
+                height: _face + 4,
+                child: Center(
+                  child: Container(
+                    width: _face,
+                    height: _face,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: a.cardFillSoft,
+                      border: Border.all(color: a.cardBorder),
+                    ),
+                    child: Center(
+                      child: CinematicIcon(
+                        glyph: CinematicGlyph.plus,
+                        size: AppMetrics.iconSm,
+                        accent: a.chrome,
+                        framed: false,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.groupCallTitle,
+                      style: AppTypography.title(size: 15, color: a.text),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      l10n.groupCallSubtitle,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 12,
+                        height: 1.3,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpace.sm),
+              ListChevron(color: a.textFaint),
+            ],
           ),
         ),
       ),
     );
   }
-}
-
-class _TrackPainter extends CustomPainter {
-  final double value;
-  final Color track;
-  final Color tick;
-  final bool glow;
-
-  const _TrackPainter({
-    required this.value,
-    required this.track,
-    required this.tick,
-    required this.glow,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final h = 6.0;
-    final top = (size.height - h) / 2;
-    final r = Radius.circular(h / 2);
-    final full = RRect.fromLTRBR(0, top, size.width, top + h, r);
-    canvas.drawRRect(full, Paint()..color = track);
-
-    if (value > 0) {
-      final w = size.width * value;
-      final fill = RRect.fromLTRBR(0, top, w, top + h, r);
-      canvas.drawRRect(
-        fill,
-        Paint()
-          ..shader = LinearGradient(
-            colors: [
-              AppRoles.presence.withValues(alpha: 0.6),
-              AppRoles.presence,
-            ],
-          ).createShader(Rect.fromLTWH(0, top, w, h)),
-      );
-      if (glow) {
-        canvas.drawCircle(
-          Offset(w - h / 2, size.height / 2),
-          4.5,
-          Paint()
-            ..color = AppRoles.presence.withValues(alpha: 0.55)
-            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
-        );
-      }
-    }
-
-    // Marcas dos 7 dias.
-    final p = Paint()
-      ..color = tick
-      ..strokeWidth = 1.2;
-    for (var i = 1; i < 7; i++) {
-      final x = size.width * i / 7;
-      canvas.drawLine(Offset(x, top + 1), Offset(x, top + h - 1), p);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _TrackPainter old) =>
-      old.value != value ||
-      old.glow != glow ||
-      old.track != track ||
-      old.tick != tick;
 }
 
 class _Badge extends StatelessWidget {

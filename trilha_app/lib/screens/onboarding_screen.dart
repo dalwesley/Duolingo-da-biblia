@@ -131,6 +131,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   List<int> get _streakOptions =>
       _intent == _Intent.habit ? habitStreakGoals : streakGoals;
 
+  /// Já anda uma trilha (rever introdução, reinstalação): o motivo não
+  /// muda o caminho — a Home segue a última trilha andada —, então a
+  /// pergunta some e o motivo salvo fica. Trocar, só em Ajustes.
+  bool _keepIntent = false;
+
   /// A pessoa já mexeu na meta de sequência — o motivo não a troca mais.
   bool _streakTouched = false;
 
@@ -294,6 +299,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     _cut = AnimationController(vsync: this, duration: AppMotion.gentle);
 
+    final progress = context.read<ProgressService>();
+    _keepIntent =
+        progress.lastMissionSlug != null || progress.trailChosenAt.isNotEmpty;
+
     // Já está no cache da splash; o fundo repinta a cada quadro.
     BrandTrail.ensureLoaded().then((_) {}, onError: (_) {});
     _scene.forward();
@@ -371,7 +380,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       await _finish();
       return;
     }
-    await _cutTo(_index + 1);
+    var next = _index + 1;
+    if (_keepIntent && _beats[next] == _Beat.intent) next++;
+    await _cutTo(next);
   }
 
   /// "Agora não" e "Pular": o último ato, com os padrões.
@@ -590,8 +601,13 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                           children: [
                             Expanded(
                               child: _FilmBar(
-                                index: _index,
-                                total: _beats.length,
+                                index:
+                                    _keepIntent && _index > _Beat.intent.index
+                                    ? _index - 1
+                                    : _index,
+                                total: _keepIntent
+                                    ? _beats.length - 1
+                                    : _beats.length,
                                 scene: _scene,
                               ),
                             ),

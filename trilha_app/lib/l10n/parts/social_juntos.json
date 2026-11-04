@@ -729,14 +729,24 @@
     "es": "Falta una persona del otro lado"
   },
   "juntosShowQrShare": {
-    "pt": "Mostrar QR e compartilhar",
-    "en": "Show QR and share",
-    "es": "Mostrar QR y compartir"
+    "pt": "Compartilhar",
+    "en": "Share",
+    "es": "Compartir"
   },
   "juntosCancelInvite": {
     "pt": "Cancelar convite",
     "en": "Cancel invite",
     "es": "Cancelar invitación"
+  },
+  "juntosCompanionEmptyTitle": {
+    "pt": "Nenhuma companhia ainda",
+    "en": "No companion yet",
+    "es": "Ninguna compañía aún"
+  },
+  "juntosCompanionEmptyBody": {
+    "pt": "Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.",
+    "en": "Invite someone to walk with you. On the days you both study, the thread lights up and the streak grows.",
+    "es": "Invita a alguien a caminar contigo. El día en que los dos estudian, el hilo se enciende y la racha crece."
   },
   "juntosWho": {
     "pt": "Quem?",
@@ -865,6 +875,47 @@
     "es": "+{count} esta semana",
     "placeholders": {
       "count": "int"
+    }
+  },
+  "companionInviteGone": {
+    "pt": "Esse convite não está mais aberto.",
+    "en": "This invite is no longer open.",
+    "es": "Esta invitación ya no está abierta."
+  },
+  "juntosCallFromCaravan": {
+    "pt": "Chamar alguém da Caravana",
+    "en": "Invite someone from the Caravan",
+    "es": "Llamar a alguien de la Caravana"
+  },
+  "companionCallTitle": {
+    "pt": "Chamar para caminhar junto",
+    "en": "Invite to walk together",
+    "es": "Llamar a caminar juntos"
+  },
+  "companionCallSubtitle": {
+    "pt": "Uma vaga só: chamar outra pessoa desfaz o convite anterior.",
+    "en": "One spot only: inviting someone else undoes the previous invite.",
+    "es": "Un solo lugar: llamar a otra persona deshace la invitación anterior."
+  },
+  "companionInviteLabel": {
+    "pt": "Convite de companhia",
+    "en": "Companion invite",
+    "es": "Invitación de compañía"
+  },
+  "companionInviteBody": {
+    "pt": "{name} te chamou para caminhar junto",
+    "en": "{name} invited you to walk together",
+    "es": "{name} te invitó a caminar juntos",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "companionInviteCalled": {
+    "pt": "Você chamou {name}. Quando aceitar, a companhia começa.",
+    "en": "You invited {name}. Once they accept, you start walking together.",
+    "es": "Llamaste a {name}. Cuando acepte, empieza la compañía.",
+    "placeholders": {
+      "name": "String"
     }
   }
 }

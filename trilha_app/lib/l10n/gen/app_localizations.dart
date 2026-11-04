@@ -1852,6 +1852,18 @@ abstract class AppLocalizations {
   /// **'Aguardando alguém entrar com o código'**
   String get companionAwaitingCode;
 
+  /// No description provided for @companionCallSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma vaga só: chamar outra pessoa desfaz o convite anterior.'**
+  String get companionCallSubtitle;
+
+  /// No description provided for @companionCallTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chamar para caminhar junto'**
+  String get companionCallTitle;
+
   /// No description provided for @companionDaysTogether.
   ///
   /// In pt, this message translates to:
@@ -1918,6 +1930,12 @@ abstract class AppLocalizations {
   /// **'Código inválido ou companhia já está completa.'**
   String get companionErrorInvalidCode;
 
+  /// No description provided for @companionErrorLeave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível sair da companhia. Confira a internet.'**
+  String get companionErrorLeave;
+
   /// No description provided for @companionErrorLoad.
   ///
   /// In pt, this message translates to:
@@ -1953,6 +1971,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Companheiro'**
   String get companionFallbackName;
+
+  /// No description provided for @companionInviteBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} te chamou para caminhar junto'**
+  String companionInviteBody(String name);
+
+  /// No description provided for @companionInviteCalled.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você chamou {name}. Quando aceitar, a companhia começa.'**
+  String companionInviteCalled(String name);
+
+  /// No description provided for @companionInviteGone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esse convite não está mais aberto.'**
+  String get companionInviteGone;
+
+  /// No description provided for @companionInviteLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Convite de companhia'**
+  String get companionInviteLabel;
 
   /// No description provided for @companionNextStepTogether.
   ///
@@ -2227,7 +2269,7 @@ abstract class AppLocalizations {
   /// No description provided for @cornerBoardEmptyBody.
   ///
   /// In pt, this message translates to:
-  /// **'Na caravana, abra alguém na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.'**
+  /// **'Escolha alguém da caravana na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.'**
   String cornerBoardEmptyBody(int count);
 
   /// No description provided for @cornerBoardEmptyTitle.
@@ -2248,11 +2290,11 @@ abstract class AppLocalizations {
   /// **'Nenhum desafio nesta semana. Chame alguém da caravana.'**
   String get cornerBoardIdle;
 
-  /// No description provided for @cornerBoardOpenCaravan.
+  /// No description provided for @cornerBoardPickCta.
   ///
   /// In pt, this message translates to:
-  /// **'Ver a caravana'**
-  String get cornerBoardOpenCaravan;
+  /// **'Escolher quem desafiar'**
+  String get cornerBoardPickCta;
 
   /// No description provided for @cornerBurstAccepted.
   ///
@@ -2451,6 +2493,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'a outra pessoa'**
   String get cornerOtherPersonLower;
+
+  /// No description provided for @cornerPickCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desafiar'**
+  String get cornerPickCta;
+
+  /// No description provided for @cornerPickEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém na caravana ainda.'**
+  String get cornerPickEmpty;
+
+  /// No description provided for @cornerPickSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Só dá para desafiar quem está na mesma cena que você.'**
+  String get cornerPickSubtitle;
+
+  /// No description provided for @cornerPickTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem você vai desafiar?'**
+  String get cornerPickTitle;
 
   /// No description provided for @cornerRecordArrived.
   ///
@@ -4204,10 +4270,16 @@ abstract class AppLocalizations {
   /// **'Este grupo já tem {count} pessoas.'**
   String groupCallFull(int count);
 
+  /// No description provided for @groupCallShareCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar · QR code e código'**
+  String get groupCallShareCta;
+
   /// No description provided for @groupCallSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'O convite aparece no app. Ou mande o link no WhatsApp.'**
+  /// **'O convite aparece no app. Ou compartilhe o QR code e o código.'**
   String get groupCallSubtitle;
 
   /// No description provided for @groupCallTitle.
@@ -4330,6 +4402,18 @@ abstract class AppLocalizations {
   /// **'{title} {name}'**
   String groupLeaderNoteTitle(String title, String name);
 
+  /// No description provided for @groupMemberDidStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fez o estudo da semana'**
+  String get groupMemberDidStudy;
+
+  /// No description provided for @groupMembersTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Integrantes'**
+  String get groupMembersTitle;
+
   /// No description provided for @groupMenuClearStudy.
   ///
   /// In pt, this message translates to:
@@ -4372,11 +4456,23 @@ abstract class AppLocalizations {
   /// **'Sair do grupo'**
   String get groupMenuLeave;
 
+  /// No description provided for @groupMenuPickStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolher estudo da semana'**
+  String get groupMenuPickStudy;
+
   /// No description provided for @groupMenuSetGoal.
   ///
   /// In pt, this message translates to:
   /// **'Definir meta da semana'**
   String get groupMenuSetGoal;
+
+  /// No description provided for @groupMenuSwapStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar estudo da semana'**
+  String get groupMenuSwapStudy;
 
   /// No description provided for @groupMenuTransfer.
   ///
@@ -4432,6 +4528,24 @@ abstract class AppLocalizations {
   /// **'O grupo vai ver'**
   String get groupPickerPreviewLabel;
 
+  /// No description provided for @groupPickerSearchEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma trilha com esse nome.'**
+  String get groupPickerSearchEmpty;
+
+  /// No description provided for @groupPickerSearchHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscar trilha ou livro'**
+  String get groupPickerSearchHint;
+
+  /// No description provided for @groupPickerTabMine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Suas trilhas'**
+  String get groupPickerTabMine;
+
   /// No description provided for @groupRosterSemantics.
   ///
   /// In pt, this message translates to:
@@ -4455,6 +4569,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'ainda não estudou nesta semana'**
   String get groupSeatIdle;
+
+  /// No description provided for @groupSeatMakeLeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Passar a liderança para {name}'**
+  String groupSeatMakeLeader(String name);
+
+  /// No description provided for @groupSeatMakeLeaderBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} passa a marcar o estudo, a meta e acenar para o grupo. Você continua na lista.'**
+  String groupSeatMakeLeaderBody(String name);
 
   /// No description provided for @groupSeatNever.
   ///
@@ -4485,6 +4611,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'estudou hoje'**
   String get groupSeatToday;
+
+  /// No description provided for @groupSeatViewProfile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver perfil'**
+  String get groupSeatViewProfile;
 
   /// No description provided for @groupSeatWeek.
   ///
@@ -4837,7 +4969,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeGoalLeft.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}'**
+  /// **'{count, plural, =1{Falta 1 cena para a meta de hoje} other{Faltam {count} cenas para a meta de hoje}}'**
   String homeGoalLeft(int count);
 
   /// No description provided for @homeGoalMet.
@@ -5584,6 +5716,12 @@ abstract class AppLocalizations {
   /// **'Sua vez'**
   String get juntosBondYourTurn;
 
+  /// No description provided for @juntosCallFromCaravan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chamar alguém da Caravana'**
+  String get juntosCallFromCaravan;
+
   /// No description provided for @juntosCancelInvite.
   ///
   /// In pt, this message translates to:
@@ -5751,6 +5889,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Código {code}. Toque para copiar'**
   String juntosCodeTapToCopy(String code);
+
+  /// No description provided for @juntosCompanionEmptyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.'**
+  String get juntosCompanionEmptyBody;
+
+  /// No description provided for @juntosCompanionEmptyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma companhia ainda'**
+  String get juntosCompanionEmptyTitle;
 
   /// No description provided for @juntosCompanionExplainerBody.
   ///
@@ -6249,6 +6399,12 @@ abstract class AppLocalizations {
     String storeUrl,
   );
 
+  /// No description provided for @juntosRoomStudiedCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} estudaram'**
+  String juntosRoomStudiedCount(int done, int total);
+
   /// No description provided for @juntosRoomStudySet.
   ///
   /// In pt, this message translates to:
@@ -6260,6 +6416,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Não foi possível marcar o estudo. Tente de novo.'**
   String get juntosRoomStudySetError;
+
+  /// No description provided for @juntosRoomWeekLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Semana do grupo'**
+  String get juntosRoomWeekLabel;
 
   /// No description provided for @juntosRoomsEmptyBody.
   ///
@@ -6306,7 +6468,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosShowQrShare.
   ///
   /// In pt, this message translates to:
-  /// **'Mostrar QR e compartilhar'**
+  /// **'Compartilhar'**
   String get juntosShowQrShare;
 
   /// No description provided for @juntosSomeone.
@@ -9699,6 +9861,18 @@ abstract class AppLocalizations {
   /// **'Acenar para {name}'**
   String nudgeTitle(String name);
 
+  /// No description provided for @nudgeWriteHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escreva para {name}'**
+  String nudgeWriteHint(String name);
+
+  /// No description provided for @nudgeWriteOwn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escrever o meu'**
+  String get nudgeWriteOwn;
+
   /// No description provided for @offlineBody.
   ///
   /// In pt, this message translates to:
@@ -11934,7 +12108,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileStreakRemaining.
   ///
   /// In pt, this message translates to:
-  /// **'{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}'**
+  /// **'{left, plural, =1{Falta 1 dia para cumprir o compromisso de {goal} dias.} other{Faltam {left} dias para cumprir o compromisso de {goal} dias.}}'**
   String profileStreakRemaining(int left, int goal);
 
   /// No description provided for @profileStreakStart.
@@ -11997,59 +12171,11 @@ abstract class AppLocalizations {
   /// **'hoje'**
   String get profileTodayLower;
 
-  /// No description provided for @profileWdFri.
-  ///
-  /// In pt, this message translates to:
-  /// **'S'**
-  String get profileWdFri;
-
-  /// No description provided for @profileWdMon.
-  ///
-  /// In pt, this message translates to:
-  /// **'S'**
-  String get profileWdMon;
-
-  /// No description provided for @profileWdSat.
-  ///
-  /// In pt, this message translates to:
-  /// **'S'**
-  String get profileWdSat;
-
-  /// No description provided for @profileWdSun.
-  ///
-  /// In pt, this message translates to:
-  /// **'D'**
-  String get profileWdSun;
-
-  /// No description provided for @profileWdThu.
-  ///
-  /// In pt, this message translates to:
-  /// **'Q'**
-  String get profileWdThu;
-
-  /// No description provided for @profileWdTue.
-  ///
-  /// In pt, this message translates to:
-  /// **'T'**
-  String get profileWdTue;
-
-  /// No description provided for @profileWdWed.
-  ///
-  /// In pt, this message translates to:
-  /// **'Q'**
-  String get profileWdWed;
-
   /// No description provided for @profileWeekHistory.
   ///
   /// In pt, this message translates to:
   /// **'Histórico das semanas'**
   String get profileWeekHistory;
-
-  /// No description provided for @profileWeekTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Esta semana'**
-  String get profileWeekTitle;
 
   /// No description provided for @profileWeeksWalkedSemantics.
   ///
@@ -13508,60 +13634,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Selos'**
   String get sealsTitle;
-
-  /// No description provided for @seasonChallengeDoneBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Desafio da estação concluído. Bem caminhado.'**
-  String get seasonChallengeDoneBody;
-
-  /// No description provided for @seasonChallengeEmptyBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'O próximo chega com a nova estação litúrgica.'**
-  String get seasonChallengeEmptyBody;
-
-  /// No description provided for @seasonChallengeEmptyTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Nenhum desafio da estação agora'**
-  String get seasonChallengeEmptyTitle;
-
-  /// No description provided for @seasonChallengeInProgress.
-  ///
-  /// In pt, this message translates to:
-  /// **'Desafio da estação em andamento'**
-  String get seasonChallengeInProgress;
-
-  /// No description provided for @seasonChallengeInvite.
-  ///
-  /// In pt, this message translates to:
-  /// **'Chamar para o desafio'**
-  String get seasonChallengeInvite;
-
-  /// No description provided for @seasonChallengePathPercent.
-  ///
-  /// In pt, this message translates to:
-  /// **'{percent}% do caminho'**
-  String seasonChallengePathPercent(int percent);
-
-  /// No description provided for @seasonChallengeSeeProgress.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver progresso'**
-  String get seasonChallengeSeeProgress;
-
-  /// No description provided for @seasonChallengeShareBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'🕯️ Entrei no desafio {title} no Stway.\n\nVamos caminhar juntos nesta estação?\n\n{footer}'**
-  String seasonChallengeShareBody(String title, String footer);
-
-  /// No description provided for @seasonChallengeTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Desafio da estação'**
-  String get seasonChallengeTitle;
 
   /// No description provided for @seasonDayLine.
   ///

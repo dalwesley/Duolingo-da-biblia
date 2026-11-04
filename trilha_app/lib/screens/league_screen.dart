@@ -11,6 +11,7 @@ import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
 import '../models/study_room.dart';
+import '../models/companion_invite.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
 import '../services/subscription_service.dart';
@@ -27,8 +28,11 @@ import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../utils/content_filter.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/corner_board.dart';
+import '../widgets/corner_pick_sheet.dart';
+import '../widgets/corner_home_card.dart' show RaceDashes;
 import '../widgets/juntos_chrome.dart';
 import '../widgets/medal_art.dart';
 import '../widgets/juntos_inbox.dart';
@@ -36,6 +40,7 @@ import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/companion_call_sheet.dart';
 import '../widgets/companion_formed_sheet.dart';
 import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/companion_nudge_sheet.dart';
@@ -50,7 +55,10 @@ import '../widgets/season_walk_together.dart';
 import '../widgets/trail_gift.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
+import '../widgets/user_moderation_sheet.dart';
+import '../models/recognition.dart';
 import '../widgets/recognition_actions.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/room_roster.dart';
 import '../widgets/room_panels.dart';
 import 'coming_soon_screen.dart';
@@ -155,8 +163,19 @@ class _LeagueScreenState extends State<LeagueScreen>
   Future<void> _consumePendingInvite() async {
     if (!mounted || _handlingInvite) return;
     final links = InviteDeepLinkService.instance;
-    final roomCode = links.takePendingRoomCode();
     final rc = RemoteConfigService.instance;
+    // App aberto a frio pelo link (câmera do celular): o Remote Config ainda
+    // não carregou e as flags leem `false`. Espera antes de decidir.
+    if (links.pendingCompanionCode != null || links.pendingRoomCode != null) {
+      _handlingInvite = true;
+      try {
+        await rc.ensureLoaded();
+      } finally {
+        _handlingInvite = false;
+      }
+      if (!mounted) return;
+    }
+    final roomCode = links.takePendingRoomCode();
     if (roomCode != null && !rc.groupsEnabled) {
       links.takeWantGruposTab();
       await openComingSoon(
@@ -361,6 +380,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     final companionNudge = listen
         ? context.watch<CompanionService>().incomingNudge
         : context.read<CompanionService>().incomingNudge;
+    final companionInvites = context
+        .read<CompanionService>()
+        .incomingInvites
+        .isNotEmpty;
     final cornerFace = listen
         ? context.watch<CornerService>().face
         : context.read<CornerService>().face;
@@ -423,7 +446,9 @@ class _LeagueScreenState extends State<LeagueScreen>
                             caravanAlert:
                                 JuntosInbox.caravanPending(context) > 0,
                             companionAlert:
-                                (companionOn && companionNudge != null) ||
+                                (companionOn &&
+                                    (companionNudge != null ||
+                                        companionInvites)) ||
                                 (challengeOn && cornerFace != null),
                             gruposAlert: groupsOn && roomIncoming.isNotEmpty,
                             onChanged: (i) {
@@ -643,7 +668,9 @@ class _LeagueScreenState extends State<LeagueScreen>
         _CompanhiaStageCard(
           pane: pane,
           companionAlert:
-              rc.companionEnabled && companions.incomingNudge != null,
+              rc.companionEnabled &&
+              (companions.incomingNudge != null ||
+                  companions.incomingInvites.isNotEmpty),
           desafioAlert: rc.challengeEnabled && corners.face != null,
           onPaneChanged: (value) {
             final closed = value == 0
@@ -704,6 +731,25 @@ class _LeagueScreenState extends State<LeagueScreen>
         return score(a).compareTo(score(b));
       });
 
+    // Convite pelo nome: aparece primeiro, acima da própria companhia.
+    for (final invite in companions.incomingInvites) {
+      list.add(
+        _reveal(
+          2,
+          CompanionIncomingInviteCard(
+            invite: invite,
+            onAccept: _inviteBusy.contains(invite.code)
+                ? null
+                : () => _acceptCompanionInvite(context, invite),
+            onDecline: _inviteBusy.contains(invite.code)
+                ? null
+                : () => context.read<CompanionService>().declineInvite(invite),
+          ),
+        ),
+      );
+      list.add(const SizedBox(height: AppSpace.md));
+    }
+
     if (companions.lastError != null) {
       list.add(
         InlineNotice(
@@ -723,6 +769,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             loading: companions.loading,
             onInvite: () => _createCompanion(context),
             onJoin: () => _joinCompanion(context),
+            onCall: () => _createAndCallCompanion(context),
           ),
         ),
       );
@@ -736,22 +783,9 @@ class _LeagueScreenState extends State<LeagueScreen>
           _CompanionCard(
             companion: ordered[i],
             myName: progress.userName,
-            onCopy: () async {
-              await Clipboard.setData(ClipboardData(text: ordered[i].code));
-              if (!context.mounted) return;
-              showAppToastFor(
-                context,
-                message: context.l10n.juntosCodeCopied,
-                glyph: CinematicGlyph.copy,
-              );
-            },
-            onShowQr: () => showInviteQrSheet(
-              context,
-              code: ordered[i].code,
-              inviterName: progress.userName,
-              trailGift:
-                  ordered[i].awaitingPartner && ordered[i].giftCode != null,
-            ),
+            calledName: companions.outgoingFor(ordered[i].code)?.toName,
+            onCall: () => _openCompanionCall(context, ordered[i]),
+            onShowQr: () => _openCompanionInvite(context, ordered[i]),
             onNudge: () => showCompanionNudgeSheet(
               context,
               companion: ordered[i],
@@ -843,12 +877,33 @@ class _LeagueScreenState extends State<LeagueScreen>
       ),
       const SizedBox(height: AppSpace.md),
       CopperCta(
-        label: CornerCopy.boardOpenCaravan,
-        leading: CinematicGlyph.podium,
+        label: CornerCopy.boardPickCta,
+        leading: CinematicGlyph.flag,
         trailing: null,
-        onTap: () => setState(() => _tab = _tabCaravana),
+        onTap: () => _openCornerPick(context),
       ),
     ];
+  }
+
+  /// Escolher quem desafiar — fora da nuvem ou com desafio na semana, avisa.
+  void _openCornerPick(BuildContext context) {
+    final backend = context.read<BackendService>();
+    final corners = context.read<CornerService>();
+    final blocked = !backend.isActive
+        ? CornerCopy.needsCloud
+        : corners.isBusy()
+        ? CornerCopy.busyWeek
+        : null;
+    if (blocked != null) {
+      showAppToastFor(
+        context,
+        message: blocked,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    showCornerPickSheet(context, people: _caravanPeople(backend.uid));
   }
 
   Future<void> _shareCaravanInvite(BuildContext context) async {
@@ -861,6 +916,90 @@ class _LeagueScreenState extends State<LeagueScreen>
         text: l10n.juntosCaravanShareText(who, store),
         subject: l10n.juntosCaravanShareSubject,
       ),
+    );
+  }
+
+  /// Lista da Caravana para chamar pelo nome o convite aberto.
+  void _openCompanionCall(BuildContext context, WalkCompanion invite) {
+    final uid = context.read<BackendService>().uid;
+    showCompanionCallSheet(
+      context,
+      code: invite.code,
+      people: _caravanPeople(uid),
+      onShareLink: () => _openCompanionInvite(context, invite),
+    );
+  }
+
+  /// Sem companhia: abre o convite e já mostra a lista para chamar.
+  Future<void> _createAndCallCompanion(BuildContext context) async {
+    final service = context.read<CompanionService>();
+    final created = await service.createInvite(
+      context.read<ProgressService>(),
+      withTrailGift: context.read<SubscriptionService>().canShareTrailGift,
+    );
+    if (!context.mounted) return;
+    if (created == null) {
+      showAppToastFor(
+        context,
+        message: service.lastError ?? context.l10n.juntosCreateInviteError,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    _openCompanionCall(context, created);
+  }
+
+  Future<void> _acceptCompanionInvite(
+    BuildContext context,
+    CompanionInvite invite,
+  ) async {
+    if (_inviteBusy.contains(invite.code)) return;
+    setState(() => _inviteBusy.add(invite.code));
+    final service = context.read<CompanionService>();
+    final bool ok;
+    try {
+      ok = await service.acceptInvite(invite, context.read<ProgressService>());
+    } finally {
+      if (mounted) setState(() => _inviteBusy.remove(invite.code));
+    }
+    if (!context.mounted) return;
+    if (!ok) {
+      showAppToastFor(
+        context,
+        message: service.lastError ?? context.l10n.juntosJoinError,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    await showCompanionFormedSheet(context, partnerName: invite.fromName);
+  }
+
+  /// Convite aberto: atualiza antes de mostrar — se alguém já entrou pelo
+  /// código, celebra a companhia em vez de oferecer o convite de novo.
+  Future<void> _openCompanionInvite(
+    BuildContext context,
+    WalkCompanion invite,
+  ) async {
+    final service = context.read<CompanionService>();
+    final progress = context.read<ProgressService>();
+    await service.refresh();
+    if (!context.mounted) return;
+    final live = service.companions
+        .where((c) => c.code == invite.code)
+        .firstOrNull;
+    // Convite sumiu (cancelado do outro lado): a lista já se atualizou.
+    if (live == null) return;
+    if (!live.awaitingPartner) {
+      await showCompanionFormedSheet(context, partnerName: live.displayName);
+      return;
+    }
+    await showInviteQrSheet(
+      context,
+      code: live.code,
+      inviterName: progress.userName,
+      trailGift: live.giftCode != null,
     );
   }
 
@@ -1026,20 +1165,7 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     final room = rooms.activeRoom!;
     final members = rooms.members;
-    void shareRoom() => showInviteQrSheet(
-      context,
-      code: room.code,
-      title: room.name,
-      subtitle: context.l10n.juntosRoomQrSubtitle,
-      companionMode: false,
-      inviterName: progress.userName,
-      shareMessage: context.l10n.juntosRoomShareText(
-        room.name,
-        InviteDeepLinkService.roomHttpsUrl(room.code),
-        room.code,
-        AppUpdateService.androidStoreUrl,
-      ),
-    );
+    void shareRoom() => _shareRoomInvite(context, room);
     void callPeople() => showRoomCallSheet(
       context,
       people: [
@@ -1059,35 +1185,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         _reveal(1, _incomingInviteCard(context, invite)),
         const SizedBox(height: AppSpace.md),
       ],
-      _reveal(
-        2,
-        _RoomHearth(
-          room: room,
-          members: members,
-          isOwner: isLeader,
-          walkedToday: progress.walkedToday,
-          onMenu: () => _openRoomMenu(context),
-          onClaim: () => _claimRoomChest(context, room.code),
-          // Estudo pendente: o card logo abaixo já chama para ele.
-          onWalk:
-              study != null &&
-                  !members.any((m) => m.isUser && m.didStudy(study))
-              ? null
-              : widget.onGoToday,
-          onSeatTap: (m) => _showRoomSeat(context, m),
-        ),
-      ),
-      const SizedBox(height: AppSpace.md),
-      _reveal(
-        2,
-        _RoomInviteBar(
-          code: room.code,
-          full: rooms.isFull,
-          onCall: callPeople,
-          onCopy: () => _copyRoomCode(context, room.code),
-        ),
-      ),
-      const SizedBox(height: AppSpace.md),
+      // Herói: o grupo e o estudo da semana. "Trocar" mora no menu do topo.
       _reveal(
         2,
         RoomStudyCard(
@@ -1097,6 +1195,53 @@ class _LeagueScreenState extends State<LeagueScreen>
           isLeader: isLeader,
           onPick: () => _pickRoomStudy(context),
           onOpen: () => _openRoomStudy(context, study),
+          header: _RoomTitle(
+            room: room,
+            isOwner: isLeader,
+            onMenu: () => _openRoomMenu(context),
+          ),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        _RoomHearth(
+          room: room,
+          members: members,
+          walkedToday: progress.walkedToday,
+          onClaim: () => _claimRoomChest(context, room.code),
+          // Estudo pendente: o card acima já chama para ele.
+          onWalk:
+              study != null &&
+                  !members.any((m) => m.isUser && m.didStudy(study))
+              ? null
+              : widget.onGoToday,
+          roster: RoomMembersList(
+            members: _seatedMembers(members, room.ownerId),
+            myPhotoUrl: backend.userPhotoUrl,
+            myStyle: progress.settings.portraitStyle,
+            leaderId: room.ownerId,
+            leaderTitle: room.kind.leaderTitle,
+            study: study,
+            onTap: (m) => _showRoomSeat(context, m),
+            onInvite: rooms.isFull ? null : callPeople,
+          ),
+        ),
+      ),
+      const SizedBox(height: AppSpace.lg),
+      _reveal(
+        2,
+        _RoomExitActions(
+          isLeader: isLeader,
+          onLeave: () => _leaveRoom(
+            context,
+            isLeader: isLeader,
+            others: [
+              for (final m in members)
+                if (!m.isUser) m,
+            ],
+          ),
+          onClose: () => _closeRoom(context),
         ),
       ),
       const SizedBox(height: AppSpace.md),
@@ -1114,6 +1259,22 @@ class _LeagueScreenState extends State<LeagueScreen>
           child: AppSpinner(),
         ),
     ];
+  }
+
+  /// Você primeiro, depois quem conduz; o resto por nome. Ordem fixa: ninguém
+  /// troca de lugar conforme o placar.
+  static List<RoomMember> _seatedMembers(
+    List<RoomMember> members,
+    String ownerId,
+  ) {
+    final list = [...members];
+    list.sort((a, b) {
+      if (a.isUser != b.isUser) return a.isUser ? -1 : 1;
+      if (a.uid == ownerId) return -1;
+      if (b.uid == ownerId) return 1;
+      return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+    });
+    return list;
   }
 
   /// Dono define (ou apaga, deixando em branco) a meta semanal de passos da sala.
@@ -1261,16 +1422,31 @@ class _LeagueScreenState extends State<LeagueScreen>
       context.read<ProgressService>(),
       kind: setup.kind,
     );
+    if (!context.mounted || !ok) return;
+    // Mesmo gesto da Companhia: link copiado + sheet de QR/código.
+    final room = context.read<RoomService>().activeRoom;
+    if (room == null) return;
+    await Clipboard.setData(
+      ClipboardData(text: InviteDeepLinkService.roomHttpsUrl(room.code)),
+    );
     if (!context.mounted) return;
-    if (ok) {
-      showAppToastFor(
-        context,
-        message: context.l10n.juntosRoomCreated(
-          context.read<RoomService>().activeCode ?? '',
-        ),
-        glyph: CinematicGlyph.people,
-      );
-    }
+    await _shareRoomInvite(context, room);
+  }
+
+  Future<void> _shareRoomInvite(BuildContext context, StudyRoom room) {
+    return showInviteQrSheet(
+      context,
+      code: room.code,
+      headline: room.name,
+      companionMode: false,
+      inviterName: context.read<ProgressService>().userName,
+      shareMessage: context.l10n.juntosRoomShareText(
+        room.name,
+        InviteDeepLinkService.roomHttpsUrl(room.code),
+        room.code,
+        AppUpdateService.androidStoreUrl,
+      ),
+    );
   }
 
   Future<void> _claimRoomChest(BuildContext context, String code) async {
@@ -1292,31 +1468,75 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   Future<void> _showRoomSeat(BuildContext context, RoomMember m) async {
     final rooms = context.read<RoomService>();
+    final room = rooms.activeRoom;
+    final other = !m.isUser && m.uid.isNotEmpty;
+    final iLead = room?.isOwner(context.read<BackendService>().uid) ?? false;
     final canCall =
-        !m.isUser && !m.walkedToday() && !rooms.nudgedToday.contains(m.uid);
-    final call = await showRoomSeatSheet(
+        other && !m.walkedToday() && !rooms.nudgedToday.contains(m.uid);
+    final action = await showRoomSeatSheet(
       context,
       member: m,
       status: seatLabel(m),
-      isLeader: m.uid == rooms.activeRoom?.ownerId,
-      leaderTitle:
-          rooms.activeRoom?.kind.leaderTitle ?? context.l10n.juntosLeader,
+      isLeader: m.uid == room?.ownerId,
+      leaderTitle: room?.kind.leaderTitle ?? context.l10n.juntosLeader,
       study: rooms.currentStudy,
       canCall: canCall,
       alreadyCalled: rooms.nudgedToday.contains(m.uid),
+      canViewProfile: other,
+      canTransfer: other && iLead,
+      canModerate: other,
     );
-    if (call == true && context.mounted) {
-      await _nudgeRoomMember(context, m);
+    if (action == null || !context.mounted) return;
+    switch (action) {
+      case RoomSeatAction.wave:
+        await _nudgeRoomMember(context, m);
+      case RoomSeatAction.profile:
+        await showCaravanPilgrimSheet(
+          context,
+          entry: LeagueEntry(
+            uid: m.uid,
+            name: m.name,
+            steps: m.steps,
+            lastWalkDate: m.lastWalk,
+            photoUrl: m.photoUrl,
+            portraitStyle: m.portraitStyle,
+          ),
+          rank: 0,
+        );
+      case RoomSeatAction.transfer:
+        await _transferRoomTo(context, m);
+      case RoomSeatAction.moderate:
+        await showUserModerationSheet(
+          context,
+          uid: m.uid,
+          name: m.name,
+          source: UserReportSource.room,
+          roomCode: room?.code,
+          roomName: room?.name,
+        );
     }
   }
 
-  Future<void> _copyRoomCode(BuildContext context, String code) async {
-    await Clipboard.setData(ClipboardData(text: code));
+  /// Passar a liderança direto da folha da pessoa (sem escolher na lista).
+  Future<void> _transferRoomTo(BuildContext context, RoomMember to) async {
+    final first = to.name.trim().split(RegExp(r'\s+')).first;
+    final ok = await showAppConfirm(
+      context,
+      title: context.l10n.groupSeatMakeLeader(first),
+      body: context.l10n.groupSeatMakeLeaderBody(first),
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.juntosTransferTitle,
+    );
+    if (!ok || !context.mounted) return;
+    final done = await context.read<RoomService>().transferOwnership(to);
     if (!context.mounted) return;
     showAppToastFor(
       context,
-      message: context.l10n.juntosCodeCopied,
-      glyph: CinematicGlyph.copy,
+      message: done
+          ? context.l10n.juntosTransferDone(to.name)
+          : context.l10n.juntosTransferError,
+      glyph: done ? CinematicGlyph.crown : CinematicGlyph.wrong,
+      tone: done ? AppToastTone.accent : AppToastTone.warn,
     );
   }
 
@@ -1371,24 +1591,21 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   Future<void> _openRoomMenu(BuildContext context) async {
     final rooms = context.read<RoomService>();
-    final progress = context.read<ProgressService>();
     final room = rooms.activeRoom;
     if (room == null) return;
-    final isLeader = room.isOwner(context.read<BackendService>().uid);
     final others = rooms.members.where((m) => !m.isUser).toList();
 
     final action = await showRoomMenu(
       context,
       room: room,
-      isLeader: isLeader,
       hasStudy: rooms.currentStudy != null,
       canTransfer: others.isNotEmpty,
     );
     if (action == null || !context.mounted) return;
 
     switch (action) {
-      case RoomMenuAction.copyCode:
-        await _copyRoomCode(context, room.code);
+      case RoomMenuAction.pickStudy:
+        await _pickRoomStudy(context);
       case RoomMenuAction.edit:
         final setup = await showRoomSetupSheet(
           context,
@@ -1405,20 +1622,22 @@ class _LeagueScreenState extends State<LeagueScreen>
         await rooms.setStudy(null);
       case RoomMenuAction.transfer:
         await _transferRoom(context, others);
-      case RoomMenuAction.leave:
-        await _leaveRoom(context, isLeader: isLeader, others: others);
-      case RoomMenuAction.close:
-        final ok = await showAppConfirm(
-          context,
-          danger: true,
-          title: context.l10n.juntosCloseRoomTitle,
-          body: context.l10n.juntosCloseRoomBody,
-          cancelLabel: context.l10n.commonCancel,
-          confirmLabel: context.l10n.juntosCloseConfirm,
-        );
-        if (!ok || !context.mounted) return;
-        await rooms.closeRoom(progress: progress);
     }
+  }
+
+  Future<void> _closeRoom(BuildContext context) async {
+    final ok = await showAppConfirm(
+      context,
+      danger: true,
+      title: context.l10n.juntosCloseRoomTitle,
+      body: context.l10n.juntosCloseRoomBody,
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.juntosCloseConfirm,
+    );
+    if (!ok || !context.mounted) return;
+    await context.read<RoomService>().closeRoom(
+      progress: context.read<ProgressService>(),
+    );
   }
 
   Future<bool> _transferRoom(
@@ -1594,36 +1813,42 @@ class _CompanhiaStageCard extends StatelessWidget {
     final hasBody = body != null;
     // Submenu e abas-mãe usam o azul da nuvem. O ouro fica no botão.
     const tone = AppRoles.presence;
+    final tabs = AppSegmentedTabs(
+      index: pane,
+      accent: tone,
+      onChanged: (i) {
+        ActHaptics.tap();
+        onPaneChanged(i);
+      },
+      items: [
+        // Sem glifo: a aba-mãe já leva o elo + "Companhia".
+        (
+          label: context.l10n.juntosTabCompanion,
+          glyph: null,
+          mark: null,
+          alert: companionAlert,
+        ),
+        (
+          label: context.l10n.juntosTabChallenge,
+          glyph: null,
+          mark: null,
+          alert: desafioAlert,
+        ),
+      ],
+    );
+    // Só a troca, sem card em volta: um card inteiro para dois botões
+    // empurrava a companhia para baixo da dobra. O card volta quando há
+    // explicação embaixo (sem companhia ou no Desafio).
+    if (!hasBody) return tabs;
     return GlassCard(
       tint: tone,
       glow: 0.32,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          AppSegmentedTabs(
-            index: pane,
-            accent: tone,
-            onChanged: (i) {
-              ActHaptics.tap();
-              onPaneChanged(i);
-            },
-            items: [
-              // Sem glifo: a aba-mãe já leva o elo + "Companhia".
-              (
-                label: context.l10n.juntosTabCompanion,
-                glyph: null,
-                mark: null,
-                alert: companionAlert,
-              ),
-              (
-                label: context.l10n.juntosTabChallenge,
-                glyph: null,
-                mark: null,
-                alert: desafioAlert,
-              ),
-            ],
-          ),
-          if (hasBody) ...[const SizedBox(height: AppSpace.lg), body!],
+          tabs,
+          const SizedBox(height: AppSpace.lg),
+          body!,
         ],
       ),
     );
@@ -2234,54 +2459,132 @@ class _RoomBenefit extends StatelessWidget {
   }
 }
 
-/// Herói do grupo: nome, quem estudou na semana, o baú e o convite.
+/// Topo do herói do grupo: nome, tipo (Família, Célula…) e o menu de quem
+/// conduz (trocar estudo, editar, meta, liderança).
+class _RoomTitle extends StatelessWidget {
+  final StudyRoom room;
+  final bool isOwner;
+  final VoidCallback onMenu;
+
+  const _RoomTitle({
+    required this.room,
+    required this.isOwner,
+    required this.onMenu,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // O botão de opções flutua à direita para não empurrar o tipo.
+        Stack(
+          clipBehavior: Clip.none,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(
+                top: AppSpace.sm,
+                right: isOwner ? 48 : 12,
+              ),
+              // Traço de título de card, na altura da 1ª linha do display.
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 3,
+                    height: 24,
+                    margin: const EdgeInsets.only(top: 3),
+                    decoration: BoxDecoration(
+                      color: a.chrome,
+                      borderRadius: BorderRadius.circular(AppRadii.hair),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Semantics(
+                      header: true,
+                      child: Text(
+                        room.name,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.display(
+                          size: 28,
+                          height: 1.05,
+                          color: a.text,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            if (isOwner)
+              Positioned(
+                top: 0,
+                right: 0,
+                child: _MenuButton(
+                  tooltip: context.l10n.juntosRoomOptions,
+                  onTap: onMenu,
+                ),
+              ),
+          ],
+        ),
+        // 4 = mesmo vão visível (tinta a tinta) que o resto do card.
+        const SizedBox(height: 4),
+        Row(
+          children: [
+            const SizedBox(width: 13),
+            CinematicIcon(
+              glyph: room.kind.glyph,
+              size: AppMetrics.iconSm,
+              accent: a.chrome,
+              framed: false,
+            ),
+            const SizedBox(width: 6),
+            Expanded(child: SectionLabel(room.kind.label, maxLines: 1)),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+/// Semana do grupo: o relógio até segunda 00:00, quem está no grupo (com as
+/// bolinhas da semana), a meta e o baú.
 class _RoomHearth extends StatelessWidget {
   final StudyRoom room;
   final List<RoomMember> members;
-  final bool isOwner;
   final bool walkedToday;
-  final VoidCallback onMenu;
   final VoidCallback onClaim;
 
-  /// `null` quando o card do estudo logo abaixo já leva ao mesmo lugar.
+  /// `null` quando o card do estudo acima já leva ao mesmo lugar.
   final VoidCallback? onWalk;
-  final ValueChanged<RoomMember> onSeatTap;
+
+  /// Quem está no grupo, sob o relógio.
+  final Widget roster;
+
+  /// Segunda-feira 00:00 seguinte — quando a semana do grupo fecha.
+  static DateTime _weekClosesAt([DateTime? now]) {
+    final n = now ?? DateTime.now();
+    return DateTime(n.year, n.month, n.day + LeagueService.daysLeft(n));
+  }
 
   const _RoomHearth({
     required this.room,
     required this.members,
-    required this.isOwner,
     required this.walkedToday,
-    required this.onMenu,
     required this.onClaim,
     this.onWalk,
-    required this.onSeatTap,
+    required this.roster,
   });
-
-  /// Você primeiro, depois o líder; o resto em ordem fixa (não troca de lugar
-  /// conforme o placar).
-  List<RoomMember> get _seated {
-    final list = [...members];
-    list.sort((a, b) {
-      if (a.isUser != b.isUser) return a.isUser ? -1 : 1;
-      if (a.uid == room.ownerId) return -1;
-      if (b.uid == room.ownerId) return 1;
-      return a.name.toLowerCase().compareTo(b.name.toLowerCase());
-    });
-    return list;
-  }
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final myPhoto = context.select((BackendService b) => b.userPhotoUrl);
     final a = Appearance.of(context);
     final days = LeagueService.daysLeft();
     final l10n = context.l10n;
-    final closesText = days <= 1
-        ? l10n.juntosClosesToday
-        : l10n.juntosDaysLeft(days);
-    final leader = isOwner ? l10n.juntosYouLower : room.ownerName;
 
     final total = members.length;
     final lit = members.where((m) => m.walkedThisWeek).length;
@@ -2295,235 +2598,117 @@ class _RoomHearth extends StatelessWidget {
         !claimed && walkedToday && total > 0 && (goalReached || halfway);
     final bonus = RemoteConfigService.instance.roomChestBonusSteps;
 
-    final missing = ((total + 1) ~/ 2 - lit).clamp(0, total);
-    final (String line, Color tone) = total <= 1
-        ? (l10n.juntosRoomOnlyYou, a.text)
-        : !walkedToday
-        ? (l10n.juntosRoomNotStudiedToday, AppRoles.risk)
-        : lit == total
-        ? (l10n.juntosRoomAllStudied, AppRoles.presence)
-        : halfway
-        ? (l10n.juntosRoomHalfStudied, AppRoles.presence)
-        : (l10n.juntosRoomMissingForHalf(missing), a.text);
-
-    final hint = total <= 1
-        ? l10n.juntosRoomHintInvite
-        : claimed
-        ? l10n.juntosRoomHintClaimed
-        : ready
-        ? null
-        : !walkedToday
-        ? l10n.juntosRoomHintStudyToday
-        : goal != null && goal > 0
-        ? l10n.juntosRoomHintHalfOrGoal
-        : l10n.juntosRoomHintHalf;
-
     return GlassCard(
       tint: ready ? AppRoles.presence : null,
       glow: 0.35 + 0.6 * (total == 0 ? 0 : lit / total),
       elevated: ready,
-      // Topo/direita curtos: o botão de opções (48) já traz o respiro.
-      padding: AppMetrics.cardPadding.copyWith(top: AppSpace.sm, right: 6),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: room.kind.glyph,
-                size: AppMetrics.iconSm,
-                accent: a.chrome,
-                framed: false,
-              ),
-              const SizedBox(width: 6),
-              SectionLabel(room.kind.label),
-              const SizedBox(width: AppSpace.sm),
-              SoftBadge(
-                text: closesText,
-                accent: days <= 1 ? AppRoles.risk : a.chrome,
-              ),
-              const Spacer(),
-              _MenuButton(tooltip: l10n.juntosRoomOptions, onTap: onMenu),
-            ],
+          CardHeader(
+            label: l10n.juntosRoomWeekLabel,
+            accent: ready ? AppRoles.presence : null,
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+          // Relógio da semana (igual ao da Caravana): fecha segunda 00:00.
+          // Azul → amarelo (2–3 dias) → vermelho e pisca no último dia.
+          const SizedBox(height: AppSpace.md),
+          SeasonCountdown(
+            opens: _weekClosesAt(),
+            color: days <= 1
+                ? AppRoles.risk
+                : days <= 3
+                ? AppRoles.reward
+                : AppRoles.presence,
+            muted: a.textSecondary,
+            accent: a.chrome,
+            large: true,
+            centered: true,
+            blink: days <= 1,
+            label: l10n.juntosCaravanMonthCloses,
+          ),
+          const SizedBox(height: AppSpace.lg),
+          roster,
+          if (goal != null && goal > 0) ...[
+            const SizedBox(height: AppSpace.md),
+            Row(
               children: [
+                SectionLabel(l10n.juntosRoomGoalLabel, size: 10),
+                const Spacer(),
                 Text(
-                  room.name,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.display(
-                    size: 28,
-                    height: 1.05,
-                    color: a.text,
+                  l10n.juntosRoomGoalProgress(sumSteps, goal),
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w800,
+                    color: goalReached ? AppRoles.reward : a.text,
                   ),
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  l10n.juntosRoomLeaderLine(
-                    room.kind.leaderTitle,
-                    leader,
-                    total,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(size: 13, color: a.textFaint),
-                ),
-                const SizedBox(height: AppSpace.xl),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(
-                      '$lit',
-                      style: AppTypography.display(
-                        size: 30,
-                        height: 1,
-                        color: lit > 0 ? AppRoles.presence : a.text,
-                      ),
-                    ),
-                    Text(
-                      l10n.juntosOfTotal(total),
-                      style: AppTypography.display(
-                        size: 18,
-                        height: 1.2,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 3),
-                        child: Text(
-                          l10n.juntosStudiedThisWeek,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w700,
-                            color: a.textSecondary,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: AppSpace.lg),
-                RoomRoster(
-                  members: _seated,
-                  myPhotoUrl: myPhoto,
-                  myStyle: progress.settings.portraitStyle,
-                  leaderId: room.ownerId,
-                  onTap: onSeatTap,
-                ),
-                const SizedBox(height: AppSpace.xl),
-                Text(line, style: AppTypography.title(size: 16, color: tone)),
-                if (hint != null) ...[
-                  const SizedBox(height: 4),
-                  Text(
-                    hint,
-                    style: AppTypography.body(
-                      size: 13,
-                      height: 1.35,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                ],
-                if (goal != null && goal > 0) ...[
-                  const SizedBox(height: AppSpace.md),
-                  Row(
-                    children: [
-                      SectionLabel(l10n.juntosRoomGoalLabel, size: 10),
-                      const Spacer(),
-                      Text(
-                        l10n.juntosRoomGoalProgress(sumSteps, goal),
-                        style: AppTypography.body(
-                          size: 12,
-                          weight: FontWeight.w800,
-                          color: goalReached ? AppRoles.reward : a.text,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-                  AppProgressBar(
-                    value: (sumSteps / goal).clamp(0.0, 1.0),
-                    color: AppRoles.reward,
-                  ),
-                ],
-                if (!walkedToday && total > 1 && onWalk != null) ...[
-                  const SizedBox(height: AppSpace.lg),
-                  CopperCta(
-                    label: l10n.juntosStudyToday,
-                    onTap: onWalk,
-                    leading: CinematicGlyph.book,
-                    dense: true,
-                  ),
-                ],
-                if (ready) ...[
-                  const SizedBox(height: AppSpace.lg),
-                  CopperCta(
-                    label: l10n.juntosRoomChestOpen(bonus),
-                    onTap: onClaim,
-                    leading: CinematicGlyph.gift,
-                    trailing: null,
-                    dense: true,
-                  ),
-                ],
               ],
             ),
-          ),
+            const SizedBox(height: 6),
+            AppProgressBar(
+              value: (sumSteps / goal).clamp(0.0, 1.0),
+              color: AppRoles.reward,
+            ),
+          ],
+          if (!walkedToday && total > 1 && onWalk != null) ...[
+            const SizedBox(height: AppSpace.lg),
+            CopperCta(
+              label: l10n.juntosStudyToday,
+              onTap: onWalk,
+              leading: CinematicGlyph.book,
+              dense: true,
+            ),
+          ],
+          if (ready) ...[
+            const SizedBox(height: AppSpace.lg),
+            CopperCta(
+              label: l10n.juntosRoomChestOpen(bonus),
+              onTap: onClaim,
+              leading: CinematicGlyph.gift,
+              trailing: null,
+              dense: true,
+            ),
+          ],
         ],
       ),
     );
   }
 }
 
-/// Fora do card do grupo: chamar gente e copiar o código.
-class _RoomInviteBar extends StatelessWidget {
-  final String code;
-  final bool full;
-  final VoidCallback onCall;
-  final VoidCallback onCopy;
+/// Fim da página do grupo: sair (todos) e encerrar (só o líder).
+class _RoomExitActions extends StatelessWidget {
+  final bool isLeader;
+  final VoidCallback onLeave;
+  final VoidCallback onClose;
 
-  const _RoomInviteBar({
-    required this.code,
-    required this.full,
-    required this.onCall,
-    required this.onCopy,
+  const _RoomExitActions({
+    required this.isLeader,
+    required this.onLeave,
+    required this.onClose,
   });
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Expanded(
-          child: full
-              ? Text(
-                  context.l10n.juntosRoomFull,
-                  style: AppTypography.body(
-                    size: 12,
-                    height: 1.3,
-                    weight: FontWeight.w700,
-                    color: a.textSecondary,
-                  ),
-                )
-              : GhostCta(
-                  label: context.l10n.juntosInvitePeople,
-                  leading: CinematicGlyph.people,
-                  expanded: true,
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 12,
-                    horizontal: 10,
-                  ),
-                  onTap: onCall,
-                ),
+        GhostCta(
+          label: context.l10n.groupMenuLeave,
+          leading: CinematicGlyph.back,
+          danger: true,
+          expanded: true,
+          onTap: onLeave,
         ),
-        const SizedBox(width: AppSpace.sm),
-        _CodePlate(code: code, onCopy: onCopy, compact: true),
+        if (isLeader) ...[
+          const SizedBox(height: AppSpace.sm),
+          GhostCta(
+            label: context.l10n.groupMenuClose,
+            leading: CinematicGlyph.stop,
+            danger: true,
+            expanded: true,
+            onTap: onClose,
+          ),
+        ],
       ],
     );
   }
@@ -3326,40 +3511,27 @@ class _CompanionsEmpty extends StatelessWidget {
   final bool loading;
   final VoidCallback onInvite;
   final VoidCallback onJoin;
+  final VoidCallback onCall;
 
   const _CompanionsEmpty({
     required this.loading,
     required this.onInvite,
     required this.onJoin,
+    required this.onCall,
   });
 
   @override
   Widget build(BuildContext context) {
-    final myPhoto = context.select((BackendService b) => b.userPhotoUrl);
-    final myUid = context.select((BackendService b) => b.uid);
-    final progress = context.watch<ProgressService>();
-    final name = progress.userName.trim();
+    // Mesmo vazio do Desafio: o Anan triste (ninguém ainda) no card.
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         GlassCard(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _BondMember(
-                name: name.isEmpty
-                    ? context.l10n.commonYou
-                    : name.split(' ').first,
-                walked: false,
-                highlight: false,
-                isUser: true,
-                photoUrl: myPhoto,
-                seed: myUid ?? name,
-                style: progress.settings.portraitStyle,
-              ),
-              const Expanded(child: _WaitingThread(face: CloudFace.triste)),
-              const _EmptySeat(),
-            ],
+          padding: EdgeInsets.zero,
+          child: EmptyState(
+            mark: const CloudMascot(face: CloudFace.triste, size: 96),
+            title: context.l10n.juntosCompanionEmptyTitle,
+            body: context.l10n.juntosCompanionEmptyBody,
           ),
         ),
         const SizedBox(height: AppSpace.md),
@@ -3371,6 +3543,13 @@ class _CompanionsEmpty extends StatelessWidget {
             onTap: onInvite,
             leading: CinematicGlyph.people,
             trailing: null,
+          ),
+          const SizedBox(height: AppSpace.sm),
+          GhostCta(
+            label: context.l10n.juntosCallFromCaravan,
+            leading: CinematicGlyph.people,
+            expanded: true,
+            onTap: onCall,
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(
@@ -3388,17 +3567,21 @@ class _CompanionsEmpty extends StatelessWidget {
 class _CompanionCard extends StatelessWidget {
   final WalkCompanion companion;
   final String myName;
-  final VoidCallback onCopy;
   final VoidCallback onLeave;
   final VoidCallback onShowQr;
   final VoidCallback? onNudge;
 
+  /// Convite aberto: chamar alguém da Caravana e quem já foi chamado.
+  final VoidCallback onCall;
+  final String? calledName;
+
   const _CompanionCard({
     required this.companion,
     required this.myName,
-    required this.onCopy,
     required this.onLeave,
     required this.onShowQr,
+    required this.onCall,
+    this.calledName,
     this.onNudge,
   });
 
@@ -3411,141 +3594,235 @@ class _CompanionCard extends StatelessWidget {
     );
     if (companion.awaitingPartner) {
       return _OpenInviteStage(
-        code: companion.code,
         myName: myName,
         myPhoto: myPhoto,
         mySeed: myUid ?? myName,
         myStyle: myStyle,
-        onCopy: onCopy,
         onShowQr: onShowQr,
         onLeave: onLeave,
+        onCall: onCall,
+        calledName: calledName,
       );
     }
 
-    final partnerLabel = companion.displayName.isEmpty
-        ? context.l10n.juntosCompanionFallback
-        : companion.displayName;
-    final myLabel = myName.trim().isEmpty
-        ? context.l10n.commonYou
-        : myName.trim().split(' ').first;
+    final l10n = context.l10n;
+    final a = Appearance.of(context);
+    final partnerName = companion.partnerFirstName;
     final away = companion.theyDaysAway;
     final canNudge =
         onNudge != null &&
         (companion.waitingOnThem || (away != null && away >= 1));
+    final both = companion.bothWalkedToday;
+    final yourTurn = companion.waitingOnMe;
+    // Hoje numa frase só: quem falta, quem já foi, quanto tempo parado.
+    final statusTone = both
+        ? AppRoles.success
+        : yourTurn
+        ? AppRoles.presence
+        : a.textSecondary;
 
-    // Cada ponta é da pessoa: amarelo se caminhou, cinza se ainda não,
-    // e some só de quem não está caminhando.
-    BondEnd endFor({required bool walked, required bool away}) {
-      if (away) return BondEnd.gone;
-      if (walked) return BondEnd.lit;
-      return BondEnd.idle;
-    }
-
-    final leftEnd = endFor(walked: companion.iWalkedToday, away: false);
-    final rightEnd = endFor(
-      walked: companion.theyWalkedToday,
-      away: companion.theyAreDusty,
-    );
-    return GlassCard(
-      // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
-      padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.sm),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (companion.sharedDays > 0)
-            SoftBadge(
-              text: context.l10n.commonDays(companion.sharedDays),
-              glyph: CinematicGlyph.flame,
-              accent: AppColors.streak,
-            ),
-
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+    // Dois cards: o palco (os dois, a semana, o marco) e, embaixo, o dia —
+    // a frase de hoje, as ações para o outro e o sair.
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        GlassCard(
+          tint: AppRoles.presence,
+          glow: both ? 0.5 : 0.32,
+          // Sua vez: a borda chama, como o risco da Home.
+          borderColor: yourTurn ? AppRoles.presence : null,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _BondMember(
-                name: myLabel,
-                walked: companion.iWalkedToday,
-                highlight: companion.waitingOnMe,
-                isUser: true,
-                photoUrl: myPhoto,
-                seed: myUid ?? myName,
-                style: myStyle,
+              // Os dois nas pontas e a semana acendendo entre eles — o
+              // mesmo palco vivo do Desafio, com o elo no meio.
+              _CompanionRace(
+                companion: companion,
+                myName: myName.trim().isEmpty
+                    ? l10n.commonYou
+                    : myName.trim().split(' ').first,
+                myPhoto: myPhoto,
+                mySeed: myUid ?? myName,
+                myStyle: myStyle,
               ),
-              Expanded(
-                child: SizedBox(
-                  height: 76,
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Positioned.fill(
-                        child: Center(
-                          child: BondThread(
-                            state: BondState.idle,
-                            left: leftEnd,
-                            right: rightEnd,
-                          ),
-                        ),
-                      ),
-                      _BondKnot(both: companion.bothWalkedToday),
-                    ],
-                  ),
+              const SizedBox(height: AppSpace.lg),
+              const ListDivider(),
+              const SizedBox(height: AppSpace.md),
+              _CompanionWeekStrip(companion: companion),
+              const SizedBox(height: AppSpace.lg),
+              _CompanionMilestonesBlock(companion: companion),
+            ],
+          ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        GlassCard(
+          // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
+          padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.xs),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                companion.statusLine,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 13,
+                  height: 1.35,
+                  weight: FontWeight.w700,
+                  color: statusTone,
                 ),
               ),
-              _BondMember(
-                name: partnerLabel,
-                walked: companion.theyWalkedToday,
-                highlight: companion.waitingOnThem,
-                dusty: companion.theyAreDusty,
-                seed: companion.displayName,
+              if (companion.hasIncomingNudge) ...[
+                const SizedBox(height: AppSpace.md),
+                _IncomingNudgeBanner(companion: companion),
+              ],
+              if (canNudge) ...[
+                const SizedBox(height: AppSpace.md),
+                // Acenar e reconhecer lado a lado: as duas ações para o outro.
+                Row(
+                  children: [
+                    Expanded(
+                      child: CopperCta(
+                        label: companion.iNudgedToday
+                            ? l10n.commonSendWhatsApp
+                            : l10n.juntosWaveAt(partnerName),
+                        onTap: onNudge,
+                        leading: companion.iNudgedToday
+                            ? CinematicGlyph.share
+                            : CinematicGlyph.lamp,
+                        trailing: null,
+                        dense: true,
+                      ),
+                    ),
+                    if (companion.theyLastWalkDate != null)
+                      RecognizeHeartButton(
+                        toUid: companion.partnerUid,
+                        kind: RecognitionKind.walk,
+                        subjectKey: companion.theyLastWalkDate!,
+                        padding: const EdgeInsets.only(left: AppSpace.sm),
+                      ),
+                  ],
+                ),
+              ] else
+                RecognizeCompanionWalk(
+                  partnerUid: companion.partnerUid,
+                  walkDate: companion.theyLastWalkDate,
+                ),
+              const SizedBox(height: AppSpace.xs),
+              Center(
+                child: TextCta(
+                  label: l10n.juntosLeaveCompanionCta,
+                  danger: true,
+                  onTap: onLeave,
+                ),
               ),
             ],
           ),
-          if (companion.hasIncomingNudge) ...[
-            const SizedBox(height: 14),
-            _IncomingNudgeBanner(companion: companion),
-          ],
-          RecognizeCompanionWalk(
-            partnerUid: companion.partnerUid,
-            walkDate: companion.theyLastWalkDate,
-          ),
-          if (canNudge) ...[
-            const SizedBox(height: AppSpace.lg),
-            CopperCta(
-              label: companion.iNudgedToday
-                  ? context.l10n.commonSendWhatsApp
-                  : context.l10n.juntosWaveAt(companion.partnerFirstName),
-              onTap: onNudge,
-              leading: companion.iNudgedToday
-                  ? CinematicGlyph.share
-                  : CinematicGlyph.lamp,
-              trailing: null,
-              dense: true,
-            ),
-          ],
-          const SizedBox(height: AppSpace.lg),
-          InsetPanel(
-            padding: const EdgeInsets.fromLTRB(14, 14, 14, 12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+        ),
+      ],
+    );
+  }
+}
+
+/// Palco da companhia — o mesmo do Desafio na Home: você e o outro nas
+/// pontas, 7 traços de cada lado acesos do retrato para o meio (os dias que
+/// cada um caminhou na semana) e o marco respirando no centro, aceso quando
+/// os dois caminharam hoje.
+class _CompanionRace extends StatelessWidget {
+  final WalkCompanion companion;
+  final String myName;
+  final String? myPhoto;
+  final String mySeed;
+  final PortraitStyle myStyle;
+
+  const _CompanionRace({
+    required this.companion,
+    required this.myName,
+    required this.myPhoto,
+    required this.mySeed,
+    required this.myStyle,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final c = companion;
+    final mine = context.select((ProgressService p) => p.playDates);
+    final now = DateTime.now();
+    final todayIdx = now.weekday - 1;
+    final monday = DateTime(
+      now.year,
+      now.month,
+      now.day,
+    ).subtract(Duration(days: todayIdx));
+    var meDays = 0;
+    var themDays = 0;
+    for (var i = 0; i <= todayIdx; i++) {
+      final day = c.presenceOn(
+        monday.add(Duration(days: i)),
+        now: now,
+        alsoMine: mine,
+      );
+      // Hoje vem do estado ao vivo (o mapa da semana pode atrasar um sync).
+      if (day.me || (i == todayIdx && c.iWalkedToday)) meDays++;
+      if (day.them || (i == todayIdx && c.theyWalkedToday)) themDays++;
+    }
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _BondMember(
+          name: myName,
+          walked: c.iWalkedToday,
+          highlight: c.waitingOnMe,
+          isUser: true,
+          photoUrl: myPhoto,
+          seed: mySeed,
+          style: myStyle,
+        ),
+        Expanded(
+          child: SizedBox(
+            height: 68,
+            child: Stack(
+              alignment: Alignment.center,
               children: [
-                _CompanionWeekStrip(companion: companion),
-                const SizedBox(height: 18),
-                _CompanionMilestonesBlock(companion: companion),
+                Positioned.fill(
+                  child: Center(
+                    child: RaceDashes(
+                      left: meDays,
+                      right: themDays,
+                      leftTone: AppRoles.presence,
+                      rightTone: AppRoles.presence,
+                    ),
+                  ),
+                ),
+                // O Anan no meio da dupla: comemora quando os dois foram,
+                // sorri com um já no caminho, entristece com o outro sumido.
+                CloudMascot(
+                  face: c.bothWalkedToday
+                      ? CloudFace.sucesso
+                      : c.theyAreDusty
+                      ? CloudFace.triste
+                      : (c.iWalkedToday || c.theyWalkedToday)
+                      ? CloudFace.feliz
+                      : CloudFace.carregando,
+                  size: 64,
+                ),
               ],
             ),
           ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: TextCta(
-              label: context.l10n.juntosLeaveCompanionCta,
-              danger: true,
-              onTap: onLeave,
-            ),
-          ),
-        ],
-      ),
+        ),
+        _BondMember(
+          name: c.displayName.isEmpty
+              ? context.l10n.juntosCompanionFallback
+              : c.partnerFirstName,
+          walked: c.theyWalkedToday,
+          highlight: c.waitingOnThem,
+          dusty: c.theyAreDusty,
+          seed: c.displayName,
+        ),
+      ],
     );
   }
 }
@@ -3553,6 +3830,9 @@ class _CompanionCard extends StatelessWidget {
 /// Uma ponta do fio: retrato com halo (aceso se caminhou hoje), nome e
 /// uma palavra de estado.
 class _BondMember extends StatelessWidget {
+  /// Largura da coluna (retrato + nome).
+  static const double width = 88;
+
   final String name;
   final bool walked;
   final bool highlight;
@@ -3593,12 +3873,13 @@ class _BondMember extends StatelessWidget {
       seed: seed ?? name,
       style: style,
     );
+
     if (dusty) {
       avatar = HeroCardColorGrade(mood: HeroCardMood.dusty, child: avatar);
     }
 
     return SizedBox(
-      width: 88,
+      width: width,
       child: Column(
         children: [
           JuntosHalo(
@@ -3613,10 +3894,7 @@ class _BondMember extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
-            style: AppTypography.title(
-              size: 14,
-              color: dusty ? a.textSecondary : a.text,
-            ),
+            style: AppTypography.title(size: 14, color: a.text),
           ),
           const SizedBox(height: 2),
           Text(
@@ -3634,67 +3912,30 @@ class _BondMember extends StatelessWidget {
   }
 }
 
-/// Nó no meio do fio — coração que acende quando o dia conta para os dois.
-class _BondKnot extends StatelessWidget {
-  final bool both;
-
-  const _BondKnot({required this.both});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return AnimatedContainer(
-      duration: AppMotion.gentle,
-      width: 34,
-      height: 34,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: both ? AppRoles.success : a.cardFill,
-        border: Border.all(
-          color: both ? AppRoles.success : a.cardBorder,
-          width: 1.4,
-        ),
-        boxShadow: both
-            ? [
-                BoxShadow(
-                  color: AppRoles.success.withValues(alpha: 0.5),
-                  blurRadius: 14,
-                ),
-              ]
-            : null,
-      ),
-      child: Center(
-        child: CinematicIcon(
-          glyph: CinematicGlyph.link,
-          size: AppMetrics.iconSm,
-          accent: both ? AppColors.night : a.textFaint,
-          framed: false,
-        ),
-      ),
-    );
-  }
-}
-
 /// Convite aberto: você de um lado, um lugar vazio do outro — e o código.
+/// Convite aberto: o palco no card e, embaixo dele, as ações — mesmo
+/// arranjo do Grupo (o código mora na folha do QR).
 class _OpenInviteStage extends StatelessWidget {
-  final String code;
   final String myName;
   final String? myPhoto;
   final String mySeed;
   final PortraitStyle myStyle;
-  final VoidCallback onCopy;
   final VoidCallback onShowQr;
   final VoidCallback onLeave;
+  final VoidCallback onCall;
+
+  /// Quem foi chamado pelo nome (convite direto pendente).
+  final String? calledName;
 
   const _OpenInviteStage({
-    required this.code,
     required this.myName,
     required this.myPhoto,
     required this.mySeed,
     required this.myStyle,
-    required this.onCopy,
     required this.onShowQr,
     required this.onLeave,
+    required this.onCall,
+    this.calledName,
   });
 
   @override
@@ -3703,65 +3944,76 @@ class _OpenInviteStage extends StatelessWidget {
         ? context.l10n.commonYou
         : myName.trim().split(' ').first;
     final a = Appearance.of(context);
-    return GlassCard(
-      // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
-      padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.sm),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        GlassCard(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SectionLabel(context.l10n.juntosOpenInvite),
-              const Spacer(),
-              SoftBadge(
-                text: context.l10n.juntosWaiting,
-                glyph: CinematicGlyph.lamp,
+              CardHeader(
+                label: context.l10n.juntosOpenInvite,
+                trailing: SoftBadge(
+                  text: context.l10n.juntosWaiting,
+                  glyph: CinematicGlyph.lamp,
+                ),
+              ),
+              const SizedBox(height: AppSpace.lg),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _BondMember(
+                    name: myLabel,
+                    walked: false,
+                    highlight: false,
+                    isUser: true,
+                    photoUrl: myPhoto,
+                    seed: mySeed,
+                    style: myStyle,
+                  ),
+                  const Expanded(
+                    child: _WaitingThread(face: CloudFace.carregando),
+                  ),
+                  const _EmptySeat(),
+                ],
+              ),
+              const SizedBox(height: AppSpace.md),
+              Text(
+                calledName == null
+                    ? context.l10n.juntosOpenInviteMissing
+                    : context.l10n.companionInviteCalled(
+                        calledName!.trim().split(' ').first,
+                      ),
+                textAlign: TextAlign.center,
+                style: AppTypography.title(size: 16, color: a.text),
               ),
             ],
           ),
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _BondMember(
-                name: myLabel,
-                walked: false,
-                highlight: false,
-                isUser: true,
-                photoUrl: myPhoto,
-                seed: mySeed,
-                style: myStyle,
-              ),
-              const Expanded(child: _WaitingThread(face: CloudFace.carregando)),
-              const _EmptySeat(),
-            ],
-          ),
-          const SizedBox(height: AppSpace.md),
-          Text(
-            context.l10n.juntosOpenInviteMissing,
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 16, color: a.text),
-          ),
-          const SizedBox(height: AppSpace.md),
-          _CodePlate(code: code, onCopy: onCopy),
-          const SizedBox(height: AppSpace.md),
-          CopperCta(
-            label: context.l10n.juntosShowQrShare,
-            onTap: onShowQr,
-            leading: CinematicGlyph.qr,
-            trailing: null,
-            dense: true,
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: TextCta(
-              label: context.l10n.juntosCancelInvite,
-              danger: true,
-              onTap: onLeave,
-            ),
-          ),
-        ],
-      ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        CopperCta(
+          label: context.l10n.juntosShowQrShare,
+          onTap: onShowQr,
+          leading: CinematicGlyph.share,
+          trailing: null,
+          dense: true,
+        ),
+        const SizedBox(height: AppSpace.sm),
+        GhostCta(
+          label: context.l10n.juntosCallFromCaravan,
+          leading: CinematicGlyph.people,
+          expanded: true,
+          onTap: onCall,
+        ),
+        const SizedBox(height: AppSpace.sm),
+        GhostCta(
+          label: context.l10n.juntosCancelInvite,
+          leading: CinematicGlyph.close,
+          danger: true,
+          expanded: true,
+          onTap: onLeave,
+        ),
+      ],
     );
   }
 }
@@ -3831,93 +4083,6 @@ class _EmptySeat extends StatelessWidget {
 
 /// Código de convite, tocável para copiar — o mesmo poço e a mesma letra
 /// para dupla e grupo. [compact]: chip ao lado do convite do grupo.
-class _CodePlate extends StatelessWidget {
-  final String code;
-  final VoidCallback onCopy;
-  final bool compact;
-
-  const _CodePlate({
-    required this.code,
-    required this.onCopy,
-    this.compact = false,
-  });
-
-  /// A letra de código de convite é uma só ([inviteCodeStyle]).
-  static TextStyle codeStyle(AppearanceStyle a, {bool compact = false}) =>
-      inviteCodeStyle(a, size: compact ? 18 : 24);
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final Widget content = compact
-        ? ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 36),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SectionLabel(
-                  context.l10n.juntosCodeLabel,
-                  size: 10,
-                  color: a.textFaint,
-                ),
-                const SizedBox(height: 2),
-                Text(code, style: codeStyle(a, compact: true)),
-              ],
-            ),
-          )
-        : Row(
-            children: [
-              SectionLabel(context.l10n.juntosCodeLabel, color: a.textFaint),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Text(
-                  code,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: codeStyle(a),
-                ),
-              ),
-              CinematicIcon(
-                glyph: CinematicGlyph.copy,
-                size: AppMetrics.iconSm,
-                accent: a.textSecondary,
-                framed: false,
-              ),
-              const SizedBox(width: 6),
-              Text(
-                context.l10n.juntosCopy,
-                style: AppTypography.body(
-                  size: 13,
-                  weight: FontWeight.w800,
-                  color: a.textSecondary,
-                ),
-              ),
-            ],
-          );
-    return Semantics(
-      button: true,
-      label: compact
-          ? context.l10n.juntosCopyCodeSemantics(code)
-          : context.l10n.juntosCodeTapToCopy(code),
-      excludeSemantics: true,
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: () {
-          ActHaptics.tap();
-          onCopy();
-        },
-        child: InsetPanel(
-          padding: compact
-              ? const EdgeInsets.symmetric(horizontal: 12, vertical: 6)
-              : const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          child: content,
-        ),
-      ),
-    );
-  }
-}
-
 /// Faixa da semana — embutida no card da dupla.
 class _CompanionWeekStrip extends StatelessWidget {
   final WalkCompanion companion;
@@ -4074,20 +4239,23 @@ class _CompanionMilestonesBlock extends StatelessWidget {
         ? l10n.juntosNextMilestone(next)
         : l10n.juntosMilestoneLeft(next - shared, next);
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SectionLabel(l10n.juntosMilestones),
-        const SizedBox(height: 14),
-        _MilestoneTrail(sharedDays: shared, next: next, style: a),
-        if (shared < next) ...[
-          const SizedBox(height: 12),
+    // Mesmo idioma do próximo marco da sequência no perfil: frase + barra.
+    return Semantics(
+      label: '$caption · $shared/$next',
+      excludeSemantics: true,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
           Row(
             children: [
               Expanded(
                 child: Text(
                   caption,
-                  style: AppTypography.body(size: 13, color: a.textSecondary),
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w800,
+                    color: a.text,
+                  ),
                 ),
               ),
               Text(
@@ -4095,13 +4263,18 @@ class _CompanionMilestonesBlock extends StatelessWidget {
                 style: AppTypography.label(
                   size: 11,
                   weight: FontWeight.w800,
-                  color: a.text,
+                  color: shared > 0 ? AppRoles.presence : a.textFaint,
                 ),
               ),
             ],
           ),
+          const SizedBox(height: 8),
+          RelicProgress(
+            value: companion.milestoneProgress,
+            accent: AppRoles.presence,
+          ),
         ],
-      ],
+      ),
     );
   }
 }
@@ -4273,251 +4446,6 @@ class _SplitDayPainter extends CustomPainter {
       legend != old.legend;
 }
 
-class _MilestoneTrail extends StatelessWidget {
-  final int sharedDays;
-  final int next;
-  final AppearanceStyle style;
-
-  const _MilestoneTrail({
-    required this.sharedDays,
-    required this.next,
-    required this.style,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final marks = WalkCompanion.milestones;
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final n = marks.length;
-        final slot = constraints.maxWidth / n;
-        const node = 28.0;
-        return Column(
-          children: [
-            SizedBox(
-              height: node,
-              child: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Positioned(
-                    left: slot / 2,
-                    right: slot / 2,
-                    top: (node / 2) - 1.5,
-                    child: _MilestoneLine(sharedDays: sharedDays, style: style),
-                  ),
-                  Row(
-                    children: [
-                      for (final m in marks)
-                        Expanded(
-                          child: Center(
-                            child: _MilestoneNode(
-                              reached: sharedDays >= m,
-                              current: next == m,
-                              arc: _gapProgress(sharedDays, m),
-                              style: style,
-                            ),
-                          ),
-                        ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 6),
-            Row(
-              children: [
-                for (final m in marks)
-                  Expanded(
-                    child: Text(
-                      '$m',
-                      textAlign: TextAlign.center,
-                      style: AppTypography.label(
-                        size: 11,
-                        letterSpacing: 0,
-                        weight: sharedDays >= m || next == m
-                            ? FontWeight.w800
-                            : FontWeight.w600,
-                        color: sharedDays >= m
-                            ? AppRoles.presence
-                            : next == m
-                            ? style.text
-                            : style.textFaint,
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  /// Quanto do trecho até [days] já foi caminhado (0–1). Só o marco atual.
-  static double _gapProgress(int shared, int days) {
-    if (shared >= days) return 1;
-    final marks = WalkCompanion.milestones;
-    var prev = 0;
-    for (final m in marks) {
-      if (m == days) break;
-      if (m < days) prev = m;
-    }
-    if (days <= prev) return 0;
-    return ((shared - prev) / (days - prev)).clamp(0.0, 1.0);
-  }
-}
-
-class _MilestoneLine extends StatelessWidget {
-  final int sharedDays;
-  final AppearanceStyle style;
-
-  const _MilestoneLine({required this.sharedDays, required this.style});
-
-  @override
-  Widget build(BuildContext context) {
-    final marks = WalkCompanion.milestones;
-    return SizedBox(
-      height: 3,
-      child: Row(
-        children: [
-          for (var i = 0; i < marks.length - 1; i++)
-            Expanded(child: _segment(marks[i], marks[i + 1])),
-        ],
-      ),
-    );
-  }
-
-  Widget _segment(int from, int to) {
-    final done = sharedDays >= to;
-    final current = sharedDays >= from && sharedDays < to;
-    final t = current
-        ? ((sharedDays - from) / (to - from)).clamp(0.0, 1.0)
-        : (done ? 1.0 : 0.0);
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        DecoratedBox(
-          decoration: BoxDecoration(
-            color: style.cardBorder.withValues(alpha: 0.45),
-            borderRadius: BorderRadius.circular(AppRadii.hair),
-          ),
-        ),
-        if (t > 0)
-          FractionallySizedBox(
-            alignment: Alignment.centerLeft,
-            widthFactor: t,
-            child: const DecoratedBox(
-              decoration: BoxDecoration(
-                color: AppRoles.presence,
-                borderRadius: BorderRadius.all(Radius.circular(AppRadii.hair)),
-              ),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class _MilestoneNode extends StatelessWidget {
-  final bool reached;
-  final bool current;
-  final double arc;
-  final AppearanceStyle style;
-
-  const _MilestoneNode({
-    required this.reached,
-    required this.current,
-    required this.arc,
-    required this.style,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 28,
-      height: 28,
-      child: CustomPaint(
-        painter: _MilestoneNodePainter(
-          reached: reached,
-          current: current,
-          arc: arc,
-          // Nó atual: anel na cor de seleção do tema.
-          track: current
-              ? style.selected
-              : style.cardBorder.withValues(alpha: 0.7),
-          empty: style.cardFillSoft,
-        ),
-        child: reached
-            ? const Center(
-                child: CinematicIcon(
-                  glyph: CinematicGlyph.check,
-                  size: AppMetrics.chipIcon,
-                  accent: AppRoles.onReward,
-                  framed: false,
-                ),
-              )
-            : null,
-      ),
-    );
-  }
-}
-
-class _MilestoneNodePainter extends CustomPainter {
-  final bool reached;
-  final bool current;
-  final double arc;
-  final Color track;
-  final Color empty;
-
-  const _MilestoneNodePainter({
-    required this.reached,
-    required this.current,
-    required this.arc,
-    required this.track,
-    required this.empty,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final radius = size.width / 2 - 1.2;
-    if (reached) {
-      canvas.drawCircle(center, radius, Paint()..color = AppRoles.presence);
-      return;
-    }
-    canvas.drawCircle(center, radius, Paint()..color = empty);
-    canvas.drawCircle(
-      center,
-      radius,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = current ? 1.8 : 1.1
-        ..color = track,
-    );
-    if (current && arc > 0.01) {
-      canvas.drawArc(
-        Rect.fromCircle(center: center, radius: radius),
-        -math.pi / 2,
-        math.pi * 2 * arc.clamp(0.0, 1.0),
-        false,
-        Paint()
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 2.4
-          ..strokeCap = StrokeCap.round
-          ..color = AppRoles.presence,
-      );
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _MilestoneNodePainter old) =>
-      reached != old.reached ||
-      current != old.current ||
-      arc != old.arc ||
-      track != old.track ||
-      empty != old.empty;
-}
-
 class _IncomingNudgeBanner extends StatelessWidget {
   final WalkCompanion companion;
 
@@ -4528,7 +4456,10 @@ class _IncomingNudgeBanner extends StatelessWidget {
     final from = companion.incomingNudgeFromName?.trim().isNotEmpty == true
         ? companion.incomingNudgeFromName!.trim().split(' ').first
         : context.l10n.juntosCompanionFallback;
-    final message = companion.incomingNudgeMessage?.trim();
+    final raw = companion.incomingNudgeMessage?.trim();
+    // Texto escrito por outra pessoa: o filtro vale também na chegada.
+    final message = raw != null && ContentFilter.isAllowed(raw) ? raw : null;
+    final partnerUid = companion.partnerUid;
     final a = Appearance.of(context);
     return InsetPanel(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
@@ -4566,6 +4497,19 @@ class _IncomingNudgeBanner extends StatelessWidget {
               ],
             ),
           ),
+          // Aceno é texto de outra pessoa: denunciar e bloquear à mão
+          // (App Store 1.2). Bloqueado some na próxima leitura.
+          if (partnerUid != null && partnerUid.isNotEmpty)
+            UserModerationButton(
+              uid: partnerUid,
+              name: from,
+              source: UserReportSource.companion,
+              onDone: (outcome) {
+                if (outcome == ModerationOutcome.blocked && context.mounted) {
+                  context.read<CompanionService>().refresh();
+                }
+              },
+            ),
         ],
       ),
     );

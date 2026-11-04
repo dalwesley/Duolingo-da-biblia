@@ -9,7 +9,6 @@ import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/palco_verse.dart';
 import 'act_feel.dart';
-import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -193,28 +192,16 @@ class _HomeWordCardState extends State<HomeWordCard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyph.book,
-                    size: AppMetrics.iconSm,
-                    accent: a.chrome,
-                    framed: false,
-                    glowing: false,
+              CardHeader(
+                label: _labelText(context, snap.label),
+                trailing: Text(
+                  snap.reference,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
+                    color: a.textFaint,
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: SectionLabel(_labelText(context, snap.label)),
-                  ),
-                  Text(
-                    snap.reference,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w700,
-                      color: a.textFaint,
-                    ),
-                  ),
-                ],
+                ),
               ),
               const SizedBox(height: 10),
               Text(

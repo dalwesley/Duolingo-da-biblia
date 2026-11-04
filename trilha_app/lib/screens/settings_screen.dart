@@ -730,18 +730,15 @@ class _SettingsScreenState extends State<SettingsScreen>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              SectionLabel(context.l10n.settingsAccount),
-              const Spacer(),
-              SoftBadge(
-                text: signedIn
-                    ? context.l10n.settingsInCloud
-                    : context.l10n.settingsDeviceOnly,
-                glyph: signedIn ? CinematicGlyph.check : CinematicGlyph.wrong,
-                accent: signedIn ? AppRoles.success : AppRoles.risk,
-              ),
-            ],
+          CardHeader(
+            label: context.l10n.settingsAccount,
+            trailing: SoftBadge(
+              text: signedIn
+                  ? context.l10n.settingsInCloud
+                  : context.l10n.settingsDeviceOnly,
+              glyph: signedIn ? CinematicGlyph.check : CinematicGlyph.wrong,
+              accent: signedIn ? AppRoles.success : AppRoles.risk,
+            ),
           ),
           const SizedBox(height: AppSpace.lg),
           _ProfileHeader(

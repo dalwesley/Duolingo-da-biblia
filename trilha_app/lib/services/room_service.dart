@@ -115,7 +115,12 @@ class RoomService extends ChangeNotifier {
               ?RoomInvite.fromDoc(doc.id, doc.data()),
           ];
           notifyListeners();
-        }, onError: (Object e) => debugPrint('Convites do grupo: $e'));
+        }, onError: (Object e) {
+          // Stream morre no erro: solta para o próximo
+          // ensureInviteListener reabrir.
+          debugPrint('Convites do grupo: $e');
+          _stopInviteListener(clear: false);
+        });
   }
 
   bool _invitesSeen = false;

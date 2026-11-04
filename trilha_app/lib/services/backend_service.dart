@@ -13,6 +13,7 @@ import '../models/pilgrim_medal_catalog.dart';
 import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/trail_gift.dart';
+import '../models/companion_invite.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
 import '../utils/plus_access.dart';
@@ -2432,6 +2433,7 @@ class BackendService extends ChangeNotifier {
           throw StateError('missing');
         }
         final data = doc.data()!;
+        if (data['endedAt'] != null) throw StateError('missing');
         final hostId = data['hostId'] as String? ?? '';
         if (hostId == _uid) return;
         final guestId = data['guestId'] as String?;
@@ -2468,6 +2470,8 @@ class BackendService extends ChangeNotifier {
       final doc = await _db.doc('companies/$normalized').get();
       if (!doc.exists || doc.data() == null) return null;
       final data = doc.data()!;
+      // Um dos dois saiu: a dupla acabou para ambos.
+      if (data['endedAt'] != null) return null;
       final hostId = data['hostId'] as String? ?? '';
       final guestId = data['guestId'] as String?;
       if (hostId != _uid && guestId != _uid) return null;
@@ -2500,6 +2504,7 @@ class BackendService extends ChangeNotifier {
         await _db.runTransaction((tx) async {
           final doc = await tx.get(ref);
           if (!doc.exists || doc.data() == null) return;
+          if (doc.data()!['endedAt'] != null) return;
           final data = Map<String, dynamic>.from(doc.data()!);
           final hostId = data['hostId'] as String? ?? '';
           final guestId = data['guestId'] as String?;
@@ -2559,6 +2564,73 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Aceno 1:1 — o parceiro vê ao abrir a companhia.
+  /// Chama alguém da Caravana para o convite aberto [code]. Um doc por
+  /// código: chamar outra pessoa troca o destinatário (uma vaga só).
+  /// Push sai pela function `onCompanionInvite`.
+  Future<bool> sendCompanionInvite({
+    required String code,
+    required String fromName,
+    required String toUid,
+    required String toName,
+  }) async {
+    if (!isActive || toUid.isEmpty || toUid == _uid) return false;
+    final normalized = code.trim().toUpperCase();
+    final photo = userPhotoUrl?.trim();
+    try {
+      await _db.doc('companionInvites/$normalized').set({
+        'code': normalized,
+        'fromUid': _uid,
+        'fromName': fromName.trim().isEmpty
+            ? L10n.current.cornerSomeone
+            : fromName.trim(),
+        'toUid': toUid,
+        'toName': toName.trim().isEmpty
+            ? L10n.current.cornerSomeone
+            : toName.trim(),
+        'participantIds': [_uid, toUid],
+        'status': CompanionInviteStatus.pending.name,
+        'createdAt': FieldValue.serverTimestamp(),
+        if (photo != null && photo.isNotEmpty) 'fromPhotoUrl': photo,
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao chamar para a companhia: $e');
+      return false;
+    }
+  }
+
+  Future<bool> setCompanionInviteStatus(
+    String code,
+    CompanionInviteStatus status,
+  ) async {
+    if (!isActive || code.isEmpty) return false;
+    try {
+      await _db.doc('companionInvites/${code.trim().toUpperCase()}').update({
+        'status': status.name,
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao atualizar convite da companhia: $e');
+      return false;
+    }
+  }
+
+  /// Convites de companhia em que o peregrino é uma das pontas.
+  Stream<List<CompanionInvite>> watchCompanionInvites() {
+    final uid = _uid;
+    if (!isActive || uid == null) return const Stream.empty();
+    return _db
+        .collection('companionInvites')
+        .where('participantIds', arrayContains: uid)
+        .snapshots()
+        .map(
+          (snap) => [
+            for (final doc in snap.docs)
+              ?CompanionInvite.fromDoc(doc.id, doc.data()),
+          ],
+        );
+  }
+
   Future<bool> sendCompanionNudge({
     required String code,
     required String fromName,
@@ -2577,6 +2649,7 @@ class BackendService extends ChangeNotifier {
           throw StateError('missing');
         }
         final data = doc.data()!;
+        if (data['endedAt'] != null) throw StateError('missing');
         final hostId = data['hostId'] as String? ?? '';
         final guestId = data['guestId'] as String?;
         if (hostId != _uid && guestId != _uid) {
@@ -2612,47 +2685,42 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  Future<void> leaveCompanion(String code) async {
-    if (!isActive) return;
+  /// Sair encerra a dupla para os dois: o doc ganha `endedAt` e o parceiro
+  /// deixa de vê-la no próximo refresh. Host sozinho (convite aberto) apaga.
+  /// `false` só quando a nuvem não confirmou — quem chama mantém a dupla.
+  Future<bool> leaveCompanion(String code) async {
+    if (!isActive) return true;
     final normalized = code.trim().toUpperCase();
     try {
       final ref = _db.doc('companies/$normalized');
-      final doc = await ref.get();
-      if (!doc.exists || doc.data() == null) return;
+      final DocumentSnapshot<Map<String, dynamic>> doc;
+      try {
+        doc = await ref.get();
+      } on FirebaseException catch (e) {
+        // Sem leitura = já não é desta pessoa.
+        if (e.code == 'permission-denied') return true;
+        rethrow;
+      }
+      if (!doc.exists || doc.data() == null) return true;
       final data = doc.data()!;
+      if (data['endedAt'] != null) return true;
       final hostId = data['hostId'] as String? ?? '';
       final guestId = data['guestId'] as String?;
-      if (hostId == _uid) {
-        // Host sai: se há guest, promove; senão apaga.
-        if (guestId != null && guestId.isNotEmpty) {
-          await ref.set({
-            'hostId': guestId,
-            'hostName': data['guestName'],
-            'guestId': null,
-            'guestName': null,
-            'hostLastWalk': data['guestLastWalk'],
-            'guestLastWalk': null,
-            'hostLastSeen': data['guestLastSeen'],
-            'guestLastSeen': null,
-            'hostWeeklySteps': data['guestWeeklySteps'] ?? 0,
-            'guestWeeklySteps': 0,
-            'updatedAt': FieldValue.serverTimestamp(),
-          }, SetOptions(merge: true));
-        } else {
-          await ref.delete();
-        }
-      } else if (guestId == _uid) {
-        await ref.set({
-          'guestId': null,
-          'guestName': null,
-          'guestLastWalk': null,
-          'guestLastSeen': null,
-          'guestWeeklySteps': 0,
-          'updatedAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
+      final hasGuest = guestId != null && guestId.isNotEmpty;
+      if (hostId != _uid && guestId != _uid) return true;
+      if (hostId == _uid && !hasGuest) {
+        await ref.delete();
+        return true;
       }
+      await ref.update({
+        'endedAt': FieldValue.serverTimestamp(),
+        'endedBy': _uid,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      return true;
     } catch (e) {
       debugPrint('Falha ao sair da companhia: $e');
+      return false;
     }
   }
 

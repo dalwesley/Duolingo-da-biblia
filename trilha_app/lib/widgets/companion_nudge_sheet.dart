@@ -7,12 +7,17 @@ import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../l10n/app_language.dart';
 import '../models/walk_companion.dart';
+import '../screens/paywall_screen.dart';
 import '../services/companion_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/content_filter.dart';
 import 'act_feel.dart';
+import 'anan_speech.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'hero_card_atmosphere.dart';
 import 'stway_brand.dart';
@@ -45,6 +50,11 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
   bool _sharing = false;
   late int _presetIndex;
 
+  /// Aceno escrito (Peregrino+) no lugar dos prontos.
+  bool _custom = false;
+  final _text = TextEditingController();
+  String? _textError;
+
   WalkCompanion _resolve({required bool watch}) {
     final list = watch
         ? context.watch<CompanionService>().companions
@@ -66,9 +76,35 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     });
   }
 
+  @override
+  void dispose() {
+    _text.dispose();
+    super.dispose();
+  }
+
   String get _them => widget.companion.partnerFirstName;
 
+  /// "Escrever o meu": no Plus abre o campo; sem ele, o paywall.
+  void _pickWrite() {
+    ActHaptics.tap();
+    if (!context.read<SubscriptionService>().plusFeaturesOpen) {
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'companion_nudge'),
+        ),
+      );
+      return;
+    }
+    // Toque de novo no "Escrever o meu" volta aos prontos.
+    if (_custom) FocusManager.instance.primaryFocus?.unfocus();
+    setState(() {
+      _custom = !_custom;
+      _textError = null;
+    });
+  }
+
   String _messageOf(WalkCompanion live) {
+    if (_custom) return _text.text.trim();
     final presets = live.nudgePresets;
     if (presets.isEmpty) return context.l10n.nudgeDefaultMessage;
     return presets[_presetIndex.clamp(0, presets.length - 1)];
@@ -100,6 +136,14 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     if (_sending || _sharing) return;
     final companion = context.read<CompanionService>();
     if (live.iNudgedToday) return;
+    if (_custom) {
+      final text = _text.text.trim();
+      if (text.isEmpty) return;
+      if (!ContentFilter.isAllowed(text)) {
+        setState(() => _textError = context.l10n.contentTextNotAllowed);
+        return;
+      }
+    }
     setState(() => _sending = true);
     final ok = await companion.sendNudge(
       code: widget.companion.code,
@@ -118,13 +162,22 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
       return;
     }
     final host = Navigator.of(context).overlay?.context;
-    Navigator.of(context).pop();
+    final sent = context.l10n.nudgeSent(_them);
+    _closeSelf();
     if (host != null && host.mounted) {
-      await showAppToastFor(
-        host,
-        message: context.l10n.nudgeSent(_them),
-        glyph: CinematicGlyph.heart,
-      );
+      await showAppToastFor(host, message: sent, glyph: CinematicGlyph.heart);
+    }
+  }
+
+  /// Fecha só esta folha — depois de um await ela pode já estar saindo
+  /// (toque fora), e pop() fecharia a tela de baixo.
+  void _closeSelf() {
+    final route = ModalRoute.of(context);
+    if (route == null || !route.isActive) return;
+    if (route.isCurrent) {
+      Navigator.of(context).pop();
+    } else {
+      Navigator.of(context).removeRoute(route);
     }
   }
 
@@ -140,7 +193,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
       debugPrint('nudge share: falha ao capturar imagem: $e\n$st');
     }
 
-    if (mounted) Navigator.of(context).pop();
+    if (mounted) _closeSelf();
 
     try {
       await SharePlus.instance.share(
@@ -170,6 +223,9 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     final canSendApp = context.watch<CompanionService>().backend.isActive;
     final busy = _sending || _sharing;
     final a = Appearance.of(context);
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
+    // Escrito vazio não acena.
+    final emptyCustom = _custom && _text.text.trim().isEmpty;
 
     return Stack(
       clipBehavior: Clip.none,
@@ -195,78 +251,144 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
             AppSpace.lg,
             14,
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              AppSheetHeader(
-                title: context.l10n.nudgeTitle(_them),
-                subtitle: already
-                    ? context.l10n.nudgeAlreadySubtitle
-                    : canSendApp
-                    ? context.l10n.nudgeInAppSubtitle(_them)
-                    : context.l10n.nudgeSignInSubtitle,
-                center: true,
-              ),
-              if (!already) ...[
-                const SizedBox(height: 16),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  alignment: WrapAlignment.center,
-                  children: [
-                    for (var i = 0; i < presets.length; i++)
-                      _NudgePresetChip(
-                        label: presets[i],
-                        selected: i == _presetIndex,
-                        onTap: busy
-                            ? null
-                            : () {
-                                ActHaptics.tap();
-                                setState(() => _presetIndex = i);
-                              },
+          // Teclado aberto em tela baixa: rola em vez de estourar.
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight:
+                  MediaQuery.sizeOf(context).height -
+                  MediaQuery.viewInsetsOf(context).bottom -
+                  MediaQuery.paddingOf(context).top -
+                  96,
+            ),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // O Anan fala: título e explicação no balão dele.
+                  AnanSideSpeech(
+                    face: CloudFace.feliz,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          context.l10n.nudgeTitle(_them),
+                          style: AppTypography.display(
+                            size: 22,
+                            height: 1.1,
+                            color: AnanSpeechBubble.ink,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          already
+                              ? context.l10n.nudgeAlreadySubtitle
+                              : canSendApp
+                              ? context.l10n.nudgeInAppSubtitle(_them)
+                              : context.l10n.nudgeSignInSubtitle,
+                          style: AppTypography.body(
+                            size: 13,
+                            height: 1.35,
+                            color: AnanSpeechBubble.muted,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  if (!already) ...[
+                    const SizedBox(height: AppSpace.lg),
+                    // Cards de escolha — o mesmo do "Seu ritmo" do começo.
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Escrevendo: os prontos recolhem e o teclado cabe.
+                        if (!_custom)
+                          for (var i = 0; i < presets.length; i++) ...[
+                            if (i > 0) const SizedBox(height: AppSpace.sm),
+                            _NudgePresetChip(
+                              label: presets[i],
+                              selected: !_custom && i == _presetIndex,
+                              onTap: busy
+                                  ? null
+                                  : () {
+                                      ActHaptics.tap();
+                                      setState(() {
+                                        _presetIndex = i;
+                                        _custom = false;
+                                        _textError = null;
+                                      });
+                                    },
+                            ),
+                          ],
+                        if (canSendApp) ...[
+                          const SizedBox(height: AppSpace.sm),
+                          _NudgeWriteChip(
+                            selected: _custom,
+                            locked: !plusOpen,
+                            onTap: busy ? null : _pickWrite,
+                          ),
+                        ],
+                      ],
+                    ),
+                    if (_custom) ...[
+                      const SizedBox(height: AppSpace.md),
+                      TextField(
+                        controller: _text,
+                        autofocus: true,
+                        maxLength: 120,
+                        minLines: 1,
+                        maxLines: 3,
+                        textCapitalization: TextCapitalization.sentences,
+                        style: AppTypography.body(size: 15, color: a.text),
+                        decoration: InputDecoration(
+                          hintText: context.l10n.nudgeWriteHint(_them),
+                          errorText: _textError,
+                        ),
+                        onChanged: (_) => setState(() => _textError = null),
                       ),
+                    ],
                   ],
-                ),
-              ],
-              const SizedBox(height: 18),
-              if (canSendApp && !already)
-                CopperCta(
-                  label: context.l10n.waveCta,
-                  onTap: busy ? null : _sendAceno,
-                  leading: CinematicGlyph.heart,
-                  trailing: null,
-                  dense: true,
-                  busy: _sending,
-                )
-              else if (already)
-                CopperCta(
-                  label: context.l10n.commonSendWhatsApp,
-                  onTap: busy ? null : _shareWhatsApp,
-                  leading: CinematicGlyph.share,
-                  trailing: null,
-                  dense: true,
-                  busy: _sharing,
-                )
-              else
-                CopperCta(
-                  label: context.l10n.commonSendWhatsApp,
-                  onTap: busy ? null : _shareWhatsApp,
-                  leading: CinematicGlyph.share,
-                  trailing: null,
-                  dense: true,
-                  busy: _sharing,
-                ),
-              if (canSendApp && !already) ...[
-                const SizedBox(height: 8),
-                GhostCta(
-                  label: context.l10n.commonSendWhatsApp,
-                  leading: CinematicGlyph.share,
-                  expanded: true,
-                  onTap: busy ? null : _shareWhatsApp,
-                ),
-              ],
-            ],
+                  const SizedBox(height: 18),
+                  if (canSendApp && !already)
+                    CopperCta(
+                      label: context.l10n.waveCta,
+                      onTap: busy || emptyCustom ? null : _sendAceno,
+                      leading: CinematicGlyph.heart,
+                      trailing: null,
+                      dense: true,
+                      busy: _sending,
+                    )
+                  else if (already)
+                    CopperCta(
+                      label: context.l10n.commonSendWhatsApp,
+                      onTap: busy ? null : _shareWhatsApp,
+                      leading: CinematicGlyph.share,
+                      trailing: null,
+                      dense: true,
+                      busy: _sharing,
+                    )
+                  else
+                    CopperCta(
+                      label: context.l10n.commonSendWhatsApp,
+                      onTap: busy ? null : _shareWhatsApp,
+                      leading: CinematicGlyph.share,
+                      trailing: null,
+                      dense: true,
+                      busy: _sharing,
+                    ),
+                  if (canSendApp && !already) ...[
+                    const SizedBox(height: 8),
+                    GhostCta(
+                      label: context.l10n.commonSendWhatsApp,
+                      leading: CinematicGlyph.share,
+                      expanded: true,
+                      onTap: busy ? null : _shareWhatsApp,
+                    ),
+                  ],
+                ],
+              ),
+            ),
           ),
         ),
       ],
@@ -287,13 +409,93 @@ class _NudgePresetChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppSelectChip(
+    // Card de escolha do app (onboarding "Seu ritmo"): seleção = contorno
+    // claro, não ouro.
+    return Semantics(
+      button: true,
+      selected: selected,
       label: label,
+      excludeSemantics: true,
+      child: AppSelectChip(
+        label: label,
+        selected: selected,
+        onTap: onTap,
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        borderRadius: const BorderRadius.all(Radius.circular(AppRadii.md)),
+        fontSize: 14,
+        fontWeight: FontWeight.w700,
+      ),
+    );
+  }
+}
+
+/// "Escrever o meu" — do Peregrino+. Fechado: apagado, com a marca do
+/// Plus, e o toque abre o paywall.
+class _NudgeWriteChip extends StatelessWidget {
+  final bool selected;
+  final bool locked;
+  final VoidCallback? onTap;
+
+  const _NudgeWriteChip({
+    required this.selected,
+    required this.locked,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final chip = _NudgePresetChip(
+      label: context.l10n.nudgeWriteOwn,
       selected: selected,
       onTap: onTap,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      fontSize: 12,
-      unselectedColor: Appearance.of(context).textSecondary,
+    );
+    // Escrevendo: o ✕ mostra que o toque volta aos prontos.
+    if (!locked && selected) {
+      return Stack(
+        fit: StackFit.passthrough,
+        alignment: Alignment.centerRight,
+        children: [
+          chip,
+          Positioned(
+            top: 0,
+            bottom: 0,
+            right: 16,
+            child: IgnorePointer(
+              child: Center(
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.close,
+                  size: AppMetrics.iconSm,
+                  accent: Appearance.of(context).textSecondary,
+                  framed: false,
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+    if (!locked) return chip;
+    return Stack(
+      fit: StackFit.passthrough,
+      alignment: Alignment.centerRight,
+      children: [
+        Opacity(opacity: 0.45, child: chip),
+        const Positioned(
+          top: 0,
+          bottom: 0,
+          right: 14,
+          child: IgnorePointer(
+            child: Center(
+              child: CinematicIcon(
+                glyph: CinematicGlyph.plus,
+                size: 22,
+                accent: AppRoles.reward,
+                framed: false,
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

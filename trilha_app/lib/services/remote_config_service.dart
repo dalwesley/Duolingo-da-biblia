@@ -35,9 +35,26 @@ class RemoteConfigService extends ChangeNotifier {
 
   FirebaseRemoteConfig? _rc;
   StreamSubscription<RemoteConfigUpdate>? _updates;
+  Future<void>? _initFuture;
 
-  Future<void> init() async {
-    if (_rc != null) return;
+  /// Idempotente: chamadas repetidas recebem a mesma carga.
+  Future<void> init() => _initFuture ??= _init();
+
+  /// Espera o 1º fetch (no máximo [timeout]). Quem decide abrir ou barrar
+  /// uma feature logo no arranque — ex.: convite aberto pela câmera, com o
+  /// app frio — chama isto antes de ler a flag; sem esperar, a leitura cai
+  /// no default `false` e mostra "em breve" para uma feature já aberta.
+  Future<void> ensureLoaded({
+    Duration timeout = const Duration(seconds: 10),
+  }) async {
+    try {
+      await init().timeout(timeout);
+    } catch (_) {
+      // Timeout ou falha: segue com o que houver (cache ou defaults).
+    }
+  }
+
+  Future<void> _init() async {
     try {
       final rc = FirebaseRemoteConfig.instance;
       await rc.setConfigSettings(
