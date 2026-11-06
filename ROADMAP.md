@@ -186,7 +186,7 @@ Ver `MONETIZATION.md`. Não preencher as chaves antes do hábito provar valor. N
 
 - [x] **Caminhada no app** — Advento 2026. Dias 1–3 grátis; do dia 4 em diante, Peregrino+ (aberto enquanto não há loja). A cena segue na aba Trilhas.
 - [x] **Peregrino+** — Caminhada (dia 4+), revisão da semana, constância, reforço, selo e apoio avulso. Chaves vazias: nada trava e ninguém compra.
-- [ ] Ligar a loja **depois** do D7: chaves RevenueCat, anual + mensal, apoio. Sem vitalício. Checklist em `store/ios/app-review-notes-iap.md`
+- [ ] Ligar a loja **depois** do D7: chaves RevenueCat, anual + mensal, apoio. Sem vitalício. Checklist em `app-review-notes-iap.md` (material das lojas, fora do repositório)
 - [ ] Família (até 5) só depois do anual ligado — e antes de qualquer outro avulso
 - [ ] Plano Igreja piloto (1–3 líderes): Grupos + progresso + códigos presente Pro · billing Stripe/Pix na web
 - [ ] Radar (após Igreja): **playlist da sala** (missões do catálogo na ordem da semana) → depois trilha privada MCQ, fora de `content_trails`; **não** UGC aberto

@@ -250,7 +250,7 @@ montagem editorial couber, senão é o primeiro lançamento seguinte.
 5. **Ordem de deploy: functions + segredo do webhook → firestore.rules →
    build com chaves.** Rules antes do webhook = assinante sem selo, sem
    erro visível. Checklist completo em
-   [`store/ios/app-review-notes-iap.md`](store/ios/app-review-notes-iap.md)
+   `app-review-notes-iap.md` (material das lojas, guardado fora do repositório)
 6. D7 com testadores antes de escalar divulgação do paywall
 
 Enquanto a loja não está configurada, o build abre tudo (fail-open
