@@ -30,7 +30,9 @@ void main() {
     expect(correct.text, 'o céu e a terra');
     expect(repaired.options.every((o) => !isIncompletePhrase(o.text)), isTrue);
     expect(
-      repaired.options.where((o) => o.id != 'a').every((o) => !isWeakDistractor(o.text)),
+      repaired.options
+          .where((o) => o.id != 'a')
+          .every((o) => !isWeakDistractor(o.text)),
       isTrue,
     );
   });
@@ -73,7 +75,8 @@ void main() {
       correctId: 'a',
       passage:
           'Partiu, portanto, Abrão conforme o que o SENHOR lhe ordenara, e Ló o acompanhou. Abrão contava setenta e cinco anos ao deixar Harã.',
-      question: 'Segundo Gênesis 12:4, quantos anos Abrão tinha ao deixar Harã?',
+      question:
+          'Segundo Gênesis 12:4, quantos anos Abrão tinha ao deixar Harã?',
     );
     final correct = repaired.options.firstWhere((o) => o.id == 'a');
     expect(correct.text, 'Setenta e cinco anos');
@@ -88,8 +91,10 @@ void main() {
     const passage =
         'Ora, Sarai, mulher de Abrão, não lhe dava filhos; mas tinha uma serva egípcia, que se chamava Agar.';
     expect(isNamingAsk('Como se chama o filho de Agar?'), isTrue);
-    expect(isPassagePrefix('Ora, Sarai, mulher de Abrão, não lhe dava', passage),
-        isTrue);
+    expect(
+      isPassagePrefix('Ora, Sarai, mulher de Abrão, não lhe dava', passage),
+      isTrue,
+    );
     expect(
       preferredAnswer(
         option: 'Ismael',
@@ -103,7 +108,10 @@ void main() {
       options: const [
         QuestionOption(id: 'a', text: 'el-Roi'),
         QuestionOption(id: 'b', text: 'serva egípcia'),
-        QuestionOption(id: 'c', text: 'Ora, Sarai, mulher de Abrão, não lhe dava'),
+        QuestionOption(
+          id: 'c',
+          text: 'Ora, Sarai, mulher de Abrão, não lhe dava',
+        ),
         QuestionOption(id: 'd', text: 'Isaque'),
       ],
       correctId: 'a',
@@ -140,12 +148,7 @@ void main() {
       rng: Random(1),
     );
     expect(ex.options.map((o) => o.text), contains('Ismael'));
-    expect(
-      ex.options.any(
-        (o) => o.text.startsWith('Ora, Sarai'),
-      ),
-      isFalse,
-    );
+    expect(ex.options.any((o) => o.text.startsWith('Ora, Sarai')), isFalse);
   });
 
   test('choiceServeable drops naming MCQ whose options start the verse', () {
@@ -160,7 +163,10 @@ void main() {
       options: const [
         QuestionOption(id: 'a', text: 'el-Roi'),
         QuestionOption(id: 'b', text: 'mulher de Abrão'),
-        QuestionOption(id: 'c', text: 'Ora, Sarai, mulher de Abrão, não lhe dava'),
+        QuestionOption(
+          id: 'c',
+          text: 'Ora, Sarai, mulher de Abrão, não lhe dava',
+        ),
       ],
       correctOptionId: 'a',
       correctAnswer: 'a',

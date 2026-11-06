@@ -148,10 +148,7 @@ class JourneyPhaseCard extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(2),
                               gradient: LinearGradient(
-                                colors: [
-                                  ink,
-                                  ink.withValues(alpha: 0.15),
-                                ],
+                                colors: [ink, ink.withValues(alpha: 0.15)],
                               ),
                             ),
                           ),

@@ -101,12 +101,6 @@ class WalkCompanion {
     return seen < walk ? seen : walk;
   }
 
-  /// Diferença de passos na semana (positivo = você à frente).
-  int get weeklyStepsDelta => myWeeklySteps - theirWeeklySteps;
-
-  bool get hasWeeklyStepsCompare =>
-      !awaitingPartner && (myWeeklySteps > 0 || theirWeeklySteps > 0);
-
   /// Quem caminhou num dia civil: esquerda = eu, direita = o parceiro.
   ///
   /// Dias futuros ficam vazios. A sequência de dias juntos marca os dois,

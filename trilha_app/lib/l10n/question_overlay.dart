@@ -8,7 +8,7 @@ import 'l10n_global.dart';
 
 /// Overlay EN/ES de enunciados/feedback/opções do banco de perguntas.
 ///
-/// PT continua em `assets/data/*_questions.json` / Firestore. Este overlay
+/// PT continua no Firestore. Este overlay
 /// só sobrescreve strings pedagógicas quando o locale não é `pt`.
 /// Não cobre `passageText`, `verseRef`, `evidence`, nem tokens do versículo.
 class QuestionOverlay {
@@ -118,8 +118,7 @@ class QuestionOverlay {
   }
 
   /// Prompt pedagógico: `prompt` → `question` → null.
-  String? promptFor(String id) =>
-      field(id, 'prompt') ?? field(id, 'question');
+  String? promptFor(String id) => field(id, 'prompt') ?? field(id, 'question');
 
   String? cueFor(String id) =>
       field(id, 'cue') ?? field(id, 'prompt') ?? field(id, 'question');

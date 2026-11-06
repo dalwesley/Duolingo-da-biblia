@@ -3,19 +3,6 @@
   "lessonPlusGrantedBy": {"pt": "{name} liberou esta cena do Peregrino+ para você.", "en": "{name} unlocked this Peregrino+ scene for you.", "es": "{name} te liberó esta escena de Peregrino+.", "placeholders": {"name": "String"}},
   "lessonLoadError": {"pt": "Não foi possível carregar as perguntas desta cena. Tente de novo.", "en": "Couldn't load this scene's questions. Try again.", "es": "No se pudieron cargar las preguntas de esta escena. Inténtalo de nuevo."},
   "lessonDuration": {"pt": "~3 min", "en": "~3 min", "es": "~3 min", "description": "Duração estimada da cena"},
-  "lessonCombo": {
-    "pt": "×{count}",
-    "en": "×{count}",
-    "es": "×{count}",
-    "placeholders": {"count": "int"},
-    "description": "Combo de acertos seguidos no HUD da cena"
-  },
-  "lessonComboMeterSemantics": {
-    "pt": "Sequência {count}",
-    "en": "Streak {count}",
-    "es": "Racha {count}",
-    "placeholders": {"count": "int"}
-  },
   "lessonLampsLeft": {
     "pt": "{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}",
     "en": "{count, plural, =0{No lamps left — each mistake puts one out.} =1{1 lamp left — each mistake puts one out.} other{{count} lamps left — each mistake puts one out.}}",
@@ -27,7 +14,6 @@
   "lessonBonus": {"pt": "Bônus", "en": "Bonus", "es": "Bonus"},
   "lessonBoss": {"pt": "Travessia", "en": "Crossing", "es": "Travesía", "description": "Cena de revisão de etapa (boss)"},
   "lessonPractice": {"pt": "Treino", "en": "Practice", "es": "Práctica"},
-  "lessonMicroSubtitle": {"pt": "Complete o verso", "en": "Complete the verse", "es": "Completa el versículo"},
   "lessonInsightSubtitle": {"pt": "O que ficou", "en": "What stayed with you", "es": "Lo que quedó"},
   "lessonFactsLabel": {"pt": "O que o texto diz", "en": "What the text says", "es": "Lo que dice el texto"},
   "lessonPassageTitle": {"pt": "Texto da cena", "en": "Scene text", "es": "Texto de la escena"},
@@ -63,25 +49,6 @@
     "es": "{count, plural, =1{Travesía · 1 pregunta} other{Travesía · {count} preguntas}}",
     "placeholders": {"count": "int"}
   },
-  "lessonIntroPulse": {
-    "pt": "{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}",
-    "en": "{count, plural, =1{~3 min · 1 question} other{~3 min · {count} questions}}",
-    "es": "{count, plural, =1{~3 min · 1 pregunta} other{~3 min · {count} preguntas}}",
-    "placeholders": {"count": "int"}
-  },
-  "lessonIntroQuestions": {
-    "pt": "{count, plural, =1{1 pergunta} other{{count} perguntas}}",
-    "en": "{count, plural, =1{1 question} other{{count} questions}}",
-    "es": "{count, plural, =1{1 pregunta} other{{count} preguntas}}",
-    "placeholders": {"count": "int"},
-    "description": "Contagem de perguntas na entrada da cena"
-  },
-  "lessonIntroConsult": {
-    "pt": "Você pode consultar o texto durante a cena.",
-    "en": "You can look up the text during the scene.",
-    "es": "Puedes consultar el texto durante la escena.",
-    "description": "O texto do palco segue disponível nas perguntas"
-  },
   "lessonListen": {"pt": "Ouvir o texto", "en": "Listen to the text", "es": "Escuchar el texto"},
   "lessonListenStop": {"pt": "Parar", "en": "Stop", "es": "Detener"},
 
@@ -93,7 +60,6 @@
   "exerciseHint": {"pt": "Dica", "en": "Hint", "es": "Pista"},
   "exerciseHintShowQuestion": {"pt": "Toque para ver a pergunta", "en": "Tap to see the question", "es": "Toca para ver la pregunta"},
   "exerciseHintShowHint": {"pt": "Toque para ver a dica", "en": "Tap to see the hint", "es": "Toca para ver la pista"},
-  "exerciseHintUsed": {"pt": "Dica usada", "en": "Hint used", "es": "Pista usada"},
   "exerciseZoomStage": {"pt": "Ampliar texto", "en": "Enlarge text", "es": "Ampliar texto"},
   "exerciseZoomStage": {"pt": "Ampliar texto", "en": "Enlarge text", "es": "Ampliar texto"},
   "exerciseZoomSmaller": {"pt": "Diminuir letra", "en": "Smaller text", "es": "Letra más pequeña"},
@@ -101,7 +67,6 @@
   "lessonAnanHelpLabel": {"pt": "Pedir ajuda ao Anan", "en": "Ask Anan for help", "es": "Pedir ayuda a Anan", "description": "Leitor de tela: o Anan da pergunta é um botão"},
   "lessonAnanTeach": {"pt": "Toque em mim", "en": "Tap me", "es": "Tócame", "description": "Legenda sob o Anan até a primeira vez que a pessoa toca nele"},
   "lessonAnanStuck": {"pt": "Ajuda?", "en": "Help?", "es": "¿Ayuda?", "description": "Legenda sob o Anan depois de um erro ou de um tempo parado"},
-  "lessonAnanHintCta": {"pt": "Quero uma dica", "en": "I'd like a hint", "es": "Quiero una pista"},
   "exerciseCheck": {"pt": "Verificar", "en": "Check", "es": "Comprobar"},
   "exerciseMatchPick": {"pt": "Escolha", "en": "Pick", "es": "Elige", "description": "Passo 1 do gesto de parear"},
   "exerciseMatchPair": {"pt": "Pareie", "en": "Pair", "es": "Empareja", "description": "Passo 2 do gesto de parear"},

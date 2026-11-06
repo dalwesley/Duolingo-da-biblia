@@ -55,23 +55,32 @@ void main() {
       );
 
   final exercises = <Exercise>[
-    ex(ExerciseType.trueFalse, options: const [
-      QuestionOption(id: 'true', text: 'Verdadeiro'),
-      QuestionOption(id: 'false', text: 'Falso'),
-    ]),
+    ex(
+      ExerciseType.trueFalse,
+      options: const [
+        QuestionOption(id: 'true', text: 'Verdadeiro'),
+        QuestionOption(id: 'false', text: 'Falso'),
+      ],
+    ),
     ex(ExerciseType.tap),
     ex(ExerciseType.choice, options: long),
-    ex(ExerciseType.order, options: const [
-      QuestionOption(id: 'a', text: 'Deus criou os céus e a terra'),
-      QuestionOption(id: 'b', text: 'A terra estava sem forma e vazia'),
-      QuestionOption(id: 'c', text: 'O Espírito pairava sobre as águas'),
-    ]),
+    ex(
+      ExerciseType.order,
+      options: const [
+        QuestionOption(id: 'a', text: 'Deus criou os céus e a terra'),
+        QuestionOption(id: 'b', text: 'A terra estava sem forma e vazia'),
+        QuestionOption(id: 'c', text: 'O Espírito pairava sobre as águas'),
+      ],
+    ),
     ex(ExerciseType.complete),
-    ex(ExerciseType.connect, options: const [
-      QuestionOption(id: 'a', text: 'Deus age primeiro'),
-      QuestionOption(id: 'b', text: 'O caos manda'),
-      QuestionOption(id: 'c', text: 'O homem cria'),
-    ]),
+    ex(
+      ExerciseType.connect,
+      options: const [
+        QuestionOption(id: 'a', text: 'Deus age primeiro'),
+        QuestionOption(id: 'b', text: 'O caos manda'),
+        QuestionOption(id: 'c', text: 'O homem cria'),
+      ],
+    ),
   ];
 
   const sizes = <(String, Size, double)>[

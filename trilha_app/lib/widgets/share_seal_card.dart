@@ -40,7 +40,7 @@ class ShareSealCard extends StatelessWidget {
                   fit: BoxFit.cover,
                   alignment: const Alignment(0, -0.12),
                   filterQuality: FilterQuality.high,
-                  errorBuilder: (_, __, ___) =>
+                  errorBuilder: (_, _, _) =>
                       const ColoredBox(color: AppColors.primaryDark),
                 ),
               ),

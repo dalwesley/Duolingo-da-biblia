@@ -16,7 +16,9 @@ void main() {
 
   test('qual + ser inverte tópico e recorte', () {
     expect(
-      vfClaim('Qual foi a primeira ordem criadora registrada: Haja firmamento.'),
+      vfClaim(
+        'Qual foi a primeira ordem criadora registrada: Haja firmamento.',
+      ),
       'A primeira ordem criadora registrada foi “Haja firmamento”.',
     );
     expect(
@@ -33,14 +35,8 @@ void main() {
   });
 
   test('quem com nome na pergunta coloca o recorte como objeto', () {
-    expect(
-      vfClaim('Quem Abrão resgata: Sarai.'),
-      'Abrão resgata Sarai.',
-    );
-    expect(
-      vfClaimFromParts('Quem Abrão resgata?', 'Ló'),
-      'Abrão resgata Ló.',
-    );
+    expect(vfClaim('Quem Abrão resgata: Sarai.'), 'Abrão resgata Sarai.');
+    expect(vfClaimFromParts('Quem Abrão resgata?', 'Ló'), 'Abrão resgata Ló.');
   });
 
   test('quem é Nome + descrição mantém o nome como sujeito', () {

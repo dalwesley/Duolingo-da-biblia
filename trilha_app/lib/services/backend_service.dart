@@ -49,38 +49,6 @@ class CloudPlayer {
     this.weekSteps = 0,
     this.dayStartSteps,
   });
-
-  CloudPlayer withPhoto(String? url) {
-    if (url == null || url.isEmpty) return this;
-    if (photoUrl != null && photoUrl!.isNotEmpty) return this;
-    return CloudPlayer(
-      uid: uid,
-      name: name,
-      steps: steps,
-      lastWalkDate: lastWalkDate,
-      lastSeenDate: lastSeenDate,
-      photoUrl: url,
-      portraitStyle: portraitStyle,
-      weekSteps: weekSteps,
-      dayStartSteps: dayStartSteps,
-    );
-  }
-
-  CloudPlayer withStyle(PortraitStyle? style) {
-    if (style == null) return this;
-    if (portraitStyle != PortraitStyle.photo) return this;
-    return CloudPlayer(
-      uid: uid,
-      name: name,
-      steps: steps,
-      lastWalkDate: lastWalkDate,
-      lastSeenDate: lastSeenDate,
-      photoUrl: photoUrl,
-      portraitStyle: style,
-      weekSteps: weekSteps,
-      dayStartSteps: dayStartSteps,
-    );
-  }
 }
 
 /// Pulso da Caminhada coletiva da temporada (`seasonWalks/{id}/walkers`).

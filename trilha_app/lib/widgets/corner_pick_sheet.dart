@@ -71,7 +71,8 @@ class _CornerPickSheetState extends State<_CornerPickSheet> {
       debugPrint('CornerPickSheet: catálogo falhou: $e');
     }
     final candidates = await Future.wait([
-      for (final person in people) _candidate(person, backend, progress, catalog),
+      for (final person in people)
+        _candidate(person, backend, progress, catalog),
     ]);
     candidates.sort((a, b) {
       final ready = (b.proposal != null ? 1 : 0) - (a.proposal != null ? 1 : 0);
@@ -260,10 +261,7 @@ class _PickRow extends StatelessWidget {
                     sub,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 12,
-                      color: a.textSecondary,
-                    ),
+                    style: AppTypography.body(size: 12, color: a.textSecondary),
                   ),
                 ],
               ),

@@ -1,7 +1,7 @@
 # Piloto V3 — `genesis-1-11`
 
 Banco de perguntas e estudos reescrito para a trilha Gênesis 1–11 no formato V3 ([SPEC_V3.md](SPEC_V3.md)).
-**Nada aqui está publicado.** O banco atual (`trilha_app/assets/data/genesis_questions.json` e o Firestore) continua intacto.
+Publicado no Firestore com `npm run v3:publish`.
 
 ## O que muda em relação ao banco atual
 

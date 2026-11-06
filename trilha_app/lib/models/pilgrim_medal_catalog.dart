@@ -11,7 +11,6 @@ class PilgrimMedalCatalog {
   static const journeyVaultId = 'journey';
   static const discoveryVaultId = 'discovery';
   static const advent2026VaultId = 'season:advento-2026';
-  static const advent2026TrackId = 'track:season:advento-2026';
 
   static const trackWordId = 'track:word';
   static const trackFormationId = 'track:formation';
@@ -116,9 +115,6 @@ class PilgrimMedalCatalog {
 
   static String migrateMedalId(String id) => v1ToV2Ids[id] ?? id;
 
-  static Iterable<String> migrateMedalIds(Iterable<String> ids) =>
-      ids.map(migrateMedalId);
-
   /// Expande ids celebrados (v1/v2/v3 numérico/v3.1) para o prefixo atual.
   static Set<String> expandCelebratedIds(Iterable<String> ids) {
     final result = <String>{};
@@ -138,7 +134,8 @@ class PilgrimMedalCatalog {
           }
         }
       }
-      var semantic = v2ToSemantic[migrated] ??
+      var semantic =
+          v2ToSemantic[migrated] ??
           legacyNumericToSemantic[migrated] ??
           migrated;
       semantic = retiredToCurrent[semantic] ?? semantic;
@@ -155,10 +152,7 @@ class PilgrimMedalCatalog {
   }
 
   static void _addPrefixThrough(Set<String> out, String levelOrRareId) {
-    for (final track in [
-      ...journeyTracks,
-      adventTrack(2026),
-    ]) {
+    for (final track in [...journeyTracks, adventTrack(2026)]) {
       final idx = track.levels.indexWhere((l) => l.id == levelOrRareId);
       if (idx >= 0) {
         for (var i = 0; i <= idx; i++) {
@@ -377,25 +371,29 @@ class PilgrimMedalCatalog {
   ) {
     final start = LiturgicalCalendar.adventStart(year);
     final end = DateTime(year, 12, 24);
-    return (start: start, end: end, totalDays: end.difference(start).inDays + 1);
+    return (
+      start: start,
+      end: end,
+      totalDays: end.difference(start).inDays + 1,
+    );
   }
 
-  static ({DateTime start, DateTime end, int totalDays}) lentWindow(
-    int year,
-  ) {
+  static ({DateTime start, DateTime end, int totalDays}) lentWindow(int year) {
     final easter = LiturgicalCalendar.easterSunday(year);
     final start = easter.subtract(const Duration(days: 46));
     final end = easter.subtract(const Duration(days: 1));
-    return (start: start, end: end, totalDays: end.difference(start).inDays + 1);
+    return (
+      start: start,
+      end: end,
+      totalDays: end.difference(start).inDays + 1,
+    );
   }
 
   static int adventDayCount(int year) => adventWindow(year).totalDays;
-  static int adventHalfDays(int year) => (adventDayCount(year) / 2).ceil();
   static int adventDiamondDays(int year) =>
       (adventDayCount(year) - 4).clamp(1, adventDayCount(year));
 
   static int lentDayCount(int year) => lentWindow(year).totalDays;
-  static int lentHalfDays(int year) => (lentDayCount(year) / 2).ceil();
   static int lentDiamondDays(int year) =>
       (lentDayCount(year) - 4).clamp(1, lentDayCount(year));
 
@@ -563,32 +561,31 @@ class PilgrimMedalCatalog {
   ];
 
   static PilgrimMedalDef adventWeekMedal(int year) => PilgrimMedalDef(
-        id: 'discovery:advent_week',
-        vaultId: adventVaultId(year),
-        title: L10n.current.medalAdventWeekTitle,
-        hint: L10n.current.medalAdventWeekHint,
-        glyph: CinematicGlyph.night,
-        family: PilgrimMedalFamily.season,
-      );
+    id: 'discovery:advent_week',
+    vaultId: adventVaultId(year),
+    title: L10n.current.medalAdventWeekTitle,
+    hint: L10n.current.medalAdventWeekHint,
+    glyph: CinematicGlyph.night,
+    family: PilgrimMedalFamily.season,
+  );
 
   static PilgrimVaultDef journeyVault() => PilgrimVaultDef(
-        id: journeyVaultId,
-        kind: PilgrimVaultKind.journey,
-        title: L10n.current.medalJourneyVaultTitle,
-        subtitle: L10n.current.medalJourneyVaultSubtitle,
-        order: 0,
-        tracks: journeyTracks,
-      );
+    id: journeyVaultId,
+    kind: PilgrimVaultKind.journey,
+    title: L10n.current.medalJourneyVaultTitle,
+    subtitle: L10n.current.medalJourneyVaultSubtitle,
+    order: 0,
+    tracks: journeyTracks,
+  );
 
   static PilgrimVaultDef discoveryVault() => PilgrimVaultDef(
-        id: discoveryVaultId,
-        kind: PilgrimVaultKind.discovery,
-        title: L10n.current.medalRareVaultTitle,
-        subtitle: L10n.current.medalRareVaultSubtitle,
-        order: 9000,
-        rareMedals:
-            rareMedals.where((m) => m.vaultId == discoveryVaultId).toList(),
-      );
+    id: discoveryVaultId,
+    kind: PilgrimVaultKind.discovery,
+    title: L10n.current.medalRareVaultTitle,
+    subtitle: L10n.current.medalRareVaultSubtitle,
+    order: 9000,
+    rareMedals: rareMedals.where((m) => m.vaultId == discoveryVaultId).toList(),
+  );
 
   static PilgrimVaultDef adventVault(int year) {
     final window = adventWindow(year);
@@ -661,7 +658,9 @@ class PilgrimMedalCatalog {
           id: levelId(trackId, 2),
           tier: PilgrimMedalTier.gold,
           title: L10n.current.modeCaminhadaLabel,
-          hint: L10n.current.medalTrailModeHint(L10n.current.modeCaminhadaLabel),
+          hint: L10n.current.medalTrailModeHint(
+            L10n.current.modeCaminhadaLabel,
+          ),
           glyph: CinematicGlyph.path,
         ),
         PilgrimMedalLevelDef(
@@ -678,16 +677,15 @@ class PilgrimMedalCatalog {
   }
 
   static PilgrimVaultDef trailVault(Trail trail) => PilgrimVaultDef(
-        id: trailVaultId(trail.slug),
-        kind: PilgrimVaultKind.trail,
-        title: trail.localizedTitle,
-        order: trail.order,
-        tracks: [trailTrack(trail)],
-      );
+    id: trailVaultId(trail.slug),
+    kind: PilgrimVaultKind.trail,
+    title: trail.localizedTitle,
+    order: trail.order,
+    tracks: [trailTrack(trail)],
+  );
 
   static List<PilgrimVaultDef> trailVaultsForCatalog(List<Trail> catalog) => [
-        for (final trail in catalog)
-          if (!trail.comingSoon && trail.missionSlugs.isNotEmpty)
-            trailVault(trail),
-      ];
+    for (final trail in catalog)
+      if (!trail.comingSoon && trail.missionSlugs.isNotEmpty) trailVault(trail),
+  ];
 }

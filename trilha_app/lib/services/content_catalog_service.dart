@@ -486,7 +486,7 @@ class ContentCatalogService {
             .timeout(const Duration(seconds: 25));
         if (snap.docs.isEmpty) break;
         for (final d in snap.docs) {
-          map[d.id] = Map<String, dynamic>.from(d.data());
+          map[d.id] = _jsonSafe(d.data()) as Map<String, dynamic>;
         }
         last = snap.docs.last;
         if (snap.docs.length < pageSize) break;
@@ -664,3 +664,16 @@ String _encodeBankCache(
     'questions': bank.questions.map((q) => q.toJson()).toList(),
   });
 }
+
+/// Documento do Firestore → valor que o [jsonEncode] aceita.
+/// Datas (`updatedAt` do publish V3) viram texto ISO; sem isso o cache dos
+/// estudos falhava e o app baixava o catálogo inteiro a cada abertura.
+Object? _jsonSafe(Object? value) => switch (value) {
+  Timestamp() => value.toDate().toUtc().toIso8601String(),
+  DateTime() => value.toUtc().toIso8601String(),
+  GeoPoint() => {'lat': value.latitude, 'lng': value.longitude},
+  DocumentReference() => value.path,
+  Map() => value.map((k, v) => MapEntry(k.toString(), _jsonSafe(v))),
+  Iterable() => value.map(_jsonSafe).toList(),
+  _ => value,
+};

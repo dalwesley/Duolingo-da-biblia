@@ -501,11 +501,6 @@
     "en": "Jesus, the Word made flesh — a good place to start.",
     "es": "Jesús, la Palabra hecha carne — un buen comienzo."
   },
-  "bibleHeroStartReading": {
-    "pt": "Começar a ler",
-    "en": "Start reading",
-    "es": "Empezar a leer"
-  },
   "planCardIdle": {
     "pt": "Canônico ou cronológico, no seu tempo",
     "en": "Canonical or chronological, on your time",
@@ -524,16 +519,6 @@
       "minutes": "int",
       "order": "String"
     }
-  },
-  "bibleReadChapter": {
-    "pt": "Ler o capítulo",
-    "en": "Read the chapter",
-    "es": "Leer el capítulo"
-  },
-  "bibleSavedTitle": {
-    "pt": "Guardados",
-    "en": "Saved",
-    "es": "Guardados"
   },
   "bibleSearchFieldHint": {
     "pt": "Ex.: Apocalipse, amor, fé…",
@@ -998,18 +983,5 @@
     "pt": "Lema",
     "en": "Lemma",
     "es": "Lema"
-  },
-  "bibleSavedSeeAll": {
-    "pt": "Ver todos · {count}",
-    "en": "See all · {count}",
-    "es": "Ver todos · {count}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "bibleSavedSeeLess": {
-    "pt": "Ver menos",
-    "en": "See less",
-    "es": "Ver menos"
   }
 }

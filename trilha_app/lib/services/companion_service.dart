@@ -60,14 +60,6 @@ class CompanionService extends ChangeNotifier {
     return null;
   }
 
-  /// Dupla viva (sem convite pendente).
-  WalkCompanion? get homeWalkCompanion {
-    for (final c in companions) {
-      if (!c.awaitingPartner) return c;
-    }
-    return null;
-  }
-
   bool get canAdd => companions.length < maxCompanions;
 
   // ── Convite direto (chamar alguém da Caravana pelo nome) ──────────────
@@ -115,19 +107,22 @@ class CompanionService extends ChangeNotifier {
     if (_inviteUid == uid && _inviteSub != null) return;
     _inviteUid = uid;
     _inviteSub?.cancel();
-    _inviteSub = backend.watchCompanionInvites().listen((list) {
-      invites = list;
-      _closeStaleOutgoing();
-      notifyListeners();
-    }, onError: (Object e) {
-      // Stream do Firestore morre no erro (ex.: PERMISSION_DENIED antes
-      // das regras subirem). Solta a assinatura para o próximo
-      // ensureInviteListener (retorno ao app, troca de sessão) reabrir.
-      debugPrint('Convites da companhia: $e');
-      _inviteSub?.cancel();
-      _inviteSub = null;
-      _inviteUid = null;
-    });
+    _inviteSub = backend.watchCompanionInvites().listen(
+      (list) {
+        invites = list;
+        _closeStaleOutgoing();
+        notifyListeners();
+      },
+      onError: (Object e) {
+        // Stream do Firestore morre no erro (ex.: PERMISSION_DENIED antes
+        // das regras subirem). Solta a assinatura para o próximo
+        // ensureInviteListener (retorno ao app, troca de sessão) reabrir.
+        debugPrint('Convites da companhia: $e');
+        _inviteSub?.cancel();
+        _inviteSub = null;
+        _inviteUid = null;
+      },
+    );
   }
 
   /// Alguém entrou pelo código (QR/link) enquanto outra pessoa estava
@@ -213,11 +208,8 @@ class CompanionService extends ChangeNotifier {
     return true;
   }
 
-  Future<bool> declineInvite(CompanionInvite invite) =>
-      backend.setCompanionInviteStatus(
-        invite.code,
-        CompanionInviteStatus.declined,
-      );
+  Future<bool> declineInvite(CompanionInvite invite) => backend
+      .setCompanionInviteStatus(invite.code, CompanionInviteStatus.declined);
   bool get cloudSynced => _cloudSynced;
 
   void markCloudUnsynced() {

@@ -117,73 +117,15 @@
     "en": "Who recognized you",
     "es": "Quién reconoció"
   },
-  "recognitionEmptyCard": {
-    "pt": "Quando alguém da caravana tocar no coração, aparece aqui.",
-    "en": "When someone in the caravan taps the heart, it shows up here.",
-    "es": "Cuando alguien de la caravana toque el corazón, aparece aquí."
-  },
-  "recognitionSemanticsWho": {
-    "pt": "Quem reconheceu. {subtitle}",
-    "en": "Who recognized you. {subtitle}",
-    "es": "Quién reconoció. {subtitle}",
-    "placeholders": {
-      "subtitle": "String"
-    }
-  },
-  "recognitionAndTwo": {
-    "pt": "{a} e {b}",
-    "en": "{a} and {b}",
-    "es": "{a} y {b}",
-    "placeholders": {
-      "a": "String",
-      "b": "String"
-    }
-  },
-  "recognitionAndMore": {
-    "pt": "{a}, {b} e mais {count}",
-    "en": "{a}, {b} and {count} more",
-    "es": "{a}, {b} y {count} más",
-    "placeholders": {
-      "a": "String",
-      "b": "String",
-      "count": "int"
-    }
-  },
-  "recognitionSawJourney": {
-    "pt": "{count, plural, =1{{who} viu sua jornada} other{{who} viram sua jornada}}",
-    "en": "{count, plural, =1{{who} saw your journey} other{{who} saw your journey}}",
-    "es": "{count, plural, =1{{who} vio tu camino} other{{who} vieron tu camino}}",
-    "placeholders": {
-      "count": "int",
-      "who": "String"
-    }
-  },
   "recognitionSummaryEmpty": {
     "pt": "Cena do dia e medalhas que outros viram em você.",
     "en": "Today's scene and medals others saw in you.",
     "es": "Escena del día y medallas que otros vieron en ti."
   },
-  "recognitionSummaryCounts": {
-    "pt": "{recog, plural, =1{1 reconhecimento} other{{recog} reconhecimentos}} de {people, plural, =1{1 pessoa} other{{people} pessoas}}",
-    "en": "{recog, plural, =1{1 recognition} other{{recog} recognitions}} from {people, plural, =1{1 person} other{{people} people}}",
-    "es": "{recog, plural, =1{1 reconocimiento} other{{recog} reconocimientos}} de {people, plural, =1{1 persona} other{{people} personas}}",
-    "placeholders": {
-      "recog": "int",
-      "people": "int"
-    }
-  },
   "recognitionEmptySheet": {
     "pt": "Ainda ninguém reconheceu sua jornada.\nNa caravana, outros podem tocar no coração.",
     "en": "Nobody has recognized your journey yet.\nIn the caravan, others can tap the heart.",
     "es": "Aún nadie reconoció tu camino.\nEn la caravana, otros pueden tocar el corazón."
-  },
-  "recognitionSawYou": {
-    "pt": "{count, plural, =1{reconheceu você} other{reconheceu você {count} vezes}}",
-    "en": "{count, plural, =1{recognized you} other{recognized you {count} times}}",
-    "es": "{count, plural, =1{te reconoció} other{te reconoció {count} veces}}",
-    "placeholders": {
-      "count": "int"
-    }
   },
   "recognitionYesterday": {
     "pt": "Ontem",

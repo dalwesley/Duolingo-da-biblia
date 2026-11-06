@@ -97,11 +97,6 @@ Future<void> showMedalMysterySheet(BuildContext context, int hiddenCount) {
   );
 }
 
-Future<void> showMedalDetailSheet(
-  BuildContext context,
-  PilgrimMedalStatus medal,
-) => showMedalTileSheet(context, PilgrimMedalTile.fromRare(medal));
-
 Future<void> showMedalUnlockSheet(
   BuildContext context,
   PilgrimMedalStatus medal,

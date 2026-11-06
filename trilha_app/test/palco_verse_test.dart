@@ -44,7 +44,10 @@ void main() {
 
   test('keeps a word already present in JFAAL', () {
     expect(
-      PalcoVerse.fitPhrase('pastor', 'O Senhor é o meu pastor; nada me faltará.'),
+      PalcoVerse.fitPhrase(
+        'pastor',
+        'O Senhor é o meu pastor; nada me faltará.',
+      ),
       'pastor',
     );
   });
@@ -90,16 +93,22 @@ void main() {
     expect(out.options.first.text, 'Deus já está presente');
   });
 
-  test('fitSnippet maps a TB excerpt onto Almeida without swallowing the range', () {
-    const live =
-        'No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.';
-    expect(
-      PalcoVerse.fitSnippet('o Espírito de Deus pairava por cima das águas', live),
-      'o Espírito de Deus pairava sobre as águas',
-    );
-    final a = PalcoVerse.fitSnippet('criou Deus o céu e a terra', live);
-    expect(a.toLowerCase(), contains('criou'));
-    expect(a.toLowerCase(), contains('terra'));
-    expect(a.contains('sem forma'), isFalse);
-  });
+  test(
+    'fitSnippet maps a TB excerpt onto Almeida without swallowing the range',
+    () {
+      const live =
+          'No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.';
+      expect(
+        PalcoVerse.fitSnippet(
+          'o Espírito de Deus pairava por cima das águas',
+          live,
+        ),
+        'o Espírito de Deus pairava sobre as águas',
+      );
+      final a = PalcoVerse.fitSnippet('criou Deus o céu e a terra', live);
+      expect(a.toLowerCase(), contains('criou'));
+      expect(a.toLowerCase(), contains('terra'));
+      expect(a.contains('sem forma'), isFalse);
+    },
+  );
 }

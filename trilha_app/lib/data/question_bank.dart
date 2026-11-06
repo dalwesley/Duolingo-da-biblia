@@ -52,10 +52,9 @@ class QuestionBank {
   }) async {
     final questions = await _questions();
     final trail = trailSlug ?? 'genesis-1-11';
-    final resolvedSection =
-        (section != null && section.isNotEmpty)
-            ? section
-            : moduleTitleToSection(moduleTitle, trailSlug: trail);
+    final resolvedSection = (section != null && section.isNotEmpty)
+        ? section
+        : moduleTitleToSection(moduleTitle, trailSlug: trail);
     return questions
         .where(
           (q) =>

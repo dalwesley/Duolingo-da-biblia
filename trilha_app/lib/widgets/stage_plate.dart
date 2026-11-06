@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import 'ui_primitives.dart';
 
 /// Palco compartilhado — gestos, entrada da lição e cards da trilha.
 class StagePlate extends StatelessWidget {
@@ -85,33 +84,5 @@ class StagePlate extends StatelessWidget {
       ),
       child: child,
     );
-  }
-}
-
-/// Rótulo de ouro do palco (`PERGUNTA`, `CENA I`, `BAÚS`).
-class StageEyebrow extends StatelessWidget {
-  final String label;
-  final Color accent;
-  final TextAlign align;
-
-  const StageEyebrow({
-    super.key,
-    required this.label,
-    required this.accent,
-    this.align = TextAlign.start,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final text = SectionLabel(label, color: accent);
-    return switch (align) {
-      TextAlign.center => Center(child: text),
-      TextAlign.end => Align(
-        alignment: AlignmentDirectional.centerEnd,
-        child: text,
-      ),
-      TextAlign.right => Align(alignment: Alignment.centerRight, child: text),
-      _ => text,
-    };
   }
 }

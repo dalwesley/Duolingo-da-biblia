@@ -120,7 +120,7 @@ Mínimo **3 gestos distintos** por sessão (quando houver conteúdo autorado). M
 **Regra:** se a ideia cabe num gesto existente, usar. Novo gesto só se for recorrente em muitas trilhas.
 
 MCQ clássico (`Escolher`) ≤ **40%** dos atos quando a sessão tem gestos mistos.  
-O banco (`*_questions.json`) carrega `type` por pergunta. O composer monta diversidade de gestos e preenche **6 atos** (8 boss) com **1 de cada gesto** no pool (V/F · tap · choice · order · complete · connect); 2º Escolher no meio se couber (≤ 40%). `match` no banco entra no slot **Conectar**.
+O banco (`content_bank_questions`) carrega `type` por pergunta. O composer monta diversidade de gestos e preenche **6 atos** (8 boss) com **1 de cada gesto** no pool (V/F · tap · choice · order · complete · connect); 2º Escolher no meio se couber (≤ 40%). `match` no banco entra no slot **Conectar**.
 
 ---
 
@@ -306,7 +306,7 @@ Treino **padrão** da trilha (não conteúdo especial). O composer monta **6 ato
 | Insight | `centralInsight` da missão |
 | Saída | passos / streak |
 
-Nota: [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) (referência histórica).
+
 
 ---
 

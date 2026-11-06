@@ -141,10 +141,6 @@ enum TrailCategory {
     }
     return null;
   }
-
-  static List<TrailCategory> forRealm(TrailRealm realm) =>
-      TrailCategory.values.where((c) => c.realm == realm).toList()
-        ..sort((a, b) => a.order.compareTo(b.order));
 }
 
 /// Linha da aba Trilhas.
@@ -247,9 +243,7 @@ enum TrailJourney {
   /// Bíblia (AT/NT) e os motivos do onboarding são grátis. Demais Temas,
   /// Vida Cristã e Teologia pedem Peregrino+.
   bool get requiresPlus {
-    if (this == pazNoDia ||
-        this == conhecerADeus ||
-        this == entenderABiblia) {
+    if (this == pazNoDia || this == conhecerADeus || this == entenderABiblia) {
       return false;
     }
     return shelf != TrailShelf.biblia;

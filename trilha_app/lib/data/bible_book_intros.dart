@@ -65,8 +65,8 @@ class BibleBookIntro {
       summary: fields['summary']?.trim().isNotEmpty == true
           ? fields['summary']!.trim()
           : (fields['about']?.trim().isNotEmpty == true
-              ? fields['about']!.trim()
-              : summary),
+                ? fields['about']!.trim()
+                : summary),
       author: fields['author']?.trim().isNotEmpty == true
           ? fields['author']!.trim()
           : author,

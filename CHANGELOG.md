@@ -9,6 +9,23 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.44] — 2026-11-06
+
+### Fixed
+- Catálogo: os estudos das cenas não eram salvos no aparelho (o `updatedAt` do publish V3 chega como `Timestamp` e quebrava o JSON). O app baixava trilhas, estudos e versículos a cada abertura (~550 leituras no Firestore) e, sem rede, as cenas ficavam sem contexto e sem "Para aprofundar". Agora a cópia é salva e a reabertura pula a rede
+- Saudação da Home ("Bom dia", "Boa tarde", "Boa noite") traduzida em inglês e espanhol
+
+### Removed
+- Código sem uso no app: 3 widgets, 12 classes e ~50 métodos/constantes que nada chamava; 116 textos de tradução sem uso
+- Plataformas que o app não suporta: `linux/`, `macos/`, `windows/`, `web/` (só iOS e Android)
+- Pipeline V2 de perguntas: `generate_v2_*.py`, `validate_v2.py`, scripts V2 em `admin/scripts` e `trilha_app/tool`, `perguntas-v2/*` (ficam Conhecer e Entender), `assets/data/*_questions.json`, `admin/exports/*`
+- `seed_content*.mjs`, `make seed` / `seed_full` e os npm scripts V2 (republicavam o V2 por cima do V3); migrações já aplicadas (`apply_hoje`, `weak_scenes`) e `extract_mission_studies` (quebrado)
+- `site/icon.png` sem uso, `app_icon_foreground.png` duplicado, `DESIGN_SYSTEM.md`, `docs/pilots/`, `art_prompts_cenas.md`
+
+### Changed
+- Docs e `CLAUDE.md` apontam para o pipeline V3 (`npm run v3:publish`); `validate_bank.mjs` exige o arquivo como argumento
+- Widget iOS em 1.0.44 (1044)
+
 ## [1.0.43] — 2026-11-04
 
 ### Added

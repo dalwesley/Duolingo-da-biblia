@@ -21,8 +21,8 @@ class GuidedReadingPlan {
     required this.title,
     required this.subtitle,
     required this.days,
-    required List<List<GuidedChapter>> Function(List<int>) build,
-  }) : _build = build;
+    required this._build,
+  });
 
   /// Capítulos de cada dia. [chapterCounts]: capítulos por livro, na ordem
   /// canônica (66 itens).

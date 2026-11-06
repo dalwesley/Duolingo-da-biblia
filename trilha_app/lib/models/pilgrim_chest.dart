@@ -110,8 +110,8 @@ class PilgrimChestRoll {
     final forced = pityCount >= PilgrimChestRewardDefs.pityThreshold;
     final pool = forced
         ? PilgrimChestRewardDefs.all
-            .where((r) => r.tier == PilgrimMedalTier.mirra)
-            .toList()
+              .where((r) => r.tier == PilgrimMedalTier.mirra)
+              .toList()
         : PilgrimChestRewardDefs.all;
 
     final totalWeight = pool.fold<int>(0, (sum, r) => sum + r.weight);
@@ -125,7 +125,8 @@ class PilgrimChestRoll {
       roll -= reward.weight;
     }
 
-    final isTopTier = chosen.tier == PilgrimMedalTier.mirra ||
+    final isTopTier =
+        chosen.tier == PilgrimMedalTier.mirra ||
         chosen.tier == PilgrimMedalTier.gold;
     return (reward: chosen, nextPity: isTopTier ? 0 : pityCount + 1);
   }

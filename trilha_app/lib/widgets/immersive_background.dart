@@ -241,10 +241,7 @@ class GlassCard extends StatelessWidget {
           ],
           stops: const [0.0, 0.5, 1.0],
         ),
-        border: Border.all(
-          color: edge,
-          width: border,
-        ),
+        border: Border.all(color: edge, width: border),
         boxShadow: [
           ...AppMetrics.cardShadow(elevated: true),
           BoxShadow(

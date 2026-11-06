@@ -106,8 +106,10 @@ class _WaveHandView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Uma subida só — delay espalha as mãos no burst.
-    final local = ((t - hand.delay) / (1 - hand.delay).clamp(0.35, 1.0))
-        .clamp(0.0, 1.0);
+    final local = ((t - hand.delay) / (1 - hand.delay).clamp(0.35, 1.0)).clamp(
+      0.0,
+      1.0,
+    );
     final y = 1.08 - local * 1.22;
     final x = (hand.x + math.sin(local * math.pi * 2) * hand.drift).clamp(
       0.0,

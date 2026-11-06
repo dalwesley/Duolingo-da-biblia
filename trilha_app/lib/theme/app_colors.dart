@@ -57,13 +57,11 @@ class AppColors {
   /// Compreensão — coral soft, único quente de modo (abaixo do ouro).
   static const coral = Color(0xFFE8895C);
   static const coralBright = Color(0xFFE0B098);
-  static const coralSoft = Color(0xFFE8C8BC);
   static const inkOnCoral = Color(0xFF1A0A04);
 
   /// Interpretação — lilac-azul da família navy (não magenta).
   static const orchid = Color(0xFF8B9CFF);
   static const orchidBright = Color(0xFFA8B4FF);
-  static const orchidSoft = Color(0xFFC4CAF0);
   static const inkOnOrchid = Color(0xFF0C0E1C);
   static const ice = Color(0xFF4E96DE);
   static const iceSoft = Color(0xFF9EC4EA);
@@ -83,7 +81,6 @@ class AppColors {
   /// Véu atrás de sheets e diálogos — o mesmo em todo o app.
   /// Opacidade alta: nas telas escuras, ~60% quase não se nota.
   static const scrim = Color(0xCC000000);
-  static const errorSoft = Color(0xFFFFC4CC);
 
   /// Ouro, mint, coral, lilac e o vermelho da curtida — chrome chapado,
   /// sem misturar branco no glifo.
@@ -218,7 +215,6 @@ class AppRoles {
   /// Seleção sobre placa clara (respostas marfim da cena): contorno escuro
   /// (legado). Preferir fill [action] nas placas de resposta.
   static const selectedOnLight = Color(0xCC081018);
-  static const selectedOutlineWidth = 2.0;
 
   static const success = AppColors.glow;
   static const presence = success;

@@ -169,9 +169,7 @@ class BibleStudyService {
       whereArgs: [bookIndex, chapter, verse],
       orderBy: 'pos ASC',
     );
-    final tokens = [
-      for (final r in tokenRows) _tokenFrom(r),
-    ];
+    final tokens = [for (final r in tokenRows) _tokenFrom(r)];
 
     final xrefRows = await db.query(
       'cross_refs',
@@ -271,7 +269,10 @@ class BibleStudyService {
     ];
   }
 
-  Future<ConcordanceHit?> _edgeOccurrence(String key, {required bool last}) async {
+  Future<ConcordanceHit?> _edgeOccurrence(
+    String key, {
+    required bool last,
+  }) async {
     final db = await _database();
     final dir = last ? 'DESC' : 'ASC';
     final rows = await db.rawQuery(
@@ -326,9 +327,8 @@ class BibleStudyService {
     final last = packed[4] as ConcordanceHit?;
     final occ = byBook.fold<int>(0, (s, b) => s + b.count);
 
-    final others = [
-      ...byBook.where((b) => b.bookIndex != bookIndex),
-    ]..sort((a, b) => b.count.compareTo(a.count));
+    final others = [...byBook.where((b) => b.bookIndex != bookIndex)]
+      ..sort((a, b) => b.count.compareTo(a.count));
     final spread = <ConcordanceHit>[];
     final samples = await Future.wait([
       for (final b in others.take(8)) _firstInBook(key, b.bookIndex),

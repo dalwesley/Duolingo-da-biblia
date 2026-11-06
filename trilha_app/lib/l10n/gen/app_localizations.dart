@@ -322,12 +322,6 @@ abstract class AppLocalizations {
   /// **'Continuar leitura'**
   String get bibleHeroStartHere;
 
-  /// No description provided for @bibleHeroStartReading.
-  ///
-  /// In pt, this message translates to:
-  /// **'Começar a ler'**
-  String get bibleHeroStartReading;
-
   /// No description provided for @bibleIntroAudience.
   ///
   /// In pt, this message translates to:
@@ -496,12 +490,6 @@ abstract class AppLocalizations {
   /// **'Ir para'**
   String get biblePickerTitle;
 
-  /// No description provided for @bibleReadChapter.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ler o capítulo'**
-  String get bibleReadChapter;
-
   /// No description provided for @bibleReadOf.
   ///
   /// In pt, this message translates to:
@@ -603,24 +591,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Versão'**
   String get bibleReaderVersion;
-
-  /// No description provided for @bibleSavedSeeAll.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver todos · {count}'**
-  String bibleSavedSeeAll(int count);
-
-  /// No description provided for @bibleSavedSeeLess.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver menos'**
-  String get bibleSavedSeeLess;
-
-  /// No description provided for @bibleSavedTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Guardados'**
-  String get bibleSavedTitle;
 
   /// No description provided for @bibleSearchBookHit.
   ///
@@ -1264,12 +1234,6 @@ abstract class AppLocalizations {
   /// **'Voltar ao mapa'**
   String get celebrationBackToMap;
 
-  /// 100% de acertos e nenhuma lâmpada apagada
-  ///
-  /// In pt, this message translates to:
-  /// **'Cena limpa'**
-  String get celebrationCleanScene;
-
   /// No description provided for @celebrationCommitmentBeyond.
   ///
   /// In pt, this message translates to:
@@ -1552,12 +1516,6 @@ abstract class AppLocalizations {
   /// **'Aberto'**
   String get chestOpened;
 
-  /// No description provided for @chestOpening.
-  ///
-  /// In pt, this message translates to:
-  /// **'Abrindo…'**
-  String get chestOpening;
-
   /// No description provided for @chestPassoMessage.
   ///
   /// In pt, this message translates to:
@@ -1815,12 +1773,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Começar'**
   String get commonStart;
-
-  /// No description provided for @commonSteps.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 passo} other{{count} passos}}'**
-  String commonSteps(int count);
 
   /// No description provided for @commonToday.
   ///
@@ -2338,12 +2290,6 @@ abstract class AppLocalizations {
   /// **'Desafio com {name}'**
   String cornerChallengeWith(String name);
 
-  /// No description provided for @cornerClosedChapter.
-  ///
-  /// In pt, this message translates to:
-  /// **'Encerrados'**
-  String get cornerClosedChapter;
-
   /// No description provided for @cornerClosesToday.
   ///
   /// In pt, this message translates to:
@@ -2421,18 +2367,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Convite de desafio'**
   String get cornerIncomingTitle;
-
-  /// No description provided for @cornerInviteBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você e {name} fazem essa cena até domingo.\n+{count} passos para cada um que chegar.'**
-  String cornerInviteBody(String name, int count);
-
-  /// No description provided for @cornerInviteBodyAnon.
-  ///
-  /// In pt, this message translates to:
-  /// **'A mesma cena até domingo.\n+{count} passos para cada um que chegar.'**
-  String cornerInviteBodyAnon(int count);
 
   /// No description provided for @cornerInviteTitle.
   ///
@@ -3003,18 +2937,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Dois dias'**
   String get dustTwoDays;
-
-  /// No description provided for @dustUiDetail2.
-  ///
-  /// In pt, this message translates to:
-  /// **'Continue a jornada · uma cena basta'**
-  String get dustUiDetail2;
-
-  /// No description provided for @dustUiDetail3.
-  ///
-  /// In pt, this message translates to:
-  /// **'A sequência espera · caminhe hoje'**
-  String get dustUiDetail3;
 
   /// No description provided for @dustUiFreeze1.
   ///
@@ -3808,12 +3730,6 @@ abstract class AppLocalizations {
   /// **'Toque para ver a pergunta'**
   String get exerciseHintShowQuestion;
 
-  /// No description provided for @exerciseHintUsed.
-  ///
-  /// In pt, this message translates to:
-  /// **'Dica usada'**
-  String get exerciseHintUsed;
-
   /// No description provided for @exerciseLabelBridge.
   ///
   /// In pt, this message translates to:
@@ -4035,12 +3951,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Resposta certa'**
   String get explainAnswerLabel;
-
-  /// No description provided for @explainCorrectAnswer.
-  ///
-  /// In pt, this message translates to:
-  /// **'Resposta certa: {text}'**
-  String explainCorrectAnswer(String text);
 
   /// No description provided for @explainErrorsEmptyBody.
   ///
@@ -4288,29 +4198,11 @@ abstract class AppLocalizations {
   /// **'Chamar pessoas'**
   String get groupCallTitle;
 
-  /// No description provided for @groupCaptionNotYet.
-  ///
-  /// In pt, this message translates to:
-  /// **'ainda não'**
-  String get groupCaptionNotYet;
-
-  /// No description provided for @groupCaptionToday.
-  ///
-  /// In pt, this message translates to:
-  /// **'hoje'**
-  String get groupCaptionToday;
-
   /// No description provided for @groupCreateCta.
   ///
   /// In pt, this message translates to:
   /// **'Criar grupo'**
   String get groupCreateCta;
-
-  /// Unit under a day count. Trailing space avoids a merge-script false positive; code trims it.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{dia } other{dias }}'**
-  String groupDayUnit(int count);
 
   /// No description provided for @groupDaysAway.
   ///
@@ -4408,12 +4300,6 @@ abstract class AppLocalizations {
   /// **'Fez o estudo da semana'**
   String get groupMemberDidStudy;
 
-  /// No description provided for @groupMembersTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Integrantes'**
-  String get groupMembersTitle;
-
   /// No description provided for @groupMenuClearStudy.
   ///
   /// In pt, this message translates to:
@@ -4425,12 +4311,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Encerrar o grupo'**
   String get groupMenuClose;
-
-  /// No description provided for @groupMenuCopyCode.
-  ///
-  /// In pt, this message translates to:
-  /// **'Copiar código {code}'**
-  String groupMenuCopyCode(String code);
 
   /// No description provided for @groupMenuEdit.
   ///
@@ -4659,12 +4539,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{done} de {total} já fizeram'**
   String groupStudyDoneCount(int done, int total);
-
-  /// No description provided for @groupStudyNobodyYet.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ninguém fez ainda. Seja o primeiro.'**
-  String get groupStudyNobodyYet;
 
   /// No description provided for @groupStudySwap.
   ///
@@ -4978,6 +4852,24 @@ abstract class AppLocalizations {
   /// **'Meta do dia cumprida'**
   String get homeGoalMet;
 
+  /// No description provided for @homeGreetingAfternoon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boa tarde'**
+  String get homeGreetingAfternoon;
+
+  /// No description provided for @homeGreetingEvening.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boa noite'**
+  String get homeGreetingEvening;
+
+  /// No description provided for @homeGreetingMorning.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bom dia'**
+  String get homeGreetingMorning;
+
   /// No description provided for @homeHeroEcho.
   ///
   /// In pt, this message translates to:
@@ -5104,12 +4996,6 @@ abstract class AppLocalizations {
   /// **'Passos extras'**
   String get homeQuestsExtraCaption;
 
-  /// No description provided for @homeReviewCaption.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 para reforçar} other{{count} para reforçar}}'**
-  String homeReviewCaption(int count);
-
   /// No description provided for @homeReviewMistakesCaption.
   ///
   /// In pt, this message translates to:
@@ -5151,12 +5037,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'meta'**
   String get homeStatGoal;
-
-  /// No description provided for @homeStepsSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}'**
-  String homeStepsSemantics(int count);
 
   /// No description provided for @homeSupportAgainBody.
   ///
@@ -5229,12 +5109,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Palavra'**
   String get homeWordWord;
-
-  /// No description provided for @intentBadgeCurrent.
-  ///
-  /// In pt, this message translates to:
-  /// **'Atual'**
-  String get intentBadgeCurrent;
 
   /// No description provided for @intentBadgeHere.
   ///
@@ -5542,12 +5416,6 @@ abstract class AppLocalizations {
   /// **'Toque no link, mostre o QR ou envie o card'**
   String get inviteSheetSubtitleCompanion;
 
-  /// No description provided for @inviteSheetSubtitleRoom.
-  ///
-  /// In pt, this message translates to:
-  /// **'Mostre o QR ou envie o código'**
-  String get inviteSheetSubtitleRoom;
-
   /// No description provided for @inviteSomeone.
   ///
   /// In pt, this message translates to:
@@ -5572,18 +5440,6 @@ abstract class AppLocalizations {
   /// **'Uma trilha de presente'**
   String get inviteTrailGiftTitle;
 
-  /// No description provided for @journalEmpty.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ao fixar uma cena, sua resposta fica registrada aqui.'**
-  String get journalEmpty;
-
-  /// No description provided for @journalTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Anotações de estudo'**
-  String get journalTitle;
-
   /// No description provided for @journeyAntigoTestamentoBody.
   ///
   /// In pt, this message translates to:
@@ -5595,12 +5451,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ainda além do horizonte'**
   String get journeyBeyondHorizon;
-
-  /// Parada entre fases no mapa da área
-  ///
-  /// In pt, this message translates to:
-  /// **'Estalagem'**
-  String get journeyInn;
 
   /// No description provided for @journeyLockedFinish.
   ///
@@ -5644,12 +5494,6 @@ abstract class AppLocalizations {
   /// **'Fase {nn}'**
   String journeyPhase(String nn);
 
-  /// CTA da estação atual no mapa
-  ///
-  /// In pt, this message translates to:
-  /// **'Entrar'**
-  String get journeyPlay;
-
   /// Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue.
   ///
   /// In pt, this message translates to:
@@ -5667,18 +5511,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Em breve · esta trilha ainda está sendo escrita.'**
   String get journeySoonHint;
-
-  /// Próxima cena da trilha é boss
-  ///
-  /// In pt, this message translates to:
-  /// **'Travessia à frente'**
-  String get journeyTravessiaAhead;
-
-  /// No description provided for @journeyYouAreHere.
-  ///
-  /// In pt, this message translates to:
-  /// **'Onde você está'**
-  String get journeyYouAreHere;
 
   /// No description provided for @juntosAccept.
   ///
@@ -5866,30 +5698,6 @@ abstract class AppLocalizations {
   /// **'Encerrar o grupo?'**
   String get juntosCloseRoomTitle;
 
-  /// No description provided for @juntosClosesToday.
-  ///
-  /// In pt, this message translates to:
-  /// **'Fecha hoje'**
-  String get juntosClosesToday;
-
-  /// No description provided for @juntosCodeCopied.
-  ///
-  /// In pt, this message translates to:
-  /// **'Código copiado'**
-  String get juntosCodeCopied;
-
-  /// No description provided for @juntosCodeLabel.
-  ///
-  /// In pt, this message translates to:
-  /// **'Código'**
-  String get juntosCodeLabel;
-
-  /// No description provided for @juntosCodeTapToCopy.
-  ///
-  /// In pt, this message translates to:
-  /// **'Código {code}. Toque para copiar'**
-  String juntosCodeTapToCopy(String code);
-
   /// No description provided for @juntosCompanionEmptyBody.
   ///
   /// In pt, this message translates to:
@@ -5956,18 +5764,6 @@ abstract class AppLocalizations {
   /// **'Conectando…'**
   String get juntosConnecting;
 
-  /// No description provided for @juntosCopy.
-  ///
-  /// In pt, this message translates to:
-  /// **'Copiar'**
-  String get juntosCopy;
-
-  /// No description provided for @juntosCopyCodeSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'Copiar código {code}'**
-  String juntosCopyCodeSemantics(String code);
-
   /// No description provided for @juntosCreateInviteError.
   ///
   /// In pt, this message translates to:
@@ -5979,12 +5775,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Criar grupo'**
   String get juntosCreateRoom;
-
-  /// No description provided for @juntosDaysLeft.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}'**
-  String juntosDaysLeft(int count);
 
   /// No description provided for @juntosDeclineInviteError.
   ///
@@ -6021,12 +5811,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Chamar um companheiro'**
   String get juntosInviteCompanion;
-
-  /// No description provided for @juntosInvitePeople.
-  ///
-  /// In pt, this message translates to:
-  /// **'Chamar pessoas'**
-  String get juntosInvitePeople;
 
   /// No description provided for @juntosInviteShort.
   ///
@@ -6160,23 +5944,11 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Falta 1 para o marco de {next}} other{Faltam {count} para o marco de {next}}}'**
   String juntosMilestoneLeft(int count, int next);
 
-  /// No description provided for @juntosMilestones.
-  ///
-  /// In pt, this message translates to:
-  /// **'Marcos'**
-  String get juntosMilestones;
-
   /// No description provided for @juntosNextMilestone.
   ///
   /// In pt, this message translates to:
   /// **'Próximo marco: {count} dias'**
   String juntosNextMilestone(int count);
-
-  /// Follows a big number: '3 of 5'. Keep the leading space.
-  ///
-  /// In pt, this message translates to:
-  /// **' de {total}'**
-  String juntosOfTotal(int total);
 
   /// No description provided for @juntosOnlineSemantics.
   ///
@@ -6201,12 +5973,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ou chamar um companheiro'**
   String get juntosOrInviteCompanion;
-
-  /// No description provided for @juntosRoomAllStudied.
-  ///
-  /// In pt, this message translates to:
-  /// **'O grupo inteiro estudou nesta semana.'**
-  String get juntosRoomAllStudied;
 
   /// No description provided for @juntosRoomBenefitList.
   ///
@@ -6262,12 +6028,6 @@ abstract class AppLocalizations {
   /// **'Abrir o baú do grupo · +{count} passos'**
   String juntosRoomChestOpen(int count);
 
-  /// No description provided for @juntosRoomCreated.
-  ///
-  /// In pt, this message translates to:
-  /// **'Grupo criado. Chame alguém da lista, ou mande o código {code}.'**
-  String juntosRoomCreated(String code);
-
   /// No description provided for @juntosRoomFull.
   ///
   /// In pt, this message translates to:
@@ -6298,42 +6058,6 @@ abstract class AppLocalizations {
   /// **'Meta de passos do grupo'**
   String get juntosRoomGoalTitle;
 
-  /// No description provided for @juntosRoomHalfStudied.
-  ///
-  /// In pt, this message translates to:
-  /// **'Metade do grupo já estudou.'**
-  String get juntosRoomHalfStudied;
-
-  /// No description provided for @juntosRoomHintClaimed.
-  ///
-  /// In pt, this message translates to:
-  /// **'Baú do grupo coletado nesta semana.'**
-  String get juntosRoomHintClaimed;
-
-  /// No description provided for @juntosRoomHintHalf.
-  ///
-  /// In pt, this message translates to:
-  /// **'O baú abre quando metade do grupo estudar.'**
-  String get juntosRoomHintHalf;
-
-  /// No description provided for @juntosRoomHintHalfOrGoal.
-  ///
-  /// In pt, this message translates to:
-  /// **'O baú abre com metade do grupo ou a meta.'**
-  String get juntosRoomHintHalfOrGoal;
-
-  /// No description provided for @juntosRoomHintInvite.
-  ///
-  /// In pt, this message translates to:
-  /// **'Chame quem estuda com você: célula, família, companheiros.'**
-  String get juntosRoomHintInvite;
-
-  /// No description provided for @juntosRoomHintStudyToday.
-  ///
-  /// In pt, this message translates to:
-  /// **'Estude hoje para abrir o baú do grupo.'**
-  String get juntosRoomHintStudyToday;
-
   /// No description provided for @juntosRoomJoinError.
   ///
   /// In pt, this message translates to:
@@ -6352,41 +6076,11 @@ abstract class AppLocalizations {
   /// **'Você entrou no grupo.'**
   String get juntosRoomJoinedGeneric;
 
-  /// No description provided for @juntosRoomLeaderLine.
-  ///
-  /// In pt, this message translates to:
-  /// **'{leaderTitle}: {leader} · {count, plural, =1{1 pessoa} other{{count} pessoas}}'**
-  String juntosRoomLeaderLine(String leaderTitle, String leader, int count);
-
-  /// No description provided for @juntosRoomMissingForHalf.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 pessoa para metade do grupo.} other{Faltam {count} pessoas para metade do grupo.}}'**
-  String juntosRoomMissingForHalf(int count);
-
-  /// No description provided for @juntosRoomNotStudiedToday.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você ainda não estudou hoje.'**
-  String get juntosRoomNotStudiedToday;
-
-  /// No description provided for @juntosRoomOnlyYou.
-  ///
-  /// In pt, this message translates to:
-  /// **'Só você no grupo por enquanto.'**
-  String get juntosRoomOnlyYou;
-
   /// No description provided for @juntosRoomOptions.
   ///
   /// In pt, this message translates to:
   /// **'Opções do grupo'**
   String get juntosRoomOptions;
-
-  /// No description provided for @juntosRoomQrSubtitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Aponte a câmera ou digite o código para entrar'**
-  String get juntosRoomQrSubtitle;
 
   /// Share text a friend sends; casual friend voice.
   ///
@@ -6398,12 +6092,6 @@ abstract class AppLocalizations {
     String code,
     String storeUrl,
   );
-
-  /// No description provided for @juntosRoomStudiedCount.
-  ///
-  /// In pt, this message translates to:
-  /// **'{done} de {total} estudaram'**
-  String juntosRoomStudiedCount(int done, int total);
 
   /// No description provided for @juntosRoomStudySet.
   ///
@@ -6476,12 +6164,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Alguém'**
   String get juntosSomeone;
-
-  /// No description provided for @juntosStudiedThisWeek.
-  ///
-  /// In pt, this message translates to:
-  /// **'estudaram nesta semana'**
-  String get juntosStudiedThisWeek;
 
   /// No description provided for @juntosStudyToday.
   ///
@@ -6609,18 +6291,6 @@ abstract class AppLocalizations {
   /// **'{name} acenou para você'**
   String juntosWavedAtYou(String name);
 
-  /// No description provided for @juntosWeekGain.
-  ///
-  /// In pt, this message translates to:
-  /// **'+{count} na semana'**
-  String juntosWeekGain(int count);
-
-  /// No description provided for @juntosWeekHighlight.
-  ///
-  /// In pt, this message translates to:
-  /// **'Destaque da semana'**
-  String get juntosWeekHighlight;
-
   /// No description provided for @juntosWeekTogetherBonus.
   ///
   /// In pt, this message translates to:
@@ -6632,12 +6302,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Quem?'**
   String get juntosWho;
-
-  /// Used inside a sentence, e.g. 'Leader: you'.
-  ///
-  /// In pt, this message translates to:
-  /// **'você'**
-  String get juntosYouLower;
 
   /// No description provided for @languageCaptionDevice.
   ///
@@ -6674,18 +6338,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Os textos das trilhas e a Bíblia continuam em português por enquanto.'**
   String get languageHint;
-
-  /// No description provided for @languageSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'Idioma da interface'**
-  String get languageSemantics;
-
-  /// No description provided for @languageSemanticsHint.
-  ///
-  /// In pt, this message translates to:
-  /// **'Deslize ou toque para escolher o idioma'**
-  String get languageSemanticsHint;
 
   /// No description provided for @languageSheetTitle.
   ///
@@ -6849,12 +6501,6 @@ abstract class AppLocalizations {
   /// **'Caminhou {date}'**
   String leagueWalkedDate(String date);
 
-  /// No description provided for @leagueWalkedOn.
-  ///
-  /// In pt, this message translates to:
-  /// **'Caminhou em {date}'**
-  String leagueWalkedOn(String date);
-
   /// No description provided for @leagueWalkedSeen.
   ///
   /// In pt, this message translates to:
@@ -6885,12 +6531,6 @@ abstract class AppLocalizations {
   /// **'Pedir ajuda ao Anan'**
   String get lessonAnanHelpLabel;
 
-  /// No description provided for @lessonAnanHintCta.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quero uma dica'**
-  String get lessonAnanHintCta;
-
   /// Legenda sob o Anan depois de um erro ou de um tempo parado
   ///
   /// In pt, this message translates to:
@@ -6920,18 +6560,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Travessia'**
   String get lessonBoss;
-
-  /// Combo de acertos seguidos no HUD da cena
-  ///
-  /// In pt, this message translates to:
-  /// **'×{count}'**
-  String lessonCombo(int count);
-
-  /// No description provided for @lessonComboMeterSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sequência {count}'**
-  String lessonComboMeterSemantics(int count);
 
   /// Duração estimada da cena
   ///
@@ -6981,24 +6609,6 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Travessia · 1 pergunta} other{Travessia · {count} perguntas}}'**
   String lessonIntroBossPulse(int count);
 
-  /// O texto do palco segue disponível nas perguntas
-  ///
-  /// In pt, this message translates to:
-  /// **'Você pode consultar o texto durante a cena.'**
-  String get lessonIntroConsult;
-
-  /// No description provided for @lessonIntroPulse.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}'**
-  String lessonIntroPulse(int count);
-
-  /// Contagem de perguntas na entrada da cena
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 pergunta} other{{count} perguntas}}'**
-  String lessonIntroQuestions(int count);
-
   /// Lâmpada = vida dentro da cena
   ///
   /// In pt, this message translates to:
@@ -7028,12 +6638,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Esta cena ainda está bloqueada.'**
   String get lessonLocked;
-
-  /// No description provided for @lessonMicroSubtitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Complete o verso'**
-  String get lessonMicroSubtitle;
 
   /// No description provided for @lessonPassageTitle.
   ///
@@ -7220,12 +6824,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Tentar reconectar'**
   String get loginReconnect;
-
-  /// No description provided for @loginRequired.
-  ///
-  /// In pt, this message translates to:
-  /// **'É necessário entrar para usar o Stway.'**
-  String get loginRequired;
 
   /// No description provided for @loginTermsNotice.
   ///
@@ -7797,18 +7395,6 @@ abstract class AppLocalizations {
   /// **'{units} rumo a {tier} em {track}'**
   String medalProximityToward(String units, String tier, String track);
 
-  /// No description provided for @medalRareLeft.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltam {count} {unit} para «{title}»}}'**
-  String medalRareLeft(int count, String unit, String title);
-
-  /// No description provided for @medalRareShortLeft.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 para «{title}»} other{Faltam {count} para «{title}»}}'**
-  String medalRareShortLeft(int count, String title);
-
   /// No description provided for @medalRareVaultSubtitle.
   ///
   /// In pt, this message translates to:
@@ -8090,36 +7676,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Próxima medalha: {message}'**
   String medalVaultNextSemantics(String message);
-
-  /// No description provided for @medalVaultNextTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Próxima medalha'**
-  String get medalVaultNextTitle;
-
-  /// No description provided for @medalVaultRemaining.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Falta 1 {unit}} other{Faltam {count} {unit}}}'**
-  String medalVaultRemaining(int count, String unit);
-
-  /// No description provided for @medalVaultSeason.
-  ///
-  /// In pt, this message translates to:
-  /// **'Estação'**
-  String get medalVaultSeason;
-
-  /// No description provided for @medalVaultTabJourney.
-  ///
-  /// In pt, this message translates to:
-  /// **'Jornada'**
-  String get medalVaultTabJourney;
-
-  /// No description provided for @medalVaultTabTrails.
-  ///
-  /// In pt, this message translates to:
-  /// **'Trilhas'**
-  String get medalVaultTabTrails;
 
   /// No description provided for @medalVaultTitle.
   ///
@@ -10023,12 +9579,6 @@ abstract class AppLocalizations {
   /// **'Firmando…'**
   String get onboardingHolding;
 
-  /// No description provided for @onboardingIntentBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.'**
-  String get onboardingIntentBody;
-
   /// No description provided for @onboardingIntentHabitCaption.
   ///
   /// In pt, this message translates to:
@@ -10743,12 +10293,6 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 dia grátis} other{{count} dias grátis}}'**
   String paywallTrialDays(int count);
 
-  /// No description provided for @paywallTrialThen.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}'**
-  String paywallTrialThen(int count, String price);
-
   /// No description provided for @paywallTrialUntil.
   ///
   /// In pt, this message translates to:
@@ -10941,18 +10485,6 @@ abstract class AppLocalizations {
   /// **'No ranking'**
   String get pilgrimRankListed;
 
-  /// No description provided for @pilgrimRankMonthly.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ranking do mês'**
-  String get pilgrimRankMonthly;
-
-  /// No description provided for @pilgrimRankOrdinal.
-  ///
-  /// In pt, this message translates to:
-  /// **'{rank}º'**
-  String pilgrimRankOrdinal(int rank);
-
   /// No description provided for @pilgrimRankPodium.
   ///
   /// In pt, this message translates to:
@@ -10964,12 +10496,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Vice-líder'**
   String get pilgrimRankRunnerUp;
-
-  /// No description provided for @pilgrimRankWeekly.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ranking semanal da caravana'**
-  String get pilgrimRankWeekly;
 
   /// No description provided for @pilgrimSceneFallback.
   ///
@@ -10994,12 +10520,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Selos e trilhas'**
   String get pilgrimSealsAndTrails;
-
-  /// No description provided for @pilgrimSeen.
-  ///
-  /// In pt, this message translates to:
-  /// **'Visto'**
-  String get pilgrimSeen;
 
   /// No description provided for @pilgrimStatScenes.
   ///
@@ -11036,12 +10556,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count} em curso'**
   String pilgrimTrailsInProgress(int count);
-
-  /// No description provided for @pilgrimWalked.
-  ///
-  /// In pt, this message translates to:
-  /// **'Caminhou'**
-  String get pilgrimWalked;
 
   /// No description provided for @pilgrimYourTrail.
   ///
@@ -11805,12 +11319,6 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}'**
   String profileAccuracyFewGestures(int count);
 
-  /// No description provided for @profileAccuracyHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'Seu acerto'**
-  String get profileAccuracyHeader;
-
   /// No description provided for @profileAccuracyLine.
   ///
   /// In pt, this message translates to:
@@ -12141,23 +11649,11 @@ abstract class AppLocalizations {
   /// **'Esta semana'**
   String get profileThisWeek;
 
-  /// No description provided for @profileThisWeekLower.
-  ///
-  /// In pt, this message translates to:
-  /// **'esta semana'**
-  String get profileThisWeekLower;
-
   /// No description provided for @profileThisWeekSemantics.
   ///
   /// In pt, this message translates to:
   /// **'Esta semana: {count} de 7 dias caminhados'**
   String profileThisWeekSemantics(int count);
-
-  /// No description provided for @profileThreeMonthsAgo.
-  ///
-  /// In pt, this message translates to:
-  /// **'há 3 meses'**
-  String get profileThreeMonthsAgo;
 
   /// No description provided for @profileTitle.
   ///
@@ -12206,18 +11702,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua jornada'**
   String get profileYourJourney;
-
-  /// No description provided for @profileYourNumbers.
-  ///
-  /// In pt, this message translates to:
-  /// **'Seus números'**
-  String get profileYourNumbers;
-
-  /// No description provided for @profileYourStreak.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sua sequência'**
-  String get profileYourStreak;
 
   /// No description provided for @promiseTrail01Intro.
   ///
@@ -12927,12 +12411,6 @@ abstract class AppLocalizations {
   /// **'Teologia'**
   String get realmTeologia;
 
-  /// No description provided for @realmTeologiaSoonBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Hermenêutica, línguas originais e dogmática.'**
-  String get realmTeologiaSoonBody;
-
   /// No description provided for @realmVidaCrista.
   ///
   /// In pt, this message translates to:
@@ -12951,18 +12429,6 @@ abstract class AppLocalizations {
   /// **'Você já reconheceu'**
   String get recognitionAlready;
 
-  /// No description provided for @recognitionAndMore.
-  ///
-  /// In pt, this message translates to:
-  /// **'{a}, {b} e mais {count}'**
-  String recognitionAndMore(String a, String b, int count);
-
-  /// No description provided for @recognitionAndTwo.
-  ///
-  /// In pt, this message translates to:
-  /// **'{a} e {b}'**
-  String recognitionAndTwo(String a, String b);
-
   /// No description provided for @recognitionCardHearts.
   ///
   /// In pt, this message translates to:
@@ -12974,12 +12440,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Há {count} dias'**
   String recognitionDaysAgo(int count);
-
-  /// No description provided for @recognitionEmptyCard.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quando alguém da caravana tocar no coração, aparece aqui.'**
-  String get recognitionEmptyCard;
 
   /// No description provided for @recognitionEmptySheet.
   ///
@@ -13095,18 +12555,6 @@ abstract class AppLocalizations {
   /// **'Reconhecimento retirado'**
   String get recognitionRemoved;
 
-  /// No description provided for @recognitionSawJourney.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{{who} viu sua jornada} other{{who} viram sua jornada}}'**
-  String recognitionSawJourney(int count, String who);
-
-  /// No description provided for @recognitionSawYou.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{reconheceu você} other{reconheceu você {count} vezes}}'**
-  String recognitionSawYou(int count);
-
   /// No description provided for @recognitionSceneDone.
   ///
   /// In pt, this message translates to:
@@ -13118,18 +12566,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Cena de {date}'**
   String recognitionSceneOf(String date);
-
-  /// No description provided for @recognitionSemanticsWho.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quem reconheceu. {subtitle}'**
-  String recognitionSemanticsWho(String subtitle);
-
-  /// No description provided for @recognitionSummaryCounts.
-  ///
-  /// In pt, this message translates to:
-  /// **'{recog, plural, =1{1 reconhecimento} other{{recog} reconhecimentos}} de {people, plural, =1{1 pessoa} other{{people} pessoas}}'**
-  String recognitionSummaryCounts(int recog, int people);
 
   /// No description provided for @recognitionSummaryEmpty.
   ///
@@ -13664,12 +13100,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Estação encerrada'**
   String get seasonEnded;
-
-  /// No description provided for @seasonNotTodayYet.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ainda não é hoje'**
-  String get seasonNotTodayYet;
 
   /// No description provided for @seasonOpensIn.
   ///
@@ -14709,18 +14139,6 @@ abstract class AppLocalizations {
   /// **'Tema {ordinal}'**
   String settingsThemeOrdinal(String ordinal);
 
-  /// No description provided for @settingsThemeSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'Tema da tela'**
-  String get settingsThemeSemantics;
-
-  /// No description provided for @settingsThemeSemanticsHint.
-  ///
-  /// In pt, this message translates to:
-  /// **'Toque ou deslize para escolher'**
-  String get settingsThemeSemanticsHint;
-
   /// No description provided for @settingsThemeSheetTitle.
   ///
   /// In pt, this message translates to:
@@ -15243,12 +14661,6 @@ abstract class AppLocalizations {
   /// **'A próxima trilha já está no mapa.'**
   String get tomorrowNextTrailOnMap;
 
-  /// No description provided for @tomorrowSceneWaits.
-  ///
-  /// In pt, this message translates to:
-  /// **'A cena espera você.'**
-  String get tomorrowSceneWaits;
-
   /// No description provided for @tomorrowSevenDays.
   ///
   /// In pt, this message translates to:
@@ -15423,35 +14835,11 @@ abstract class AppLocalizations {
   /// **'Ir para {scene}'**
   String trailMapGoToScene(String scene);
 
-  /// A locked scene
-  ///
-  /// In pt, this message translates to:
-  /// **'Bloqueada'**
-  String get trailMapLocked;
-
-  /// No description provided for @trailMapScene.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cena'**
-  String get trailMapScene;
-
   /// No description provided for @trailMapSceneLockedBody.
   ///
   /// In pt, this message translates to:
   /// **'Termine “{scene}” para abrir esta cena. Elas vão em ordem: cada uma prepara a próxima.'**
   String trailMapSceneLockedBody(String scene);
-
-  /// Character seal; name is a Bible character
-  ///
-  /// In pt, this message translates to:
-  /// **'Selo {name}'**
-  String trailMapSeal(String name);
-
-  /// No description provided for @trailsAreasHeading.
-  ///
-  /// In pt, this message translates to:
-  /// **'As áreas'**
-  String get trailsAreasHeading;
 
   /// Status of a scene, stage or trail (feminine in pt/es)
   ///
@@ -15603,12 +14991,6 @@ abstract class AppLocalizations {
   /// **'{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}'**
   String trailsLabeledScenesOf(String label, int done, int total);
 
-  /// No description provided for @trailsLearnMore.
-  ///
-  /// In pt, this message translates to:
-  /// **'Saiba mais'**
-  String get trailsLearnMore;
-
   /// No description provided for @trailsLeaveAllAwareness.
   ///
   /// In pt, this message translates to:
@@ -15650,12 +15032,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.'**
   String get trailsLeaveBody;
-
-  /// No description provided for @trailsLeaveConfirm.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sair'**
-  String get trailsLeaveConfirm;
 
   /// Danger CTA at the end of the trail map
   ///
@@ -15723,18 +15099,6 @@ abstract class AppLocalizations {
   /// **'Suas trilhas abertas'**
   String get trailsOpenTitle;
 
-  /// No description provided for @trailsPlusHeading.
-  ///
-  /// In pt, this message translates to:
-  /// **'Peregrino+'**
-  String get trailsPlusHeading;
-
-  /// Number of unlocked trails in an area
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 aberta} other{{count} abertas}}'**
-  String trailsRealmOpenCount(int count);
-
   /// No description provided for @trailsRealmTrailCount.
   ///
   /// In pt, this message translates to:
@@ -15759,36 +15123,6 @@ abstract class AppLocalizations {
   /// **'{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}'**
   String trailsScenesShort(int done, int total);
 
-  /// No description provided for @trailsSectionFormation.
-  ///
-  /// In pt, this message translates to:
-  /// **'Formação'**
-  String get trailsSectionFormation;
-
-  /// No description provided for @trailsSectionFormationBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Aprofunde sua fé e viva a Palavra no dia a dia.'**
-  String get trailsSectionFormationBody;
-
-  /// No description provided for @trailsSectionScriptures.
-  ///
-  /// In pt, this message translates to:
-  /// **'Escrituras'**
-  String get trailsSectionScriptures;
-
-  /// No description provided for @trailsSectionScripturesBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Conheça a história, o plano e as promessas de Deus.'**
-  String get trailsSectionScripturesBody;
-
-  /// No description provided for @trailsSeeAll.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ver todas'**
-  String get trailsSeeAll;
-
   /// No description provided for @trailsShelfBible.
   ///
   /// In pt, this message translates to:
@@ -15806,12 +15140,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Etapa {roman}'**
   String trailsStage(String roman);
-
-  /// countdown is a preformatted time left, e.g. 3h 20min
-  ///
-  /// In pt, this message translates to:
-  /// **'Sequência cai em {countdown}'**
-  String trailsStreakAtRisk(String countdown);
 
   /// Trilhas tab card label when the trail is a suggestion, not one of the user's trails
   ///
@@ -16448,12 +15776,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Amanhã: {title}'**
   String widgetTomorrowTitle(String title);
-
-  /// No description provided for @widgetTrailWaitsTomorrow.
-  ///
-  /// In pt, this message translates to:
-  /// **'A trilha espera amanhã'**
-  String get widgetTrailWaitsTomorrow;
 
   /// No description provided for @widgetWeekdayInitials.
   ///

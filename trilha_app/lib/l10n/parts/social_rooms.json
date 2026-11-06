@@ -266,11 +266,6 @@
     "en": "Tap the link, show the QR or send the card",
     "es": "Toca el enlace, muestra el QR o envía la tarjeta"
   },
-  "inviteSheetSubtitleRoom": {
-    "pt": "Mostre o QR ou envie o código",
-    "en": "Show the QR or send the code",
-    "es": "Muestra el QR o envía el código"
-  },
   "invitePreparing": {
     "pt": "Preparando…",
     "en": "Preparing…",
@@ -349,16 +344,6 @@
       "count": "int"
     }
   },
-  "groupCaptionToday": {
-    "pt": "hoje",
-    "en": "today",
-    "es": "hoy"
-  },
-  "groupCaptionNotYet": {
-    "pt": "ainda não",
-    "en": "not yet",
-    "es": "aún no"
-  },
   "groupRosterSemantics": {
     "pt": "{count, plural, =1{{name}, 1 dia nesta semana} other{{name}, {count} dias nesta semana}}",
     "en": "{count, plural, =1{{name}, 1 day this week} other{{name}, {count} days this week}}",
@@ -367,15 +352,6 @@
       "name": "String",
       "count": "int"
     }
-  },
-  "groupDayUnit": {
-    "pt": "{count, plural, =1{dia } other{dias }}",
-    "en": "{count, plural, =1{day } other{days }}",
-    "es": "{count, plural, =1{día } other{días }}",
-    "placeholders": {
-      "count": "int"
-    },
-    "description": "Unit under a day count. Trailing space avoids a merge-script false positive; code trims it."
   },
   "groupWeekStudy": {
     "pt": "Estudo da semana",
@@ -396,11 +372,6 @@
       "name": "String"
     },
     "description": "Leader role title followed by first name, e.g. 'Líder Ana'."
-  },
-  "groupStudyNobodyYet": {
-    "pt": "Ninguém fez ainda. Seja o primeiro.",
-    "en": "Nobody has done it yet. Be the first.",
-    "es": "Nadie lo hizo todavía. Sé el primero."
   },
   "groupStudyDoneCount": {
     "pt": "{done} de {total} já fizeram",
@@ -571,14 +542,6 @@
     "en": "Set for the group",
     "es": "Marcar para el grupo"
   },
-  "groupMenuCopyCode": {
-    "pt": "Copiar código {code}",
-    "en": "Copy code {code}",
-    "es": "Copiar código {code}",
-    "placeholders": {
-      "code": "String"
-    }
-  },
   "groupMenuLeadSection": {
     "pt": "Conduzir o grupo",
     "en": "Lead the group",
@@ -707,11 +670,6 @@
       "name": "String"
     }
   },
-  "groupMembersTitle": {
-    "pt": "Integrantes",
-    "en": "Members",
-    "es": "Integrantes"
-  },
   "groupMemberDidStudy": {
     "pt": "Fez o estudo da semana",
     "en": "Did this week's study",
@@ -721,15 +679,6 @@
     "pt": "Semana do grupo",
     "en": "Group week",
     "es": "Semana del grupo"
-  },
-  "juntosRoomStudiedCount": {
-    "pt": "{done} de {total} estudaram",
-    "en": "{done} of {total} studied",
-    "es": "{done} de {total} estudiaron",
-    "placeholders": {
-      "done": "int",
-      "total": "int"
-    }
   },
   "groupCallShareCta": {
     "pt": "Compartilhar · QR code e código",

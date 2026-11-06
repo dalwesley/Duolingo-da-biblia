@@ -32,11 +32,6 @@
     "en": "Or invite a companion",
     "es": "O invitar a un compañero"
   },
-  "juntosCodeCopied": {
-    "pt": "Código copiado",
-    "en": "Code copied",
-    "es": "Código copiado"
-  },
   "juntosInviteShort": {
     "pt": "Chamar",
     "en": "Invite",
@@ -115,11 +110,6 @@
     "en": "Leave",
     "es": "Salir"
   },
-  "juntosRoomQrSubtitle": {
-    "pt": "Aponte a câmera ou digite o código para entrar",
-    "en": "Point the camera or type the code to join",
-    "es": "Apunta la cámara o escribe el código para entrar"
-  },
   "juntosRoomShareText": {
     "pt": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
     "en": "Join the group \"{name}\" on Stway.\nTap or point your camera:\n{url}\n\nCode: {code}\n\nThe list shows who studied this week.\n\nDon't have the app yet? Get it: {storeUrl}",
@@ -182,14 +172,6 @@
     "pt": "Não foi possível cancelar o convite. Tente de novo.",
     "en": "Couldn't cancel the invite. Try again.",
     "es": "No se pudo cancelar la invitación. Inténtalo de nuevo."
-  },
-  "juntosRoomCreated": {
-    "pt": "Grupo criado. Chame alguém da lista, ou mande o código {code}.",
-    "en": "Group created. Invite someone from the list, or send the code {code}.",
-    "es": "Grupo creado. Invita a alguien de la lista o envía el código {code}.",
-    "placeholders": {
-      "code": "String"
-    }
   },
   "juntosRoomChestClaimed": {
     "pt": "Baú do grupo · +{count} passos",
@@ -468,106 +450,10 @@
     "en": "Create group",
     "es": "Crear grupo"
   },
-  "juntosClosesToday": {
-    "pt": "Fecha hoje",
-    "en": "Closes today",
-    "es": "Cierra hoy"
-  },
-  "juntosDaysLeft": {
-    "pt": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
-    "en": "{count, plural, =1{1 day left} other{{count} days left}}",
-    "es": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "juntosYouLower": {
-    "pt": "você",
-    "en": "you",
-    "es": "tú",
-    "description": "Used inside a sentence, e.g. 'Leader: you'."
-  },
-  "juntosRoomOnlyYou": {
-    "pt": "Só você no grupo por enquanto.",
-    "en": "Just you in the group for now.",
-    "es": "Solo tú en el grupo por ahora."
-  },
-  "juntosRoomNotStudiedToday": {
-    "pt": "Você ainda não estudou hoje.",
-    "en": "You haven't studied today yet.",
-    "es": "Aún no has estudiado hoy."
-  },
-  "juntosRoomAllStudied": {
-    "pt": "O grupo inteiro estudou nesta semana.",
-    "en": "The whole group studied this week.",
-    "es": "Todo el grupo estudió esta semana."
-  },
-  "juntosRoomHalfStudied": {
-    "pt": "Metade do grupo já estudou.",
-    "en": "Half the group has studied.",
-    "es": "La mitad del grupo ya estudió."
-  },
-  "juntosRoomMissingForHalf": {
-    "pt": "{count, plural, =1{Falta 1 pessoa para metade do grupo.} other{Faltam {count} pessoas para metade do grupo.}}",
-    "en": "{count, plural, =1{1 more person to reach half the group.} other{{count} more people to reach half the group.}}",
-    "es": "{count, plural, =1{Falta 1 persona para la mitad del grupo.} other{Faltan {count} personas para la mitad del grupo.}}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "juntosRoomHintInvite": {
-    "pt": "Chame quem estuda com você: célula, família, companheiros.",
-    "en": "Invite people who study with you: small group, family, companions.",
-    "es": "Invita a quien estudia contigo: célula, familia, compañeros."
-  },
-  "juntosRoomHintClaimed": {
-    "pt": "Baú do grupo coletado nesta semana.",
-    "en": "Group chest collected this week.",
-    "es": "Cofre del grupo recogido esta semana."
-  },
-  "juntosRoomHintStudyToday": {
-    "pt": "Estude hoje para abrir o baú do grupo.",
-    "en": "Study today to open the group chest.",
-    "es": "Estudia hoy para abrir el cofre del grupo."
-  },
-  "juntosRoomHintHalfOrGoal": {
-    "pt": "O baú abre com metade do grupo ou a meta.",
-    "en": "The chest opens with half the group or the goal.",
-    "es": "El cofre se abre con la mitad del grupo o la meta."
-  },
-  "juntosRoomHintHalf": {
-    "pt": "O baú abre quando metade do grupo estudar.",
-    "en": "The chest opens when half the group studies.",
-    "es": "El cofre se abre cuando la mitad del grupo estudie."
-  },
   "juntosRoomOptions": {
     "pt": "Opções do grupo",
     "en": "Group options",
     "es": "Opciones del grupo"
-  },
-  "juntosRoomLeaderLine": {
-    "pt": "{leaderTitle}: {leader} · {count, plural, =1{1 pessoa} other{{count} pessoas}}",
-    "en": "{leaderTitle}: {leader} · {count, plural, =1{1 person} other{{count} people}}",
-    "es": "{leaderTitle}: {leader} · {count, plural, =1{1 persona} other{{count} personas}}",
-    "placeholders": {
-      "leaderTitle": "String",
-      "leader": "String",
-      "count": "int"
-    }
-  },
-  "juntosOfTotal": {
-    "pt": " de {total}",
-    "en": " of {total}",
-    "es": " de {total}",
-    "placeholders": {
-      "total": "int"
-    },
-    "description": "Follows a big number: '3 of 5'. Keep the leading space."
-  },
-  "juntosStudiedThisWeek": {
-    "pt": "estudaram nesta semana",
-    "en": "studied this week",
-    "es": "estudiaron esta semana"
   },
   "juntosRoomGoalLabel": {
     "pt": "Meta do grupo",
@@ -600,24 +486,6 @@
     "pt": "Grupo cheio. Para mais gente, abra outro grupo.",
     "en": "Group full. For more people, start another group.",
     "es": "Grupo lleno. Para más gente, abre otro grupo."
-  },
-  "juntosInvitePeople": {
-    "pt": "Chamar pessoas",
-    "en": "Invite people",
-    "es": "Invitar personas"
-  },
-  "juntosCopyCodeSemantics": {
-    "pt": "Copiar código {code}",
-    "en": "Copy code {code}",
-    "es": "Copiar código {code}",
-    "placeholders": {
-      "code": "String"
-    }
-  },
-  "juntosCodeLabel": {
-    "pt": "Código",
-    "en": "Code",
-    "es": "Código"
   },
   "juntosOnlineSemantics": {
     "pt": "{countLabel}. Ver quem está estudando",
@@ -753,19 +621,6 @@
     "en": "Who?",
     "es": "¿Quién?"
   },
-  "juntosCodeTapToCopy": {
-    "pt": "Código {code}. Toque para copiar",
-    "en": "Code {code}. Tap to copy",
-    "es": "Código {code}. Toca para copiar",
-    "placeholders": {
-      "code": "String"
-    }
-  },
-  "juntosCopy": {
-    "pt": "Copiar",
-    "en": "Copy",
-    "es": "Copiar"
-  },
   "juntosTogetherOfSeven": {
     "pt": "{count} de 7 juntos",
     "en": "{count} of 7 together",
@@ -803,11 +658,6 @@
       "count": "int",
       "next": "int"
     }
-  },
-  "juntosMilestones": {
-    "pt": "Marcos",
-    "en": "Milestones",
-    "es": "Hitos"
   },
   "juntosWavedAtYou": {
     "pt": "{name} acenou para você",
@@ -863,19 +713,6 @@
     "pt": "Semana firme garantida",
     "en": "Steady week secured",
     "es": "Semana firme asegurada"
-  },
-  "juntosWeekHighlight": {
-    "pt": "Destaque da semana",
-    "en": "Top this week",
-    "es": "Destacado de la semana"
-  },
-  "juntosWeekGain": {
-    "pt": "+{count} na semana",
-    "en": "+{count} this week",
-    "es": "+{count} esta semana",
-    "placeholders": {
-      "count": "int"
-    }
   },
   "companionInviteGone": {
     "pt": "Esse convite não está mais aberto.",

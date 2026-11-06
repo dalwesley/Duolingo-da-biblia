@@ -589,25 +589,6 @@
       "units": "String"
     }
   },
-  "medalRareLeft": {
-    "pt": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltam {count} {unit} para «{title}»}}",
-    "en": "{count} {unit} left for “{title}”",
-    "es": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltan {count} {unit} para «{title}»}}",
-    "placeholders": {
-      "count": "int",
-      "unit": "String",
-      "title": "String"
-    }
-  },
-  "medalRareShortLeft": {
-    "pt": "{count, plural, =1{Falta 1 para «{title}»} other{Faltam {count} para «{title}»}}",
-    "en": "{count} left for “{title}”",
-    "es": "{count, plural, =1{Falta 1 para «{title}»} other{Faltan {count} para «{title}»}}",
-    "placeholders": {
-      "count": "int",
-      "title": "String"
-    }
-  },
   "medalMysteryTitle": {
     "pt": "{count, plural, =1{Uma descoberta} other{{count} descobertas}}",
     "en": "{count, plural, =1{One discovery} other{{count} discoveries}}",
@@ -720,11 +701,6 @@
     "en": "Every scene you finish brings you closer to a medal. The first one is near.",
     "es": "Cada escena completada te acerca a una medalla. La primera está cerca."
   },
-  "medalVaultSeason": {
-    "pt": "Estação",
-    "en": "Season",
-    "es": "Temporada"
-  },
   "medalVaultDiscoveries": {
     "pt": "Descobertas",
     "en": "Discoveries",
@@ -740,36 +716,12 @@
     "en": "Others reveal themselves along the way.",
     "es": "Otras se revelan en el camino."
   },
-  "medalVaultTabJourney": {
-    "pt": "Jornada",
-    "en": "Journey",
-    "es": "Camino"
-  },
-  "medalVaultTabTrails": {
-    "pt": "Trilhas",
-    "en": "Trails",
-    "es": "Rutas"
-  },
-  "medalVaultNextTitle": {
-    "pt": "Próxima medalha",
-    "en": "Next medal",
-    "es": "Próxima medalla"
-  },
   "medalVaultNextSemantics": {
     "pt": "Próxima medalha: {message}",
     "en": "Next medal: {message}",
     "es": "Próxima medalla: {message}",
     "placeholders": {
       "message": "String"
-    }
-  },
-  "medalVaultRemaining": {
-    "pt": "{count, plural, =1{Falta 1 {unit}} other{Faltam {count} {unit}}}",
-    "en": "{count, plural, =1{1 {unit} left} other{{count} {unit} left}}",
-    "es": "{count, plural, =1{Falta 1 {unit}} other{Faltan {count} {unit}}}",
-    "placeholders": {
-      "count": "int",
-      "unit": "String"
     }
   },
   "sealsTitle": {

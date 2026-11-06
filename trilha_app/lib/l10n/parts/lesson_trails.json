@@ -65,11 +65,6 @@
     "en": "Hermeneutics, languages and the doctrine of faith",
     "es": "Hermenéutica, lenguas y la doctrina de la fe"
   },
-  "realmTeologiaSoonBody": {
-    "pt": "Hermenêutica, línguas originais e dogmática.",
-    "en": "Hermeneutics, original languages and dogmatics.",
-    "es": "Hermenéutica, lenguas originales y dogmática."
-  },
   "trailsStage": {
     "pt": "Etapa {roman}",
     "en": "Stage {roman}",
@@ -140,11 +135,6 @@
     "pt": "Pronto. Escolha uma trilha para recomeçar.",
     "en": "Done. Pick a trail to start again.",
     "es": "Listo. Elige una ruta para empezar de nuevo."
-  },
-  "trailsLeaveConfirm": {
-    "pt": "Sair",
-    "en": "Leave",
-    "es": "Salir"
   },
   "trailsDoneOfTotal": {
     "pt": "{done} de {total}",
@@ -276,36 +266,6 @@
     "en": "Downloading…",
     "es": "Descargando…"
   },
-  "trailsAreasHeading": {
-    "pt": "As áreas",
-    "en": "The areas",
-    "es": "Las áreas"
-  },
-  "trailsSectionScriptures": {
-    "pt": "Escrituras",
-    "en": "Scripture",
-    "es": "Escrituras"
-  },
-  "trailsSectionScripturesBody": {
-    "pt": "Conheça a história, o plano e as promessas de Deus.",
-    "en": "The story, the plan, and the promises of God.",
-    "es": "Conoce la historia, el plan y las promesas de Dios."
-  },
-  "trailsSectionFormation": {
-    "pt": "Formação",
-    "en": "Formation",
-    "es": "Formación"
-  },
-  "trailsSectionFormationBody": {
-    "pt": "Aprofunde sua fé e viva a Palavra no dia a dia.",
-    "en": "Go deeper in faith and live the Word each day.",
-    "es": "Profundiza tu fe y vive la Palabra en el día a día."
-  },
-  "trailsSeeAll": {
-    "pt": "Ver todas",
-    "en": "See all",
-    "es": "Ver todas"
-  },
   "trailsShelfBible": {
     "pt": "Bíblia",
     "en": "Bible",
@@ -371,24 +331,10 @@
     "en": "Themes",
     "es": "Temáticos"
   },
-  "trailsPlusHeading": {
-    "pt": "Peregrino+",
-    "en": "Peregrino+",
-    "es": "Peregrino+"
-  },
   "trailsJourneySoonBody": {
     "pt": "Estas trilhas ainda estão sendo preparadas.",
     "en": "These trails are still being prepared.",
     "es": "Estas rutas aún se están preparando."
-  },
-  "trailsStreakAtRisk": {
-    "pt": "Sequência cai em {countdown}",
-    "en": "Streak ends in {countdown}",
-    "es": "La racha termina en {countdown}",
-    "placeholders": {
-      "countdown": "String"
-    },
-    "description": "countdown is a preformatted time left, e.g. 3h 20min"
   },
   "trailsInProgress": {
     "pt": "Em andamento",
@@ -438,15 +384,6 @@
       "total": "int"
     }
   },
-  "trailsRealmOpenCount": {
-    "pt": "{count, plural, =1{1 aberta} other{{count} abertas}}",
-    "en": "{count, plural, =1{1 open} other{{count} open}}",
-    "es": "{count, plural, =1{1 abierta} other{{count} abiertas}}",
-    "placeholders": {
-      "count": "int"
-    },
-    "description": "Number of unlocked trails in an area"
-  },
   "trailsRealmTrailCount": {
     "pt": "{count, plural, =1{1 trilha} other{{count} trilhas}}",
     "en": "{count, plural, =1{1 trail} other{{count} trails}}",
@@ -454,11 +391,6 @@
     "placeholders": {
       "count": "int"
     }
-  },
-  "trailsLearnMore": {
-    "pt": "Saiba mais",
-    "en": "Learn more",
-    "es": "Más información"
   },
   "trailMapGoToScene": {
     "pt": "Ir para {scene}",
@@ -482,26 +414,6 @@
     "es": "Travesía",
     "description": "Boss/review scene at the end of a stage"
   },
-  "trailMapScene": {
-    "pt": "Cena",
-    "en": "Scene",
-    "es": "Escena"
-  },
-  "trailMapLocked": {
-    "pt": "Bloqueada",
-    "en": "Locked",
-    "es": "Bloqueada",
-    "description": "A locked scene"
-  },
-  "trailMapSeal": {
-    "pt": "Selo {name}",
-    "en": "{name} seal",
-    "es": "Sello de {name}",
-    "placeholders": {
-      "name": "String"
-    },
-    "description": "Character seal; name is a Bible character"
-  },
   "journeyNow": {
     "pt": "Agora",
     "en": "Now",
@@ -515,29 +427,11 @@
       "count": "int"
     }
   },
-  "journeyTravessiaAhead": {
-    "pt": "Travessia à frente",
-    "en": "Crossing ahead",
-    "es": "Travesía por delante",
-    "description": "Próxima cena da trilha é boss"
-  },
-  "journeyPlay": {
-    "pt": "Entrar",
-    "en": "Enter",
-    "es": "Entrar",
-    "description": "CTA da estação atual no mapa"
-  },
   "journeyPlusCtaDetail": {
     "pt": "com o Peregrino+",
     "en": "with Pilgrim+",
     "es": "con Peregrino+",
     "description": "Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue."
-  },
-  "journeyInn": {
-    "pt": "Estalagem",
-    "en": "Inn",
-    "es": "Posada",
-    "description": "Parada entre fases no mapa da área"
   },
   "journeyPhase": {
     "pt": "Fase {nn}",
@@ -587,11 +481,6 @@
     "pt": "Em breve · esta trilha ainda está sendo escrita.",
     "en": "Coming soon · this trail is still being written.",
     "es": "Próximamente · esta ruta aún se está escribiendo."
-  },
-  "journeyYouAreHere": {
-    "pt": "Onde você está",
-    "en": "Where you are",
-    "es": "Dónde estás"
   },
   "suggestionTrailTitle": {
     "pt": "Sugerir uma trilha",

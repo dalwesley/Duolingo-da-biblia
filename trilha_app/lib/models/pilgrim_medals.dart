@@ -14,14 +14,6 @@ export 'pilgrim_medal_models.dart';
 class PilgrimMedals {
   PilgrimMedals._();
 
-  static List<PilgrimVaultDef> allVaultDefs(List<Trail> catalog) => [
-    PilgrimMedalCatalog.journeyVault(),
-    PilgrimMedalCatalog.adventVaultFor(DateTime.now()),
-    PilgrimMedalCatalog.lentVaultFor(DateTime.now()),
-    ...PilgrimMedalCatalog.trailVaultsForCatalog(catalog),
-    PilgrimMedalCatalog.discoveryVault(),
-  ];
-
   static List<PilgrimVaultState> evaluateVaults({
     required CaravanPilgrimProfile profile,
     required List<Trail> catalog,
@@ -157,26 +149,6 @@ class PilgrimMedals {
     ];
   }
 
-  /// Degraus da trilha selecionada — só conquistas, sem a faísca.
-  static List<PilgrimMedalTile> trailLevelTiles(PilgrimVaultState state) {
-    final tiles = <PilgrimMedalTile>[];
-    for (final trackState in state.tracks) {
-      final track = trackState.track;
-      for (var i = 0; i < track.levels.length; i++) {
-        final level = track.levels[i];
-        if (level.isSpark) continue;
-        tiles.add(
-          PilgrimMedalTile.fromLevel(
-            track: track,
-            level: level,
-            unlocked: i <= trackState.levelIndex,
-          ),
-        );
-      }
-    }
-    return tiles;
-  }
-
   static List<PilgrimMedalTile> trophyTiles(PilgrimTrackState trackState) {
     final track = trackState.track;
     return [
@@ -280,14 +252,6 @@ class PilgrimMedals {
           if (status.unlocked && !celebrated.contains(status.def.id)) status,
     ];
   }
-
-  /// Compat: tier-ups + raras, em ordem.
-  static List<PilgrimMedalStatus> newUnlocks(
-    CaravanPilgrimProfile profile,
-    Set<String> celebratedIds,
-    List<Trail> catalog, {
-    PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
-  }) => newRareUnlocks(profile, celebratedIds, catalog, ctx: ctx);
 
   static List<String> newlyCompletedVaultIds({
     required List<PilgrimVaultState> vaults,

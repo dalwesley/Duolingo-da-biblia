@@ -90,15 +90,6 @@ class LeagueEntry {
 
   bool get walkedToday => _daysSince(lastWalkDate) == 0;
 
-  int? get daysSinceActivity {
-    final walk = _daysSince(lastWalkDate);
-    final seen = _daysSince(lastSeenDate);
-    if (walk == null && seen == null) return null;
-    if (walk == null) return seen;
-    if (seen == null) return walk;
-    return walk < seen ? walk : seen;
-  }
-
   /// Pílulas curtas para o card — papel, caminhada e presença.
   List<LeagueMetaPill> metaPills({int? rank}) {
     final l = L10n.current;
@@ -180,11 +171,6 @@ class LeagueEntry {
     if (walkBr != null) return l.leagueWalkedDate(walkBr);
     if (seenBr != null) return l.leagueSeenDate(seenBr);
     return null;
-  }
-
-  String? get lastWalkLabel {
-    final br = formatBrDate(lastWalkDate);
-    return br != null ? L10n.current.leagueWalkedOn(br) : null;
   }
 
   String? get lastOnlineLabel {
@@ -367,8 +353,6 @@ class LeagueService extends ChangeNotifier {
     await _persist();
     notifyListeners();
   }
-
-  String? get processedWeek => _processedWeek;
 
   /// Fecha a semana anterior se virou a semana. [lastWeekScenes] são as
   /// cenas novas da semana [lastWeekKey] (vindas do ProgressService).

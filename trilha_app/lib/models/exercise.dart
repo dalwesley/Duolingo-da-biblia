@@ -248,9 +248,7 @@ class Exercise {
     final text = (passageText ?? '').trim();
     if (text.isEmpty) return false;
     // Só quando a certa vira alvo no trecho; senão os chips voltam.
-    return optionsEmbeddedIn(
-      text,
-    ).any((o) => o.id == resolvedCorrectAnswer);
+    return optionsEmbeddedIn(text).any((o) => o.id == resolvedCorrectAnswer);
   }
 
   bool get usesCompletePalco =>

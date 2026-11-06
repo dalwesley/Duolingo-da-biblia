@@ -164,8 +164,7 @@ Não há mais cena especial embutida. `gen-03-imagem` e o restante usam o mesmo 
 |------|--------|
 | Banco tipado + skills | **8.370** atos V2 no Firestore (seed 24 ago); 6 gestos; palco TB; validador verde |
 | Objective / insight / hooks nas cenas | Presentes no catálogo |
-| Spec histórica Imagem de Deus | [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) |
-| Sermão do Monte e Êxodo | Packs congelados (`_sermao_v2_data` / `_exodo_v2_data`) + gerador verso-primeiro |
+| Sermão do Monte e Êxodo | Packs congelados ( / ) + gerador verso-primeiro |
 
 ### UI / UX (resumo)
 

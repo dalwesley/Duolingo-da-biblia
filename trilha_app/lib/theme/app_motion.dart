@@ -1,4 +1,3 @@
-import 'package:flutter/animation.dart';
 import 'package:flutter/widgets.dart';
 
 /// Tempo do app — uma batida só, como montagem de filme.

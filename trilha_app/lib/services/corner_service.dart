@@ -55,13 +55,6 @@ class CornerService extends ChangeNotifier {
     return CornerHomePick.of(mine, uid);
   }
 
-  /// Já houve um desafio (aberto ou encerrado). Antes disso o retângulo não aparece.
-  bool get hasChallenge {
-    final uid = _uid;
-    if (uid == null || uid.isEmpty) return false;
-    return !CornerScoreboard.of(mine, uid).isEmpty;
-  }
-
   /// O par do retângulo. Só o desafio aberto — quem já fechou não volta para a foto.
   CornerChallenge? get face => homeCard;
 
@@ -82,9 +75,6 @@ class CornerService extends ChangeNotifier {
     }
     return null;
   }
-
-  bool opensMission(String missionSlug) =>
-      challengeOpening(missionSlug) != null;
 
   /// Travessia ativa que abre [missionSlug] para mim, ou `null`. Se o par
   /// tem o Peregrino+, a cena abre para mim também.

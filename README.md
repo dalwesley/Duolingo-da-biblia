@@ -44,5 +44,5 @@ npm install
 npm run dev            # http://localhost:5174
 ```
 
-Pipeline conteúdo: `npm run pipeline:v2` · publicar: `npm run seed:cli`  
+Conteúdo: pipeline V3 em `admin/v3/` · publicar: `npm run v3:publish`  
 Detalhes em [`admin/README.md`](admin/README.md).

@@ -4,7 +4,10 @@ import 'package:trilha_app/utils/lexicon_pt_overrides.dart';
 void main() {
   test('Ham is Cam, not cured meat', () {
     expect(overlayLexiconGloss('H2526', 'Presunto'), 'Cam');
-    expect(overlayLexiconDefinition('H2526', '§ Presunto = "quente"'), contains('Cam = "quente"'));
+    expect(
+      overlayLexiconDefinition('H2526', '§ Presunto = "quente"'),
+      contains('Cam = "quente"'),
+    );
     expect(overlayLexiconDefinition('H2526', 'x'), isNot(contains('Presunto')));
   });
 
@@ -21,14 +24,26 @@ void main() {
 
   test('unlisted strongs pass through', () {
     expect(overlayLexiconGloss('H0125', 'avermelhado'), 'avermelhado');
-    expect(overlayLexiconDefinition('H0125', 'avermelhado, ser avermelhado'), 'avermelhado, ser avermelhado');
+    expect(
+      overlayLexiconDefinition('H0125', 'avermelhado, ser avermelhado'),
+      'avermelhado, ser avermelhado',
+    );
   });
 
   test('colon keeps both TAHOT sides for alignment', () {
-    expect(overlayLexiconGloss('H4941', 'justiça: costume'), 'justiça, costume');
-    expect(overlayLexiconGloss('H8193', 'lábio: linguagem'), 'lábio, linguagem');
     expect(
-      overlayLexiconDefinition('H8193', '1) lábio, margem, margem, borda, borda'),
+      overlayLexiconGloss('H4941', 'justiça: costume'),
+      'justiça, costume',
+    );
+    expect(
+      overlayLexiconGloss('H8193', 'lábio: linguagem'),
+      'lábio, linguagem',
+    );
+    expect(
+      overlayLexiconDefinition(
+        'H8193',
+        '1) lábio, margem, margem, borda, borda',
+      ),
       contains('Linguagem'),
     );
   });

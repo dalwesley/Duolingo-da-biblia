@@ -124,12 +124,7 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
 
     return Semantics(
       button: true,
-      label: [
-        campaign.title,
-        status,
-        pitch,
-        ?medalLine,
-      ].join('. '),
+      label: [campaign.title, status, pitch, ?medalLine].join('. '),
       excludeSemantics: true,
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),

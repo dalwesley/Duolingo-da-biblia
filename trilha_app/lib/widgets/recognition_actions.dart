@@ -278,20 +278,6 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
   }
 }
 
-Future<void> showRecognizeMedalSheet(
-  BuildContext context, {
-  required String toUid,
-  required String name,
-  required List<RecognizableMedal> medals,
-}) {
-  ActHaptics.tap();
-  return showAppSheet<void>(
-    context,
-    builder: (ctx) =>
-        _MedalRecognizeSheet(toUid: toUid, name: name, medals: medals),
-  );
-}
-
 class _MedalRecognizeSheet extends StatefulWidget {
   final String toUid;
   final String name;

@@ -107,11 +107,6 @@ class DustCopy {
     return _pick([l.dustUiNoFreeze1, l.dustUiNoFreeze2, l.dustUiNoFreeze3]);
   }
 
-  static String uiRiskDetail() {
-    final l = L10n.current;
-    return _pick([l.dustUiNoFreeze1, l.dustUiDetail2, l.dustUiDetail3]);
-  }
-
   /// Linha do hero card (com countdown). Uma frase: o que acaba, quando, o que fazer.
   static String heroRiskLine({
     required String countdown,

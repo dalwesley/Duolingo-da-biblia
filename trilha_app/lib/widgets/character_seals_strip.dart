@@ -366,9 +366,7 @@ class _WaxSealPainter extends CustomPainter {
     final waxLight = unlocked
         ? const Color(0xFFB24A28)
         : const Color(0xFF2E323A);
-    final waxMid = unlocked
-        ? const Color(0xFF7A2414)
-        : const Color(0xFF1A1E26);
+    final waxMid = unlocked ? const Color(0xFF7A2414) : const Color(0xFF1A1E26);
     final waxDark = unlocked
         ? const Color(0xFF2C0C08)
         : const Color(0xFF0C0E12);
@@ -466,6 +464,5 @@ class _WaxSealPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _WaxSealPainter old) =>
-      old.unlocked != unlocked;
+  bool shouldRepaint(covariant _WaxSealPainter old) => old.unlocked != unlocked;
 }

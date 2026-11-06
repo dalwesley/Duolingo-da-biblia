@@ -67,14 +67,6 @@
     "en": "Mistakes, explained",
     "es": "Errores explicados"
   },
-  "explainCorrectAnswer": {
-    "pt": "Resposta certa: {text}",
-    "en": "Right answer: {text}",
-    "es": "Respuesta correcta: {text}",
-    "placeholders": {
-      "text": "String"
-    }
-  },
   "explainYourAnswer": {
     "pt": "Sua resposta: {text}",
     "en": "Your answer: {text}",
@@ -182,15 +174,6 @@
     "pt": "Comprar",
     "en": "Buy",
     "es": "Comprar"
-  },
-  "paywallTrialThen": {
-    "pt": "{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}",
-    "en": "{count, plural, =1{1 day free, then {price}.} other{{count} days free, then {price}.}}",
-    "es": "{count, plural, =1{1 día gratis, después {price}.} other{{count} días gratis, después {price}.}}",
-    "placeholders": {
-      "count": "int",
-      "price": "String"
-    }
   },
   "paywallAutoRenew": {
     "pt": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",

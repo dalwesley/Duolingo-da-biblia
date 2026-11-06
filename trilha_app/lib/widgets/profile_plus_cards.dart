@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
-import '../models/exercise.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
@@ -115,65 +114,6 @@ class ProfileAccuracyCard extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-/// Perfil Plus: caminho para "Seus erros explicados" — a página com os
-/// erros guardados, a resposta certa e o porquê de cada um.
-class ExplainedErrorsCard extends StatelessWidget {
-  const ExplainedErrorsCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final count = context.watch<ProgressService>().mistakeQuestionIds.length;
-    return GlassCard(
-      tint: AppRoles.presence,
-      glow: 0.4,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute<void>(
-            builder: (_) => const ExplainedErrorsScreen(),
-          ),
-        ),
-        child: Row(
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.lamp,
-              size: AppMetrics.leadingIcon,
-              accent: AppRoles.reward,
-            ),
-            const SizedBox(width: AppSpace.md),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l10n.explainErrorsTitle,
-                    style: AppTypography.title(size: 15, color: a.text),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    count == 0
-                        ? l10n.explainErrorsEmptyBody
-                        : l10n.explainErrorsEntry(count),
-                    style: AppTypography.body(size: 12, color: a.textSecondary),
-                  ),
-                ],
-              ),
-            ),
-            CinematicIcon(
-              glyph: CinematicGlyph.path,
-              size: AppMetrics.iconMd,
-              accent: a.textFaint,
-              framed: false,
-            ),
-          ],
-        ),
       ),
     );
   }

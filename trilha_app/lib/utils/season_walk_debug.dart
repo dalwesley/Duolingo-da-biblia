@@ -11,8 +11,6 @@ class SeasonWalkDebug {
 
   static bool get active => kDebugMode && _today != null;
 
-  static DateTime? get overrideToday => _today;
-
   /// Dia civil da Caminhada (ano-mês-dia, sem hora).
   static DateTime today([DateTime? fallback]) {
     if (kDebugMode && _today != null) return _today!;

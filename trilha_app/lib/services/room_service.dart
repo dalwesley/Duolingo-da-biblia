@@ -105,22 +105,25 @@ class RoomService extends ChangeNotifier {
         .collection('roomInvites')
         .where('participantIds', arrayContains: uid)
         .snapshots()
-        .listen((snap) {
-          // Snapshot sem mudança de documento (só confirmação do servidor):
-          // nada novo para a barra/Juntos redesenhar.
-          if (snap.docChanges.isEmpty && _invitesSeen) return;
-          _invitesSeen = true;
-          invites = [
-            for (final doc in snap.docs)
-              ?RoomInvite.fromDoc(doc.id, doc.data()),
-          ];
-          notifyListeners();
-        }, onError: (Object e) {
-          // Stream morre no erro: solta para o próximo
-          // ensureInviteListener reabrir.
-          debugPrint('Convites do grupo: $e');
-          _stopInviteListener(clear: false);
-        });
+        .listen(
+          (snap) {
+            // Snapshot sem mudança de documento (só confirmação do servidor):
+            // nada novo para a barra/Juntos redesenhar.
+            if (snap.docChanges.isEmpty && _invitesSeen) return;
+            _invitesSeen = true;
+            invites = [
+              for (final doc in snap.docs)
+                ?RoomInvite.fromDoc(doc.id, doc.data()),
+            ];
+            notifyListeners();
+          },
+          onError: (Object e) {
+            // Stream morre no erro: solta para o próximo
+            // ensureInviteListener reabrir.
+            debugPrint('Convites do grupo: $e');
+            _stopInviteListener(clear: false);
+          },
+        );
   }
 
   bool _invitesSeen = false;

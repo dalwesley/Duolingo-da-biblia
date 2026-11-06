@@ -254,55 +254,15 @@ class WeeklyQuestsList extends StatelessWidget {
   }
 }
 
-class WeeklyQuestsCard extends StatelessWidget {
-  const WeeklyQuestsCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-
-    return RelicPanel(
-      accent: AppRoles.presence,
-      glow: 0.4,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          RelicChapter(
-            title: context.l10n.questWeeklyTitle,
-            divided: false,
-            accent: AppRoles.presence,
-            trailing: Text(
-              context.l10n.questCountOf(
-                progress.weeklyQuestsCompleted,
-                WeeklyQuestDefs.all.length,
-              ),
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 1.1,
-                color: Appearance.of(context).textFaint,
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
-            if (i > 0) ...[
-              const SizedBox(height: 12),
-              const RelicHairline(accent: AppRoles.presence),
-              const SizedBox(height: 12),
-            ],
-            WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
 class WeeklyQuestRow extends StatelessWidget {
   final DailyQuest quest;
   final ProgressService progress;
 
-  const WeeklyQuestRow({required this.quest, required this.progress});
+  const WeeklyQuestRow({
+    super.key,
+    required this.quest,
+    required this.progress,
+  });
 
   static const _rewardSlot = 56.0;
 

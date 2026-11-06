@@ -5,7 +5,9 @@ import 'package:trilha_app/theme/app_theme.dart';
 import 'package:trilha_app/widgets/character_seals_strip.dart';
 
 void main() {
-  testWidgets('gallery never uses a question mark on locked seals', (tester) async {
+  testWidgets('gallery never uses a question mark on locked seals', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
@@ -27,9 +29,7 @@ void main() {
         theme: AppTheme.dark,
         home: const Scaffold(
           body: SingleChildScrollView(
-            child: CharacterSealsStrip(
-              completed: ['gen-03-imagem'],
-            ),
+            child: CharacterSealsStrip(completed: ['gen-03-imagem']),
           ),
         ),
       ),
@@ -38,15 +38,15 @@ void main() {
     expect(find.text('Guardar'), findsNothing);
   });
 
-  testWidgets('unlocked seals sit first, even if later in the canon', (tester) async {
+  testWidgets('unlocked seals sit first, even if later in the canon', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
         home: const Scaffold(
           body: SingleChildScrollView(
-            child: CharacterSealsStrip(
-              completed: ['gen12-01-chamado'],
-            ),
+            child: CharacterSealsStrip(completed: ['gen12-01-chamado']),
           ),
         ),
       ),
@@ -64,10 +64,8 @@ void main() {
           builder: (context) {
             return Scaffold(
               body: TextButton(
-                onPressed: () => showCharacterSealSheet(
-                  context,
-                  CharacterSeals.all.first,
-                ),
+                onPressed: () =>
+                    showCharacterSealSheet(context, CharacterSeals.all.first),
                 child: const Text('open'),
               ),
             );

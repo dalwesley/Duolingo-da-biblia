@@ -70,10 +70,7 @@ class _ActShakeState extends State<ActShake>
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(
-      vsync: this,
-      duration: AppMotion.standard,
-    );
+    _ctrl = AnimationController(vsync: this, duration: AppMotion.standard);
     if (widget.active) _queuePlay();
   }
 
@@ -135,10 +132,7 @@ class _ActSparkBurstState extends State<ActSparkBurst>
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    );
+    _ctrl = AnimationController(vsync: this, duration: AppMotion.scene);
     _sparks = _spawn(42);
     if (widget.active) _ctrl.forward(from: 0);
   }
@@ -278,47 +272,6 @@ class ActDragProxy extends StatelessWidget {
   }
 }
 
-/// Poço da letra A/B/C/D — o gesto Escolher/Completar ganha identidade.
-class ActLetterWell extends StatelessWidget {
-  final String mark;
-  final Color accent;
-  final Color foreground;
-  final bool hot;
-
-  const ActLetterWell({
-    super.key,
-    required this.mark,
-    required this.accent,
-    required this.foreground,
-    this.hot = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: AppMotion.quick,
-      width: 28,
-      height: 28,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: hot ? accent : Colors.white.withValues(alpha: 0.08),
-        border: Border.all(
-          color: hot ? accent : Colors.white.withValues(alpha: 0.28),
-          width: hot ? 0 : 1.4,
-        ),
-      ),
-      child: Text(
-        mark,
-        style: AppTypography.title(
-          size: 13,
-          color: hot ? AppColors.inkOnAccent : foreground,
-        ),
-      ),
-    );
-  }
-}
-
 /// Rótulo que sobe e some — juice de combo no palco (não na celebração).
 class ActFloatLabel extends StatefulWidget {
   final String text;
@@ -337,10 +290,8 @@ class _ActFloatLabelState extends State<ActFloatLabel>
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    )..forward();
+    _ctrl = AnimationController(vsync: this, duration: AppMotion.scene)
+      ..forward();
   }
 
   @override
@@ -364,7 +315,8 @@ class _ActFloatLabelState extends State<ActFloatLabel>
             child: Transform.translate(
               offset: Offset(0, -36 * t),
               child: Transform.scale(
-                scale: 0.82 +
+                scale:
+                    0.82 +
                     0.28 *
                         AppMotion.pop.transform(
                           (_ctrl.value / 0.45).clamp(0.0, 1.0),

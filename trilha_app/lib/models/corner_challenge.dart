@@ -41,7 +41,6 @@ class CornerCopy {
   // Rótulos.
   static String get kicker => _l.cornerKicker;
   static String get incomingTitle => _l.cornerIncomingTitle;
-  static String get recordChapter => _l.cornerRecordChapter;
   static String get reward => _l.commonPlusSteps(cornerArrivalBonusSteps);
   static String get deadline => _l.cornerDeadline;
   static String get closesToday => _l.cornerClosesToday;
@@ -53,7 +52,6 @@ class CornerCopy {
   // Animação.
   static String get burstSent => _l.cornerBurstSent;
   static String get burstAccepted => _l.cornerBurstAccepted;
-  static String get burstTogether => _l.cornerTogether;
   static String get burstLeft => _l.cornerBurstLeft;
 
   static String acceptedBy(String name) {
@@ -99,12 +97,6 @@ class CornerCopy {
       _l.cornerSameStretch(cornerArrivalBonusSteps);
 
   static String inviteTitle(String mission) => _l.cornerInviteTitle(mission);
-
-  static String inviteBody(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return _l.cornerInviteBodyAnon(cornerArrivalBonusSteps);
-    return _l.cornerInviteBody(first, cornerArrivalBonusSteps);
-  }
 
   static String firstName(String name) {
     final t = name.trim();
@@ -170,7 +162,6 @@ class CornerCopy {
   static String get tallyChallenges => _l.cornerRecordChapter;
   static String get tallyTogether => _l.cornerTallyTogether;
   static String get markLeft => _l.cornerLeftMark;
-  static String get closedChapter => _l.cornerClosedChapter;
   static String get boardEmptyTitle => _l.cornerBoardEmptyTitle;
   static String get boardEmptyBody =>
       _l.cornerBoardEmptyBody(cornerArrivalBonusSteps);

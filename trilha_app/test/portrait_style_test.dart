@@ -39,8 +39,14 @@ void main() {
     });
 
     test('photo falls back to avatar without a real portrait', () {
-      expect(PortraitFace.resolve(PortraitStyle.photo, null), PortraitStyle.avatar);
-      expect(PortraitFace.resolve(PortraitStyle.photo, ''), PortraitStyle.avatar);
+      expect(
+        PortraitFace.resolve(PortraitStyle.photo, null),
+        PortraitStyle.avatar,
+      );
+      expect(
+        PortraitFace.resolve(PortraitStyle.photo, ''),
+        PortraitStyle.avatar,
+      );
       expect(
         PortraitFace.resolve(
           PortraitStyle.photo,

@@ -107,12 +107,6 @@ class MissionStudy {
     return StudyOverlay.instance.field(s, 'keywordGloss') ?? keywordGloss;
   }
 
-  List<String> get localizedReflectionPrompts {
-    final s = slug;
-    if (s == null) return reflectionPrompts;
-    return StudyOverlay.instance.reflectionPrompts(s) ?? reflectionPrompts;
-  }
-
   /// Fatos no idioma do app. O overlay traz só o texto, na mesma ordem;
   /// o trecho que prova fica no PT do palco.
   List<StudyFact> get localizedFacts {

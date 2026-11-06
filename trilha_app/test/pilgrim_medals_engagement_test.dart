@@ -1,7 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
-import 'package:trilha_app/models/pilgrim_medal_catalog.dart';
-import 'package:trilha_app/models/pilgrim_medal_models.dart';
 import 'package:trilha_app/models/pilgrim_medals.dart';
 import 'package:trilha_app/models/trail.dart';
 

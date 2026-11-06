@@ -78,8 +78,7 @@ class BibleSearchHit {
     this.isBook = false,
   });
 
-  String get citation =>
-      isBook ? bookName : '$bookName $chapter:$verse';
+  String get citation => isBook ? bookName : '$bookName $chapter:$verse';
 }
 
 /// Bíblia offline — tradução ativa escolhida pelo usuário.
@@ -180,26 +179,28 @@ class BibleService {
       '${_loading.containsKey(useId) ? 'joins pending load' : 'starts load'}',
     );
     // Uma leitura por tradução, mesmo com vários pedidos simultâneos.
-    return _loading[useId] ??= _decode(useId).then((list) {
-      _loaded[useId] = list;
-      return list;
-    }, onError: (Object e, StackTrace st) {
-      debugPrint('[STWAY:Bible] books($useId) failed: $e\n$st');
-      throw e;
-    }).whenComplete(() {
-      // Bloco, não arrow: `remove` devolve este mesmo future, e
-      // whenComplete esperaria por ele — quem entrou na fila travava.
-      _loading.remove(useId);
-    });
+    return _loading[useId] ??= _decode(useId)
+        .then(
+          (list) {
+            _loaded[useId] = list;
+            return list;
+          },
+          onError: (Object e, StackTrace st) {
+            debugPrint('[STWAY:Bible] books($useId) failed: $e\n$st');
+            throw e;
+          },
+        )
+        .whenComplete(() {
+          // Bloco, não arrow: `remove` devolve este mesmo future, e
+          // whenComplete esperaria por ele — quem entrou na fila travava.
+          _loading.remove(useId);
+        });
   }
 
   Future<List<BibleBook>> _decode(String id) async {
     // rootBundle só no isolate principal; o parse (~4 MB) vai para outro.
     final sw = Stopwatch()..start();
-    final raw = await rootBundle.loadString(
-      byId(id).assetPath!,
-      cache: false,
-    );
+    final raw = await rootBundle.loadString(byId(id).assetPath!, cache: false);
     debugPrint(
       '[STWAY:Bible] decode($id) asset ${raw.length} chars '
       'in ${sw.elapsedMilliseconds}ms',
@@ -253,7 +254,9 @@ class BibleService {
     for (var i = 0; i < list.length; i++) {
       final name = _norm(list[i].name);
       final abbrev = _norm(list[i].abbrev);
-      if (name == bookQuery || abbrev == bookQuery || name.startsWith(bookQuery)) {
+      if (name == bookQuery ||
+          abbrev == bookQuery ||
+          name.startsWith(bookQuery)) {
         bookIndex = i;
         break;
       }
@@ -284,15 +287,17 @@ class BibleService {
       final name = _norm(book.name);
       final abbrev = _norm(book.abbrev);
       if (name.contains(q) || abbrev.contains(q)) {
-        hits.add(BibleSearchHit(
-          bookIndex: bi,
-          bookName: book.name,
-          abbrev: book.abbrev,
-          chapter: 1,
-          verse: 0,
-          text: L10n.current.bibleChapterCount(book.chapters.length),
-          isBook: true,
-        ));
+        hits.add(
+          BibleSearchHit(
+            bookIndex: bi,
+            bookName: book.name,
+            abbrev: book.abbrev,
+            chapter: 1,
+            verse: 0,
+            text: L10n.current.bibleChapterCount(book.chapters.length),
+            isBook: true,
+          ),
+        );
         if (hits.length >= limit) return hits;
       }
     }
@@ -313,17 +318,21 @@ class BibleService {
           ci < list[bi].chapters.length &&
           vi < list[bi].chapters[ci].length) {
         final book = list[bi];
-        hits.add(BibleSearchHit(
-          bookIndex: bi,
-          bookName: book.name,
-          abbrev: book.abbrev,
-          chapter: ci + 1,
-          verse: vi + 1,
-          text: book.chapters[ci][vi],
-        ));
+        hits.add(
+          BibleSearchHit(
+            bookIndex: bi,
+            bookName: book.name,
+            abbrev: book.abbrev,
+            chapter: ci + 1,
+            verse: vi + 1,
+            text: book.chapters[ci][vi],
+          ),
+        );
       }
       // Um acerto por versículo: segue do próximo.
-      from = n + 1 < index.starts.length ? index.starts[n + 1] : index.text.length;
+      from = n + 1 < index.starts.length
+          ? index.starts[n + 1]
+          : index.text.length;
     }
     return hits;
   }

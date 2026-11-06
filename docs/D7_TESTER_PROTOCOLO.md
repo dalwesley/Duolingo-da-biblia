@@ -82,7 +82,7 @@ Meta qualitativa: ≥50% das frases espontâneas alinhadas ao norte; D7 ≥ reto
 ## 5. Pipeline semanal (Relatos)
 
 1. Testers usam **Relatar problema** na lição quando a pergunta falha.
-2. Admin → Relatos → corrigir banco / `pipeline:v2` + `seed:cli` sem release.
+2. Admin → Relatos → corrigir banco no V3 (`admin/v3/`) + `npm run v3:publish` sem release.
 3. Priorizar qualidade editorial em Êxodo / Sermão (além do gerador V2).
 
 ---

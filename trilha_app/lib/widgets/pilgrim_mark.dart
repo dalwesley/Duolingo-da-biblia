@@ -12,11 +12,7 @@ class PilgrimMark extends StatelessWidget {
   final String seed;
   final double size;
 
-  const PilgrimMark({
-    super.key,
-    required this.seed,
-    required this.size,
-  });
+  const PilgrimMark({super.key, required this.seed, required this.size});
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +20,7 @@ class PilgrimMark extends StatelessWidget {
     return SizedBox(
       width: size,
       height: size,
-      child: CustomPaint(
-        painter: _PilgrimMarkPainter(spec),
-      ),
+      child: CustomPaint(painter: _PilgrimMarkPainter(spec)),
     );
   }
 }
@@ -171,11 +165,10 @@ class _PilgrimMarkPainter extends CustomPainter {
     canvas.drawRect(
       Rect.fromLTWH(0, 0, s, s),
       Paint()
-        ..shader = ui.Gradient.radial(
-          c + Offset(0, -s * 0.18),
-          s * 0.92,
-          [spec.sky, spec.skyDeep],
-        ),
+        ..shader = ui.Gradient.radial(c + Offset(0, -s * 0.18), s * 0.92, [
+          spec.sky,
+          spec.skyDeep,
+        ]),
     );
 
     canvas.drawCircle(
@@ -207,31 +200,20 @@ class _PilgrimMarkPainter extends CustomPainter {
         c.dx + s * 0.18,
         c.dy + s * 0.08,
       )
-      ..quadraticBezierTo(
-        c.dx + s * 0.42,
-        c.dy + s * 0.04,
-        c.dx + s * 0.46,
-        s,
-      )
+      ..quadraticBezierTo(c.dx + s * 0.42, c.dy + s * 0.04, c.dx + s * 0.46, s)
       ..close();
     canvas.drawPath(
       cloak,
       Paint()
-        ..shader = ui.Gradient.linear(
-          Offset(c.dx, c.dy),
-          Offset(c.dx, s),
-          [spec.cloak, spec.cloakDeep],
-        ),
+        ..shader = ui.Gradient.linear(Offset(c.dx, c.dy), Offset(c.dx, s), [
+          spec.cloak,
+          spec.cloakDeep,
+        ]),
     );
 
     final fold = Path()
       ..moveTo(c.dx - s * 0.04, c.dy + s * 0.1)
-      ..quadraticBezierTo(
-        c.dx + s * 0.02,
-        c.dy + s * 0.28,
-        c.dx - s * 0.06,
-        s,
-      )
+      ..quadraticBezierTo(c.dx + s * 0.02, c.dy + s * 0.28, c.dx - s * 0.06, s)
       ..lineTo(c.dx + s * 0.08, s)
       ..quadraticBezierTo(
         c.dx + s * 0.1,
@@ -451,18 +433,8 @@ class _PilgrimMarkPainter extends CustomPainter {
       case 1:
         final seed = Path()
           ..moveTo(p.dx, p.dy - s * 0.07)
-          ..quadraticBezierTo(
-            p.dx + s * 0.06,
-            p.dy,
-            p.dx,
-            p.dy + s * 0.07,
-          )
-          ..quadraticBezierTo(
-            p.dx - s * 0.06,
-            p.dy,
-            p.dx,
-            p.dy - s * 0.07,
-          )
+          ..quadraticBezierTo(p.dx + s * 0.06, p.dy, p.dx, p.dy + s * 0.07)
+          ..quadraticBezierTo(p.dx - s * 0.06, p.dy, p.dx, p.dy - s * 0.07)
           ..close();
         canvas.drawPath(seed, paint);
       case 2:

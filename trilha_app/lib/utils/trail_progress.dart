@@ -735,51 +735,6 @@ class TrailProgress {
     return out;
   }
 
-  /// Com o Peregrino+: Minhas trilhas na ordem (principal, depois as
-  /// secundárias) e então o resto que dá para começar ([availableTrails]).
-  static List<Trail> plusOpenTrails(
-    List<Trail> trails,
-    List<String> completed, {
-    Map<String, String> chosenAt = const {},
-    bool seeded = true,
-    Map<String, List<String>> clearedTrailModes = const {},
-    Map<String, String> trailModes = const {},
-    Map<String, String> pinnedModes = const {},
-    Map<String, String> completedOn = const {},
-    Iterable<String> borrowed = const [],
-  }) {
-    final available = availableTrails(
-      trails,
-      completed,
-      clearedTrailModes: clearedTrailModes,
-      trailModes: trailModes,
-      pinnedModes: pinnedModes,
-      completedOn: completedOn,
-      borrowed: borrowed,
-      plusOpen: true,
-    );
-    final mine = myTrails(
-      trails,
-      completed,
-      chosenAt: chosenAt,
-      seeded: seeded,
-      clearedTrailModes: clearedTrailModes,
-      trailModes: trailModes,
-      pinnedModes: pinnedModes,
-      completedOn: completedOn,
-      borrowed: borrowed,
-    );
-    final first = [
-      for (final m in mine)
-        if (available.any((t) => t.slug == m.slug)) m,
-    ];
-    return [
-      ...first,
-      for (final t in available)
-        if (!first.any((m) => m.slug == t.slug)) t,
-    ];
-  }
-
   /// Começo natural de quem não tem trilha nenhuma: o início da Bíblia.
   static const starterTrailSlug = 'genesis-1-11';
 

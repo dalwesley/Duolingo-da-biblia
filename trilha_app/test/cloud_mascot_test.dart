@@ -8,7 +8,9 @@ void main() {
       tester,
     ) async {
       await tester.pumpWidget(
-        MaterialApp(home: Center(child: CloudMascot(face: face))),
+        MaterialApp(
+          home: Center(child: CloudMascot(face: face)),
+        ),
       );
       await tester.pump(const Duration(seconds: 7));
       expect(find.byType(CustomPaint), findsWidgets);
@@ -19,8 +21,9 @@ void main() {
   testWidgets('face change mid reaction morphs from where it is', (
     tester,
   ) async {
-    Widget app(CloudFace face) =>
-        MaterialApp(home: Center(child: CloudMascot(face: face)));
+    Widget app(CloudFace face) => MaterialApp(
+      home: Center(child: CloudMascot(face: face)),
+    );
     await tester.pumpWidget(app(CloudFace.carregando));
     await tester.pump(const Duration(milliseconds: 300));
     await tester.pumpWidget(app(CloudFace.erro));

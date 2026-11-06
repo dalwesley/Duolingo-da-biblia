@@ -35,10 +35,7 @@ void main() {
     });
 
     test('matches section embedded in id when section field is legacy', () {
-      final q = _q(
-        id: 'genesis--sem-gen-01-criador-01',
-        section: 'criacao',
-      );
+      final q = _q(id: 'genesis--sem-gen-01-criador-01', section: 'criacao');
       expect(QuestionBank.matchesMissionSection(q, 'gen-01-criador'), isTrue);
       expect(QuestionBank.matchesMissionSection(q, 'gen-02-dias'), isFalse);
     });

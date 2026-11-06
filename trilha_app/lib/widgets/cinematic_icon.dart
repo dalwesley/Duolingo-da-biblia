@@ -119,12 +119,17 @@ class CinematicGlyphResolver {
         t.contains('luz')) {
       return CinematicGlyph.sun;
     }
-    if (t.contains('imagem') || t.contains('homem') || t.contains('humano'))
+    if (t.contains('imagem') || t.contains('homem') || t.contains('humano')) {
       return CinematicGlyph.humanity;
-    if (t.contains('descanso') || t.contains('sábado') || t.contains('sabado'))
+    }
+    if (t.contains('descanso') ||
+        t.contains('sábado') ||
+        t.contains('sabado')) {
       return CinematicGlyph.dove;
-    if (t.contains('éden') || t.contains('eden') || t.contains('jardim'))
+    }
+    if (t.contains('éden') || t.contains('eden') || t.contains('jardim')) {
       return CinematicGlyph.tree;
+    }
     if (t.contains('desobediência') ||
         t.contains('desobediencia') ||
         t.contains('queda') ||
@@ -132,8 +137,9 @@ class CinematicGlyphResolver {
         t.contains('tentacao')) {
       return CinematicGlyph.fall;
     }
-    if (t.contains('consequência') || t.contains('consequencia'))
+    if (t.contains('consequência') || t.contains('consequencia')) {
       return CinematicGlyph.tears;
+    }
     if (t.contains('caim') || t.contains('abel')) return CinematicGlyph.scales;
     if (t.contains('dilúvio') ||
         t.contains('diluvio') ||
@@ -143,13 +149,20 @@ class CinematicGlyphResolver {
       return CinematicGlyph.flood;
     }
     if (t.contains('babel')) return CinematicGlyph.tower;
-    if (t.contains('abraão') || t.contains('abraao') || t.contains('promessa'))
+    if (t.contains('abraão') ||
+        t.contains('abraao') ||
+        t.contains('promessa')) {
       return CinematicGlyph.star;
-    if (t.contains('páscoa') || t.contains('pascoa') || t.contains('cordeiro'))
+    }
+    if (t.contains('páscoa') ||
+        t.contains('pascoa') ||
+        t.contains('cordeiro')) {
       return CinematicGlyph.dove;
+    }
     if (t.contains('pragas')) return CinematicGlyph.flame;
-    if (t.contains('mar vermelho') || t.contains('mar '))
+    if (t.contains('mar vermelho') || t.contains('mar ')) {
       return CinematicGlyph.sea;
+    }
     if (t.contains('moisés') ||
         t.contains('moises') ||
         t.contains('sarça') ||
@@ -211,23 +224,6 @@ class CinematicGlyphResolver {
       'w_days' => CinematicGlyph.flame,
       'w_perfect' => CinematicGlyph.gem,
       _ => CinematicGlyph.spark,
-    };
-  }
-
-  /// Cor por quest — identidade própria, alinhada à família da seção.
-  static Color accentForQuest(String id) {
-    return switch (id) {
-      'mission' => AppColors.accent,
-      'accuracy' => AppColors.coral,
-      'perfect' => AppColors.sand,
-      'read' => AppColors.sand,
-      'bookmark' => AppColors.clay,
-      'seasonal' => AppColors.sand,
-      'memory' => AppColors.clay,
-      'w_missions' => AppColors.accent,
-      'w_days' => AppColors.ember,
-      'w_perfect' => AppColors.medalGold,
-      _ => AppColors.accent,
     };
   }
 

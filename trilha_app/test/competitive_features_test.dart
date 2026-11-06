@@ -11,13 +11,19 @@ void main() {
     test('Holy Week before Easter', () {
       final m = LiturgicalCalendar.momentFor(DateTime(2026, 4, 1));
       expect(m.season, LiturgicalSeason.holyWeek);
-      expect(LiturgicalCalendar.seasonalQuestToday(DateTime(2026, 4, 1)), isNotNull);
+      expect(
+        LiturgicalCalendar.seasonalQuestToday(DateTime(2026, 4, 1)),
+        isNotNull,
+      );
     });
 
     test('Ordinary time has no seasonal quest', () {
       final m = LiturgicalCalendar.momentFor(DateTime(2026, 7, 15));
       expect(m.season, LiturgicalSeason.ordinary);
-      expect(LiturgicalCalendar.seasonalQuestToday(DateTime(2026, 7, 15)), isNull);
+      expect(
+        LiturgicalCalendar.seasonalQuestToday(DateTime(2026, 7, 15)),
+        isNull,
+      );
     });
   });
 

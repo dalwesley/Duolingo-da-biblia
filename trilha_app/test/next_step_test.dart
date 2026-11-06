@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/difficulty.dart';
-import 'package:trilha_app/models/exercise.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/next_step.dart';
 import 'package:trilha_app/utils/trail_progress.dart';

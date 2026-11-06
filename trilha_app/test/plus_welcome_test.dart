@@ -15,10 +15,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
   });
 
-  Future<void> pumpPaywall(
-    WidgetTester tester,
-    SubscriptionService sub,
-  ) async {
+  Future<void> pumpPaywall(WidgetTester tester, SubscriptionService sub) async {
     await tester.pumpWidget(
       MultiProvider(
         providers: [

@@ -14,7 +14,6 @@ class AuthorSuggestionService {
   static const maxName = 80;
   static const maxPhone = 24;
   static const maxEmail = 120;
-  static const maxInstagram = 30;
 
   static final _email = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
   static final _instagram = RegExp(r'^[a-z0-9._]{1,30}$');
@@ -27,7 +26,8 @@ class AuthorSuggestionService {
     return t.substring(0, maxName);
   }
 
-  static String phoneDigits(String value) => value.replaceAll(RegExp(r'\D'), '');
+  static String phoneDigits(String value) =>
+      value.replaceAll(RegExp(r'\D'), '');
 
   static String normalizeEmail(String value) => value.trim().toLowerCase();
 
@@ -110,7 +110,12 @@ class AuthorSuggestionService {
       debugPrint('AuthorSuggestionService: usuário não autenticado');
       return false;
     }
-    if (!isReady(name: name, phone: phone, email: email, instagram: instagram)) {
+    if (!isReady(
+      name: name,
+      phone: phone,
+      email: email,
+      instagram: instagram,
+    )) {
       return false;
     }
 

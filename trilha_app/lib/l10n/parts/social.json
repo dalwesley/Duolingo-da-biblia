@@ -209,23 +209,6 @@
       "mission": "String"
     }
   },
-  "cornerInviteBodyAnon": {
-    "pt": "A mesma cena até domingo.\n+{count} passos para cada um que chegar.",
-    "en": "Same scene by Sunday.\n+{count} steps for each one who arrives.",
-    "es": "La misma escena hasta el domingo.\n+{count} pasos para cada uno que llegue.",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "cornerInviteBody": {
-    "pt": "Você e {name} fazem essa cena até domingo.\n+{count} passos para cada um que chegar.",
-    "en": "You and {name} do this scene by Sunday.\n+{count} steps for each one who arrives.",
-    "es": "Tú y {name} hacen esta escena hasta el domingo.\n+{count} pasos para cada uno que llegue.",
-    "placeholders": {
-      "name": "String",
-      "count": "int"
-    }
-  },
   "cornerIncomingFromAnon": {
     "pt": "Alguém te chamou para esta cena.",
     "en": "Someone invited you to this scene.",
@@ -362,11 +345,6 @@
     "pt": "Juntos",
     "en": "Together",
     "es": "Juntos"
-  },
-  "cornerClosedChapter": {
-    "pt": "Encerrados",
-    "en": "Closed",
-    "es": "Cerrados"
   },
   "cornerBoardEmptyTitle": {
     "pt": "Nenhum desafio ainda",

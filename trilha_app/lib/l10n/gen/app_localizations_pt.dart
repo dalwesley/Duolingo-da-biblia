@@ -161,9 +161,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bibleHeroStartHere => 'Continuar leitura';
 
   @override
-  String get bibleHeroStartReading => 'Começar a ler';
-
-  @override
   String get bibleIntroAudience => 'Para quem';
 
   @override
@@ -252,9 +249,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get biblePickerTitle => 'Ir para';
 
   @override
-  String get bibleReadChapter => 'Ler o capítulo';
-
-  @override
   String bibleReadOf(int read, int total) {
     return '$read de $total';
   }
@@ -314,17 +308,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get bibleReaderVersion => 'Versão';
-
-  @override
-  String bibleSavedSeeAll(int count) {
-    return 'Ver todos · $count';
-  }
-
-  @override
-  String get bibleSavedSeeLess => 'Ver menos';
-
-  @override
-  String get bibleSavedTitle => 'Guardados';
 
   @override
   String get bibleSearchBookHit => 'Livro';
@@ -699,9 +682,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get celebrationBackToMap => 'Voltar ao mapa';
 
   @override
-  String get celebrationCleanScene => 'Cena limpa';
-
-  @override
   String celebrationCommitmentBeyond(int goal) {
     return 'Além do compromisso de $goal dias.';
   }
@@ -887,9 +867,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chestOpened => 'Aberto';
 
   @override
-  String get chestOpening => 'Abrindo…';
-
-  @override
   String get chestPassoMessage =>
       'Mais um dia caminhando — é isso que forma um peregrino.';
 
@@ -1051,17 +1028,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get commonStart => 'Começar';
-
-  @override
-  String commonSteps(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count passos',
-      one: '1 passo',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get commonToday => 'Hoje';
@@ -1405,9 +1371,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get cornerClosedChapter => 'Encerrados';
-
-  @override
   String get cornerClosesToday => 'Fecha hoje';
 
   @override
@@ -1457,16 +1420,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get cornerIncomingTitle => 'Convite de desafio';
-
-  @override
-  String cornerInviteBody(String name, int count) {
-    return 'Você e $name fazem essa cena até domingo.\n+$count passos para cada um que chegar.';
-  }
-
-  @override
-  String cornerInviteBodyAnon(int count) {
-    return 'A mesma cena até domingo.\n+$count passos para cada um que chegar.';
-  }
 
   @override
   String cornerInviteTitle(String mission) {
@@ -1911,12 +1864,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get dustTwoDays => 'Dois dias';
-
-  @override
-  String get dustUiDetail2 => 'Continue a jornada · uma cena basta';
-
-  @override
-  String get dustUiDetail3 => 'A sequência espera · caminhe hoje';
 
   @override
   String get dustUiFreeze1 => 'Sequência em risco · gelo ainda cobre 1 dia';
@@ -2387,9 +2334,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get exerciseHintShowQuestion => 'Toque para ver a pergunta';
 
   @override
-  String get exerciseHintUsed => 'Dica usada';
-
-  @override
   String get exerciseLabelBridge => 'Ponte';
 
   @override
@@ -2499,11 +2443,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get explainAnswerLabel => 'Resposta certa';
-
-  @override
-  String explainCorrectAnswer(String text) {
-    return 'Resposta certa: $text';
-  }
 
   @override
   String get explainErrorsEmptyBody =>
@@ -2651,24 +2590,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get groupCallTitle => 'Chamar pessoas';
 
   @override
-  String get groupCaptionNotYet => 'ainda não';
-
-  @override
-  String get groupCaptionToday => 'hoje';
-
-  @override
   String get groupCreateCta => 'Criar grupo';
-
-  @override
-  String groupDayUnit(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'dias ',
-      one: 'dia ',
-    );
-    return '$_temp0';
-  }
 
   @override
   String groupDaysAway(int count) {
@@ -2737,18 +2659,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get groupMemberDidStudy => 'Fez o estudo da semana';
 
   @override
-  String get groupMembersTitle => 'Integrantes';
-
-  @override
   String get groupMenuClearStudy => 'Tirar estudo da semana';
 
   @override
   String get groupMenuClose => 'Encerrar o grupo';
-
-  @override
-  String groupMenuCopyCode(String code) {
-    return 'Copiar código $code';
-  }
 
   @override
   String get groupMenuEdit => 'Editar nome e tipo';
@@ -2891,9 +2805,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String groupStudyDoneCount(int done, int total) {
     return '$done de $total já fizeram';
   }
-
-  @override
-  String get groupStudyNobodyYet => 'Ninguém fez ainda. Seja o primeiro.';
 
   @override
   String get groupStudySwap => 'Trocar';
@@ -3117,6 +3028,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeGoalMet => 'Meta do dia cumprida';
 
   @override
+  String get homeGreetingAfternoon => 'Boa tarde';
+
+  @override
+  String get homeGreetingEvening => 'Boa noite';
+
+  @override
+  String get homeGreetingMorning => 'Bom dia';
+
+  @override
   String get homeHeroEcho => 'Eco de ontem';
 
   @override
@@ -3198,17 +3118,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeQuestsExtraCaption => 'Passos extras';
 
   @override
-  String homeReviewCaption(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count para reforçar',
-      one: '1 para reforçar',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String homeReviewMistakesCaption(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -3236,17 +3145,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeStatGoal => 'meta';
-
-  @override
-  String homeStepsSemantics(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count passos na jornada',
-      one: '1 passo na jornada',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get homeSupportAgainBody =>
@@ -3295,9 +3193,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeWordWord => 'Palavra';
-
-  @override
-  String get intentBadgeCurrent => 'Atual';
 
   @override
   String get intentBadgeHere => 'Você está aqui';
@@ -3483,9 +3378,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Toque no link, mostre o QR ou envie o card';
 
   @override
-  String get inviteSheetSubtitleRoom => 'Mostre o QR ou envie o código';
-
-  @override
   String get inviteSomeone => 'Alguém';
 
   @override
@@ -3500,21 +3392,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get inviteTrailGiftTitle => 'Uma trilha de presente';
 
   @override
-  String get journalEmpty =>
-      'Ao fixar uma cena, sua resposta fica registrada aqui.';
-
-  @override
-  String get journalTitle => 'Anotações de estudo';
-
-  @override
   String get journeyAntigoTestamentoBody =>
       'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.';
 
   @override
   String get journeyBeyondHorizon => 'Ainda além do horizonte';
-
-  @override
-  String get journeyInn => 'Estalagem';
 
   @override
   String journeyLockedFinish(String trail) {
@@ -3548,9 +3430,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get journeyPlay => 'Entrar';
-
-  @override
   String get journeyPlusCtaDetail => 'com o Peregrino+';
 
   @override
@@ -3567,12 +3446,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get journeySoonHint =>
       'Em breve · esta trilha ainda está sendo escrita.';
-
-  @override
-  String get journeyTravessiaAhead => 'Travessia à frente';
-
-  @override
-  String get journeyYouAreHere => 'Onde você está';
 
   @override
   String get juntosAccept => 'Aceitar';
@@ -3690,20 +3563,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosCloseRoomTitle => 'Encerrar o grupo?';
 
   @override
-  String get juntosClosesToday => 'Fecha hoje';
-
-  @override
-  String get juntosCodeCopied => 'Código copiado';
-
-  @override
-  String get juntosCodeLabel => 'Código';
-
-  @override
-  String juntosCodeTapToCopy(String code) {
-    return 'Código $code. Toque para copiar';
-  }
-
-  @override
   String get juntosCompanionEmptyBody =>
       'Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.';
 
@@ -3740,30 +3599,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosConnecting => 'Conectando…';
 
   @override
-  String get juntosCopy => 'Copiar';
-
-  @override
-  String juntosCopyCodeSemantics(String code) {
-    return 'Copiar código $code';
-  }
-
-  @override
   String get juntosCreateInviteError =>
       'Não foi possível criar o convite. Tente de novo.';
 
   @override
   String get juntosCreateRoom => 'Criar grupo';
-
-  @override
-  String juntosDaysLeft(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Faltam $count dias',
-      one: 'Falta 1 dia',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get juntosDeclineInviteError =>
@@ -3787,9 +3627,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosInviteCompanion => 'Chamar um companheiro';
-
-  @override
-  String get juntosInvitePeople => 'Chamar pessoas';
 
   @override
   String get juntosInviteShort => 'Chamar';
@@ -3882,16 +3719,8 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get juntosMilestones => 'Marcos';
-
-  @override
   String juntosNextMilestone(int count) {
     return 'Próximo marco: $count dias';
-  }
-
-  @override
-  String juntosOfTotal(int total) {
-    return ' de $total';
   }
 
   @override
@@ -3907,9 +3736,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosOrInviteCompanion => 'Ou chamar um companheiro';
-
-  @override
-  String get juntosRoomAllStudied => 'O grupo inteiro estudou nesta semana.';
 
   @override
   String get juntosRoomBenefitList => 'Lista';
@@ -3943,11 +3769,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String juntosRoomCreated(String code) {
-    return 'Grupo criado. Chame alguém da lista, ou mande o código $code.';
-  }
-
-  @override
   String get juntosRoomFull =>
       'Grupo cheio. Para mais gente, abra outro grupo.';
 
@@ -3966,27 +3787,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosRoomGoalTitle => 'Meta de passos do grupo';
 
   @override
-  String get juntosRoomHalfStudied => 'Metade do grupo já estudou.';
-
-  @override
-  String get juntosRoomHintClaimed => 'Baú do grupo coletado nesta semana.';
-
-  @override
-  String get juntosRoomHintHalf => 'O baú abre quando metade do grupo estudar.';
-
-  @override
-  String get juntosRoomHintHalfOrGoal =>
-      'O baú abre com metade do grupo ou a meta.';
-
-  @override
-  String get juntosRoomHintInvite =>
-      'Chame quem estuda com você: célula, família, companheiros.';
-
-  @override
-  String get juntosRoomHintStudyToday =>
-      'Estude hoje para abrir o baú do grupo.';
-
-  @override
   String get juntosRoomJoinError =>
       'Não foi possível entrar no grupo. Tente de novo.';
 
@@ -3999,39 +3799,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosRoomJoinedGeneric => 'Você entrou no grupo.';
 
   @override
-  String juntosRoomLeaderLine(String leaderTitle, String leader, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count pessoas',
-      one: '1 pessoa',
-    );
-    return '$leaderTitle: $leader · $_temp0';
-  }
-
-  @override
-  String juntosRoomMissingForHalf(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Faltam $count pessoas para metade do grupo.',
-      one: 'Falta 1 pessoa para metade do grupo.',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get juntosRoomNotStudiedToday => 'Você ainda não estudou hoje.';
-
-  @override
-  String get juntosRoomOnlyYou => 'Só você no grupo por enquanto.';
-
-  @override
   String get juntosRoomOptions => 'Opções do grupo';
-
-  @override
-  String get juntosRoomQrSubtitle =>
-      'Aponte a câmera ou digite o código para entrar';
 
   @override
   String juntosRoomShareText(
@@ -4041,11 +3809,6 @@ class AppLocalizationsPt extends AppLocalizations {
     String storeUrl,
   ) {
     return 'Entra no grupo \"$name\" no Stway.\nToque ou aponte a câmera:\n$url\n\nCódigo: $code\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: $storeUrl';
-  }
-
-  @override
-  String juntosRoomStudiedCount(int done, int total) {
-    return '$done de $total estudaram';
   }
 
   @override
@@ -4086,9 +3849,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosSomeone => 'Alguém';
-
-  @override
-  String get juntosStudiedThisWeek => 'estudaram nesta semana';
 
   @override
   String get juntosStudyToday => 'Estudar hoje';
@@ -4168,23 +3928,12 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String juntosWeekGain(int count) {
-    return '+$count na semana';
-  }
-
-  @override
-  String get juntosWeekHighlight => 'Destaque da semana';
-
-  @override
   String juntosWeekTogetherBonus(int count) {
     return 'A companhia ganhou +$count passos na jornada';
   }
 
   @override
   String get juntosWho => 'Quem?';
-
-  @override
-  String get juntosYouLower => 'você';
 
   @override
   String get languageCaptionDevice => 'Usa o idioma do aparelho.';
@@ -4204,12 +3953,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get languageHint =>
       'Os textos das trilhas e a Bíblia continuam em português por enquanto.';
-
-  @override
-  String get languageSemantics => 'Idioma da interface';
-
-  @override
-  String get languageSemanticsHint => 'Deslize ou toque para escolher o idioma';
 
   @override
   String get languageSheetTitle => 'Em que língua a gente conversa?';
@@ -4326,11 +4069,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String leagueWalkedOn(String date) {
-    return 'Caminhou em $date';
-  }
-
-  @override
   String leagueWalkedSeen(String walk, String seen) {
     return 'Caminhou $walk · visto $seen';
   }
@@ -4348,9 +4086,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lessonAnanHelpLabel => 'Pedir ajuda ao Anan';
 
   @override
-  String get lessonAnanHintCta => 'Quero uma dica';
-
-  @override
   String get lessonAnanStuck => 'Ajuda?';
 
   @override
@@ -4364,16 +4099,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lessonBoss => 'Travessia';
-
-  @override
-  String lessonCombo(int count) {
-    return '×$count';
-  }
-
-  @override
-  String lessonComboMeterSemantics(int count) {
-    return 'Sequência $count';
-  }
 
   @override
   String get lessonDuration => '~3 min';
@@ -4410,32 +4135,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get lessonIntroConsult =>
-      'Você pode consultar o texto durante a cena.';
-
-  @override
-  String lessonIntroPulse(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '~3 min · $count perguntas',
-      one: '~3 min · 1 pergunta',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String lessonIntroQuestions(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count perguntas',
-      one: '1 pergunta',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String lessonLampsLeft(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -4459,9 +4158,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lessonLocked => 'Esta cena ainda está bloqueada.';
-
-  @override
-  String get lessonMicroSubtitle => 'Complete o verso';
 
   @override
   String get lessonPassageTitle => 'Texto da cena';
@@ -4566,9 +4262,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get loginReconnect => 'Tentar reconectar';
-
-  @override
-  String get loginRequired => 'É necessário entrar para usar o Stway.';
 
   @override
   String get loginTermsNotice =>
@@ -4986,28 +4679,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String medalRareLeft(int count, String unit, String title) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Faltam $count $unit para «$title»',
-      one: 'Falta 1 $unit para «$title»',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String medalRareShortLeft(int count, String title) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Faltam $count para «$title»',
-      one: 'Falta 1 para «$title»',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get medalRareVaultSubtitle =>
       'Medalhas excepcionais — só aparecem quando você ganha';
 
@@ -5222,29 +4893,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String medalVaultNextSemantics(String message) {
     return 'Próxima medalha: $message';
   }
-
-  @override
-  String get medalVaultNextTitle => 'Próxima medalha';
-
-  @override
-  String medalVaultRemaining(int count, String unit) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Faltam $count $unit',
-      one: 'Falta 1 $unit',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get medalVaultSeason => 'Estação';
-
-  @override
-  String get medalVaultTabJourney => 'Jornada';
-
-  @override
-  String get medalVaultTabTrails => 'Trilhas';
 
   @override
   String get medalVaultTitle => 'Medalhas';
@@ -6403,10 +6051,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get onboardingHolding => 'Firmando…';
 
   @override
-  String get onboardingIntentBody =>
-      'Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.';
-
-  @override
   String get onboardingIntentHabitCaption => 'todo dia';
 
   @override
@@ -6859,17 +6503,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String paywallTrialThen(int count, String price) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count dias grátis, depois $price.',
-      one: '1 dia grátis, depois $price.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String paywallTrialUntil(String date) {
     return 'Teste grátis até $date. Depois, renova sozinho.';
   }
@@ -7004,21 +6637,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get pilgrimRankListed => 'No ranking';
 
   @override
-  String get pilgrimRankMonthly => 'Ranking do mês';
-
-  @override
-  String pilgrimRankOrdinal(int rank) {
-    return '$rankº';
-  }
-
-  @override
   String get pilgrimRankPodium => 'No pódio';
 
   @override
   String get pilgrimRankRunnerUp => 'Vice-líder';
-
-  @override
-  String get pilgrimRankWeekly => 'Ranking semanal da caravana';
 
   @override
   String get pilgrimSceneFallback => 'Cena';
@@ -7033,9 +6655,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get pilgrimSealsAndTrails => 'Selos e trilhas';
-
-  @override
-  String get pilgrimSeen => 'Visto';
 
   @override
   String get pilgrimStatScenes => 'Cenas';
@@ -7056,9 +6675,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String pilgrimTrailsInProgress(int count) {
     return '$count em curso';
   }
-
-  @override
-  String get pilgrimWalked => 'Caminhou';
 
   @override
   String get pilgrimYourTrail => 'Sua trilha';
@@ -7594,9 +7210,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get profileAccuracyHeader => 'Seu acerto';
-
-  @override
   String profileAccuracyLine(int percent, int correct, int total) {
     return '$percent% · $correct de $total';
   }
@@ -7825,15 +7438,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get profileThisWeek => 'Esta semana';
 
   @override
-  String get profileThisWeekLower => 'esta semana';
-
-  @override
   String profileThisWeekSemantics(int count) {
     return 'Esta semana: $count de 7 dias caminhados';
   }
-
-  @override
-  String get profileThreeMonthsAgo => 'há 3 meses';
 
   @override
   String get profileTitle => 'Perfil';
@@ -7884,12 +7491,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get profileYourJourney => 'Sua jornada';
-
-  @override
-  String get profileYourNumbers => 'Seus números';
-
-  @override
-  String get profileYourStreak => 'Sua sequência';
 
   @override
   String get promiseTrail01Intro =>
@@ -8307,10 +7908,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get realmTeologia => 'Teologia';
 
   @override
-  String get realmTeologiaSoonBody =>
-      'Hermenêutica, línguas originais e dogmática.';
-
-  @override
   String get realmVidaCrista => 'Vida Cristã';
 
   @override
@@ -8318,16 +7915,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get recognitionAlready => 'Você já reconheceu';
-
-  @override
-  String recognitionAndMore(String a, String b, int count) {
-    return '$a, $b e mais $count';
-  }
-
-  @override
-  String recognitionAndTwo(String a, String b) {
-    return '$a e $b';
-  }
 
   @override
   String recognitionCardHearts(int count) {
@@ -8344,10 +7931,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String recognitionDaysAgo(int count) {
     return 'Há $count dias';
   }
-
-  @override
-  String get recognitionEmptyCard =>
-      'Quando alguém da caravana tocar no coração, aparece aqui.';
 
   @override
   String get recognitionEmptySheet =>
@@ -8424,55 +8007,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get recognitionRemoved => 'Reconhecimento retirado';
 
   @override
-  String recognitionSawJourney(int count, String who) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$who viram sua jornada',
-      one: '$who viu sua jornada',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String recognitionSawYou(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'reconheceu você $count vezes',
-      one: 'reconheceu você',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get recognitionSceneDone => 'Cena reconhecida';
 
   @override
   String recognitionSceneOf(String date) {
     return 'Cena de $date';
-  }
-
-  @override
-  String recognitionSemanticsWho(String subtitle) {
-    return 'Quem reconheceu. $subtitle';
-  }
-
-  @override
-  String recognitionSummaryCounts(int recog, int people) {
-    String _temp0 = intl.Intl.pluralLogic(
-      recog,
-      locale: localeName,
-      other: '$recog reconhecimentos',
-      one: '1 reconhecimento',
-    );
-    String _temp1 = intl.Intl.pluralLogic(
-      people,
-      locale: localeName,
-      other: '$people pessoas',
-      one: '1 pessoa',
-    );
-    return '$_temp0 de $_temp1';
   }
 
   @override
@@ -8794,9 +8333,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get seasonEnded => 'Estação encerrada';
-
-  @override
-  String get seasonNotTodayYet => 'Ainda não é hoje';
 
   @override
   String seasonOpensIn(int days) {
@@ -9432,12 +8968,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get settingsThemeSemantics => 'Tema da tela';
-
-  @override
-  String get settingsThemeSemanticsHint => 'Toque ou deslize para escolher';
-
-  @override
   String get settingsThemeSheetTitle => 'Como você quer ver o app?';
 
   @override
@@ -9791,9 +9321,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tomorrowNextTrailOnMap => 'A próxima trilha já está no mapa.';
 
   @override
-  String get tomorrowSceneWaits => 'A cena espera você.';
-
-  @override
   String get tomorrowSevenDays => 'Sete dias. O hábito pegou.';
 
   @override
@@ -9906,23 +9433,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get trailMapLocked => 'Bloqueada';
-
-  @override
-  String get trailMapScene => 'Cena';
-
-  @override
   String trailMapSceneLockedBody(String scene) {
     return 'Termine “$scene” para abrir esta cena. Elas vão em ordem: cada uma prepara a próxima.';
   }
-
-  @override
-  String trailMapSeal(String name) {
-    return 'Selo $name';
-  }
-
-  @override
-  String get trailsAreasHeading => 'As áreas';
 
   @override
   String get trailsCleared => 'Concluída';
@@ -10020,9 +9533,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get trailsLearnMore => 'Saiba mais';
-
-  @override
   String get trailsLeaveAllAwareness =>
       'Estou ciente de que vou perder o progresso, as medalhas e os selos das trilhas abertas';
 
@@ -10046,9 +9556,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get trailsLeaveBody =>
       'Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.';
-
-  @override
-  String get trailsLeaveConfirm => 'Sair';
 
   @override
   String get trailsLeaveCta => 'Sair da trilha';
@@ -10098,20 +9605,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trailsOpenTitle => 'Suas trilhas abertas';
 
   @override
-  String get trailsPlusHeading => 'Peregrino+';
-
-  @override
-  String trailsRealmOpenCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count abertas',
-      one: '1 aberta',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String trailsRealmTrailCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -10156,23 +9649,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get trailsSectionFormation => 'Formação';
-
-  @override
-  String get trailsSectionFormationBody =>
-      'Aprofunde sua fé e viva a Palavra no dia a dia.';
-
-  @override
-  String get trailsSectionScriptures => 'Escrituras';
-
-  @override
-  String get trailsSectionScripturesBody =>
-      'Conheça a história, o plano e as promessas de Deus.';
-
-  @override
-  String get trailsSeeAll => 'Ver todas';
-
-  @override
   String get trailsShelfBible => 'Bíblia';
 
   @override
@@ -10181,11 +9657,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String trailsStage(String roman) {
     return 'Etapa $roman';
-  }
-
-  @override
-  String trailsStreakAtRisk(String countdown) {
-    return 'Sequência cai em $countdown';
   }
 
   @override
@@ -10630,9 +10101,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String widgetTomorrowTitle(String title) {
     return 'Amanhã: $title';
   }
-
-  @override
-  String get widgetTrailWaitsTomorrow => 'A trilha espera amanhã';
 
   @override
   String get widgetWeekdayInitials => 'S,T,Q,Q,S,S,D';

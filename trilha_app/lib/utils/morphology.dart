@@ -14,8 +14,9 @@ String expandMorphology(String? code) {
     final hebrewCompound = raw.startsWith('H') || raw.startsWith('A');
     return segs
         .map((p) {
-          if (p.startsWith('H') || p.startsWith('A'))
+          if (p.startsWith('H') || p.startsWith('A')) {
             return expandMorphology(p);
+          }
           if (hebrewCompound) return _hebrew(p);
           return expandMorphology(p);
         })

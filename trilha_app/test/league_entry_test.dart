@@ -49,11 +49,7 @@ void main() {
 
     test('lastOnlineLabel shows hoje when seen today', () {
       final today = DateTime.now().toIso8601String().substring(0, 10);
-      final entry = LeagueEntry(
-        name: 'João',
-        steps: 100,
-        lastSeenDate: today,
-      );
+      final entry = LeagueEntry(name: 'João', steps: 100, lastSeenDate: today);
       expect(entry.lastOnlineLabel, 'Visto hoje');
     });
   });

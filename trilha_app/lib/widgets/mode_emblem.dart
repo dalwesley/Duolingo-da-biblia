@@ -7,7 +7,6 @@ import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
-import 'ui_primitives.dart';
 
 /// Emblema de um modo cognitivo — semente, caminho ou profundezas.
 ///
@@ -291,39 +290,6 @@ class _LabeledMode extends StatelessWidget {
             ),
           ],
         ],
-      ),
-    );
-  }
-}
-
-/// Pílula de modo para cartões da jornada — emblema + "Modo Observação".
-class ModeStatusChip extends StatelessWidget {
-  final TrailDifficulty difficulty;
-  final bool cleared;
-  final bool compact;
-
-  const ModeStatusChip({
-    super.key,
-    required this.difficulty,
-    this.cleared = false,
-    this.compact = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final color = DifficultyVisuals.accentFor(difficulty);
-    final onSky = Appearance.of(context).ink(color);
-    final label = cleared
-        ? context.l10n.modeCleared(difficulty.labelPt)
-        : context.l10n.modeNamed(difficulty.labelPt);
-
-    return Semantics(
-      label: label,
-      child: SoftBadge(
-        text: label,
-        glyph: DifficultyVisuals.glyphFor(difficulty),
-        accent: onSky,
-        textColor: onSky,
       ),
     );
   }

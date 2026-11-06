@@ -22,7 +22,8 @@ class MemoryVerseCatalog {
     MemoryVerse(
       id: 'sl119_105',
       reference: 'Salmos 119:105',
-      text: 'Lâmpada para os meus pés é a tua palavra e luz para o meu caminho.',
+      text:
+          'Lâmpada para os meus pés é a tua palavra e luz para o meu caminho.',
       abbrev: 'sl',
       chapter: 119,
       verse: 105,
@@ -47,7 +48,8 @@ class MemoryVerseCatalog {
     MemoryVerse(
       id: 'pv3_5',
       reference: 'Provérbios 3:5',
-      text: 'Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento.',
+      text:
+          'Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento.',
       abbrev: 'pv',
       chapter: 3,
       verse: 5,
@@ -55,7 +57,8 @@ class MemoryVerseCatalog {
     MemoryVerse(
       id: 'mt28_19',
       reference: 'Mateus 28:19',
-      text: 'Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo.',
+      text:
+          'Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo.',
       abbrev: 'mt',
       chapter: 28,
       verse: 19,
@@ -72,7 +75,8 @@ class MemoryVerseCatalog {
     MemoryVerse(
       id: 'is41_10',
       reference: 'Isaías 41:10',
-      text: 'Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus.',
+      text:
+          'Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus.',
       abbrev: 'is',
       chapter: 41,
       verse: 10,
@@ -88,7 +92,8 @@ class MemoryVerseCatalog {
     MemoryVerse(
       id: 'jo1_1',
       reference: 'João 1:1',
-      text: 'No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.',
+      text:
+          'No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.',
       abbrev: 'jo',
       chapter: 1,
       verse: 1,

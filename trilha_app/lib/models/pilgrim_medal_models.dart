@@ -431,31 +431,6 @@ class PilgrimTrackProximity {
   };
 }
 
-/// Compat: proximidade legada para raras (não usada).
-class PilgrimMedalProximity {
-  final PilgrimMedalDef def;
-  final String vaultTitle;
-  final int current;
-  final int target;
-  final int remaining;
-  final String unitLabel;
-
-  const PilgrimMedalProximity({
-    required this.def,
-    required this.vaultTitle,
-    required this.current,
-    required this.target,
-    required this.remaining,
-    required this.unitLabel,
-  });
-
-  String get message =>
-      L10n.current.medalRareLeft(remaining, unitLabel, def.title);
-
-  String get shortMessage =>
-      L10n.current.medalRareShortLeft(remaining, def.title);
-}
-
 enum MedalCtaKind { none, bible, memory, trail, share, mission }
 
 String tierLabel(PilgrimMedalTier tier) {

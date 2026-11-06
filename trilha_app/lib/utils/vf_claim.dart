@@ -1,4 +1,5 @@
 /// V/F: pergunta + recorte → afirmação que se pode julgar.
+library;
 
 final _askLead = RegExp(
   r'^(à imagem de quem|para onde|aonde|por que|porque|por quê|o que|em qual|em que|de quem|a quem|com quem|para quem|para que|de que|quem|quais|qual|que|como|onde|quando|quantos|quantas)\b',

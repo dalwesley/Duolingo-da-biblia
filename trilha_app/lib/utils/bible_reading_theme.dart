@@ -78,9 +78,6 @@ class BibleReadingStyle {
   TextStyle get metaStyle =>
       AppTypography.body(size: 12, weight: FontWeight.w600, color: inkMuted);
 
-  TextStyle get titleStyle =>
-      AppTypography.verse(size: 28, weight: FontWeight.w700, color: ink);
-
   static BibleReadingStyle resolve(
     AppearanceStyle appearance, {
     bool? readingNight,

@@ -105,9 +105,6 @@ class Mission {
 
   bool get isBoss => type == 'boss';
 
-  bool get hasBibleHook =>
-      (hookVerse ?? '').trim().isNotEmpty || (hookNote ?? '').trim().isNotEmpty;
-
   /// Título localizado (overlay EN/ES) com fallback ao campo PT do currículo.
   String get localizedTitle =>
       ContentOverlay.instance.missionField(slug, 'title') ?? title;

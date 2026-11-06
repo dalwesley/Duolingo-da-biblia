@@ -83,12 +83,6 @@ class SetPieceMemory {
     return true;
   }
 
-  /// Esquece um momento — útil pra retestar o palco.
-  static Future<void> forget(String id) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove('$_prefix$id');
-  }
-
   /// Estação nova desde a última abertura? A primeira abertura só anota
   /// (quem acabou de instalar não vê "nova estação").
   static Future<bool> seasonTurned(String season) async {

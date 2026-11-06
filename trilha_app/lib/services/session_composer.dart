@@ -17,9 +17,6 @@ class SessionEntrance {
   final String? note;
 
   const SessionEntrance({this.ref, this.verse, this.note});
-
-  bool get hasVerse => (verse ?? '').trim().isNotEmpty;
-  bool get hasNote => (note ?? '').trim().isNotEmpty;
 }
 
 /// Resultado do composer — sempre uma sessão única ([docs/SESSAO_TREINO.md]).

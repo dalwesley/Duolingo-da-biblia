@@ -807,10 +807,7 @@ class _PortalProgress extends StatelessWidget {
   final ModeStatus status;
   final Color accent;
 
-  const _PortalProgress({
-    required this.status,
-    required this.accent,
-  });
+  const _PortalProgress({required this.status, required this.accent});
 
   @override
   Widget build(BuildContext context) {
@@ -996,11 +993,7 @@ class _ModeBannerState extends State<ModeBanner> {
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                 child: Row(
                   children: [
-                    _Halo(
-                      difficulty: d,
-                      accent: accent,
-                      size: 40,
-                    ),
+                    _Halo(difficulty: d, accent: accent, size: 40),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Column(
@@ -1010,8 +1003,7 @@ class _ModeBannerState extends State<ModeBanner> {
                           Text(
                             context.l10n.modeOrdinalBadge(
                               d.ordinalPt,
-                              current.badge ??
-                                  context.l10n.modeBadgeCurrent,
+                              current.badge ?? context.l10n.modeBadgeCurrent,
                             ),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,

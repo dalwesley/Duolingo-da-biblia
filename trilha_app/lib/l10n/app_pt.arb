@@ -106,7 +106,6 @@
   "bibleHeroContinueReading": "Continuar leitura",
   "bibleHeroFreshBlurb": "Jesus, a Palavra que se fez carne — um bom começo.",
   "bibleHeroStartHere": "Continuar leitura",
-  "bibleHeroStartReading": "Começar a ler",
   "bibleIntroAudience": "Para quem",
   "bibleIntroAuthorByTradition": "{author} · tradição",
   "@bibleIntroAuthorByTradition": {
@@ -149,7 +148,6 @@
   "biblePaperSepia": "Sépia",
   "biblePickerBackToBooks": "Voltar aos livros",
   "biblePickerTitle": "Ir para",
-  "bibleReadChapter": "Ler o capítulo",
   "bibleReadOf": "{read} de {total}",
   "@bibleReadOf": {
     "placeholders": {
@@ -214,16 +212,6 @@
   "bibleReaderTextSize": "Tamanho do texto",
   "bibleReaderUpNext": "A seguir",
   "bibleReaderVersion": "Versão",
-  "bibleSavedSeeAll": "Ver todos · {count}",
-  "@bibleSavedSeeAll": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "bibleSavedSeeLess": "Ver menos",
-  "bibleSavedTitle": "Guardados",
   "bibleSearchBookHit": "Livro",
   "bibleSearchButtonHint": "Buscar livro, versículo ou palavra…",
   "bibleSearchButtonSemantics": "Buscar livro ou versículo",
@@ -383,10 +371,6 @@
   "categoryTemasBiblicosTitle": "Temas bíblicos",
   "celebrationBackHome": "Voltar ao início",
   "celebrationBackToMap": "Voltar ao mapa",
-  "celebrationCleanScene": "Cena limpa",
-  "@celebrationCleanScene": {
-    "description": "100% de acertos e nenhuma lâmpada apagada"
-  },
   "celebrationCommitmentBeyond": "Além do compromisso de {goal} dias.",
   "@celebrationCommitmentBeyond": {
     "placeholders": {
@@ -535,7 +519,6 @@
   "chestOpen": "Abrir o baú",
   "chestOpenShort": "Abrir",
   "chestOpened": "Aberto",
-  "chestOpening": "Abrindo…",
   "chestPassoMessage": "Mais um dia caminhando — é isso que forma um peregrino.",
   "chestPassoTitle": "Passo firme",
   "chestRarityCommon": "Comum",
@@ -623,14 +606,6 @@
   "commonShare": "Compartilhar",
   "commonSkip": "Pular",
   "commonStart": "Começar",
-  "commonSteps": "{count, plural, =1{1 passo} other{{count} passos}}",
-  "@commonSteps": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "commonToday": "Hoje",
   "commonTrail": "Trilha",
   "commonTryAgain": "Tentar de novo",
@@ -886,7 +861,6 @@
       }
     }
   },
-  "cornerClosedChapter": "Encerrados",
   "cornerClosesToday": "Fecha hoje",
   "cornerCtaInvite": "Chamar para o desafio",
   "cornerDaysLeft": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
@@ -921,25 +895,6 @@
   },
   "cornerIncomingFromAnon": "Alguém te chamou para esta cena.",
   "cornerIncomingTitle": "Convite de desafio",
-  "cornerInviteBody": "Você e {name} fazem essa cena até domingo.\n+{count} passos para cada um que chegar.",
-  "@cornerInviteBody": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      },
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "cornerInviteBodyAnon": "A mesma cena até domingo.\n+{count} passos para cada um que chegar.",
-  "@cornerInviteBodyAnon": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "cornerInviteTitle": "Desafio: {mission}",
   "@cornerInviteTitle": {
     "placeholders": {
@@ -1354,8 +1309,6 @@
   "dustStreakWaits": "A sequência espera",
   "dustTrailWaits": "A trilha espera",
   "dustTwoDays": "Dois dias",
-  "dustUiDetail2": "Continue a jornada · uma cena basta",
-  "dustUiDetail3": "A sequência espera · caminhe hoje",
   "dustUiFreeze1": "Sequência em risco · gelo ainda cobre 1 dia",
   "dustUiFreeze2": "Ainda dá tempo · gelo a postos",
   "dustUiFreeze3": "Caminhe hoje · gelo cobre 1 falta",
@@ -1515,7 +1468,6 @@
   "exerciseHint": "Dica",
   "exerciseHintShowHint": "Toque para ver a dica",
   "exerciseHintShowQuestion": "Toque para ver a pergunta",
-  "exerciseHintUsed": "Dica usada",
   "exerciseLabelBridge": "Ponte",
   "exerciseLabelClaim": "Afirmação",
   "exerciseLabelPairs": "Pares",
@@ -1583,14 +1535,6 @@
   "exerciseZoomSmaller": "Diminuir letra",
   "exerciseZoomStage": "Ampliar texto",
   "explainAnswerLabel": "Resposta certa",
-  "explainCorrectAnswer": "Resposta certa: {text}",
-  "@explainCorrectAnswer": {
-    "placeholders": {
-      "text": {
-        "type": "String"
-      }
-    }
-  },
   "explainErrorsEmptyBody": "Quando você errar uma pergunta, ela aparece aqui com a resposta certa e o porquê.",
   "explainErrorsEmptyTitle": "Nenhum erro guardado",
   "explainErrorsEntry": "{count, plural, =1{1 erro guardado, com a explicação} other{{count} erros guardados, com as explicações}}",
@@ -1664,18 +1608,7 @@
   "groupCallShareCta": "Compartilhar · QR code e código",
   "groupCallSubtitle": "O convite aparece no app. Ou compartilhe o QR code e o código.",
   "groupCallTitle": "Chamar pessoas",
-  "groupCaptionNotYet": "ainda não",
-  "groupCaptionToday": "hoje",
   "groupCreateCta": "Criar grupo",
-  "groupDayUnit": "{count, plural, =1{dia } other{dias }}",
-  "@groupDayUnit": {
-    "description": "Unit under a day count. Trailing space avoids a merge-script false positive; code trims it.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "groupDaysAway": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
   "@groupDaysAway": {
     "placeholders": {
@@ -1727,17 +1660,8 @@
     }
   },
   "groupMemberDidStudy": "Fez o estudo da semana",
-  "groupMembersTitle": "Integrantes",
   "groupMenuClearStudy": "Tirar estudo da semana",
   "groupMenuClose": "Encerrar o grupo",
-  "groupMenuCopyCode": "Copiar código {code}",
-  "@groupMenuCopyCode": {
-    "placeholders": {
-      "code": {
-        "type": "String"
-      }
-    }
-  },
   "groupMenuEdit": "Editar nome e tipo",
   "groupMenuGoal": "{count, plural, =1{Meta da semana · 1 passo} other{Meta da semana · {count} passos}}",
   "@groupMenuGoal": {
@@ -1831,7 +1755,6 @@
       }
     }
   },
-  "groupStudyNobodyYet": "Ninguém fez ainda. Seja o primeiro.",
   "groupStudySwap": "Trocar",
   "groupWeekStudy": "Estudo da semana",
   "groupsSoonBody": "Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.",
@@ -1987,6 +1910,9 @@
     }
   },
   "homeGoalMet": "Meta do dia cumprida",
+  "homeGreetingAfternoon": "Boa tarde",
+  "homeGreetingEvening": "Boa noite",
+  "homeGreetingMorning": "Bom dia",
   "homeHeroEcho": "Eco de ontem",
   "homeHeroExtraSteps": "+{count} passos · extra de hoje",
   "@homeHeroExtraSteps": {
@@ -2053,14 +1979,6 @@
     }
   },
   "homeQuestsExtraCaption": "Passos extras",
-  "homeReviewCaption": "{count, plural, =1{1 para reforçar} other{{count} para reforçar}}",
-  "@homeReviewCaption": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "homeReviewMistakesCaption": "{count, plural, =1{1 pergunta para refazer} other{{count} perguntas para refazer}}",
   "@homeReviewMistakesCaption": {
     "placeholders": {
@@ -2075,14 +1993,6 @@
   "homeStatFreeze": "gelo",
   "homeStatFreezeUsed": "gelo usado",
   "homeStatGoal": "meta",
-  "homeStepsSemantics": "{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}",
-  "@homeStepsSemantics": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "homeSupportAgainBody": "Seu selo continua. Um novo apoio ajuda a manter o Stway grátis.",
   "homeSupportAgainCta": "Apoiar de novo",
   "homeSupportAgainTitle": "Volte a apoiar",
@@ -2109,7 +2019,6 @@
     }
   },
   "homeWordWord": "Palavra",
-  "intentBadgeCurrent": "Atual",
   "intentBadgeHere": "Você está aqui",
   "intentBannerHint": "Toque para trocar de motivo",
   "intentBannerSemantics": "Seu motivo: {name}. {tagline}.",
@@ -2247,21 +2156,14 @@
   "inviteShareCta": "Compartilhar convite",
   "inviteShareSubject": "Convite Stway — caminhem juntos",
   "inviteSheetSubtitleCompanion": "Toque no link, mostre o QR ou envie o card",
-  "inviteSheetSubtitleRoom": "Mostre o QR ou envie o código",
   "inviteSomeone": "Alguém",
   "inviteTrailGiftLine": "Quem aceitar escolhe uma trilha do Peregrino+ e caminha nela inteira, sem pagar. É o seu passe deste mês.",
   "inviteTrailGiftShareLine": "🎁 Aceitando, você ganha uma trilha do Peregrino+ por minha conta. Você escolhe qual.",
   "inviteTrailGiftTitle": "Uma trilha de presente",
-  "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
-  "journalTitle": "Anotações de estudo",
   "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
   "journeyBeyondHorizon": "Ainda além do horizonte",
   "@journeyBeyondHorizon": {
     "description": "Locked trail on the area path"
-  },
-  "journeyInn": "Estalagem",
-  "@journeyInn": {
-    "description": "Parada entre fases no mapa da área"
   },
   "journeyLockedFinish": "Termine {trail} para abrir",
   "@journeyLockedFinish": {
@@ -2299,10 +2201,6 @@
       }
     }
   },
-  "journeyPlay": "Entrar",
-  "@journeyPlay": {
-    "description": "CTA da estação atual no mapa"
-  },
   "journeyPlusCtaDetail": "com o Peregrino+",
   "@journeyPlusCtaDetail": {
     "description": "Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue."
@@ -2316,11 +2214,6 @@
     }
   },
   "journeySoonHint": "Em breve · esta trilha ainda está sendo escrita.",
-  "journeyTravessiaAhead": "Travessia à frente",
-  "@journeyTravessiaAhead": {
-    "description": "Próxima cena da trilha é boss"
-  },
-  "journeyYouAreHere": "Onde você está",
   "juntosAccept": "Aceitar",
   "juntosBeforeLeaveBody": "Escolha quem vai conduzir o grupo depois de você.",
   "juntosBeforeLeaveTitle": "Antes de sair",
@@ -2385,17 +2278,6 @@
   "juntosCloseConfirm": "Encerrar",
   "juntosCloseRoomBody": "O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.",
   "juntosCloseRoomTitle": "Encerrar o grupo?",
-  "juntosClosesToday": "Fecha hoje",
-  "juntosCodeCopied": "Código copiado",
-  "juntosCodeLabel": "Código",
-  "juntosCodeTapToCopy": "Código {code}. Toque para copiar",
-  "@juntosCodeTapToCopy": {
-    "placeholders": {
-      "code": {
-        "type": "String"
-      }
-    }
-  },
   "juntosCompanionEmptyBody": "Chame alguém para caminhar com você. No dia em que os dois estudam, o fio acende e a sequência cresce.",
   "juntosCompanionEmptyTitle": "Nenhuma companhia ainda",
   "juntosCompanionExplainerBody": "Uma companhia de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.",
@@ -2407,25 +2289,8 @@
   "juntosCompanionsOfflineBody": "Entre com Google para caminhar com alguém de verdade.",
   "juntosCompanionsOfflineTitle": "Companhia precisa da nuvem",
   "juntosConnecting": "Conectando…",
-  "juntosCopy": "Copiar",
-  "juntosCopyCodeSemantics": "Copiar código {code}",
-  "@juntosCopyCodeSemantics": {
-    "placeholders": {
-      "code": {
-        "type": "String"
-      }
-    }
-  },
   "juntosCreateInviteError": "Não foi possível criar o convite. Tente de novo.",
   "juntosCreateRoom": "Criar grupo",
-  "juntosDaysLeft": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
-  "@juntosDaysLeft": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "juntosDeclineInviteError": "Não foi possível recusar o convite. Tente de novo.",
   "juntosEditRoomTitle": "Editar grupo",
   "juntosFirstMilestone": "Primeiro marco: {count} dias juntos",
@@ -2446,7 +2311,6 @@
     }
   },
   "juntosInviteCompanion": "Chamar um companheiro",
-  "juntosInvitePeople": "Chamar pessoas",
   "juntosInviteShort": "Chamar",
   "juntosJoin": "Entrar",
   "juntosJoinError": "Não foi possível entrar. Tente de novo.",
@@ -2516,20 +2380,10 @@
       }
     }
   },
-  "juntosMilestones": "Marcos",
   "juntosNextMilestone": "Próximo marco: {count} dias",
   "@juntosNextMilestone": {
     "placeholders": {
       "count": {
-        "type": "int"
-      }
-    }
-  },
-  "juntosOfTotal": " de {total}",
-  "@juntosOfTotal": {
-    "description": "Follows a big number: '3 of 5'. Keep the leading space.",
-    "placeholders": {
-      "total": {
         "type": "int"
       }
     }
@@ -2545,7 +2399,6 @@
   "juntosOpenInvite": "Convite aberto",
   "juntosOpenInviteMissing": "Falta uma pessoa do outro lado",
   "juntosOrInviteCompanion": "Ou chamar um companheiro",
-  "juntosRoomAllStudied": "O grupo inteiro estudou nesta semana.",
   "juntosRoomBenefitList": "Lista",
   "juntosRoomBenefitListDetail": "Quem estudou",
   "juntosRoomBenefitStudy": "Estudo",
@@ -2569,14 +2422,6 @@
       }
     }
   },
-  "juntosRoomCreated": "Grupo criado. Chame alguém da lista, ou mande o código {code}.",
-  "@juntosRoomCreated": {
-    "placeholders": {
-      "code": {
-        "type": "String"
-      }
-    }
-  },
   "juntosRoomFull": "Grupo cheio. Para mais gente, abra outro grupo.",
   "juntosRoomGoalHint": "Soma da semana. Em branco, tira a meta.",
   "juntosRoomGoalLabel": "Meta do grupo",
@@ -2592,12 +2437,6 @@
     }
   },
   "juntosRoomGoalTitle": "Meta de passos do grupo",
-  "juntosRoomHalfStudied": "Metade do grupo já estudou.",
-  "juntosRoomHintClaimed": "Baú do grupo coletado nesta semana.",
-  "juntosRoomHintHalf": "O baú abre quando metade do grupo estudar.",
-  "juntosRoomHintHalfOrGoal": "O baú abre com metade do grupo ou a meta.",
-  "juntosRoomHintInvite": "Chame quem estuda com você: célula, família, companheiros.",
-  "juntosRoomHintStudyToday": "Estude hoje para abrir o baú do grupo.",
   "juntosRoomJoinError": "Não foi possível entrar no grupo. Tente de novo.",
   "juntosRoomJoined": "Você entrou em {name}.",
   "@juntosRoomJoined": {
@@ -2608,32 +2447,7 @@
     }
   },
   "juntosRoomJoinedGeneric": "Você entrou no grupo.",
-  "juntosRoomLeaderLine": "{leaderTitle}: {leader} · {count, plural, =1{1 pessoa} other{{count} pessoas}}",
-  "@juntosRoomLeaderLine": {
-    "placeholders": {
-      "leaderTitle": {
-        "type": "String"
-      },
-      "leader": {
-        "type": "String"
-      },
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "juntosRoomMissingForHalf": "{count, plural, =1{Falta 1 pessoa para metade do grupo.} other{Faltam {count} pessoas para metade do grupo.}}",
-  "@juntosRoomMissingForHalf": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "juntosRoomNotStudiedToday": "Você ainda não estudou hoje.",
-  "juntosRoomOnlyYou": "Só você no grupo por enquanto.",
   "juntosRoomOptions": "Opções do grupo",
-  "juntosRoomQrSubtitle": "Aponte a câmera ou digite o código para entrar",
   "juntosRoomShareText": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
   "@juntosRoomShareText": {
     "description": "Share text a friend sends; casual friend voice.",
@@ -2652,17 +2466,6 @@
       }
     }
   },
-  "juntosRoomStudiedCount": "{done} de {total} estudaram",
-  "@juntosRoomStudiedCount": {
-    "placeholders": {
-      "done": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
   "juntosRoomStudySet": "Estudo marcado para o grupo",
   "juntosRoomStudySetError": "Não foi possível marcar o estudo. Tente de novo.",
   "juntosRoomWeekLabel": "Semana do grupo",
@@ -2675,7 +2478,6 @@
   "juntosSeenToday": "Visto hoje",
   "juntosShowQrShare": "Compartilhar",
   "juntosSomeone": "Alguém",
-  "juntosStudiedThisWeek": "estudaram nesta semana",
   "juntosStudyToday": "Estudar hoje",
   "juntosStudyingNow": "Estudando agora",
   "juntosSwitchRoomBody": "Você sai do grupo em que está agora.",
@@ -2739,15 +2541,6 @@
       }
     }
   },
-  "juntosWeekGain": "+{count} na semana",
-  "@juntosWeekGain": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "juntosWeekHighlight": "Destaque da semana",
   "juntosWeekTogetherBonus": "A companhia ganhou +{count} passos na jornada",
   "@juntosWeekTogetherBonus": {
     "placeholders": {
@@ -2757,18 +2550,12 @@
     }
   },
   "juntosWho": "Quem?",
-  "juntosYouLower": "você",
-  "@juntosYouLower": {
-    "description": "Used inside a sentence, e.g. 'Leader: you'."
-  },
   "languageCaptionDevice": "Usa o idioma do aparelho.",
   "languageCaptionEn": "Inglês (Estados Unidos).",
   "languageCaptionEs": "Espanhol (Espanha).",
   "languageCaptionPt": "Português do Brasil.",
   "languageDevice": "Do aparelho",
   "languageHint": "Os textos das trilhas e a Bíblia continuam em português por enquanto.",
-  "languageSemantics": "Idioma da interface",
-  "languageSemanticsHint": "Deslize ou toque para escolher o idioma",
   "languageSheetTitle": "Em que língua a gente conversa?",
   "languageShortDevice": "Auto",
   "languageShortEn": "EN",
@@ -2866,14 +2653,6 @@
       }
     }
   },
-  "leagueWalkedOn": "Caminhou em {date}",
-  "@leagueWalkedOn": {
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
   "leagueWalkedSeen": "Caminhou {walk} · visto {seen}",
   "@leagueWalkedSeen": {
     "placeholders": {
@@ -2892,7 +2671,6 @@
   "@lessonAnanHelpLabel": {
     "description": "Leitor de tela: o Anan da pergunta é um botão"
   },
-  "lessonAnanHintCta": "Quero uma dica",
   "lessonAnanStuck": "Ajuda?",
   "@lessonAnanStuck": {
     "description": "Legenda sob o Anan depois de um erro ou de um tempo parado"
@@ -2906,23 +2684,6 @@
   "lessonBoss": "Travessia",
   "@lessonBoss": {
     "description": "Cena de revisão de etapa (boss)"
-  },
-  "lessonCombo": "×{count}",
-  "@lessonCombo": {
-    "description": "Combo de acertos seguidos no HUD da cena",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "lessonComboMeterSemantics": "Sequência {count}",
-  "@lessonComboMeterSemantics": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
   },
   "lessonDuration": "~3 min",
   "@lessonDuration": {
@@ -2952,27 +2713,6 @@
       }
     }
   },
-  "lessonIntroConsult": "Você pode consultar o texto durante a cena.",
-  "@lessonIntroConsult": {
-    "description": "O texto do palco segue disponível nas perguntas"
-  },
-  "lessonIntroPulse": "{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}",
-  "@lessonIntroPulse": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "lessonIntroQuestions": "{count, plural, =1{1 pergunta} other{{count} perguntas}}",
-  "@lessonIntroQuestions": {
-    "description": "Contagem de perguntas na entrada da cena",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "lessonLampsLeft": "{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}",
   "@lessonLampsLeft": {
     "description": "Lâmpada = vida dentro da cena",
@@ -2986,7 +2726,6 @@
   "lessonListenStop": "Parar",
   "lessonLoadError": "Não foi possível carregar as perguntas desta cena. Tente de novo.",
   "lessonLocked": "Esta cena ainda está bloqueada.",
-  "lessonMicroSubtitle": "Complete o verso",
   "lessonPassageTitle": "Texto da cena",
   "lessonPlusGrantedBy": "{name} liberou esta cena do Peregrino+ para você.",
   "@lessonPlusGrantedBy": {
@@ -3056,7 +2795,6 @@
   "loginHydrateError": "Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.",
   "loginLoadingBody": "Carregando seus passos, sua sequência e suas cenas…",
   "loginReconnect": "Tentar reconectar",
-  "loginRequired": "É necessário entrar para usar o Stway.",
   "loginTermsNotice": "Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.",
   "loginTitle": "Entre para continuar",
   "loginWithApple": "Continuar com Apple",
@@ -3340,31 +3078,6 @@
       }
     }
   },
-  "medalRareLeft": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltam {count} {unit} para «{title}»}}",
-  "@medalRareLeft": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "unit": {
-        "type": "String"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
-  "medalRareShortLeft": "{count, plural, =1{Falta 1 para «{title}»} other{Faltam {count} para «{title}»}}",
-  "@medalRareShortLeft": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "title": {
-        "type": "String"
-      }
-    }
-  },
   "medalRareVaultSubtitle": "Medalhas excepcionais — só aparecem quando você ganha",
   "medalRareVaultTitle": "Raras",
   "medalReflectionDeepHint": "Registrou 40 reflexões no diário de cenas",
@@ -3489,21 +3202,6 @@
       }
     }
   },
-  "medalVaultNextTitle": "Próxima medalha",
-  "medalVaultRemaining": "{count, plural, =1{Falta 1 {unit}} other{Faltam {count} {unit}}}",
-  "@medalVaultRemaining": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "unit": {
-        "type": "String"
-      }
-    }
-  },
-  "medalVaultSeason": "Estação",
-  "medalVaultTabJourney": "Jornada",
-  "medalVaultTabTrails": "Trilhas",
   "medalVaultTitle": "Medalhas",
   "medalWalkingInLightHint": "Manteve 85%+ de acertos (mín. 50 questões)",
   "medalWalkingInLightTitle": "Andando na luz",
@@ -4289,7 +3987,6 @@
   "onboardingHabitBody": "Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.",
   "onboardingHoldToCommit": "Segure para firmar",
   "onboardingHolding": "Firmando…",
-  "onboardingIntentBody": "Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.",
   "onboardingIntentHabitCaption": "todo dia",
   "onboardingIntentHabitPromise": "a sequência\ncomeça hoje.",
   "onboardingIntentHabitTitle": "Criar uma sequência",
@@ -4598,17 +4295,6 @@
       }
     }
   },
-  "paywallTrialThen": "{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}",
-  "@paywallTrialThen": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "price": {
-        "type": "String"
-      }
-    }
-  },
   "paywallTrialUntil": "Teste grátis até {date}. Depois, renova sozinho.",
   "@paywallTrialUntil": {
     "placeholders": {
@@ -4709,18 +4395,8 @@
   },
   "pilgrimRankLeader": "Líder do ranking",
   "pilgrimRankListed": "No ranking",
-  "pilgrimRankMonthly": "Ranking do mês",
-  "pilgrimRankOrdinal": "{rank}º",
-  "@pilgrimRankOrdinal": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      }
-    }
-  },
   "pilgrimRankPodium": "No pódio",
   "pilgrimRankRunnerUp": "Vice-líder",
-  "pilgrimRankWeekly": "Ranking semanal da caravana",
   "pilgrimSceneFallback": "Cena",
   "pilgrimScenesOf": "{done} de {total} cenas",
   "@pilgrimScenesOf": {
@@ -4735,7 +4411,6 @@
   },
   "pilgrimScriptures": "Escrituras",
   "pilgrimSealsAndTrails": "Selos e trilhas",
-  "pilgrimSeen": "Visto",
   "pilgrimStatScenes": "Cenas",
   "pilgrimStatSteps": "Passos",
   "pilgrimStreak": "Sequência",
@@ -4749,7 +4424,6 @@
       }
     }
   },
-  "pilgrimWalked": "Caminhou",
   "pilgrimYourTrail": "Sua trilha",
   "pilgrimYourTrails": "Suas trilhas",
   "pioneerBadge": "Pioneiro",
@@ -5150,7 +4824,6 @@
       }
     }
   },
-  "profileAccuracyHeader": "Seu acerto",
   "profileAccuracyLine": "{percent}% · {correct} de {total}",
   "@profileAccuracyLine": {
     "placeholders": {
@@ -5360,7 +5033,6 @@
   "profileStudyErrorsNone": "Erros explicados",
   "profileStudyTitle": "Meu estudo",
   "profileThisWeek": "Esta semana",
-  "profileThisWeekLower": "esta semana",
   "profileThisWeekSemantics": "Esta semana: {count} de 7 dias caminhados",
   "@profileThisWeekSemantics": {
     "placeholders": {
@@ -5369,7 +5041,6 @@
       }
     }
   },
-  "profileThreeMonthsAgo": "há 3 meses",
   "profileTitle": "Perfil",
   "profileTodayLower": "hoje",
   "profileWeekHistory": "Histórico das semanas",
@@ -5409,8 +5080,6 @@
     }
   },
   "profileYourJourney": "Sua jornada",
-  "profileYourNumbers": "Seus números",
-  "profileYourStreak": "Sua sequência",
   "promiseTrail01Intro": "Tudo começa com uma promessa: terra, descendência e bênção para todas as famílias da terra. Siga esse fio de Abraão até Cristo.",
   "promiseTrail01Note": "Deus promete a um homem sem filhos que, por meio dele, todas as famílias da terra serão abençoadas.",
   "promiseTrail01Title": "Em ti, todas as famílias",
@@ -5569,35 +5238,9 @@
   "realmTaglineTeologia": "Hermenêutica, línguas e a doutrina da fé",
   "realmTaglineVidaCrista": "Discipulado, oração e a história da fé",
   "realmTeologia": "Teologia",
-  "realmTeologiaSoonBody": "Hermenêutica, línguas originais e dogmática.",
   "realmVidaCrista": "Vida Cristã",
   "recognitionAMedal": "Uma medalha",
   "recognitionAlready": "Você já reconheceu",
-  "recognitionAndMore": "{a}, {b} e mais {count}",
-  "@recognitionAndMore": {
-    "placeholders": {
-      "a": {
-        "type": "String"
-      },
-      "b": {
-        "type": "String"
-      },
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "recognitionAndTwo": "{a} e {b}",
-  "@recognitionAndTwo": {
-    "placeholders": {
-      "a": {
-        "type": "String"
-      },
-      "b": {
-        "type": "String"
-      }
-    }
-  },
   "recognitionCardHearts": "{count, plural, =1{1 coração na sua jornada} other{{count} corações na sua jornada}}",
   "@recognitionCardHearts": {
     "placeholders": {
@@ -5614,7 +5257,6 @@
       }
     }
   },
-  "recognitionEmptyCard": "Quando alguém da caravana tocar no coração, aparece aqui.",
   "recognitionEmptySheet": "Ainda ninguém reconheceu sua jornada.\nNa caravana, outros podem tocar no coração.",
   "recognitionFailedGive": "Não foi possível reconhecer",
   "recognitionFailedWithdraw": "Não foi possível retirar",
@@ -5672,50 +5314,12 @@
   "recognitionMedalUnderstanding": "Compreensão",
   "recognitionRecognizeScene": "Reconhecer a cena",
   "recognitionRemoved": "Reconhecimento retirado",
-  "recognitionSawJourney": "{count, plural, =1{{who} viu sua jornada} other{{who} viram sua jornada}}",
-  "@recognitionSawJourney": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "who": {
-        "type": "String"
-      }
-    }
-  },
-  "recognitionSawYou": "{count, plural, =1{reconheceu você} other{reconheceu você {count} vezes}}",
-  "@recognitionSawYou": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "recognitionSceneDone": "Cena reconhecida",
   "recognitionSceneOf": "Cena de {date}",
   "@recognitionSceneOf": {
     "placeholders": {
       "date": {
         "type": "String"
-      }
-    }
-  },
-  "recognitionSemanticsWho": "Quem reconheceu. {subtitle}",
-  "@recognitionSemanticsWho": {
-    "placeholders": {
-      "subtitle": {
-        "type": "String"
-      }
-    }
-  },
-  "recognitionSummaryCounts": "{recog, plural, =1{1 reconhecimento} other{{recog} reconhecimentos}} de {people, plural, =1{1 pessoa} other{{people} pessoas}}",
-  "@recognitionSummaryCounts": {
-    "placeholders": {
-      "recog": {
-        "type": "int"
-      },
-      "people": {
-        "type": "int"
       }
     }
   },
@@ -5948,7 +5552,6 @@
     }
   },
   "seasonEnded": "Estação encerrada",
-  "seasonNotTodayYet": "Ainda não é hoje",
   "seasonOpensIn": "{days, plural, =0{Abre hoje} =1{Abre amanhã} other{Abre em {days} dias}}",
   "@seasonOpensIn": {
     "placeholders": {
@@ -6276,8 +5879,6 @@
       }
     }
   },
-  "settingsThemeSemantics": "Tema da tela",
-  "settingsThemeSemanticsHint": "Toque ou deslize para escolher",
   "settingsThemeSheetTitle": "Como você quer ver o app?",
   "settingsTitle": "Ajustes",
   "settingsUpToDate": "Você está na versão mais recente · {version}",
@@ -6509,7 +6110,6 @@
   },
   "tomorrowNextTrail": "Próxima trilha",
   "tomorrowNextTrailOnMap": "A próxima trilha já está no mapa.",
-  "tomorrowSceneWaits": "A cena espera você.",
   "tomorrowSevenDays": "Sete dias. O hábito pegou.",
   "tomorrowStoryContinues": "A história continua no texto.",
   "tomorrowTodayYouSaw": "Hoje você viu",
@@ -6604,11 +6204,6 @@
       }
     }
   },
-  "trailMapLocked": "Bloqueada",
-  "@trailMapLocked": {
-    "description": "A locked scene"
-  },
-  "trailMapScene": "Cena",
   "trailMapSceneLockedBody": "Termine “{scene}” para abrir esta cena. Elas vão em ordem: cada uma prepara a próxima.",
   "@trailMapSceneLockedBody": {
     "placeholders": {
@@ -6617,16 +6212,6 @@
       }
     }
   },
-  "trailMapSeal": "Selo {name}",
-  "@trailMapSeal": {
-    "description": "Character seal; name is a Bible character",
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "trailsAreasHeading": "As áreas",
   "trailsCleared": "Concluída",
   "@trailsCleared": {
     "description": "Status of a scene, stage or trail (feminine in pt/es)"
@@ -6687,7 +6272,6 @@
       }
     }
   },
-  "trailsLearnMore": "Saiba mais",
   "trailsLeaveAllAwareness": "Estou ciente de que vou perder o progresso, as medalhas e os selos das trilhas abertas",
   "trailsLeaveAllBody": "Tudo das trilhas abertas some — cenas, modos, baús, medalhas, selos e postais. Trilhas concluídas, passos e sequência do app permanecem. Não dá para desfazer.",
   "trailsLeaveAllCta": "Sair de todas as trilhas",
@@ -6698,7 +6282,6 @@
   "trailsLeaveAllTitle": "Sair de todas as trilhas?",
   "trailsLeaveAwareness": "Estou ciente de que vou perder o progresso, as medalhas e os selos desta trilha",
   "trailsLeaveBody": "Tudo desta trilha some — cenas, modos, baús, medalhas, selos e postais. Passos e sequência do app permanecem. Não dá para desfazer.",
-  "trailsLeaveConfirm": "Sair",
   "trailsLeaveCta": "Sair da trilha",
   "@trailsLeaveCta": {
     "description": "Danger CTA at the end of the trail map"
@@ -6773,16 +6356,6 @@
   },
   "trailsOpenSubtitle": "Escolha por onde continuar.",
   "trailsOpenTitle": "Suas trilhas abertas",
-  "trailsPlusHeading": "Peregrino+",
-  "trailsRealmOpenCount": "{count, plural, =1{1 aberta} other{{count} abertas}}",
-  "@trailsRealmOpenCount": {
-    "description": "Number of unlocked trails in an area",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "trailsRealmTrailCount": "{count, plural, =1{1 trilha} other{{count} trilhas}}",
   "@trailsRealmTrailCount": {
     "placeholders": {
@@ -6824,11 +6397,6 @@
       }
     }
   },
-  "trailsSectionFormation": "Formação",
-  "trailsSectionFormationBody": "Aprofunde sua fé e viva a Palavra no dia a dia.",
-  "trailsSectionScriptures": "Escrituras",
-  "trailsSectionScripturesBody": "Conheça a história, o plano e as promessas de Deus.",
-  "trailsSeeAll": "Ver todas",
   "trailsShelfBible": "Bíblia",
   "trailsShelfThemes": "Temáticos",
   "trailsStage": "Etapa {roman}",
@@ -6836,15 +6404,6 @@
     "description": "Module number in Roman numerals, e.g. Etapa II",
     "placeholders": {
       "roman": {
-        "type": "String"
-      }
-    }
-  },
-  "trailsStreakAtRisk": "Sequência cai em {countdown}",
-  "@trailsStreakAtRisk": {
-    "description": "countdown is a preformatted time left, e.g. 3h 20min",
-    "placeholders": {
-      "countdown": {
         "type": "String"
       }
     }
@@ -7166,7 +6725,6 @@
       }
     }
   },
-  "widgetTrailWaitsTomorrow": "A trilha espera amanhã",
   "widgetWeekdayInitials": "S,T,Q,Q,S,S,D",
   "yearReviewBookEyebrow": "O livro onde você mais esteve",
   "@yearReviewBookEyebrow": {

@@ -35,8 +35,9 @@ String answerKey(String s) {
       .map((w) {
         if (w == 'os' || w == 'o') return 'o';
         if (w == 'as' || w == 'a') return 'a';
-        if (w.endsWith('s') && w.length > 3)
+        if (w.endsWith('s') && w.length > 3) {
           return w.substring(0, w.length - 1);
+        }
         return w;
       })
       .join(' ');
@@ -261,8 +262,9 @@ String preferredAnswer({
               _words(q) <= 10 &&
               !RegExp(r'^[A-ZÁÉÍÓÚÂÊÔÃÕ]').hasMatch(opt))) {
     final inPassage = growInPassage(passage, q);
-    if (inPassage.isNotEmpty && !isIncompletePhrase(inPassage))
+    if (inPassage.isNotEmpty && !isIncompletePhrase(inPassage)) {
       return inPassage;
+    }
     if (isIncompletePhrase(opt) && _words(q) <= 10) return q;
   }
   if (grown.isNotEmpty && !isIncompletePhrase(grown)) return grown;

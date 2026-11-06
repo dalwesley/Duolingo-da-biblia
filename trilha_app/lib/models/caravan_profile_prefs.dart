@@ -47,10 +47,9 @@ class CaravanProfilePrefs {
   final Map<CaravanProfileSection, bool> visibility;
 
   const CaravanProfilePrefs([Map<CaravanProfileSection, bool>? visibility])
-      : visibility = visibility ?? const {};
+    : visibility = visibility ?? const {};
 
-  bool isVisible(CaravanProfileSection section) =>
-      visibility[section] ?? true;
+  bool isVisible(CaravanProfileSection section) => visibility[section] ?? true;
 
   CaravanProfilePrefs copyWithSection(
     CaravanProfileSection section,
@@ -63,9 +62,8 @@ class CaravanProfilePrefs {
   }
 
   Map<String, dynamic> toMap() => {
-        for (final s in CaravanProfileSection.values)
-          s.name: isVisible(s),
-      };
+    for (final s in CaravanProfileSection.values) s.name: isVisible(s),
+  };
 
   factory CaravanProfilePrefs.fromMap(dynamic raw) {
     if (raw is! Map) return const CaravanProfilePrefs();

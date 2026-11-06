@@ -8,7 +8,10 @@ import 'package:trilha_app/widgets/ui_primitives.dart';
 
 void main() {
   test('normalize trims, collapses spaces and clips at max', () {
-    expect(TrailSuggestionService.normalize('  Salmos   de   Davi  '), 'Salmos de Davi');
+    expect(
+      TrailSuggestionService.normalize('  Salmos   de   Davi  '),
+      'Salmos de Davi',
+    );
     expect(
       TrailSuggestionService.normalize('a' * 500).length,
       TrailSuggestionService.maxText,
@@ -27,16 +30,13 @@ void main() {
     expect(TrailSuggestionService.isValidRealmId('vida-crista'), isTrue);
     expect(TrailSuggestionService.isValidRealmId('outros'), isTrue);
     expect(TrailSuggestionService.isValidRealmId('unknown'), isFalse);
-    expect(
-      TrailSuggestionRealm.values.map((r) => r.id).toList(),
-      [
-        'antigo-testamento',
-        'novo-testamento',
-        'vida-crista',
-        'teologia',
-        'outros',
-      ],
-    );
+    expect(TrailSuggestionRealm.values.map((r) => r.id).toList(), [
+      'antigo-testamento',
+      'novo-testamento',
+      'vida-crista',
+      'teologia',
+      'outros',
+    ]);
   });
 
   testWidgets('coming soon card suggests a trail or an author', (tester) async {
@@ -81,9 +81,7 @@ void main() {
         locale: const Locale('pt'),
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
-        home: Scaffold(
-          body: DonateCard(onDonate: () => taps++),
-        ),
+        home: Scaffold(body: DonateCard(onDonate: () => taps++)),
       ),
     );
 

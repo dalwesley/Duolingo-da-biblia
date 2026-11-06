@@ -3,7 +3,10 @@ import 'package:trilha_app/services/author_suggestion_service.dart';
 
 void main() {
   test('name trims, collapses spaces and needs two letters', () {
-    expect(AuthorSuggestionService.normalizeName('  Ana   Costa  '), 'Ana Costa');
+    expect(
+      AuthorSuggestionService.normalizeName('  Ana   Costa  '),
+      'Ana Costa',
+    );
     expect(AuthorSuggestionService.isValidName('A'), isFalse);
     expect(AuthorSuggestionService.isValidName('Ana'), isTrue);
     expect(
@@ -15,7 +18,10 @@ void main() {
   test('phone is optional, and a filled one needs DDD', () {
     expect(AuthorSuggestionService.isValidPhone(''), isTrue);
     expect(AuthorSuggestionService.isValidPhone('(11) 98888-7777'), isTrue);
-    expect(AuthorSuggestionService.phoneDigits('(11) 98888-7777'), '11988887777');
+    expect(
+      AuthorSuggestionService.phoneDigits('(11) 98888-7777'),
+      '11988887777',
+    );
     expect(AuthorSuggestionService.isValidPhone('123'), isFalse);
     expect(AuthorSuggestionService.isValidPhone('abc'), isFalse);
   });
@@ -32,7 +38,10 @@ void main() {
   });
 
   test('instagram accepts a handle, an @ and a profile url', () {
-    expect(AuthorSuggestionService.normalizeInstagram('@Autor.Biblia'), 'autor.biblia');
+    expect(
+      AuthorSuggestionService.normalizeInstagram('@Autor.Biblia'),
+      'autor.biblia',
+    );
     expect(
       AuthorSuggestionService.normalizeInstagram(
         'https://instagram.com/autor.biblia/',

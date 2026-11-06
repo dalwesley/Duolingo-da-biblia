@@ -26,7 +26,7 @@
 
 Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`content_meta/catalog.version`) e cacheia em disco. Mudanças de conteúdo **não exigem** release na loja.
 
-JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
+Banco V3 em `admin/v3/` = **origem editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
 **Estado 28 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Juntos: Companhia → Caravana → Grupos; Desafio sob Companhia (`Corner*`). Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) e [`docs/PLANO_SIMPLIFICACAO.md`](PLANO_SIMPLIFICACAO.md).
 
@@ -129,7 +129,7 @@ Dificuldades: `semente` | `caminhada` | `profundezas` — labels UI Observação
 - `assets/data/bible_study.sqlite.gz`  
 - `assets/sounds/`  
 
-Currículo **não** é o primary package do app (JSONs em `assets/data/` servem seed/admin).
+Currículo **não** é o primary package do app (o banco V3 mora em `admin/v3/`).
 
 ### Plataformas
 
@@ -171,7 +171,7 @@ Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 
 ### Módulos chave
 
-`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, `question-studio.js` / `content-preview.js`, scripts em `admin/scripts/` (`seed:cli`, `pipeline:v2`, `validate:bank`).
+`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, `question-studio.js` / `content-preview.js`, scripts em `admin/scripts/` (`v3:*`, `validate:bank`).
 
 ---
 
@@ -354,11 +354,8 @@ Contrato: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.1 — **modo único**, vári
 
 | Script / superfície | Papel |
 |---------------------|------|
-| `prepare_content.mjs` | normaliza assets locais |
-| `migrate_session_pattern.mjs` | tipa gestos, stamp hooks/insight/objective — **não** rerodar após P0–P6 |
-| `enrich_content.mjs` | skills + profundezas heurísticas — **não** rerodar após P0–P6 |
-| `seed_content_cli.mjs` | sobe Firestore via Firebase CLI OAuth (`make seed_full`) — caminho que funciona em contas Google-only |
-| `seed_content.mjs` | sobe via client SDK Email/Password (`SEED_EMAIL` / `SEED_PASSWORD`) |
+| `v3_*.mjs` / `publish_pilot_v3.mjs` | pipeline V3: inputs → geração → validação → merge → tradução → publish (ver `admin/v3/README.md`) |
+| `seed_entry_motive_banks.mjs` | publica os bancos das trilhas de motivo (`perguntas-v2/`) |
 | `trails-page.js` / `bank-page.js` / `question-studio.js` | editores CMS + preview do ato |
 
 ### Fases de implementação
@@ -410,16 +407,11 @@ flutter build ipa --release
 
 # Admin
 cd admin && cp .env.example .env && npm install && npm run dev
-# Publicar (contas Google-only — caminho real):
-make seed_full                 # da raiz: trails + bank + studies + catalog.version
-# ou: cd admin && npm run seed:cli
-# Não re-rodar pipelines legados de migrate/enrich — use `pipeline:v2` + `seed:cli`.
-# Lotes / cota Spark (CLI):
-SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 npm run seed:cli
+# Publicar conteúdo: pipeline V3 (admin/v3/README.md)
+cd admin && npm run v3:publish
 npm run build && cd .. && firebase deploy --only hosting:panel
 ```
 
-Seed / auth (não perder): donos do projeto são **Google-only** — `SEED_EMAIL`/`SEED_PASSWORD` falham nessas contas. Fluxo documentado em [`admin/README.md`](../admin/README.md#seed-publicar-json--firestore) (CLI `stway.app@gmail.com` ou user Email/Password em `admin_users`).
 
 ---
 

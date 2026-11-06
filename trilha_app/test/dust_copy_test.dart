@@ -16,10 +16,7 @@ void main() {
   });
 
   test('hero risk line without freeze stays plain', () {
-    final line = DustCopy.heroRiskLine(
-      countdown: '40min',
-      hasFreeze: false,
-    );
+    final line = DustCopy.heroRiskLine(countdown: '40min', hasFreeze: false);
     expect(line, '40min para a sequência cair. Faça a cena hoje.');
   });
 }

@@ -150,20 +150,16 @@ void main() {
     final gen1 = trail('genesis-1-11', 'Gênesis 1-11', 1);
     final gen2 = trail('genesis-12-50', 'Gênesis 12-50', 2);
 
-    await pumpPath(
-      tester,
-      [
-        item(gen1, JourneyNodeState.current),
-        item(gen2, JourneyNodeState.locked),
-      ],
-      phaseCards: false,
-    );
+    await pumpPath(tester, [
+      item(gen1, JourneyNodeState.current),
+      item(gen2, JourneyNodeState.locked),
+    ], phaseCards: false);
 
     final anan = tester.getRect(find.byType(CloudMascot));
     final card = cardOf(tester, 'Gênesis 1-11');
     final next = cardOf(tester, 'Gênesis 12-50');
-    final edge = (anan.center.dx - card.left).abs() <
-            (anan.center.dx - card.right).abs()
+    final edge =
+        (anan.center.dx - card.left).abs() < (anan.center.dx - card.right).abs()
         ? card.left
         : card.right;
     expect(

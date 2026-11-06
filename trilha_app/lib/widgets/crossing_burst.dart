@@ -216,9 +216,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
         ? 0.0
         : math.sin(walk * math.pi * 7) * 4 * (1 - walk);
     final flash = arrived ? 1 - _span(t, _arriveAt, _arriveAt + 0.1) : 0.0;
-    final captionIn = AppMotion.pop.transform(
-      _span(t, _arriveAt + 0.08, 0.6),
-    );
+    final captionIn = AppMotion.pop.transform(_span(t, _arriveAt + 0.08, 0.6));
     // Aproxima devagar enquanto caminham — dá profundidade sem custo.
     final zoom = 0.9 + 0.1 * AppMotion.enter.transform(_span(t, 0, _arriveAt));
     final names = AppMotion.enter.transform(
@@ -875,10 +873,7 @@ class _StagePainter extends CustomPainter {
                 math.sin(m.phase + u * 6) * 8,
             math.sin(m.angle) * m.reach * spread * 0.6 - m.rise * u,
           );
-      dot.color = _a(
-        m.warm ? _flagTone : _theirs,
-        0.9 * math.sin(u * math.pi),
-      );
+      dot.color = _a(m.warm ? _flagTone : _theirs, 0.9 * math.sin(u * math.pi));
       canvas.drawCircle(p, m.size, dot);
     }
   }
@@ -927,13 +922,10 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
       ..addStatusListener((s) {
         if (s == AnimationStatus.completed) _confirm();
       });
-    _pop =
-        AnimationController(
-          vsync: this,
-          duration: AppMotion.standard,
-        )..addStatusListener((s) {
-          if (s == AnimationStatus.completed) _handOff();
-        });
+    _pop = AnimationController(vsync: this, duration: AppMotion.standard)
+      ..addStatusListener((s) {
+        if (s == AnimationStatus.completed) _handOff();
+      });
   }
 
   @override

@@ -447,11 +447,6 @@ class AppTheme {
     );
   }
 
-  static Color parseHex(String hex) {
-    final value = hex.replaceAll('#', '');
-    return Color(int.parse('FF$value', radix: 16));
-  }
-
   static List<BoxShadow> glow(Color color, {double blur = 12}) => [
     BoxShadow(
       color: Colors.black.withValues(alpha: 0.28),

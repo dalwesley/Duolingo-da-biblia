@@ -4,7 +4,10 @@ import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/widgets/reset_progress_sheet.dart';
 
 void main() {
-  Future<void> openSheet(WidgetTester tester, {required Future<bool> Function() show}) async {
+  Future<void> openSheet(
+    WidgetTester tester, {
+    required Future<bool> Function() show,
+  }) async {
     await tester.pumpWidget(
       MaterialApp(
         locale: const Locale('pt'),
@@ -17,10 +20,8 @@ void main() {
         ),
         home: Scaffold(
           body: Builder(
-            builder: (context) => TextButton(
-              onPressed: () => show(),
-              child: const Text('abrir'),
-            ),
+            builder: (context) =>
+                TextButton(onPressed: () => show(), child: const Text('abrir')),
           ),
         ),
       ),
@@ -31,16 +32,20 @@ void main() {
     tester,
   ) async {
     Future<bool>? pending;
-    await openSheet(tester, show: () {
-      final context = tester.element(find.text('abrir'));
-      pending = showResetProgressSheet(context);
-      return pending!;
-    });
+    await openSheet(
+      tester,
+      show: () {
+        final context = tester.element(find.text('abrir'));
+        pending = showResetProgressSheet(context);
+        return pending!;
+      },
+    );
 
     await tester.tap(find.text('abrir'));
     await tester.pumpAndSettle();
 
-    FilledButton confirm() => tester.widget<FilledButton>(find.byType(FilledButton));
+    FilledButton confirm() =>
+        tester.widget<FilledButton>(find.byType(FilledButton));
 
     expect(find.text('Confirmar · 10s'), findsOneWidget);
     expect(confirm().onPressed, isNull);
@@ -63,10 +68,13 @@ void main() {
   testWidgets('checkbox alone does not enable confirm before the wait', (
     tester,
   ) async {
-    await openSheet(tester, show: () {
-      final context = tester.element(find.text('abrir'));
-      return showResetProgressSheet(context);
-    });
+    await openSheet(
+      tester,
+      show: () {
+        final context = tester.element(find.text('abrir'));
+        return showResetProgressSheet(context);
+      },
+    );
 
     await tester.tap(find.text('abrir'));
     await tester.pumpAndSettle();

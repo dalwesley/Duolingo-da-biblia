@@ -1,4 +1,19 @@
 {
+  "homeGreetingMorning": {
+    "pt": "Bom dia",
+    "en": "Good morning",
+    "es": "Buenos días"
+  },
+  "homeGreetingAfternoon": {
+    "pt": "Boa tarde",
+    "en": "Good afternoon",
+    "es": "Buenas tardes"
+  },
+  "homeGreetingEvening": {
+    "pt": "Boa noite",
+    "en": "Good evening",
+    "es": "Buenas noches"
+  },
   "homeMoodFrozen": {
     "pt": "Protegido pelo gelo",
     "en": "Protected by a freeze",
@@ -96,11 +111,6 @@
     "pt": "Você terminou a cena de hoje. Abra e veja o que o caminho guardou.",
     "en": "You finished today's scene. Open it and see what the path kept for you.",
     "es": "Terminaste la escena de hoy. Ábrelo y mira lo que el camino guardó."
-  },
-  "chestOpening": {
-    "pt": "Abrindo…",
-    "en": "Opening…",
-    "es": "Abriendo…"
   },
   "chestRarityCommon": {
     "pt": "Comum",
@@ -227,14 +237,6 @@
     "pt": "Meta do dia cumprida",
     "en": "Daily goal met",
     "es": "Meta del día cumplida"
-  },
-  "homeStepsSemantics": {
-    "pt": "{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}",
-    "en": "{count, plural, =1{1 step on the journey} other{{count} steps on the journey}}",
-    "es": "{count, plural, =1{1 paso en el camino} other{{count} pasos en el camino}}",
-    "placeholders": {
-      "count": "int"
-    }
   },
   "homeStatFreezeUsed": {
     "pt": "gelo usado",
@@ -561,14 +563,6 @@
     "pt": "Revisar erros",
     "en": "Review mistakes",
     "es": "Repasar errores"
-  },
-  "homeReviewCaption": {
-    "pt": "{count, plural, =1{1 para reforçar} other{{count} para reforçar}}",
-    "en": "{count, plural, =1{1 to reinforce} other{{count} to reinforce}}",
-    "es": "{count, plural, =1{1 para reforzar} other{{count} para reforzar}}",
-    "placeholders": {
-      "count": "int"
-    }
   },
   "homeCatalogEmptyTitle": {
     "pt": "As cenas ainda não chegaram",

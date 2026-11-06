@@ -69,40 +69,55 @@ CinematicRevealKey? revealKeyFromCorrectText(String correctText) {
 CreationWorldState stateForReveal(CinematicRevealKey key, {double amount = 1}) {
   return switch (key) {
     CinematicRevealKey.spirit => CreationWorldState(
-        spirit: amount,
-        voidDepth: 1 - amount * 0.1,
-        waters: amount * 0.4,
-      ),
+      spirit: amount,
+      voidDepth: 1 - amount * 0.1,
+      waters: amount * 0.4,
+    ),
     CinematicRevealKey.waters => CreationWorldState(
-        waters: amount,
-        voidDepth: 0.85 - amount * 0.2,
-      ),
+      waters: amount,
+      voidDepth: 0.85 - amount * 0.2,
+    ),
     CinematicRevealKey.light => CreationWorldState(
-        light: amount,
-        voidDepth: 1 - amount * 0.95,
-        waters: amount * 0.25,
-      ),
-    CinematicRevealKey.land =>
-      CreationWorldState(land: amount, waters: 0.5, light: 0.4),
-    CinematicRevealKey.plants =>
-      CreationWorldState(plants: amount, land: 0.7, light: 0.5),
-    CinematicRevealKey.fish =>
-      CreationWorldState(fish: amount, waters: 0.85, light: 0.45),
-    CinematicRevealKey.birds =>
-      CreationWorldState(birds: amount, light: 0.55, plants: 0.3),
-    CinematicRevealKey.stars =>
-      CreationWorldState(stars: amount, light: 0.35, voidDepth: 0.4),
+      light: amount,
+      voidDepth: 1 - amount * 0.95,
+      waters: amount * 0.25,
+    ),
+    CinematicRevealKey.land => CreationWorldState(
+      land: amount,
+      waters: 0.5,
+      light: 0.4,
+    ),
+    CinematicRevealKey.plants => CreationWorldState(
+      plants: amount,
+      land: 0.7,
+      light: 0.5,
+    ),
+    CinematicRevealKey.fish => CreationWorldState(
+      fish: amount,
+      waters: 0.85,
+      light: 0.45,
+    ),
+    CinematicRevealKey.birds => CreationWorldState(
+      birds: amount,
+      light: 0.55,
+      plants: 0.3,
+    ),
+    CinematicRevealKey.stars => CreationWorldState(
+      stars: amount,
+      light: 0.35,
+      voidDepth: 0.4,
+    ),
     CinematicRevealKey.humanity => CreationWorldState(
-        humanity: amount,
-        land: 0.8,
-        plants: 0.5,
-        light: 0.6,
-      ),
+      humanity: amount,
+      land: 0.8,
+      plants: 0.5,
+      light: 0.6,
+    ),
     CinematicRevealKey.cosmos => CreationWorldState(
-        stars: amount * 0.6,
-        light: amount * 0.3,
-        voidDepth: 0.7 - amount * 0.2,
-      ),
+      stars: amount * 0.6,
+      light: amount * 0.3,
+      voidDepth: 0.7 - amount * 0.2,
+    ),
   };
 }
 
@@ -122,8 +137,9 @@ class CinematicResolver {
       return stateForReveal(fromTitle, amount: 0.88);
     }
     if (missionSlug != null) {
-      final fromSlug =
-          revealKeyFromCorrectText(missionSlug.replaceAll('-', ' '));
+      final fromSlug = revealKeyFromCorrectText(
+        missionSlug.replaceAll('-', ' '),
+      );
       if (fromSlug != null) {
         return stateForReveal(fromSlug, amount: 0.8);
       }

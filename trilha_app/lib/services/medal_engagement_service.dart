@@ -215,51 +215,6 @@ class MedalEngagementService {
     return (profile: profile, catalog: _catalog, ctx: ctx);
   }
 
-  static int unlockedCountForProgress(
-    ProgressService progress,
-    String uid,
-    List<Trail> catalog,
-  ) {
-    return medals.PilgrimMedals.unlockedCount(
-      CaravanPilgrimProfile.fromProgress(progress: progress, uid: uid),
-      catalog,
-      ctx: PilgrimMedalEvalContext.fromProgress(progress),
-    );
-  }
-
-  static Future<int> unlockedCountCached(ProgressService progress, String uid) {
-    return TrailRepository().getTrails().then(
-      (catalog) => unlockedCountForProgress(progress, uid, catalog),
-    );
-  }
-
-  /// Só as medalhas raras "Mirra" já desbloqueadas (não a soma de tudo).
-  static List<PilgrimMedalDef> unlockedRareMedalsForProgress(
-    ProgressService progress,
-    String uid,
-    List<Trail> catalog,
-  ) {
-    final vaults = medals.PilgrimMedals.evaluateVaults(
-      profile: CaravanPilgrimProfile.fromProgress(progress: progress, uid: uid),
-      catalog: catalog,
-      ctx: PilgrimMedalEvalContext.fromProgress(progress),
-    );
-    return [
-      for (final vault in vaults)
-        for (final status in vault.rareMedals)
-          if (status.unlocked) status.def,
-    ];
-  }
-
-  static Future<List<PilgrimMedalDef>> unlockedRareMedalsCached(
-    ProgressService progress,
-    String uid,
-  ) {
-    return TrailRepository().getTrails().then(
-      (catalog) => unlockedRareMedalsForProgress(progress, uid, catalog),
-    );
-  }
-
   static final _standingMedals =
       <String, Future<({List<PilgrimMedalDef> rares, int total})>>{};
 

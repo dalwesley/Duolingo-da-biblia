@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 
 enum DayPhase { morning, afternoon, evening, night }
@@ -48,11 +49,11 @@ class DayPhaseHelper {
 
   /// Saudação pelo horário do aparelho (independente do tema visual).
   static String greeting([DayPhase? phase]) {
+    final l = L10n.current;
     return switch (phase ?? current()) {
-      DayPhase.morning => 'Bom dia',
-      DayPhase.afternoon => 'Boa tarde',
-      DayPhase.evening => 'Boa noite',
-      DayPhase.night => 'Boa noite',
+      DayPhase.morning => l.homeGreetingMorning,
+      DayPhase.afternoon => l.homeGreetingAfternoon,
+      DayPhase.evening || DayPhase.night => l.homeGreetingEvening,
     };
   }
 

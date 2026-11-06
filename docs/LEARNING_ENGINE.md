@@ -635,7 +635,7 @@ Regras duras:
 
 Referência de pesquisa: método indutivo (observar → interpretar → aplicar); spaced retrieval e desirable difficulty; lições curtas com um objetivo ([Duolingo Method](https://duolingo-papers.s3.amazonaws.com/reports/Duolingo_whitepaper_duolingo_method_2023.pdf)).
 
-Piloto: [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md).
+
 
 ---
 

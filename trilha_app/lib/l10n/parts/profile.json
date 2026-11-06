@@ -432,16 +432,6 @@
       "label": "String"
     }
   },
-  "journalTitle": {
-    "pt": "Anotações de estudo",
-    "en": "Study notes",
-    "es": "Notas de estudio"
-  },
-  "journalEmpty": {
-    "pt": "Ao fixar uma cena, sua resposta fica registrada aqui.",
-    "en": "When you lock in a scene, your answer is saved here.",
-    "es": "Al fijar una escena, tu respuesta queda guardada aquí."
-  },
   "pilgrimFallbackName": {
     "pt": "Peregrino",
     "en": "Pilgrim",
@@ -452,14 +442,6 @@
     "pt": "{rank}º no ranking",
     "en": "#{rank} in the ranking",
     "es": "{rank}.º en el ranking",
-    "placeholders": {
-      "rank": "int"
-    }
-  },
-  "pilgrimRankOrdinal": {
-    "pt": "{rank}º",
-    "en": "#{rank}",
-    "es": "{rank}.º",
     "placeholders": {
       "rank": "int"
     }
@@ -513,16 +495,6 @@
     "pt": "No ranking",
     "en": "In the ranking",
     "es": "En el ranking"
-  },
-  "pilgrimRankWeekly": {
-    "pt": "Ranking semanal da caravana",
-    "en": "Caravan weekly ranking",
-    "es": "Ranking semanal de la caravana"
-  },
-  "pilgrimRankMonthly": {
-    "pt": "Ranking do mês",
-    "en": "Monthly ranking",
-    "es": "Ranking del mes"
   },
   "pilgrimCollections": {
     "pt": "Cofre",
@@ -617,16 +589,6 @@
       "date": "String"
     }
   },
-  "pilgrimWalked": {
-    "pt": "Caminhou",
-    "en": "Walked",
-    "es": "Caminó"
-  },
-  "pilgrimSeen": {
-    "pt": "Visto",
-    "en": "Seen",
-    "es": "Visto"
-  },
   "pilgrimStreak": {
     "pt": "Sequência",
     "en": "Streak",
@@ -712,11 +674,6 @@
     "en": "Your journey",
     "es": "Tu camino"
   },
-  "profileYourNumbers": {
-    "pt": "Seus números",
-    "en": "Your numbers",
-    "es": "Tus números"
-  },
   "profileSince": {
     "pt": "Peregrino desde {month} de {year}",
     "en": "Pilgrim since {month} {year}",
@@ -742,11 +699,6 @@
     "placeholders": {
       "goal": "int"
     }
-  },
-  "profileYourStreak": {
-    "pt": "Sua sequência",
-    "en": "Your streak",
-    "es": "Tu racha"
   },
   "profileStreakGoalDone": {
     "pt": "Compromisso de {goal} dias cumprido. Siga firme.",
@@ -811,16 +763,6 @@
     "en": "days per week",
     "es": "días por semana"
   },
-  "profileThreeMonthsAgo": {
-    "pt": "há 3 meses",
-    "en": "3 months ago",
-    "es": "hace 3 meses"
-  },
-  "profileThisWeekLower": {
-    "pt": "esta semana",
-    "en": "this week",
-    "es": "esta semana"
-  },
   "profileLampHelp": {
     "pt": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
     "en": "Each lamp is a week: the oil rises with every day walked and the flame grows.",
@@ -834,11 +776,6 @@
       "walked": "int",
       "weeks": "int"
     }
-  },
-  "profileAccuracyHeader": {
-    "pt": "Seu acerto",
-    "en": "Your accuracy",
-    "es": "Tus aciertos"
   },
   "profileAccuracyBody": {
     "pt": "Respostas certas de primeira, por modo e por gesto.",

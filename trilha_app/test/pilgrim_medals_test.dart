@@ -1,35 +1,34 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
-import 'package:trilha_app/models/pilgrim_medal_catalog.dart';
 import 'package:trilha_app/models/pilgrim_medals.dart';
 import 'package:trilha_app/models/trail.dart';
 
 Trail _trail(String slug, List<String> slugs) => Trail(
-      slug: slug,
-      title: slug == 'genesis-1-11' ? 'Gênesis 1–11' : slug,
-      description: '',
-      icon: '📖',
-      order: 1,
-      comingSoon: false,
-      color: '#2F5D4A',
-      modules: [
-        TrailModule(
-          title: 'Mod',
-          icon: '🌍',
-          missions: [
-            for (final s in slugs)
-              Mission(
-                slug: s,
-                title: s,
-                intro: '',
-                type: 'lesson',
-                stepsReward: 50,
-                questions: const [],
-              ),
-          ],
-        ),
+  slug: slug,
+  title: slug == 'genesis-1-11' ? 'Gênesis 1–11' : slug,
+  description: '',
+  icon: '📖',
+  order: 1,
+  comingSoon: false,
+  color: '#2F5D4A',
+  modules: [
+    TrailModule(
+      title: 'Mod',
+      icon: '🌍',
+      missions: [
+        for (final s in slugs)
+          Mission(
+            slug: s,
+            title: s,
+            intro: '',
+            type: 'lesson',
+            stepsReward: 50,
+            questions: const [],
+          ),
       ],
-    );
+    ),
+  ],
+);
 
 void main() {
   group('PilgrimMedals v3.2', () {
@@ -40,12 +39,11 @@ void main() {
         bibleChaptersRead: 30,
       );
 
-      final word = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
-          );
+      final word =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackWordId);
 
       expect(word.levelIndex, 1);
       expect(word.currentLevel?.id, 'track:word:chapters_25');
@@ -60,12 +58,11 @@ void main() {
         bibleChaptersRead: 7,
       );
 
-      final word = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
-          );
+      final word =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackWordId);
       expect(word.currentLevel?.id, 'track:word:chapters_3');
       expect(word.currentLevel?.isSpark, isTrue);
     });
@@ -79,12 +76,11 @@ void main() {
         bibleChaptersRead: 28,
       );
 
-      final word = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
-          );
+      final word =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackWordId);
       expect(word.currentLevel?.id, 'track:word:chapters_25');
       expect(word.isComplete, isFalse);
 
@@ -108,12 +104,11 @@ void main() {
         steps: 1,
         bibleChaptersRead: 100,
       );
-      final word = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
-          );
+      final word =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackWordId);
       expect(word.currentLevel?.id, 'track:word:chapters_100');
       expect(word.isComplete, isTrue);
     });
@@ -126,12 +121,11 @@ void main() {
         daysAsCaravanLeader: 1,
       );
 
-      final path = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackPathId,
-          );
+      final path =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackPathId);
       expect(path.levelIndex, 0);
       expect(path.currentLevel?.id, 'track:path:streak_7');
       expect(path.isComplete, isFalse);
@@ -141,7 +135,9 @@ void main() {
         catalog: const [],
       ).firstWhere((v) => v.vault.kind == PilgrimVaultKind.discovery);
       expect(
-        rares.rareMedals.any((m) => m.def.id == 'discovery:leader' && m.unlocked),
+        rares.rareMedals.any(
+          (m) => m.def.id == 'discovery:leader' && m.unlocked,
+        ),
         isTrue,
       );
     });
@@ -153,10 +149,11 @@ void main() {
         perfectMissions: ['gen-01', 'gen-02', 'gen-03', 'gen-04', 'gen-05'],
       );
 
-      final formation = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
+      final formation =
+          PilgrimMedals.evaluateVaults(
+            profile: profile,
+            catalog: const [],
+          ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
           );
 
@@ -171,10 +168,11 @@ void main() {
         perfectMissions: ['gen-boss-01'],
       );
 
-      final formation = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
+      final formation =
+          PilgrimMedals.evaluateVaults(
+            profile: profile,
+            catalog: const [],
+          ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
           );
       expect(formation.levelIndex, -1);
@@ -184,15 +182,11 @@ void main() {
     test('journey tracks share bronze silver gold', () {
       for (final track in PilgrimMedalCatalog.journeyTracks) {
         expect(track.levels.length, 3, reason: track.id);
-        expect(
-          track.levels.map((l) => l.tier).toList(),
-          [
-            PilgrimMedalTier.bronze,
-            PilgrimMedalTier.silver,
-            PilgrimMedalTier.gold,
-          ],
-          reason: track.id,
-        );
+        expect(track.levels.map((l) => l.tier).toList(), [
+          PilgrimMedalTier.bronze,
+          PilgrimMedalTier.silver,
+          PilgrimMedalTier.gold,
+        ], reason: track.id);
       }
     });
 
@@ -200,14 +194,13 @@ void main() {
       const profile = CaravanPilgrimProfile(
         name: 'Ana',
         steps: 100,
-        perfectMissions: [
-          'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-        ],
+        perfectMissions: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'],
       );
-      final formation = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
+      final formation =
+          PilgrimMedals.evaluateVaults(
+            profile: profile,
+            catalog: const [],
+          ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
           );
       expect(formation.currentLevel?.id, 'track:formation:perfect_10');
@@ -221,10 +214,11 @@ void main() {
         steps: 1,
         memoryMasteredCount: 3,
       );
-      final memory = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
+      final memory =
+          PilgrimMedals.evaluateVaults(
+            profile: profile,
+            catalog: const [],
+          ).first.tracks.firstWhere(
             (t) => t.track.id == PilgrimMedalCatalog.trackMemoryId,
           );
       expect(memory.currentLevel?.id, 'track:memory:verse_3');
@@ -237,14 +231,16 @@ void main() {
         steps: 10,
         bibleChaptersRead: 25,
       );
-      final word = PilgrimMedals.evaluateVaults(
-        profile: profile,
-        catalog: const [],
-      ).first.tracks.firstWhere(
-            (t) => t.track.id == PilgrimMedalCatalog.trackWordId,
-          );
+      final word =
+          PilgrimMedals.evaluateVaults(profile: profile, catalog: const [])
+              .first
+              .tracks
+              .firstWhere((t) => t.track.id == PilgrimMedalCatalog.trackWordId);
       final trophies = PilgrimMedals.trophyTiles(word);
-      expect(trophies.map((t) => t.id), isNot(contains('track:word:chapters_3')));
+      expect(
+        trophies.map((t) => t.id),
+        isNot(contains('track:word:chapters_3')),
+      );
       expect(trophies.map((t) => t.id), contains('track:word:chapters_25'));
       expect(trophies.where((t) => t.unlocked).length, 1);
     });
@@ -256,18 +252,19 @@ void main() {
         sharedVerseCount: 3,
       );
 
-      final pending = PilgrimMedals.newTierUps(
-        profile,
-        {'track:witness:share_3'},
-        const [],
-      );
+      final pending = PilgrimMedals.newTierUps(profile, {
+        'track:witness:share_3',
+      }, const []);
       expect(
         pending.map((t) => t.celebrationId),
         isNot(contains('track:witness:share_3')),
       );
       expect(
-        PilgrimMedals.newTierUps(profile, const {}, const [])
-            .map((t) => t.celebrationId),
+        PilgrimMedals.newTierUps(
+          profile,
+          const {},
+          const [],
+        ).map((t) => t.celebrationId),
         contains('track:witness:share_3'),
       );
     });
@@ -279,11 +276,9 @@ void main() {
         sharedVerseCount: 3,
       );
 
-      final pending = PilgrimMedals.newTierUps(
-        profile,
-        {'witness_share_1'},
-        const [],
-      );
+      final pending = PilgrimMedals.newTierUps(profile, {
+        'witness_share_1',
+      }, const []);
       expect(pending, isEmpty);
     });
 
@@ -326,10 +321,7 @@ void main() {
       ).firstWhere((v) => v.vault.id == PilgrimMedalCatalog.journeyVaultId);
 
       expect(journey.isComplete, isTrue);
-      expect(
-        PilgrimMedals.isJourneyVaultComplete(profile, const []),
-        isTrue,
-      );
+      expect(PilgrimMedals.isJourneyVaultComplete(profile, const []), isTrue);
     });
 
     test('nearestLocked returns streak hint when close', () {
@@ -398,21 +390,12 @@ void main() {
         PilgrimMedalCatalog.currentAdventYear(DateTime(2026, 12, 28)),
         2026,
       );
-      expect(
-        PilgrimMedalCatalog.currentAdventYear(DateTime(2027, 1, 1)),
-        2027,
-      );
+      expect(PilgrimMedalCatalog.currentAdventYear(DateTime(2027, 1, 1)), 2027);
     });
 
     test('lent year stays through Easter grace week', () {
-      expect(
-        PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 8)),
-        2026,
-      );
-      expect(
-        PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 12)),
-        2027,
-      );
+      expect(PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 8)), 2026);
+      expect(PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 12)), 2027);
     });
 
     test('advent vault remains visible in grace week', () {

@@ -39,13 +39,10 @@ class SyncService extends ChangeNotifier {
     };
   }
 
-  String exportJson(
-    ProgressService progress, {
-    LeagueService? league,
-  }) {
-    return const JsonEncoder.withIndent('  ').convert(
-      exportPayload(progress, league: league),
-    );
+  String exportJson(ProgressService progress, {LeagueService? league}) {
+    return const JsonEncoder.withIndent(
+      '  ',
+    ).convert(exportPayload(progress, league: league));
   }
 
   /// Aceita v2 (completo) ou v1 legado (subconjunto).
@@ -58,10 +55,12 @@ class SyncService extends ChangeNotifier {
         // Normaliza v1 para o formato que [ProgressService.applyFromCloud] entende.
         return {
           'version': 1,
-          'steps': (data['steps'] as num?)?.toInt() ??
+          'steps':
+              (data['steps'] as num?)?.toInt() ??
               (data['xp'] as num?)?.toInt() ??
               0,
-          'xp': (data['steps'] as num?)?.toInt() ??
+          'xp':
+              (data['steps'] as num?)?.toInt() ??
               (data['xp'] as num?)?.toInt() ??
               0,
           'streak': (data['streak'] as num?)?.toInt() ?? 0,

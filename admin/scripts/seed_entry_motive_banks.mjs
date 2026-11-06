@@ -21,7 +21,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const adminRoot = join(__dirname, '..');
 const v2Root = join(adminRoot, '..', 'perguntas-v2');
 
-const TRAILS = ['ansiedade', 'conhecer-a-deus', 'entender-a-biblia'];
+const TRAILS = ['conhecer-a-deus', 'entender-a-biblia'];
 
 function loadEnv() {
   const env = { ...process.env };

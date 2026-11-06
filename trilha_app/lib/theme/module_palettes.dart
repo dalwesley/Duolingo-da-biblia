@@ -7,10 +7,7 @@ class ModuleSwatch {
   final Color nodeTop;
   final Color nodeBottom;
 
-  const ModuleSwatch({
-    required this.nodeTop,
-    required this.nodeBottom,
-  });
+  const ModuleSwatch({required this.nodeTop, required this.nodeBottom});
 }
 
 class ModulePalettes {

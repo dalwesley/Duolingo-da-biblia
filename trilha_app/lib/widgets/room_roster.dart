@@ -36,47 +36,6 @@ String seatLabel(RoomMember m) {
   };
 }
 
-/// Barra do grupo: uma parte por pessoa, cheia quando ela estudou.
-class RoomWeekBar extends StatelessWidget {
-  final List<RoomMember> members;
-
-  const RoomWeekBar({super.key, required this.members});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    if (members.isEmpty) return const SizedBox.shrink();
-    final ordered = [
-      ...members.where((m) => m.walkedToday()),
-      ...members.where((m) => !m.walkedToday() && m.walkedThisWeek),
-      ...members.where((m) => !m.walkedThisWeek),
-    ];
-    return SizedBox(
-      height: 8,
-      child: Row(
-        children: [
-          for (var i = 0; i < ordered.length; i++) ...[
-            if (i > 0) const SizedBox(width: 3),
-            Expanded(
-              child: AnimatedContainer(
-                duration: AppMotion.gentle,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                  color: switch (seatStateOf(ordered[i])) {
-                    SeatState.today => AppRoles.presence,
-                    SeatState.week => AppRoles.presence.withValues(alpha: 0.5),
-                    _ => a.progressTrack,
-                  },
-                ),
-              ),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
 /// Lista de quem está no grupo: uma linha por pessoa (rosto, status e as
 /// bolinhas da semana) e, no fim, o convite. Sem card próprio — mora no card
 /// do grupo, sob [RoomWeekLetters].

@@ -82,5 +82,4 @@ void main() {
       expect(LeagueService.placesUpToday(sorted), [0, 0]);
     });
   });
-
 }

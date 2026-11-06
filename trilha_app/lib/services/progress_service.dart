@@ -473,8 +473,7 @@ class ProgressService extends ChangeNotifier {
       };
     }
     final intent = settings.intent;
-    final leftEntry =
-        intent != null && intent.entryTrailSlug != slug;
+    final leftEntry = intent != null && intent.entryTrailSlug != slug;
     if (leftEntry) {
       settings = settings.copyWith(clearIntent: true);
       await _persistSettingsLocal();
@@ -2402,10 +2401,6 @@ class ProgressService extends ChangeNotifier {
       if (isDifficultyUnlocked(trailSlug, d)) d,
   ];
 
-  /// Há escolha real de modo (2+ liberados). Caso contrário, Semente é o único caminho.
-  bool hasDifficultyChoice(String trailSlug) =>
-      unlockedDifficulties(trailSlug).length > 1;
-
   /// Troca o modo da trilha. Se já havia outro modo e [missionSlugs] for
   /// passado, zera o progresso desses passos — cada modo recomeça do início.
   ///
@@ -2755,12 +2750,6 @@ class ProgressService extends ChangeNotifier {
   /// não interfere no ranking nem disputa prestígio com o Cofre de medalhas.
   bool get dailyChestAvailable =>
       isQuestClaimed('mission') && dailyChestOpenedDay != _todayKey();
-
-  bool get dailyChestOpenedToday => dailyChestOpenedDay == _todayKey();
-
-  PilgrimChestReward? get lastDailyChestReward => lastDailyChestRewardId == null
-      ? null
-      : PilgrimChestRewardDefs.byId(lastDailyChestRewardId!);
 
   /// Sorteia e revela a recompensa do dia (piso garantido via pity).
   Future<PilgrimChestReward> openDailyChest() async {

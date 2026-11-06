@@ -67,11 +67,6 @@ class SeasonWalkCampaign {
     return days[index - 1];
   }
 
-  SeasonWalkDay? dayFor(DateTime day) {
-    final i = dayIndexOn(day);
-    return i == null ? null : dayAt(i);
-  }
-
   int get weekCount => (days.length / 7).ceil();
 
   List<SeasonWalkDay> week(int weekIndex) {

@@ -7,11 +7,7 @@ import 'package:flutter/material.dart';
 class ShellTabScope extends InheritedWidget {
   final bool active;
 
-  const ShellTabScope({
-    super.key,
-    required this.active,
-    required super.child,
-  });
+  const ShellTabScope({super.key, required this.active, required super.child});
 
   static bool of(BuildContext context) {
     return context

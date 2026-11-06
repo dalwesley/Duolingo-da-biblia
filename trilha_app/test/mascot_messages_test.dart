@@ -13,35 +13,19 @@ void main() {
         'Cena concluída',
       );
       expect(
-        CelebrationCopy.headline(
-          perfect: true,
-          isReplay: false,
-          isBoss: false,
-        ),
+        CelebrationCopy.headline(perfect: true, isReplay: false, isBoss: false),
         'Tudo certo · bônus de passos',
       );
       expect(
-        CelebrationCopy.headline(
-          perfect: false,
-          isReplay: true,
-          isBoss: false,
-        ),
+        CelebrationCopy.headline(perfect: false, isReplay: true, isBoss: false),
         'Você voltou ao texto',
       );
       expect(
-        CelebrationCopy.kicker(
-          perfect: false,
-          isReplay: true,
-          isBoss: false,
-        ),
+        CelebrationCopy.kicker(perfect: false, isReplay: true, isBoss: false),
         'Revisão',
       );
       expect(
-        CelebrationCopy.headline(
-          perfect: false,
-          isReplay: false,
-          isBoss: true,
-        ),
+        CelebrationCopy.headline(perfect: false, isReplay: false, isBoss: true),
         'Travessia concluída',
       );
     });

@@ -622,9 +622,7 @@ class GhostCta extends StatelessWidget {
           ),
           padding: padding,
           decoration: BoxDecoration(
-            color:
-                fill ??
-                (danger ? dangerFill : a.cardFillSoft),
+            color: fill ?? (danger ? dangerFill : a.cardFillSoft),
             borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(color: border),
           ),

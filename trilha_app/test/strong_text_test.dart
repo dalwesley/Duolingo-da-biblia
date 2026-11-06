@@ -28,10 +28,11 @@ void main() {
   });
 
   test('definitionSenses splits numbered and semicolon senses', () {
-    expect(
-      definitionSenses('1. Deus. 2. deuses. 3. juízes.'),
-      ['Deus.', 'deuses.', 'juízes.'],
-    );
+    expect(definitionSenses('1. Deus. 2. deuses. 3. juízes.'), [
+      'Deus.',
+      'deuses.',
+      'juízes.',
+    ]);
     expect(
       definitionSenses(
         'Luz física, o primeiro criado; luminosidade; a verdade que ilumina.',

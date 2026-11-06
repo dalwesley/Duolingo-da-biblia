@@ -17,21 +17,24 @@ void main() {
     return progress;
   }
 
-  test('entering a scene advances past a cleared mode even if pinned', () async {
-    final progress = seeded();
-    expect(progress.difficultyForTrail(slug), 'caminhada');
+  test(
+    'entering a scene advances past a cleared mode even if pinned',
+    () async {
+      final progress = seeded();
+      expect(progress.difficultyForTrail(slug), 'caminhada');
 
-    final moved = await progress.advancePastClearedMode(
-      slug,
-      missionSlugs: missions,
-    );
+      final moved = await progress.advancePastClearedMode(
+        slug,
+        missionSlugs: missions,
+      );
 
-    expect(moved, isTrue);
-    expect(progress.storedDifficultyForTrail(slug), 'caminhada');
-    expect(progress.canonicalDifficultyId(slug), 'caminhada');
-    expect(progress.difficultyForTrail(slug), 'caminhada');
-    expect(progress.completedMissions, isEmpty);
-  });
+      expect(moved, isTrue);
+      expect(progress.storedDifficultyForTrail(slug), 'caminhada');
+      expect(progress.canonicalDifficultyId(slug), 'caminhada');
+      expect(progress.difficultyForTrail(slug), 'caminhada');
+      expect(progress.completedMissions, isEmpty);
+    },
+  );
 
   test('session switch does not persist and restores canonical', () async {
     final progress = seeded();
@@ -50,7 +53,8 @@ void main() {
     expect(progress.storedDifficultyForTrail(slug), 'caminhada');
     expect(progress.completedMissions, ['m1']);
     expect(
-      progress.completedMissionsForTrail(trailSlug: slug, missionSlugs: missions)
+      progress
+          .completedMissionsForTrail(trailSlug: slug, missionSlugs: missions)
           .toSet(),
       {'m1', 'm2', 'm3'},
     );
@@ -66,7 +70,10 @@ void main() {
     expect(progress.difficultyForTrail(slug), 'caminhada');
     expect(progress.completedMissions, ['m1']);
     expect(
-      progress.completedMissionsForTrail(trailSlug: slug, missionSlugs: missions),
+      progress.completedMissionsForTrail(
+        trailSlug: slug,
+        missionSlugs: missions,
+      ),
       ['m1'],
     );
   });

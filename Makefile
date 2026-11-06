@@ -13,7 +13,6 @@ ADMIN := admin
         android_clean android_fix_gradle android_build deep_clean_android \
         ios_pods ios_update ios_clean ios_reset ios_run ios_build open_ios deep_clean_ios \
         doctor upgrade clean_cache fix_permissions \
-        seed seed_cli seed_full \
         audit_rankings audit_rankings_fix test_rankings deploy_rules
 
 # ==========================================
@@ -202,18 +201,7 @@ fix_permissions:
 
 # ==========================================
 # CONTEÚDO / FIRESTORE
-# (usa firebase login — contas Google-only não autenticam npm run seed)
 # ==========================================
-
-# Banco de questões → Firestore. Override: make seed SEED_ONLY=genesis
-seed seed_cli:
-	@echo "$(GREEN)☁️  Publicando banco no Firestore (Firebase CLI)…$(NC)"
-	cd $(ADMIN) && SEED_ONLY=$(or $(SEED_ONLY),bank) npm run seed:cli
-
-# Trilhas + banco + estudos + catálogo
-seed_full:
-	@echo "$(GREEN)☁️  Publicando conteúdo completo no Firestore…$(NC)"
-	cd $(ADMIN) && npm run seed:cli
 
 # Auditoria de rankings — compara placares com users/{uid}
 audit_rankings:
@@ -270,9 +258,6 @@ help:
 	@echo "  make deep_clean_ios"
 	@echo ""
 	@echo "Conteúdo (Firestore):"
-	@echo "  make seed            # banco de questões (SEED_ONLY=bank)"
-	@echo "  make seed_full       # trilhas + banco + estudos"
-	@echo "  make seed SEED_ONLY=ot"
 	@echo "  make audit_rankings  # verificar placares vs progresso"
 	@echo "  make audit_rankings_fix  # corrigir inconsistências"
 	@echo "  make deploy_rules    # publicar firestore.rules"

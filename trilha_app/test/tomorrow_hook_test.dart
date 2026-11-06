@@ -43,9 +43,7 @@ Trail _trail({
     unlockAfter: unlockAfter,
     comingSoon: false,
     color: '#1B3A5C',
-    modules: [
-      TrailModule(title: 'M', icon: '', missions: missions),
-    ],
+    modules: [TrailModule(title: 'M', icon: '', missions: missions)],
   );
 }
 
@@ -70,10 +68,7 @@ void main() {
   );
 
   test('next unfinished mission is the hook, never the insight', () {
-    final hook = TomorrowHook.resolve(
-      trails: [genesis],
-      completed: ['imagem'],
-    );
+    final hook = TomorrowHook.resolve(trails: [genesis], completed: ['imagem']);
     expect(hook, isNotNull);
     expect(hook!.title, 'A serpente no jardim');
     expect(hook.tease, contains('pergunta'));
@@ -89,8 +84,7 @@ void main() {
     final m = _m(
       slug: 'luz',
       title: 'Haja luz',
-      hookVerse:
-          'Disse Deus: Haja luz; e houve luz. … Deus chamou à luz Dia.',
+      hookVerse: 'Disse Deus: Haja luz; e houve luz. … Deus chamou à luz Dia.',
       hookNote: 'Deus organiza o caos em seis dias: primeiro os ambientes.',
       insight: 'Deus traz ordem ao caos',
     );
@@ -271,10 +265,7 @@ void main() {
   });
 
   test('withToday fills insight when the catalog omitted it', () {
-    final hook = TomorrowHook.resolve(
-      trails: [genesis],
-      completed: ['imagem'],
-    );
+    final hook = TomorrowHook.resolve(trails: [genesis], completed: ['imagem']);
     final filled = hook!.withToday('Deus é o centro, não eu');
     expect(filled.todayInsight, 'Deus é o centro, não eu');
     expect(filled.title, hook.title);
@@ -299,7 +290,11 @@ void main() {
       slug: 'exodo',
       unlockAfter: 'genesis-1-11',
       missions: [
-        _m(slug: 'arbusto', title: 'O arbusto que arde', intro: 'Um nome no fogo.'),
+        _m(
+          slug: 'arbusto',
+          title: 'O arbusto que arde',
+          intro: 'Um nome no fogo.',
+        ),
       ],
     );
     final hook = TomorrowHook.resolve(
