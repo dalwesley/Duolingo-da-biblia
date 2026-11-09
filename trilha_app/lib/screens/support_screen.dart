@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
 import '../services/subscription_service.dart';
@@ -116,6 +117,12 @@ class _SupportScreenState extends State<SupportScreen> {
                           onTap: sub.loading
                               ? null
                               : () async {
+                                  if (!await GuestGate.requireAccount(
+                                    context,
+                                    reason: 'support',
+                                  )) {
+                                    return;
+                                  }
                                   final ok = await sub.purchaseSupport(package);
                                   if (ok && mounted) {
                                     setState(() => _thanked = true);

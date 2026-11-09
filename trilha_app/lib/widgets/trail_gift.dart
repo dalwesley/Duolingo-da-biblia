@@ -139,7 +139,7 @@ Future<void> _shareTrailGift(BuildContext context, Trail trail) async {
     return;
   }
   final backend = context.read<BackendService>();
-  final name = context.read<ProgressService>().userName;
+  final name = context.read<ProgressService>().publicUserName;
   final gift = await backend.sendTrailGift(
     trailSlug: trail.slug,
     fromName: name,
@@ -287,7 +287,7 @@ Future<void> redeemTrailGiftLink(BuildContext context, String code) async {
     }
     final result = await backend.redeemTrailGift(
       code,
-      toName: progress.userName,
+      toName: progress.publicUserName,
       chosenTrail: chosen,
     );
     if (!context.mounted) return;

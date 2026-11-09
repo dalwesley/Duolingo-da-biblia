@@ -61,7 +61,7 @@ class CornerHomeCard extends StatelessWidget {
         challenge.isClosed || (!challenge.isThisWeek && !incoming && !waiting);
     final live = challenge.status == CornerStatus.active;
 
-    final myName = progress.userName;
+    final myName = progress.publicUserName;
     final theirName = challenge.peerName(uid);
     final days = LeagueService.daysLeft();
     final when = days <= 1 ? CornerCopy.closesToday : CornerCopy.daysLeft(days);

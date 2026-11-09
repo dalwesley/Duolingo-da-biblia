@@ -157,7 +157,7 @@ class CompanionService extends ChangeNotifier {
     }
     final ok = await backend.sendCompanionInvite(
       code: code,
-      fromName: progress.userName,
+      fromName: progress.publicUserName,
       toUid: toUid,
       toName: toName,
     );
@@ -326,7 +326,7 @@ class CompanionService extends ChangeNotifier {
     loading = true;
     notifyListeners();
     final created = await backend.createCompanionInvite(
-      userName: progress.userName,
+      userName: progress.publicUserName,
     );
     loading = false;
     if (created == null) {
@@ -337,7 +337,7 @@ class CompanionService extends ChangeNotifier {
     if (withTrailGift) {
       await backend.attachOpenTrailGift(
         created.code,
-        fromName: progress.userName,
+        fromName: progress.publicUserName,
       );
     }
     final codes = [...await _loadCodes(), created.code];
@@ -365,7 +365,7 @@ class CompanionService extends ChangeNotifier {
     notifyListeners();
     final joined = await backend.joinCompanion(
       code: rawCode,
-      userName: progress.userName,
+      userName: progress.publicUserName,
       hadMissionsAtJoin: progress.completedMissions.isNotEmpty,
     );
     loading = false;
@@ -391,7 +391,7 @@ class CompanionService extends ChangeNotifier {
     final codes = companions.map((c) => c.code).toList();
     await backend.syncCompanionPresence(
       codes: codes,
-      userName: progress.userName,
+      userName: progress.publicUserName,
       weeklySteps: progress.weeklySteps,
       walkedToday: progress.walkedToday,
       completedFirstMission: progress.completedMissions.isNotEmpty,

@@ -224,6 +224,7 @@ class _HomeScreenState extends State<HomeScreen>
       _reminderChecked = true;
       return;
     }
+    if (progress.postSceneQuiet) return;
     final first = progress.firstLessonDate;
     if (first == null || first.isEmpty) return;
     if (progress.shouldShowComeback) return;
@@ -237,7 +238,7 @@ class _HomeScreenState extends State<HomeScreen>
       if (route == null || !route.isCurrent) return;
       if (_reminderChecked) return;
       _reminderChecked = true;
-      showReminderPromptSheet(context);
+      showReminderPromptSheet(context, source: 'home');
     });
   }
 
@@ -245,6 +246,7 @@ class _HomeScreenState extends State<HomeScreen>
   void _maybeOfferPlus(ProgressService progress) {
     if (_plusOfferChecked) return;
     if (progress.shouldShowComeback || !progress.notificationsPrompted) return;
+    if (progress.postSceneQuiet) return;
     _plusOfferChecked = true;
     final sub = context.read<SubscriptionService>();
     unawaited(() async {
@@ -322,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen>
       if (!shown.any((s) => s.slug == t.slug)) continue;
       if (PlusAccess.giftedTrails.contains(t.slug)) {
         roles[t.slug] = l10n.myTrailsGift;
-      } else if (principal == null) {
+      } else if (principal == null && !TrailProgress.outsideFreeSlot(t)) {
         principal = t.slug;
         roles[t.slug] = l10n.myTrailsPrincipal;
       } else {
@@ -358,7 +360,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   void _maybeTeachGelo(ProgressService progress) {
     if (_geloTeachChecked) return;
-    if (progress.shouldShowComeback) return;
+    if (progress.shouldShowComeback || progress.postSceneQuiet) return;
     if (!progress.takePendingGeloTeach()) {
       _geloTeachChecked = true;
       return;
@@ -401,6 +403,7 @@ class _HomeScreenState extends State<HomeScreen>
   void _maybeOfferChest(ProgressService progress) {
     if (_chestOfferPending || !progress.dailyChestAvailable) return;
     if (progress.shouldShowComeback || !progress.notificationsPrompted) return;
+    if (progress.postSceneQuiet) return;
     _chestOfferPending = true;
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       final route = mounted ? ModalRoute.of(context) : null;

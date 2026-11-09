@@ -1,5 +1,7 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../services/analytics_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -29,17 +31,43 @@ enum _HourOption {
 
 const _hours = _HourOption.values;
 
-/// Pedido de lembrete — depois da 1ª missão, com horário âncora.
-Future<void> showReminderPromptSheet(BuildContext context) async {
+/// Horário que a folha já traz marcado: o que a pessoa escolheu no
+/// onboarding; senão, o período do dia em que ela acabou de caminhar —
+/// o hábito ancora na hora em que já cabe na rotina.
+int suggestedReminderHour(int chosenHour, DateTime now) {
+  if (_hours.any((h) => h.hour == chosenHour)) return chosenHour;
+  if (now.hour < 11) return _HourOption.morning.hour;
+  if (now.hour < 17) return _HourOption.noon.hour;
+  return _HourOption.night.hour;
+}
+
+/// Pedido de lembrete — logo depois da 1ª cena, antes do postal, com o
+/// horário sugerido. [source] vai para os eventos do funil.
+Future<void> showReminderPromptSheet(
+  BuildContext context, {
+  String source = 'celebration',
+}) async {
   final progress = context.read<ProgressService>();
+  final suggested = suggestedReminderHour(
+    progress.settings.reminderHour,
+    DateTime.now(),
+  );
   final choice = await showAppSheet<(bool enabled, int hour)>(
     context,
     isDismissible: true,
-    builder: (_) => const _ReminderPromptSheet(),
+    builder: (_) => _ReminderPromptSheet(initialHour: suggested),
   );
   if (progress.notificationsPrompted) return;
   final enabled = choice?.$1 == true;
-  final hour = choice?.$2 ?? progress.settings.reminderHour;
+  final hour = choice?.$2 ?? suggested;
+  unawaited(
+    AnalyticsService.instance.logReminderPrompt(
+      source: source,
+      choice: choice == null ? 'dismissed' : (enabled ? 'on' : 'not_now'),
+      hour: hour,
+      suggestedHour: suggested,
+    ),
+  );
   if (enabled) {
     await progress.updateSettings(
       progress.settings.copyWith(reminderHour: hour),
@@ -47,7 +75,9 @@ Future<void> showReminderPromptSheet(BuildContext context) async {
   }
   await progress.markNotificationsPrompted(enabled: enabled);
   if (enabled) {
-    await NotificationService.instance.requestOsPermission();
+    await NotificationService.instance.requestOsPermission(
+      source: 'reminder_$source',
+    );
   }
   await NotificationService.instance.syncFromProgress(progress);
 }
@@ -67,7 +97,10 @@ class _ReminderPromptSheet extends StatefulWidget {
   /// Nos Ajustes a pessoa já pediu o lembrete — sem convite, só a hora.
   final bool fromSettings;
 
-  const _ReminderPromptSheet({this.fromSettings = false});
+  /// Hora já marcada ao abrir; null usa a dos ajustes.
+  final int? initialHour;
+
+  const _ReminderPromptSheet({this.fromSettings = false, this.initialHour});
 
   @override
   State<_ReminderPromptSheet> createState() => _ReminderPromptSheetState();
@@ -79,8 +112,10 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
   @override
   void initState() {
     super.initState();
-    // Já vem com o horário escolhido no onboarding.
-    final chosen = context.read<ProgressService>().settings.reminderHour;
+    // Já vem com o horário sugerido (onboarding ou período do dia).
+    final chosen =
+        widget.initialHour ??
+        context.read<ProgressService>().settings.reminderHour;
     if (_hours.any((h) => h.hour == chosen)) _hour = chosen;
   }
 
@@ -102,7 +137,7 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
 
             eyebrow: widget.fromSettings
                 ? l10n.reminderDailyEyebrow
-                : l10n.comebackEyebrow,
+                : l10n.reminderPromptEyebrow,
             title: l10n.reminderTitle,
             subtitle: widget.fromSettings
                 ? l10n.reminderSubtitleSettings

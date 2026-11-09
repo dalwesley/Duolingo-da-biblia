@@ -7,6 +7,7 @@ import '../services/bible_service.dart';
 import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/guest_gate.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'evidence_verse.dart';
@@ -453,26 +454,29 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 ],
                               ],
                             ),
-                            Positioned(
-                              top: -4,
-                              right: -10,
-                              child: IconButton(
-                                tooltip: l10n.feedbackReportTooltip,
-                                onPressed: _report,
-                                visualDensity: VisualDensity.compact,
-                                padding: EdgeInsets.zero,
-                                constraints: const BoxConstraints(
-                                  minWidth: 36,
-                                  minHeight: 36,
-                                ),
-                                icon: CinematicIcon(
-                                  glyph: CinematicGlyph.flag,
-                                  size: AppMetrics.iconMd,
-                                  accent: a.textFaint,
-                                  framed: false,
+                            // Relato vai para a nuvem: no meio da 1ª cena
+                            // o visitante não é tirado dela para logar.
+                            if (!GuestGate.isGuest(context))
+                              Positioned(
+                                top: -4,
+                                right: -10,
+                                child: IconButton(
+                                  tooltip: l10n.feedbackReportTooltip,
+                                  onPressed: _report,
+                                  visualDensity: VisualDensity.compact,
+                                  padding: EdgeInsets.zero,
+                                  constraints: const BoxConstraints(
+                                    minWidth: 36,
+                                    minHeight: 36,
+                                  ),
+                                  icon: CinematicIcon(
+                                    glyph: CinematicGlyph.flag,
+                                    size: AppMetrics.iconMd,
+                                    accent: a.textFaint,
+                                    framed: false,
+                                  ),
                                 ),
                               ),
-                            ),
                           ],
                         ),
                       ),

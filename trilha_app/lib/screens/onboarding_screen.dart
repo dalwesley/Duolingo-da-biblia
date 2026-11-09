@@ -30,6 +30,7 @@ import '../widgets/cloud_mascot.dart';
 import '../widgets/anan_speech.dart';
 import '../widgets/intent_selector.dart';
 import '../widgets/ui_primitives.dart';
+import 'login_screen.dart';
 import 'main_shell.dart';
 
 /// Onboarding STWAY — cinco atos, do vazio à primeira missão.
@@ -119,6 +120,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   AppearanceMode _sky = AppearanceMode.automatic;
   int _streakGoal = 7;
   int _reminderHour = 7;
+  bool _hourTouched = false;
   final _startedAt = DateTime.now();
 
   /// Mesmos horários da folha de lembrete da Home.
@@ -255,7 +257,17 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     _logChoice('streak_goal', goal);
   }
 
+  void _openLogin() {
+    unawaited(
+      AnalyticsService.instance.logEvent('onboarding_have_account', const {}),
+    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => const LoginScreen()));
+  }
+
   void _pickHour(int hour) {
+    _hourTouched = true;
     if (hour == _reminderHour) return;
     ActHaptics.tap();
     setState(() => _reminderHour = hour);
@@ -467,7 +479,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
           dailyGoal: _dailyGoal,
           streakGoal: _streakGoal,
           appearanceMode: _sky,
-          reminderHour: _reminderHour,
+          // Quem pulou sem ver a hora não escolheu: a folha do lembrete
+          // sugere pelo período em que a pessoa caminhou.
+          reminderHour: _skipped && !_hourTouched ? null : _reminderHour,
           intent: _intent?.value,
         ),
       );
@@ -475,7 +489,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       if (_intent == _Intent.habit && !progress.notificationsPrompted) {
         await progress.markNotificationsPrompted(enabled: true);
         unawaited(() async {
-          await NotificationService.instance.requestOsPermission();
+          await NotificationService.instance.requestOsPermission(
+            source: 'onboarding',
+          );
           await NotificationService.instance.syncFromProgress(progress);
         }());
       }
@@ -685,6 +701,21 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                                             label: l10n.onboardingAnanSetupNow,
                                             expanded: true,
                                             onTap: _goNext,
+                                          ),
+                                        ],
+                                        // Visitante: quem reinstalou não
+                                        // precisa refazer a 1ª cena.
+                                        if (_beat == _Beat.origin &&
+                                            !context
+                                                .read<BackendService>()
+                                                .isSignedIn) ...[
+                                          const SizedBox(height: AppSpace.xs),
+                                          TextCta(
+                                            label: l10n.onboardingHaveAccount,
+                                            color: Appearance.of(
+                                              context,
+                                            ).textFaint,
+                                            onTap: _openLogin,
                                           ),
                                         ],
                                       ],

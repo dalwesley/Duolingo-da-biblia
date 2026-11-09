@@ -122,7 +122,8 @@ class SeasonWalkCatalog {
     final day = DateTime(today.year, today.month, today.day);
     final date = item.dateOn(campaign.start);
     if (date.isAfter(day)) return SeasonWalkAccess.lockedFuture;
-    if (SeasonWalkAccess.needsPlusDay(index) && !plusOpen) {
+    if (SeasonWalkAccess.needsPlusDay(index, campaignId: campaign.id) &&
+        !plusOpen) {
       return SeasonWalkAccess.lockedPlus;
     }
     return SeasonWalkAccess.open;

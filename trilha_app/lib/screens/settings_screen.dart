@@ -25,6 +25,7 @@ import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
 import '../services/sync_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/guest_gate.dart';
 import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
@@ -167,9 +168,15 @@ class _SettingsScreenState extends State<SettingsScreen>
     }
   }
 
+  /// Nome provisório ("Aprendiz") aparece como campo vazio, com a dica.
+  static String _shownName(ProgressService progress) =>
+      ProgressService.isPlaceholderUserName(progress.userName)
+      ? ''
+      : progress.userName;
+
   void _onNameChanged() {
     if (!mounted) return;
-    final current = context.read<ProgressService>().userName;
+    final current = _shownName(context.read<ProgressService>());
     final dirty = _nameController.text.trim() != current;
     if (dirty != _nameDirty) setState(() => _nameDirty = dirty);
   }
@@ -228,11 +235,12 @@ class _SettingsScreenState extends State<SettingsScreen>
 
     // Mantém o campo alinhado ao progresso (ex.: nome restaurado do Google),
     // sem sobrescrever enquanto o usuário edita.
-    if (!_nameDirty && _nameController.text != progress.userName) {
+    final shownName = _shownName(progress);
+    if (!_nameDirty && _nameController.text != shownName) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted || _nameDirty) return;
-        if (_nameController.text == progress.userName) return;
-        _nameController.text = progress.userName;
+        if (_nameController.text == shownName) return;
+        _nameController.text = shownName;
         setState(() => _nameDirty = false);
       });
     }
@@ -484,7 +492,9 @@ class _SettingsScreenState extends State<SettingsScreen>
   Future<void> _setReminder(ProgressService progress, bool enabled) async {
     await progress.markNotificationsPrompted(enabled: enabled);
     if (enabled) {
-      await NotificationService.instance.requestOsPermission();
+      await NotificationService.instance.requestOsPermission(
+        source: 'settings',
+      );
     }
     await NotificationService.instance.syncFromProgress(progress);
   }
@@ -756,11 +766,24 @@ class _SettingsScreenState extends State<SettingsScreen>
             onOpenProfile: widget.onOpenProfile,
             onSaveName: () => _saveName(progress),
           ),
+          // Visitante: a única porta de entrar fora da tela de salvar.
+          if (!signedIn && backend.isFirebaseReady) ...[
+            const SizedBox(height: AppSpace.md),
+            CopperCta(
+              label: context.l10n.settingsGuestSignIn,
+              onTap: () =>
+                  GuestGate.requireAccount(context, reason: 'settings'),
+              trailing: null,
+              dense: true,
+            ),
+          ],
           // Sem loja configurada e sem promoção de lançamento, sem faixa.
           if (sub.showsPlus) ...[
             const SizedBox(height: AppSpace.lg),
             _PlusStrip(
               paid: sub.isPeregrinoPlus,
+              // Visitante já tem o botão de entrar: um botão só no cartão.
+              showCta: signedIn || !backend.isFirebaseReady,
               paidLine: sub.isPeregrinoPlus
                   ? '${plusPlanLabel(context.l10n, sub)} · '
                         '${plusStatusLabel(context.l10n, sub)}'
@@ -911,8 +934,10 @@ class _SettingsScreenState extends State<SettingsScreen>
     }
     await progress.applyFromCloud(parsed);
     await league.applyFromCloud(parsed);
-    progress.bindCacheUid(backend.uid);
+    // Visitante guarda no espelho dele; com conta, no da conta.
+    progress.bindCacheUid(backend.uid ?? ProgressService.guestCacheUid);
     progress.markCloudHydrated();
+    if (!backend.isActive) await progress.persistLocalCache();
     await backend.saveNow(progress, LeagueService.weekKey(), league: league);
     await sync.markSynced();
     if (mounted) {
@@ -1458,9 +1483,14 @@ class _PlusStrip extends StatelessWidget {
   final String? paidLine;
   final VoidCallback onTap;
 
+  /// Botão "Assinar" dentro da faixa. Desligado quando o cartão já tem
+  /// outro botão principal (entrar) — a faixa segue tocável pelo chevron.
+  final bool showCta;
+
   const _PlusStrip({
     required this.paid,
     required this.onTap,
+    this.showCta = true,
     this.promoLine,
     this.paidLine,
   });
@@ -1470,7 +1500,7 @@ class _PlusStrip extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final promo = !paid && promoLine != null;
-    final offer = !paid && !promo;
+    final offer = !paid && !promo && showCta;
     final line = paid
         ? paidLine ?? l10n.settingsSubscriptionActive
         : promo

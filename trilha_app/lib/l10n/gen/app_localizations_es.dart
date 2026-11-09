@@ -895,7 +895,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chestRewards => 'Recompensas';
 
   @override
-  String get chestTapHint => 'Toca rápido para abrirlo';
+  String get chestTapHint =>
+      'Toca varias veces seguidas hasta llenar la barra y abrir el cofre';
 
   @override
   String get chestVozMessage =>
@@ -2995,6 +2996,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get heroEndPlusTitle => 'Recorriste todas las rutas abiertas';
 
   @override
+  String get homeAddName => 'Pon tu nombre';
+
+  @override
   String get homeBibleOfflineSubtitle => 'Lee sin internet';
 
   @override
@@ -3625,6 +3629,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String juntosFirstMilestone(int count) {
     return 'Primer hito: $count días juntos';
   }
+
+  @override
+  String get juntosGuestBody =>
+      'La Caravana, la compañía y los grupos viven en tu cuenta. Entra para ver quién camina contigo.';
+
+  @override
+  String get juntosGuestCta => 'Entrar';
+
+  @override
+  String get juntosGuestTitle => 'Camina junto';
 
   @override
   String get juntosHaveCode => 'Tengo un código';
@@ -4265,6 +4279,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get loginGoogleError => 'Falló el acceso con Google';
 
   @override
+  String get loginGuestBody =>
+      'Tu primera escena está hecha. Entra para guardar tus pasos y seguir con la siguiente.';
+
+  @override
+  String get loginGuestGateBody =>
+      'Con la cuenta tus pasos quedan guardados y puedes suscribirte y caminar junto a otras personas.';
+
+  @override
+  String get loginGuestTitle => 'Guarda tu caminata';
+
+  @override
   String get loginHydrateError =>
       'No se pudo cargar tu progreso. Revisa la conexión e inténtalo de nuevo.';
 
@@ -4276,7 +4301,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get loginTermsNotice =>
-      'Al entrar, aceptas los términos de uso y la política de privacidad. No se tolera contenido ofensivo.';
+      'Al entrar, aceptas los términos de uso y la política de privacidad.';
 
   @override
   String get loginTitle => 'Entra para continuar';
@@ -5642,6 +5667,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get myTrailsSecondary => 'Secundaria';
 
   @override
+  String get nameSheetSubtitle =>
+      'Aparece en el saludo y para quien camina contigo.';
+
+  @override
+  String get nameSheetTitle => '¿Cómo te llamamos?';
+
+  @override
   String get navBible => 'Biblia';
 
   @override
@@ -6056,6 +6088,9 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get onboardingHabitBody =>
       'Conocer a Dios no pide una maratón.\nPide que vuelvas, todos los días.';
+
+  @override
+  String get onboardingHaveAccount => 'Ya tengo cuenta';
 
   @override
   String get onboardingHoldToCommit => 'Mantén pulsado para fijar';
@@ -7125,6 +7160,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get postcardReveal => 'Revelar la postal';
 
   @override
+  String get postcardSavedNew => 'Nueva postal guardada';
+
+  @override
   String postcardShareChip(int index, int total, String trail) {
     return 'Postal $index de $total · $trail';
   }
@@ -8094,6 +8132,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get reminderNoon => 'Mediodía';
 
   @override
+  String get reminderPromptEyebrow => 'Hasta mañana';
+
+  @override
   String reminderRemindAt(int hour) {
     return 'Recordar a las $hour:00';
   }
@@ -8352,6 +8393,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get seasonEnded => 'Temporada terminada';
+
+  @override
+  String get seasonGiftTag => 'Regalo de lanzamiento';
 
   @override
   String seasonOpensIn(int days) {
@@ -8753,6 +8797,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsGenesisTitle => 'Génesis 1–11';
 
   @override
+  String get settingsGuestSignIn => 'Entrar y guardar mi caminata';
+
+  @override
   String get settingsInCloud => 'En la nube';
 
   @override
@@ -9030,9 +9077,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get splashPreparing => 'Preparando tu camino…';
-
-  @override
-  String get splashSlogan => 'La Biblia, escena a escena';
 
   @override
   String get streakDayEmpty => 'sin escena';

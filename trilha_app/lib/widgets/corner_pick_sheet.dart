@@ -147,7 +147,7 @@ class _CornerPickSheetState extends State<_CornerPickSheet> {
     final created = await corners.propose(
       opponentId: uid,
       opponentName: c.entry.name,
-      myName: progress.userName,
+      myName: progress.publicUserName,
       proposal: proposal,
       opponentPhotoUrl: c.entry.photoUrl,
     );

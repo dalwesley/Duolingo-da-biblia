@@ -35,7 +35,7 @@ class RecognizeHeartButton extends StatelessWidget {
     final uid = toUid;
     if (uid == null || uid.isEmpty) return;
     final service = context.read<RecognitionService>();
-    final name = context.read<ProgressService>().userName;
+    final name = context.read<ProgressService>().publicUserName;
     final wasGiven = service.alreadyGiven(
       toUid: uid,
       kind: kind,
@@ -465,7 +465,7 @@ Future<RecognitionGiveStatus> giveRecognition(
   required String subjectKey,
 }) async {
   final service = context.read<RecognitionService>();
-  final name = context.read<ProgressService>().userName;
+  final name = context.read<ProgressService>().publicUserName;
   ActHaptics.light();
   final status = await service.give(
     toUid: toUid,

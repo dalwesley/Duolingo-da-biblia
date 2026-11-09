@@ -57,6 +57,9 @@ class MedalEngagementService {
       // Reset de progresso volta à introdução. Sem isso, a folha de
       // conquista abre por cima dos ajustes ou da tela de entrar.
       if (!progress.hasSeenOnboarding) return;
+      // Uma folha por cena: a celebração já teve a sua. A medalha espera
+      // a próxima abertura (a linha de medalha já apareceu na festa).
+      if (progress.postSceneQuiet) return;
 
       final backend = context.read<BackendService>();
       if (!backend.isSignedIn || epoch != _epoch) return;

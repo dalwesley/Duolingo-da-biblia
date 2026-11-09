@@ -30,9 +30,7 @@ class _PortraitPickerSheet extends StatelessWidget {
     final backend = context.watch<BackendService>();
     final selected = progress.settings.portraitStyle;
     final hasPhoto = PortraitFace.isUsablePhotoUrl(backend.userPhotoUrl);
-    final name = progress.userName.trim().isEmpty
-        ? context.l10n.pilgrimFallbackName
-        : progress.userName.trim();
+    final name = progress.publicUserName;
 
     return AppSheetPanel(
       child: Column(

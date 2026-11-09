@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/trail_suggestion_service.dart';
@@ -14,6 +15,12 @@ import 'ui_primitives.dart';
 
 /// Abre o sheet para sugerir um caminho ainda fora do mapa.
 Future<bool> showTrailSuggestionSheet(BuildContext context) async {
+  // Relato vai para a nuvem: visitante salva a caminhada antes de
+  // preencher, não depois.
+  if (!await GuestGate.requireAccount(context, reason: 'report')) {
+    return false;
+  }
+  if (!context.mounted) return false;
   final result = await showAppSheet<bool>(
     context,
     isDismissible: true,

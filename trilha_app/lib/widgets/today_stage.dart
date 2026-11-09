@@ -8,7 +8,6 @@ import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'postcard.dart';
 import 'stway_brand.dart';
-import 'ui_primitives.dart';
 
 /// Placa Hoje: capa da cena. A pintura grande no alto, de ponta a ponta, se
 /// desfaz no escuro, e a frase vem grande embaixo — como um pôster.
@@ -37,6 +36,11 @@ class TodayStage extends StatefulWidget {
   /// Sem animação, com a marca no rodapé — imagem para compartilhar.
   final bool still;
 
+  /// Cena que rende postal novo: livro do carimbo ("Rute"). A placa vira a
+  /// revelação do postal — o carimbo do dia pousa na pintura e "Novo
+  /// postal guardado" aparece no alto. Sem tela de postal depois da festa.
+  final String? stampBook;
+
   const TodayStage({
     super.key,
     required this.insight,
@@ -48,6 +52,7 @@ class TodayStage extends StatefulWidget {
     this.height,
     this.onShare,
     this.still = false,
+    this.stampBook,
   });
 
   /// Proporção da placa sem [height]: a mesma do card compartilhado.
@@ -78,7 +83,13 @@ class _TodayStageState extends State<TodayStage>
       return;
     }
     _t.addStatusListener((s) {
-      if (s == AnimationStatus.completed) ActHaptics.light();
+      if (s != AnimationStatus.completed) return;
+      // O carimbo bate junto com a última palavra.
+      if (_stamps) {
+        ActHaptics.success();
+      } else {
+        ActHaptics.light();
+      }
     });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -96,6 +107,31 @@ class _TodayStageState extends State<TodayStage>
   void dispose() {
     _t.dispose();
     super.dispose();
+  }
+
+  bool get _stamps =>
+      !widget.still && (widget.stampBook ?? '').trim().isNotEmpty;
+
+  /// Carimbo: entra grande e assenta (batida) no fim da frase.
+  Widget _stamp(DateTime on) {
+    final v = _after(0.82);
+    final land = AppMotion.settle.transform(v);
+    return IgnorePointer(
+      child: Opacity(
+        opacity: v.clamp(0.0, 1.0),
+        child: Transform.rotate(
+          angle: -0.14,
+          child: Transform.scale(
+            scale: 1.5 - 0.5 * land,
+            child: PostmarkStamp(
+              radius: 26,
+              top: widget.stampBook!.trim(),
+              on: on,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   /// Janela da palavra [i]: entram em cascata, sobrepostas.
@@ -214,117 +250,188 @@ class _TodayStageState extends State<TodayStage>
                     ),
                   ),
                 ),
-                // Alto: o Anan e o dia.
+                if (_stamps && art != null)
+                  Positioned(
+                    right: 10,
+                    top: (artH * 0.34).clamp(64.0, double.infinity),
+                    child: _stamp(widget.on),
+                  ),
+                // Alto: o Anan e o dia (e o postal guardado, se rendeu).
                 Positioned(
                   left: 16,
                   top: 14,
-                  child: Row(
-                    children: [
-                      CloudMascot(
-                        face: CloudFace.sucesso,
-                        size: 38,
-                        react: !widget.still,
-                      ),
-                      const SizedBox(width: 8),
-                      Text.rich(
-                        TextSpan(
+                  child: ExcludeSemantics(
+                    child: Row(
+                      children: [
+                        CloudMascot(
+                          face: CloudFace.sucesso,
+                          size: 38,
+                          react: !widget.still,
+                        ),
+                        const SizedBox(width: 8),
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            TextSpan(
-                              text: l10n.commonToday.toUpperCase(),
-                              style: const TextStyle(color: AppRoles.reward),
+                            Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: l10n.commonToday.toUpperCase(),
+                                    style: const TextStyle(
+                                      color: AppRoles.reward,
+                                    ),
+                                  ),
+                                  TextSpan(text: '  ·  $date'),
+                                ],
+                              ),
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w800,
+                                color: ink.withValues(alpha: 0.85),
+                              ).copyWith(letterSpacing: 2, shadows: shadow),
                             ),
-                            TextSpan(text: '  ·  $date'),
+                            if (_stamps)
+                              Opacity(
+                                opacity: _after(0.85),
+                                child: Text(
+                                  l10n.postcardSavedNew.toUpperCase(),
+                                  style:
+                                      AppTypography.body(
+                                        size: 10,
+                                        weight: FontWeight.w800,
+                                        color: AppRoles.reward,
+                                      ).copyWith(
+                                        letterSpacing: 1.4,
+                                        shadows: shadow,
+                                      ),
+                                ),
+                              ),
                           ],
                         ),
-                        style: AppTypography.body(
-                          size: 12,
-                          weight: FontWeight.w800,
-                          color: ink.withValues(alpha: 0.85),
-                        ).copyWith(letterSpacing: 2, shadows: shadow),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
+                // Canto: só o símbolo de compartilhar.
+                if (!widget.still && widget.onShare != null)
+                  Positioned(
+                    right: 8,
+                    top: 8,
+                    child: Opacity(
+                      opacity: _after(0.85),
+                      child: IgnorePointer(
+                        ignoring: _t.value < 0.85,
+                        child: Semantics(
+                          button: true,
+                          label: l10n.commonShare,
+                          child: GestureDetector(
+                            onTap: () {
+                              ActHaptics.tap();
+                              widget.onShare!();
+                            },
+                            behavior: HitTestBehavior.opaque,
+                            child: SizedBox(
+                              width: 48,
+                              height: 48,
+                              child: Center(
+                                child: DecoratedBox(
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    // Vidro claro: o símbolo acende sobre
+                                    // a pintura em vez de afundar nela.
+                                    color: Colors.white,
+                                    border: Border.all(color: Colors.white),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: CinematicIcon(
+                                      glyph: CinematicGlyph.share,
+                                      size: 20,
+                                      accent: Colors.white,
+                                      framed: false,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 // Baixo: a frase, a referência e o compartilhar (ou a marca).
                 Positioned(
                   left: 22,
                   right: 22,
                   bottom: 16,
                   top: art == null ? 60 : artH * 0.72,
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.bottomLeft,
-                    child: SizedBox(
-                      width: box.maxWidth - 44,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Wrap(
-                            runSpacing: 2,
-                            children: [
-                              for (var i = 0; i < _words.length; i++)
-                                Opacity(
-                                  opacity: _wordT(i),
-                                  child: Transform.translate(
-                                    offset: Offset(0, 12 * (1 - _wordT(i))),
-                                    child: Text(
-                                      i == _words.length - 1
-                                          ? _words[i]
-                                          : '${_words[i]} ',
-                                      style: AppTypography.display(
-                                        size: long ? 30 : 38,
-                                        height: 1.08,
-                                        color: ink,
-                                      ).copyWith(shadows: shadow),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                          if (ref.isNotEmpty) ...[
-                            const SizedBox(height: 10),
-                            Opacity(
-                              opacity: _after(0.75),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    width: 22,
-                                    height: 2,
-                                    color: widget.accent,
-                                  ),
-                                  const SizedBox(width: 10),
-                                  Flexible(
-                                    child: Text(
-                                      ref,
-                                      style: AppTypography.verse(
-                                        size: 16,
-                                        weight: FontWeight.w600,
-                                        color: ink.withValues(alpha: 0.8),
+                  child: ExcludeSemantics(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.bottomLeft,
+                      child: SizedBox(
+                        width: box.maxWidth - 44,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Wrap(
+                              children: [
+                                for (var i = 0; i < _words.length; i++)
+                                  Opacity(
+                                    opacity: _wordT(i),
+                                    child: Transform.translate(
+                                      offset: Offset(0, 12 * (1 - _wordT(i))),
+                                      child: Text(
+                                        i == _words.length - 1
+                                            ? _words[i]
+                                            : '${_words[i]} ',
+                                        style: AppTypography.display(
+                                          size: long ? 30 : 38,
+                                          // A display tem ascendente alto:
+                                          // abaixo de 1 as linhas se tocam
+                                          // como num pôster, sem colidir.
+                                          height: 0.94,
+                                          color: ink,
+                                        ).copyWith(shadows: shadow),
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                              ],
                             ),
-                          ],
-                          const SizedBox(height: 14),
-                          if (widget.still)
-                            _brand()
-                          else if (widget.onShare != null)
-                            Opacity(
-                              opacity: _after(0.85),
-                              child: IgnorePointer(
-                                ignoring: _t.value < 0.85,
-                                child: TextCta(
-                                  label: l10n.commonShare,
-                                  leading: CinematicGlyph.share,
-                                  color: ink,
-                                  onTap: widget.onShare,
+                            if (ref.isNotEmpty) ...[
+                              const SizedBox(height: 10),
+                              Opacity(
+                                opacity: _after(0.75),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 22,
+                                      height: 2,
+                                      color: widget.accent,
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Flexible(
+                                      child: Text(
+                                        ref,
+                                        style: AppTypography.verse(
+                                          size: 16,
+                                          weight: FontWeight.w600,
+                                          color: ink.withValues(alpha: 0.8),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                            ),
-                        ],
+                            ],
+                            if (widget.still) ...[
+                              const SizedBox(height: 14),
+                              _brand(),
+                            ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -348,7 +455,7 @@ class _TodayStageState extends State<TodayStage>
 
     return Semantics(
       label: '${l10n.commonToday}: ${widget.insight}',
-      excludeSemantics: true,
+      container: true,
       child: widget.height == null
           ? Center(
               child: AspectRatio(aspectRatio: TodayStage.aspect, child: stage),

@@ -528,7 +528,7 @@
   "chestRarityVeryRare": "Muito rara",
   "chestReadyShort": "Pronto para abrir",
   "chestRewards": "Recompensas",
-  "chestTapHint": "Toque rápido na tela para abrir",
+  "chestTapHint": "Toque várias vezes seguidas até a barra encher e o baú abrir",
   "chestVozMessage": "Sua sequência já fala mais alto que qualquer palavra.",
   "chestVozTitle": "Voz da caravana",
   "comebackEyebrow": "O peregrino",
@@ -1880,6 +1880,10 @@
   "heroEndPlusBody": "As próximas trilhas são do Peregrino+. A Bíblia continua aberta para ler.",
   "heroEndPlusCta": "Conhecer o Peregrino+",
   "heroEndPlusTitle": "Você caminhou todas as trilhas abertas",
+  "homeAddName": "Pôr seu nome",
+  "@homeAddName": {
+    "description": "Home greeting: shown instead of a placeholder name; opens the name sheet."
+  },
   "homeBibleOfflineSubtitle": "Leia sem internet",
   "homeCarouselPosition": "{index} de {total}",
   "@homeCarouselPosition": {
@@ -2300,6 +2304,18 @@
         "type": "int"
       }
     }
+  },
+  "juntosGuestBody": "A Caravana, a companhia e os grupos ficam na sua conta. Entre para ver quem está no caminho com você.",
+  "@juntosGuestBody": {
+    "description": "Corpo do card de Juntos para visitante"
+  },
+  "juntosGuestCta": "Entrar",
+  "@juntosGuestCta": {
+    "description": "Botão do card de Juntos para visitante"
+  },
+  "juntosGuestTitle": "Caminhe junto",
+  "@juntosGuestTitle": {
+    "description": "Juntos para visitante (sem conta)"
   },
   "juntosHaveCode": "Tenho um código",
   "juntosInboxNews": "Novidades · {count}",
@@ -2792,10 +2808,22 @@
   "loginAppleError": "Falha no login com Apple",
   "loginEntering": "Entrando…",
   "loginGoogleError": "Falha no login com Google",
+  "loginGuestBody": "Sua primeira cena está feita. Entre para guardar seus passos e seguir para a próxima.",
+  "@loginGuestBody": {
+    "description": "Corpo do login depois da 1ª cena sem conta"
+  },
+  "loginGuestGateBody": "Com a conta, seus passos ficam guardados e você pode assinar e caminhar junto com outras pessoas.",
+  "@loginGuestGateBody": {
+    "description": "Corpo do login aberto como porta do visitante antes da 1ª cena"
+  },
+  "loginGuestTitle": "Salve sua caminhada",
+  "@loginGuestTitle": {
+    "description": "Login depois da 1ª cena feita sem conta"
+  },
   "loginHydrateError": "Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.",
   "loginLoadingBody": "Carregando seus passos, sua sequência e suas cenas…",
   "loginReconnect": "Tentar reconectar",
-  "loginTermsNotice": "Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.",
+  "loginTermsNotice": "Ao entrar, você aceita os termos de uso e a política de privacidade.",
   "loginTitle": "Entre para continuar",
   "loginWithApple": "Continuar com Apple",
   "loginWithGoogle": "Continuar com Google",
@@ -3676,6 +3704,8 @@
   "myTrailsGift": "Presente",
   "myTrailsPrincipal": "Principal",
   "myTrailsSecondary": "Secundária",
+  "nameSheetSubtitle": "Aparece na saudação e para quem caminha com você.",
+  "nameSheetTitle": "Como podemos te chamar?",
   "navBible": "Bíblia",
   "navTabWithNews": "{tab}, com novidades",
   "@navTabWithNews": {
@@ -3985,6 +4015,10 @@
   "onboardingFirstSceneTitle": "Quem criou o mundo?",
   "onboardingFiveLamps": "5 lâmpadas",
   "onboardingHabitBody": "Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.",
+  "onboardingHaveAccount": "Já tenho conta",
+  "@onboardingHaveAccount": {
+    "description": "Link no 1º passo do onboarding para quem reinstalou entrar direto"
+  },
   "onboardingHoldToCommit": "Segure para firmar",
   "onboardingHolding": "Firmando…",
   "onboardingIntentHabitCaption": "todo dia",
@@ -4709,6 +4743,10 @@
   "@postcardReveal": {
     "description": "Botão que revela a pintura da cena no fim da cena"
   },
+  "postcardSavedNew": "Novo postal guardado",
+  "@postcardSavedNew": {
+    "description": "Linha na placa Hoje quando a cena rende postal novo (carimbo)"
+  },
   "postcardShareChip": "Postal {index} de {total} · {trail}",
   "@postcardShareChip": {
     "description": "Card de compartilhar do postal (docs/postais.md)",
@@ -5368,6 +5406,10 @@
   "reminderMorning": "Manhã",
   "reminderNight": "Noite",
   "reminderNoon": "Meio-dia",
+  "reminderPromptEyebrow": "Até amanhã",
+  "@reminderPromptEyebrow": {
+    "description": "Rótulo da folha de lembrete ao sair da 1ª cena"
+  },
   "reminderRemindAt": "Lembrar às {hour}h",
   "@reminderRemindAt": {
     "placeholders": {
@@ -5552,6 +5594,10 @@
     }
   },
   "seasonEnded": "Estação encerrada",
+  "seasonGiftTag": "Presente de lançamento",
+  "@seasonGiftTag": {
+    "description": "Selo da estação aberta a todos (Advento 2026), sem Plus"
+  },
   "seasonOpensIn": "{days, plural, =0{Abre hoje} =1{Abre amanhã} other{Abre em {days} dias}}",
   "@seasonOpensIn": {
     "placeholders": {
@@ -5745,6 +5791,10 @@
   "settingsFontMedium": "Médio",
   "settingsFontSmall": "Pequeno",
   "settingsGenesisTitle": "Gênesis 1–11",
+  "settingsGuestSignIn": "Entrar e salvar minha caminhada",
+  "@settingsGuestSignIn": {
+    "description": "Botão nos Ajustes para visitante"
+  },
   "settingsInCloud": "Na nuvem",
   "settingsIntentHint": "Define a trilha de entrada. Depois, o app segue a última trilha que você andou.",
   "settingsIntentLabel": "Seu motivo",
@@ -5913,7 +5963,6 @@
     }
   },
   "splashPreparing": "Preparando sua jornada…",
-  "splashSlogan": "A Bíblia, cena a cena",
   "streakDayEmpty": "sem cena",
   "streakDayFrozen": "protegido pelo gelo",
   "streakDayRepaired": "recuperado",

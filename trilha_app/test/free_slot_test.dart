@@ -40,12 +40,8 @@ void main() {
   final genesis = _trail('genesis');
   final mateus = _trail('mateus', realm: 'novo-testamento');
   final oracao = _trail('oracao', realm: 'vida-crista', cat: 'oracao');
-  final ansiedade = _trail(
-    'ansiedade',
-    realm: 'vida-crista',
-    cat: 'paz-no-dia',
-  );
-  final trails = [genesis, mateus, oracao, ansiedade];
+  final salmos = _trail('salmos', realm: 'vida-crista', cat: 'paz-no-dia');
+  final trails = [genesis, mateus, oracao, salmos];
 
   tearDown(() {
     TrailProgress.lastPlayedMissionSlug = null;
@@ -174,7 +170,7 @@ void main() {
     final starter = _trail('genesis-1-11');
     TrailProgress.preferredTrailSlug = null;
     final pick = TrailProgress.starterSuggestion([
-      ansiedade,
+      salmos,
       starter,
       mateus,
     ], const []);
@@ -183,20 +179,20 @@ void main() {
 
   test('with an intent, the suggestion is the intent trail', () {
     final starter = _trail('genesis-1-11');
-    TrailProgress.preferredTrailSlug = 'ansiedade';
+    TrailProgress.preferredTrailSlug = 'salmos';
     addTearDown(() => TrailProgress.preferredTrailSlug = null);
     final pick = TrailProgress.starterSuggestion([
-      ansiedade,
+      salmos,
       starter,
       mateus,
     ], const []);
-    expect(pick?.slug, 'ansiedade');
+    expect(pick?.slug, 'salmos');
   });
 
   test('the principal is the first chosen, not the last played', () {
     TrailProgress.lastPlayedMissionSlug = 'genesis-1';
-    final chosen = {'ansiedade': day1, 'genesis': day2};
-    final done = ['ansiedade-1', 'genesis-1'];
+    final chosen = {'salmos': day1, 'genesis': day2};
+    final done = ['salmos-1', 'genesis-1'];
     expect(
       TrailProgress.freeSlotBlocker(
         genesis,
@@ -204,10 +200,10 @@ void main() {
         done,
         chosenAt: chosen,
       )?.slug,
-      'ansiedade',
+      'salmos',
     );
     expect(
-      TrailProgress.freeSlotBlocker(ansiedade, trails, done, chosenAt: chosen),
+      TrailProgress.freeSlotBlocker(salmos, trails, done, chosenAt: chosen),
       isNull,
     );
   });
@@ -251,10 +247,10 @@ void main() {
   });
 
   test('before any choice, the old started trails seed the order', () {
-    final done = ['genesis-1', 'ansiedade-1'];
-    final on = {'genesis-1': '2026-10-05', 'ansiedade-1': '2026-10-01'};
+    final done = ['genesis-1', 'salmos-1'];
+    final on = {'genesis-1': '2026-10-05', 'salmos-1': '2026-10-01'};
     expect(TrailProgress.legacyChoices(trails, done, completedOn: on), [
-      'ansiedade',
+      'salmos',
       'genesis',
     ]);
     expect(
@@ -265,18 +261,18 @@ void main() {
         completedOn: on,
         seeded: false,
       )?.slug,
-      'ansiedade',
+      'salmos',
     );
   });
 
   test('a choice made before the seed keeps the old trail as principal', () {
-    final done = ['genesis-1', 'ansiedade-1'];
-    final on = {'ansiedade-1': '2026-10-30'};
+    final done = ['genesis-1', 'salmos-1'];
+    final on = {'salmos-1': '2026-10-30'};
     expect(
       TrailProgress.freeOpenTrails(
         trails,
         done,
-        chosenAt: {'ansiedade': '2026-10-30T11:00:00'},
+        chosenAt: {'salmos': '2026-10-30T11:00:00'},
         completedOn: on,
         seeded: false,
       ).map((t) => t.slug),
@@ -285,11 +281,11 @@ void main() {
   });
 
   test('free open list: the principal and the gifts, not the catalog', () {
-    TrailProgress.preferredTrailSlug = 'ansiedade';
+    TrailProgress.preferredTrailSlug = 'salmos';
     addTearDown(() => TrailProgress.preferredTrailSlug = null);
 
     expect(TrailProgress.freeOpenTrails(trails, const []).map((t) => t.slug), [
-      'ansiedade',
+      'salmos',
     ]);
     PlusAccess.giftedTrails = {'oracao'};
     expect(
@@ -300,5 +296,75 @@ void main() {
       ).map((t) => t.slug),
       ['genesis', 'oracao'],
     );
+  });
+
+  group('entry trail walks outside the slot', () {
+    // Slug de trilha de entrada (EntryTrails.slugs): o motivo do onboarding.
+    final entry = _trail('ansiedade', realm: 'vida-crista', cat: 'paz-no-dia');
+    final all = [...trails, entry];
+
+    test('onboarding before logging into an old account keeps the entry '
+        'trail open next to the old principal', () {
+      // Conta antiga sem escolhas (semente) + cena de entrada de hoje.
+      final done = ['genesis-1', 'ansiedade-1'];
+      final on = {'ansiedade-1': '2026-11-09'};
+      final chosen = {'ansiedade': '2026-11-09T11:00:00'};
+      expect(
+        TrailProgress.freeOpenTrails(
+          all,
+          done,
+          chosenAt: chosen,
+          completedOn: on,
+          seeded: false,
+        ).map((t) => t.slug),
+        ['genesis', 'ansiedade'],
+      );
+      expect(
+        TrailProgress.freeSlotBlocker(
+          entry,
+          all,
+          done,
+          chosenAt: chosen,
+          completedOn: on,
+          seeded: false,
+        ),
+        isNull,
+      );
+    });
+
+    test('an entry trail never takes the slot of a canonical trail', () {
+      final chosen = {'ansiedade': day1};
+      final done = ['ansiedade-1'];
+      expect(
+        TrailProgress.freeSlotBlocker(mateus, all, done, chosenAt: chosen),
+        isNull,
+      );
+      expect(
+        TrailProgress.freeOpenTrails(
+          all,
+          done,
+          chosenAt: chosen,
+        ).map((t) => t.slug),
+        ['ansiedade'],
+      );
+    });
+
+    test('a canonical principal does not block the entry trail', () {
+      final chosen = {'genesis': day1, 'ansiedade': day2};
+      final done = ['genesis-1', 'ansiedade-1'];
+      expect(
+        TrailProgress.freeSlotBlocker(entry, all, done, chosenAt: chosen),
+        isNull,
+      );
+      expect(
+        TrailProgress.freeSlotBlocker(
+          mateus,
+          all,
+          done,
+          chosenAt: chosen,
+        )?.slug,
+        'genesis',
+      );
+    });
   });
 }

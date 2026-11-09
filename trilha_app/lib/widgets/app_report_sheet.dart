@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
 import '../models/app_report.dart';
 import '../services/backend_service.dart';
@@ -10,6 +11,12 @@ import 'ui_primitives.dart';
 /// Abre o sheet para relatar um problema do app (fora das perguntas) e
 /// agradece quando o relato sai.
 Future<void> showAppReportSheet(BuildContext context) async {
+  // Relato vai para a nuvem: visitante salva a caminhada antes de
+  // preencher, não depois.
+  if (!await GuestGate.requireAccount(context, reason: 'report')) {
+    return;
+  }
+  if (!context.mounted) return;
   final backend = context.read<BackendService>();
   final l10n = context.l10n;
   final locale = Localizations.localeOf(context).languageCode;

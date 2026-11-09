@@ -23,7 +23,6 @@ import '../utils/liturgical_calendar.dart';
 import '../utils/season_walk_debug.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
-import 'cloud_mascot.dart';
 import 'immersive_background.dart';
 import 'season_walk_crowd.dart';
 import 'season_walkers_sheet.dart';
@@ -117,7 +116,7 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
 
   Future<void> _invite(SeasonWalkCampaign campaign) async {
     final l10n = context.l10n;
-    final name = context.read<ProgressService>().userName.trim();
+    final name = context.read<ProgressService>().realUserName;
     final start = DateFormat.MMMMd(
       Localizations.localeOf(context).toLanguageTag(),
     ).format(campaign.start);
@@ -212,19 +211,23 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
       ],
     ];
 
+    // Cor do tempo litúrgico (Advento lilás, Quaresma argila) — a estação
+    // não é azul de presença; azul some no card azul do Médio.
+    final accent = LiturgicalCalendar.accentOf(
+      campaign.kind == SeasonWalkKind.advent
+          ? LiturgicalSeason.advent
+          : LiturgicalSeason.lent,
+    );
+    final accentInk = a.onDark ? accent : a.ink(accent);
+
     if (widget.bare && widget.crowd) {
       final backend = context.read<BackendService>();
       final moderation = context.watch<ModerationService>();
       final progress = context.read<ProgressService>();
-      final accent = LiturgicalCalendar.accentOf(
-        campaign.kind == SeasonWalkKind.advent
-            ? LiturgicalSeason.advent
-            : LiturgicalSeason.lent,
-      );
       final self = joined
           ? SeasonWalker(
               uid: backend.uid ?? 'me',
-              name: progress.userName,
+              name: progress.publicUserName,
               portraitStyle: progress.settings.portraitStyle,
             )
           : null;
@@ -328,10 +331,10 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CinematicIcon(
+                  CinematicIcon(
                     glyph: CinematicGlyph.people,
                     size: AppMetrics.iconSm,
-                    accent: AppRoles.presence,
+                    accent: accent,
                     framed: false,
                   ),
                   const SizedBox(width: 8),
@@ -342,7 +345,7 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
                         size: 12,
                         height: 1.4,
                         weight: FontWeight.w700,
-                        color: AppRoles.presence,
+                        color: accentInk,
                       ),
                     ),
                   ),
@@ -358,18 +361,14 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
     if (widget.bare) return pulseAndCtas;
 
     return GlassCard(
-      tint: AppRoles.presence,
-      glow: 0.28,
+      tint: accent,
+      glow: 0.5,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          // Sem o Anan aqui: ele já fala no card de entrar logo abaixo.
           Row(
             children: [
-              CloudMascot(
-                face: joined ? CloudFace.sucesso : CloudFace.feliz,
-                size: 56,
-              ),
-              const SizedBox(width: AppSpace.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -377,7 +376,7 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
                     SectionLabel(
                       l10n.walkTogetherKicker,
                       size: 10,
-                      color: AppRoles.presence,
+                      color: accentInk,
                     ),
                     const SizedBox(height: 2),
                     Text(

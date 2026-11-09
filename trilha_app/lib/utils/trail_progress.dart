@@ -825,13 +825,23 @@ class TrailProgress {
     return [?starter];
   }
 
-  /// A principal do grátis: a 1ª de [mine] que não é do Peregrino+ (nem
-  /// recebida por passe, que anda por fora da vaga).
-  static Trail? freePrincipal(List<Trail> mine) =>
-      mine.where((t) => !PlusAccess.trailInPlus(t)).firstOrNull;
+  /// Anda por fora da vaga do grátis: trilha recebida por passe e
+  /// trilha de entrada (o motivo do onboarding). A de entrada é curta e
+  /// grátis inteira; sem isto, quem fazia o onboarding antes de entrar
+  /// numa conta antiga perdia a trilha escolhida para a principal velha.
+  static bool outsideFreeSlot(Trail t) =>
+      PlusAccess.giftedTrails.contains(t.slug) ||
+      EntryTrails.slugs.contains(t.slug);
+
+  /// A principal do grátis: a 1ª de [mine] que não é do Peregrino+ nem
+  /// anda por fora da vaga ([outsideFreeSlot]).
+  static Trail? freePrincipal(List<Trail> mine) => mine
+      .where((t) => !PlusAccess.trailInPlus(t) && !outsideFreeSlot(t))
+      .firstOrNull;
 
   /// O que o grátis vê como trilha aberta (faixa Trilhas / herói): a
-  /// principal e as recebidas por passe ainda abertas. Sem principal, a
+  /// principal, as de entrada escolhidas e as recebidas por passe ainda
+  /// abertas, na ordem de [myTrails]. Sem principal nem entrada, a
   /// [starterSuggestion] — não o catálogo inteiro de trilhas desbloqueadas.
   static List<Trail> freeOpenTrails(
     List<Trail> trails,
@@ -855,17 +865,25 @@ class TrailProgress {
       completedOn: completedOn,
       borrowed: borrowed,
     );
+    final entries = [
+      for (final t in mine)
+        if (EntryTrails.slugs.contains(t.slug) &&
+            getCurrentMission(t, completed) != null)
+          t,
+    ];
     final principal =
         freePrincipal(mine) ??
-        starterSuggestion(
-          trails,
-          completed,
-          clearedTrailModes: clearedTrailModes,
-          trailModes: trailModes,
-          pinnedModes: pinnedModes,
-          borrowed: borrowed,
-          plusOpen: false,
-        );
+        (entries.isNotEmpty
+            ? null
+            : starterSuggestion(
+                trails,
+                completed,
+                clearedTrailModes: clearedTrailModes,
+                trailModes: trailModes,
+                pinnedModes: pinnedModes,
+                borrowed: borrowed,
+                plusOpen: false,
+              ));
     final gifts = [
       for (final t in [...mine, ...trails])
         if (PlusAccess.giftedTrails.contains(t.slug) &&
@@ -876,8 +894,17 @@ class TrailProgress {
             ))
           t,
     ];
+    // Na ordem de Minhas trilhas: a de entrada escolhida antes da
+    // principal vem antes dela (sugestão sem escolha vai na frente).
+    final keep = {?principal?.slug, for (final t in entries) t.slug};
     final out = <Trail>[];
-    for (final t in [?principal, ...gifts]) {
+    for (final t in [
+      if (principal != null && !mine.any((m) => m.slug == principal.slug))
+        principal,
+      for (final t in mine)
+        if (keep.contains(t.slug)) t,
+      ...gifts,
+    ]) {
       if (!out.any((o) => o.slug == t.slug)) out.add(t);
     }
     return out;
@@ -905,6 +932,7 @@ class TrailProgress {
     bool allowCompletedTarget = true,
   }) {
     if (PlusAccess.trailInPlus(target)) return null;
+    if (outsideFreeSlot(target)) return null;
     if (allowCompletedTarget &&
         isTrailCompleted(
           target,

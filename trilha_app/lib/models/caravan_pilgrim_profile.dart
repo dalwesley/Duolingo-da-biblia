@@ -192,7 +192,7 @@ class CaravanPilgrimProfile {
   }) {
     return CaravanPilgrimProfile(
       uid: uid,
-      name: progress.userName,
+      name: progress.publicUserName,
       steps: progress.steps,
       streak: progress.streak,
       bestStreak: progress.bestStreak,

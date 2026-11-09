@@ -22,6 +22,7 @@ import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/guest_gate.dart';
 import '../utils/liturgical_calendar.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/app_update_sheet.dart';
@@ -109,6 +110,37 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   /// Já avisou que o passe de trilha espera o login (uma vez por sessão).
   bool _trailGiftWaitShown = false;
+
+  /// Visitante já foi levado a salvar a caminhada (uma vez por shell).
+  bool _guestSaveShown = false;
+
+  /// Visitante que terminou a 1ª cena (ou voltou ao app depois dela): uma
+  /// vez por shell, a tela de salvar abre por cima. "Agora não" volta para
+  /// a Home; cena nova pede a conta de novo (GuestGate).
+  void _maybeAskGuestToSave() {
+    if (_guestSaveShown || !mounted || !_routeCurrent) return;
+    final backend = context.read<BackendService>();
+    if (backend.isSignedIn ||
+        backend.isInitializing ||
+        !backend.isFirebaseReady) {
+      return;
+    }
+    final progress = context.read<ProgressService>();
+    if (!GuestGate.walked(progress)) return;
+    _guestSaveShown = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      unawaited(progress.persistLocalCache());
+      // Sozinha, no máximo 1×/dia — depois só quando ele pedir (cena nova,
+      // assinar, Juntos, Ajustes).
+      if (!await GuestGate.takeDailyPrompt()) return;
+      if (!mounted) return;
+      Navigator.of(
+        context,
+        rootNavigator: true,
+      ).push(GuestGate.saveRoute(context, reason: 'first_scene'));
+    });
+  }
 
   final _repo = TrailRepository();
   Timer? _phaseTimer;
@@ -255,6 +287,13 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   /// Peregrino+ comprado no site: o link de resgate liga a compra à conta.
   Future<void> _redeemWebPurchaseIfPending() async {
+    // Visitante: o link fica guardado e a tela de salvar abre; depois do
+    // login o shell novo resgata.
+    if (GuestGate.isGuest(context)) {
+      if (!InviteDeepLinkService.instance.hasPendingWebPurchaseLink) return;
+      await GuestGate.requireAccount(context, reason: 'web_purchase');
+      return;
+    }
     final link = InviteDeepLinkService.instance.takePendingWebPurchaseLink();
     if (link == null) return;
     final outcome = await context.read<SubscriptionService>().redeemWebPurchase(
@@ -333,6 +372,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     if (!mounted) return;
     final progress = _progressRef;
     if (progress == null) return;
+    _maybeAskGuestToSave();
     context.read<BackendService>().scheduleSave(
       progress,
       LeagueService.weekKey(),
@@ -355,7 +395,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     }
     HomeWidgetService.syncFromProgress(progress);
     if (context.read<BackendService>().isSignedIn &&
-        progress.hasSeenOnboarding) {
+        progress.hasSeenOnboarding &&
+        !progress.postSceneQuiet) {
       // Com cena / festa por cima, cada resposta refazia o perfil inteiro
       // na UI thread. Guarda e confere uma vez ao voltar ao shell.
       if (_routeCurrent) {
@@ -408,6 +449,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       }
     }
     if (state == AppLifecycleState.resumed) {
+      // Volta ao app: a vez da Home (oferta, baú, medalha) reabre.
+      _progressRef?.clearPostSceneQuiet();
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) _handleReminderAction(pending);
       _syncReminders();
@@ -628,6 +671,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _built.add(_index);
     // Reconstrói quando uma rota entra ou sai por cima do shell.
     _routeCurrent = ModalRoute.isCurrentOf(context) ?? true;
+    _maybeAskGuestToSave();
     if (_routeCurrent && _medalCheckPending) {
       _medalCheckPending = false;
       WidgetsBinding.instance.addPostFrameCallback((_) {

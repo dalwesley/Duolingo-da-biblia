@@ -95,7 +95,7 @@ class _MeScreenState extends State<MeScreen> {
       if (backend.isActive) {
         final month = await backend.fetchMonthlyPlayers();
         final entries = league.monthStandings(
-          userName: progress.userName,
+          userName: progress.publicUserName,
           userMonthSteps: progress.currentMonthSteps,
           userWeekSteps: progress.currentWeekSteps,
           userDayStartSteps: progress.monthStartOfToday,
@@ -177,7 +177,7 @@ class _MeScreenState extends State<MeScreen> {
     final body = <Widget>[
       if (hero)
         ProfileHero(
-          name: progress.userName,
+          name: progress.publicUserName,
           photoUrl: backend.userPhotoUrl,
           seed: backend.uid,
           style: progress.settings.portraitStyle,
@@ -203,7 +203,7 @@ class _MeScreenState extends State<MeScreen> {
       else
         pad(
           PilgrimIdentityCard(
-            name: progress.userName,
+            name: progress.publicUserName,
             supporter: sub.isSupporter,
             pilgrim: sub.hasPilgrimBadge,
             pioneer: sub.hasPioneerBadge,
@@ -263,7 +263,7 @@ class _MeScreenState extends State<MeScreen> {
             profile: profile,
             entry: LeagueEntry(
               uid: backend.uid,
-              name: progress.userName,
+              name: progress.publicUserName,
               steps: progress.steps,
               isUser: true,
               lastWalkDate: progress.lastPlayedDate,

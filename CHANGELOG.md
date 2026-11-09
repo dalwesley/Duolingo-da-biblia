@@ -9,6 +9,29 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.45] — 2026-11-09
+
+### Added
+- Primeira cena sem conta: instalação nova vai da abertura ao onboarding e à 1ª cena sem login. Depois dela, "Salve sua caminhada" (Google/Apple) guarda o que foi feito na conta nova; "Agora não" volta para onde a pessoa estava e o app segue como visitante (progresso no aparelho, também offline)
+- Visitante pede a conta só quando precisa: cena nova, assinar, restaurar, apoiar, resgatar compra do site, convites, Juntos (card "Caminhe junto"), relatos e sugestões, lista de espera. Refazer cena feita e prática seguem livres. A tela de salvar abre sozinha no máximo 1×/dia
+- "Já tenho conta" no 1º passo do onboarding, para quem reinstalou
+- Advento 2026 grátis para todos, como presente de lançamento: todos os dias e as revisões de cada semana, com o selo "Presente de lançamento" no card e na folha da Estação. O paywall tira "Trilhas da estação" enquanto a campanha da vez for presente
+- Postal revelado na própria placa Hoje: o carimbo do dia pousa na pintura e "Novo postal guardado" aparece no alto
+- Nome provisório ("Aprendiz"): a saudação da Home convida a pôr um nome (nova folha), e o nome provisório não aparece para outras pessoas
+- Funil: `retention_pulse` em toda abertura (com ou sem conta), `reminder_prompt`, `notification_permission`, `notification_open`, `guest_start`, `guest_gate`, `guest_save_view`, `guest_save_dismiss`, `guest_saved`, `onboarding_have_account`
+
+### Changed
+- Depois da cena, duas telas em vez de três: Hoje (com o postal) e a festa. A festa não abre mais a tela do postal
+- Um aviso por cena: o lembrete da 1ª cena abre no toque de sair (não cobre a festa), com o horário sugerido pelo período do dia e o rótulo "Até amanhã". Oferta do Plus, baú, gelo e medalhas esperam a próxima abertura
+- Trilha de entrada (o motivo do onboarding) anda fora da vaga do grátis, como a recebida por passe
+- Abertura e login: só "Um passo. Uma jornada. Uma comunidade." (sai "A Bíblia, cena a cena"); o aviso de aceite fica só com termos e privacidade (a cláusula de conteúdo ofensivo segue nos Termos)
+- Fatos da placa Hoje numa placa sólida, legível sobre o céu
+
+### Fixed
+- Primeira sessão sem métrica: depois do login não saía `app_open` nem `retention_pulse`, e o tempo até a 1ª cena vinha ≈ 0
+- Importar backup sem conta perdia o progresso ao reiniciar
+- Convite aberto sem conta era consumido e perdido; agora espera o login
+
 ## [1.0.44] — 2026-11-06
 
 ### Fixed

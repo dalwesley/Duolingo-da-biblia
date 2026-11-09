@@ -19,7 +19,7 @@ Future<void> showCornerBurst(
   return showCrossingBurst(
     context,
     me: CrossingPerson(
-      name: progress.userName,
+      name: progress.publicUserName,
       photoUrl: backend.userPhotoUrl,
       seed: backend.uid,
     ),

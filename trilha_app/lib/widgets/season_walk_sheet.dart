@@ -163,7 +163,9 @@ class _SeasonWalkSheetState extends State<_SeasonWalkSheet>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 _Pill(
-                  text: '${l10n.walkTogetherKicker} · $range',
+                  text: campaign.isGift
+                      ? '${l10n.seasonGiftTag} · $range'
+                      : '${l10n.walkTogetherKicker} · $range',
                   accent: tone,
                 ),
                 const SizedBox(height: AppSpace.sm),

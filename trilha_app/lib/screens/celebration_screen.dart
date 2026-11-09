@@ -340,8 +340,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     return _forkNavigated;
   }
 
+  /// Visitante (sem conta): depois da 1ª cena o caminho é salvar — o
+  /// shell leva ao login. Nada de mapa nem próxima cena antes disso.
+  bool get _isGuest => !context.read<BackendService>().isSignedIn;
+
   Future<void> _leaveCelebration({required bool toTrailMap}) async {
     if (_leaving) return;
+    final toMap = toTrailMap && !(_isGuest && !widget.failed);
     final fork = await _offerEntryFork();
     if (fork == _forkNavigated) return;
     if (fork == _forkDismissed) {
@@ -356,7 +361,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       await _offerRetentionPrompts();
     } catch (_) {}
     if (!mounted) return;
-    if (toTrailMap) {
+    if (toMap) {
       final canon = EntryTrails.continuesTo[widget.missionSlug];
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
@@ -370,6 +375,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   Future<void> _openTomorrow() async {
     if (_leaving) return;
+    if (_isGuest) {
+      await _leaveCelebration(toTrailMap: false);
+      return;
+    }
     final fork = await _offerEntryFork();
     if (fork == _forkNavigated) return;
     if (fork == _forkDismissed) {
@@ -385,6 +394,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       return;
     }
     _leaving = true;
+    try {
+      await _askReminderOnce();
+    } catch (_) {}
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (_) => LessonScreen(missionSlug: slug)),
@@ -436,18 +448,22 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           code: code,
           title: context.l10n.celebrationInviteTitle,
           subtitle: context.l10n.celebrationInviteSubtitle,
-          inviterName: progress.userName,
+          inviterName: progress.publicUserName,
           trailGift: invite?.giftCode != null,
         );
       }
     }
     if (!mounted) return;
-    // Lembrete “te vejo amanhã” — horário do compromisso.
-    if (!progress.notificationsPrompted &&
-        progress.firstLessonDate != null &&
-        progress.firstLessonDate!.isNotEmpty) {
-      await showReminderPromptSheet(context);
-    }
+    await _askReminderOnce();
+  }
+
+  /// Lembrete “até amanhã” — 1ª cena, no toque de sair (Home, mapa ou
+  /// próxima cena). Quem fecha o app direto recebe o pedido na Home.
+  Future<void> _askReminderOnce() async {
+    if (_noProgress || widget.failed) return;
+    final progress = context.read<ProgressService>();
+    if (progress.notificationsPrompted) return;
+    await showReminderPromptSheet(context, source: 'celebration');
   }
 
   @override
@@ -456,6 +472,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (!_saved) {
       _saved = true;
       final progress = context.read<ProgressService>();
+      // A festa usa a vez da folha; a Home não empilha outra na volta.
+      progress.markPostSceneQuiet();
       final firstSealEncounter =
           !widget.failed &&
           CharacterSeals.unlocksOn(
@@ -756,16 +774,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
     }
 
-    final postcard = _newPostcard;
-    if (pieces.isEmpty && postcard == null) return;
+    // O postal já se revelou na Hoje (carimbo na pintura); aqui ficam só
+    // os marcos raros. O lembrete vem no toque de sair.
+    if (pieces.isEmpty) return;
     // Deixa a celebração contar os passos antes de chamar a cena grande.
     await Future<void>.delayed(const Duration(milliseconds: 2600));
     // Saiu (ou outra rota cobriu a tela) durante a espera: não abre por cima.
     if (!mounted || _leaving) return;
     if (ModalRoute.of(context)?.isCurrent == false) return;
-    if (postcard != null) {
-      await showPostcardReveal(context, postcard);
-    }
     for (var i = 0; i < pieces.length; i++) {
       if (!mounted || _leaving) return;
       if (ModalRoute.of(context)?.isCurrent == false) return;
@@ -967,7 +983,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         repair: p.showStreakRepairOffer,
         today: p.missionsToday,
         dailyGoal: p.settings.dailyGoal,
-        userName: p.userName,
+        userName: p.publicUserName,
         steps: p.steps,
       ),
     );
@@ -1296,7 +1312,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                 !progress.showStreakRepairOffer
                                             ? ShareStreakButton(
                                                 streak: progress.streak,
-                                                userName: progress.userName,
+                                                userName:
+                                                    progress.publicUserName,
                                                 steps: progress.steps,
                                                 asLink: true,
                                               )

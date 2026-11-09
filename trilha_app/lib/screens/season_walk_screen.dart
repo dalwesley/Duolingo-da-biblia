@@ -44,7 +44,9 @@ void openSeasonWalk(BuildContext context) {
   final campaign = SeasonWalkCatalog.current(today);
   final index = campaign.dayIndexOn(today);
   final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
-  if (index != null && SeasonWalkAccess.needsPlusDay(index) && !plusOpen) {
+  if (index != null &&
+      SeasonWalkAccess.needsPlusDay(index, campaignId: campaign.id) &&
+      !plusOpen) {
     openSeasonPaywall(context);
     return;
   }
@@ -193,7 +195,10 @@ class _WeekBlock extends StatelessWidget {
           ),
         )
         .length;
-    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
+    // Campanha-presente: a revisão da semana também é de todos.
+    final plusOpen =
+        context.watch<SubscriptionService>().plusFeaturesOpen ||
+        campaign.isGift;
     final weekEnded =
         days.isNotEmpty && !days.last.dateOn(campaign.start).isAfter(today);
     // 1 revisão por dia: o fechamento só é oferecido se esta semana ainda
@@ -403,8 +408,10 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     // Gate na própria tela: sem Plus, nada de insights nem perguntas —
-    // mesmo se uma rota futura abrir esta revisão direto.
-    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
+    // mesmo se uma rota futura abrir esta revisão direto. Presente abre.
+    final plusOpen =
+        context.watch<SubscriptionService>().plusFeaturesOpen ||
+        widget.campaign.isGift;
     if (!plusOpen) {
       return Scaffold(
         backgroundColor: Colors.transparent,

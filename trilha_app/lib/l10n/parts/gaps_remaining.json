@@ -132,11 +132,6 @@
     "en": "The lamps ran out before the end. The scene waits for you — again, slowly.",
     "es": "Las lámparas se acabaron antes del final. La escena te espera — de nuevo, con calma."
   },
-  "splashSlogan": {
-    "pt": "A Bíblia, cena a cena",
-    "en": "The Bible, scene by scene",
-    "es": "La Biblia, escena a escena"
-  },
   "splashPreparing": {
     "pt": "Preparando sua jornada…",
     "en": "Preparing your journey…",
@@ -146,6 +141,48 @@
     "pt": "Entre para continuar",
     "en": "Sign in to continue",
     "es": "Entra para continuar"
+  },
+  "loginGuestTitle": {
+    "pt": "Salve sua caminhada",
+    "en": "Save your journey",
+    "es": "Guarda tu caminata",
+    "description": "Login depois da 1ª cena feita sem conta"
+  },
+  "loginGuestBody": {
+    "pt": "Sua primeira cena está feita. Entre para guardar seus passos e seguir para a próxima.",
+    "en": "Your first scene is done. Sign in to keep your steps and go on to the next one.",
+    "es": "Tu primera escena está hecha. Entra para guardar tus pasos y seguir con la siguiente.",
+    "description": "Corpo do login depois da 1ª cena sem conta"
+  },
+  "loginGuestGateBody": {
+    "pt": "Com a conta, seus passos ficam guardados e você pode assinar e caminhar junto com outras pessoas.",
+    "en": "With an account your steps are kept, and you can subscribe and walk together with others.",
+    "es": "Con la cuenta tus pasos quedan guardados y puedes suscribirte y caminar junto a otras personas.",
+    "description": "Corpo do login aberto como porta do visitante antes da 1ª cena"
+  },
+  "juntosGuestTitle": {
+    "pt": "Caminhe junto",
+    "en": "Walk together",
+    "es": "Camina junto",
+    "description": "Juntos para visitante (sem conta)"
+  },
+  "juntosGuestBody": {
+    "pt": "A Caravana, a companhia e os grupos ficam na sua conta. Entre para ver quem está no caminho com você.",
+    "en": "The Caravan, companions and groups live in your account. Sign in to see who is on the way with you.",
+    "es": "La Caravana, la compañía y los grupos viven en tu cuenta. Entra para ver quién camina contigo.",
+    "description": "Corpo do card de Juntos para visitante"
+  },
+  "juntosGuestCta": {
+    "pt": "Entrar",
+    "en": "Sign in",
+    "es": "Entrar",
+    "description": "Botão do card de Juntos para visitante"
+  },
+  "settingsGuestSignIn": {
+    "pt": "Entrar e salvar minha caminhada",
+    "en": "Sign in and save my journey",
+    "es": "Entrar y guardar mi caminata",
+    "description": "Botão nos Ajustes para visitante"
   },
   "loginLoadingBody": {
     "pt": "Carregando seus passos, sua sequência e suas cenas…",

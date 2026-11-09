@@ -220,12 +220,29 @@ class ProgressService extends ChangeNotifier {
   String userName = 'Aprendiz';
 
   /// Nomes padrão de onboarding/legado — não devem sobrescrever um nome real.
-  static const placeholderUserNames = {'Aprendiz', 'Peregrino', 'Estudante'};
+  static const placeholderUserNames = {
+    'Aprendiz',
+    'Peregrino',
+    'Pilgrim',
+    'Estudante',
+  };
 
   static bool isPlaceholderUserName(String? name) {
     final trimmed = name?.trim() ?? '';
     return trimmed.isEmpty || placeholderUserNames.contains(trimmed);
   }
+
+  /// Nome para mostrar ou publicar: o provisório vira "Peregrino" na língua
+  /// do app — "Aprendiz" cru não aparece para ninguém.
+  static String displayName(String? name) =>
+      isPlaceholderUserName(name) ? L10n.current.homeDefaultName : name!.trim();
+
+  /// [userName] pronto para a tela e para a nuvem (Caravana, convites...).
+  String get publicUserName => displayName(userName);
+
+  /// Nome que a pessoa escolheu, ou vazio se ainda é o provisório.
+  String get realUserName =>
+      isPlaceholderUserName(userName) ? '' : userName.trim();
 
   AppSettings _settings = const AppSettings();
   AppSettings get settings => _settings;
@@ -622,6 +639,27 @@ class ProgressService extends ChangeNotifier {
   /// Impede saves até um hydrate bem-sucedido (erro de rede / logout).
   void markCloudNotReady() {
     _cloudReadyToPersist = false;
+  }
+
+  /// Dono do espelho local do visitante: a 1ª cena roda antes da conta e
+  /// vira da conta nova no login (BackendService.hydrateProgress).
+  static const guestCacheUid = '_guest';
+
+  /// Visitante (sem conta): o espelho local passa a guardar o que ele andar.
+  void startGuestSession() => bindCacheUid(guestCacheUid);
+
+  /// Uma folha por cena: a celebração usa a vez dela e a Home não empilha
+  /// oferta, baú ou medalha na volta. Só na memória — a próxima abertura
+  /// (ou a volta ao app) libera de novo.
+  bool _postSceneQuiet = false;
+  bool get postSceneQuiet => _postSceneQuiet;
+
+  void markPostSceneQuiet() => _postSceneQuiet = true;
+
+  void clearPostSceneQuiet() {
+    if (!_postSceneQuiet) return;
+    _postSceneQuiet = false;
+    notifyListeners();
   }
 
   /// Associa o espelho local à conta autenticada.

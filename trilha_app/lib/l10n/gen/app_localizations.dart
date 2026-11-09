@@ -1573,7 +1573,7 @@ abstract class AppLocalizations {
   /// No description provided for @chestTapHint.
   ///
   /// In pt, this message translates to:
-  /// **'Toque rápido na tela para abrir'**
+  /// **'Toque várias vezes seguidas até a barra encher e o baú abrir'**
   String get chestTapHint;
 
   /// No description provided for @chestVozMessage.
@@ -4792,6 +4792,12 @@ abstract class AppLocalizations {
   /// **'Você caminhou todas as trilhas abertas'**
   String get heroEndPlusTitle;
 
+  /// Home greeting: shown instead of a placeholder name; opens the name sheet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pôr seu nome'**
+  String get homeAddName;
+
   /// No description provided for @homeBibleOfflineSubtitle.
   ///
   /// In pt, this message translates to:
@@ -5793,6 +5799,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Primeiro marco: {count} dias juntos'**
   String juntosFirstMilestone(int count);
+
+  /// Corpo do card de Juntos para visitante
+  ///
+  /// In pt, this message translates to:
+  /// **'A Caravana, a companhia e os grupos ficam na sua conta. Entre para ver quem está no caminho com você.'**
+  String get juntosGuestBody;
+
+  /// Botão do card de Juntos para visitante
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar'**
+  String get juntosGuestCta;
+
+  /// Juntos para visitante (sem conta)
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhe junto'**
+  String get juntosGuestTitle;
 
   /// No description provided for @juntosHaveCode.
   ///
@@ -6807,6 +6831,24 @@ abstract class AppLocalizations {
   /// **'Falha no login com Google'**
   String get loginGoogleError;
 
+  /// Corpo do login depois da 1ª cena sem conta
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua primeira cena está feita. Entre para guardar seus passos e seguir para a próxima.'**
+  String get loginGuestBody;
+
+  /// Corpo do login aberto como porta do visitante antes da 1ª cena
+  ///
+  /// In pt, this message translates to:
+  /// **'Com a conta, seus passos ficam guardados e você pode assinar e caminhar junto com outras pessoas.'**
+  String get loginGuestGateBody;
+
+  /// Login depois da 1ª cena feita sem conta
+  ///
+  /// In pt, this message translates to:
+  /// **'Salve sua caminhada'**
+  String get loginGuestTitle;
+
   /// No description provided for @loginHydrateError.
   ///
   /// In pt, this message translates to:
@@ -6828,7 +6870,7 @@ abstract class AppLocalizations {
   /// No description provided for @loginTermsNotice.
   ///
   /// In pt, this message translates to:
-  /// **'Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.'**
+  /// **'Ao entrar, você aceita os termos de uso e a política de privacidade.'**
   String get loginTermsNotice;
 
   /// No description provided for @loginTitle.
@@ -8991,6 +9033,18 @@ abstract class AppLocalizations {
   /// **'Secundária'**
   String get myTrailsSecondary;
 
+  /// No description provided for @nameSheetSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aparece na saudação e para quem caminha com você.'**
+  String get nameSheetSubtitle;
+
+  /// No description provided for @nameSheetTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como podemos te chamar?'**
+  String get nameSheetTitle;
+
   /// No description provided for @navBible.
   ///
   /// In pt, this message translates to:
@@ -9566,6 +9620,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.'**
   String get onboardingHabitBody;
+
+  /// Link no 1º passo do onboarding para quem reinstalou entrar direto
+  ///
+  /// In pt, this message translates to:
+  /// **'Já tenho conta'**
+  String get onboardingHaveAccount;
 
   /// No description provided for @onboardingHoldToCommit.
   ///
@@ -11169,6 +11229,12 @@ abstract class AppLocalizations {
   /// **'Revelar o postal'**
   String get postcardReveal;
 
+  /// Linha na placa Hoje quando a cena rende postal novo (carimbo)
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo postal guardado'**
+  String get postcardSavedNew;
+
   /// Card de compartilhar do postal (docs/postais.md)
   ///
   /// In pt, this message translates to:
@@ -12669,6 +12735,12 @@ abstract class AppLocalizations {
   /// **'Meio-dia'**
   String get reminderNoon;
 
+  /// Rótulo da folha de lembrete ao sair da 1ª cena
+  ///
+  /// In pt, this message translates to:
+  /// **'Até amanhã'**
+  String get reminderPromptEyebrow;
+
   /// No description provided for @reminderRemindAt.
   ///
   /// In pt, this message translates to:
@@ -13100,6 +13172,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Estação encerrada'**
   String get seasonEnded;
+
+  /// Selo da estação aberta a todos (Advento 2026), sem Plus
+  ///
+  /// In pt, this message translates to:
+  /// **'Presente de lançamento'**
+  String get seasonGiftTag;
 
   /// No description provided for @seasonOpensIn.
   ///
@@ -13755,6 +13833,12 @@ abstract class AppLocalizations {
   /// **'Gênesis 1–11'**
   String get settingsGenesisTitle;
 
+  /// Botão nos Ajustes para visitante
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar e salvar minha caminhada'**
+  String get settingsGuestSignIn;
+
   /// No description provided for @settingsInCloud.
   ///
   /// In pt, this message translates to:
@@ -14198,12 +14282,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Preparando sua jornada…'**
   String get splashPreparing;
-
-  /// No description provided for @splashSlogan.
-  ///
-  /// In pt, this message translates to:
-  /// **'A Bíblia, cena a cena'**
-  String get splashSlogan;
 
   /// No description provided for @streakDayEmpty.
   ///

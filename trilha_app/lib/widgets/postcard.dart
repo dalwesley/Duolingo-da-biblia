@@ -650,12 +650,6 @@ class _PostmarkPainter extends CustomPainter {
       old.day != day;
 }
 
-/// Revela [postcard] por cima de tudo: o Anan no topo, o postal chega
-/// velado, a pessoa toca e a pintura aparece com o carimbo do dia. A frase
-/// "Hoje" da cena vem no balão do Anan.
-Future<void> showPostcardReveal(BuildContext context, Postcard postcard) =>
-    _pushStage(context, _RevealStage(postcard: postcard));
-
 /// Rever um postal (álbum, Bíblia): o mesmo palco, já revelado e
 /// carimbado, com "Refazer a cena" no botão. [eyebrow] vai acima do título
 /// ("Você esteve aqui", vindo da Bíblia).

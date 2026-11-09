@@ -48,8 +48,26 @@ void main() {
       }
     });
 
-    test('without Plus, day 1 stays open and day 2 asks for it', () {
+    test('Advent 2026 is a launch gift: every past day opens without Plus', () {
       final start = LiturgicalCalendar.adventStart(2026);
+      final c = SeasonWalkCatalog.advent(start);
+      expect(c.isGift, isTrue);
+      final today = start.add(const Duration(days: 9));
+      for (var i = 1; i <= 10; i++) {
+        final access = SeasonWalkCatalog.access(
+          campaign: c,
+          index: i,
+          today: today,
+          plusOpen: false,
+        );
+        expect(access.playable, isTrue, reason: 'day $i');
+        expect(access.needsPlus, isFalse, reason: 'day $i');
+      }
+    });
+
+    test('without Plus, day 1 stays open and day 2 asks for it', () {
+      // Campanha que não é presente (o Advento seguinte).
+      final start = LiturgicalCalendar.adventStart(2027);
       final c = SeasonWalkCatalog.advent(start);
       final today = start.add(const Duration(days: 9));
       for (var i = 1; i <= 1; i++) {

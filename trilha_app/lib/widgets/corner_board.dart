@@ -76,7 +76,7 @@ class DesafioEntry extends StatelessWidget {
             ),
             const SizedBox(height: AppSpace.lg),
             CornerPairRow(
-              myName: progress.userName,
+              myName: progress.publicUserName,
               theirName: them,
               myPhoto: backend.userPhotoUrl,
               theirPhoto: challenge.peerPhoto(uid),

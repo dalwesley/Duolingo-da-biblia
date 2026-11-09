@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../services/progress_service.dart';
 
 import '../l10n/app_language.dart';
 import '../models/recognition.dart';
@@ -104,7 +105,7 @@ class PilgrimIdentityCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final displayName = name.trim().isEmpty
+    final displayName = ProgressService.isPlaceholderUserName(name)
         ? l10n.pilgrimFallbackName
         : name.trim();
     final whisper = _whisper(l10n);

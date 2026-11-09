@@ -230,7 +230,10 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               SectionLabel(
-                                l10n.walkTogetherKicker,
+                                campaign.isGift
+                                    ? '${l10n.walkTogetherKicker} · '
+                                          '${l10n.seasonGiftTag}'
+                                    : l10n.walkTogetherKicker,
                                 size: 10,
                                 color: accent,
                                 maxLines: 1,

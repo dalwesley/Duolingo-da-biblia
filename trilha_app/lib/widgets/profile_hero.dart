@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
+import '../services/progress_service.dart';
 import 'package:intl/intl.dart';
 
 import '../l10n/app_language.dart';
@@ -98,7 +99,7 @@ class ProfileHero extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final top = MediaQuery.viewPaddingOf(context).top;
-    final displayName = name.trim().isEmpty
+    final displayName = ProgressService.isPlaceholderUserName(name)
         ? l10n.pilgrimFallbackName
         : name.trim();
 

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -15,6 +16,7 @@ import '../models/caravan_pilgrim_profile.dart';
 import '../models/daily_quest.dart';
 import '../models/pilgrim_medals.dart';
 import '../utils/dust_copy.dart';
+import 'analytics_service.dart';
 import 'progress_service.dart';
 
 /// Isolado de background — precisa ser top-level e registrado antes do runApp.
@@ -142,9 +144,9 @@ class NotificationService {
 
       final launch = await _plugin.getNotificationAppLaunchDetails();
       if (launch?.didNotificationLaunchApp == true) {
-        pendingAction = ReminderActionX.tryParse(
-          launch!.notificationResponse?.payload,
-        );
+        final payload = launch!.notificationResponse?.payload;
+        pendingAction = ReminderActionX.tryParse(payload);
+        _logOpen('local', payload);
       }
 
       _initialized = true;
@@ -156,25 +158,39 @@ class NotificationService {
     }
   }
 
-  Future<void> _askPermission() async {
-    if (_permissionAsked || !_available || !_initialized) return;
+  /// Pede a permissão uma vez por processo. Devolve a resposta do SO, ou
+  /// null quando não perguntou agora (já perguntou / sem plugin / o SO calou).
+  Future<bool?> _askPermission() async {
+    if (_permissionAsked || !_available || !_initialized) return null;
     _permissionAsked = true;
+    bool? granted;
     try {
       final androidPlugin = _plugin
           .resolvePlatformSpecificImplementation<
             AndroidFlutterLocalNotificationsPlugin
           >();
-      await androidPlugin?.requestNotificationsPermission();
+      final android = await androidPlugin?.requestNotificationsPermission();
       final iosPlugin = _plugin
           .resolvePlatformSpecificImplementation<
             IOSFlutterLocalNotificationsPlugin
           >();
-      await iosPlugin?.requestPermissions(
+      final ios = await iosPlugin?.requestPermissions(
         alert: true,
         badge: true,
         sound: true,
       );
+      granted = android ?? ios;
     } catch (_) {}
+    return granted;
+  }
+
+  void _logOpen(String kind, String? action) {
+    unawaited(
+      AnalyticsService.instance.logNotificationOpen(
+        kind: kind,
+        action: (action == null || action.isEmpty) ? 'none' : action,
+      ),
+    );
   }
 
   /// Registra push remoto (FCM): permissão, token e escuta.
@@ -214,9 +230,23 @@ class NotificationService {
   }
 
   /// Pedido explícito (celebração / Ajustes) — local + FCM.
-  Future<void> requestOsPermission() async {
+  /// [source] vai para o evento `notification_permission`.
+  Future<void> requestOsPermission({String source = 'other'}) async {
     await init();
-    await _askPermission();
+    final asked = _permissionAsked;
+    final granted = await _askPermission();
+    if (!asked && _permissionAsked) {
+      unawaited(
+        AnalyticsService.instance.logNotificationPermission(
+          source: source,
+          result: switch (granted) {
+            true => 'granted',
+            false => 'denied',
+            null => 'unknown',
+          },
+        ),
+      );
+    }
     await initRemote(requestPermission: true);
   }
 
@@ -253,6 +283,10 @@ class NotificationService {
   }
 
   void _handleRemoteTap(RemoteMessage message) {
+    _logOpen(
+      'remote',
+      _isAceno(message) ? 'aceno' : message.data['action'] as String?,
+    );
     if (_isAceno(message)) {
       pendingAction = ReminderAction.home;
       onRemoteNudge?.call();
@@ -266,6 +300,7 @@ class NotificationService {
   }
 
   void _onTap(NotificationResponse response) {
+    _logOpen('local', response.payload);
     final action = ReminderActionX.tryParse(response.payload);
     if (action == null) return;
     pendingAction = action;
@@ -445,9 +480,7 @@ class NotificationService {
     if (progress.lastPlayedDate == null) return;
 
     final daysAway = progress.daysSinceLastPlayed;
-    final name = progress.userName.trim().isEmpty
-        ? L10n.current.homeDefaultName
-        : progress.userName.trim().split(' ').first;
+    final name = progress.publicUserName.split(' ').first;
     final streak = progress.streak;
 
     // Já ausente ≥1 dia: agenda amanhã (D+1 a partir de agora) e depois.
@@ -532,9 +565,7 @@ class NotificationService {
   }) {
     final hooks = <_ReminderCopy>[];
     final l = L10n.current;
-    final name = progress.userName.trim().isEmpty
-        ? l.homeDefaultName
-        : progress.userName.trim().split(' ').first;
+    final name = progress.publicUserName.split(' ').first;
     final goal = progress.settings.dailyGoal;
     final done = progress.walkedToday ? progress.missionsToday : 0;
     final streak = progress.streak;

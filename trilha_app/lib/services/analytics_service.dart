@@ -50,16 +50,45 @@ class AnalyticsService {
 
   Future<void> logAppOpen() => _log('app_open');
 
-  /// Pulso de retenção (D1/D7) — chamar em aberturas autenticadas.
+  /// Pulso de retenção (D1/D7) — toda abertura, com ou sem conta.
   Future<void> logRetentionPulse({
     required int daysSinceFirstOpen,
     required int? daysSinceFirstLesson,
     String? cohortTrail,
+    bool signedIn = true,
   }) => _log('retention_pulse', {
     'days_since_first_open': daysSinceFirstOpen,
     'days_since_first_lesson': ?daysSinceFirstLesson,
     'cohort_trail': ?(cohortTrail?.isNotEmpty == true ? cohortTrail : null),
+    'signed_in': signedIn,
   });
+
+  /// Resposta ao pedido de lembrete. [choice]: on · not_now · dismissed.
+  /// [suggestedHour] é o que a folha propôs; [hour], o que ficou.
+  Future<void> logReminderPrompt({
+    required String source,
+    required String choice,
+    required int hour,
+    required int suggestedHour,
+  }) => _log('reminder_prompt', {
+    'source': source,
+    'choice': choice,
+    'hour': hour,
+    'suggested_hour': suggestedHour,
+  });
+
+  /// Resultado do pedido de permissão do sistema. [result]: granted ·
+  /// denied · unknown (o SO não respondeu).
+  Future<void> logNotificationPermission({
+    required String source,
+    required String result,
+  }) => _log('notification_permission', {'source': source, 'result': result});
+
+  /// Notificação tocada. [kind]: local (lembrete) · remote (push).
+  Future<void> logNotificationOpen({
+    required String kind,
+    required String action,
+  }) => _log('notification_open', {'kind': kind, 'action': action});
 
   /// Primeira missão concluída da conta (base de TTV / coorte D7).
   Future<void> logFirstLessonComplete({

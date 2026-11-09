@@ -2,6 +2,7 @@ import 'package:intl/intl.dart';
 
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
+import '../services/progress_service.dart';
 import '../utils/trail_progress.dart';
 import 'trail.dart';
 
@@ -524,8 +525,9 @@ class CornerChallenge {
 
   String peerId(String uid) => uid == challengerId ? opponentId : challengerId;
 
-  String peerName(String uid) =>
-      uid == challengerId ? opponentName : challengerName;
+  String peerName(String uid) => ProgressService.displayName(
+    uid == challengerId ? opponentName : challengerName,
+  );
 
   String? peerPhoto(String uid) {
     final url = uid == challengerId ? opponentPhotoUrl : challengerPhotoUrl;

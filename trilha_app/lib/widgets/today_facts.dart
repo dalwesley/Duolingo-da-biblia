@@ -8,6 +8,7 @@ import '../utils/appearance.dart';
 import '../utils/palco_verse.dart';
 import 'act_feel.dart';
 import 'evidence_verse.dart';
+import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
 /// Os fatos da placa Hoje. Tocar um fato acende no versículo o trecho que o
@@ -36,32 +37,44 @@ class _TodayFactsState extends State<TodayFacts> {
   @override
   Widget build(BuildContext context) {
     final facts = widget.facts;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        SectionLabel(context.l10n.lessonFactsLabel, size: 12),
-        const SizedBox(height: AppSpace.sm),
-        for (var i = 0; i < facts.length; i++)
-          _FactRow(
-            text: facts[i].text,
-            accent: widget.accent,
-            active: _active == i,
-            onTap:
-                facts[i].evidenceSpan.trim().isEmpty ||
-                    widget.passageText.trim().isEmpty
-                ? null
-                : () {
-                    ActHaptics.tap();
-                    setState(() => _active = _active == i ? null : i);
-                  },
+    // Placa sólida: o céu do fundo não pode lavar a leitura.
+    return StagePlate(
+      accent: widget.accent,
+      padding: const EdgeInsets.fromLTRB(14, 14, 14, 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4),
+            child: SectionLabel(
+              context.l10n.lessonFactsLabel,
+              size: 12,
+              textAlign: TextAlign.start,
+            ),
           ),
-        AnimatedSize(
-          duration: AppMotion.standard,
-          curve: AppMotion.enter,
-          alignment: Alignment.topCenter,
-          child: _evidence(),
-        ),
-      ],
+          const SizedBox(height: 6),
+          for (var i = 0; i < facts.length; i++)
+            _FactRow(
+              text: facts[i].text,
+              accent: widget.accent,
+              active: _active == i,
+              onTap:
+                  facts[i].evidenceSpan.trim().isEmpty ||
+                      widget.passageText.trim().isEmpty
+                  ? null
+                  : () {
+                      ActHaptics.tap();
+                      setState(() => _active = _active == i ? null : i);
+                    },
+            ),
+          AnimatedSize(
+            duration: AppMotion.standard,
+            curve: AppMotion.enter,
+            alignment: Alignment.topCenter,
+            child: _evidence(),
+          ),
+        ],
+      ),
     );
   }
 
@@ -109,12 +122,12 @@ class _FactRow extends StatelessWidget {
       onTap: onTap,
       borderRadius: BorderRadius.circular(10),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 7, right: 10),
+              padding: const EdgeInsets.only(top: 8, right: 10),
               child: AnimatedContainer(
                 duration: AppMotion.standard,
                 width: 6,
@@ -129,10 +142,10 @@ class _FactRow extends StatelessWidget {
               child: Text(
                 text,
                 style: AppTypography.body(
-                  size: 15,
-                  height: 1.35,
+                  size: 15.5,
+                  height: 1.3,
                   weight: active ? FontWeight.w700 : FontWeight.w500,
-                  color: active ? a.text : a.textSecondary,
+                  color: a.text,
                 ),
               ),
             ),

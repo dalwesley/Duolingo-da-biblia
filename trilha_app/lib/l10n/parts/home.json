@@ -98,9 +98,9 @@
     "es": "Abrir el cofre"
   },
   "chestTapHint": {
-    "pt": "Toque rápido na tela para abrir",
-    "en": "Tap fast to open it",
-    "es": "Toca rápido para abrirlo"
+    "pt": "Toque várias vezes seguidas até a barra encher e o baú abrir",
+    "en": "Tap again and again until the bar fills and the chest opens",
+    "es": "Toca varias veces seguidas hasta llenar la barra y abrir el cofre"
   },
   "chestOfferTitle": {
     "pt": "Seu baú do dia chegou",
@@ -207,6 +207,22 @@
     "es": "Peregrino",
     "description": "Fallback name when the user has no name."
   },
+  "homeAddName": {
+    "pt": "Pôr seu nome",
+    "en": "Add your name",
+    "es": "Pon tu nombre",
+    "description": "Home greeting: shown instead of a placeholder name; opens the name sheet."
+  },
+  "nameSheetTitle": {
+    "pt": "Como podemos te chamar?",
+    "en": "What should we call you?",
+    "es": "¿Cómo te llamamos?"
+  },
+  "nameSheetSubtitle": {
+    "pt": "Aparece na saudação e para quem caminha com você.",
+    "en": "It shows in your greeting and to those who walk with you.",
+    "es": "Aparece en el saludo y para quien camina contigo."
+  },
   "homeOpenProfile": {
     "pt": "Abrir perfil de {name}",
     "en": "Open {name}'s profile",
@@ -309,6 +325,12 @@
     "pt": "Em que hora lembramos você?",
     "en": "What time should we remind you?",
     "es": "¿A qué hora te lo recordamos?"
+  },
+  "reminderPromptEyebrow": {
+    "pt": "Até amanhã",
+    "en": "See you tomorrow",
+    "es": "Hasta mañana",
+    "description": "Rótulo da folha de lembrete ao sair da 1ª cena"
   },
   "reminderSubtitleSettings": {
     "pt": "Um aviso por dia, no horário que você escolher.",

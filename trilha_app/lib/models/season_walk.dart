@@ -40,6 +40,9 @@ class SeasonWalkCampaign {
     required this.days,
   });
 
+  /// Presente (ver [SeasonWalkAccess.giftCampaigns]): sem Plus nenhum.
+  bool get isGift => SeasonWalkAccess.isGift(id);
+
   DateTime get end => days.isEmpty
       ? start
       : DateTime(
@@ -85,6 +88,12 @@ class SeasonWalkAccess {
   /// O 1º dia é de todo mundo. Do 2º em diante, o Plus.
   static const freeDays = 1;
 
+  /// Campanhas abertas a todos — presente, sem Plus (dias e revisões).
+  /// Advento 2026: presente de lançamento.
+  static const giftCampaigns = {'advento-2026'};
+
+  static bool isGift(String campaignId) => giftCampaigns.contains(campaignId);
+
   const SeasonWalkAccess({
     required this.playable,
     this.future = false,
@@ -95,7 +104,8 @@ class SeasonWalkAccess {
   static const lockedPlus = SeasonWalkAccess(playable: false, needsPlus: true);
   static const open = SeasonWalkAccess(playable: true);
 
-  static bool needsPlusDay(int index) => index > freeDays;
+  static bool needsPlusDay(int index, {required String campaignId}) =>
+      index > freeDays && !isGift(campaignId);
 
   /// Há fechamento de semana da temporada pendente? (Semana terminou,
   /// metade dos dias feita e a revisão daquela semana ainda não saiu.)

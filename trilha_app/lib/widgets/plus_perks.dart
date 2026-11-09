@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -22,6 +23,22 @@ enum PlusPerk {
   explainErrors,
   badge,
   recognition;
+
+  /// Estação no Plus só quando a campanha da vez não é presente (Advento
+  /// 2026 é de todos): a lista mostra só o que o Plus abre de fato.
+  static bool get seasonIsPlus => !SeasonWalkCatalog.current().isGift;
+
+  /// Todos os que valem agora.
+  static List<PlusPerk> get available => [
+    for (final p in values)
+      if (p != PlusPerk.season || seasonIsPlus) p,
+  ];
+
+  /// Destaques que valem agora.
+  static List<PlusPerk> get availableHighlights => [
+    for (final p in highlights)
+      if (p != PlusPerk.season || seasonIsPlus) p,
+  ];
 
   /// Os que abrem as listas curtas (ofertas, aviso, perfil).
   static const highlights = [
@@ -106,8 +123,9 @@ class PlusPerkCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final iconSize = detailed ? AppMetrics.leadingIcon : AppMetrics.iconLg;
-    final perks = detailed ? PlusPerk.values : PlusPerk.highlights;
-    final more = PlusPerk.values.length - perks.length;
+    final all = PlusPerk.available;
+    final perks = detailed ? all : PlusPerk.availableHighlights;
+    final more = all.length - perks.length;
 
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,

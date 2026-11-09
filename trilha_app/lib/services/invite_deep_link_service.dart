@@ -324,6 +324,9 @@ $juntosHttpsUrl
   }
 
   /// MainShell consome o link de resgate da compra no site (uma vez).
+  /// Há resgate de compra do site esperando (sem consumir).
+  bool get hasPendingWebPurchaseLink => _pendingWebPurchaseLink != null;
+
   String? takePendingWebPurchaseLink() {
     final link = _pendingWebPurchaseLink;
     _pendingWebPurchaseLink = null;

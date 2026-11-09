@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
@@ -97,6 +98,9 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
   }
 
   Future<void> _join() async {
+    // Aviso e voto moram na conta: visitante entra antes de entrar na fila.
+    if (!await GuestGate.requireAccount(context, reason: 'waitlist')) return;
+    if (!mounted) return;
     setState(() => _busy = true);
     final picks = _exploreTools
         .map((t) => t.$1)

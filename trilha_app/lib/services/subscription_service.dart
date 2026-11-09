@@ -868,7 +868,9 @@ class SubscriptionService extends ChangeNotifier {
       // O paywall prometeu avisar 1 dia antes da cobrança: sem permissão
       // de notificação esse aviso nunca aparece. Pede aqui, uma vez.
       if (plusInTrial) {
-        unawaited(NotificationService.instance.requestOsPermission());
+        unawaited(
+          NotificationService.instance.requestOsPermission(source: 'trial'),
+        );
       }
       PlusLog.log(
         'compra',

@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
+import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
 import '../services/plus_log.dart';
 import '../services/analytics_service.dart';
@@ -87,6 +88,10 @@ class _PaywallScreenState extends State<PaywallScreen> {
   /// Compra nova: o Anan comemora uma vez. Reabrir o paywall já pago,
   /// ou restaurar, só mostra o plano — a festa não se repete.
   Future<void> _subscribe(Package package) async {
+    // Assinatura mora na conta (webhook, selo, passe de trilha): visitante
+    // salva a caminhada antes de comprar.
+    if (!await GuestGate.requireAccount(context, reason: 'paywall')) return;
+    if (!mounted) return;
     final ok = await context.read<SubscriptionService>().purchase(package);
     if (!ok || !mounted) return;
     await showPlusWelcomeSheet(context);
@@ -869,6 +874,10 @@ class _LegalLinks extends StatelessWidget {
   /// Restaurar sempre responde: achou, não achou ou falhou. Calado, a
   /// pessoa não sabe se o toque funcionou (e a Apple testa este botão).
   Future<void> _restore(BuildContext context) async {
+    // Restaurar no ID anônimo pode tirar o Plus de uma conta de verdade:
+    // visitante entra antes (o login já traz o Plus da conta).
+    if (!await GuestGate.requireAccount(context, reason: 'restore')) return;
+    if (!context.mounted) return;
     final l10n = context.l10n;
     final found = await sub.restore();
     if (!context.mounted) return;

@@ -895,7 +895,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chestRewards => 'Recompensas';
 
   @override
-  String get chestTapHint => 'Toque rápido na tela para abrir';
+  String get chestTapHint =>
+      'Toque várias vezes seguidas até a barra encher e o baú abrir';
 
   @override
   String get chestVozMessage =>
@@ -2986,6 +2987,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get heroEndPlusTitle => 'Você caminhou todas as trilhas abertas';
 
   @override
+  String get homeAddName => 'Pôr seu nome';
+
+  @override
   String get homeBibleOfflineSubtitle => 'Leia sem internet';
 
   @override
@@ -3616,6 +3620,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String juntosFirstMilestone(int count) {
     return 'Primeiro marco: $count dias juntos';
   }
+
+  @override
+  String get juntosGuestBody =>
+      'A Caravana, a companhia e os grupos ficam na sua conta. Entre para ver quem está no caminho com você.';
+
+  @override
+  String get juntosGuestCta => 'Entrar';
+
+  @override
+  String get juntosGuestTitle => 'Caminhe junto';
 
   @override
   String get juntosHaveCode => 'Tenho um código';
@@ -4253,6 +4267,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get loginGoogleError => 'Falha no login com Google';
 
   @override
+  String get loginGuestBody =>
+      'Sua primeira cena está feita. Entre para guardar seus passos e seguir para a próxima.';
+
+  @override
+  String get loginGuestGateBody =>
+      'Com a conta, seus passos ficam guardados e você pode assinar e caminhar junto com outras pessoas.';
+
+  @override
+  String get loginGuestTitle => 'Salve sua caminhada';
+
+  @override
   String get loginHydrateError =>
       'Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.';
 
@@ -4265,7 +4290,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get loginTermsNotice =>
-      'Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.';
+      'Ao entrar, você aceita os termos de uso e a política de privacidade.';
 
   @override
   String get loginTitle => 'Entre para continuar';
@@ -5629,6 +5654,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get myTrailsSecondary => 'Secundária';
 
   @override
+  String get nameSheetSubtitle =>
+      'Aparece na saudação e para quem caminha com você.';
+
+  @override
+  String get nameSheetTitle => 'Como podemos te chamar?';
+
+  @override
   String get navBible => 'Bíblia';
 
   @override
@@ -6043,6 +6075,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get onboardingHabitBody =>
       'Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.';
+
+  @override
+  String get onboardingHaveAccount => 'Já tenho conta';
 
   @override
   String get onboardingHoldToCommit => 'Segure para firmar';
@@ -7112,6 +7147,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get postcardReveal => 'Revelar o postal';
 
   @override
+  String get postcardSavedNew => 'Novo postal guardado';
+
+  @override
   String postcardShareChip(int index, int total, String trail) {
     return 'Postal $index de $total · $trail';
   }
@@ -8076,6 +8114,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get reminderNoon => 'Meio-dia';
 
   @override
+  String get reminderPromptEyebrow => 'Até amanhã';
+
+  @override
   String reminderRemindAt(int hour) {
     return 'Lembrar às ${hour}h';
   }
@@ -8333,6 +8374,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get seasonEnded => 'Estação encerrada';
+
+  @override
+  String get seasonGiftTag => 'Presente de lançamento';
 
   @override
   String seasonOpensIn(int days) {
@@ -8729,6 +8773,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsGenesisTitle => 'Gênesis 1–11';
 
   @override
+  String get settingsGuestSignIn => 'Entrar e salvar minha caminhada';
+
+  @override
   String get settingsInCloud => 'Na nuvem';
 
   @override
@@ -9008,9 +9055,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get splashPreparing => 'Preparando sua jornada…';
-
-  @override
-  String get splashSlogan => 'A Bíblia, cena a cena';
 
   @override
   String get streakDayEmpty => 'sem cena';

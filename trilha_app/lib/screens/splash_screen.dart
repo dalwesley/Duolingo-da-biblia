@@ -138,9 +138,57 @@ class _SplashScreenState extends State<SplashScreen>
       if (!mounted) return;
     }
 
+    // Coorte e abertura de toda sessão — visitante e logado. Antes só a
+    // sessão logada media: a 1ª (login) saía sem app_open e com TTV ≈ 0.
+    unawaited(AnalyticsService.instance.logAppOpen());
+    unawaited(() async {
+      final pulse = await progress.ensureCohortAndPulse();
+      await AnalyticsService.instance.logRetentionPulse(
+        daysSinceFirstOpen: pulse.daysSinceFirstOpen,
+        daysSinceFirstLesson: pulse.daysSinceFirstLesson,
+        cohortTrail: pulse.cohortTrail,
+        signedIn: backend.isSignedIn,
+      );
+    }());
+
     final Widget next;
     if (!backend.isSignedIn) {
-      next = const LoginScreen();
+      // Sem conta: segue como visitante (a 1ª cena vem antes do login; o
+      // shell pede para salvar depois dela). Sem Firebase, a porta é o
+      // login com "Tentar reconectar".
+      if (backend.isFirebaseReady) {
+        progress.startGuestSession();
+        // Visitante que voltou: o que ele andou está no espelho local.
+        final cached = await progress.readLocalCache(
+          forUid: ProgressService.guestCacheUid,
+        );
+        if (cached != null) await progress.applyFromCloud(cached);
+        if (!mounted) return;
+        unawaited(
+          AnalyticsService.instance.logEvent('guest_start', {
+            'onboarded': progress.hasSeenOnboarding ? 1 : 0,
+            'returning': cached != null ? 1 : 0,
+          }),
+        );
+        next = progress.hasSeenOnboarding
+            ? const MainShell()
+            : const OnboardingScreen();
+      } else {
+        // Sem rede no arranque: quem já era visitante (espelho local dele)
+        // segue offline; conta ou instalação nova vão ao login (reconectar).
+        final cached = await progress.readLocalCache(
+          forUid: ProgressService.guestCacheUid,
+        );
+        if (!mounted) return;
+        if (cached != null) {
+          progress.startGuestSession();
+          await progress.applyFromCloud(cached);
+          if (!mounted) return;
+          next = const MainShell();
+        } else {
+          next = const LoginScreen();
+        }
+      }
     } else {
       final hydrate = hydrateResult;
       final league = context.read<LeagueService>();
@@ -175,15 +223,6 @@ class _SplashScreenState extends State<SplashScreen>
       }
       unawaited(ContentCatalogService.instance.ensureLoaded());
       unawaited(AnalyticsService.instance.setUserId(backend.uid));
-      unawaited(AnalyticsService.instance.logAppOpen());
-      unawaited(() async {
-        final pulse = await progress.ensureCohortAndPulse();
-        await AnalyticsService.instance.logRetentionPulse(
-          daysSinceFirstOpen: pulse.daysSinceFirstOpen,
-          daysSinceFirstLesson: pulse.daysSinceFirstLesson,
-          cohortTrail: pulse.cohortTrail,
-        );
-      }());
     }
 
     if (!mounted) return;
@@ -281,21 +320,7 @@ class _SplashScreenState extends State<SplashScreen>
                     opacity: tagV,
                     child: Transform.translate(
                       offset: Offset(0, 12 * (1 - tagV)),
-                      child: Column(
-                        children: [
-                          const StwayTagline(size: 11),
-                          const SizedBox(height: 10),
-                          Text(
-                            context.l10n.splashSlogan,
-                            textAlign: TextAlign.center,
-                            style: AppTypography.title(
-                              size: 16,
-                              weight: FontWeight.w700,
-                              color: appearance.text,
-                            ),
-                          ),
-                        ],
-                      ),
+                      child: const StwayTagline(size: 11),
                     ),
                   ),
                   const Spacer(),

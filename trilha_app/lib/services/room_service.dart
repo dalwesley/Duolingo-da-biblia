@@ -202,7 +202,7 @@ class RoomService extends ChangeNotifier {
     final previous = activeRoom?.code;
     final room = await backend.createRoom(
       name: name,
-      userName: progress.userName,
+      userName: progress.publicUserName,
       weeklySteps: progress.weeklySteps,
       lastWalkDate: progress.lastPlayedDate,
       playDates: progress.playDates,
@@ -236,7 +236,7 @@ class RoomService extends ChangeNotifier {
     try {
       room = await backend.joinRoom(
         code: code,
-        userName: progress.userName,
+        userName: progress.publicUserName,
         weeklySteps: progress.weeklySteps,
         lastWalkDate: progress.lastPlayedDate,
         playDates: progress.playDates,
@@ -394,7 +394,7 @@ class RoomService extends ChangeNotifier {
       code: room.code,
       roomName: room.name,
       kind: room.kind,
-      fromName: progress.userName,
+      fromName: progress.publicUserName,
       toUid: toUid,
       toName: toName,
       toPhotoUrl: toPhotoUrl,
@@ -410,7 +410,7 @@ class RoomService extends ChangeNotifier {
       roomName: room.name,
       kind: room.kind,
       fromUid: backend.uid ?? '',
-      fromName: progress.userName,
+      fromName: progress.publicUserName,
       toUid: toUid,
       toName: toName,
       status: RoomInviteStatus.pending,
@@ -469,7 +469,7 @@ class RoomService extends ChangeNotifier {
     final ok = await backend.sendRoomNudge(
       code: room.code,
       toUid: member.uid,
-      fromName: progress.userName,
+      fromName: progress.publicUserName,
       roomName: room.name,
     );
     if (ok) {

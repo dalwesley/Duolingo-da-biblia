@@ -1070,7 +1070,7 @@ class BackendService extends ChangeNotifier {
     await _putRankingDoc(
       'monthlyLeagues/$rankingMonth/players/$_uid',
       _rankingPayload(
-        name: progress.userName,
+        name: progress.publicUserName,
         score: progress.monthlySteps,
         lastWalkDate: progress.lastPlayedDate,
         lastSeenDate: today,
@@ -1091,7 +1091,7 @@ class BackendService extends ChangeNotifier {
     await _putRankingDoc(
       'overallPlayers/$_uid',
       _rankingPayload(
-        name: progress.userName,
+        name: progress.publicUserName,
         score: progress.steps,
         lastWalkDate: progress.lastPlayedDate,
         lastSeenDate: today,
@@ -1110,7 +1110,7 @@ class BackendService extends ChangeNotifier {
       final dates = [...progress.walkDatesFor(walk.id)]..sort();
       await _putRankingDoc('seasonWalks/${walk.id}/walkers/$_uid', {
         'uid': _uid,
-        'name': progress.userName,
+        'name': progress.publicUserName,
         'portraitStyle': portraitStyle.storageKey,
         'days': dates.length,
         'lastDay': dates.isEmpty ? null : dates.last,
@@ -1121,7 +1121,7 @@ class BackendService extends ChangeNotifier {
     if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
       await _putRankingDoc('rooms/$effectiveRoom/members/$_uid', {
         ..._rankingPayload(
-          name: progress.userName,
+          name: progress.publicUserName,
           score: progress.weeklySteps,
           lastWalkDate: progress.lastPlayedDate,
           lastSeenDate: today,
@@ -1318,6 +1318,23 @@ class BackendService extends ChangeNotifier {
         _hydratedUid = _uid;
         _authLog(
           'hydrate local-cache ok steps=${progress.steps} '
+          'missions=${progress.completedMissions.length}',
+        );
+        return hydrateFromLegacy;
+      }
+      // Conta nova depois da 1ª cena sem login: o que o visitante andou
+      // vira desta conta. Antes do legado — o legado só lê as prefs antigas
+      // e apagaria a cena da memória.
+      final guest = await progress.readLocalCache(
+        forUid: ProgressService.guestCacheUid,
+      );
+      if (guest != null) {
+        await progress.applyFromCloud(guest);
+        await progress.ensureUserNameFromAuth(userDisplayName);
+        progress.markCloudHydrated();
+        _hydratedUid = _uid;
+        _authLog(
+          'hydrate guest ok steps=${progress.steps} '
           'missions=${progress.completedMissions.length}',
         );
         return hydrateFromLegacy;
@@ -1752,9 +1769,7 @@ class BackendService extends ChangeNotifier {
         for (final d in snap.docs)
           RoomMember(
             uid: d.id,
-            name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
-                ? d.data()['name'] as String
-                : 'Aprendiz',
+            name: ProgressService.displayName(d.data()['name'] as String?),
             steps: _roomWeekSteps(d.data(), week),
             isUser: d.id == _uid,
             lastWalk:
@@ -2119,9 +2134,7 @@ class BackendService extends ChangeNotifier {
         if (d.id != _uid)
           CloudPlayer(
             uid: d.id,
-            name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
-                ? d.data()['name'] as String
-                : 'Aprendiz',
+            name: ProgressService.displayName(d.data()['name'] as String?),
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             lastWalkDate: _readActivityDate(d.data(), 'lastWalkDate'),
             lastSeenDate: _readActivityDate(d.data(), 'lastSeenDate'),
@@ -2245,10 +2258,11 @@ class BackendService extends ChangeNotifier {
     final today = _todayKey();
     final hostId = data['hostId'] as String? ?? '';
     final guestId = data['guestId'] as String?;
-    final hostName = (data['hostName'] as String?)?.trim().isNotEmpty == true
-        ? data['hostName'] as String
-        : 'Aprendiz';
-    final guestName = (data['guestName'] as String?)?.trim();
+    final hostName = ProgressService.displayName(data['hostName'] as String?);
+    final rawGuest = (data['guestName'] as String?)?.trim();
+    final guestName = rawGuest == null || rawGuest.isEmpty
+        ? null
+        : ProgressService.displayName(rawGuest);
     final isHost = hostId == _uid;
     final awaiting = guestId == null || guestId.isEmpty;
     final otherName = awaiting

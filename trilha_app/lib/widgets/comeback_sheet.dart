@@ -30,9 +30,7 @@ class _ComebackSheet extends StatelessWidget {
     final a = Appearance.of(context);
     final days = progress.daysSinceLastPlayed;
     final l10n = context.l10n;
-    final name = progress.userName.trim().isEmpty
-        ? l10n.homeDefaultName
-        : progress.userName.trim().split(' ').first;
+    final name = progress.publicUserName.split(' ').first;
 
     return AppSheetPanel(
       child: Column(

@@ -36,6 +36,8 @@ import '../utils/layout_utils.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/anan_speech.dart';
+import '../utils/guest_gate.dart';
+import '../widgets/postcard.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/free_slot_gate.dart';
@@ -247,6 +249,21 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _load() async {
+    // Visitante que já fez a 1ª cena: cena nova só com conta. A tela de
+    // salvar toma o lugar da cena; "Agora não" volta para onde estava.
+    if (GuestGate.blocksScene(
+      context,
+      missionSlug: widget.missionSlug,
+      practice: widget.practiceMode,
+    )) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        Navigator.of(
+          context,
+        ).pushReplacement(GuestGate.saveRoute(context, reason: 'scene'));
+      });
+      return;
+    }
     if (widget.requiresPlus) {
       final open = context.read<SubscriptionService>().plusFeaturesOpen;
       PlusLog.log(
@@ -962,6 +979,36 @@ class _LessonScreenState extends State<LessonScreen>
     _pushCelebration(forced: forced);
   }
 
+  bool _isReplayRun(ProgressService progress) =>
+      widget.practiceMode ||
+      (_baseMission != null &&
+          (progress.isSessionReplayMission(_baseMission!.slug) ||
+              progress.isMissionCompleted(_baseMission!.slug)));
+
+  /// Postal: só cena de verdade (prática não revela). A referência vem do
+  /// estudo; sem ele, a do versículo de entrada — se for referência mesmo.
+  String get _postcardRef => [_study?.passageRef, _mission?.hookRef]
+      .map((r) => (r ?? '').trim())
+      .firstWhere((r) => RegExp(r'\d').hasMatch(r), orElse: () => '');
+
+  /// Livro do carimbo quando esta cena rende postal novo — mesma regra da
+  /// celebração, que grava o postal. Null: a Hoje não carimba.
+  String? _newPostcardBook(ProgressService progress) {
+    if (_mission == null || _outOfLamps || _isReplayRun(progress)) return null;
+    final ref = _postcardRef;
+    if (ref.isEmpty || progress.postcardsOn.containsKey(_mission!.slug)) {
+      return null;
+    }
+    return Postcard(
+      slug: _mission!.slug,
+      title: '',
+      ref: ref,
+      insight: '',
+      art: null,
+      on: DateTime.now(),
+    ).book;
+  }
+
   void _pushCelebration({required bool forced}) {
     if (_mission == null || _celebrationPushed) return;
     _celebrationPushed = true;
@@ -970,16 +1017,8 @@ class _LessonScreenState extends State<LessonScreen>
     if (!widget.practiceMode && _pickedIds.isNotEmpty) {
       progress.markQuestionsUsed(_pickedIds);
     }
-    final isReplay =
-        widget.practiceMode ||
-        (_baseMission != null &&
-            (progress.isSessionReplayMission(_baseMission!.slug) ||
-                progress.isMissionCompleted(_baseMission!.slug)));
-    // Postal: só cena de verdade (prática não revela). A referência vem do
-    // estudo; sem ele, a do versículo de entrada — se for referência mesmo.
-    final postcardRef = [_study?.passageRef, _mission!.hookRef]
-        .map((r) => (r ?? '').trim())
-        .firstWhere((r) => RegExp(r'\d').hasMatch(r), orElse: () => '');
+    final isReplay = _isReplayRun(progress);
+    final postcardRef = _postcardRef;
     final maxLamps = _maxLamps;
     final steps = ProgressService.computeLessonSteps(
       baseSteps: _mission!.stepsReward,
@@ -1552,6 +1591,9 @@ class _LessonScreenState extends State<LessonScreen>
                                   .read<ProgressService>()
                                   .postcardsOn
                                   .containsKey(widget.missionSlug),
+                              stampBook: _newPostcardBook(
+                                context.read<ProgressService>(),
+                              ),
                               accent: accent,
                               onContinue: () {
                                 _pushCelebration(forced: _celebrationForced);
@@ -2025,6 +2067,7 @@ class _InsightPanel extends StatelessWidget {
   final String passageText;
   final String? art;
   final bool veiled;
+  final String? stampBook;
   final Color accent;
   final VoidCallback onContinue;
 
@@ -2038,6 +2081,7 @@ class _InsightPanel extends StatelessWidget {
     this.passageText = '',
     this.art,
     this.veiled = true,
+    this.stampBook,
   });
 
   @override
@@ -2046,12 +2090,14 @@ class _InsightPanel extends StatelessWidget {
       insight: text,
       art: art,
       veiled: veiled,
+      stampBook: stampBook,
       reference: passageRef,
       on: DateTime.now(),
       accent: accent,
       height: facts.isEmpty
           ? null
-          : (MediaQuery.sizeOf(context).height * 0.56).clamp(420.0, 520.0),
+          // Baixa o bastante para os fatos começarem na primeira tela.
+          : (MediaQuery.sizeOf(context).height * 0.42).clamp(320.0, 380.0),
       onShare: text.trim().isEmpty
           ? null
           : () {
@@ -2066,39 +2112,63 @@ class _InsightPanel extends StatelessWidget {
               );
             },
     );
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: AppSpace.sm),
-          Expanded(
-            child: facts.isEmpty
-                ? stage
-                : SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        stage,
-                        const SizedBox(height: AppSpace.lg),
-                        TodayFacts(
-                          facts: facts,
-                          passageRef: passageRef,
-                          passageText: passageText,
-                          accent: accent,
-                        ),
-                      ],
-                    ),
+    final cta = CopperCta(
+      label: context.l10n.commonContinue,
+      onTap: onContinue,
+      trailing: null,
+    );
+    if (facts.isEmpty) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: AppSpace.sm),
+            Expanded(child: stage),
+            const SizedBox(height: AppSpace.md),
+            cta,
+            const SizedBox(height: AppSpace.sm),
+          ],
+        ),
+      );
+    }
+    // Com fatos, o botão rola junto e fecha a leitura: pintura, fatos,
+    // Continuar. Se tudo couber, ele desce até o pé da tela.
+    // Sem IntrinsicHeight/SliverFillRemaining: a placa usa LayoutBuilder,
+    // que não responde intrínsecos. O minHeight + spaceBetween empurra o
+    // botão para o pé quando sobra espaço.
+    return LayoutBuilder(
+      builder: (context, box) => SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minHeight: box.maxHeight),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: AppSpace.sm),
+                  stage,
+                  const SizedBox(height: AppSpace.md),
+                  TodayFacts(
+                    facts: facts,
+                    passageRef: passageRef,
+                    passageText: passageText,
+                    accent: accent,
                   ),
+                  const SizedBox(height: AppSpace.lg),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: AppSpace.sm),
+                child: cta,
+              ),
+            ],
           ),
-          const SizedBox(height: AppSpace.md),
-          CopperCta(
-            label: context.l10n.commonContinue,
-            onTap: onContinue,
-            trailing: null,
-          ),
-          const SizedBox(height: AppSpace.sm),
-        ],
+        ),
       ),
     );
   }

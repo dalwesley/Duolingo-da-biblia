@@ -39,8 +39,7 @@ Future<PostcardShareInfo> postcardShareInfo(
   ProgressService progress,
   Postcard card,
 ) async {
-  final name = progress.userName.trim();
-  final from = name == 'Aprendiz' ? '' : name;
+  final from = progress.realUserName;
   for (final t in await TrailRepository().getTrails()) {
     final slugs = t.missionSlugs;
     final i = slugs.indexOf(card.slug);

@@ -582,9 +582,9 @@ class _TodayPage extends StatelessWidget {
                       art: TrailArt.ofScene(scene.trail.slug, mission.slug),
                     );
                   },
-            height: (MediaQuery.sizeOf(context).height * 0.52).clamp(
-              420.0,
-              520.0,
+            height: (MediaQuery.sizeOf(context).height * 0.42).clamp(
+              320.0,
+              380.0,
             ),
           ),
           const SizedBox(height: AppSpace.lg),

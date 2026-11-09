@@ -5,6 +5,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
+import 'name_prompt_sheet.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import 'act_feel.dart';
@@ -56,7 +57,9 @@ class HomePlayerHeader extends StatelessWidget {
     final goalMet = p.goalMet;
     final left = (goal - done).clamp(0, goal);
     final l10n = context.l10n;
-    final name = p.userName.trim().isEmpty
+    // Nome provisório ("Aprendiz") não é nome: a saudação convida a pôr um.
+    final noName = ProgressService.isPlaceholderUserName(p.userName);
+    final name = noName
         ? l10n.homeDefaultName
         : p.userName.trim().split(' ').first;
     final streak = p.streak;
@@ -123,16 +126,19 @@ class HomePlayerHeader extends StatelessWidget {
                                     color: a.textSecondary,
                                   ),
                                 ),
-                                Text(
-                                  name,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.display(
-                                    size: 18,
-                                    color: a.text,
-                                    height: 1.1,
+                                if (noName)
+                                  _AddNameLink(label: l10n.homeAddName)
+                                else
+                                  Text(
+                                    name,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: AppTypography.display(
+                                      size: 18,
+                                      color: a.text,
+                                      height: 1.1,
+                                    ),
                                   ),
-                                ),
                               ],
                             ),
                           ),
@@ -194,6 +200,57 @@ class HomePlayerHeader extends StatelessWidget {
           const SizedBox(height: 10),
           const StreakWeek(orbSize: 28),
         ],
+      ),
+    );
+  }
+}
+
+/// No lugar do nome provisório: convite discreto que abre a folha do nome.
+/// O toque fica só aqui; o resto da saudação continua abrindo o perfil.
+class _AddNameLink extends StatelessWidget {
+  final String label;
+
+  const _AddNameLink({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Semantics(
+      button: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          showNamePromptSheet(context);
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 2),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.display(
+                    size: 18,
+                    color: a.textSecondary,
+                    height: 1.1,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 6),
+              CinematicIcon(
+                glyph: CinematicGlyph.pencil,
+                size: AppMetrics.iconSm,
+                accent: a.textSecondary,
+                glowing: false,
+                framed: false,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

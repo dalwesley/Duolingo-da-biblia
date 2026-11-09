@@ -24,9 +24,21 @@ import 'main_shell.dart';
 import 'onboarding_screen.dart';
 import '../l10n/app_language.dart';
 
-/// Porta de entrada — exige conta (Google; Apple no iOS) antes de usar o app.
+/// Porta de entrada — conta (Google; Apple no iOS). Instalação nova faz a
+/// 1ª cena como visitante e chega aqui com [afterGuestScene] para salvar.
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+  /// Visitante acabou a 1ª cena: o convite é guardar a caminhada.
+  final bool afterGuestScene;
+
+  /// Aberta como porta do visitante (cena nova, assinar, Juntos…): mostra
+  /// "Agora não", que volta para onde ele estava. Vai para os eventos.
+  final String? guestReason;
+
+  const LoginScreen({
+    super.key,
+    this.afterGuestScene = false,
+    this.guestReason,
+  });
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -46,6 +58,45 @@ class _LoginScreenState extends State<LoginScreen> {
     super.initState();
     _loadVersionLabel();
     unawaited(ContentCatalogService.instance.ensureLoaded());
+    if (widget.afterGuestScene || widget.guestReason != null) {
+      unawaited(
+        AnalyticsService.instance.logEvent('guest_save_view', {
+          'reason': widget.guestReason ?? 'start',
+          'walked': widget.afterGuestScene ? 1 : 0,
+        }),
+      );
+    }
+  }
+
+  /// "Agora não": o visitante segue sem conta. Por cima de uma tela volta
+  /// para ela; aberta na raiz, cai na Home.
+  void _notNow() {
+    unawaited(
+      AnalyticsService.instance.logEvent('guest_save_dismiss', {
+        'reason': widget.guestReason ?? 'start',
+      }),
+    );
+    final nav = Navigator.of(context);
+    if (nav.canPop()) {
+      nav.pop();
+      return;
+    }
+    nav.pushAndRemoveUntil(
+      PageRouteBuilder(
+        pageBuilder: (_, _, _) => const MainShell(),
+        transitionsBuilder: (_, a, _, c) =>
+            FadeTransition(opacity: a, child: c),
+        transitionDuration: AppMotion.gentle,
+      ),
+      (_) => false,
+    );
+  }
+
+  /// O espelho do visitante vai para o disco antes do login: o hydrate
+  /// troca o dono do espelho e cancela o que estava pendente.
+  Future<void> _flushGuest(ProgressService progress) async {
+    if (context.read<BackendService>().isSignedIn) return;
+    await progress.persistLocalCache();
   }
 
   Future<void> _loadVersionLabel() async {
@@ -106,16 +157,28 @@ class _LoginScreenState extends State<LoginScreen> {
     }
     if (!mounted) return;
 
+    if (widget.afterGuestScene || widget.guestReason != null) {
+      unawaited(
+        AnalyticsService.instance.logEvent('guest_saved', {
+          'reason': widget.guestReason ?? 'start',
+          'hydrate': hydrate,
+          'scenes': progress.completedMissions.length,
+        }),
+      );
+    }
     final next = progress.hasSeenOnboarding
         ? const MainShell()
         : const OnboardingScreen();
-    Navigator.of(context).pushReplacement(
+    // Pode ter vindo por cima do onboarding ("Já tenho conta"): limpa a
+    // pilha para o voltar não reabrir a introdução.
+    Navigator.of(context).pushAndRemoveUntil(
       PageRouteBuilder(
         pageBuilder: (_, _, _) => next,
         transitionsBuilder: (_, a, _, c) =>
             FadeTransition(opacity: a, child: c),
         transitionDuration: AppMotion.slow,
       ),
+      (_) => false,
     );
   }
 
@@ -129,6 +192,8 @@ class _LoginScreenState extends State<LoginScreen> {
     });
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Google');
+    await _flushGuest(progress);
+    if (!mounted) return;
     final result = await backend.signInWithGoogle();
     if (!mounted) return;
     if (!result.ok) {
@@ -156,6 +221,8 @@ class _LoginScreenState extends State<LoginScreen> {
     });
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
+    await _flushGuest(progress);
+    if (!mounted) return;
     final result = await backend.signInWithApple();
     if (!mounted) return;
     if (!result.ok) {
@@ -210,16 +277,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(height: 14),
                       const StwayTagline(size: 11),
-                      const SizedBox(height: 10),
-                      Text(
-                        context.l10n.splashSlogan,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.title(
-                          size: 16,
-                          weight: FontWeight.w700,
-                          color: a.text,
-                        ),
-                      ),
                       const Spacer(),
                       Center(
                         child: CloudMascot(
@@ -233,10 +290,28 @@ class _LoginScreenState extends State<LoginScreen> {
                       Text(
                         preparing
                             ? context.l10n.splashPreparing
+                            : widget.afterGuestScene
+                            ? context.l10n.loginGuestTitle
                             : context.l10n.loginTitle,
                         textAlign: TextAlign.center,
                         style: AppTypography.display(size: 28, color: a.text),
                       ),
+                      if (!preparing &&
+                          (widget.afterGuestScene ||
+                              widget.guestReason != null)) ...[
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          widget.afterGuestScene
+                              ? context.l10n.loginGuestBody
+                              : context.l10n.loginGuestGateBody,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 14,
+                            height: 1.4,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
                       if (preparing) ...[
                         const SizedBox(height: AppSpace.sm),
                         Text(
@@ -325,6 +400,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               trailing: null,
                               showArrow: false,
                             ),
+                            if (widget.guestReason != null) ...[
+                              const SizedBox(height: AppSpace.xs),
+                              TextCta(
+                                label: context.l10n.commonNotNow,
+                                color: a.textSecondary,
+                                onTap: busy ? null : _notNow,
+                              ),
+                            ],
                           ],
                         ),
                       ),

@@ -26,10 +26,12 @@ import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/guest_gate.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/content_filter.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/corner_board.dart';
 import '../widgets/corner_pick_sheet.dart';
 import '../widgets/corner_home_card.dart' show RaceDashes;
@@ -126,6 +128,9 @@ class _LeagueScreenState extends State<LeagueScreen>
   bool _playersLoading = false;
   bool _playersLoadedOnce = false;
   String? _playersError;
+
+  /// Convite aberto como visitante: pede a conta uma vez por tela.
+  bool _guestInviteAsked = false;
   final Set<String> _inviteBusy = {};
   Future<void>? _settleInFlight;
 
@@ -164,6 +169,15 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!mounted || _handlingInvite) return;
     final links = InviteDeepLinkService.instance;
     final rc = RemoteConfigService.instance;
+    // Visitante com convite: o código fica guardado e a tela de salvar
+    // abre; depois do login o convite segue (LoginScreen/Juntos o consomem).
+    if (GuestGate.isGuest(context) &&
+        (links.pendingCompanionCode != null || links.pendingRoomCode != null)) {
+      if (_guestInviteAsked) return;
+      _guestInviteAsked = true;
+      await GuestGate.requireAccount(context, reason: 'invite');
+      return;
+    }
     // App aberto a frio pelo link (câmera do celular): o Remote Config ainda
     // não carregou e as flags leem `false`. Espera antes de decidir.
     if (links.pendingCompanionCode != null || links.pendingRoomCode != null) {
@@ -570,7 +584,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     ];
 
     final entries = league.monthStandings(
-      userName: progress.userName,
+      userName: progress.publicUserName,
       userMonthSteps: progress.currentMonthSteps,
       userWeekSteps: progress.currentWeekSteps,
       userDayStartSteps: progress.monthStartOfToday,
@@ -592,6 +606,12 @@ class _LeagueScreenState extends State<LeagueScreen>
     final overallCompetitive = LeagueService.fieldIsCompetitive(
       _overallPlayers.length,
     );
+
+    if (GuestGate.isGuest(context) &&
+        context.read<BackendService>().isFirebaseReady) {
+      children.add(_reveal(2, const _GuestJuntosCard(reason: 'caravan')));
+      return children;
+    }
 
     if (_playersError != null) {
       children.addAll([
@@ -703,6 +723,11 @@ class _LeagueScreenState extends State<LeagueScreen>
       return list;
     }
 
+    if (GuestGate.isGuest(context) && backend.isFirebaseReady) {
+      list.add(_reveal(2, const _GuestJuntosCard(reason: 'companion')));
+      return list;
+    }
+
     if (!backend.isActive) {
       list.add(
         _reveal(
@@ -782,14 +807,14 @@ class _LeagueScreenState extends State<LeagueScreen>
           (2 + i).clamp(0, 8),
           _CompanionCard(
             companion: ordered[i],
-            myName: progress.userName,
+            myName: progress.publicUserName,
             calledName: companions.outgoingFor(ordered[i].code)?.toName,
             onCall: () => _openCompanionCall(context, ordered[i]),
             onShowQr: () => _openCompanionInvite(context, ordered[i]),
             onNudge: () => showCompanionNudgeSheet(
               context,
               companion: ordered[i],
-              myName: progress.userName,
+              myName: progress.publicUserName,
             ),
             onLeave: () async {
               final ok = await _confirmLeaveCompanion(context);
@@ -907,7 +932,7 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Future<void> _shareCaravanInvite(BuildContext context) async {
-    final name = context.read<ProgressService>().userName.trim();
+    final name = context.read<ProgressService>().realUserName;
     final l10n = context.l10n;
     final who = name.isEmpty ? l10n.juntosSomeone : name;
     final store = AppUpdateService.androidStoreUrl;
@@ -998,7 +1023,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     await showInviteQrSheet(
       context,
       code: live.code,
-      inviterName: progress.userName,
+      inviterName: progress.publicUserName,
       trailGift: live.giftCode != null,
     );
   }
@@ -1027,7 +1052,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     await showInviteQrSheet(
       context,
       code: created.code,
-      inviterName: progress.userName,
+      inviterName: progress.publicUserName,
       trailGift: created.giftCode != null,
     );
   }
@@ -1114,6 +1139,10 @@ class _LeagueScreenState extends State<LeagueScreen>
           child: AppSpinner(),
         ),
       ];
+    }
+
+    if (GuestGate.isGuest(context) && backend.isFirebaseReady) {
+      return [_reveal(1, const _GuestJuntosCard(reason: 'groups'))];
     }
 
     if (!backend.isActive) {
@@ -1439,7 +1468,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       code: room.code,
       headline: room.name,
       companionMode: false,
-      inviterName: context.read<ProgressService>().userName,
+      inviterName: context.read<ProgressService>().publicUserName,
       shareMessage: context.l10n.juntosRoomShareText(
         room.name,
         InviteDeepLinkService.roomHttpsUrl(room.code),
@@ -1874,7 +1903,7 @@ class _CaravanStageCard extends StatelessWidget {
     final daysInMonth = DateTime(n.year, n.month + 1, 0).day;
     final part = _previewUrgencyPart ?? ((n.day - 1) * 3) ~/ daysInMonth;
     final tone = switch (part) {
-      0 => AppRoles.presence, // azul — início
+      0 => AppRoles.navTogether, // teal do Juntos — início
       1 => AppRoles.reward, // amarelo — meio
       _ => AppRoles.risk, // vermelho — fim
     };
@@ -1892,8 +1921,8 @@ class _CaravanStageCard extends StatelessWidget {
       (ProgressService p) => p.currentWeekScenes,
     );
     return GlassCard(
-      tint: AppRoles.presence,
-      glow: 0.32,
+      tint: AppRoles.navTogether,
+      glow: 0.55,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1917,9 +1946,9 @@ class _CaravanStageCard extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           SeasonCountdown(
             opens: _monthClosesAt(),
-            color: tone,
+            color: a.onDark ? tone : a.ink(tone),
             muted: a.textSecondary,
-            accent: a.chrome,
+            accent: tone,
             large: true,
             centered: true,
             blink: blink,
@@ -1947,6 +1976,16 @@ class _CaravanLevel extends StatelessWidget {
   final int steadyWeeks;
   final int weekScenes;
 
+  /// Cada nível tem sua cor — semente verde, videira uva, oliveira areia,
+  /// cedro teal, estrela ouro.
+  static Color _tierTone(LeagueTier tier) => switch (tier) {
+    LeagueTier.semente => AppColors.sprout,
+    LeagueTier.videira => AppColors.orchid,
+    LeagueTier.oliveira => AppColors.sand,
+    LeagueTier.cedro => AppColors.cedar,
+    LeagueTier.estrela => AppColors.medalGold,
+  };
+
   const _CaravanLevel({
     required this.tier,
     required this.isMaxTier,
@@ -1972,16 +2011,19 @@ class _CaravanLevel extends StatelessWidget {
         ? l10n.juntosLevelWeekDone
         : l10n.juntosLevelWeek(weekScenes, goal);
 
+    final tone = _tierTone(tier);
+    final toneInk = a.onDark ? tone : a.ink(tone);
+
     return Row(
       children: [
         IconWell(
           size: 40,
-          accent: AppRoles.presence,
+          accent: tone,
           glowing: true,
-          child: const CinematicIcon(
+          child: CinematicIcon(
             glyph: CinematicGlyph.tree,
             size: AppMetrics.iconMd,
-            accent: AppRoles.presence,
+            accent: tone,
             framed: false,
           ),
         ),
@@ -1993,7 +2035,7 @@ class _CaravanLevel extends StatelessWidget {
               SectionLabel(
                 l10n.juntosLevelTitle(tier.label),
                 size: 10,
-                color: AppRoles.presence,
+                color: toneInk,
               ),
               const SizedBox(height: 2),
               Text(
@@ -2030,11 +2072,11 @@ class _CaravanLevel extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: i < steadyWeeks
                         ? AppRoles.success
-                        : a.chrome.withValues(alpha: 0.18),
+                        : tone.withValues(alpha: 0.16),
                     border: Border.all(
                       color: i < steadyWeeks
                           ? AppRoles.success
-                          : a.chrome.withValues(alpha: 0.4),
+                          : tone.withValues(alpha: 0.6),
                     ),
                   ),
                 ),
@@ -2618,9 +2660,13 @@ class _RoomHearth extends StatelessWidget {
                 ? AppRoles.risk
                 : days <= 3
                 ? AppRoles.reward
-                : AppRoles.presence,
+                : AppRoles.navTogether,
             muted: a.textSecondary,
-            accent: a.chrome,
+            accent: days <= 1
+                ? AppRoles.risk
+                : days <= 3
+                ? AppRoles.reward
+                : AppRoles.navTogether,
             large: true,
             centered: true,
             blink: days <= 1,
@@ -3463,6 +3509,70 @@ class _AvatarCluster extends StatelessWidget {
                 style: shown[i].style,
               ),
             ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Visitante em Juntos: a Caravana, a companhia e os grupos vivem na
+/// conta. Um convite, não um erro.
+class _GuestJuntosCard extends StatelessWidget {
+  final String reason;
+
+  const _GuestJuntosCard({required this.reason});
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    // Convite: borda e luz douradas (ação), o recado na fala do Anan.
+    return GlassCard(
+      tint: AppRoles.reward,
+      glow: 0.7,
+      borderColor: AppRoles.reward.withValues(alpha: 0.85),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        AppSpace.xl,
+        AppSpace.lg,
+        AppSpace.lg,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          AnanSpeech(
+            face: CloudFace.feliz,
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  l10n.juntosGuestTitle,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.display(
+                    size: 24,
+                    color: AnanSpeechBubble.ink,
+                  ),
+                ),
+                const SizedBox(height: AppSpace.sm),
+                Text(
+                  l10n.juntosGuestBody,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(
+                    size: 14,
+                    height: 1.45,
+                    color: AnanSpeechBubble.muted,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: AppSpace.lg),
+          CopperCta(
+            label: l10n.juntosGuestCta,
+            onTap: () => GuestGate.requireAccount(context, reason: reason),
+            trailing: null,
+            dense: true,
+          ),
         ],
       ),
     );

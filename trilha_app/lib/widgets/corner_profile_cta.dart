@@ -120,7 +120,7 @@ class CornerProfileCta extends StatelessWidget {
     final created = await corners.propose(
       opponentId: profile.uid!,
       opponentName: profile.name,
-      myName: progress.userName,
+      myName: progress.publicUserName,
       proposal: proposal,
       opponentPhotoUrl: profile.photoUrl,
     );
