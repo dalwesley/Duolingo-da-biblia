@@ -9945,6 +9945,18 @@ abstract class AppLocalizations {
   /// **'de {cap} pioneiros'**
   String paywallFounderCounter(int cap);
 
+  /// Teto do Pioneiro no paywall quando não há pioneer_until
+  ///
+  /// In pt, this message translates to:
+  /// **'Só para as primeiras {cap} pessoas.'**
+  String paywallFounderLimitCap(int cap);
+
+  /// Prazo do Pioneiro no paywall (pioneer_until e teto de vagas)
+  ///
+  /// In pt, this message translates to:
+  /// **'Só até {date} ou até acabarem as {cap} vagas.'**
+  String paywallFounderLimitUntil(String date, int cap);
+
   /// No description provided for @paywallFounderNote.
   ///
   /// In pt, this message translates to:

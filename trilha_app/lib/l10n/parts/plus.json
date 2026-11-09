@@ -144,6 +144,25 @@
       "price": "String"
     }
   },
+  "paywallFounderLimitUntil": {
+    "pt": "Só até {date} ou até acabarem as {cap} vagas.",
+    "en": "Only until {date} or until the {cap} spots run out.",
+    "es": "Solo hasta el {date} o hasta que se agoten las {cap} plazas.",
+    "description": "Prazo do Pioneiro no paywall (pioneer_until e teto de vagas)",
+    "placeholders": {
+      "date": "String",
+      "cap": "int"
+    }
+  },
+  "paywallFounderLimitCap": {
+    "pt": "Só para as primeiras {cap} pessoas.",
+    "en": "Only for the first {cap} people.",
+    "es": "Solo para las primeras {cap} personas.",
+    "description": "Teto do Pioneiro no paywall quando não há pioneer_until",
+    "placeholders": {
+      "cap": "int"
+    }
+  },
   "paywallBestValue": {
     "pt": "Melhor valor",
     "en": "Best value",

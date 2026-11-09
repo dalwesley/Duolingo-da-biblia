@@ -6280,6 +6280,16 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String paywallFounderLimitCap(int cap) {
+    return 'Solo para las primeras $cap personas.';
+  }
+
+  @override
+  String paywallFounderLimitUntil(String date, int cap) {
+    return 'Solo hasta el $date o hasta que se agoten las $cap plazas.';
+  }
+
+  @override
   String get paywallFounderNote => 'El precio se queda mientras renueves.';
 
   @override

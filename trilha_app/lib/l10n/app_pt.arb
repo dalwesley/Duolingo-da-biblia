@@ -4134,6 +4134,27 @@
       }
     }
   },
+  "paywallFounderLimitCap": "Só para as primeiras {cap} pessoas.",
+  "@paywallFounderLimitCap": {
+    "description": "Teto do Pioneiro no paywall quando não há pioneer_until",
+    "placeholders": {
+      "cap": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallFounderLimitUntil": "Só até {date} ou até acabarem as {cap} vagas.",
+  "@paywallFounderLimitUntil": {
+    "description": "Prazo do Pioneiro no paywall (pioneer_until e teto de vagas)",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "cap": {
+        "type": "int"
+      }
+    }
+  },
   "paywallFounderNote": "O preço fica enquanto você renovar.",
   "paywallFounderTitle": "O preço do lançamento",
   "paywallFreeForever": "A Bíblia, livro a livro, e as portas de entrada continuam grátis — uma trilha por vez. Sempre.",

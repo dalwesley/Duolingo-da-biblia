@@ -40,9 +40,11 @@ void main() {
     final cta = find.text('Começar 14 dias grátis');
     await tester.scrollUntilVisible(
       cta,
-      400,
+      150,
       scrollable: find.byType(Scrollable).first,
     );
+    await tester.ensureVisible(cta);
+    await tester.pump();
     await tester.tap(cta);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 800));

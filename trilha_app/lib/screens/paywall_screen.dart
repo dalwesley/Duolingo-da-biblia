@@ -289,6 +289,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                           trialDays: sub.trialDaysFor(p),
                           pioneerTaken: sub.pioneerTaken,
                           pioneerCap: sub.pioneerCap,
+                          pioneerUntil: sub.pioneerUntil,
                         ),
                       ],
                       const SizedBox(height: 10),
@@ -583,12 +584,14 @@ class _PlanExplain extends StatelessWidget {
   final int? trialDays;
   final int pioneerTaken;
   final int pioneerCap;
+  final DateTime? pioneerUntil;
 
   const _PlanExplain({
     required this.package,
     required this.trialDays,
     required this.pioneerTaken,
     required this.pioneerCap,
+    this.pioneerUntil,
   });
 
   @override
@@ -630,6 +633,7 @@ class _PlanExplain extends StatelessWidget {
             price: package.storeProduct.priceString,
             taken: pioneerTaken,
             cap: pioneerCap,
+            until: pioneerUntil,
             footnote: '',
           ),
           const SizedBox(height: AppSpace.md),
@@ -642,6 +646,7 @@ class _PlanExplain extends StatelessWidget {
         price: package.storeProduct.priceString,
         taken: pioneerTaken,
         cap: pioneerCap,
+        until: pioneerUntil,
         footnote: renews ? l10n.paywallAutoRenew : '',
       );
     }
@@ -661,11 +666,15 @@ class _PioneerNote extends StatelessWidget {
   final int cap;
   final String footnote;
 
+  /// Último dia de venda (`pioneer_until`); null = só o teto de vagas.
+  final DateTime? until;
+
   const _PioneerNote({
     required this.price,
     required this.taken,
     required this.cap,
     required this.footnote,
+    this.until,
   });
 
   @override
@@ -691,6 +700,22 @@ class _PioneerNote extends StatelessWidget {
           Text(
             l10n.paywallFounderBody(price),
             style: AppTypography.body(size: 14, color: a.text),
+          ),
+          // Prazo e teto sempre à vista (são verdade desde o 1º dia); o
+          // número de vagas ocupadas só entra no contador acima.
+          const SizedBox(height: AppSpace.sm),
+          Text(
+            until == null
+                ? l10n.paywallFounderLimitCap(cap)
+                : l10n.paywallFounderLimitUntil(
+                    DateFormat.MMMMd(l10n.localeName).format(until!),
+                    cap,
+                  ),
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w700,
+              color: AppRoles.reward,
+            ),
           ),
           if (footnote.isNotEmpty) ...[
             const SizedBox(height: AppSpace.lg),

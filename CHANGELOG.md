@@ -16,6 +16,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Visitante pede a conta só quando precisa: cena nova, assinar, restaurar, apoiar, resgatar compra do site, convites, Juntos (card "Caminhe junto"), relatos e sugestões, lista de espera. Refazer cena feita e prática seguem livres. A tela de salvar abre sozinha no máximo 1×/dia
 - "Já tenho conta" no 1º passo do onboarding, para quem reinstalou
 - Advento 2026 grátis para todos, como presente de lançamento: todos os dias e as revisões de cada semana, com o selo "Presente de lançamento" no card e na folha da Estação. O paywall tira "Trilhas da estação" enquanto a campanha da vez for presente
+- Paywall do Pioneiro mostra o prazo e o teto sempre: "Só até {data} ou até acabarem as 200 vagas" (sem `pioneer_until`: "Só para as primeiras 200 pessoas"). O contador de vagas ocupadas segue a partir de 20
 - Postal revelado na própria placa Hoje: o carimbo do dia pousa na pintura e "Novo postal guardado" aparece no alto
 - Nome provisório ("Aprendiz"): a saudação da Home convida a pôr um nome (nova folha), e o nome provisório não aparece para outras pessoas
 - Funil: `retention_pulse` em toda abertura (com ou sem conta), `reminder_prompt`, `notification_permission`, `notification_open`, `guest_start`, `guest_gate`, `guest_save_view`, `guest_save_dismiss`, `guest_saved`, `onboarding_have_account`
