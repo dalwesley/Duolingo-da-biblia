@@ -123,12 +123,22 @@
     "en": "The price stays while you renew.",
     "es": "El precio se queda mientras renueves."
   },
-  "paywallFounderCounter": {
-    "pt": "de {cap} pioneiros",
-    "en": "of {cap} pioneers",
-    "es": "de {cap} pioneros",
+  "paywallFounderRemaining": {
+    "pt": "de {cap} vagas restantes",
+    "en": "of {cap} spots left",
+    "es": "de {cap} plazas restantes",
+    "description": "Contador do Pioneiro no paywall: o número grande ao lado são as vagas que restam",
     "placeholders": {
       "cap": "int"
+    }
+  },
+  "paywallFounderDaysLeft": {
+    "pt": "{days, plural, =0{último dia} =1{falta 1 dia} other{faltam {days} dias}}",
+    "en": "{days, plural, =0{last day} =1{1 day left} other{{days} days left}}",
+    "es": "{days, plural, =0{último día} =1{queda 1 día} other{quedan {days} días}}",
+    "description": "Dias até pioneer_until no contador do Pioneiro",
+    "placeholders": {
+      "days": "int"
     }
   },
   "paywallFounderTitle": {

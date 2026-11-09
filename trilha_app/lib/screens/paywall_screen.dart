@@ -691,12 +691,10 @@ class _PioneerNote extends StatelessWidget {
             style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: AppSpace.md),
-          // "0 de 200" no primeiro dia parece app vazio: o contador só
-          // aparece quando já há gente suficiente para animar.
-          if (taken >= _PioneerCounter.showFrom) ...[
-            _PioneerCounter(taken: taken, cap: cap),
-            const SizedBox(height: AppSpace.md),
-          ],
+          // Contador sempre à vista, em vagas que restam (não "0 de 200",
+          // que no 1º dia parece app vazio) e dias até o prazo.
+          _PioneerCounter(taken: taken, cap: cap, until: until),
+          const SizedBox(height: AppSpace.md),
           Text(
             l10n.paywallFounderBody(price),
             style: AppTypography.body(size: 14, color: a.text),
@@ -730,26 +728,40 @@ class _PioneerNote extends StatelessWidget {
   }
 }
 
-/// Quantas vagas do Pioneiro já foram ocupadas, de um teto fixo.
+/// Vagas do Pioneiro que restam (de um teto fixo) e dias até o prazo.
+/// A barra esvazia conforme as vagas acabam.
 class _PioneerCounter extends StatelessWidget {
   final int taken;
   final int cap;
+  final DateTime? until;
 
-  const _PioneerCounter({required this.taken, required this.cap});
+  const _PioneerCounter({required this.taken, required this.cap, this.until});
 
-  /// Vagas ocupadas a partir das quais o contador aparece.
-  static const showFrom = 20;
+  /// Dias até o último dia de venda (0 = hoje é o último). Null sem prazo.
+  int? _daysLeft() {
+    final end = until;
+    if (end == null) return null;
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final last = DateTime(end.year, end.month, end.day);
+    final days = (last.difference(today).inHours + 12) ~/ 24;
+    return days < 0 ? null : days;
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final total = cap <= 0 ? 1 : cap;
-    final fill = (taken / total).clamp(0.0, 1.0);
-    final label =
-        '${taken.clamp(0, total)} ${l10n.paywallFounderCounter(total)}';
+    final left = (total - taken).clamp(0, total);
+    final fill = (left / total).clamp(0.0, 1.0);
+    final days = _daysLeft();
+    final caption = [
+      l10n.paywallFounderRemaining(total),
+      if (days != null) l10n.paywallFounderDaysLeft(days),
+    ].join(' · ');
     return Semantics(
-      label: label,
+      label: '$left $caption',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -758,13 +770,15 @@ class _PioneerCounter extends StatelessWidget {
             textBaseline: TextBaseline.alphabetic,
             children: [
               Text(
-                '${taken.clamp(0, total)}',
+                '$left',
                 style: AppTypography.display(size: 24, color: a.text),
               ),
               const SizedBox(width: AppSpace.sm),
-              Text(
-                l10n.paywallFounderCounter(total),
-                style: AppTypography.body(size: 13, color: a.textSecondary),
+              Expanded(
+                child: Text(
+                  caption,
+                  style: AppTypography.body(size: 13, color: a.textSecondary),
+                ),
               ),
             ],
           ),

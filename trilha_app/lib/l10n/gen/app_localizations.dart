@@ -9939,11 +9939,11 @@ abstract class AppLocalizations {
   /// **'Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} por ano enquanto renovar.'**
   String paywallFounderBody(String price);
 
-  /// No description provided for @paywallFounderCounter.
+  /// Dias até pioneer_until no contador do Pioneiro
   ///
   /// In pt, this message translates to:
-  /// **'de {cap} pioneiros'**
-  String paywallFounderCounter(int cap);
+  /// **'{days, plural, =0{último dia} =1{falta 1 dia} other{faltam {days} dias}}'**
+  String paywallFounderDaysLeft(int days);
 
   /// Teto do Pioneiro no paywall quando não há pioneer_until
   ///
@@ -9962,6 +9962,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'O preço fica enquanto você renovar.'**
   String get paywallFounderNote;
+
+  /// Contador do Pioneiro no paywall: o número grande ao lado são as vagas que restam
+  ///
+  /// In pt, this message translates to:
+  /// **'de {cap} vagas restantes'**
+  String paywallFounderRemaining(int cap);
 
   /// No description provided for @paywallFounderTitle.
   ///

@@ -4126,10 +4126,11 @@
       }
     }
   },
-  "paywallFounderCounter": "de {cap} pioneiros",
-  "@paywallFounderCounter": {
+  "paywallFounderDaysLeft": "{days, plural, =0{último dia} =1{falta 1 dia} other{faltam {days} dias}}",
+  "@paywallFounderDaysLeft": {
+    "description": "Dias até pioneer_until no contador do Pioneiro",
     "placeholders": {
-      "cap": {
+      "days": {
         "type": "int"
       }
     }
@@ -4156,6 +4157,15 @@
     }
   },
   "paywallFounderNote": "O preço fica enquanto você renovar.",
+  "paywallFounderRemaining": "de {cap} vagas restantes",
+  "@paywallFounderRemaining": {
+    "description": "Contador do Pioneiro no paywall: o número grande ao lado são as vagas que restam",
+    "placeholders": {
+      "cap": {
+        "type": "int"
+      }
+    }
+  },
   "paywallFounderTitle": "O preço do lançamento",
   "paywallFreeForever": "A Bíblia, livro a livro, e as portas de entrada continuam grátis — uma trilha por vez. Sempre.",
   "paywallHeadline": "Mantenha seu ritmo",

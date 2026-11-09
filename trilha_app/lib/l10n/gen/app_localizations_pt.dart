@@ -6262,8 +6262,15 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String paywallFounderCounter(int cap) {
-    return 'de $cap pioneiros';
+  String paywallFounderDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'faltam $days dias',
+      one: 'falta 1 dia',
+      zero: 'último dia',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -6278,6 +6285,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallFounderNote => 'O preço fica enquanto você renovar.';
+
+  @override
+  String paywallFounderRemaining(int cap) {
+    return 'de $cap vagas restantes';
+  }
 
   @override
   String get paywallFounderTitle => 'O preço do lançamento';
