@@ -302,17 +302,35 @@ class SubscriptionService extends ChangeNotifier {
   int _pioneerCap = pioneerCapDefault;
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _pioneerListen;
 
-  /// Vagas ocupadas, no máximo o teto. Zero enquanto o documento não existe.
+  /// Reservadas no Remote Config (`pioneer_reserved`), no máximo o teto.
+  int get pioneerReserved {
+    final n =
+        _debugPioneerReserved ?? RemoteConfigService.instance.pioneerReserved;
+    return n > _pioneerCap ? _pioneerCap : n;
+  }
+
+  int? _debugPioneerReserved;
+
+  /// Laboratório e testes: simula `pioneer_reserved`.
+  @visibleForTesting
+  set debugPioneerReserved(int? value) {
+    _debugPioneerReserved = value;
+    notifyListeners();
+  }
+
+  /// Vagas ocupadas (compras contadas pelo servidor + reservadas), no
+  /// máximo o teto. O contador do paywall mostra o teto menos isto.
   int get pioneerTaken {
-    final n = _pioneerCount ?? 0;
-    if (n <= 0) return 0;
+    final n = (_pioneerCount ?? 0).clamp(0, _pioneerCap) + pioneerReserved;
     return n > _pioneerCap ? _pioneerCap : n;
   }
 
   int get pioneerCap => _pioneerCap;
 
-  /// Vagas do Pioneiro esgotadas pelo contador do servidor.
-  bool get pioneerSoldOut => (_pioneerCount ?? 0) >= _pioneerCap;
+  /// Sem vaga: compras + reservadas chegaram ao teto. As reservadas
+  /// contam — o "restam N" do paywall tem de ser verdade.
+  bool get pioneerSoldOut =>
+      (_pioneerCount ?? 0) + pioneerReserved >= _pioneerCap;
 
   /// Último dia de venda do Pioneiro (`pioneer_until`), mesmo que já tenha
   /// passado. Null: sem prazo, só o teto de vagas.

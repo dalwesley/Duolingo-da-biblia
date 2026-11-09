@@ -17,6 +17,7 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyRoomChestBonus = 'room_chest_bonus_steps';
   static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
   static const _keyPioneerUntil = 'pioneer_until';
+  static const _keyPioneerReserved = 'pioneer_reserved';
   static const _keyGroupsEnabled = 'groups_enabled';
   static const _keyCompanionEnabled = 'companion_enabled';
   static const _keyChallengeEnabled = 'challenge_enabled';
@@ -27,6 +28,7 @@ class RemoteConfigService extends ChangeNotifier {
     _keyRoomChestBonus: 15,
     _keyPlusLaunchFreeUntil: '',
     _keyPioneerUntil: '',
+    _keyPioneerReserved: 0,
     _keyGroupsEnabled: false,
     _keyCompanionEnabled: false,
     _keyChallengeEnabled: false,
@@ -85,6 +87,7 @@ class RemoteConfigService extends ChangeNotifier {
     'Remote Config $when: '
         '$_keyPlusLaunchFreeUntil="${_string(_keyPlusLaunchFreeUntil)}" '
         '$_keyPioneerUntil="${_string(_keyPioneerUntil)}" '
+        '$_keyPioneerReserved=${_int(_keyPioneerReserved)} '
         '$_keyGroupsEnabled=${_bool(_keyGroupsEnabled)} '
         '$_keyCompanionEnabled=${_bool(_keyCompanionEnabled)} '
         '$_keyChallengeEnabled=${_bool(_keyChallengeEnabled)}',
@@ -152,6 +155,13 @@ class RemoteConfigService extends ChangeNotifier {
   /// Último dia (YYYY-MM-DD, inclusive) de venda do Pioneiro. Vazio ou
   /// inválido: sem prazo, vale só o teto de vagas.
   DateTime? get pioneerUntil => _date(_keyPioneerUntil);
+
+  /// Vagas do Pioneiro reservadas fora da loja (convites, parceiros):
+  /// saem das que restam e contam para esgotar. 0 ou negativo: nenhuma.
+  int get pioneerReserved {
+    final n = _int(_keyPioneerReserved);
+    return n < 0 ? 0 : n;
+  }
 
   /// Primeiro dia (YYYY-MM-DD) em que a retrospectiva do ano abre. Vazio ou
   /// inválido: fechada.

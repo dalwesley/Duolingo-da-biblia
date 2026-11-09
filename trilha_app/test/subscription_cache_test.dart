@@ -117,6 +117,28 @@ void main() {
     expect(sub.annualOnSale, same(sub.founderPackage));
   });
 
+  test('vagas reservadas saem das que restam e contam para esgotar', () {
+    SharedPreferences.setMockInitialValues({});
+    final sub = SubscriptionService();
+    sub.debugSetFakeStore(true);
+    sub.debugSetPioneerUntil(null);
+
+    sub.debugSetPioneerCount(0, cap: 200);
+    sub.debugPioneerReserved = 55;
+    expect(sub.pioneerTaken, 55); // paywall: 145 de 200 restantes
+    expect(sub.pioneerOnSale, isTrue);
+
+    sub.debugSetPioneerCount(145, cap: 200);
+    expect(sub.pioneerTaken, 200);
+    expect(sub.pioneerSoldOut, isTrue);
+    expect(sub.pioneerOnSale, isFalse);
+
+    sub.debugPioneerReserved = 500; // acima do teto: trava no teto
+    sub.debugSetPioneerCount(0, cap: 200);
+    expect(sub.pioneerTaken, 200);
+    expect(sub.pioneerSoldOut, isTrue);
+  });
+
   test('vagas esgotadas: o anual regular volta no lugar do Pioneiro', () {
     SharedPreferences.setMockInitialValues({});
     final sub = SubscriptionService();
