@@ -1,0 +1,63 @@
+Escreva a cena "entrada-deus-04" da trilha "conhecer-a-deus" (Conhecer a Deus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "conhecer-a-deus",
+  "title": "Conhecer a Deus",
+  "description": "Cinco cenas do Criador ao Verbo feito carne — e seguir nos Evangelhos.",
+  "realm": "vida-crista"
+ },
+ "block": "Deus se aproxima",
+ "mission": {
+  "slug": "entrada-deus-04",
+  "title": "O Senhor é o meu pastor",
+  "type": "lesson",
+  "intro": "O Deus santo também cuida de perto.",
+  "hookRef": "Salmo 23:1–3",
+  "hookNote": "Davi chama o Deus do trono de pastor. O santo não fica longe.",
+  "centralInsight": "O santo cuida de perto",
+  "objective": "Ligar a santidade de Deus ao cuidado dele no dia a dia."
+ },
+ "v2": {
+  "passageRef": null,
+  "context": null,
+  "keyword": null,
+  "verseRefs": [
+   "Salmo 23:1–3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Salmos 23:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Salmos 23:1",
+   "text": "O Senhor é o meu pastor; nada me faltará."
+  },
+  {
+   "ref": "Salmos 23:2",
+   "text": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso."
+  },
+  {
+   "ref": "Salmos 23:3",
+   "text": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome."
+  },
+  {
+   "ref": "Salmos 23:4",
+   "text": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+  },
+  {
+   "ref": "Salmos 23:5",
+   "text": "Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda."
+  },
+  {
+   "ref": "Salmos 23:6",
+   "text": "Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade."
+  }
+ ]
+}
+</cena>

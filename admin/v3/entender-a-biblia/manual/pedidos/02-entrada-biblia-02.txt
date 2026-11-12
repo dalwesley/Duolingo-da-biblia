@@ -1,0 +1,64 @@
+Escreva a cena "entrada-biblia-02" da trilha "entender-a-biblia" (Entender a Bíblia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "entender-a-biblia",
+  "title": "Entender a Bíblia",
+  "description": "Sete cenas da criação à nova criação — e de volta a Gênesis 1–11.",
+  "realm": "vida-crista"
+ },
+ "block": "Uma só história",
+ "mission": {
+  "slug": "entrada-biblia-02",
+  "title": "Queda",
+  "type": "lesson",
+  "intro": "Uma pergunta da serpente, e tudo se quebra.",
+  "hookRef": "Gênesis 3:1–6",
+  "hookNote": "O problema da Bíblia começa com desconfiar da palavra de Deus.",
+  "centralInsight": "A ruptura começa na desconfiança",
+  "objective": "Entender a queda como o problema que o resto da Bíblia resolve."
+ },
+ "v2": {
+  "passageRef": null,
+  "context": null,
+  "keyword": null,
+  "verseRefs": [
+   "Gênesis 3:1–4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Gênesis 3:1–6",
+  "Gênesis 3:1–4"
+ ],
+ "verses": [
+  {
+   "ref": "Gênesis 3:1",
+   "text": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+  },
+  {
+   "ref": "Gênesis 3:2",
+   "text": "E a mulher disse à serpente: Do fruto das árvores do jardim podemos comer."
+  },
+  {
+   "ref": "Gênesis 3:3",
+   "text": "Mas do fruto da árvore que está no meio do jardim, disse Deus: Dele não comam, nem nele toquem para que não morram."
+  },
+  {
+   "ref": "Gênesis 3:4",
+   "text": "Então, a serpente disse à mulher: É certo que vocês não morrerão."
+  },
+  {
+   "ref": "Gênesis 3:5",
+   "text": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal."
+  },
+  {
+   "ref": "Gênesis 3:6",
+   "text": "E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+  }
+ ]
+}
+</cena>

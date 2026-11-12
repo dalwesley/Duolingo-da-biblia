@@ -40,11 +40,18 @@ class TrailVisuals {
   }
 
   /// Glifo do marco de fase (categoria), sem slug de trilha.
+  /// Ícone escolhido no painel para um card extra ([ExploreCards]).
+  static CinematicGlyph? _panelGlyph(String categoryId) {
+    final name = ExploreCards.glyphFor(categoryId);
+    return name == null ? null : CinematicGlyph.values.asNameMap()[name];
+  }
+
   static CinematicGlyph forCategory(String categoryId) =>
       _glyphFor('', categoryId);
 
   static CinematicGlyph _glyphFor(String slug, String categoryId) =>
       (slug.isEmpty ? null : _glyphBySlug[slug]) ??
+      _panelGlyph(categoryId) ??
       switch (categoryId) {
         'panorama' => CinematicGlyph.path,
         'personagens' => CinematicGlyph.people,

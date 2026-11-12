@@ -15,8 +15,6 @@ function note(form, text, kind) {
 const FIELD_HINTS = {
   name: 'Diga seu nome.',
   email: 'Confira o e-mail.',
-  phone: 'Informe seu WhatsApp.',
-  platform: 'Escolha o aparelho.',
   message: 'Escreva sua mensagem.',
   consent: 'Marque a autorização para enviar.',
 };
@@ -66,24 +64,13 @@ async function send(form, kind) {
     }
     form.reset();
     form.classList.add('is-sent');
-    note(
-      form,
-      kind === 'tester'
-        ? 'Recebemos. Vamos chamar no WhatsApp quando abrir a sua vaga no teste.'
-        : 'Mensagem recebida. Respondemos no e-mail que você deixou.',
-      'ok',
-    );
+    note(form, 'Mensagem recebida. Respondemos no e-mail que você deixou.', 'ok');
     button.disabled = false;
   } catch (_) {
     note(form, 'Sem conexão. Tente de novo em instantes.', 'err');
     button.disabled = false;
   }
 }
-
-document.getElementById('form-tester')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  send(event.currentTarget, 'tester');
-});
 
 document.getElementById('form-contact')?.addEventListener('submit', (event) => {
   event.preventDefault();

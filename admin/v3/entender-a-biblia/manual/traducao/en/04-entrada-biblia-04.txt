@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-04-01": {
+  "question": "Em Êxodo 14:10, ao verem os egípcios, os filhos de Israel se prepararam para a batalha.",
+  "learningObjective": "Observar o medo do povo diante do exército.",
+  "feedbackCorrect": "Eles não se preparam para lutar: temem muito e clamam ao Senhor.",
+  "feedbackWrong": {
+   "true": "Releia o fim de Êxodo 14:10: o povo temeu muito e clamou ao Senhor."
+  },
+  "hint": "Veja a reação do povo no fim do versículo.",
+  "_verso": "E, ao se aproximar o faraó, os filhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles; temeram muito e os filhos de Israel clamaram ao Senhor."
+ },
+ "entender-a-biblia-sem-entrada-biblia-04-02": {
+  "question": "Em Êxodo 14:16, toque o que Moisés deve levantar.",
+  "learningObjective": "Observar o gesto que o Senhor pede a Moisés.",
+  "feedbackCorrect": "Moisés levanta a vara e estende a mão sobre o mar, como o Senhor manda.",
+  "feedbackWrong": {
+   "b": "O mar é sobre o que Moisés estende a mão; ele levanta outra coisa.",
+   "c": "Os filhos de Israel são os que vão passar, não o que Moisés levanta."
+  },
+  "hint": "Procure o objeto que Moisés tem nas mãos.",
+  "_verso": "E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+ },
+ "entender-a-biblia-sem-entrada-biblia-04-03": {
+  "question": "Segundo Êxodo 14:11–12, o que o povo diz a Moisés?",
+  "learningObjective": "Observar a queixa do povo diante do perigo.",
+  "feedbackCorrect": "Com medo, o povo prefere a escravidão no Egito a morrer no deserto.",
+  "feedbackWrong": {
+   "a": "O povo não fala de confiança; acusa Moisés de levá-los para morrer.",
+   "c": "Ninguém fala em lutar; o povo quer voltar a servir aos egípcios.",
+   "d": "O povo ainda nem sabe da travessia; está reclamando de ter saído do Egito."
+  },
+  "hint": "Leia o fim de 14:12.",
+  "options": {
+   "a": "Que confiava que Deus os livraria",
+   "b": "Que era melhor servir aos egípcios que morrer",
+   "c": "Que queria lutar contra o faraó",
+   "d": "Que estava pronto para atravessar o mar"
+  },
+  "_verso": "E disseram a Moisés: Será que não havia sepulcros no Egito, que nos tiraste de lá para morrermos neste deserto? Por que nos trataste desse modo, fazendo-nos sair do Egito? Não é esta a palavra que te falamos no Egito, dizendo: Deixa-nos, para que sirvamos aos egípcios? Pois melhor nos seria servir aos egípcios do que morrer no deserto."
+ },
+ "entender-a-biblia-sem-entrada-biblia-04-04": {
+  "question": "Monte Êxodo 14:10 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Êxodo 14:10.",
+  "feedbackCorrect": "É a sequência do versículo: o povo olha, vê os egípcios e se enche de medo.",
+  "feedbackWrong": {
+   "default": "Primeiro o povo levanta os olhos; o medo vem depois de ver os egípcios."
+  },
+  "hint": "Antes de ter medo, o povo precisa ver alguma coisa.",
+  "_verso": "E, ao se aproximar o faraó, os filhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles; temeram muito e os filhos de Israel clamaram ao Senhor."
+ },
+ "entender-a-biblia-sem-entrada-biblia-04-05": {
+  "question": "Em Êxodo 14:16, como os filhos de Israel passariam pelo meio do mar?",
+  "learningObjective": "Lembrar como o povo atravessaria o mar.",
+  "feedbackCorrect": "O mar se abre e o povo atravessa a pé, em chão seco.",
+  "feedbackWrong": {
+   "b": "O texto não fala de fila; fala do chão por onde o povo passa.",
+   "c": "Não há barcos: o mar é dividido e o povo passa a pé."
+  },
+  "hint": "Pense no chão por onde o povo vai pisar.",
+  "_verso": "E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+ },
+ "entender-a-biblia-sem-entrada-biblia-04-06": {
+  "question": "O que Êxodo 14:14 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a promessa de 14:14 ao perigo que o povo enfrentava.",
+  "feedbackCorrect": "Diante de um exército, o povo não luta: o Senhor luta por ele.",
+  "feedbackWrong": {
+   "a": "O povo não pega em armas; o versículo diz que ele vai se calar.",
+   "b": "Moisés não luta; ele anuncia que o Senhor vai lutar."
+  },
+  "hint": "Veja quem é o sujeito do verbo lutar.",
+  "options": {
+   "a": "O povo vence com armas",
+   "b": "Moisés luta sozinho",
+   "c": "O Senhor luta pelo povo"
+  },
+  "_verso": "O Senhor lutará por vocês, e vocês se calarão."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-01": {
+  "question": "Em Êxodo 14:14, o povo e o Senhor dividem a luta contra os egípcios.",
+  "learningObjective": "Compreender o contraste entre a ação do Senhor e a do povo.",
+  "feedbackCorrect": "Não há divisão: o Senhor luta, e o povo se cala.",
+  "feedbackWrong": {
+   "true": "Releia Êxodo 14:14: a luta é só do Senhor; ao povo cabe se calar."
+  },
+  "hint": "Compare o que cabe ao Senhor e o que cabe ao povo.",
+  "_verso": "O Senhor lutará por vocês, e vocês se calarão."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-02": {
+  "question": "Em Êxodo 14:13, toque a palavra que marca o contraste entre a queixa do povo e a resposta de Moisés.",
+  "learningObjective": "Reconhecer o marcador que separa o medo do povo da palavra de Moisés.",
+  "feedbackCorrect": "\"Porém\" vira a cena: o povo quer voltar, mas Moisés manda ficar firme.",
+  "feedbackWrong": {
+   "a": "\"Porque\" explica um motivo; o contraste vem no começo do versículo.",
+   "b": "\"Hoje\" diz quando o Senhor agirá, não marca contraste."
+  },
+  "hint": "Procure uma palavra curta entre vírgulas, logo depois do nome de Moisés.",
+  "_verso": "Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-03": {
+  "question": "Como a fala de Moisés em Êxodo 14:13 responde à queixa do povo em 14:12?",
+  "learningObjective": "Compreender a resposta de Moisés como contraste com a queixa do povo.",
+  "feedbackCorrect": "O povo diz que vai morrer; Moisés responde: não temam, vejam o que o Senhor fará hoje.",
+  "feedbackWrong": {
+   "a": "Não há negociação; Moisés aponta para o que o Senhor vai fazer.",
+   "b": "Moisés vai na direção contrária: o povo não deve voltar, e sim ver o livramento.",
+   "d": "Moisés não fala em armas; manda o povo se aquietar."
+  },
+  "hint": "Compare o medo de 14:12 com a primeira ordem de Moisés.",
+  "options": {
+   "a": "Pede que o povo negocie a paz com o faraó",
+   "b": "Concorda que era melhor voltar ao Egito",
+   "c": "Troca o medo pela confiança no que o Senhor fará",
+   "d": "Manda o povo pegar em armas contra o faraó"
+  },
+  "_verso": "Não é esta a palavra que te falamos no Egito, dizendo: Deixa-nos, para que sirvamos aos egípcios? Pois melhor nos seria servir aos egípcios do que morrer no deserto. Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-04": {
+  "question": "Como avança a cena em Êxodo 14:15–16?",
+  "learningObjective": "Compreender o movimento da ordem de Deus até o caminho aberto.",
+  "feedbackCorrect": "Primeiro o Senhor interrompe o clamor, depois manda avançar e então abre o caminho.",
+  "feedbackWrong": {
+   "default": "O caminho no mar vem por último; antes, o Senhor fala e manda o povo seguir."
+  },
+  "hint": "O caminho aberto é o ponto de chegada.",
+  "options": {
+   "a": "O povo recebe ordem de avançar",
+   "b": "A vara sobre o mar abre o caminho",
+   "c": "O Senhor questiona o clamor de Moisés"
+  },
+  "_verso": "Então o Senhor disse a Moisés: Por que você clama a mim? Diga aos filhos de Israel que sigam em frente. E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-05": {
+  "question": "Em Êxodo 14:14, o que o Senhor fará pelo povo?",
+  "learningObjective": "Lembrar a ação do Senhor que muda a cena.",
+  "feedbackCorrect": "A batalha é do Senhor: ele age, e o povo só precisa confiar.",
+  "feedbackWrong": {
+   "b": "O Senhor não fica esperando; ele age em favor do povo.",
+   "c": "Quem clama é o povo; o Senhor responde agindo."
+  },
+  "hint": "É a ação que o Senhor faz no lugar do povo.",
+  "_verso": "O Senhor lutará por vocês, e vocês se calarão."
+ },
+ "entender-a-biblia-cam-entrada-biblia-04-06": {
+  "question": "O que liga Êxodo 14:17 a Salmos 106:8?",
+  "learningObjective": "Relacionar o livramento do mar com a glória de Deus nos Salmos.",
+  "feedbackCorrect": "Nos dois textos, o livramento revela o poder e a glória do Senhor.",
+  "feedbackWrong": {
+   "a": "O salmo diz que Deus salvou \"por amor do seu nome\", não pelo mérito do povo.",
+   "b": "Nenhum dos textos fala de arrependimento do faraó; falam da glória de Deus."
+  },
+  "hint": "Compare por que Deus age em cada texto.",
+  "options": {
+   "a": "O povo é salvo por merecer",
+   "b": "O faraó se arrepende no fim",
+   "c": "Deus salva e mostra quem é"
+  },
+  "_verso": "Eis que endurecerei o coração dos egípcios, para que os sigam e entrem nele; serei glorificado em Faraó, em todo o seu exército, nos seus carros e nos seus cavaleiros."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-01": {
+  "question": "Êxodo 14:13–14 apresenta o livramento como obra do Senhor, não como conquista do povo.",
+  "learningObjective": "Interpretar o êxodo como salvação que vem de Deus.",
+  "feedbackCorrect": "O povo só vê e se cala; quem realiza o livramento e luta é o Senhor.",
+  "feedbackWrong": {
+   "false": "Releia 14:13–14: o livramento é \"do Senhor\", e é ele quem luta pelo povo."
+  },
+  "hint": "Veja de quem é o livramento e quem luta.",
+  "_verso": "Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis. O Senhor lutará por vocês, e vocês se calarão."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-02": {
+  "question": "Em Êxodo 14:15, toque o trecho que mostra que aquietar-se não é ficar parado.",
+  "learningObjective": "Sustentar com o texto que confiar não é ficar parado.",
+  "feedbackCorrect": "Confiar no Senhor inclui obedecer: o povo quieto recebe ordem de avançar.",
+  "feedbackWrong": {
+   "a": "\"Clama a mim\" fala do clamor de Moisés, não do que o povo deve fazer.",
+   "b": "\"Por que\" abre a pergunta do Senhor; a ordem ao povo vem no fim."
+  },
+  "hint": "Procure a ordem dada aos filhos de Israel.",
+  "_verso": "Então o Senhor disse a Moisés: Por que você clama a mim? Diga aos filhos de Israel que sigam em frente."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-03": {
+  "question": "Que leitura Êxodo 14:14–15 sustenta sobre o papel do povo no livramento?",
+  "learningObjective": "Escolher a leitura que o texto sustenta sobre fé e obediência.",
+  "feedbackCorrect": "O Senhor luta; o povo para de se desesperar e avança quando Deus manda.",
+  "feedbackWrong": {
+   "a": "O povo acabou de reclamar e querer voltar; o livramento é graça, não prêmio.",
+   "b": "Logo depois do \"calarão\", o Senhor manda o povo seguir em frente.",
+   "d": "O povo estava com medo; o texto diz que o Senhor lutaria por ele."
+  },
+  "hint": "Leia os dois versículos juntos: o que cabe ao Senhor e o que cabe ao povo.",
+  "options": {
+   "a": "O povo foi salvo porque merecia",
+   "b": "Ficar quieto é esperar parado, sem fazer nada",
+   "c": "O povo confia no Senhor e obedece quando ele manda",
+   "d": "O povo foi salvo por ter coragem e lutar bem"
+  },
+  "_verso": "O Senhor lutará por vocês, e vocês se calarão. Então o Senhor disse a Moisés: Por que você clama a mim? Diga aos filhos de Israel que sigam em frente."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-04": {
+  "question": "Qual sequência mostra a Bíblia voltando ao livramento do mar?",
+  "learningObjective": "Ver o êxodo como o retrato da salvação que a Bíblia repete.",
+  "feedbackCorrect": "O êxodo (Êx 14) é lembrado pelos profetas (Is 43:16) e cumprido em Cristo (1 Co 5:7).",
+  "feedbackWrong": {
+   "default": "Siga a Bíblia: o mar aberto, os profetas que o lembram, e Cristo que traz o livramento maior."
+  },
+  "hint": "Siga a ordem da Bíblia: Êxodo, profetas, cartas do NT.",
+  "options": {
+   "a": "Isaías lembra o Deus que abriu caminho no mar",
+   "b": "Paulo chama Cristo de nosso Cordeiro pascal",
+   "c": "O Senhor divide o mar e Israel passa em seco"
+  },
+  "_verso": "E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-05": {
+  "question": "Em Êxodo 14:13, o que o povo deve ver o Senhor realizar?",
+  "learningObjective": "Lembrar o termo que resume a obra de Deus no êxodo.",
+  "feedbackCorrect": "É salvação feita pelo Senhor: o povo não conquista, só vê e recebe.",
+  "feedbackWrong": {
+   "b": "O poder de Deus vai aparecer, mas Moisés fala da salvação que o povo vai receber.",
+   "c": "Haverá juízo sobre os egípcios, mas Moisés fala do que o Senhor fará por vocês."
+  },
+  "hint": "É a palavra que resume o que Deus faz pelo povo nesta cena.",
+  "_verso": "Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis."
+ },
+ "entender-a-biblia-pro-entrada-biblia-04-06": {
+  "question": "O que liga Êxodo 14:16 a 1 Coríntios 10:1–2?",
+  "learningObjective": "Ligar a travessia do mar à leitura que o NT faz dela.",
+  "feedbackCorrect": "Paulo lê a travessia como figura do batismo: todos passaram pelo mar e foram batizados.",
+  "feedbackWrong": {
+   "a": "Paulo insiste em \"todos\": todos atravessaram o mar.",
+   "c": "Paulo não fala de batalha; fala do povo inteiro passando pelo mar."
+  },
+  "hint": "Veja o que Paulo diz que aconteceu \"na nuvem e no mar\".",
+  "options": {
+   "a": "Só os fortes atravessaram o mar",
+   "b": "A travessia como imagem do batismo",
+   "c": "Uma vitória militar de Israel"
+  },
+  "_verso": "E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+ },
+ "estudo:entrada-biblia-04": {
+  "context": "Os descendentes de Abraão viraram escravos no Egito. Depois das pragas, o faraó deixa o povo sair, mas logo muda de ideia e vai atrás com seu exército. Israel fica preso entre os soldados e o mar.",
+  "focusQuestion": "Em que situação você precisa parar de lutar sozinho e ver o que o Senhor vai fazer?",
+  "keywordGloss": "A salvação que vem do Senhor quando o povo não tem como se salvar sozinho.",
+  "reflectionPrompts": [
+   "Não temais",
+   "O Senhor lutará",
+   "Seguir em frente"
+  ],
+  "facts": [
+   "Ao verem os egípcios, os israelitas tiveram muito medo e clamaram ao Senhor.",
+   "O povo diz a Moisés que seria melhor servir aos egípcios.",
+   "Moisés manda o povo não temer e ver o livramento do Senhor.",
+   "Moisés diz que o Senhor lutará pelo povo.",
+   "O Senhor manda o povo seguir em frente.",
+   "O mar seria dividido para o povo passar em seco."
+  ],
+  "_verso": "E, ao se aproximar o faraó, os filhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles; temeram muito e os filhos de Israel clamaram ao Senhor. E disseram a Moisés: Será que não havia sepulcros no Egito, que nos tiraste de lá para morrermos neste deserto? Por que nos trataste desse modo, fazendo-nos sair do Egito? Não é esta a palavra que te falamos no Egito, dizendo: Deixa-nos, para que sirvamos aos egípcios? Pois melhor nos seria servir aos egípcios do que morrer no deserto. Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis. O Senhor lutará por vocês, e vocês se calarão."
+ }
+}

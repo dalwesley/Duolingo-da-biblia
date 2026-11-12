@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig, loadEnv, searchForWorkspaceRoot } from 'vite';
 
 const FIREBASE_ENV = [
   'VITE_FIREBASE_API_KEY',
@@ -26,7 +26,11 @@ export default defineConfig(({ mode }) => {
   if (mode === 'production') assertProductionEnv(env);
 
   return {
-    server: { port: 5174 },
+    server: {
+      port: 5174,
+      // A JFAAL do validador V3 vem do app (trilha_app/assets/data).
+      fs: { allow: [searchForWorkspaceRoot(process.cwd()), '../trilha_app/assets/data'] },
+    },
     build: {
       outDir: 'dist',
       emptyOutDir: true,

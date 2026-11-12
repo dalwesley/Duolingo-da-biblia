@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "conhecer-a-deus-sem-entrada-deus-02-01": {
+  "question": "Em Êxodo 3:12, Deus promete a Moisés que um anjo estaria com ele.",
+  "learningObjective": "Observar que Deus promete a própria presença a Moisés.",
+  "feedbackCorrect": "Deus não manda outro em seu lugar: ele mesmo diz \"Certamente estarei contigo\".",
+  "feedbackWrong": {
+   "true": "Releia Êxodo 3:12: é o próprio Deus quem promete \"Certamente estarei contigo\"."
+  },
+  "hint": "Veja quem fala e de quem ele fala.",
+  "_verso": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-sem-entrada-deus-02-02": {
+  "question": "Em Êxodo 3:11, toque o rei a quem Moisés teria de ir.",
+  "learningObjective": "Identificar diante de quem Moisés seria enviado.",
+  "feedbackCorrect": "Faraó era o rei do Egito, o homem mais poderoso que Moisés teria de enfrentar.",
+  "feedbackWrong": {
+   "a": "Moisés fala com Deus; o rei que ele teria de enfrentar é outro.",
+   "b": "Egito é o país, não o rei."
+  },
+  "hint": "Procure um título de rei logo depois de \"ir até\".",
+  "_verso": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito?"
+ },
+ "conhecer-a-deus-sem-entrada-deus-02-03": {
+  "question": "Segundo Êxodo 3:12, qual seria o sinal de que Deus enviou Moisés?",
+  "learningObjective": "Observar o sinal que Deus dá a Moisés.",
+  "feedbackCorrect": "O sinal viria depois: livre do Egito, o povo serviria a Deus naquele mesmo monte.",
+  "feedbackWrong": {
+   "b": "O texto não promete saída no mesmo dia; o sinal vem depois da saída.",
+   "c": "O versículo não fala da coragem de Moisés; fala do povo servindo a Deus.",
+   "d": "A sarça não é o sinal aqui; o sinal é o povo no monte."
+  },
+  "hint": "Leia o que vem depois de \"este será o sinal\".",
+  "options": {
+   "a": "O povo, já livre, serviria a Deus naquele monte",
+   "b": "O Faraó deixaria o povo sair no mesmo dia",
+   "c": "Moisés falaria sem medo diante do rei",
+   "d": "A sarça continuaria queimando por anos"
+  },
+  "_verso": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-sem-entrada-deus-02-04": {
+  "question": "Monte Êxodo 3:16 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Êxodo 3:16.",
+  "feedbackCorrect": "Primeiro a ordem de reunir os anciãos, depois quem apareceu, e então o que Deus viu.",
+  "feedbackWrong": {
+   "default": "O versículo começa com a ordem a Moisés; o que Deus viu no Egito vem no fim."
+  },
+  "hint": "O versículo começa com uma ordem a Moisés.",
+  "_verso": "Vá e reúna os anciãos de Israel e diga-lhes: O SENHOR, o Deus de seus pais, o Deus de Abraão, de Isaque e de Jacó, me apareceu, dizendo: Em verdade, eu os visitei e vi o que está acontecendo com vocês no Egito."
+ },
+ "conhecer-a-deus-sem-entrada-deus-02-05": {
+  "question": "Em Êxodo 3:13, o que Moisés imagina que o povo vai perguntar sobre Deus?",
+  "learningObjective": "Lembrar a pergunta que leva à revelação do nome.",
+  "feedbackCorrect": "O povo ia querer saber o nome de quem enviou Moisés, para saber quem ele é.",
+  "feedbackWrong": {
+   "a": "Moisés não imagina perguntas sobre planos; imagina perguntas sobre quem Deus é.",
+   "b": "A pergunta que Moisés imagina não é sobre força; é sobre como Deus se chama."
+  },
+  "hint": "Veja a pergunta que o povo faria, quase no fim do versículo.",
+  "_verso": "Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi?"
+ },
+ "conhecer-a-deus-sem-entrada-deus-02-06": {
+  "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar o nome revelado à missão de Moisés.",
+  "feedbackCorrect": "Deus dá a Moisés o nome que ele vai levar: \"EU SOU me enviou a vocês\".",
+  "feedbackWrong": {
+   "a": "Moisés não vai por conta própria; vai em nome de quem o envia.",
+   "c": "O Faraó não manda Moisés; quem envia é Deus."
+  },
+  "hint": "Veja o que Moisés deve dizer aos filhos de Israel.",
+  "options": {
+   "a": "Moisés vai em nome próprio",
+   "b": "Deus nomeia quem o envia",
+   "c": "O Faraó autoriza a viagem"
+  },
+  "_verso": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-01": {
+  "question": "Em Êxodo 3:11–12, Deus responde à dúvida de Moisés elogiando as qualidades dele.",
+  "learningObjective": "Compreender o contraste entre a dúvida de Moisés e a resposta de Deus.",
+  "feedbackCorrect": "Deus não fala das qualidades de Moisés: responde com a própria presença.",
+  "feedbackWrong": {
+   "true": "Releia Êxodo 3:12: a resposta de Deus é \"Certamente estarei contigo\", não um elogio."
+  },
+  "hint": "Compare a pergunta de Moisés com a primeira frase da resposta.",
+  "_verso": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito? E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-02": {
+  "question": "Em Êxodo 3:10, toque as palavras que marcam o objetivo do envio de Moisés.",
+  "learningObjective": "Reconhecer o marcador de propósito no chamado de Moisés.",
+  "feedbackCorrect": "\"Para que\" abre o objetivo: Moisés vai ao Faraó para tirar o povo de Deus do Egito.",
+  "feedbackWrong": {
+   "a": "\"Vem agora\" é o chamado; o objetivo vem depois.",
+   "b": "\"Do Egito\" diz de onde o povo sairia; a ligação que marca o objetivo vem antes."
+  },
+  "hint": "Procure a ligação no meio do versículo, depois de \"Faraó\".",
+  "_verso": "Vem agora, e eu te enviarei ao Faraó, para que tires o meu povo, os filhos de Israel, do Egito."
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-03": {
+  "question": "Em Êxodo 3:14–15, como o nome EU SOU se relaciona com o Deus de Abraão, Isaque e Jacó?",
+  "learningObjective": "Relacionar o nome revelado à história de Deus com Israel.",
+  "feedbackCorrect": "Logo depois do EU SOU, Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó.",
+  "feedbackWrong": {
+   "a": "Deus diz que esse é o seu nome eternamente, de geração em geração.",
+   "c": "O versículo seguinte liga o nome aos pais de Israel: não é outro Deus.",
+   "d": "Deus manda Moisés levar o nome aos filhos de Israel; não é segredo."
+  },
+  "hint": "Veja como Deus se apresenta logo depois de dizer o nome.",
+  "options": {
+   "a": "É um título que vale só enquanto o povo estiver no Egito",
+   "b": "É o mesmo Deus que já cuidava dos pais de Israel",
+   "c": "É um Deus novo, que substitui o dos antepassados",
+   "d": "É um nome secreto, só para Moisés saber"
+  },
+  "_verso": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’” E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-04": {
+  "question": "Como avança a conversa em Êxodo 3:11–12?",
+  "learningObjective": "Compreender o movimento da conversa entre Moisés e Deus.",
+  "feedbackCorrect": "Moisés olha para si; Deus responde com a presença e um sinal que virá depois.",
+  "feedbackWrong": {
+   "default": "A conversa começa com a dúvida de Moisés; o sinal é a última coisa que Deus diz."
+  },
+  "hint": "Quem fala primeiro nesse diálogo?",
+  "options": {
+   "a": "Moisés duvida de si mesmo",
+   "b": "Deus promete a sua presença",
+   "c": "Deus dá um sinal que virá depois"
+  },
+  "_verso": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito? E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-05": {
+  "question": "Em Êxodo 3:12, o que Deus promete a Moisés em resposta à dúvida dele?",
+  "learningObjective": "Compreender que a presença de Deus é a resposta à dúvida de Moisés.",
+  "feedbackCorrect": "Deus promete estar junto: a presença dele responde ao \"quem sou eu?\" de Moisés.",
+  "feedbackWrong": {
+   "a": "O texto não diz que Deus iria no lugar dele; diz que estaria com ele.",
+   "b": "Deus não promete falar por Moisés aqui; promete estar com ele."
+  },
+  "hint": "É a primeira frase da resposta de Deus.",
+  "_verso": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-cam-entrada-deus-02-06": {
+  "question": "O que liga Êxodo 3:15 a Salmos 9:10?",
+  "learningObjective": "Relacionar o nome revelado à confiança do povo de Deus.",
+  "feedbackCorrect": "Deus dá o seu nome para ser conhecido, e quem o conhece aprende a confiar nele.",
+  "feedbackWrong": {
+   "b": "O nome vale de geração em geração: é o mesmo Deus para todas.",
+   "c": "Deus manda levar o nome ao povo, e o salmo fala dos que o conhecem."
+  },
+  "hint": "Veja o que o salmo diz de quem conhece o nome de Deus.",
+  "options": {
+   "a": "Quem conhece o nome confia",
+   "b": "Cada geração tem outro deus",
+   "c": "O nome de Deus é segredo"
+  },
+  "_verso": "E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-01": {
+  "question": "Em Êxodo 3:14, a autoridade de Moisés diante do povo vem de quem o envia, e não dele mesmo.",
+  "learningObjective": "Interpretar a missão de Moisés como apoiada em quem Deus é.",
+  "feedbackCorrect": "Moisés não apresenta credenciais próprias: diz que EU SOU o enviou.",
+  "feedbackWrong": {
+   "false": "Moisés deve dizer \"EU SOU me enviou a vocês\": o peso está em quem envia."
+  },
+  "hint": "Veja o que Moisés deve dizer ao povo.",
+  "_verso": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-02": {
+  "question": "Em Êxodo 3:15, toque a palavra que sustenta que esse nome de Deus não tem prazo para acabar.",
+  "learningObjective": "Sustentar com o texto que o nome de Deus vale para sempre.",
+  "feedbackCorrect": "Deus não se apresenta só para aquele momento: o nome é para sempre.",
+  "feedbackWrong": {
+   "a": "\"Assim\" introduz o que Moisés deve dizer, não por quanto tempo vale o nome.",
+   "b": "\"Ainda mais\" só mostra que Deus continua falando."
+  },
+  "hint": "Procure logo depois de \"este é o meu nome\".",
+  "_verso": "E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-03": {
+  "question": "Que leitura Êxodo 3:13–14 sustenta sobre o nome de Deus?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta sobre o nome de Deus.",
+  "feedbackCorrect": "Deus responde à pergunta e ainda manda Moisés levar o nome aos filhos de Israel.",
+  "feedbackWrong": {
+   "a": "Moisés fala do \"Deus de seus pais\": o EU SOU é esse mesmo Deus.",
+   "b": "Deus responde \"EU SOU O QUE SOU\" e manda o nome ao povo: não há recusa.",
+   "c": "O peso não está em Moisés: \"EU SOU me enviou a vocês\"."
+  },
+  "hint": "Veja o que Deus manda Moisés fazer com o nome.",
+  "options": {
+   "a": "EU SOU é um deus novo, diferente do Deus dos pais",
+   "b": "Deus se recusa a dizer o seu nome a Moisés",
+   "c": "A missão depende de Moisés ser forte e preparado",
+   "d": "Deus se dá a conhecer e manda levar o seu nome ao povo"
+  },
+  "_verso": "Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi? E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-04": {
+  "question": "Qual sequência mostra a promessa de Êxodo 3:12 se cumprindo?",
+  "learningObjective": "Ver em Êxodo 3:12 uma promessa que Deus cumpre.",
+  "feedbackCorrect": "Deus promete, liberta o povo e o leva ao mesmo monte: ele cumpre o que diz.",
+  "feedbackWrong": {
+   "default": "Siga a história: promessa (Êx 3:12), saída do Egito (Êx 12:51) e o monte (Êx 19:2)."
+  },
+  "hint": "A promessa vem primeiro; o monte é o ponto de chegada.",
+  "options": {
+   "a": "Deus promete que o povo vai servi-lo naquele monte",
+   "b": "Deus tira os filhos de Israel do Egito",
+   "c": "Israel acampa em frente ao monte de Deus"
+  },
+  "_verso": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-05": {
+  "question": "Em Êxodo 3:15, como Deus diz que quer ser guardado de geração em geração?",
+  "learningObjective": "Lembrar o termo que mostra o nome de Deus passado entre gerações.",
+  "feedbackCorrect": "O nome é para ser lembrado: cada geração conhece Deus por ele.",
+  "feedbackWrong": {
+   "b": "O texto não fala de medo aqui; fala de memória passada adiante.",
+   "c": "Adorar a Deus é bom, mas o versículo fala de lembrar o nome."
+  },
+  "hint": "Olhe o fim do versículo.",
+  "_verso": "E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+ },
+ "conhecer-a-deus-pro-entrada-deus-02-06": {
+  "question": "O que liga Êxodo 3:14 a João 8:58?",
+  "learningObjective": "Ligar o nome revelado na sarça à fala de Jesus, como o NT faz.",
+  "feedbackCorrect": "Jesus diz \"antes que Abraão existisse, EU SOU\": usa para si o nome da sarça.",
+  "feedbackWrong": {
+   "b": "Jesus não diz \"eu era\", mas \"EU SOU\": fala de quem ele é, antes de Abraão.",
+   "c": "Nenhum dos textos diz isso; o ponto é quem fala \"EU SOU\"."
+  },
+  "hint": "Compare as últimas palavras de Jesus com o nome dado a Moisés.",
+  "options": {
+   "a": "Jesus usa o mesmo \"EU SOU\"",
+   "b": "Jesus fala só da sua idade",
+   "c": "Abraão já conhecia esse nome"
+  },
+  "_verso": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+ },
+ "estudo:entrada-deus-02": {
+  "context": "Moisés tinha fugido do Egito e vivia no deserto cuidando de ovelhas. Da sarça que ardia sem se queimar, Deus o chama para tirar Israel da escravidão. Moisés hesita e pergunta o que dizer quando o povo quiser saber quem o enviou.",
+  "focusQuestion": "Moisés perguntou \"quem sou eu?\" e Deus respondeu dizendo quem ele é. Onde você precisa olhar mais para Deus do que para si?",
+  "keywordGloss": "O nome que Deus revela a Moisés: ele é quem é, não depende de ninguém e está com o seu povo.",
+  "reflectionPrompts": [
+   "Quem sou eu?",
+   "EU SOU me enviou",
+   "Um nome para sempre"
+  ],
+  "facts": [
+   "Moisés pergunta quem ele é para ir até Faraó.",
+   "Deus promete estar com Moisés.",
+   "Moisés pergunta qual nome dirá ao povo.",
+   "Deus responde: EU SOU O QUE SOU.",
+   "Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó.",
+   "Deus diz que esse é o seu nome para sempre."
+  ],
+  "_verso": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito? E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte. Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi? E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’” E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+ }
+}

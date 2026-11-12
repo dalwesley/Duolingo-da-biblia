@@ -335,6 +335,22 @@
     "pneumatologia": {
       "title": "Neumatología",
       "description": "El Espíritu Santo: persona, obra y frutos en la iglesia."
+    },
+    "ansiedade": {
+      "title": "Ansiedad",
+      "description": "Cinco escenas para echar el mañana en el Padre — y seguir en el canon."
+    },
+    "conhecer-a-deus": {
+      "title": "Conocer a Dios",
+      "description": "Cinco escenas del Creador al Verbo hecho carne — y seguir en los Evangelios."
+    },
+    "entender-a-biblia": {
+      "title": "Entender la Biblia",
+      "description": "Siete escenas de la creación a la nueva creación — y de vuelta a Génesis 1–11."
+    },
+    "a-promessa": {
+      "title": "La Promesa",
+      "description": "De Abraham a Cristo en 12 escenas: el hilo que cose la Biblia. Cada escena también cuenta en su ruta de origen."
     }
   },
   "modules": {
@@ -715,6 +731,27 @@
     },
     "pneumatologia:0": {
       "title": "Espíritu Santo"
+    },
+    "ansiedade:0": {
+      "title": "Echar la ansiedad"
+    },
+    "conhecer-a-deus:0": {
+      "title": "Dios se acerca"
+    },
+    "entender-a-biblia:0": {
+      "title": "Una sola historia"
+    },
+    "a-promessa:0": {
+      "title": "La promesa hecha"
+    },
+    "a-promessa:1": {
+      "title": "La promesa guardada"
+    },
+    "a-promessa:2": {
+      "title": "La promesa anunciada"
+    },
+    "a-promessa:3": {
+      "title": "La promesa cumplida"
     }
   },
   "missions": {
@@ -3830,6 +3867,190 @@
     },
     "mq-05-mar": {
       "centralInsight": "Dios arroja los pecados al fondo del mar"
+    },
+    "dor-ansia-01": {
+      "title": "Tesoros y ansiedad",
+      "intro": "Donde está el tesoro, está el corazón. Jesús une a Mammón y el mañana.",
+      "hookNote": "El cuidado del Padre es el argumento contra la ansiedad — no la ausencia de necesidad.",
+      "centralInsight": "El tesoro arrastra el corazón",
+      "objective": "Ver cómo Jesús une tesoro, señorío y ansiedad."
+    },
+    "dor-ansia-02": {
+      "title": "Contentamiento",
+      "intro": "Pablo aprendió a estar contento en toda suerte — en Cristo.",
+      "hookNote": "El contentamiento de Pablo no es estoicismo: es Cristo en el hambre y la hartura.",
+      "centralInsight": "Cristo basta en el hambre y la hartura",
+      "objective": "Cambiar la ansiedad del tener por el contentamiento en Cristo."
+    },
+    "dor-ansia-03": {
+      "title": "El Señor es mi pastor",
+      "intro": "Nada me faltará — el Salmo 23 es confianza, no magia.",
+      "hookNote": "El pastor guía — incluso en el valle. Lo que se va no es la lucha; es el miedo y la sensación de soledad.",
+      "centralInsight": "Hay pastor en el valle",
+      "objective": "Leer el Salmo 23 como cuidado, no como amuleto."
+    },
+    "dor-ansia-04": {
+      "title": "Padre nuestro",
+      "intro": "Pedir el pan de cada día es lo contrario de anticipar el mes entero.",
+      "hookNote": "Jesús enseña a pedir el día — no el stock. El Reino viene antes del pan.",
+      "centralInsight": "El pan es de hoy",
+      "objective": "Orar el día, no el censo del miedo."
+    },
+    "dor-ansia-05": {
+      "title": "Esperanza viva",
+      "intro": "Pedro ancla a los que sufren en una herencia guardada — después, el canon.",
+      "hookNote": "La esperanza no niega el sufrimiento. Lo ancla en la resurrección. Continúa en el Sermón del Monte.",
+      "centralInsight": "La herencia está guardada",
+      "objective": "Salir de la ruta de dolor al currículo: Sermón del Monte."
+    },
+    "entrada-deus-01": {
+      "title": "En el principio, Dios",
+      "intro": "Antes de todo, Dios. La Biblia empieza por quién es él.",
+      "hookNote": "La primera frase de la Biblia no habla de nosotros: habla de Dios, que crea.",
+      "centralInsight": "Dios viene antes de todo",
+      "objective": "Ver que conocer a Dios empieza por él, no por nosotros."
+    },
+    "entrada-deus-02": {
+      "title": "YO SOY",
+      "intro": "En la zarza, Dios le dice su nombre a un fugitivo.",
+      "hookNote": "Moisés pregunta quién lo envía. Dios responde con un nombre que no depende de nadie.",
+      "centralInsight": "Dios se da a conocer por su nombre",
+      "objective": "Entender lo que el nombre YO SOY revela sobre Dios."
+    },
+    "entrada-deus-03": {
+      "title": "Santo, santo, santo",
+      "intro": "Isaías ve al Señor en el trono, y el templo tiembla.",
+      "hookNote": "Dios no es una versión más grande de nosotros. La santidad es lo que lo separa de todo.",
+      "centralInsight": "Dios es santo",
+      "objective": "Ver por qué la santidad de Dios cambia a quien se acerca a él."
+    },
+    "entrada-deus-04": {
+      "title": "El Señor es mi pastor",
+      "intro": "El Dios santo también cuida de cerca.",
+      "hookNote": "David llama pastor al Dios del trono. El Santo no se queda lejos.",
+      "centralInsight": "El Santo cuida de cerca",
+      "objective": "Unir la santidad de Dios con su cuidado en el día a día."
+    },
+    "entrada-deus-05": {
+      "title": "El Verbo se hizo carne",
+      "intro": "En Jesús, Dios se acerca más que nunca.",
+      "hookNote": "Juan empieza como Génesis: «En el principio». Ahora el Creador viene a vivir entre nosotros.",
+      "centralInsight": "En Jesús, Dios se acercó",
+      "objective": "Ver en Jesús la forma más clara de conocer a Dios."
+    },
+    "entrada-biblia-01": {
+      "title": "Creación",
+      "intro": "La historia empieza con Dios haciendo un mundo bueno.",
+      "hookNote": "Toda la Biblia parte de aquí: un solo Dios, un mundo hecho por él.",
+      "centralInsight": "La historia empieza en Dios",
+      "objective": "Ver la creación como el punto de partida de toda la Biblia."
+    },
+    "entrada-biblia-02": {
+      "title": "La caída",
+      "intro": "Una pregunta de la serpiente, y todo se rompe.",
+      "hookNote": "El problema de la Biblia empieza con desconfiar de la palabra de Dios.",
+      "centralInsight": "La ruptura empieza en la desconfianza",
+      "objective": "Entender la caída como el problema que el resto de la Biblia resuelve."
+    },
+    "entrada-biblia-03": {
+      "title": "Promesa",
+      "intro": "Dios llama a un hombre para bendecir a todas las familias.",
+      "hookNote": "Después de la caída, Dios no se rinde: empieza la respuesta con una familia.",
+      "centralInsight": "Dios responde con una promesa",
+      "objective": "Ver en Abraham el comienzo del plan de Dios para todos los pueblos."
+    },
+    "entrada-biblia-04": {
+      "title": "Liberación",
+      "intro": "Entre el ejército y el mar, Dios abre un camino.",
+      "hookNote": "El éxodo se vuelve el molde de la salvación en la Biblia: Dios libera a quien no puede salvarse.",
+      "centralInsight": "La salvación viene del Señor",
+      "objective": "Entender el éxodo como el retrato de la salvación que la Biblia repite."
+    },
+    "entrada-biblia-05": {
+      "title": "El Siervo",
+      "intro": "Un profeta ve a alguien herido en lugar de los demás.",
+      "hookNote": "Siglos antes de Jesús, Isaías describe a un Siervo que carga la culpa del pueblo.",
+      "centralInsight": "Alguien carga la culpa en nuestro lugar",
+      "objective": "Ver cómo los profetas apuntan a un Salvador que sufre."
+    },
+    "entrada-biblia-06": {
+      "title": "Resurrección",
+      "intro": "La tumba está vacía. La historia da un giro.",
+      "hookNote": "Todo lo anterior converge aquí: Jesús vence la muerte que entró con la caída.",
+      "centralInsight": "La muerte no tiene la última palabra",
+      "objective": "Entender la resurrección como el centro de la historia bíblica."
+    },
+    "entrada-biblia-07": {
+      "title": "Nueva creación",
+      "intro": "La historia termina donde empezó: Dios con su pueblo.",
+      "hookNote": "La Biblia abre con un jardín y cierra con una ciudad. Dios rehace lo que la caída rompió.",
+      "centralInsight": "Dios hace nuevas todas las cosas",
+      "objective": "Ver el final de la Biblia como la restauración del comienzo."
+    },
+    "promessa-01": {
+      "title": "En ti, todas las familias",
+      "intro": "Todo empieza con una promesa: tierra, descendencia y bendición para todas las familias de la tierra. Sigue ese hilo de Abraham a Cristo.",
+      "hookNote": "Dios promete a un hombre sin hijos que, por medio de él, todas las familias de la tierra serán bendecidas."
+    },
+    "promessa-02": {
+      "title": "Cuenta las estrellas",
+      "intro": "Abram todavía no tiene hijo. Dios lo saca afuera y le manda mirar el cielo.",
+      "hookNote": "Abram creyó, y le fue contado por justicia. Pablo volverá a este versículo."
+    },
+    "promessa-03": {
+      "title": "El Señor proveerá",
+      "intro": "El hijo de la promesa sube el monte. La promesa parece en peligro.",
+      "hookNote": "En el Moriah, Dios provee el cordero en lugar del hijo y confirma la promesa con juramento."
+    },
+    "promessa-04": {
+      "title": "Dios se acuerda",
+      "intro": "Siglos después, la familia de Abraham es un pueblo esclavo en Egipto. Parece que la promesa murió. Dios no olvidó.",
+      "hookNote": "Dios se presenta como el Dios de Abraham, de Isaac y de Jacob: la promesa antigua mueve el rescate."
+    },
+    "promessa-05": {
+      "title": "Un pueblo para las naciones",
+      "intro": "Libre de Egipto, el pueblo llega al Sinaí. La promesa toma forma de alianza.",
+      "hookNote": "Israel será un reino de sacerdotes: la bendición de Abraham pasa por un pueblo para alcanzar a las naciones."
+    },
+    "promessa-06": {
+      "title": "En la tierra prometida",
+      "intro": "Ya en la tierra, Josué vuelve a contar la historia y llama al pueblo a escoger a quién servir.",
+      "hookNote": "La tierra fue dada; la fidelidad del pueblo fallará. La promesa necesitará a alguien mayor que Israel."
+    },
+    "promessa-07": {
+      "title": "El rey escogido",
+      "intro": "El pueblo falla, pero Dios no se rinde. Ahora la promesa se concentra en un rey: David.",
+      "hookNote": "Dios escoge al menor de los hijos de Isaí. De la línea de David vendrá el rey cuyo trono no tendrá fin (2 Samuel 7)."
+    },
+    "promessa-08": {
+      "title": "El Siervo herido",
+      "intro": "Los profetas anuncian a alguien que carga la culpa de otros.",
+      "hookNote": "Como en el Moriah, alguien toma el lugar de otro: el Siervo es herido por nuestras rebeliones."
+    },
+    "promessa-09": {
+      "title": "Un nuevo pacto",
+      "intro": "El pacto del Sinaí fue roto. Dios promete otro.",
+      "hookNote": "Dios promete escribir la ley en el corazón y perdonar el pecado. Jesús llamará a la copa de la cena el nuevo pacto."
+    },
+    "promessa-10": {
+      "title": "Hijo de David, hijo de Abraham",
+      "intro": "Mateo abre el Nuevo Testamento con Jesús, hijo de David, hijo de Abraham. El hilo llega a una persona.",
+      "hookNote": "Emanuel, Dios con nosotros: el hijo prometido a Abraham y el rey prometido a David son el mismo."
+    },
+    "promessa-11": {
+      "title": "Gozo para todo el pueblo",
+      "intro": "El cumplimiento llega pequeño: en un pesebre, anunciado a pastores.",
+      "hookNote": "El gran gozo es para todo el pueblo: eco de la bendición prometida a todas las familias de la tierra."
+    },
+    "promessa-12": {
+      "title": "La bendición llega a ti",
+      "intro": "Pablo cierra el hilo: la promesa hecha a Abraham llega a quien cree.",
+      "hookNote": "En Cristo, la bendición de Abraham alcanza a las naciones por la fe. Y la promesa aún apunta a la nueva creación."
+    },
+    "promessa-sintese": {
+      "title": "Travesía: la promesa entera",
+      "intro": "Tres puentes para unir lo prometido con lo cumplido.",
+      "hookNote": "Desde el principio, la bendición prometida a Abraham era para todas las naciones."
     }
   }
 }

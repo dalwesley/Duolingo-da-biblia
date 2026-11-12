@@ -1,0 +1,763 @@
+{
+  "studies": {
+    "entrada-deus-01": {
+      "slug": "entrada-deus-01",
+      "passageRef": "Gênesis 1:1–5",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz. E Deus viu que a luz era boa; e separou a luz das trevas. E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia.",
+      "passages": [
+        {
+          "ref": "Gênesis 1:1–5",
+          "text": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz. E Deus viu que a luz era boa; e separou a luz das trevas. E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia."
+        }
+      ],
+      "context": "A Bíblia não começa tentando provar que Deus existe: começa com ele já agindo. Quem ouviu isso primeiro conhecia histórias de muitos deuses em guerra. Aqui, antes de qualquer coisa, há um só Deus, e ele cria.",
+      "keyword": "No princípio",
+      "keywordGloss": "O começo de tudo o que existe; quando ele chega, Deus já está lá.",
+      "focusQuestion": "O que muda em você saber que Deus já estava lá antes de tudo, inclusive antes da sua história?",
+      "reflectionPrompts": [
+        "Deus vem primeiro",
+        "A palavra que cria",
+        "Do escuro à luz"
+      ],
+      "facts": [
+        {
+          "text": "Deus criou os céus e a terra.",
+          "evidenceRef": "Gênesis 1:1",
+          "evidenceSpan": "Deus criou os céus e a terra"
+        },
+        {
+          "text": "No começo, a terra estava sem forma e vazia.",
+          "evidenceRef": "Gênesis 1:2",
+          "evidenceSpan": "estava sem forma e vazia"
+        },
+        {
+          "text": "O Espírito de Deus pairava sobre as águas.",
+          "evidenceRef": "Gênesis 1:2",
+          "evidenceSpan": "o Espírito de Deus pairava sobre as águas"
+        },
+        {
+          "text": "Deus falou, e a luz passou a existir.",
+          "evidenceRef": "Gênesis 1:3",
+          "evidenceSpan": "e houve luz"
+        },
+        {
+          "text": "Deus viu que a luz era boa.",
+          "evidenceRef": "Gênesis 1:4",
+          "evidenceSpan": "Deus viu que a luz era boa"
+        },
+        {
+          "text": "Deus chamou a luz de Dia e as trevas de Noite.",
+          "evidenceRef": "Gênesis 1:5",
+          "evidenceSpan": "Deus chamou a luz de Dia e as trevas de Noite"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "princípio",
+          "gloss": "O começo de tudo. A Bíblia o abre com Deus, não com o ser humano."
+        },
+        {
+          "term": "criou",
+          "gloss": "Verbo que, aqui, tem só Deus como sujeito: ele faz existir o que não existia."
+        },
+        {
+          "term": "pairava",
+          "gloss": "Imagem de alguém presente e atento sobre a terra ainda vazia, antes da primeira palavra."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Deus cria, e a terra ainda está vazia",
+          "evidenceRef": "Gênesis 1:1–2"
+        },
+        {
+          "label": "Deus fala e a luz passa a existir",
+          "evidenceRef": "Gênesis 1:3"
+        },
+        {
+          "label": "Deus aprova a luz e a separa das trevas",
+          "evidenceRef": "Gênesis 1:4"
+        },
+        {
+          "label": "Deus dá nome ao dia e à noite",
+          "evidenceRef": "Gênesis 1:5"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Deus já criou os céus e a terra, porém a terra ainda está sem forma: a obra começa pelo vazio.",
+          "marker": "porém",
+          "evidenceRef": "Gênesis 1:2"
+        },
+        {
+          "kind": "resultado",
+          "text": "Deus diz \"Que haja luz\", e a luz existe: a palavra dele basta para criar.",
+          "marker": "houve",
+          "evidenceRef": "Gênesis 1:3"
+        },
+        {
+          "kind": "sequência",
+          "text": "Primeiro Deus vê que a luz é boa; depois a separa das trevas.",
+          "marker": null,
+          "evidenceRef": "Gênesis 1:4"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 90:2",
+          "bridge": "Deus existe antes do mundo",
+          "text": "Antes que os montes nascessem, e que formasses a terra e o mundo, de eternidade a eternidade, tu és Deus."
+        },
+        {
+          "ref": "Salmos 33:6",
+          "bridge": "Deus cria pela palavra",
+          "text": "Pela palavra do Senhor foram criados os céus e todo o seu exército se formou pelo sopro de sua boca."
+        },
+        {
+          "ref": "João 1:1",
+          "bridge": "O Verbo já estava no princípio",
+          "text": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Gênesis 1 começa tentando provar que Deus existe.",
+          "why": "O texto não argumenta: parte de Deus como ponto de partida e mostra o que ele faz."
+        },
+        {
+          "text": "Antes de Deus já havia um caos, e ele só arrumou o que encontrou.",
+          "why": "Nada aparece antes de Deus: no princípio, ele cria os céus e a terra."
+        },
+        {
+          "text": "Deus criou o mundo e depois o deixou por conta própria.",
+          "why": "O Espírito paira sobre as águas, e Deus segue falando, vendo e dando nome ao que fez."
+        }
+      ],
+      "centralInsight": "Deus vem antes de tudo",
+      "anchorQuestion": "Segundo Gênesis 1:1, quem já estava agindo no princípio?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 90:2",
+          "reason": "Deus existe antes do mundo"
+        },
+        {
+          "reference": "Salmos 33:6",
+          "reason": "Deus cria pela palavra"
+        },
+        {
+          "reference": "João 1:1",
+          "reason": "O Verbo já estava no princípio"
+        }
+      ]
+    },
+    "entrada-deus-02": {
+      "slug": "entrada-deus-02",
+      "passageRef": "Êxodo 3:11–15",
+      "passageText": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito? E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte. Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi? E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’” E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração.",
+      "passages": [
+        {
+          "ref": "Êxodo 3:11–15",
+          "text": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito? E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte. Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi? E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’” E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+        }
+      ],
+      "context": "Moisés tinha fugido do Egito e vivia no deserto cuidando de ovelhas. Da sarça que ardia sem se queimar, Deus o chama para tirar Israel da escravidão. Moisés hesita e pergunta o que dizer quando o povo quiser saber quem o enviou.",
+      "keyword": "EU SOU",
+      "keywordGloss": "O nome que Deus revela a Moisés: ele é quem é, não depende de ninguém e está com o seu povo.",
+      "focusQuestion": "Moisés perguntou \"quem sou eu?\" e Deus respondeu dizendo quem ele é. Onde você precisa olhar mais para Deus do que para si?",
+      "reflectionPrompts": [
+        "Quem sou eu?",
+        "EU SOU me enviou",
+        "Um nome para sempre"
+      ],
+      "facts": [
+        {
+          "text": "Moisés pergunta quem ele é para ir até Faraó.",
+          "evidenceRef": "Êxodo 3:11",
+          "evidenceSpan": "Quem sou eu para ir até Faraó"
+        },
+        {
+          "text": "Deus promete estar com Moisés.",
+          "evidenceRef": "Êxodo 3:12",
+          "evidenceSpan": "Certamente estarei contigo"
+        },
+        {
+          "text": "Moisés pergunta qual nome dirá ao povo.",
+          "evidenceRef": "Êxodo 3:13",
+          "evidenceSpan": "Qual é o seu nome?"
+        },
+        {
+          "text": "Deus responde: EU SOU O QUE SOU.",
+          "evidenceRef": "Êxodo 3:14",
+          "evidenceSpan": "EU SOU O QUE SOU"
+        },
+        {
+          "text": "Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó.",
+          "evidenceRef": "Êxodo 3:15",
+          "evidenceSpan": "o Deus de Abraão, o Deus de Isaque e o Deus de Jacó"
+        },
+        {
+          "text": "Deus diz que esse é o seu nome para sempre.",
+          "evidenceRef": "Êxodo 3:15",
+          "evidenceSpan": "este é o meu nome eternamente"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "EU SOU",
+          "gloss": "O nome que Deus dá a si mesmo: ele existe por si e é fiel ao que é."
+        },
+        {
+          "term": "SENHOR",
+          "gloss": "O nome próprio de Deus em Israel, ligado ao EU SOU; as maiúsculas marcam esse nome."
+        },
+        {
+          "term": "lembrado",
+          "gloss": "Deus quer ser lembrado por esse nome em cada geração, não só na de Moisés."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Moisés duvida de si mesmo",
+          "evidenceRef": "Êxodo 3:11"
+        },
+        {
+          "label": "Deus promete a sua presença e um sinal",
+          "evidenceRef": "Êxodo 3:12"
+        },
+        {
+          "label": "Moisés pergunta o nome de Deus",
+          "evidenceRef": "Êxodo 3:13"
+        },
+        {
+          "label": "Deus revela quem ele é",
+          "evidenceRef": "Êxodo 3:14–15"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Deus envia Moisés com um objetivo: tirar o seu povo do Egito.",
+          "marker": "para que",
+          "evidenceRef": "Êxodo 3:10"
+        },
+        {
+          "kind": "contraste",
+          "text": "Moisés olha para si (\"Quem sou eu?\"), e Deus responde com a própria presença: \"estarei contigo\".",
+          "marker": null,
+          "evidenceRef": "Êxodo 3:11–12"
+        },
+        {
+          "kind": "resultado",
+          "text": "Porque Deus revela quem é, Moisés tem um nome para levar ao povo: \"EU SOU me enviou\".",
+          "marker": "Assim",
+          "evidenceRef": "Êxodo 3:14"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 9:10",
+          "bridge": "Quem conhece o nome confia",
+          "text": "Em ti, pois, confiarão todos os que conhecem o teu nome, porque tu, SENHOR, não abandonas os que te buscam."
+        },
+        {
+          "ref": "João 8:58",
+          "bridge": "Jesus usa o mesmo \"EU SOU\"",
+          "text": "Disse-lhes Jesus: \"Em verdade, em verdade lhes digo: antes que Abraão existisse, EU SOU.\""
+        },
+        {
+          "ref": "Apocalipse 1:8",
+          "bridge": "Aquele que é, era e virá",
+          "text": "Eu sou o Alfa e o Ômega, o Princípio e o Fim, diz o Senhor Deus, aquele que é, que era e que há de vir, o Todo-Poderoso."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Deus se recusa a dizer o seu nome a Moisés.",
+          "why": "Deus responde à pergunta e ainda manda Moisés levar esse nome ao povo."
+        },
+        {
+          "text": "A missão depende de Moisés ser forte e bem preparado.",
+          "why": "Deus não responde ao \"Quem sou eu?\" elogiando Moisés; promete: \"Certamente estarei contigo\"."
+        },
+        {
+          "text": "EU SOU é um deus novo, diferente do Deus dos antepassados de Israel.",
+          "why": "Deus se apresenta como o Deus de Abraão, de Isaque e de Jacó: o mesmo Deus de sempre."
+        }
+      ],
+      "centralInsight": "Deus se dá a conhecer pelo nome",
+      "anchorQuestion": "Em Êxodo 3:14, que nome Deus revela a Moisés?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 9:10",
+          "reason": "Quem conhece o nome confia"
+        },
+        {
+          "reference": "João 8:58",
+          "reason": "Jesus usa o mesmo \"EU SOU\""
+        },
+        {
+          "reference": "Apocalipse 1:8",
+          "reason": "Aquele que é, era e virá"
+        }
+      ]
+    },
+    "entrada-deus-03": {
+      "slug": "entrada-deus-03",
+      "passageRef": "Isaías 6:1–6",
+      "passageText": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo. Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava. E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória. E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça. Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos! Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;",
+      "passages": [
+        {
+          "ref": "Isaías 6:1–6",
+          "text": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo. Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava. E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória. E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça. Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos! Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;"
+        }
+      ],
+      "context": "Uzias reinou em Judá por muitos anos, e a morte dele deixou o povo inseguro. Nesse mesmo ano, o profeta Isaías está no templo e recebe uma visão: ele vê quem de fato está no trono.",
+      "keyword": "Santo",
+      "keywordGloss": "Separado, puro e diferente de tudo o que existe; dito três vezes, marca o que Deus é no grau mais alto.",
+      "focusQuestion": "Como a santidade de Deus muda o jeito como você se aproxima dele?",
+      "reflectionPrompts": [
+        "O Rei no trono",
+        "Santo, santo, santo",
+        "Ai de mim"
+      ],
+      "facts": [
+        {
+          "text": "Isaías viu o Senhor assentado num trono alto e sublime.",
+          "evidenceRef": "Isaías 6:1",
+          "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono"
+        },
+        {
+          "text": "Cada serafim tinha seis asas.",
+          "evidenceRef": "Isaías 6:2",
+          "evidenceSpan": "cada um tinha seis asas"
+        },
+        {
+          "text": "Os serafins proclamavam que o Senhor é santo, santo, santo.",
+          "evidenceRef": "Isaías 6:3",
+          "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos"
+        },
+        {
+          "text": "Toda a terra está repleta da glória de Deus.",
+          "evidenceRef": "Isaías 6:3",
+          "evidenceSpan": "toda a terra está repleta da sua glória"
+        },
+        {
+          "text": "A casa se encheu de fumaça.",
+          "evidenceRef": "Isaías 6:4",
+          "evidenceSpan": "a casa se encheu de fumaça"
+        },
+        {
+          "text": "Isaías reconhece que é homem de lábios impuros.",
+          "evidenceRef": "Isaías 6:5",
+          "evidenceSpan": "sou homem de lábios impuros"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Santo",
+          "gloss": "Separado e puro, diferente de toda criatura. A repetição tripla diz: santo como ninguém."
+        },
+        {
+          "term": "glória",
+          "gloss": "O peso e o brilho da presença de Deus, que não cabe no templo e enche toda a terra."
+        },
+        {
+          "term": "trono",
+          "gloss": "Sinal de que Deus reina, mesmo no ano em que o rei da terra morre."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Senhor no trono, num ano de crise",
+          "evidenceRef": "Isaías 6:1"
+        },
+        {
+          "label": "Os serafins proclamam, e o templo treme",
+          "evidenceRef": "Isaías 6:2–4"
+        },
+        {
+          "label": "Isaías se vê perdido e diz por quê",
+          "evidenceRef": "Isaías 6:5"
+        },
+        {
+          "label": "Um serafim vem até ele com uma brasa",
+          "evidenceRef": "Isaías 6:6"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O rei Uzias morre, mas o Senhor continua assentado no trono.",
+          "marker": null,
+          "evidenceRef": "Isaías 6:1"
+        },
+        {
+          "kind": "causa",
+          "text": "Isaías se sente perdido porque é impuro e porque seus olhos viram o Rei santo.",
+          "marker": "Pois",
+          "evidenceRef": "Isaías 6:5"
+        },
+        {
+          "kind": "sequência",
+          "text": "Logo depois do \"Ai de mim\", um serafim voa até Isaías com uma brasa do altar.",
+          "marker": "Então",
+          "evidenceRef": "Isaías 6:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Apocalipse 4:8",
+          "bridge": "O mesmo clamor diante do trono",
+          "text": "Os quatro seres viventes tinham cada um deles seis asas, cheias de olhos ao redor e por dentro; não descansavam nem de dia nem de noite, proclamando: Santo, Santo, Santo é o Senhor Deus, o Todo-Poderoso, que era, que é e que há de vir."
+        },
+        {
+          "ref": "1 Pedro 1:15–16",
+          "bridge": "O Santo chama a ser santo",
+          "text": "Mas, assim como é santo aquele que vos chamou, tornai-vos também santos em toda a vossa maneira de viver; Sede santos, pois eu sou santo."
+        },
+        {
+          "ref": "João 12:41",
+          "bridge": "Isaías viu a glória de Jesus",
+          "text": "Isaías disse isso ao ver a sua glória e ao falar a seu respeito."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Santo quer dizer só que Deus é muito bonzinho.",
+          "why": "No texto, a santidade faz os serafins cobrirem o rosto e o templo tremer: é a diferença total de Deus."
+        },
+        {
+          "text": "Quando o rei da terra morre, o trono de Deus também fica vazio.",
+          "why": "No ano da morte do rei Uzias, Isaías vê o Senhor assentado num alto e sublime trono."
+        },
+        {
+          "text": "Os serafins são quase iguais ao Senhor, como deuses menores.",
+          "why": "Eles cobrem o rosto e proclamam a santidade de outro: só o Senhor é chamado santo três vezes."
+        }
+      ],
+      "centralInsight": "Deus é santo",
+      "anchorQuestion": "Em Isaías 6:3, o que os serafins proclamam sobre o Senhor?",
+      "relatedVerses": [
+        {
+          "reference": "Apocalipse 4:8",
+          "reason": "O mesmo clamor diante do trono"
+        },
+        {
+          "reference": "1 Pedro 1:15–16",
+          "reason": "O Santo chama a ser santo"
+        },
+        {
+          "reference": "João 12:41",
+          "reason": "Isaías viu a glória de Jesus"
+        }
+      ]
+    },
+    "entrada-deus-04": {
+      "slug": "entrada-deus-04",
+      "passageRef": "Salmos 23:1–6",
+      "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome. Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam. Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda. Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade.",
+      "passages": [
+        {
+          "ref": "Salmos 23:1–6",
+          "text": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome. Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam. Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda. Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade."
+        }
+      ],
+      "context": "Davi cuidou de ovelhas antes de ser rei. Ele sabia o que um pastor faz: leva ao pasto e à água, guia pelo caminho e defende do perigo. Neste salmo, ele usa essa imagem para falar do próprio Senhor.",
+      "keyword": "Pastor",
+      "keywordGloss": "Quem guia, alimenta e protege as ovelhas; Davi dá esse nome ao Senhor.",
+      "focusQuestion": "Em que parte do seu caminho você precisa lembrar que o Senhor está com você?",
+      "reflectionPrompts": [
+        "Nada me faltará",
+        "Tu estás comigo",
+        "A casa do Senhor"
+      ],
+      "facts": [
+        {
+          "text": "Davi chama o Senhor de seu pastor.",
+          "evidenceRef": "Salmos 23:1",
+          "evidenceSpan": "O Senhor é o meu pastor"
+        },
+        {
+          "text": "O Senhor leva Davi para junto das águas de descanso.",
+          "evidenceRef": "Salmos 23:2",
+          "evidenceSpan": "leva-me para junto das águas de descanso"
+        },
+        {
+          "text": "No vale da sombra da morte, Davi não teme mal nenhum.",
+          "evidenceRef": "Salmos 23:4",
+          "evidenceSpan": "não temerei mal nenhum"
+        },
+        {
+          "text": "A vara e o cajado do Senhor trazem conforto.",
+          "evidenceRef": "Salmos 23:4",
+          "evidenceSpan": "a tua vara e o teu cajado me confortam"
+        },
+        {
+          "text": "O Senhor prepara um banquete diante dos inimigos de Davi.",
+          "evidenceRef": "Salmos 23:5",
+          "evidenceSpan": "Preparas-me um banquete na presença dos meus inimigos"
+        },
+        {
+          "text": "A bondade e a misericórdia seguem Davi todos os dias.",
+          "evidenceRef": "Salmos 23:6",
+          "evidenceSpan": "a bondade e a misericórdia me seguirão todos os dias da minha vida"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "pastor",
+          "gloss": "Imagem de cuidado de perto: guiar, alimentar e defender quem não se defende sozinho."
+        },
+        {
+          "term": "alma",
+          "gloss": "A pessoa por inteiro; o Senhor a refaz quando está cansada."
+        },
+        {
+          "term": "misericórdia",
+          "gloss": "Amor fiel que não desiste; no salmo, ela acompanha Davi todos os dias."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Senhor é o pastor de Davi",
+          "evidenceRef": "Salmos 23:1"
+        },
+        {
+          "label": "O pastor dá descanso e direção",
+          "evidenceRef": "Salmos 23:2–3"
+        },
+        {
+          "label": "O pastor acompanha no vale escuro",
+          "evidenceRef": "Salmos 23:4"
+        },
+        {
+          "label": "O Senhor serve banquete e acolhe em casa",
+          "evidenceRef": "Salmos 23:5–6"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Porque o Senhor é o pastor, nada falta à ovelha: o cuidado vem antes da falta.",
+          "marker": null,
+          "evidenceRef": "Salmos 23:1"
+        },
+        {
+          "kind": "contraste",
+          "text": "O vale é real e escuro, e mesmo assim Davi não teme: o perigo não tem a última palavra.",
+          "marker": "Ainda que",
+          "evidenceRef": "Salmos 23:4"
+        },
+        {
+          "kind": "causa",
+          "text": "Davi não teme no vale porque o Senhor está com ele ali.",
+          "marker": "porque",
+          "evidenceRef": "Salmos 23:4"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 10:11",
+          "bridge": "Jesus, o bom Pastor",
+          "text": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas."
+        },
+        {
+          "ref": "Isaías 40:11",
+          "bridge": "O Senhor cuida como pastor",
+          "text": "Como pastor, ele apascentará seu rebanho; recolherá os cordeirinhos em seus braços e os levará no seio; guiará com mansidão as ovelhas que amamentam."
+        },
+        {
+          "ref": "Isaías 57:15",
+          "bridge": "O Santo habita com o abatido",
+          "text": "Porque assim diz o Altíssimo, que habita na eternidade, cujo nome é Santo: Eu habito no lugar alto e santo, mas também estou com o contrito e abatido de espírito, para vivificar o espírito dos abatidos e reviver o coração dos contritos."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Quem tem o Senhor como pastor nunca passa por vales escuros.",
+          "why": "O próprio salmo fala do vale da sombra da morte; a promessa é a companhia do Senhor dentro dele."
+        },
+        {
+          "text": "\"Nada me faltará\" quer dizer que vou ter tudo o que eu quiser.",
+          "why": "O que não falta é o cuidado do pastor: descanso, água, direção e companhia. O salmo não é lista de desejos."
+        },
+        {
+          "text": "Um Deus tão santo fica longe demais para cuidar de alguém de perto.",
+          "why": "Davi chama o Senhor de \"meu pastor\" e diz \"tu estás comigo\": o Deus santo cuida de perto."
+        }
+      ],
+      "centralInsight": "O santo cuida de perto",
+      "anchorQuestion": "Segundo Salmos 23:4, por que Davi não teme no vale da sombra da morte?",
+      "relatedVerses": [
+        {
+          "reference": "João 10:11",
+          "reason": "Jesus, o bom Pastor"
+        },
+        {
+          "reference": "Isaías 40:11",
+          "reason": "O Senhor cuida como pastor"
+        },
+        {
+          "reference": "Isaías 57:15",
+          "reason": "O Santo habita com o abatido"
+        }
+      ]
+    },
+    "entrada-deus-05": {
+      "slug": "entrada-deus-05",
+      "passageRef": "João 1:1–5",
+      "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus. Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez. Nele havia a vida, e essa vida era a luz dos homens; E a luz resplandece nas trevas, e as trevas não a dominaram",
+      "passages": [
+        {
+          "ref": "João 1:1–5",
+          "text": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus. Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez. Nele havia a vida, e essa vida era a luz dos homens; E a luz resplandece nas trevas, e as trevas não a dominaram"
+        },
+        {
+          "ref": "João 1:10–14",
+          "text": "Estava no mundo, e o mundo foi feito por meio dele; no entanto, o mundo não o conheceu. Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome; Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+        }
+      ],
+      "context": "João abre o seu evangelho com as mesmas palavras de Gênesis: \"No princípio\". Ele chama Jesus de Verbo, isto é, a Palavra de Deus. Antes de contar o que Jesus fez, João diz quem ele é e de onde ele vem.",
+      "keyword": "Verbo",
+      "keywordGloss": "A Palavra de Deus; João usa esse nome para Jesus, que mostra Deus em pessoa.",
+      "focusQuestion": "Olhando para Jesus, o que você aprende sobre como Deus é?",
+      "reflectionPrompts": [
+        "No princípio, o Verbo",
+        "Morou entre nós",
+        "Cheio de graça e de verdade"
+      ],
+      "facts": [
+        {
+          "text": "O Verbo estava com Deus e era Deus.",
+          "evidenceRef": "João 1:1",
+          "evidenceSpan": "o Verbo estava com Deus, e o Verbo era Deus"
+        },
+        {
+          "text": "Todas as coisas foram feitas por meio do Verbo.",
+          "evidenceRef": "João 1:3",
+          "evidenceSpan": "Todas as coisas foram feitas por meio dele"
+        },
+        {
+          "text": "A luz brilha nas trevas, e as trevas não a dominaram.",
+          "evidenceRef": "João 1:5",
+          "evidenceSpan": "as trevas não a dominaram"
+        },
+        {
+          "text": "João Batista veio testemunhar da luz, mas não era a luz.",
+          "evidenceRef": "João 1:8",
+          "evidenceSpan": "Não era ele a luz"
+        },
+        {
+          "text": "Quem recebe o Verbo ganha o poder de se tornar filho de Deus.",
+          "evidenceRef": "João 1:12",
+          "evidenceSpan": "deu-lhes o poder de se tornarem filhos de Deus"
+        },
+        {
+          "text": "O Verbo se fez carne e habitou entre nós.",
+          "evidenceRef": "João 1:14",
+          "evidenceSpan": "o Verbo se fez carne e habitou entre nós"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Verbo",
+          "gloss": "A Palavra; em João, é Jesus, que já existia no princípio e era Deus."
+        },
+        {
+          "term": "carne",
+          "gloss": "Natureza humana de verdade: Deus veio como gente, não como aparência."
+        },
+        {
+          "term": "habitou",
+          "gloss": "Morou junto, como quem arma a sua tenda no meio do povo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Verbo eterno, com Deus e Deus",
+          "evidenceRef": "João 1:1–2"
+        },
+        {
+          "label": "Tudo foi feito por meio dele",
+          "evidenceRef": "João 1:3"
+        },
+        {
+          "label": "Rejeitado pelos seus, recebido por alguns",
+          "evidenceRef": "João 1:11–12"
+        },
+        {
+          "label": "O Verbo vem morar entre nós",
+          "evidenceRef": "João 1:14"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "João Batista veio como testemunha para que todos cressem: ele aponta para a luz.",
+          "marker": "a fim de que",
+          "evidenceRef": "João 1:7"
+        },
+        {
+          "kind": "contraste",
+          "text": "O mundo foi feito por meio do Verbo, e mesmo assim não o reconheceu.",
+          "marker": "no entanto",
+          "evidenceRef": "João 1:10"
+        },
+        {
+          "kind": "contraste",
+          "text": "Os seus não o receberam, mas quem o recebe ganha o poder de ser filho de Deus.",
+          "marker": "Mas",
+          "evidenceRef": "João 1:12"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Gênesis 1:1",
+          "bridge": "O mesmo \"No princípio\"",
+          "text": "No princípio, Deus criou os céus e a terra."
+        },
+        {
+          "ref": "Colossenses 1:15",
+          "bridge": "Jesus mostra o Deus invisível",
+          "text": "Ele é a representação do Deus invisível, o primogênito de toda a criação;"
+        },
+        {
+          "ref": "Hebreus 1:1–2",
+          "bridge": "Deus fala e cria pelo Filho",
+          "text": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho. a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Verbo foi a primeira coisa que Deus criou.",
+          "why": "João diz que o Verbo já era no princípio, estava com Deus e era Deus; e que tudo foi feito por meio dele."
+        },
+        {
+          "text": "Jesus só parecia humano, como uma aparição.",
+          "why": "O Verbo \"se fez carne\" e morou entre nós: João afirma uma humanidade de verdade."
+        },
+        {
+          "text": "Deus continua distante e não pode ser conhecido de perto.",
+          "why": "João diz que o Verbo habitou entre nós e \"vimos a sua glória\": em Jesus, Deus se deixa ver."
+        }
+      ],
+      "centralInsight": "Em Jesus, Deus se aproximou",
+      "anchorQuestion": "Segundo João 1:14, o que o Verbo fez?",
+      "relatedVerses": [
+        {
+          "reference": "Gênesis 1:1",
+          "reason": "O mesmo \"No princípio\""
+        },
+        {
+          "reference": "Colossenses 1:15",
+          "reason": "Jesus mostra o Deus invisível"
+        },
+        {
+          "reference": "Hebreus 1:1–2",
+          "reason": "Deus fala e cria pelo Filho"
+        }
+      ]
+    }
+  }
+}

@@ -4,7 +4,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
-import '../data/entry_trails.dart';
+import '../data/trail_repository.dart';
+import '../models/trail.dart';
 import '../l10n/app_language.dart';
 import '../models/user_intent.dart';
 import '../services/analytics_service.dart';
@@ -2438,13 +2439,31 @@ class _FirstMissionHero extends StatelessWidget {
   Widget build(BuildContext context) {
     // Prévia do cartão herói: arte escura fixa — tinta clara em qualquer look.
     final a = AppearanceStyle.resolve(AppearanceMode.night);
-    final l10n = context.l10n;
     // A mesma cena que a Home vai abrir: a 1ª da trilha do motivo.
     final slug = intent?.value.entryTrailSlug ?? _genesis;
-    final entry = EntryTrails.overlay.where((t) => t.slug == slug).firstOrNull;
+    return FutureBuilder<Trail?>(
+      future: _trailOf(slug),
+      builder: (context, snap) => _hero(context, a, slug, snap.data),
+    );
+  }
+
+  /// Trilha do motivo, do catálogo (uma busca por slug).
+  static final _trails = <String, Future<Trail?>>{};
+  static Future<Trail?> _trailOf(String slug) =>
+      _trails[slug] ??= slug == _genesis
+      ? Future.value()
+      : TrailRepository().getTrailBySlug(slug);
+
+  Widget _hero(
+    BuildContext context,
+    AppearanceStyle a,
+    String slug,
+    Trail? entry,
+  ) {
+    final l10n = context.l10n;
     final mission = entry?.modules.first.missions.first;
     final title = mission?.localizedTitle ?? l10n.onboardingFirstSceneTitle;
-    final trailTitle = entry?.title ?? l10n.settingsGenesisTitle;
+    final trailTitle = entry?.localizedTitle ?? l10n.settingsGenesisTitle;
     final visuals = entry == null
         ? TrailVisuals.forSlug(_genesis)
         : TrailVisuals.forSlug(entry.slug, categoryId: entry.categoryId);

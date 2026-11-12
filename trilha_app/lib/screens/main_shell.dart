@@ -635,7 +635,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       },
       leadingGlyph: switch (index) {
         0 => CinematicGlyph.home,
-        1 => CinematicGlyph.path,
+        1 => CinematicGlyph.compass,
         2 => CinematicGlyph.book,
         3 => CinematicGlyph.people,
         _ => CinematicGlyph.tune,

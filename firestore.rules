@@ -666,6 +666,17 @@ service cloud.firestore {
         && request.resource.data.name.size() <= 120;
     }
 
+    // Moderação (functions/moderation.js): estado por conta e histórico.
+    // Só o admin lê; só a Function grava.
+    match /moderation/{uid} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+    match /moderation_log/{id} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
     // Denúncias de outros peregrinos (usuários criam; editores revisam).
     match /user_reports/{id} {
       allow read, update, delete: if isContentEditor();
@@ -743,6 +754,17 @@ service cloud.firestore {
 
     // —— Conteúdo do currículo (trilhas / perguntas / estudos) ——
     match /content_trails/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    // Cards do Explorar criados no painel (admin/src/card-editor.js);
+    // o app lê com o catálogo (ExploreCard em trail_catalog.dart).
+    match /content_cards/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    // Linhas (portas) do Explorar criadas no painel (admin/src/shelf-editor.js).
+    match /content_shelves/{id} {
       allow read: if true;
       allow write: if isContentEditor();
     }

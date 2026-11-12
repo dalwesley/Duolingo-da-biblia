@@ -3997,13 +3997,13 @@ abstract class AppLocalizations {
   /// No description provided for @exploreSoonEntryTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Linha do tempo, mapas e personagens'**
+  /// **'Atlas: linha do tempo, lugares e personagens'**
   String get exploreSoonEntryTitle;
 
   /// No description provided for @exploreSoonItemAtlas.
   ///
   /// In pt, this message translates to:
-  /// **'Mapas: cidades, viagens e onde cada cena aconteceu'**
+  /// **'Mapas e lugares: cidades, viagens e onde cada cena aconteceu'**
   String get exploreSoonItemAtlas;
 
   /// No description provided for @exploreSoonItemCharacters.
@@ -4039,7 +4039,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreSoonTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Explorar a Bíblia está chegando'**
+  /// **'O Atlas da Bíblia está chegando'**
   String get exploreSoonTitle;
 
   /// No description provided for @feedbackAlmost.
@@ -9066,7 +9066,7 @@ abstract class AppLocalizations {
   /// No description provided for @navTrails.
   ///
   /// In pt, this message translates to:
-  /// **'Trilhas'**
+  /// **'Explorar'**
   String get navTrails;
 
   /// No description provided for @nextStepDeepenCta.
@@ -10628,6 +10628,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Trilha'**
   String get pilgrimTrail;
+
+  /// No description provided for @pilgrimTrails.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trilhas'**
+  String get pilgrimTrails;
 
   /// No description provided for @pilgrimTrailsInProgress.
   ///
@@ -13089,6 +13095,12 @@ abstract class AppLocalizations {
   /// **'Estudo da semana'**
   String get roomStudyFallbackTitle;
 
+  /// No description provided for @sceneAddress.
+  ///
+  /// In pt, this message translates to:
+  /// **'{collection} › {trail} › Cena {number}'**
+  String sceneAddress(String collection, String trail, int number);
+
   /// No description provided for @sceneStudyCta.
   ///
   /// In pt, this message translates to:
@@ -14634,7 +14646,7 @@ abstract class AppLocalizations {
   /// No description provided for @suggestionTrailHintBoth.
   ///
   /// In pt, this message translates to:
-  /// **'Escolha uma área e descreva a trilha.'**
+  /// **'Escolha uma coleção e descreva a trilha.'**
   String get suggestionTrailHintBoth;
 
   /// No description provided for @suggestionTrailHintRealm.
@@ -14652,7 +14664,7 @@ abstract class AppLocalizations {
   /// No description provided for @suggestionTrailPlaceholder.
   ///
   /// In pt, this message translates to:
-  /// **'Escolha uma área e descreva a trilha…'**
+  /// **'Escolha uma coleção e descreva a trilha…'**
   String get suggestionTrailPlaceholder;
 
   /// No description provided for @suggestionTrailRealmLabel.

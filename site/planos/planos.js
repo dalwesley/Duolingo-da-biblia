@@ -19,18 +19,15 @@ const PRICES = {
   pioneiro: { amount: "R$ 89,90", note: "por ano · R$ 7,49/mês", was: "R$ 119,90" },
 };
 
-const PLAY_URL = "https://play.google.com/store/apps/details?id=com.trilha.trilha_app";
-const IOS_URL = "https://apps.apple.com/br/search?term=STWAY";
+const PLAY_URL =
+  "https://play.google.com/store/apps/details?id=com.trilha.trilha_app&pcampaignid=web_share";
 
 const $ = (id) => document.getElementById(id);
-const ua = navigator.userAgent || "";
-const isIos = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && "ontouchend" in document);
-const isAndroid = /Android/i.test(ua);
-const storeUrl = isIos ? IOS_URL : isAndroid ? PLAY_URL : null;
 
-// "Baixar o app": loja do aparelho; no computador, segue para o teste.
 document.querySelectorAll("[data-store]").forEach((a) => {
-  if (storeUrl) a.href = storeUrl;
+  a.href = PLAY_URL;
+  a.target = "_blank";
+  a.rel = "noopener";
 });
 
 const buttons = document.querySelectorAll(".billing-opt");
@@ -63,7 +60,9 @@ function render(billing) {
     ctaNote.textContent = annual ? "Sem cobrança nos primeiros 14 dias. Cancele quando quiser." : "";
   } else {
     // Sem checkout no site ainda: assina pela loja do celular.
-    cta.href = storeUrl || "/#teste";
+    cta.href = PLAY_URL;
+    cta.target = "_blank";
+    cta.rel = "noopener";
     cta.textContent = annual ? "Começar 14 dias grátis no app" : "Assinar no app";
     ctaNote.textContent = "Por enquanto, a assinatura é feita dentro do app.";
   }

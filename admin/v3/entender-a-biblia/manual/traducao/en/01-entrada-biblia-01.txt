@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-01-01": {
+  "question": "Em Gênesis 1:4, Deus separou a luz das águas.",
+  "learningObjective": "Observar o que Deus separa no primeiro dia.",
+  "feedbackCorrect": "Deus separou a luz das trevas; as águas só são separadas depois, em Gênesis 1:6.",
+  "feedbackWrong": {
+   "true": "Releia o fim de Gênesis 1:4: Deus separou a luz das trevas."
+  },
+  "hint": "Olhe o fim do versículo.",
+  "_verso": "E Deus viu que a luz era boa; e separou a luz das trevas."
+ },
+ "entender-a-biblia-sem-entrada-biblia-01-02": {
+  "question": "Em Gênesis 1:4, toque o que Deus viu que era bom.",
+  "learningObjective": "Identificar o que Deus aprova no começo da história.",
+  "feedbackCorrect": "A primeira coisa que a Bíblia chama de boa é a luz que Deus fez.",
+  "feedbackWrong": {
+   "a": "\"Separou\" é uma ação de Deus, não o que ele viu.",
+   "b": "As trevas são separadas da luz; o texto não diz que eram boas."
+  },
+  "hint": "Procure o que vem logo antes de \"era boa\".",
+  "_verso": "E Deus viu que a luz era boa; e separou a luz das trevas."
+ },
+ "entender-a-biblia-sem-entrada-biblia-01-03": {
+  "question": "Segundo Gênesis 1:3, como a luz passa a existir?",
+  "learningObjective": "Observar que a luz vem da palavra de Deus.",
+  "feedbackCorrect": "Deus diz \"Que haja luz\", e a luz existe: basta a palavra dele.",
+  "feedbackWrong": {
+   "a": "A luz não nasce das trevas; ela vem da palavra de Deus.",
+   "b": "O Espírito pairava sobre as águas (Gn 1:2); a luz vem quando Deus fala.",
+   "d": "O texto ainda não falou do sol; a luz vem da palavra de Deus."
+  },
+  "hint": "Leia o começo do versículo.",
+  "options": {
+   "a": "Ela surge sozinha das trevas",
+   "b": "O Espírito a acende sobre as águas",
+   "c": "Deus fala, e ela acontece",
+   "d": "Ela vem do sol, que já existia"
+  },
+  "_verso": "Disse Deus: \"Que haja luz\"; e houve luz."
+ },
+ "entender-a-biblia-sem-entrada-biblia-01-04": {
+  "question": "Monte Gênesis 1:5 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Gênesis 1:5.",
+  "feedbackCorrect": "É a sequência do versículo: Deus dá nome à luz e às trevas, e então se conta o primeiro dia.",
+  "feedbackWrong": {
+   "default": "Comece pelos nomes que Deus dá; o primeiro dia fecha o versículo."
+  },
+  "hint": "O versículo começa com Deus dando nomes.",
+  "_verso": "E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia."
+ },
+ "entender-a-biblia-sem-entrada-biblia-01-05": {
+  "question": "Em Gênesis 1:2, sobre o que havia trevas?",
+  "learningObjective": "Lembrar o cenário antes da luz.",
+  "feedbackCorrect": "Trevas sobre o abismo: o cenário escuro e fundo onde a história vai começar a ganhar forma.",
+  "feedbackWrong": {
+   "a": "O texto não fala de terra seca aqui; fala de um abismo coberto de trevas.",
+   "b": "Não há montes ainda; a terra estava sem forma e vazia."
+  },
+  "hint": "Pense em algo fundo e escuro, ligado às águas.",
+  "_verso": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas."
+ },
+ "entender-a-biblia-sem-entrada-biblia-01-06": {
+  "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Gênesis 1:1 ao começo da história bíblica inteira.",
+  "feedbackCorrect": "A primeira frase da Bíblia inteira tem Deus como sujeito: a história começa nele.",
+  "feedbackWrong": {
+   "b": "Israel só entra bem depois, com Abraão; antes de qualquer povo, há Deus.",
+   "c": "O ser humano entra mais tarde; a primeira frase fala de Deus criando."
+  },
+  "hint": "Veja quem é o sujeito da primeira frase.",
+  "options": {
+   "a": "A história toda começa com Deus",
+   "b": "A Bíblia começa por Israel",
+   "c": "A Bíblia começa pelo ser humano"
+  },
+  "_verso": "No princípio, Deus criou os céus e a terra."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-01": {
+  "question": "Em Gênesis 1:3, a luz passa a existir como resultado direto da palavra de Deus.",
+  "learningObjective": "Compreender a palavra de Deus como causa da luz.",
+  "feedbackCorrect": "Deus diz \"Que haja luz\", e logo vem \"e houve luz\": a palavra produz o que diz.",
+  "feedbackWrong": {
+   "false": "Releia Gênesis 1:3: Deus fala, e em seguida \"houve luz\". Não há outra causa."
+  },
+  "hint": "Veja o que vem logo depois do que Deus disse.",
+  "_verso": "Disse Deus: \"Que haja luz\"; e houve luz."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-02": {
+  "question": "Em Gênesis 1:5, toque a palavra que mostra que a obra de Deus está só começando.",
+  "learningObjective": "Reconhecer o marcador de sequência no texto.",
+  "feedbackCorrect": "\"Primeiro\" abre uma contagem: se há um primeiro dia, a história vai continuar.",
+  "feedbackWrong": {
+   "a": "\"Chamou\" mostra Deus dando nomes, não uma sequência.",
+   "c": "\"Noite\" é o nome dado às trevas; não indica que algo vai continuar."
+  },
+  "hint": "Procure uma palavra que abre uma contagem.",
+  "_verso": "E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-03": {
+  "question": "Em Gênesis 1:4–5, o que Deus faz depois de criar a luz?",
+  "learningObjective": "Relacionar a criação da luz com a ordem que Deus estabelece.",
+  "feedbackCorrect": "Deus vê que a luz é boa, separa luz e trevas e dá nome a cada uma: ele põe ordem.",
+  "feedbackWrong": {
+   "a": "As trevas continuam e recebem nome: Noite. Deus as põe em ordem.",
+   "b": "Aqui quem dá os nomes é Deus; o ser humano ainda não foi criado.",
+   "d": "O texto diz que Deus separou a luz das trevas."
+  },
+  "hint": "Siga os verbos: viu, separou, chamou.",
+  "options": {
+   "a": "Acaba com as trevas para sempre",
+   "b": "Pede ao ser humano que dê os nomes",
+   "c": "Aprova a luz, separa e dá nome a cada parte",
+   "d": "Deixa a luz e as trevas misturadas"
+  },
+  "_verso": "E Deus viu que a luz era boa; e separou a luz das trevas. E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-04": {
+  "question": "Como avança a cena de Gênesis 1:2 a 1:5?",
+  "learningObjective": "Compreender o movimento do vazio à ordem.",
+  "feedbackCorrect": "Do vazio escuro à luz pela palavra, e então a ordem: Deus aprova, separa e nomeia.",
+  "feedbackWrong": {
+   "default": "Comece pelo mundo vazio; a luz vem pela palavra e só depois Deus separa e dá nome."
+  },
+  "hint": "O ponto de partida é o escuro.",
+  "options": {
+   "a": "Um mundo ainda vazio e escuro",
+   "b": "A palavra de Deus traz a luz",
+   "c": "Deus aprova, separa e dá nome"
+  },
+  "_verso": "Disse Deus: \"Que haja luz\"; e houve luz. E Deus viu que a luz era boa; e separou a luz das trevas."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-05": {
+  "question": "Em Gênesis 1:4, o que Deus faz com a luz e as trevas?",
+  "learningObjective": "Lembrar a ação de Deus que traz ordem.",
+  "feedbackCorrect": "Separar é pôr cada coisa no seu lugar: a história começa com Deus trazendo ordem.",
+  "feedbackWrong": {
+   "a": "As trevas não somem; continuam, com nome de Noite. Deus as distingue da luz.",
+   "b": "A luz não é escondida; ela é posta no seu lugar, ao lado das trevas."
+  },
+  "hint": "É a ação que põe cada coisa no seu lugar.",
+  "_verso": "E Deus viu que a luz era boa; e separou a luz das trevas."
+ },
+ "entender-a-biblia-cam-entrada-biblia-01-06": {
+  "question": "O que liga Gênesis 1:1 a Apocalipse 22:13?",
+  "learningObjective": "Relacionar o começo da Bíblia com o seu final.",
+  "feedbackCorrect": "A Bíblia abre com \"No princípio\" e fecha com \"o Princípio e o Fim\": a história é de Deus inteira.",
+  "feedbackWrong": {
+   "a": "Apocalipse fala de começo e fim: \"o Princípio e o Fim\".",
+   "b": "O fim não apaga o começo; o mesmo Senhor está nos dois."
+  },
+  "hint": "Procure a mesma palavra nos dois textos.",
+  "options": {
+   "a": "A história não tem fim",
+   "b": "O fim desfaz o começo",
+   "c": "Quem começa também conclui a história"
+  },
+  "_verso": "No princípio, Deus criou os céus e a terra."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-01": {
+  "question": "Gênesis 1:1 mostra que a história da Bíblia começa com Deus, e não com o ser humano.",
+  "learningObjective": "Ler a Bíblia como uma história que tem Deus no centro desde o começo.",
+  "feedbackCorrect": "O primeiro sujeito da Bíblia é Deus; o ser humano entra depois, dentro da obra dele.",
+  "feedbackWrong": {
+   "false": "Releia Gênesis 1:1: antes de qualquer pessoa, \"No princípio, Deus criou\"."
+  },
+  "hint": "Veja quem age na primeira frase.",
+  "_verso": "No princípio, Deus criou os céus e a terra."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-02": {
+  "question": "Em Gênesis 1:4, toque o trecho que sustenta que o mundo começa aprovado por Deus.",
+  "learningObjective": "Sustentar com o texto que a criação começa boa.",
+  "feedbackCorrect": "Deus olha o que fez e aprova: a história começa com um mundo bom, não estragado.",
+  "feedbackWrong": {
+   "a": "\"Das trevas\" diz de onde a luz foi separada, não a aprovação de Deus.",
+   "b": "Separar mostra ordem; a aprovação está no que Deus viu."
+  },
+  "hint": "Procure o que Deus achou do que fez.",
+  "_verso": "E Deus viu que a luz era boa; e separou a luz das trevas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-03": {
+  "question": "Que leitura Gênesis 1:1–2 sustenta sobre o lugar deste trecho na Bíblia?",
+  "learningObjective": "Escolher a leitura que coloca Gênesis 1 como começo da história bíblica.",
+  "feedbackCorrect": "Tudo o que vem depois acontece no mundo que Deus criou aqui: é o primeiro passo da história.",
+  "feedbackWrong": {
+   "b": "O primeiro sujeito é Deus: \"No princípio, Deus criou\".",
+   "c": "O vazio e o escuro são ponto de partida; Deus vê que o que faz é bom (Gn 1:4).",
+   "d": "O Deus que cria aqui é o mesmo que, no fim da Bíblia, faz tudo novo."
+  },
+  "hint": "Compare cada opção com quem age e com o que vem depois.",
+  "options": {
+   "a": "É o começo da história que a Bíblia inteira conta",
+   "b": "É o começo da história do ser humano, não de Deus",
+   "c": "Mostra um mundo que já nasce estragado pelo mal",
+   "d": "É uma introdução solta, sem ligação com o resto"
+  },
+  "_verso": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-04": {
+  "question": "Qual sequência mostra o fio da criação que começa em Gênesis 1:1?",
+  "learningObjective": "Ver Gênesis 1:1 como começo de um fio que atravessa a Bíblia até o fim.",
+  "feedbackCorrect": "A Bíblia vai da criação à promessa de criação nova, e termina com ela à vista.",
+  "feedbackWrong": {
+   "default": "Siga a história: criação (Gn 1:1), promessa (Is 65:17) e cumprimento (Ap 21:1)."
+  },
+  "hint": "Siga a ordem da Bíblia: Gênesis, profetas, Apocalipse.",
+  "options": {
+   "a": "Deus cria os céus e a terra",
+   "b": "Deus promete criar novos céus e nova terra",
+   "c": "João vê um novo céu e uma nova terra"
+  },
+  "_verso": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-05": {
+  "question": "Em Gênesis 1:1, que palavra marca o começo de toda a história bíblica?",
+  "learningObjective": "Lembrar o termo que abre a história bíblica.",
+  "feedbackCorrect": "Antes de tudo começar, Deus já está lá: a história da Bíblia parte dele.",
+  "feedbackWrong": {
+   "a": "O texto não fala de silêncio; fala do começo de tudo.",
+   "c": "Os céus são o que Deus criou, não o tempo em que tudo começa."
+  },
+  "hint": "É a palavra que diz quando tudo começou.",
+  "_verso": "No princípio, Deus criou os céus e a terra."
+ },
+ "entender-a-biblia-pro-entrada-biblia-01-06": {
+  "question": "O que liga Gênesis 1:3 a 2 Coríntios 4:6?",
+  "learningObjective": "Ver como o NT relê a luz da criação na obra de Cristo.",
+  "feedbackCorrect": "Paulo lembra Gênesis: o Deus que fez a luz no começo faz brilhar a luz de Cristo em nós.",
+  "feedbackWrong": {
+   "b": "Paulo diz \"em nossos corações\": a luz é para quem crê.",
+   "c": "Paulo fala da luz que ilumina o conhecimento da glória de Deus em Cristo."
+  },
+  "hint": "Veja o que Paulo cita de Gênesis e onde essa luz brilha agora.",
+  "options": {
+   "a": "Deus acende luz no coração",
+   "b": "Só apóstolos recebem essa luz",
+   "c": "Paulo fala da luz do sol"
+  },
+  "_verso": "Disse Deus: \"Que haja luz\"; e houve luz."
+ },
+ "estudo:entrada-biblia-01": {
+  "context": "A Bíblia reúne muitos livros, escritos ao longo de séculos, mas conta uma só história. Ela não começa com um herói, um povo ou um rei. Estes primeiros versos abrem o palco onde tudo o que vem depois vai acontecer.",
+  "focusQuestion": "Que diferença faz ler a sua vida dentro de uma história que começa em Deus?",
+  "keywordGloss": "O começo de tudo; a Bíblia abre a sua história com Deus já presente e agindo.",
+  "reflectionPrompts": [
+   "Um autor para a história",
+   "Um mundo bom",
+   "A luz no começo"
+  ],
+  "facts": [
+   "A Bíblia começa com Deus criando os céus e a terra.",
+   "Antes da luz, havia trevas sobre a face do abismo.",
+   "Deus fala, e a luz passa a existir.",
+   "Deus vê que a luz é boa e a separa das trevas.",
+   "Deus dá nome à luz e às trevas: Dia e Noite.",
+   "O texto marca tarde e manhã e conta o primeiro dia."
+  ],
+  "_verso": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz. E Deus viu que a luz era boa; e separou a luz das trevas. E Deus chamou a luz de Dia e as trevas de Noite. E houve tarde e manhã, o primeiro dia."
+ }
+}

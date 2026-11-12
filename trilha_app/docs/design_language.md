@@ -264,7 +264,13 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Unidade de estudo | **cena** | missão, lição, passo |
 | Parte de uma cena (cada exercício) | **pergunta** ("Pergunta 2 de 5", "5 perguntas") | ato |
 | Grupo de cenas dentro da trilha (módulo) | **etapa** ("Etapa II") | cena (colide com a unidade) |
-| Área de trilhas (AT, NT, Vida cristã, Teologia) | **área** | caminho, reino |
+| Aba das coleções (AT, NT, Temas, Vida Cristã, Teologia) | **Explorar** | Trilhas (como nome da aba), Mapas, Caminhos, Portais |
+| Card da aba Explorar (AT, NT, Temas…), que junta trilhas | **coleção** ("a coleção Novo Testamento"); em frase solta, o próprio nome ("no Novo Testamento") | área, seção, caminho, reino, mapa, trilha (é o nível de dentro) |
+| Grupo de coleções na aba (Bíblia, Temas, Vida Cristã, Teologia e as criadas no painel) | **porta** (só no painel e no código; na fala com a pessoa, o próprio nome) | linha, prateleira, card |
+| Onde a pessoa está | **Novo Testamento › Mateus › Cena 3** (coleção › trilha › cena), igual no app e no painel | prateleira, linha, fase ou etapa no endereço |
+| Abertura da cena (título, verso âncora, nota, frase Hoje) | **entrada** | intro, preparo |
+| Matéria-prima da cena (fatos, termos, relações…) | **estudo** | preparo |
+| Linha do tempo, lugares, mapas e personagens (em breve, aba Bíblia) | **Atlas** ("Atlas da Bíblia") | Explorar (é a aba), Bastidores, Cenário (teatro) |
 | Pontos | **passos** ("+40 passos") | pontos, XP; "passo" como sinônimo de cena; "primeiros passos" como marco |
 | Curso | **trilha** | trilha como "online" ("Na trilha agora") |
 | Progresso geral | **jornada** | caminhada, caminho |

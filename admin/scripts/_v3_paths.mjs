@@ -43,8 +43,10 @@ export function readJson(path, fallback) {
 /** Trilha do catálogo local (trails.json). */
 export function loadTrail(slug) {
   const trails = readJson(join(APP_DATA, 'trails.json'));
-  const trail = trails.find((t) => t.slug === slug);
-  if (!trail) throw new Error(`Trilha "${slug}" não existe em trails.json`);
+  const trail = trails.find((t) => t.slug === slug)
+    // Trilhas que só existem no Firestore: cópia de content_trails/<slug>.
+    ?? readJson(join(ADMIN_DIR, 'v3', slug, 'trail.json'), null);
+  if (!trail) throw new Error(`Trilha "${slug}" não existe em trails.json nem em v3/${slug}/trail.json`);
   return trail;
 }
 

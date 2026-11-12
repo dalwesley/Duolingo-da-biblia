@@ -1,0 +1,104 @@
+{
+  "slug": "entender-a-biblia",
+  "title": "Entender a Bíblia",
+  "description": "Sete cenas da criação à nova criação — e de volta a Gênesis 1–11.",
+  "icon": "📜",
+  "order": 3,
+  "comingSoon": false,
+  "color": "#1971C2",
+  "realm": "vida-crista",
+  "category": "entender-a-biblia",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Uma só história",
+      "icon": "📜",
+      "missions": [
+        {
+          "slug": "entrada-biblia-01",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "Criação",
+          "intro": "A história começa com Deus fazendo um mundo bom.",
+          "hookNote": "Toda a Bíblia parte daqui: um só Deus, um mundo feito por ele.",
+          "centralInsight": "A história começa em Deus",
+          "objective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+          "hookRef": "Gênesis 1:1–3",
+          "hookVerse": "No princípio, Deus criou os céus e a terra."
+        },
+        {
+          "slug": "entrada-biblia-02",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "Queda",
+          "intro": "Uma pergunta da serpente, e tudo se quebra.",
+          "hookNote": "O problema da Bíblia começa com desconfiar da palavra de Deus.",
+          "centralInsight": "A ruptura começa na desconfiança",
+          "objective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+          "hookRef": "Gênesis 3:1–6",
+          "hookVerse": "Então, a serpente disse à mulher: É certo que vocês não morrerão."
+        },
+        {
+          "slug": "entrada-biblia-03",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "Promessa",
+          "intro": "Deus chama um homem para abençoar todas as famílias.",
+          "hookNote": "Depois da queda, Deus não desiste: começa a resposta por uma família.",
+          "centralInsight": "Deus responde com uma promessa",
+          "objective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+          "hookRef": "Gênesis 12:1–3",
+          "hookVerse": "Farei de você uma grande nação… e em você todas as famílias da terra serão benditas."
+        },
+        {
+          "slug": "entrada-biblia-04",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "Libertação",
+          "intro": "Entre o exército e o mar, Deus abre um caminho.",
+          "hookNote": "O êxodo vira o molde da salvação na Bíblia: Deus liberta quem não pode se salvar.",
+          "centralInsight": "A salvação vem do Senhor",
+          "objective": "Entender o êxodo como o retrato da salvação que a Bíblia repete.",
+          "hookRef": "Êxodo 14:13–14",
+          "hookVerse": "O Senhor lutará por vocês, e vocês se calarão."
+        },
+        {
+          "slug": "entrada-biblia-05",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "O Servo",
+          "intro": "Um profeta vê alguém ferido no lugar dos outros.",
+          "hookNote": "Séculos antes de Jesus, Isaías descreve um Servo que leva a culpa do povo.",
+          "centralInsight": "Alguém leva a culpa no nosso lugar",
+          "objective": "Ver como os profetas apontam para um Salvador que sofre.",
+          "hookRef": "Isaías 53:5–6",
+          "hookVerse": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+        },
+        {
+          "slug": "entrada-biblia-06",
+          "type": "lesson",
+          "stepsReward": 60,
+          "title": "Ressurreição",
+          "intro": "O túmulo está vazio. A história vira.",
+          "hookNote": "Tudo o que veio antes converge aqui: Jesus vence a morte que entrou na queda.",
+          "centralInsight": "A morte não tem a última palavra",
+          "objective": "Entender a ressurreição como o centro da história bíblica.",
+          "hookRef": "Mateus 28:5–6",
+          "hookVerse": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+        },
+        {
+          "slug": "entrada-biblia-07",
+          "type": "lesson",
+          "stepsReward": 70,
+          "title": "Nova criação",
+          "intro": "A história termina onde começou: Deus com o seu povo.",
+          "hookNote": "A Bíblia abre com um jardim e fecha com uma cidade. Deus refaz o que a queda quebrou.",
+          "centralInsight": "Deus faz novas todas as coisas",
+          "objective": "Ver o fim da Bíblia como a restauração do começo.",
+          "hookRef": "Apocalipse 21:3–5",
+          "hookVerse": "Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo."
+        }
+      ]
+    }
+  ]
+}

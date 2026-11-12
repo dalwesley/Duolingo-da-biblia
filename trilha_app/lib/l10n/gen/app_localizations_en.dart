@@ -2480,11 +2480,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exploreSoonEntryBadge => 'Soon';
 
   @override
-  String get exploreSoonEntryTitle => 'Timeline, maps and people';
+  String get exploreSoonEntryTitle => 'Atlas: timeline, places and people';
 
   @override
   String get exploreSoonItemAtlas =>
-      'Maps: cities, journeys and where each scene happened';
+      'Maps and places: cities, journeys and where each scene happened';
 
   @override
   String get exploreSoonItemCharacters =>
@@ -2505,7 +2505,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exploreSoonPickHeader => 'What would you use?';
 
   @override
-  String get exploreSoonTitle => 'Bible explorer is on the way';
+  String get exploreSoonTitle => 'The Bible Atlas is on the way';
 
   @override
   String get feedbackAlmost => 'Almost';
@@ -5649,7 +5649,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navTogether => 'Together';
 
   @override
-  String get navTrails => 'Trails';
+  String get navTrails => 'Explore';
 
   @override
   String get nextStepDeepenCta => 'Start';
@@ -6706,6 +6706,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pilgrimTrail => 'Trail';
+
+  @override
+  String get pilgrimTrails => 'Trails';
 
   @override
   String pilgrimTrailsInProgress(int count) {
@@ -8296,6 +8299,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get roomStudyFallbackTitle => 'This week\'s study';
 
   @override
+  String sceneAddress(String collection, String trail, int number) {
+    return '$collection › $trail › Scene $number';
+  }
+
+  @override
   String get sceneStudyCta => 'Go deeper';
 
   @override
@@ -9293,7 +9301,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get suggestionTrailHintBoth =>
-      'Choose an area and describe the trail.';
+      'Choose a collection and describe the trail.';
 
   @override
   String get suggestionTrailHintRealm => 'Choose where this trail fits.';
@@ -9304,7 +9312,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get suggestionTrailPlaceholder =>
-      'Choose an area and describe the trail…';
+      'Choose a collection and describe the trail…';
 
   @override
   String get suggestionTrailRealmLabel => 'Where it fits';

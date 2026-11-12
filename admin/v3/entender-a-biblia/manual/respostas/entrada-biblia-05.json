@@ -1,0 +1,510 @@
+{
+ "study": {
+  "passageRef": "Isaías 53:4–7",
+  "passages": [
+   { "ref": "Isaías 53:4–7" },
+   { "ref": "Isaías 53:2–3" },
+   { "ref": "Isaías 53:8–9" }
+  ],
+  "context": "Séculos antes de Jesus, o profeta Isaías fala de um Servo do Senhor. Neste trecho, o povo olha para esse Servo ferido e humilhado e tenta entender por que ele sofre tanto.",
+  "keyword": "Servo",
+  "keywordGloss": "Em Isaías, o Servo do Senhor sofre pelo povo; o Novo Testamento reconhece nele Jesus.",
+  "focusQuestion": "O que muda em você saber que alguém levou a sua culpa?",
+  "reflectionPrompts": [
+   "Desprezado por nós",
+   "Ferido em nosso lugar",
+   "Ovelhas desgarradas"
+  ],
+  "facts": [
+   {
+    "text": "O Servo era desprezado e rejeitado pelas pessoas.",
+    "evidenceRef": "Isaías 53:3",
+    "evidenceSpan": "Ele era desprezado e considerado o mais rejeitado entre os homens"
+   },
+   {
+    "text": "O Servo foi traspassado pelas nossas transgressões.",
+    "evidenceRef": "Isaías 53:5",
+    "evidenceSpan": "foi traspassado por nossas transgressões"
+   },
+   {
+    "text": "Pelas feridas dele o povo é curado.",
+    "evidenceRef": "Isaías 53:5",
+    "evidenceSpan": "pelas suas feridas fomos curados"
+   },
+   {
+    "text": "Todos andavam desgarrados como ovelhas.",
+    "evidenceRef": "Isaías 53:6",
+    "evidenceSpan": "Todos nós andávamos desgarrados como ovelhas"
+   },
+   {
+    "text": "O Senhor fez cair sobre o Servo a iniquidade de todos.",
+    "evidenceRef": "Isaías 53:6",
+    "evidenceSpan": "o Senhor fez cair sobre ele a iniquidade de todos nós"
+   },
+   {
+    "text": "Oprimido e humilhado, ele ficou em silêncio.",
+    "evidenceRef": "Isaías 53:7",
+    "evidenceSpan": "mas não abriu a boca"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "transgressões",
+    "gloss": "As desobediências do povo; é por elas, e não por culpa própria, que o Servo é ferido."
+   },
+   {
+    "term": "castigo",
+    "gloss": "A pena que pesava sobre o povo; ela cai sobre o Servo e o resultado é paz."
+   },
+   {
+    "term": "iniquidade",
+    "gloss": "A culpa acumulada de todos, que o Senhor faz cair sobre um só."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O povo despreza o Servo",
+    "evidenceRef": "Isaías 53:2–3"
+   },
+   {
+    "label": "Ele é ferido pelas culpas do povo",
+    "evidenceRef": "Isaías 53:4–5"
+   },
+   {
+    "label": "O povo se perde como ovelhas",
+    "evidenceRef": "Isaías 53:6"
+   },
+   {
+    "label": "A culpa de todos cai sobre ele",
+    "evidenceRef": "Isaías 53:6"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "O povo achava que o Servo era castigado por Deus; porém ele era ferido pelas culpas do próprio povo.",
+    "marker": "porém",
+    "evidenceRef": "Isaías 53:5"
+   },
+   {
+    "kind": "contraste",
+    "text": "Cada um se desviou pelo seu caminho, mas o Senhor fez cair a culpa de todos sobre um só.",
+    "marker": "mas",
+    "evidenceRef": "Isaías 53:6"
+   },
+   {
+    "kind": "resultado",
+    "text": "O que o Servo sofre traz paz e cura para o povo.",
+    "marker": "curados",
+    "evidenceRef": "Isaías 53:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 2:24",
+    "bridge": "Feridas que curam, na cruz"
+   },
+   {
+    "ref": "João 1:29",
+    "bridge": "O Cordeiro que tira o pecado"
+   },
+   {
+    "ref": "Atos 8:35",
+    "bridge": "Isaías lido como anúncio de Jesus"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O Servo sofre porque ele mesmo tinha pecado.",
+    "why": "O texto repete que as transgressões são \"nossas\", e o versículo 9 diz que ele nunca praticou injustiça."
+   },
+   {
+    "text": "O sofrimento do Servo prova que Deus o tinha rejeitado.",
+    "why": "Era o que o povo pensava (\"ferido por Deus\"), mas o \"porém\" do versículo 5 corrige: ele era ferido por nós."
+   },
+   {
+    "text": "O Servo é só um exemplo de paciência para a gente imitar.",
+    "why": "O texto vai além de um exemplo: ele leva as nossas dores, e pelas feridas dele somos curados."
+   }
+  ],
+  "centralInsight": "Alguém leva a culpa no nosso lugar",
+  "anchorQuestion": "Segundo Isaías 53:5, o que acontece com o povo pelas feridas do Servo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Isaías 53:3, o Servo era desprezado e rejeitado entre os homens.",
+   "verseRef": "Isaías 53:3",
+   "correctOptionId": "true",
+   "evidenceSpan": "Ele era desprezado e considerado o mais rejeitado entre os homens",
+   "feedbackCorrect": "O texto diz que ele era desprezado e o mais rejeitado; ninguém lhe dava atenção.",
+   "feedbackWrong": {
+    "false": "Releia o começo de Isaías 53:3: ele era desprezado e considerado o mais rejeitado."
+   },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Observar como o povo tratava o Servo.",
+   "evidence": ["Isaías 53:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Isaías 53:6, toque quem fez cair sobre o Servo a iniquidade de todos.",
+   "verseRef": "Isaías 53:6",
+   "options": [
+    { "id": "a", "text": "Todos nós" },
+    { "id": "b", "text": "o Senhor" },
+    { "id": "c", "text": "cada um" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o Senhor fez cair sobre ele a iniquidade de todos nós",
+   "feedbackCorrect": "Quem age no fim do versículo é Deus: ele põe sobre o Servo a culpa de todos.",
+   "feedbackWrong": {
+    "a": "\"Todos nós\" somos os que andávamos desgarrados, não quem fez a culpa cair.",
+    "c": "\"Cada um\" se desviava pelo próprio caminho; quem age sobre o Servo é outro."
+   },
+   "hint": "Procure quem faz a ação depois do \"mas\".",
+   "learningObjective": "Identificar quem põe a culpa do povo sobre o Servo.",
+   "evidence": ["Isaías 53:6"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Isaías 53:6, como andávamos todos nós?",
+   "verseRef": "Isaías 53:6",
+   "options": [
+    { "id": "a", "text": "Firmes no caminho do Senhor" },
+    { "id": "b", "text": "Desgarrados, como ovelhas" },
+    { "id": "c", "text": "Juntos, seguindo um só pastor" },
+    { "id": "d", "text": "Escondidos, com medo do Servo" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Todos nós andávamos desgarrados como ovelhas",
+   "feedbackCorrect": "O texto compara todos a ovelhas desgarradas, cada uma no próprio caminho.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário: cada um se desviava pelo seu próprio caminho.",
+    "c": "Não havia um rebanho unido; cada um ia para um lado.",
+    "d": "O versículo não fala de medo; fala de ovelhas que se perderam."
+   },
+   "hint": "Leia a primeira frase do versículo.",
+   "learningObjective": "Observar a imagem que Isaías usa para o povo.",
+   "evidence": ["Isaías 53:6"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Isaías 53:5 na ordem do texto.",
+   "verseRef": "Isaías 53:5",
+   "options": [
+    { "id": "a", "text": "Ele, porém, foi traspassado por nossas transgressões" },
+    { "id": "b", "text": "o castigo que nos trouxe paz estava sobre ele" },
+    { "id": "c", "text": "pelas suas feridas fomos curados" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Ele, porém, foi traspassado por nossas transgressões",
+   "feedbackCorrect": "É a sequência do versículo: a ferida dele, o castigo sobre ele e a cura para nós.",
+   "feedbackWrong": {
+    "default": "Comece pelo Servo traspassado; a cura do povo fecha o versículo."
+   },
+   "hint": "O versículo termina com o que acontece com o povo.",
+   "learningObjective": "Reconhecer a sequência de Isaías 53:5.",
+   "evidence": ["Isaías 53:5"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Isaías 53:7, como o Servo foi levado ao matadouro?",
+   "verseRef": "Isaías 53:7",
+   "options": [
+    { "id": "a", "text": "carneiro" },
+    { "id": "b", "text": "cordeiro" },
+    { "id": "c", "text": "bezerro" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "como cordeiro foi levado ao matadouro",
+   "feedbackCorrect": "Como um cordeiro, ele vai ao matadouro sem resistir e sem abrir a boca.",
+   "feedbackWrong": {
+    "a": "Quase: o texto usa o animal mais novo e manso do rebanho.",
+    "c": "O texto não fala de gado; a imagem é do rebanho de ovelhas."
+   },
+   "hint": "A imagem vem do mesmo rebanho das ovelhas do versículo 6.",
+   "learningObjective": "Lembrar a imagem que Isaías usa para o silêncio do Servo.",
+   "evidence": ["Isaías 53:7"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Isaías 53:5 comunica que se liga a este contexto?",
+   "verseRef": "Isaías 53:5",
+   "passageA": {
+    "ref": "Isaías 53:5",
+    "text": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo via o Servo sofrer e achava que ele estava pagando pelos próprios erros."
+   },
+   "options": [
+    { "id": "a", "text": "Ele sofre pelos próprios erros" },
+    { "id": "b", "text": "Ele sofre no lugar do povo" },
+    { "id": "c", "text": "Ele sofre sem motivo algum" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "foi traspassado por nossas transgressões",
+   "feedbackCorrect": "As transgressões são \"nossas\": o Servo sofre pelo que o povo fez.",
+   "feedbackWrong": {
+    "a": "O texto diz \"nossas transgressões\", não as dele.",
+    "c": "Há um motivo, e o texto o diz: as transgressões do povo."
+   },
+   "hint": "Veja de quem são as transgressões.",
+   "learningObjective": "Ligar Isaías 53:5 à ideia de que o Servo sofre pelos outros.",
+   "evidence": ["Isaías 53:5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Isaías 53:4–5, o texto confirma a opinião do povo de que o Servo era castigado por culpa própria.",
+   "verseRef": "Isaías 53:4–5",
+   "correctOptionId": "false",
+   "evidenceSpan": "Ele, porém, foi traspassado por nossas transgressões",
+   "feedbackCorrect": "O \"porém\" corrige o povo: ele não pagava a própria culpa, era ferido pelas nossas.",
+   "feedbackWrong": {
+    "true": "O povo pensava assim no versículo 4, mas o versículo 5 vira a frase: foi ferido por nossas transgressões."
+   },
+   "hint": "Compare o que o povo pensava com o que vem logo depois.",
+   "learningObjective": "Compreender o contraste entre a opinião do povo e a verdade sobre o Servo.",
+   "evidence": ["Isaías 53:4–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Isaías 53:4–5, toque a palavra que corrige o que o povo pensava do Servo.",
+   "verseRef": "Isaías 53:4–5",
+   "options": [
+    { "id": "a", "text": "paz" },
+    { "id": "b", "text": "porém" },
+    { "id": "c", "text": "feridas" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele, porém,",
+   "feedbackCorrect": "\"Porém\" vira a página: o povo o achava castigado por Deus, mas ele sofria por nós.",
+   "feedbackWrong": {
+    "a": "\"Paz\" é o resultado do castigo sobre ele, não a palavra que marca a virada.",
+    "c": "\"Feridas\" mostra o sofrimento, não a correção do que o povo pensava."
+   },
+   "hint": "Procure uma palavra curta entre vírgulas no começo do versículo 5.",
+   "learningObjective": "Reconhecer o marcador de contraste no texto.",
+   "evidence": ["Isaías 53:4–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Em Isaías 53:6, como o desvio do povo se liga ao que o Senhor faz?",
+   "verseRef": "Isaías 53:6",
+   "options": [
+    { "id": "a", "text": "Cada um se desvia e paga sozinho pela própria culpa" },
+    { "id": "b", "text": "O povo se desvia e volta sozinho ao caminho certo" },
+    { "id": "c", "text": "O povo se desvia, e a culpa de todos cai sobre o Servo" },
+    { "id": "d", "text": "O povo se desvia, e o Senhor o deixa perdido" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "mas o Senhor fez cair sobre ele a iniquidade de todos nós",
+   "feedbackCorrect": "O \"mas\" muda a direção: a culpa de quem se desviou cai sobre um só.",
+   "feedbackWrong": {
+    "a": "O texto diz que a iniquidade de todos caiu sobre ele, não sobre cada um.",
+    "b": "Ninguém volta sozinho no texto; quem age é o Senhor.",
+    "d": "O Senhor não abandona o povo; ele põe a culpa do povo sobre o Servo."
+   },
+   "hint": "Repare no que vem depois do \"mas\".",
+   "learningObjective": "Relacionar o desvio do povo com a ação do Senhor sobre o Servo.",
+   "evidence": ["Isaías 53:6"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Isaías 53:5–6?",
+   "verseRef": "Isaías 53:5–6",
+   "options": [
+    { "id": "a", "text": "Ele é ferido pelas culpas do povo" },
+    { "id": "b", "text": "O povo se perde como ovelhas" },
+    { "id": "c", "text": "A culpa de todos cai sobre ele" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "o Senhor fez cair sobre ele a iniquidade de todos nós",
+   "feedbackCorrect": "Primeiro a ferida do Servo, depois o retrato do povo perdido e, por fim, a culpa sobre ele.",
+   "feedbackWrong": {
+    "default": "O versículo 5 fala do Servo ferido; o 6 mostra as ovelhas e termina com a culpa sobre ele."
+   },
+   "hint": "O trecho termina com a ação do Senhor.",
+   "learningObjective": "Compreender o movimento de Isaías 53:5–6.",
+   "evidence": ["Isaías 53:5–6"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Isaías 53:4, o que o Servo fez com as nossas dores?",
+   "verseRef": "Isaías 53:4",
+   "options": [
+    { "id": "a", "text": "causou" },
+    { "id": "b", "text": "ignorou" },
+    { "id": "c", "text": "carregou" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "carregou nossas dores",
+   "feedbackCorrect": "Ele tomou sobre si o que era nosso: as dores passam do povo para o Servo.",
+   "feedbackWrong": {
+    "a": "As dores eram do povo; o Servo não as causou, ele as tomou sobre si.",
+    "b": "O texto diz o contrário: ele tomou sobre si nossas enfermidades."
+   },
+   "hint": "O verbo repete a ideia de \"tomou sobre si\".",
+   "learningObjective": "Compreender a ação do Servo em favor do povo.",
+   "evidence": ["Isaías 53:4"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Isaías 53:5 a 1 Pedro 2:24?",
+   "verseRef": "Isaías 53:5",
+   "passageA": { "ref": "Isaías 53:5" },
+   "passageB": { "ref": "1 Pedro 2:24" },
+   "options": [
+    { "id": "a", "text": "Sofrimento por culpa própria" },
+    { "id": "b", "text": "Uma cura só do corpo" },
+    { "id": "c", "text": "Feridas que trazem cura" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "pelas suas feridas fomos curados",
+   "evidence": ["Isaías 53:5", "1 Pedro 2:24"],
+   "feedbackCorrect": "Pedro usa as palavras de Isaías: Jesus levou nossos pecados, e por suas chagas fomos sarados.",
+   "feedbackWrong": {
+    "a": "Os dois textos dizem que ele levou os pecados dos outros, não os próprios.",
+    "b": "Pedro liga a cura aos pecados: mortos para os pecados, vivemos para a justiça."
+   },
+   "hint": "Compare o fim dos dois versículos.",
+   "learningObjective": "Ver como o Novo Testamento lê Isaías 53 à luz da cruz."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Isaías 53:6 apresenta o desvio como problema de todo o povo, e não só de alguns.",
+   "verseRef": "Isaías 53:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "Todos nós andávamos desgarrados como ovelhas",
+   "feedbackCorrect": "\"Todos nós\" se desviaram, e é a iniquidade \"de todos nós\" que cai sobre ele.",
+   "feedbackWrong": {
+    "false": "O versículo começa e termina com \"todos nós\": ninguém fica de fora do desvio."
+   },
+   "hint": "Repare nas palavras que abrem e fecham o versículo.",
+   "learningObjective": "Interpretar o alcance do desvio e da obra do Servo.",
+   "evidence": ["Isaías 53:6"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Isaías 53:9, toque o trecho que mostra que o Servo não sofria por culpa própria.",
+   "verseRef": "Isaías 53:9",
+   "options": [
+    { "id": "a", "text": "entre os ímpios" },
+    { "id": "b", "text": "com o rico" },
+    { "id": "c", "text": "nunca praticou injustiça" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "pois nunca praticou injustiça, nem houve dolo em sua boca",
+   "feedbackCorrect": "Ele era inocente: o sofrimento não vinha de algo que ele tivesse feito.",
+   "feedbackWrong": {
+    "a": "\"Entre os ímpios\" diz onde quiseram sepultá-lo, não como ele viveu.",
+    "b": "\"Com o rico\" fala da sua morte, não da sua inocência."
+   },
+   "hint": "Procure o que o versículo diz sobre a conduta dele.",
+   "learningObjective": "Sustentar com o texto a inocência do Servo.",
+   "evidence": ["Isaías 53:9"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Isaías 53:4–5 sustenta sobre o sofrimento do Servo?",
+   "verseRef": "Isaías 53:4–5",
+   "options": [
+    { "id": "a", "text": "Ele sofre porque ele mesmo tinha pecado" },
+    { "id": "b", "text": "Seu sofrimento prova que Deus o rejeitou" },
+    { "id": "c", "text": "Ele é só um exemplo de paciência para imitar" },
+    { "id": "d", "text": "Ele sofre no lugar do povo, e isso traz cura" }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "pelas suas feridas fomos curados",
+   "feedbackCorrect": "Ele leva o que era nosso, e o resultado é paz e cura para o povo.",
+   "feedbackWrong": {
+    "a": "As transgressões são \"nossas\"; o texto nunca atribui culpa a ele.",
+    "b": "Era o que o povo pensava, mas o \"porém\" do versículo 5 corrige essa ideia.",
+    "c": "O texto vai além de um exemplo: pelas feridas dele somos curados."
+   },
+   "hint": "Compare o que o povo pensava (v. 4) com o que o texto afirma (v. 5).",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre o sofrimento do Servo.",
+   "evidence": ["Isaías 53:4–5"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o caminho de Isaías 53:5 até o anúncio de Jesus?",
+   "verseRef": "Isaías 53:5",
+   "options": [
+    { "id": "a", "text": "Isaías vê o Servo ferido pelas culpas do povo" },
+    { "id": "b", "text": "Jesus leva nossos pecados em seu corpo na cruz" },
+    { "id": "c", "text": "Filipe lê Isaías 53 e anuncia Jesus" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "foi traspassado por nossas transgressões",
+   "evidence": ["Isaías 53:5", "1 Pedro 2:24", "Atos 8:35"],
+   "feedbackCorrect": "O profeta anuncia, Jesus cumpre na cruz, e a igreja lê Isaías apontando para ele.",
+   "feedbackWrong": {
+    "default": "Siga a história: profecia (Is 53:5), cruz (1 Pe 2:24) e anúncio (At 8:35)."
+   },
+   "hint": "Comece pelo profeta e termine em quem lê o profeta.",
+   "learningObjective": "Ver Isaías 53 como promessa que o Novo Testamento vê cumprida em Jesus."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Isaías 53:6, o que o Senhor fez cair sobre o Servo?",
+   "verseRef": "Isaías 53:6",
+   "options": [
+    { "id": "a", "text": "iniquidade" },
+    { "id": "b", "text": "doença" },
+    { "id": "c", "text": "vergonha" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a iniquidade de todos nós",
+   "feedbackCorrect": "É a culpa acumulada de todos, posta sobre um só: o centro da obra do Servo.",
+   "feedbackWrong": {
+    "b": "As enfermidades aparecem no versículo 4; aqui o que cai sobre ele é a culpa de todos.",
+    "c": "Ele foi desprezado, mas o versículo 6 fala da culpa de todos posta sobre ele."
+   },
+   "hint": "É a mesma ideia de \"transgressões\" no versículo 5.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+   "evidence": ["Isaías 53:6"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Isaías 53:7 a João 1:29?",
+   "verseRef": "Isaías 53:7",
+   "passageA": { "ref": "Isaías 53:7" },
+   "passageB": { "ref": "João 1:29" },
+   "options": [
+    { "id": "a", "text": "O Cordeiro que tira o pecado" },
+    { "id": "b", "text": "Animais oferecidos no templo" },
+    { "id": "c", "text": "Um rei que vence pela força" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como cordeiro foi levado ao matadouro",
+   "evidence": ["Isaías 53:7", "João 1:29"],
+   "feedbackCorrect": "O Servo vai como cordeiro, e João Batista aponta Jesus como o Cordeiro que tira o pecado.",
+   "feedbackWrong": {
+    "b": "Os dois textos falam de uma pessoa, não de animais no templo.",
+    "c": "O Servo vence calado, como cordeiro, e não pela força."
+   },
+   "hint": "Procure a imagem que aparece nos dois textos.",
+   "learningObjective": "Ligar o Servo de Isaías ao Cordeiro anunciado por João Batista."
+  }
+ ]
+}

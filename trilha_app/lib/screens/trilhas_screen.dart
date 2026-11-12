@@ -243,7 +243,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       context,
       title: journey.label,
       description: description,
-      art: 'assets/art/journey_${journey.name}.jpg',
+      art: journey.art,
       accent: visuals.accent,
       eyebrow: visuals.eyebrow,
       statusLabel: context.l10n.commonComingSoon,
@@ -271,8 +271,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       trailCount: trails,
       completedCount: done,
       locked: locked,
-      // Temas hospeda os 4 motivos do onboarding (grátis).
-      plus: hub.shelf != TrailShelf.biblia && hub.shelf != TrailShelf.tematicos,
+      plus: hub.plus,
       featured: activeJourney?.shelf == hub.shelf,
       onTap: () => _openHub(hub),
     );
@@ -621,38 +620,60 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 }
 
-enum _TrailHub { bible, themes, life, study }
+/// Porta da aba: uma linha ([TrailShelf]). As fixas têm arte e textos no
+/// app; as do painel trazem os textos e o ícone ([ExploreShelf]).
+@immutable
+class _TrailHub {
+  const _TrailHub(this.shelf);
 
-extension on _TrailHub {
-  TrailShelf get shelf => switch (this) {
-    _TrailHub.bible => TrailShelf.biblia,
-    _TrailHub.themes => TrailShelf.tematicos,
-    _TrailHub.life => TrailShelf.vidaCrista,
-    _TrailHub.study => TrailShelf.teologia,
-  };
+  final TrailShelf shelf;
+
+  /// Portas na ordem da aba. Linha do painel sem nenhum card não aparece.
+  static List<_TrailHub> get values => [
+    for (final shelf in TrailShelf.values)
+      if (!shelf.isExtra || TrailJourney.forShelf(shelf).isNotEmpty)
+        _TrailHub(shelf),
+  ];
 
   /// Céu do card. Temas usa o do Novo Testamento para não repetir o da Bíblia.
-  TrailRealm get sky => switch (this) {
-    _TrailHub.bible => TrailRealm.antigoTestamento,
-    _TrailHub.themes => TrailRealm.novoTestamento,
-    _TrailHub.life => TrailRealm.vidaCrista,
-    _TrailHub.study => TrailRealm.teologia,
-  };
+  TrailRealm get sky =>
+      shelf.extra?.sky ??
+      switch (shelf.name) {
+        'biblia' => TrailRealm.antigoTestamento,
+        'tematicos' => TrailRealm.novoTestamento,
+        'vidaCrista' => TrailRealm.vidaCrista,
+        _ => TrailRealm.teologia,
+      };
 
-  CinematicGlyph get glyph => switch (this) {
-    _TrailHub.bible => CinematicGlyph.book,
-    _TrailHub.themes => CinematicGlyph.path,
-    _TrailHub.life => CinematicGlyph.seed,
-    _TrailHub.study => CinematicGlyph.scroll,
-  };
+  CinematicGlyph get glyph {
+    final extra = shelf.extra;
+    if (extra != null) {
+      return CinematicGlyph.values.asNameMap()[extra.glyph] ??
+          RealmVisuals.of(extra.sky).glyph;
+    }
+    return switch (shelf.name) {
+      'biblia' => CinematicGlyph.book,
+      'tematicos' => CinematicGlyph.path,
+      'vidaCrista' => CinematicGlyph.seed,
+      _ => CinematicGlyph.scroll,
+    };
+  }
 
   /// Paisagem pintada do card: esquerda vazia para o texto, luz à direita.
-  String get art => switch (this) {
-    _TrailHub.bible => 'assets/art/hub_biblia.jpg',
-    _TrailHub.themes => 'assets/art/hub_temas.jpg',
-    _TrailHub.life => 'assets/art/hub_vida_crista.jpg',
-    _TrailHub.study => 'assets/art/hub_estudo.jpg',
-  };
+  /// Linha do painel ainda não tem: usa o céu animado.
+  String? get art => shelf.isExtra
+      ? null
+      : switch (shelf.name) {
+          'biblia' => 'assets/art/hub_biblia.jpg',
+          'tematicos' => 'assets/art/hub_temas.jpg',
+          'vidaCrista' => 'assets/art/hub_vida_crista.jpg',
+          _ => 'assets/art/hub_estudo.jpg',
+        };
+
+  /// Temas hospeda os motivos do onboarding (grátis); Bíblia é grátis.
+  bool get plus =>
+      shelf.extra?.plus ??
+      (shelf != TrailShelf.biblia && shelf != TrailShelf.tematicos);
 }
 
 ({String title, String subtitle}) _hubCopy(
@@ -660,18 +681,22 @@ extension on _TrailHub {
   _TrailHub hub,
 ) {
   final l10n = context.l10n;
+  final extra = hub.shelf.extra;
+  if (extra != null) {
+    return (title: extra.localizedTitle, subtitle: extra.localizedSubtitle);
+  }
   return (
-    title: switch (hub) {
-      _TrailHub.bible => l10n.trailsShelfBible,
-      _TrailHub.themes => l10n.trailsHubThemes,
-      _TrailHub.life => TrailRealm.vidaCrista.label,
-      _TrailHub.study => l10n.trailsHubStudy,
+    title: switch (hub.shelf.name) {
+      'biblia' => l10n.trailsShelfBible,
+      'tematicos' => l10n.trailsHubThemes,
+      'vidaCrista' => TrailRealm.vidaCrista.label,
+      _ => l10n.trailsHubStudy,
     },
-    subtitle: switch (hub) {
-      _TrailHub.bible => l10n.trailsHubBibleBody,
-      _TrailHub.themes => l10n.trailsHubThemesBody,
-      _TrailHub.life => RealmVisuals.of(TrailRealm.vidaCrista).tagline,
-      _TrailHub.study => l10n.trailsHubStudyBody,
+    subtitle: switch (hub.shelf.name) {
+      'biblia' => l10n.trailsHubBibleBody,
+      'tematicos' => l10n.trailsHubThemesBody,
+      'vidaCrista' => RealmVisuals.of(TrailRealm.vidaCrista).tagline,
+      _ => l10n.trailsHubStudyBody,
     },
   );
 }
@@ -679,11 +704,16 @@ extension on _TrailHub {
 /// O que há na porta, no card de apresentação acima dos caminhos.
 String _hubIntro(BuildContext context, _TrailHub hub) {
   final l10n = context.l10n;
-  return switch (hub) {
-    _TrailHub.bible => l10n.trailsDoorIntroBible,
-    _TrailHub.themes => l10n.trailsDoorIntroThemes,
-    _TrailHub.life => l10n.trailsDoorIntroLife,
-    _TrailHub.study => l10n.trailsDoorIntroStudy,
+  final extra = hub.shelf.extra;
+  if (extra != null) {
+    final intro = extra.localizedIntro;
+    return intro.isNotEmpty ? intro : extra.localizedSubtitle;
+  }
+  return switch (hub.shelf.name) {
+    'biblia' => l10n.trailsDoorIntroBible,
+    'tematicos' => l10n.trailsDoorIntroThemes,
+    'vidaCrista' => l10n.trailsDoorIntroLife,
+    _ => l10n.trailsDoorIntroStudy,
   };
 }
 
@@ -1150,7 +1180,7 @@ class _TrailDoorScreen extends StatelessWidget {
                     final whole = journey.categories.length > 1;
                     return _PathCard(
                       sky: journey.realm,
-                      art: 'assets/art/journey_${journey.name}.jpg',
+                      art: journey.art,
                       glyph: whole
                           ? visuals.glyph
                           : TrailVisuals.forCategory(

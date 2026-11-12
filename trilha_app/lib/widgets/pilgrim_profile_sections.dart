@@ -843,7 +843,7 @@ class PilgrimTrailPath extends StatelessWidget {
               title: compact
                   ? l10n.pilgrimTrail
                   : rest.isNotEmpty
-                  ? (owner ? l10n.pilgrimYourTrails : l10n.navTrails)
+                  ? (owner ? l10n.pilgrimYourTrails : l10n.pilgrimTrails)
                   : (owner ? l10n.pilgrimYourTrail : l10n.pilgrimTrail),
               whisper: rest.isEmpty
                   ? subtitle

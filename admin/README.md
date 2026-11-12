@@ -1,8 +1,38 @@
 # STWAY Admin
 
-Painel web (estilo Ipsat/Satélite) para gerenciar **trilhas**, **cenas**, **passos**, **perguntas** e **estudos (preparo)** no Firebase — sem precisar publicar nova versão do app.
+Painel web para revisar e corrigir o conteúdo no Firebase (banco V3), acompanhar relatos e o lançamento — sem publicar nova versão do app.
 
-Hierarquia no app e no painel: **Trilha → Cena → Passo → Preparo → Perguntas**.
+Hierarquia: **Trilha → Cena → Estudo + Perguntas** (5 gestos por modo: Observação, Compreensão, Interpretação).
+
+## Telas
+
+| Tela | Para quê |
+|---|---|
+| **Hoje** | Relatos abertos, edições do painel que faltam voltar para os arquivos (`v3:pull`), Pioneiro, versão do app e do catálogo, status do conteúdo por trilha |
+| **Explorar** | O catálogo como a aba Explorar do app mostra (`src/catalog-tree.js`, espelho de `trail_catalog.dart`). Migalha = o endereço do peregrino: **Novo Testamento › Mateus › Cena 3**. A cena abre em três abas: **Perguntas** (por modo, com a checagem V3 contra a JFAAL), **Estudo** e **Entrada** (título, verso âncora, Hoje). Link: `#explorar/<trilha>/<cena>/<aba>` |
+| **Relatos** | Erros, denúncias e sugestões; “Abrir pergunta” leva ao editor |
+| **Suporte** (só admin) | Conta por e-mail/uid (Plus, Pioneiro, relatos) e passe de trilha pelo código. Só leitura |
+| **Flags** (só admin) | Valores do Remote Config que o app lê. Mudar é no Console |
+
+As trilhas de Temas (Ansiedade, Conhecer a Deus, Entender a Bíblia) são definidas no app (`trilha_app/lib/data/entry_trails.dart`), não em `content_trails`; por isso a prateleira Temas aparece vazia no painel. Vocabulário: Explorar › trilha › cena › entrada · estudo · perguntas; o recurso de linha do tempo, lugares e personagens (em breve) se chama **Atlas**.
+
+## Corrigir uma pergunta pelo painel
+
+1. **Explorar** → trilha → cena → aba Perguntas → toque na pergunta. O editor mostra todos os campos V3 (dica, feedback por opção errada, `evidenceSpan`), o preview Na hora / Acerto / Erro e a checagem V3 ao vivo.
+2. Salvar vale no app na hora. A pergunta fica marcada (`panelEditedAt`).
+3. **Antes do próximo publish da trilha**, traga a edição para os arquivos locais:
+
+```bash
+npm run v3:pull -- --trail <slug>          # mostra o que mudou
+npm run v3:pull -- --trail <slug> --apply  # grava em <trilha>/cenas/*.json
+npm run v3:pull                            # lista pendências de todas as trilhas
+```
+
+O `v3:publish` **para** se houver edição do painel fora dos arquivos (senão ela sumiria).
+
+**Excluir = lixeira.** Pergunta excluída sai do app na hora e vai para `content_meta/panel_trash` (cópia inteira) por 30 dias. Restaure pelo cartão **Lixeira** no Hoje ou pela lixeira da cena em Explorar; o que passa de 30 dias some ao abrir o Hoje. Restaurar antes do `v3:pull` desfaz a exclusão; depois do pull, o próximo pull põe a pergunta de volta no arquivo. EN/ES vêm do app: depois do pull, rode `v3:translate`.
+
+Teste do editor: `npm run test:panel`.
 
 ## Stack
 
@@ -64,7 +94,7 @@ As traduções EN/ES **não** moram no Firestore: vão no app (`trilha_app/asset
 
 ### Auth
 
-As contas donas do projeto (`stway.app@gmail.com`, `contato.wocto@gmail.com`, `dalwesley@gmail.com`) entram com **Google** e não têm senha de E-mail/senha. Os scripts usam o OAuth do `firebase login` (CLI) para escrever no Firestore. Bootstrap está **locked** (`content_meta/bootstrap_locked`) — novos admins só via Console / admin existente.
+As contas donas do projeto (`stway.app@gmail.com`, `contato.wocto@gmail.com`, `dalwesley@gmail.com`) entram com **Google** (botão “Entrar com Google” no login; o domínio do painel precisa estar em Authentication → Settings → Authorized domains) e não têm senha de E-mail/senha. Os scripts usam o OAuth do `firebase login` (CLI) para escrever no Firestore. Bootstrap está **locked** (`content_meta/bootstrap_locked`) — novos admins só via Console / admin existente.
 
 ### Auditoria de rankings (Caravana)
 

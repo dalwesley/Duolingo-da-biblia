@@ -3,6 +3,7 @@
 const { initializeApp } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const { getMessaging } = require('firebase-admin/messaging');
+const { getAuth } = require('firebase-admin/auth');
 const functions = require('firebase-functions/v1');
 const { logger } = require('firebase-functions');
 const { defineSecret } = require('firebase-functions/params');
@@ -577,4 +578,37 @@ exports.onAuthUserDelete = functions
   .onDelete(async (user) => {
     const failed = await account.purgeUserData(getFirestore(), user.uid, logger);
     logger.info('conta: excluída', { uid: user.uid, failed });
+  });
+
+const moderation = require('./moderation');
+
+/** Painel admin: ver e moderar uma conta (ver moderation.js). */
+exports.moderateUser = functions
+  .region('us-central1')
+  .runWith({ timeoutSeconds: 120, memory: '256MB' })
+  .https.onCall(async (data, context) => {
+    if (!context.auth) {
+      throw new functions.https.HttpsError('unauthenticated', 'Entre no painel.');
+    }
+    try {
+      return await moderation.moderate(
+        { db: getFirestore(), auth: getAuth(), messaging: getMessaging(), fcmTokenOf, logger },
+        { uid: context.auth.uid, email: context.auth.token?.email },
+        data || {},
+      );
+    } catch (e) {
+      if (e instanceof moderation.ModerationError) {
+        throw new functions.https.HttpsError(e.code, e.message);
+      }
+      logger.error('moderação: falhou', { error: e.message, action: data?.action });
+      throw new functions.https.HttpsError('internal', e.message || 'Falhou.');
+    }
+  });
+
+/** Suspensão vencida: reativa o login (de hora em hora). */
+exports.liftSuspensions = functions.pubsub
+  .schedule('every 60 minutes')
+  .onRun(async () => {
+    const lifted = await moderation.liftExpired({ db: getFirestore(), auth: getAuth(), logger });
+    if (lifted) logger.info('moderação: suspensões encerradas', { lifted });
   });

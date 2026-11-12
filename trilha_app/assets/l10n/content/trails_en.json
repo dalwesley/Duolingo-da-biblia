@@ -335,6 +335,22 @@
     "pneumatologia": {
       "title": "Pneumatology",
       "description": "The Holy Spirit — person, work and fruits in the church."
+    },
+    "ansiedade": {
+      "title": "Anxiety",
+      "description": "Five scenes to cast tomorrow on the Father — then continue in the canon."
+    },
+    "conhecer-a-deus": {
+      "title": "Know God",
+      "description": "Five scenes from the Creator to the Word made flesh — then on to the Gospels."
+    },
+    "entender-a-biblia": {
+      "title": "Understand the Bible",
+      "description": "Seven scenes from creation to new creation — and back to Genesis 1–11."
+    },
+    "a-promessa": {
+      "title": "The Promise",
+      "description": "From Abraham to Christ in 12 scenes: the thread that sews the Bible together. Each scene also counts in its home trail."
     }
   },
   "modules": {
@@ -715,6 +731,27 @@
     },
     "pneumatologia:0": {
       "title": "Holy Spirit"
+    },
+    "ansiedade:0": {
+      "title": "Casting anxiety"
+    },
+    "conhecer-a-deus:0": {
+      "title": "God comes near"
+    },
+    "entender-a-biblia:0": {
+      "title": "One story"
+    },
+    "a-promessa:0": {
+      "title": "The promise made"
+    },
+    "a-promessa:1": {
+      "title": "The promise kept"
+    },
+    "a-promessa:2": {
+      "title": "The promise announced"
+    },
+    "a-promessa:3": {
+      "title": "The promise fulfilled"
     }
   },
   "missions": {
@@ -3830,6 +3867,190 @@
     },
     "mq-05-mar": {
       "centralInsight": "God hurls sins into the depths of the sea"
+    },
+    "dor-ansia-01": {
+      "title": "Treasures and anxiety",
+      "intro": "Where the treasure is, the heart is. Jesus joins Mammon and tomorrow.",
+      "hookNote": "The Father's care is the argument against anxiety — not the absence of need.",
+      "centralInsight": "Treasure pulls the heart",
+      "objective": "See how Jesus links treasure, lordship, and anxiety."
+    },
+    "dor-ansia-02": {
+      "title": "Contentment",
+      "intro": "Paul learned to be content in every circumstance — in Christ.",
+      "hookNote": "Paul's contentment is not stoicism: it is Christ in hunger and plenty.",
+      "centralInsight": "Christ is enough in hunger and plenty",
+      "objective": "Trade anxiety about having for contentment in Christ."
+    },
+    "dor-ansia-03": {
+      "title": "The Lord is my shepherd",
+      "intro": "I shall not want — Psalm 23 is trust, not magic.",
+      "hookNote": "The shepherd leads — even in the valley. What fades is not the struggle; it is fear and the sense of loneliness.",
+      "centralInsight": "There is a shepherd in the valley",
+      "objective": "Read Psalm 23 as care, not as a charm."
+    },
+    "dor-ansia-04": {
+      "title": "Our Father",
+      "intro": "Asking for daily bread is the opposite of anticipating the whole month.",
+      "hookNote": "Jesus teaches asking for the day — not the stockpile. The Kingdom comes before the bread.",
+      "centralInsight": "The bread is for today",
+      "objective": "Pray the day, not the census of fear."
+    },
+    "dor-ansia-05": {
+      "title": "Living hope",
+      "intro": "Peter anchors sufferers in a kept inheritance — then, the canon.",
+      "hookNote": "Hope does not deny suffering. It anchors it in the resurrection. Continue in the Sermon on the Mount.",
+      "centralInsight": "The inheritance is kept",
+      "objective": "Leave the pain trail for the curriculum: Sermon on the Mount."
+    },
+    "entrada-deus-01": {
+      "title": "In the beginning, God",
+      "intro": "Before everything, God. The Bible starts with who he is.",
+      "hookNote": "The Bible's first sentence is not about us: it is about God, who creates.",
+      "centralInsight": "God comes before everything",
+      "objective": "See that knowing God starts with him, not with us."
+    },
+    "entrada-deus-02": {
+      "title": "I AM",
+      "intro": "At the bush, God tells a fugitive his name.",
+      "hookNote": "Moses asks who is sending him. God answers with a name that depends on no one.",
+      "centralInsight": "God makes himself known by name",
+      "objective": "Understand what the name I AM reveals about God."
+    },
+    "entrada-deus-03": {
+      "title": "Holy, holy, holy",
+      "intro": "Isaiah sees the Lord on the throne, and the temple shakes.",
+      "hookNote": "God is not a bigger version of us. Holiness is what sets him apart from everything.",
+      "centralInsight": "God is holy",
+      "objective": "See why God's holiness changes whoever comes near him."
+    },
+    "entrada-deus-04": {
+      "title": "The Lord is my shepherd",
+      "intro": "The holy God also cares up close.",
+      "hookNote": "David calls the God of the throne a shepherd. The Holy One does not stay far away.",
+      "centralInsight": "The Holy One cares up close",
+      "objective": "Connect God's holiness to his care in everyday life."
+    },
+    "entrada-deus-05": {
+      "title": "The Word became flesh",
+      "intro": "In Jesus, God comes closer than ever.",
+      "hookNote": "John starts like Genesis: “In the beginning”. Now the Creator comes to live among us.",
+      "centralInsight": "In Jesus, God came near",
+      "objective": "See in Jesus the clearest way to know God."
+    },
+    "entrada-biblia-01": {
+      "title": "Creation",
+      "intro": "The story begins with God making a good world.",
+      "hookNote": "The whole Bible starts here: one God, a world made by him.",
+      "centralInsight": "The story begins with God",
+      "objective": "See creation as the starting point of the whole Bible."
+    },
+    "entrada-biblia-02": {
+      "title": "The fall",
+      "intro": "One question from the serpent, and everything breaks.",
+      "hookNote": "The Bible's problem begins with doubting God's word.",
+      "centralInsight": "The break begins with distrust",
+      "objective": "Understand the fall as the problem the rest of the Bible resolves."
+    },
+    "entrada-biblia-03": {
+      "title": "Promise",
+      "intro": "God calls one man to bless every family.",
+      "hookNote": "After the fall, God does not give up: he starts the answer with one family.",
+      "centralInsight": "God answers with a promise",
+      "objective": "See in Abraham the start of God's plan for every people."
+    },
+    "entrada-biblia-04": {
+      "title": "Rescue",
+      "intro": "Between the army and the sea, God opens a way.",
+      "hookNote": "The exodus becomes the Bible's pattern of salvation: God rescues those who cannot save themselves.",
+      "centralInsight": "Salvation comes from the Lord",
+      "objective": "Understand the exodus as the picture of salvation the Bible repeats."
+    },
+    "entrada-biblia-05": {
+      "title": "The Servant",
+      "intro": "A prophet sees someone wounded in the place of others.",
+      "hookNote": "Centuries before Jesus, Isaiah describes a Servant who carries the people's guilt.",
+      "centralInsight": "Someone carries the guilt in our place",
+      "objective": "See how the prophets point to a Savior who suffers."
+    },
+    "entrada-biblia-06": {
+      "title": "Resurrection",
+      "intro": "The tomb is empty. The story turns.",
+      "hookNote": "Everything before meets here: Jesus defeats the death that came in with the fall.",
+      "centralInsight": "Death does not have the last word",
+      "objective": "Understand the resurrection as the center of the Bible's story."
+    },
+    "entrada-biblia-07": {
+      "title": "New creation",
+      "intro": "The story ends where it began: God with his people.",
+      "hookNote": "The Bible opens with a garden and closes with a city. God remakes what the fall broke.",
+      "centralInsight": "God makes all things new",
+      "objective": "See the end of the Bible as the restoring of the beginning."
+    },
+    "promessa-01": {
+      "title": "In you, all the families",
+      "intro": "It all starts with a promise: land, offspring, and blessing for all the families of the earth. Follow that thread from Abraham to Christ.",
+      "hookNote": "God promises a childless man that through him all the families of the earth will be blessed."
+    },
+    "promessa-02": {
+      "title": "Count the stars",
+      "intro": "Abram still has no son. God takes him outside and tells him to look at the sky.",
+      "hookNote": "Abram believed, and it was counted to him as righteousness. Paul will come back to this verse."
+    },
+    "promessa-03": {
+      "title": "The Lord will provide",
+      "intro": "The son of the promise climbs the mountain. The promise seems at risk.",
+      "hookNote": "On Moriah, God provides the lamb in the son's place and confirms the promise with an oath."
+    },
+    "promessa-04": {
+      "title": "God remembers",
+      "intro": "Centuries later, Abraham's family is an enslaved people in Egypt. The promise seems dead. God has not forgotten.",
+      "hookNote": "God introduces himself as the God of Abraham, Isaac, and Jacob: the old promise drives the rescue."
+    },
+    "promessa-05": {
+      "title": "A people for the nations",
+      "intro": "Free from Egypt, the people reach Sinai. The promise takes the shape of a covenant.",
+      "hookNote": "Israel will be a kingdom of priests: Abraham's blessing passes through a people to reach the nations."
+    },
+    "promessa-06": {
+      "title": "In the promised land",
+      "intro": "Now in the land, Joshua retells the story and calls the people to choose whom they will serve.",
+      "hookNote": "The land was given; the people's faithfulness will fail. The promise will need someone greater than Israel."
+    },
+    "promessa-07": {
+      "title": "The chosen king",
+      "intro": "The people fail, but God does not give up. Now the promise narrows to a king: David.",
+      "hookNote": "God chooses the youngest of Jesse's sons. From David's line will come the king whose throne will have no end (2 Samuel 7)."
+    },
+    "promessa-08": {
+      "title": "The wounded Servant",
+      "intro": "The prophets announce someone who carries the guilt of others.",
+      "hookNote": "As on Moriah, someone takes another's place: the Servant is wounded for our transgressions."
+    },
+    "promessa-09": {
+      "title": "A new covenant",
+      "intro": "The Sinai covenant was broken. God promises another.",
+      "hookNote": "God promises to write the law on the heart and forgive sin. Jesus will call the cup of the supper the new covenant."
+    },
+    "promessa-10": {
+      "title": "Son of David, son of Abraham",
+      "intro": "Matthew opens the New Testament with Jesus, son of David, son of Abraham. The thread reaches a person.",
+      "hookNote": "Immanuel, God with us: the son promised to Abraham and the king promised to David are the same."
+    },
+    "promessa-11": {
+      "title": "Joy for all the people",
+      "intro": "The fulfillment arrives small: in a manger, announced to shepherds.",
+      "hookNote": "The great joy is for all the people: an echo of the blessing promised to all the families of the earth."
+    },
+    "promessa-12": {
+      "title": "The blessing reaches you",
+      "intro": "Paul ties the thread: the promise made to Abraham reaches those who believe.",
+      "hookNote": "In Christ, Abraham's blessing reaches the nations by faith. And the promise still points to the new creation."
+    },
+    "promessa-sintese": {
+      "title": "Crossing: the whole promise",
+      "intro": "Three bridges linking what was promised to what was fulfilled.",
+      "hookNote": "From the start, the blessing promised to Abraham was for all nations."
     }
   }
 }

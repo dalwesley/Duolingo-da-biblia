@@ -10,6 +10,11 @@
  * Perguntas: substitui o documento inteiro (sem merge), para não sobrar campo
  * antigo (ex.: `template` nos toques). Estudos: merge. Docs de genesis-1-11
  * que não existem no piloto são listados e só apagados com --delete-extras.
+ *
+ * Trava: se o painel admin editou ou excluiu algo desta trilha que os arquivos
+ * locais ainda não têm, o publish para (senão a edição some). Rode antes
+ * `npm run v3:pull -- --trail <slug> --apply`, ou passe --overwrite-panel-edits
+ * para descartar as edições do painel.
  */
 import { createRequire } from 'module';
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
@@ -18,6 +23,7 @@ import { fileURLToPath } from 'url';
 import { Firestore } from '@google-cloud/firestore';
 import { validateBank, formatReport } from './_bank_validator.mjs';
 import { argValue, trailDir } from './_v3_paths.mjs';
+import { diffFields, sameDoc } from './_v3_panel_edits.mjs';
 
 const require = createRequire(import.meta.url);
 const { getGlobalDefaultAccount, getProjectDefaultAccount } = require('firebase-tools/lib/auth');
@@ -30,6 +36,7 @@ const PROJECT = 'trilha-biblia';
 
 const apply = process.argv.includes('--apply');
 const deleteExtras = process.argv.includes('--delete-extras');
+const overwritePanel = process.argv.includes('--overwrite-panel-edits');
 
 function sanitize(value) {
   if (value && typeof value.toDate === 'function') return value.toDate().toISOString();
@@ -74,6 +81,25 @@ async function main() {
   console.log(`Backup: ${backupPath}`);
   console.log(`  Firestore hoje: ${backup.questions.length} perguntas de ${TRAIL}, ${Object.keys(backup.studies).length} estudos, catálogo v${backup.catalog?.version ?? '?'}`);
 
+  // Edições do painel que os arquivos locais ainda não têm.
+  const localById = new Map(questions.map((q) => [q.id, q]));
+  const pendingQ = backup.questions.filter((q) => q.panelEditedAt && (!localById.has(q.id) || !sameDoc(localById.get(q.id), q)));
+  const pendingS = Object.entries(backup.studies).filter(([slug, s]) => s.panelEditedAt
+    && diffFields(studies[slug] || {}, s).some((f) => f.remote !== undefined));
+  const delSnap = await db.collection('content_meta').doc('panel_deletes').get();
+  const panelDeletes = Object.entries(delSnap.data() || {}).filter(([, v]) => v?.trail === TRAIL);
+  const pendingD = panelDeletes.filter(([id]) => localById.has(id));
+  if (pendingQ.length || pendingS.length || pendingD.length) {
+    console.log(`\n! Edições do painel ainda fora dos arquivos locais:`);
+    for (const q of pendingQ) console.log(`    ~ ${q.id}${q.panelEditedBy ? ` (${q.panelEditedBy})` : ''}`);
+    for (const [slug] of pendingS) console.log(`    ~ estudo ${slug}`);
+    for (const [id] of pendingD) console.log(`    - ${id} (excluída no painel)`);
+    if (!overwritePanel) {
+      throw new Error(`Publish parado para não apagar essas edições. Rode: npm run v3:pull -- --trail ${TRAIL} --apply (ou --overwrite-panel-edits para descartar).`);
+    }
+    console.log('  --overwrite-panel-edits: as edições do painel serão descartadas.');
+  }
+
   const pilotIds = new Set(questions.map((q) => q.id));
   const existingIds = new Set(backup.questions.map((q) => q.id));
   const replaced = questions.filter((q) => existingIds.has(q.id)).length;
@@ -96,7 +122,14 @@ async function main() {
       return (b) => b.set(db.collection('content_bank_questions').doc(id), { ...data, updatedAt: Firestore.FieldValue.serverTimestamp() });
     }),
     ...Object.entries(studies).map(([slug, s]) => (b) =>
-      b.set(db.collection('content_mission_studies').doc(slug), { ...s, slug, updatedAt: Firestore.FieldValue.serverTimestamp() }, { merge: true })),
+      b.set(db.collection('content_mission_studies').doc(slug), {
+        ...s,
+        slug,
+        updatedAt: Firestore.FieldValue.serverTimestamp(),
+        // Publicado a partir do arquivo local: a edição do painel já está nele.
+        panelEditedAt: Firestore.FieldValue.delete(),
+        panelEditedBy: Firestore.FieldValue.delete(),
+      }, { merge: true })),
     ...(deleteExtras ? extras.map((id) => (b) => b.delete(db.collection('content_bank_questions').doc(id))) : []),
   ];
   for (let i = 0; i < writes.length; i += 200) {
@@ -104,6 +137,13 @@ async function main() {
     writes.slice(i, i + 200).forEach((w) => w(batch));
     await batch.commit();
     console.log(`  … ${Math.min(i + 200, writes.length)}/${writes.length}`);
+  }
+
+  if (panelDeletes.length) {
+    await db.collection('content_meta').doc('panel_deletes').set(
+      Object.fromEntries(panelDeletes.map(([id]) => [id, Firestore.FieldValue.delete()])),
+      { merge: true },
+    );
   }
 
   // Mesmo gatilho do painel admin: app vê versão nova e limpa o banco em cache.

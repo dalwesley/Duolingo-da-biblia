@@ -527,10 +527,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             isReplay: _noProgress,
             correct: widget.correct,
             total: widget.total,
-            alsoComplete: {
-              ...EntryTrails.linkedScenes(widget.missionSlug),
-              ...CuratedTrails.linkedScenes(widget.missionSlug),
-            },
+            alsoComplete: {...CuratedTrails.linkedScenes(widget.missionSlug)},
             mode: trailUsesDifficultyBank(widget.trailSlug)
                 ? progress.difficultyForTrail(widget.trailSlug) ??
                       TrailDifficulty.semente.id

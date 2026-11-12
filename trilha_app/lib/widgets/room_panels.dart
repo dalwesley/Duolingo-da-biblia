@@ -1317,12 +1317,14 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
       ];
     }
 
-    String shelfLabel(TrailShelf s) => switch (s) {
-      TrailShelf.biblia => context.l10n.trailsShelfBible,
-      TrailShelf.tematicos => context.l10n.trailsHubThemes,
-      TrailShelf.vidaCrista => TrailRealm.vidaCrista.label,
-      TrailShelf.teologia => context.l10n.trailsHubStudy,
-    };
+    String shelfLabel(TrailShelf s) => s.isExtra
+        ? s.label
+        : switch (s.name) {
+            'biblia' => context.l10n.trailsShelfBible,
+            'tematicos' => context.l10n.trailsHubThemes,
+            'vidaCrista' => TrailRealm.vidaCrista.label,
+            _ => context.l10n.trailsHubStudy,
+          };
 
     Widget chip(String label, TrailShelf? value) => Padding(
       padding: const EdgeInsets.only(right: AppSpace.sm),

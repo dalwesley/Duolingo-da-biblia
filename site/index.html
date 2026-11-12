@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>STWAY — o hábito de ler e estudar a Bíblia</title>
-  <meta name="description" content="Missões curtas para criar o hábito de ler e estudar a Bíblia. Seis gestos no texto, três profundidades e o hebraico por baixo da palavra. Teste fechado do STWAY." />
+  <meta name="description" content="Missões curtas para criar o hábito de ler e estudar a Bíblia. Seis gestos no texto, três profundidades e o hebraico por baixo da palavra. Grátis no Google Play." />
   <meta name="theme-color" content="#040910" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="STWAY — o hábito de ler e estudar a Bíblia" />
@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;1,9..144,400;1,9..144,500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Hebraico: só os caracteres usados na página -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@500&display=swap&text=%D6%B0%D6%B1%D6%B4%D6%B5%D6%B6%D6%B7%D6%B8%D6%B9%D6%BC%D7%81%D7%90%D7%91%D7%94%D7%95%D7%99%D7%9C%D7%9D%D7%9E%D7%A5%D7%A8%D7%A9%D7%AA" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=cine18" />
+  <link rel="stylesheet" href="/styles.css?v=loja2" />
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
@@ -58,7 +58,6 @@
     <a href="#strong" data-act="strong"><i></i><span>III · Strong</span></a>
     <a href="#jornada" data-act="jornada"><i></i><span>IV · A trilha</span></a>
     <a href="#app" data-act="app"><i></i><span>V · Um dia</span></a>
-    <a href="#teste" data-act="teste"><i></i><span>Entre no teste</span></a>
   </nav>
 
   <header class="site-header">
@@ -75,7 +74,10 @@
         <a class="quiet" href="/planos">Planos</a>
         <a class="quiet" href="/sobre">Sobre</a>
         <a class="quiet" href="/doar">Doar</a>
-        <a class="btn btn-gold btn-sm" href="#teste">Quero testar</a>
+        <span class="store-actions">
+          <a class="btn btn-gold btn-sm" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
+          <span class="btn btn-soon btn-sm" aria-disabled="true">iOS em breve</span>
+        </span>
       </nav>
     </div>
     <div class="scroll-meter" aria-hidden="true"><span></span></div>
@@ -106,7 +108,8 @@
         <div class="opening-copy">
           <h1>Missões curtas para ler e estudar a Bíblia <em>todo dia.</em></h1>
           <div class="hero-actions">
-            <a class="btn btn-gold btn-sheen" href="#teste">Quero testar</a>
+            <a class="btn btn-gold btn-sheen" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
+            <span class="btn btn-soon" aria-disabled="true">iOS em breve</span>
             <a class="btn btn-ghost" href="#palco">Ver como funciona</a>
           </div>
         </div>
@@ -373,54 +376,7 @@
       </div>
     </section>
 
-    <!-- VII. Teste -->
-    <section class="cta" id="teste" aria-label="Entre no teste">
-      <div class="cta-glow" aria-hidden="true"></div>
-      <div class="wrap split">
-        <div class="reveal">
-          <p class="kicker">Cadastro</p>
-          <h2 class="display">Entre no <em>teste.</em></h2>
-          <p class="section-lead">Estamos chamando um grupo pequeno para usar o app por uma semana. Sem post público. Você faz a missão e conta, com honestidade, se voltaria.</p>
-          <p class="section-lead">O teste é gratuito. Chamamos pelo WhatsApp quando a vaga abrir.</p>
-        </div>
-        <form id="form-tester" class="form-card reveal" novalidate>
-          <h3>Quero testar</h3>
-          <div class="hp" aria-hidden="true">
-            <label>Site <input name="website" tabindex="-1" autocomplete="off" /></label>
-          </div>
-          <label>
-            <span>Nome</span>
-            <input name="name" autocomplete="name" required maxlength="80" />
-          </label>
-          <label>
-            <span>E-mail</span>
-            <input name="email" type="email" autocomplete="email" required maxlength="120" />
-          </label>
-          <label>
-            <span>WhatsApp</span>
-            <input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(11) 90000-0000" required maxlength="30" />
-          </label>
-          <fieldset class="choices">
-            <legend class="field-label">Aparelho</legend>
-            <label><input type="radio" name="platform" value="android" required /> Android</label>
-            <label><input type="radio" name="platform" value="ios" /> iPhone</label>
-            <label><input type="radio" name="platform" value="both" /> Os dois</label>
-          </fieldset>
-          <label>
-            <span>O que te fez querer testar <em>(opcional)</em></span>
-            <textarea name="message" maxlength="1500"></textarea>
-          </label>
-          <label class="check">
-            <input type="checkbox" name="consent" value="sim" required />
-            <span>Concordo que a STWAY use meu nome, e-mail e WhatsApp para me chamar neste teste. <a href="/privacidade">Privacidade</a></span>
-          </label>
-          <button class="btn btn-gold btn-sheen" type="submit">Enviar cadastro</button>
-          <p class="form-note" role="status"></p>
-        </form>
-      </div>
-    </section>
-
-    <!-- VIII. Contato -->
+    <!-- VII. Contato -->
     <section class="contact" id="contato" aria-label="Fale conosco">
       <div class="wrap split">
         <div class="reveal">
@@ -466,7 +422,10 @@
         <footer>Salmos 119:105</footer>
       </blockquote>
       <div class="coda-cta reveal">
-        <a class="btn btn-gold btn-sheen" href="#teste">Dar o primeiro passo</a>
+        <span class="store-actions">
+          <a class="btn btn-gold btn-sheen" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
+          <span class="btn btn-soon" aria-disabled="true">iOS em breve</span>
+        </span>
       </div>
     </section>
   </main>
@@ -499,7 +458,8 @@
 
       <nav class="footer-col" aria-label="Participe">
         <h2>Participe</h2>
-        <a href="#teste">Entrar no teste</a>
+        <a href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
+        <span class="footer-soon">iOS em breve</span>
         <a href="#contato">Para igrejas</a>
         <a href="#contato">Imprensa</a>
         <a href="#contato">Fale conosco</a>
@@ -510,7 +470,7 @@
         <a href="mailto:stway.app@gmail.com">stway.app@gmail.com</a>
         <a href="/privacidade">Privacidade</a>
         <a href="/termos">Termos de uso</a>
-        <p class="footer-note">Teste fechado · Android e iPhone</p>
+        <p class="footer-note">Grátis no Google Play</p>
       </div>
     </div>
 
@@ -521,6 +481,6 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
-  <script src="/main.js?v=doar2" defer></script>
+  <script src="/main.js?v=loja1" defer></script>
 </body>
 </html>

@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "miqueias-sem-mq-03-monte-01": {
+  "question": "Em Miqueias 4:2, muitas nações dizem umas às outras que devem subir ao monte do Senhor.",
+  "learningObjective": "Observar o convite das nações.",
+  "feedbackCorrect": "O convite aparece na boca das próprias nações.",
+  "feedbackWrong": {
+   "false": "Releia o convite citado em Miqueias 4:2."
+  },
+  "hint": "Leia o que as nações dizem umas às outras.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-sem-mq-03-monte-02": {
+  "question": "Em Miqueias 4:2, toque o lugar para onde as nações querem subir.",
+  "learningObjective": "Identificar o monte do Senhor como destino.",
+  "feedbackCorrect": "É para esse lugar que o convite aponta.",
+  "feedbackWrong": {
+   "a": "Veredas são por onde andar depois de aprender.",
+   "c": "A casa é o destino seguinte; o primeiro nomeado é o anterior."
+  },
+  "hint": "Procure o primeiro destino nomeado no convite.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-sem-mq-03-monte-03": {
+  "question": "Segundo Miqueias 4:1, o que acontecerá com os povos em relação ao monte?",
+  "learningObjective": "Observar o movimento dos povos.",
+  "feedbackCorrect": "O texto mostra uma multidão indo ao monte exaltado.",
+  "feedbackWrong": {
+   "a": "Os povos não fogem; eles se dirigem ao monte.",
+   "b": "Nada é destruído neste versículo; o monte é exaltado.",
+   "c": "O movimento é de povos inteiros, não só de reis."
+  },
+  "hint": "Leia o fim do versículo.",
+  "options": {
+   "a": "Fugirão dele assustados",
+   "b": "Destruirão suas muralhas",
+   "c": "Enviarão apenas seus reis",
+   "d": "Afluirão a ele em multidão"
+  },
+  "_verso": "Nos últimos dias, o monte da casa do Senhor será estabelecido no cimo dos montes e se exaltará acima das colinas, e os povos afluirão a ele."
+ },
+ "miqueias-sem-mq-03-monte-04": {
+  "question": "Monte Miqueias 4:2 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Miqueias 4:2.",
+  "feedbackCorrect": "A ordem abre com as nações, passa pelo convite e chega à casa de Deus.",
+  "feedbackWrong": {
+   "default": "Comece pelas muitas nações que falam."
+  },
+  "hint": "O versículo começa com muitas nações.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-sem-mq-03-monte-05": {
+  "question": "Em Miqueias 4:2, o que as nações querem que Deus lhes ensine?",
+  "learningObjective": "Lembrar o que as nações pedem para aprender.",
+  "feedbackCorrect": "Aprender isso muda o jeito de viver dos povos.",
+  "feedbackWrong": {
+   "a": "Guerras são o que será abandonado, não ensinado como caminho.",
+   "b": "Colheitas não são o conteúdo do ensino pedido."
+  },
+  "hint": "Pense no que se aprende para depois andar.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-sem-mq-03-monte-06": {
+  "question": "O que Miqueias 4:2 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a subida das nações ao desejo de aprender.",
+  "feedbackCorrect": "Os povos sobem porque querem ser ensinados por Deus.",
+  "feedbackWrong": {
+   "a": "A subida não é para travar guerra no monte.",
+   "b": "Eles pedem ensino a Deus, não o oferecem a ele."
+  },
+  "hint": "Veja o motivo da subida no versículo.",
+  "options": {
+   "a": "Povos sobem para guerrear",
+   "b": "Nações sobem para ensinar Deus",
+   "c": "Nações buscam aprender de Deus"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-mq-03-monte-01": {
+  "question": "Em Miqueias 4:2, as nações sobem ao monte para ensinar a Deus os caminhos delas.",
+  "learningObjective": "Compreender quem ensina e quem aprende.",
+  "feedbackCorrect": "A direção é contrária: elas sobem para ser ensinadas.",
+  "feedbackWrong": {
+   "true": "Releia quem ensina e quem aprende em Miqueias 4:2."
+  },
+  "hint": "Veja quem ensina e quem aprende no monte.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-mq-03-monte-02": {
+  "question": "Em Miqueias 4:2, toque as palavras que mostram o motivo da subida das nações.",
+  "learningObjective": "Reconhecer o marcador de propósito.",
+  "feedbackCorrect": "Essas palavras ligam a subida ao ensino desejado.",
+  "feedbackWrong": {
+   "a": "Venham é o convite, não o motivo da subida.",
+   "b": "Porque explica de onde procede a lei, não o motivo inicial."
+  },
+  "hint": "Procure a expressão que vem antes do verbo ensinar.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-mq-03-monte-03": {
+  "question": "Como Miqueias 4:3 continua a cena de Miqueias 4:2?",
+  "learningObjective": "Relacionar ensino das nações e fim da guerra.",
+  "feedbackCorrect": "Depois do ensino, Deus julga e o clima de guerra muda.",
+  "feedbackWrong": {
+   "b": "O treino de guerra é abandonado, não aperfeiçoado.",
+   "c": "A instrução alcança muitos povos, não fica restrita.",
+   "d": "As armas viram ferramentas; não são guardadas para atacar."
+  },
+  "hint": "Veja o que Deus faz logo depois da subida.",
+  "options": {
+   "a": "O ensino leva ao fim da guerra",
+   "b": "As nações treinam melhor para lutar",
+   "c": "Só uma nação recebe a instrução",
+   "d": "As armas são guardadas para atacar"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém. E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-cam-mq-03-monte-04": {
+  "question": "Como avança a cena em Miqueias 4:1–2?",
+  "learningObjective": "Compreender os movimentos de Miqueias 4:1–2.",
+  "feedbackCorrect": "Primeiro o monte exaltado, depois os povos, então o pedido de ensino.",
+  "feedbackWrong": {
+   "default": "O pedido para aprender fecha o movimento."
+  },
+  "hint": "O ensino pedido é o ponto de chegada.",
+  "options": {
+   "a": "O monte da casa é exaltado",
+   "b": "Os povos afluem ao monte",
+   "c": "As nações pedem para aprender"
+  },
+  "_verso": "Nos últimos dias, o monte da casa do Senhor será estabelecido no cimo dos montes e se exaltará acima das colinas, e os povos afluirão a ele. E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-mq-03-monte-05": {
+  "question": "Em Miqueias 4:2, o que procederá de Sião para as nações?",
+  "learningObjective": "Lembrar o que sai de Sião.",
+  "feedbackCorrect": "É essa palavra que guia os povos que sobem.",
+  "feedbackWrong": {
+   "b": "Colheita não é o que sai de Sião no versículo.",
+   "c": "Guerra é o que fica para trás nesta cena."
+  },
+  "hint": "Olhe a explicação no fim do versículo.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-mq-03-monte-06": {
+  "question": "O que liga Miqueias 4:2 a Isaías 2:3?",
+  "learningObjective": "Relacionar Miqueias e Isaías sobre as nações.",
+  "feedbackCorrect": "Os dois profetas veem povos subindo para ser ensinados.",
+  "feedbackWrong": {
+   "a": "A subida busca instrução, não batalha.",
+   "c": "Nenhum dos textos fecha o monte a Israel."
+  },
+  "hint": "Compare quem sobe e para quê nos dois textos.",
+  "options": {
+   "a": "Povos sobem para batalhar",
+   "b": "Nações sobem para aprender",
+   "c": "Monte fechado só para Israel"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-pro-mq-03-monte-01": {
+  "question": "Miqueias 4:3 liga a instrução de Deus ao fim do aprendizado da guerra entre as nações.",
+  "learningObjective": "Interpretar o fim da guerra em Miqueias 4:3.",
+  "feedbackCorrect": "O texto une juízo de Deus, armas transformadas e guerra esquecida.",
+  "feedbackWrong": {
+   "false": "Releia o fim de Miqueias 4:3 sobre aprender a guerra."
+  },
+  "hint": "Compare o que o Senhor faz com o que as nações deixam de fazer.",
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-pro-mq-03-monte-02": {
+  "question": "Em Miqueias 4:3, toque em que as espadas serão transformadas.",
+  "learningObjective": "Sustentar a imagem de paz com o texto.",
+  "feedbackCorrect": "A imagem troca instrumento de morte por trabalho no campo.",
+  "feedbackWrong": {
+   "a": "Espadas são o ponto de partida, não o resultado.",
+   "c": "Poderosas descreve nações corrigidas, não o novo uso do metal."
+  },
+  "hint": "Procure o destino dado ao metal das armas.",
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-pro-mq-03-monte-03": {
+  "question": "Que leitura Miqueias 4:3–4 sustenta sobre a paz anunciada?",
+  "learningObjective": "Escolher a interpretação da paz de Miqueias 4.",
+  "feedbackCorrect": "A paz nasce da ação de Deus e muda armas e rotina.",
+  "feedbackWrong": {
+   "b": "O descanso inclui gente comum sob sua planta, não só líderes.",
+   "c": "Força militar é justamente o que sai de cena.",
+   "d": "O texto não adia a paz para esforço humano sem Deus."
+  },
+  "hint": "Junte armas transformadas e descanso sem medo.",
+  "options": {
+   "a": "Deus traz paz que muda a vida",
+   "b": "Só governantes terão descanso",
+   "c": "A paz vem da força militar",
+   "d": "Cada povo cria paz sem Deus"
+  },
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra. Mas cada um se sentará debaixo da sua videira e debaixo da sua figueira, e não haverá quem os espante porque a boca do Senhor dos Exércitos o declarou."
+ },
+ "miqueias-pro-mq-03-monte-04": {
+  "question": "Qual sequência revela o sentido de Miqueias 4:3–4?",
+  "learningObjective": "Ver o caminho da instrução à paz.",
+  "feedbackCorrect": "Ensinar e julgar levam a trabalhar e descansar em paz.",
+  "feedbackWrong": {
+   "default": "Comece pelas nações aprendendo com Deus."
+  },
+  "hint": "Pense no caminho do monte ao descanso.",
+  "options": {
+   "a": "Nações aprendem os caminhos de Deus",
+   "b": "Espadas viram ferramentas de trabalho",
+   "c": "Cada um descansa sob sua planta"
+  },
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-pro-mq-03-monte-05": {
+  "question": "Em Miqueias 4:3, o que as nações não aprenderão mais?",
+  "learningObjective": "Lembrar o que deixa de ser aprendido.",
+  "feedbackCorrect": "O fim do treino para lutar marca a paz prometida.",
+  "feedbackWrong": {
+   "a": "Caminhos de Deus são aprendidos, não abandonados.",
+   "c": "Trabalho no campo é o novo uso das ferramentas."
+  },
+  "hint": "Olhe a última afirmação do versículo.",
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-pro-mq-03-monte-06": {
+  "question": "O que liga Miqueias 4:2 a Apocalipse 21:24?",
+  "learningObjective": "Ligar as nações de Miqueias ao desfecho bíblico.",
+  "feedbackCorrect": "O começo e o fim da Bíblia mostram povos alcançados por Deus.",
+  "feedbackWrong": {
+   "a": "No fim, as nações não ficam fora da luz de Deus.",
+   "b": "A presença de Deus não é cenário vazio de povos."
+  },
+  "hint": "Compare o lugar dos povos nos dois trechos.",
+  "options": {
+   "a": "Povos ficam fora da luz final",
+   "b": "A cidade final não tem nações",
+   "c": "Nações andam na luz de Deus"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "estudo:mq-03-monte": {
+  "context": "Miqueias anuncia um futuro em que o monte da casa do Senhor será exaltado. Nações e povos sobem a ele não para guerrear, mas para aprender os caminhos de Deus.",
+  "focusQuestion": "O que você precisa aprender de Deus antes de buscar paz do seu jeito?",
+  "keywordGloss": "O monte da casa do Senhor é o lugar de onde saem a instrução e a palavra para as nações.",
+  "reflectionPrompts": [
+   "Subir para aprender",
+   "Caminhos de Deus",
+   "Espadas viram ferramentas"
+  ],
+  "facts": [
+   "O monte da casa do Senhor será estabelecido no cimo dos montes.",
+   "Os povos afluirão ao monte da casa do Senhor.",
+   "Muitas nações convidam umas às outras a subir ao monte do Senhor.",
+   "As nações querem aprender os caminhos de Deus e andar pelas suas veredas.",
+   "Espadas virarão relhas de arados e lanças virarão podadeiras.",
+   "Cada um se sentará debaixo da sua videira e da sua figueira sem medo."
+  ],
+  "_verso": "Nos últimos dias, o monte da casa do Senhor será estabelecido no cimo dos montes e se exaltará acima das colinas, e os povos afluirão a ele. E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ }
+}

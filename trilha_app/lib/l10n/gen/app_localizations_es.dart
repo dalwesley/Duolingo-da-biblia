@@ -2487,11 +2487,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exploreSoonEntryBadge => 'Pronto';
 
   @override
-  String get exploreSoonEntryTitle => 'Línea del tiempo, mapas y personajes';
+  String get exploreSoonEntryTitle =>
+      'Atlas: línea del tiempo, lugares y personajes';
 
   @override
   String get exploreSoonItemAtlas =>
-      'Mapas: ciudades, viajes y dónde ocurrió cada escena';
+      'Mapas y lugares: ciudades, viajes y dónde ocurrió cada escena';
 
   @override
   String get exploreSoonItemCharacters =>
@@ -2512,7 +2513,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exploreSoonPickHeader => '¿Qué quieres usar?';
 
   @override
-  String get exploreSoonTitle => 'Explorar la Biblia está llegando';
+  String get exploreSoonTitle => 'El Atlas de la Biblia está llegando';
 
   @override
   String get feedbackAlmost => 'Casi';
@@ -5685,7 +5686,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get navTogether => 'Juntos';
 
   @override
-  String get navTrails => 'Rutas';
+  String get navTrails => 'Explorar';
 
   @override
   String get nextStepDeepenCta => 'Empezar';
@@ -6740,6 +6741,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get pilgrimTrail => 'Ruta';
+
+  @override
+  String get pilgrimTrails => 'Rutas';
 
   @override
   String pilgrimTrailsInProgress(int count) {
@@ -8342,6 +8346,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomStudyFallbackTitle => 'Estudio de la semana';
 
   @override
+  String sceneAddress(String collection, String trail, int number) {
+    return '$collection › $trail › Escena $number';
+  }
+
+  @override
   String get sceneStudyCta => 'Para profundizar';
 
   @override
@@ -9337,7 +9346,8 @@ class AppLocalizationsEs extends AppLocalizations {
       'Inicia sesión para enviar la sugerencia.';
 
   @override
-  String get suggestionTrailHintBoth => 'Elige un área y describe la ruta.';
+  String get suggestionTrailHintBoth =>
+      'Elige una colección y describe la ruta.';
 
   @override
   String get suggestionTrailHintRealm => 'Elige dónde encaja esta ruta.';
@@ -9346,7 +9356,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get suggestionTrailHintText => 'Describe la ruta — al menos 4 letras.';
 
   @override
-  String get suggestionTrailPlaceholder => 'Elige un área y describe la ruta…';
+  String get suggestionTrailPlaceholder =>
+      'Elige una colección y describe la ruta…';
 
   @override
   String get suggestionTrailRealmLabel => 'Dónde encaja';

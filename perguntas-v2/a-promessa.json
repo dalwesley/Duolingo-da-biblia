@@ -1,0 +1,411 @@
+[
+  {
+    "id": "a-promessa-sem-promessa-sintese-01",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "true_false",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Em Gênesis 22:8, Abraão diz que Deus mesmo proverá o cordeiro.",
+    "prompt": "Em Gênesis 22:8, Abraão diz que Deus mesmo proverá o cordeiro.",
+    "cue": "Em Gênesis 22:8, Abraão diz que Deus mesmo proverá o cordeiro.",
+    "verseRef": "Gênesis 22:8",
+    "evidence": [
+      "Gênesis 22:8"
+    ],
+    "passageText": "E Abraão respondeu: Deus proverá para si, meu filho, o cordeiro para o holocausto. E assim, ambos continuaram a caminhar juntos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "hint": "Veja quem Abraão diz que vai prover.",
+    "feedbackCorrect": "Abraão confia que o próprio Deus vai prover o cordeiro do sacrifício.",
+    "evidenceSpan": "Deus proverá para si, meu filho, o cordeiro",
+    "feedbackWrong": {
+      "false": "Gênesis 22:8 diz que é Deus quem proverá o cordeiro."
+    }
+  },
+  {
+    "id": "a-promessa-sem-promessa-sintese-02",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "choice",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Em Jeremias 31:31, o que o Senhor promete estabelecer?",
+    "prompt": "Em Jeremias 31:31, o que o Senhor promete estabelecer?",
+    "cue": "Em Jeremias 31:31, o que o Senhor promete estabelecer?",
+    "verseRef": "Jeremias 31:31",
+    "evidence": [
+      "Jeremias 31:31"
+    ],
+    "passageText": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um novo templo"
+      },
+      {
+        "id": "b",
+        "text": "Uma nova aliança"
+      },
+      {
+        "id": "c",
+        "text": "Um novo rei em Judá"
+      },
+      {
+        "id": "d",
+        "text": "Uma nova terra para o povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "hint": "Procure o que vem depois de \"estabelecerei\".",
+    "feedbackCorrect": "Deus promete começar de novo a sua relação com o povo: uma nova aliança.",
+    "evidenceSpan": "estabelecerei uma nova aliança",
+    "feedbackWrong": {
+      "a": "Jeremias 31:31 não fala de templo, e sim de aliança.",
+      "c": "O versículo não promete um rei: promete uma nova aliança.",
+      "d": "A promessa aqui não é de terra: é de uma nova aliança."
+    }
+  },
+  {
+    "id": "a-promessa-sem-promessa-sintese-03",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "true_false",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Em Gênesis 12:3, Deus promete que em Abrão todas as famílias da terra serão benditas.",
+    "prompt": "Em Gênesis 12:3, Deus promete que em Abrão todas as famílias da terra serão benditas.",
+    "cue": "Em Gênesis 12:3, Deus promete que em Abrão todas as famílias da terra serão benditas.",
+    "verseRef": "Gênesis 12:3",
+    "evidence": [
+      "Gênesis 12:3"
+    ],
+    "passageText": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "hint": "Veja até onde a bênção chega.",
+    "feedbackCorrect": "Desde o começo, a bênção prometida a Abrão tinha alcance mundial.",
+    "evidenceSpan": "em você todas as famílias da terra serão benditas",
+    "feedbackWrong": {
+      "false": "Gênesis 12:3 diz que todas as famílias da terra serão benditas em Abrão."
+    }
+  },
+  {
+    "id": "a-promessa-cam-promessa-sintese-01",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Segundo João 1:29, quem é o cordeiro que Abraão disse que Deus proveria?",
+    "prompt": "Segundo João 1:29, quem é o cordeiro que Abraão disse que Deus proveria?",
+    "cue": "Segundo João 1:29, quem é o cordeiro que Abraão disse que Deus proveria?",
+    "verseRef": "Gênesis 22:8",
+    "evidence": [
+      "Gênesis 22:8",
+      "João 1:29"
+    ],
+    "passageText": "E Abraão respondeu: Deus proverá para si, meu filho, o cordeiro para o holocausto. E assim, ambos continuaram a caminhar juntos.",
+    "passageA": {
+      "ref": "Gênesis 22:8",
+      "text": "E Abraão respondeu: Deus proverá para si, meu filho, o cordeiro para o holocausto. E assim, ambos continuaram a caminhar juntos."
+    },
+    "passageB": {
+      "ref": "João 1:29",
+      "text": "No dia seguinte, João viu Jesus, que se aproximava dele, e disse: Eis o Cordeiro de Deus, que tira o pecado do mundo!"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Isaque, o filho de Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Jesus, o Cordeiro de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Um carneiro do templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "hint": "Veja para quem João Batista aponta.",
+    "feedbackCorrect": "João Batista aponta Jesus como o Cordeiro que tira o pecado do mundo.",
+    "evidenceSpan": "Deus proverá para si, meu filho, o cordeiro",
+    "feedbackWrong": {
+      "a": "Isaque é o filho poupado; João aponta outro Cordeiro: Jesus.",
+      "c": "João não fala de animal: aponta para Jesus."
+    }
+  },
+  {
+    "id": "a-promessa-cam-promessa-sintese-02",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Segundo Lucas 22:20, onde está a nova aliança prometida em Jeremias 31:31?",
+    "prompt": "Segundo Lucas 22:20, onde está a nova aliança prometida em Jeremias 31:31?",
+    "cue": "Segundo Lucas 22:20, onde está a nova aliança prometida em Jeremias 31:31?",
+    "verseRef": "Jeremias 31:31",
+    "evidence": [
+      "Jeremias 31:31",
+      "Lucas 22:20"
+    ],
+    "passageText": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "passageA": {
+      "ref": "Jeremias 31:31",
+      "text": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "passageB": {
+      "ref": "Lucas 22:20",
+      "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo: Este cálice é a nova aliança no meu sangue, que é derramado por vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nas tábuas de pedra do Sinai"
+      },
+      {
+        "id": "b",
+        "text": "No templo reconstruído"
+      },
+      {
+        "id": "c",
+        "text": "No sangue de Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "hint": "Veja o que Jesus diz ao tomar o cálice.",
+    "feedbackCorrect": "Na ceia, Jesus diz que o cálice é a nova aliança no seu sangue.",
+    "evidenceSpan": "estabelecerei uma nova aliança",
+    "feedbackWrong": {
+      "a": "As tábuas são da primeira aliança; Jesus fala do seu sangue.",
+      "b": "Lucas 22:20 não fala de templo: fala do cálice e do sangue."
+    }
+  },
+  {
+    "id": "a-promessa-cam-promessa-sintese-03",
+    "trail": "a-promessa",
+    "section": "promessa-sintese",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "question": "Segundo Gálatas 3:8, como as nações recebem a bênção prometida a Abraão?",
+    "prompt": "Segundo Gálatas 3:8, como as nações recebem a bênção prometida a Abraão?",
+    "cue": "Segundo Gálatas 3:8, como as nações recebem a bênção prometida a Abraão?",
+    "verseRef": "Gênesis 12:3",
+    "evidence": [
+      "Gênesis 12:3",
+      "Gálatas 3:8"
+    ],
+    "passageText": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas.",
+    "passageA": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "passageB": {
+      "ref": "Gálatas 3:8",
+      "text": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Pelo sangue de Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Pela lei de Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "hint": "Procure como Deus justifica os gentios.",
+    "feedbackCorrect": "Deus justifica os gentios pela fé; assim a bênção de Abraão chega a todos.",
+    "evidenceSpan": "em você todas as famílias da terra serão benditas",
+    "feedbackWrong": {
+      "b": "Paulo não fala de sangue de família: fala de fé.",
+      "c": "Gálatas 3:8 diz que os gentios são justificados pela fé."
+    }
+  },
+  {
+    "id": "a-promessa-pro-promessa-sintese-01",
+    "evidence": [
+      "Gênesis 22:8",
+      "João 1:29"
+    ],
+    "question": "O que Gênesis 22:8 comunica que se liga a João 1:29?",
+    "passageText": "E Abraão respondeu: Deus proverá para si, meu filho, o cordeiro para o holocausto. E assim, ambos continuaram a caminhar juntos.",
+    "section": "promessa-sintese",
+    "passageB": {
+      "ref": "João 1:29",
+      "text": "No dia seguinte, João viu Jesus, que se aproximava dele, e disse: Eis o Cordeiro de Deus, que tira o pecado do mundo!"
+    },
+    "type": "connect",
+    "passageA": {
+      "ref": "Gênesis 22:8",
+      "text": "E Abraão respondeu: Deus proverá para si, meu filho, o cordeiro para o holocausto. E assim, ambos continuaram a caminhar juntos."
+    },
+    "difficulty": "profundezas",
+    "feedbackWrong": {
+      "b": "Abraão obedece, mas quem provê o cordeiro é Deus.",
+      "c": "João não fala do monte: fala do Cordeiro que tira o pecado."
+    },
+    "trail": "a-promessa",
+    "cue": "O que Gênesis 22:8 comunica que se liga a João 1:29?",
+    "verseRef": "Gênesis 22:8",
+    "hint": "Veja quem provê e o que é provido.",
+    "skill": "interpret",
+    "options": [
+      {
+        "id": "a",
+        "text": "O cordeiro que Deus provê"
+      },
+      {
+        "id": "b",
+        "text": "A obediência que salva"
+      },
+      {
+        "id": "c",
+        "text": "O monte como lugar de culto"
+      }
+    ],
+    "feedbackCorrect": "Deus provê o cordeiro no Moriá; João aponta Jesus como o Cordeiro.",
+    "evidenceSpan": "Deus proverá para si, meu filho, o cordeiro",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Gênesis 22:8 comunica que se liga a João 1:29?"
+  },
+  {
+    "id": "a-promessa-pro-promessa-sintese-02",
+    "evidence": [
+      "Jeremias 31:31",
+      "Lucas 22:20"
+    ],
+    "question": "O que Jeremias 31:31 comunica que se liga a Lucas 22:20?",
+    "passageText": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "section": "promessa-sintese",
+    "passageB": {
+      "ref": "Lucas 22:20",
+      "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo: Este cálice é a nova aliança no meu sangue, que é derramado por vocês."
+    },
+    "type": "connect",
+    "passageA": {
+      "ref": "Jeremias 31:31",
+      "text": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "difficulty": "profundezas",
+    "feedbackWrong": {
+      "a": "Jeremias diz que não será como a aliança feita com os pais.",
+      "c": "A aliança é com a casa de Israel; Jesus a dá aos discípulos no cálice."
+    },
+    "trail": "a-promessa",
+    "cue": "O que Jeremias 31:31 comunica que se liga a Lucas 22:20?",
+    "verseRef": "Jeremias 31:31",
+    "hint": "Procure a palavra que os dois textos repetem.",
+    "skill": "interpret",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei do Sinai repetida"
+      },
+      {
+        "id": "b",
+        "text": "Nova aliança no sangue de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Uma aliança só para os profetas"
+      }
+    ],
+    "feedbackCorrect": "Jeremias promete uma nova aliança; na ceia, Jesus diz que ela vem no seu sangue.",
+    "evidenceSpan": "estabelecerei uma nova aliança",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Jeremias 31:31 comunica que se liga a Lucas 22:20?"
+  },
+  {
+    "id": "a-promessa-pro-promessa-sintese-03",
+    "evidence": [
+      "Gênesis 12:3",
+      "Gálatas 3:8"
+    ],
+    "question": "O que Gênesis 12:3 comunica que se liga a Gálatas 3:8?",
+    "passageText": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas.",
+    "section": "promessa-sintese",
+    "passageB": {
+      "ref": "Gálatas 3:8",
+      "text": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos."
+    },
+    "type": "connect",
+    "passageA": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "difficulty": "profundezas",
+    "feedbackWrong": {
+      "a": "A promessa já dizia todas as famílias da terra.",
+      "b": "Paulo diz que Deus justifica as nações pela fé."
+    },
+    "trail": "a-promessa",
+    "cue": "O que Gênesis 12:3 comunica que se liga a Gálatas 3:8?",
+    "verseRef": "Gênesis 12:3",
+    "hint": "Veja quem é abençoado e por qual caminho.",
+    "skill": "interpret",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bênção fica só com Israel"
+      },
+      {
+        "id": "b",
+        "text": "A bênção vem pela circuncisão"
+      },
+      {
+        "id": "c",
+        "text": "Evangelho às nações pela fé"
+      }
+    ],
+    "feedbackCorrect": "Paulo lê Gênesis 12 como evangelho: as nações abençoadas pela fé.",
+    "evidenceSpan": "todas as famílias da terra serão benditas",
+    "learningObjective": "Ligar a promessa a Abraão ao seu cumprimento em Cristo.",
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "O que Gênesis 12:3 comunica que se liga a Gálatas 3:8?"
+  }
+]

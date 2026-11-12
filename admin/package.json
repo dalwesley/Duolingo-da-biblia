@@ -12,6 +12,8 @@
     "audit:rankings": "node scripts/audit_rankings.mjs",
     "audit:rankings:fix": "node scripts/audit_rankings.mjs --fix",
     "test:rankings": "node --test scripts/_ranking_mirror.test.mjs",
+    "test:panel": "node scripts/test_panel.mjs",
+    "test:funnel": "node --test scripts/funnel_stats.test.mjs",
     "v3:inputs": "node scripts/v3_inputs.mjs",
     "v3:generate": "node scripts/v3_generate.mjs",
     "v3:validate": "node scripts/validate_pilot_v3.mjs",
@@ -20,6 +22,7 @@
     "v3:translate": "node scripts/v3_translate.mjs",
     "v3:publish": "node scripts/publish_pilot_v3.mjs",
     "v3:manual": "node scripts/v3_manual.mjs",
+    "v3:pull": "node scripts/v3_pull_edits.mjs",
     "arte:cenas": "node scripts/scene_art_prompts.mjs"
   },
   "dependencies": {
@@ -29,6 +32,7 @@
     "@google-cloud/firestore": "^9.0.0",
     "firebase-admin": "^14.2.0",
     "firebase-tools": "^15.27.0",
+    "jsdom": "^24.1.3",
     "vite": "^6.3.5"
   }
 }

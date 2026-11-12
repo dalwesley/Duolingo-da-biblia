@@ -112,6 +112,9 @@ class _LessonScreenState extends State<LessonScreen>
   Mission? _mission;
   String? _trailSlug;
 
+  /// "Novo Testamento › Mateus › Cena 3" — onde a pessoa está, na entrada.
+  String? _address;
+
   /// A cena veio pela própria trilha (não Caminhada, grupo ou Desafio).
   bool _choosesTrail = false;
 
@@ -291,6 +294,7 @@ class _LessonScreenState extends State<LessonScreen>
     Mission? mission = widget.missionOverride;
     String? trailSlug;
     String? moduleTitle;
+    String? address;
 
     if (mission != null) {
       trailSlug = 'genesis-1-11';
@@ -301,6 +305,15 @@ class _LessonScreenState extends State<LessonScreen>
       if (trailSlug != null) {
         final trail = await _repo.getTrailBySlug(trailSlug);
         if (trail != null) {
+          // Endereço da entrada: coleção › trilha › Cena N.
+          final n = trail.missionSlugs.indexOf(widget.missionSlug);
+          if (n >= 0 && mounted) {
+            address = context.l10n.sceneAddress(
+              trail.journey.label,
+              trail.localizedTitle,
+              n + 1,
+            );
+          }
           for (final mod in trail.modules) {
             if (mod.missions.any((m) => m.slug == widget.missionSlug)) {
               moduleTitle = mod.localizedTitle;
@@ -502,6 +515,7 @@ class _LessonScreenState extends State<LessonScreen>
     setState(() {
       _baseMission = mission!;
       _trailSlug = trailSlug;
+      _address = address;
       _pickedIds = plan.bankQuestionIds;
       _exercises = List<Exercise>.from(plan.acts);
       _closingInsight = plan.insight;
@@ -1443,7 +1457,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _Phase.insight => context.l10n.commonToday,
                               },
                               subtitle: switch (_phase) {
-                                _Phase.intro => null,
+                                _Phase.intro => _address,
                                 _Phase.quiz => null,
                                 // O pedido já está no balão do Anan.
                                 _Phase.micro => null,

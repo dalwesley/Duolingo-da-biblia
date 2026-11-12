@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-05-01": {
+  "question": "Em Isaías 53:3, o Servo era desprezado e rejeitado entre os homens.",
+  "learningObjective": "Observar como o povo tratava o Servo.",
+  "feedbackCorrect": "O texto diz que ele era desprezado e o mais rejeitado; ninguém lhe dava atenção.",
+  "feedbackWrong": {
+   "false": "Releia o começo de Isaías 53:3: ele era desprezado e considerado o mais rejeitado."
+  },
+  "hint": "Olhe o começo do versículo.",
+  "_verso": "Ele era desprezado e considerado o mais rejeitado entre os homens; um homem de dores, familiarizado com o sofrimento; como aquele de quem os homens escondem o rosto, era desprezado e não lhe demos atenção."
+ },
+ "entender-a-biblia-sem-entrada-biblia-05-02": {
+  "question": "Em Isaías 53:6, toque quem fez cair sobre o Servo a iniquidade de todos.",
+  "learningObjective": "Identificar quem põe a culpa do povo sobre o Servo.",
+  "feedbackCorrect": "Quem age no fim do versículo é Deus: ele põe sobre o Servo a culpa de todos.",
+  "feedbackWrong": {
+   "b": "\"Cada um\" se desviava pelo próprio caminho; quem age sobre o Servo é outro.",
+   "c": "\"Todos nós\" somos os que andávamos desgarrados, não quem fez a culpa cair."
+  },
+  "hint": "Procure quem faz a ação depois do \"mas\".",
+  "_verso": "Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-sem-entrada-biblia-05-03": {
+  "question": "Segundo Isaías 53:6, como andávamos todos nós?",
+  "learningObjective": "Observar a imagem que Isaías usa para o povo.",
+  "feedbackCorrect": "O texto compara todos a ovelhas desgarradas, cada uma no próprio caminho.",
+  "feedbackWrong": {
+   "a": "O texto diz o contrário: cada um se desviava pelo seu próprio caminho.",
+   "c": "Não havia um rebanho unido; cada um ia para um lado.",
+   "d": "O versículo não fala de medo; fala de ovelhas que se perderam."
+  },
+  "hint": "Leia a primeira frase do versículo.",
+  "options": {
+   "a": "Firmes no caminho do Senhor",
+   "b": "Desgarrados, como ovelhas",
+   "c": "Juntos, seguindo um só pastor",
+   "d": "Escondidos, com medo do Servo"
+  },
+  "_verso": "Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-sem-entrada-biblia-05-04": {
+  "question": "Monte Isaías 53:5 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Isaías 53:5.",
+  "feedbackCorrect": "É a sequência do versículo: a ferida dele, o castigo sobre ele e a cura para nós.",
+  "feedbackWrong": {
+   "default": "Comece pelo Servo traspassado; a cura do povo fecha o versículo."
+  },
+  "hint": "O versículo termina com o que acontece com o povo.",
+  "_verso": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-sem-entrada-biblia-05-05": {
+  "question": "Em Isaías 53:7, como o Servo foi levado ao matadouro?",
+  "learningObjective": "Lembrar a imagem que Isaías usa para o silêncio do Servo.",
+  "feedbackCorrect": "Como um cordeiro, ele vai ao matadouro sem resistir e sem abrir a boca.",
+  "feedbackWrong": {
+   "a": "O texto não fala de gado; a imagem é do rebanho de ovelhas.",
+   "b": "Quase: o texto usa o animal mais novo e manso do rebanho."
+  },
+  "hint": "A imagem vem do mesmo rebanho das ovelhas do versículo 6.",
+  "_verso": "Ele foi oprimido e humilhado, mas não abriu a boca; como cordeiro foi levado ao matadouro; e, como a ovelha muda diante dos seus tosquiadores, assim não abriu a boca."
+ },
+ "entender-a-biblia-sem-entrada-biblia-05-06": {
+  "question": "O que Isaías 53:5 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Isaías 53:5 à ideia de que o Servo sofre pelos outros.",
+  "feedbackCorrect": "As transgressões são \"nossas\": o Servo sofre pelo que o povo fez.",
+  "feedbackWrong": {
+   "a": "Há um motivo, e o texto o diz: as transgressões do povo.",
+   "b": "O texto diz \"nossas transgressões\", não as dele."
+  },
+  "hint": "Veja de quem são as transgressões.",
+  "options": {
+   "a": "Ele sofre sem motivo algum",
+   "b": "Ele sofre pelos próprios erros",
+   "c": "Ele sofre no lugar do povo"
+  },
+  "_verso": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-01": {
+  "question": "Em Isaías 53:4–5, o texto confirma a opinião do povo de que o Servo era castigado por culpa própria.",
+  "learningObjective": "Compreender o contraste entre a opinião do povo e a verdade sobre o Servo.",
+  "feedbackCorrect": "O \"porém\" corrige o povo: ele não pagava a própria culpa, era ferido pelas nossas.",
+  "feedbackWrong": {
+   "true": "O povo pensava assim no versículo 4, mas o versículo 5 vira a frase: foi ferido por nossas transgressões."
+  },
+  "hint": "Compare o que o povo pensava com o que vem logo depois.",
+  "_verso": "Na verdade, ele tomou sobre si nossas enfermidades e carregou nossas dores; e nós o considerávamos como aflito, ferido por Deus e oprimido. Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-02": {
+  "question": "Em Isaías 53:4–5, toque a palavra que corrige o que o povo pensava do Servo.",
+  "learningObjective": "Reconhecer o marcador de contraste no texto.",
+  "feedbackCorrect": "\"Porém\" vira a página: o povo o achava castigado por Deus, mas ele sofria por nós.",
+  "feedbackWrong": {
+   "b": "\"Feridas\" mostra o sofrimento, não a correção do que o povo pensava.",
+   "c": "\"Paz\" é o resultado do castigo sobre ele, não a palavra que marca a virada."
+  },
+  "hint": "Procure uma palavra curta entre vírgulas no começo do versículo 5.",
+  "_verso": "Na verdade, ele tomou sobre si nossas enfermidades e carregou nossas dores; e nós o considerávamos como aflito, ferido por Deus e oprimido. Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-03": {
+  "question": "Em Isaías 53:6, como o desvio do povo se liga ao que o Senhor faz?",
+  "learningObjective": "Relacionar o desvio do povo com a ação do Senhor sobre o Servo.",
+  "feedbackCorrect": "O \"mas\" muda a direção: a culpa de quem se desviou cai sobre um só.",
+  "feedbackWrong": {
+   "b": "O texto diz que a iniquidade de todos caiu sobre ele, não sobre cada um.",
+   "c": "O Senhor não abandona o povo; ele põe a culpa do povo sobre o Servo.",
+   "d": "Ninguém volta sozinho no texto; quem age é o Senhor."
+  },
+  "hint": "Repare no que vem depois do \"mas\".",
+  "options": {
+   "a": "O povo se desvia, e a culpa de todos cai sobre o Servo",
+   "b": "Cada um se desvia e paga sozinho pela própria culpa",
+   "c": "O povo se desvia, e o Senhor o deixa perdido",
+   "d": "O povo se desvia e volta sozinho ao caminho certo"
+  },
+  "_verso": "Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-04": {
+  "question": "Como avança a cena em Isaías 53:5–6?",
+  "learningObjective": "Compreender o movimento de Isaías 53:5–6.",
+  "feedbackCorrect": "Primeiro a ferida do Servo, depois o retrato do povo perdido e, por fim, a culpa sobre ele.",
+  "feedbackWrong": {
+   "default": "O versículo 5 fala do Servo ferido; o 6 mostra as ovelhas e termina com a culpa sobre ele."
+  },
+  "hint": "O trecho termina com a ação do Senhor.",
+  "options": {
+   "a": "Ele é ferido pelas culpas do povo",
+   "b": "O povo se perde como ovelhas",
+   "c": "A culpa de todos cai sobre ele"
+  },
+  "_verso": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-05": {
+  "question": "Em Isaías 53:4, o que o Servo fez com as nossas dores?",
+  "learningObjective": "Compreender a ação do Servo em favor do povo.",
+  "feedbackCorrect": "Ele tomou sobre si o que era nosso: as dores passam do povo para o Servo.",
+  "feedbackWrong": {
+   "b": "O texto diz o contrário: ele tomou sobre si nossas enfermidades.",
+   "c": "As dores eram do povo; o Servo não as causou, ele as tomou sobre si."
+  },
+  "hint": "O verbo repete a ideia de \"tomou sobre si\".",
+  "_verso": "Na verdade, ele tomou sobre si nossas enfermidades e carregou nossas dores; e nós o considerávamos como aflito, ferido por Deus e oprimido."
+ },
+ "entender-a-biblia-cam-entrada-biblia-05-06": {
+  "question": "O que liga Isaías 53:5 a 1 Pedro 2:24?",
+  "learningObjective": "Ver como o Novo Testamento lê Isaías 53 à luz da cruz.",
+  "feedbackCorrect": "Pedro usa as palavras de Isaías: Jesus levou nossos pecados, e por suas chagas fomos sarados.",
+  "feedbackWrong": {
+   "a": "Os dois textos dizem que ele levou os pecados dos outros, não os próprios.",
+   "c": "Pedro liga a cura aos pecados: mortos para os pecados, vivemos para a justiça."
+  },
+  "hint": "Compare o fim dos dois versículos.",
+  "options": {
+   "a": "Sofrimento por culpa própria",
+   "b": "Feridas que trazem cura",
+   "c": "Uma cura só do corpo"
+  },
+  "_verso": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-01": {
+  "question": "Isaías 53:6 apresenta o desvio como problema de todo o povo, e não só de alguns.",
+  "learningObjective": "Interpretar o alcance do desvio e da obra do Servo.",
+  "feedbackCorrect": "\"Todos nós\" se desviaram, e é a iniquidade \"de todos nós\" que cai sobre ele.",
+  "feedbackWrong": {
+   "false": "O versículo começa e termina com \"todos nós\": ninguém fica de fora do desvio."
+  },
+  "hint": "Repare nas palavras que abrem e fecham o versículo.",
+  "_verso": "Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-02": {
+  "question": "Em Isaías 53:9, toque o trecho que mostra que o Servo não sofria por culpa própria.",
+  "learningObjective": "Sustentar com o texto a inocência do Servo.",
+  "feedbackCorrect": "Ele era inocente: o sofrimento não vinha de algo que ele tivesse feito.",
+  "feedbackWrong": {
+   "a": "\"Entre os ímpios\" diz onde quiseram sepultá-lo, não como ele viveu.",
+   "c": "\"Com o rico\" fala da sua morte, não da sua inocência."
+  },
+  "hint": "Procure o que o versículo diz sobre a conduta dele.",
+  "_verso": "E designaram sua sepultura entre os ímpios, mas na sua morte esteve com o rico, pois nunca praticou injustiça, nem houve dolo em sua boca."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-03": {
+  "question": "Que leitura Isaías 53:4–5 sustenta sobre o sofrimento do Servo?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta sobre o sofrimento do Servo.",
+  "feedbackCorrect": "Ele leva o que era nosso, e o resultado é paz e cura para o povo.",
+  "feedbackWrong": {
+   "a": "Era o que o povo pensava, mas o \"porém\" do versículo 5 corrige essa ideia.",
+   "c": "As transgressões são \"nossas\"; o texto nunca atribui culpa a ele.",
+   "d": "O texto vai além de um exemplo: pelas feridas dele somos curados."
+  },
+  "hint": "Compare o que o povo pensava (v. 4) com o que o texto afirma (v. 5).",
+  "options": {
+   "a": "Seu sofrimento prova que Deus o rejeitou",
+   "b": "Ele sofre no lugar do povo, e isso traz cura",
+   "c": "Ele sofre porque ele mesmo tinha pecado",
+   "d": "Ele é só um exemplo de paciência para imitar"
+  },
+  "_verso": "Na verdade, ele tomou sobre si nossas enfermidades e carregou nossas dores; e nós o considerávamos como aflito, ferido por Deus e oprimido. Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-04": {
+  "question": "Qual sequência mostra o caminho de Isaías 53:5 até o anúncio de Jesus?",
+  "learningObjective": "Ver Isaías 53 como promessa que o Novo Testamento vê cumprida em Jesus.",
+  "feedbackCorrect": "O profeta anuncia, Jesus cumpre na cruz, e a igreja lê Isaías apontando para ele.",
+  "feedbackWrong": {
+   "default": "Siga a história: profecia (Is 53:5), cruz (1 Pe 2:24) e anúncio (At 8:35)."
+  },
+  "hint": "Comece pelo profeta e termine em quem lê o profeta.",
+  "options": {
+   "a": "Isaías vê o Servo ferido pelas culpas do povo",
+   "b": "Jesus leva nossos pecados em seu corpo na cruz",
+   "c": "Filipe lê Isaías 53 e anuncia Jesus"
+  },
+  "_verso": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-05": {
+  "question": "Em Isaías 53:6, o que o Senhor fez cair sobre o Servo?",
+  "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+  "feedbackCorrect": "É a culpa acumulada de todos, posta sobre um só: o centro da obra do Servo.",
+  "feedbackWrong": {
+   "b": "As enfermidades aparecem no versículo 4; aqui o que cai sobre ele é a culpa de todos.",
+   "c": "Ele foi desprezado, mas o versículo 6 fala da culpa de todos posta sobre ele."
+  },
+  "hint": "É a mesma ideia de \"transgressões\" no versículo 5.",
+  "_verso": "Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós."
+ },
+ "entender-a-biblia-pro-entrada-biblia-05-06": {
+  "question": "O que liga Isaías 53:7 a João 1:29?",
+  "learningObjective": "Ligar o Servo de Isaías ao Cordeiro anunciado por João Batista.",
+  "feedbackCorrect": "O Servo vai como cordeiro, e João Batista aponta Jesus como o Cordeiro que tira o pecado.",
+  "feedbackWrong": {
+   "a": "Os dois textos falam de uma pessoa, não de animais no templo.",
+   "c": "O Servo vence calado, como cordeiro, e não pela força."
+  },
+  "hint": "Procure a imagem que aparece nos dois textos.",
+  "options": {
+   "a": "Animais oferecidos no templo",
+   "b": "O Cordeiro que tira o pecado",
+   "c": "Um rei que vence pela força"
+  },
+  "_verso": "Ele foi oprimido e humilhado, mas não abriu a boca; como cordeiro foi levado ao matadouro; e, como a ovelha muda diante dos seus tosquiadores, assim não abriu a boca."
+ },
+ "estudo:entrada-biblia-05": {
+  "context": "Séculos antes de Jesus, o profeta Isaías fala de um Servo do Senhor. Neste trecho, o povo olha para esse Servo ferido e humilhado e tenta entender por que ele sofre tanto.",
+  "focusQuestion": "O que muda em você saber que alguém levou a sua culpa?",
+  "keywordGloss": "Em Isaías, o Servo do Senhor sofre pelo povo; o Novo Testamento reconhece nele Jesus.",
+  "reflectionPrompts": [
+   "Desprezado por nós",
+   "Ferido em nosso lugar",
+   "Ovelhas desgarradas"
+  ],
+  "facts": [
+   "O Servo era desprezado e rejeitado pelas pessoas.",
+   "O Servo foi traspassado pelas nossas transgressões.",
+   "Pelas feridas dele o povo é curado.",
+   "Todos andavam desgarrados como ovelhas.",
+   "O Senhor fez cair sobre o Servo a iniquidade de todos.",
+   "Oprimido e humilhado, ele ficou em silêncio."
+  ],
+  "_verso": "Na verdade, ele tomou sobre si nossas enfermidades e carregou nossas dores; e nós o considerávamos como aflito, ferido por Deus e oprimido. Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados. Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós. Ele foi oprimido e humilhado, mas não abriu a boca; como cordeiro foi levado ao matadouro; e, como a ovelha muda diante dos seus tosquiadores, assim não abriu a boca."
+ }
+}

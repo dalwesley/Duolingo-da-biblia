@@ -1,0 +1,271 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-01": {
+  "question": "Em Miqueias 6:8, o Senhor exige que o homem pratique a justiça.",
+  "learningObjective": "Observar a primeira exigência de Miqueias 6:8.",
+  "feedbackCorrect": "O versículo lista a justiça como a primeira exigência do Senhor.",
+  "feedbackWrong": {
+   "false": "Releia a lista de Miqueias 6:8: praticar a justiça está nela."
+  },
+  "hint": "Veja a lista do que o Senhor pede.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-02": {
+  "question": "Em Miqueias 6:8, toque o que o homem deve praticar.",
+  "learningObjective": "Identificar a justiça como prática exigida por Deus.",
+  "feedbackCorrect": "A lista começa pelo trato reto com as pessoas.",
+  "feedbackWrong": {
+   "a": "Isso descreve como andar com Deus, não o que praticar.",
+   "c": "Isso é o que ele deve amar, não o verbo praticar."
+  },
+  "hint": "Procure o primeiro item da lista do versículo.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-03": {
+  "question": "Segundo Miqueias 6:7, o que a pessoa imagina oferecer em grande quantidade?",
+  "learningObjective": "Observar o exagero das ofertas imaginadas.",
+  "feedbackCorrect": "O exagero fala de animais e azeite sem medida.",
+  "feedbackWrong": {
+   "a": "Pombas não são citadas; o exagero é com carneiros e azeite.",
+   "b": "Incenso não aparece nesta pergunta de Miqueias 6:7.",
+   "c": "O versículo fala de azeite em ribeiros, não de azeitonas contadas."
+  },
+  "hint": "Leia os dois exageros do versículo.",
+  "options": {
+   "a": "Pombas de todos os ninhos",
+   "b": "Incenso de todos os altares",
+   "c": "Dez sacos de azeitonas",
+   "d": "Milhares de carneiros e rios de azeite"
+  },
+  "_verso": "Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma?"
+ },
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-04": {
+  "question": "Monte Miqueias 6:8 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Miqueias 6:8.",
+  "feedbackCorrect": "A ordem é a do versículo: declarado, exigido e vivido.",
+  "feedbackWrong": {
+   "default": "Comece pelo que já foi declarado ao homem."
+  },
+  "hint": "O versículo começa pelo que já foi declarado.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-05": {
+  "question": "Em Miqueias 6:8, como o homem deve andar com o seu Deus?",
+  "learningObjective": "Lembrar como andar com Deus.",
+  "feedbackCorrect": "Andar assim é viver sem orgulho diante de Deus.",
+  "feedbackWrong": {
+   "a": "Pressa não é o modo de andar citado no versículo.",
+   "b": "Orgulho é o contrário do andar que o texto pede."
+  },
+  "hint": "Pense no fim da lista do versículo.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-06": {
+  "question": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Miqueias 6:8 ao que Deus já declarou.",
+  "feedbackCorrect": "Deus já declarou o caminho: vida justa, bondosa e humilde.",
+  "feedbackWrong": {
+   "a": "O texto não trata oferta grande como pagamento.",
+   "c": "Deus declara o que é bom; não fica em silêncio."
+  },
+  "hint": "Veja a lista que o versículo apresenta.",
+  "options": {
+   "a": "Ofertas grandes pagam o perdão",
+   "b": "Justiça com misericórdia e humildade",
+   "c": "Deus nada declarou ao homem"
+  },
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-01": {
+  "question": "Em Miqueias 6:6–7, as perguntas sobem de bezerros de um ano até milhares de carneiros.",
+  "learningObjective": "Compreender o crescimento das ofertas imaginadas.",
+  "feedbackCorrect": "A sequência cresce: do comum ao exagero impossível.",
+  "feedbackWrong": {
+   "false": "Compare 6:6 com 6:7: a quantidade imaginada aumenta muito."
+  },
+  "hint": "Compare as ofertas citadas, uma depois da outra.",
+  "_verso": "Com que me apresentarei ao Senhor e me inclinarei diante do Deus Altíssimo? Irei até Ele com holocaustos? Com bezerros de um ano? Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma?"
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-02": {
+  "question": "Em Miqueias 6:8, toque o verbo que mostra o que o Senhor pede do homem.",
+  "learningObjective": "Reconhecer a força do pedido de Deus.",
+  "feedbackCorrect": "Esse verbo mostra que não é sugestão vaga.",
+  "feedbackWrong": {
+   "a": "Bom descreve o caminho, não o verbo do pedido.",
+   "b": "Declarado fala do que já foi mostrado, não do pedido."
+  },
+  "hint": "Procure o verbo ligado ao Senhor no meio do versículo.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-03": {
+  "question": "Como Miqueias 6:8 responde às perguntas de Miqueias 6:6–7?",
+  "learningObjective": "Relacionar perguntas sobre ofertas e resposta de Deus.",
+  "feedbackCorrect": "Deus troca a lista de ofertas por uma vida justa e humilde.",
+  "feedbackWrong": {
+   "a": "O texto não aprova esse extremo; ele o deixa sem resposta positiva.",
+   "b": "A resposta não aumenta a quantidade; muda o foco para a vida.",
+   "d": "Culto sem justiça é justamente o que a resposta corrige."
+  },
+  "hint": "Compare a lista de ofertas com a lista final.",
+  "options": {
+   "a": "Aceita o filho como pagamento final",
+   "b": "Pede o dobro do que foi imaginado",
+   "c": "Mostra uma vida justa, não ofertas maiores",
+   "d": "Manda só melhorar o culto no templo"
+  },
+  "_verso": "Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma? Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-04": {
+  "question": "Como avança a cena em Miqueias 6:7–8?",
+  "learningObjective": "Compreender o movimento das perguntas à resposta.",
+  "feedbackCorrect": "Primeiro o exagero, depois a pergunta extrema, então a resposta.",
+  "feedbackWrong": {
+   "default": "A declaração do que é bom fecha o trecho."
+  },
+  "hint": "A resposta de Deus vem por último.",
+  "options": {
+   "a": "Ofertas exageradas são imaginadas pelo povo",
+   "b": "Até o primogênito é cogitado como oferta",
+   "c": "Deus declara a vida que ele exige"
+  },
+  "_verso": "Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma? Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-05": {
+  "question": "Em Miqueias 6:6, com que tipo de oferta a pessoa cogita ir ao Senhor?",
+  "learningObjective": "Lembrar a oferta citada na pergunta inicial.",
+  "feedbackCorrect": "A pergunta começa pelas ofertas queimadas no altar.",
+  "feedbackWrong": {
+   "a": "Jejuns não aparecem no versículo citado.",
+   "b": "Cânticos não são a oferta nomeada nesta pergunta."
+  },
+  "hint": "Leia a segunda pergunta do versículo.",
+  "_verso": "Com que me apresentarei ao Senhor e me inclinarei diante do Deus Altíssimo? Irei até Ele com holocaustos? Com bezerros de um ano?"
+ },
+ "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-06": {
+  "question": "O que liga Miqueias 6:8 a 1 Samuel 15:22?",
+  "learningObjective": "Relacionar exigência de Deus e obediência.",
+  "feedbackCorrect": "Nos dois textos, viver como Deus pede vale mais que ofertar.",
+  "feedbackWrong": {
+   "b": "A quantidade não é o centro em nenhum dos dois.",
+   "c": "Nenhum dos textos aprova desobediência com ofertas."
+  },
+  "hint": "Compare o que Deus valoriza nos dois trechos.",
+  "options": {
+   "a": "Obedecer vale mais que sacrifícios",
+   "b": "Quantidade importa mais que vida",
+   "c": "Oferta grande cobre a desobediência"
+  },
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-01": {
+  "question": "Segundo Miqueias 6:8, ofertas cada vez maiores bastam para agradar a Deus sem mudar a vida.",
+  "learningObjective": "Avaliar a leitura que troca vida por ofertas.",
+  "feedbackCorrect": "Deus pede prática diária, não tamanho de oferta.",
+  "feedbackWrong": {
+   "true": "A resposta de Deus é uma vida justa e humilde, não uma oferta maior."
+  },
+  "hint": "Repare se o versículo 8 fala de ofertas ou de jeito de viver.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-02": {
+  "question": "Em Miqueias 6:11, toque o que denuncia o engano nas trocas do povo.",
+  "learningObjective": "Sustentar a denúncia do engano com o texto.",
+  "feedbackCorrect": "O engano aparece nos instrumentos usados para pesar.",
+  "feedbackWrong": {
+   "a": "Isso fala de quem pesa, não do instrumento enganoso.",
+   "c": "Bolsas sozinhas não mostram o engano; o conjunto citado começa antes."
+  },
+  "hint": "Procure os instrumentos citados no versículo.",
+  "_verso": "Acaso poderei eu ser considerado justo com balanças falsas e bolsas de pesos enganadores?"
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-03": {
+  "question": "Que leitura Miqueias 6:8 sustenta sobre agradar a Deus?",
+  "learningObjective": "Escolher a interpretação sustentada por Miqueias 6:8.",
+  "feedbackCorrect": "Agradar a Deus aparece como vida com pessoas e com ele.",
+  "feedbackWrong": {
+   "a": "Humildade é parte do andar pedido, não detalhe menor.",
+   "c": "O texto manda amar esse valor, não tratá-lo como opcional.",
+   "d": "Impressionar com custo é a ideia que as perguntas levam ao extremo."
+  },
+  "hint": "Veja os três verbos da resposta final.",
+  "options": {
+   "a": "Separar culto da vida com pessoas",
+   "b": "Viver com justiça, bondade e humildade",
+   "c": "Tratar a bondade como algo opcional",
+   "d": "Impressionar Deus com ofertas caras"
+  },
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-04": {
+  "question": "Qual sequência revela o sentido de Miqueias 6:8 na Bíblia?",
+  "learningObjective": "Ver Miqueias 6:8 num fio bíblico maior.",
+  "feedbackCorrect": "O caminho vai do anúncio no Antigo Testamento ao ensino de Jesus.",
+  "feedbackWrong": {
+   "default": "Comece em Miqueias e termine no ensino de Jesus."
+  },
+  "hint": "Siga a ordem dos livros citados nas peças.",
+  "options": {
+   "a": "Israel pergunta como se apresentar a Deus",
+   "b": "Deus declara justiça, misericórdia e humildade",
+   "c": "Jesus cobra os pontos mais importantes da Lei"
+  },
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-05": {
+  "question": "Em Miqueias 6:8, o que o homem deve amar além de praticar a justiça?",
+  "learningObjective": "Lembrar o valor que Deus manda amar.",
+  "feedbackCorrect": "O texto junta fazer o certo e amar o bem ao outro.",
+  "feedbackWrong": {
+   "b": "Vantagem própria não é o valor que Deus manda amar.",
+   "c": "Indiferença é o contrário do amor pedido no versículo."
+  },
+  "hint": "É o segundo item da lista final.",
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-06": {
+  "question": "O que liga Miqueias 6:8 a Oseias 6:6?",
+  "learningObjective": "Ligar a exigência de Miqueias ao desejo de Deus em Oseias.",
+  "feedbackCorrect": "Os dois textos colocam a bondade fiel acima do rito.",
+  "feedbackWrong": {
+   "b": "Nenhum dos textos dispensa andar com Deus.",
+   "c": "Oseias não aprova sacrifício sem esse valor central."
+  },
+  "hint": "Procure o valor comum aos dois trechos.",
+  "options": {
+   "a": "Deus quer misericórdia, não só sacrifício",
+   "b": "Deus dispensa andar com ele",
+   "c": "Rito basta sem bondade fiel"
+  },
+  "_verso": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ },
+ "estudo:miqueias-miqueias-01-o-senhor-requer-de-t": {
+  "context": "Deus lembra ao povo os seus atos de justiça no passado. Então surgem perguntas sobre como se apresentar a ele, com ofertas cada vez maiores, até a resposta clara do que ele exige.",
+  "focusQuestion": "Como você pode praticar justiça e misericórdia numa escolha desta semana?",
+  "keywordGloss": "Amar a misericórdia é valorizar o bem e o perdão no trato com as pessoas, como Deus pede.",
+  "reflectionPrompts": [
+   "Justiça no dia a dia",
+   "Amar a misericórdia",
+   "Andar humildemente com Deus"
+  ],
+  "facts": [
+   "Deus chama o povo a lembrar os seus atos de justiça desde Sitim até Gilgal.",
+   "A pessoa pergunta com que se apresentará ao Senhor e se irá com holocaustos.",
+   "A pergunta exagera ao imaginar milhares de carneiros e dez mil ribeiros de azeite.",
+   "O Senhor exige praticar a justiça, amar a misericórdia e andar humildemente com Deus.",
+   "Deus denuncia tesouros de impiedade e medida minguada na casa do ímpio."
+  ],
+  "_verso": "Com que me apresentarei ao Senhor e me inclinarei diante do Deus Altíssimo? Irei até Ele com holocaustos? Com bezerros de um ano? Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma? Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+ }
+}

@@ -1,11 +1,15 @@
 import {
+  bumpCatalogVersion,
   COL,
+  countWhere,
   listCollection,
+  listWhere,
   realmLabel,
   removeDoc,
   saveDoc,
+  TRASH_DAYS,
 } from './db.js';
-import { renderIntroPreview, renderInsightPreview, renderTrailCardPreview } from './content-preview.js';
+import { renderIntroPreview, renderInsightPreview, renderJourneyPreview, renderTrailCardPreview } from './content-preview.js';
 import {
   GESTURES,
   gestureMeta,
@@ -22,6 +26,15 @@ import {
   showToast,
 } from './ui.js';
 import { attachVerseCopilot, loadBible } from './verse-copilot.js';
+import { contentHash } from './content-page.js';
+import {
+  CATEGORIES as TREE_CATEGORIES,
+  JOURNEYS as TREE_JOURNEYS,
+  SHELVES as TREE_SHELVES,
+  categoryLabel as treeCategoryLabel,
+  setExtraCards,
+  setExtraShelves,
+} from './catalog-tree.js';
 
 const REALMS = [
   { value: 'antigo-testamento', label: 'Antigo Testamento', icon: '📜' },
@@ -57,11 +70,16 @@ const CATEGORIES = [
 ];
 
 function categoryLabel(value) {
-  return CATEGORIES.find((c) => c.value === value)?.label || value || '—';
+  return CATEGORIES.find((c) => c.value === value)?.label || (value ? treeCategoryLabel(value) : '—');
+}
+
+/** Cards criados no painel, como opção de categoria (ver card-editor.js). */
+function panelCategoryOptions() {
+  return TREE_CATEGORIES.filter((c) => c.extra).map((c) => ({ value: c.id, label: `${c.label} (coleção do painel)`, realm: c.realm }));
 }
 
 function categoriesForRealm(realm) {
-  return CATEGORIES.filter((c) => c.realm === realm);
+  return [...CATEGORIES, ...panelCategoryOptions()].filter((c) => c.realm === realm);
 }
 
 function defaultCategory(realm) {
@@ -98,7 +116,7 @@ function emptyStudy() {
 function emptyStep(n = 1, title = '') {
   return {
     slug: `passo-${n}`,
-    title: title || `Passo ${n}`,
+    title: title || `Cena ${n}`,
     subtitle: '',
     intro: '',
     type: 'lesson',
@@ -166,6 +184,14 @@ function stripStudies(draft) {
   };
 }
 
+const STUDY_V2_FIELDS = ['passageRef', 'passageText', 'context', 'keyword', 'keywordGloss', 'focusQuestion', 'reflectionPrompts', 'relatedVerses'];
+
+/** Só os campos que o editor de trilha mexe — para gravar apenas o estudo que mudou. */
+function studyFingerprint(study) {
+  const s = study || {};
+  return JSON.stringify(STUDY_V2_FIELDS.map((k) => s[k] ?? (k === 'reflectionPrompts' || k === 'relatedVerses' ? [] : '')));
+}
+
 function studyHasContent(study) {
   if (!study) return false;
   return Boolean(
@@ -189,6 +215,7 @@ function flatSteps(draft) {
 }
 
 function qCount(bank, trailId) {
+  if (bank instanceof Map) return bank.get(trailId) ?? 0;
   return (bank || []).filter((q) => q.trail === trailId || q.trailSlug === trailId).length;
 }
 
@@ -200,10 +227,12 @@ function promptOf(q) {
 
 export async function renderTrailsList(root, navigate) {
   root.innerHTML = `<div class="ez-page"><div class="ez-skeleton">Carregando…</div></div>`;
-  const [trails, bank] = await Promise.all([
-    listCollection(COL.trails),
-    listCollection(COL.bank),
-  ]);
+  const trails = await listCollection(COL.trails);
+  // Contagem por trilha no servidor: não baixa o banco inteiro.
+  const bank = new Map(await Promise.all(trails.map(async (t) => {
+    const id = t.slug || t.id;
+    return [id, await countWhere(COL.bank, 'trail', id).catch(() => 0)];
+  })));
   let filter = 'all';
   let queryText = '';
 
@@ -226,7 +255,7 @@ export async function renderTrailsList(root, navigate) {
         <header class="ez-hero">
           <div>
             <h1>Trilhas</h1>
-            <p class="ez-lead">Cada trilha é um caminho no app. Abra uma, escreva o passo, veja a miniatura.</p>
+            <p class="ez-lead">Cada trilha é um caminho no app. Abra uma, escreva a cena, veja a miniatura.</p>
           </div>
           <button type="button" class="btn btn-primary" id="btn-new-trail">+ Nova trilha</button>
         </header>
@@ -263,7 +292,7 @@ export async function renderTrailsList(root, navigate) {
                       <p>${escapeHtml((t.description || '').trim() || 'Sem descrição ainda')}</p>
                       <div class="ez-meta">
                         <span>${escapeHtml(realmLabel(t.realm))}</span>
-                        <span>${nS} ${nS === 1 ? 'passo' : 'passos'}</span>
+                        <span>${nS} ${nS === 1 ? 'cena' : 'cenas'}</span>
                         <span>${nQ} ${nQ === 1 ? 'ação' : 'ações'}</span>
                       </div>
                     </div>
@@ -318,128 +347,257 @@ export async function renderTrailsList(root, navigate) {
 
 /* ─── Criar: nome + miniatura ───────────────────────────── */
 
-function openCreateSimple(trails, navigate) {
-  const modal = document.getElementById('modal');
-  if (!modal) return;
-  let realm = 'antigo-testamento';
-  let title = '';
-
-  function previewHtml() {
-    const r = REALMS.find((x) => x.value === realm);
-    return renderTrailCardPreview({
-      title,
-      description: '',
-      icon: r?.icon || '📖',
-      realmLabel: r?.label,
-      comingSoon: true,
-    }, { focus: 'title' });
-  }
-
-  function paint() {
-    modal.innerHTML = `
-      <div class="modal-backdrop">
-        <div class="modal-card card ez-modal qs-modal create-modal" role="dialog" aria-modal="true">
-          <button type="button" class="modal-close" aria-label="Fechar">×</button>
-          <h2>Nova trilha</h2>
-          <p class="ez-lead" style="margin-top:0">O nome é o título do cartão no app. O resto você escreve nos passos.</p>
-          <div class="qs-layout">
-            <form id="create-trail-form" class="ez-form qs-form">
-              ${field(
-                'Nome',
-                '<input name="title" required placeholder="Ex.: Gênesis 1–11" autofocus data-preview="title" />',
-                { where: 'Título grande no cartão da trilha' },
-              )}
-              <p class="ez-label">Onde fica <span class="ez-where">Filtro de reino no app</span></p>
-              <div class="simple-realm-row">
-                ${REALMS.map((r) => `
-                  <button type="button" class="simple-realm ${realm === r.value ? 'active' : ''}" data-realm="${r.value}">
-                    ${r.icon} ${escapeHtml(r.label)}
-                  </button>`).join('')}
-              </div>
-              <div class="btn-row" style="margin-top:var(--space-5)">
-                <button type="button" class="btn btn-secondary" id="cancel">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Criar e abrir</button>
-              </div>
-            </form>
-            <aside class="qs-aside" id="create-preview">${previewHtml()}</aside>
-          </div>
-        </div>
-      </div>`;
-
-    showModalElement(modal);
-    const close = bindModalDismiss(modal);
-    modal.querySelector('#cancel')?.addEventListener('click', close);
-    modal.querySelectorAll('[data-realm]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        title = modal.querySelector('[name="title"]')?.value || title;
-        realm = btn.dataset.realm;
-        modal.querySelectorAll('[data-realm]').forEach((b) => {
-          b.classList.toggle('active', b.dataset.realm === realm);
-        });
-        const slot = modal.querySelector('#create-preview');
-        if (slot) slot.innerHTML = previewHtml();
-      });
-    });
-    modal.querySelector('[name="title"]')?.addEventListener('input', (e) => {
-      title = e.target.value;
-      const slot = modal.querySelector('#create-preview');
-      if (slot) slot.innerHTML = previewHtml();
-    });
-    modal.querySelector('#create-trail-form')?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const name = String(new FormData(e.target).get('title') || '').trim();
-      if (!name) return;
-      let clean = slugify(name) || `trilha-${Date.now()}`;
-      if (trails.some((t) => t.id === clean || t.slug === clean)) {
-        clean = `${clean}-${trails.length + 1}`;
-      }
-      const r = REALMS.find((x) => x.value === realm);
-      setLoading(true);
-      try {
-        await saveDoc(COL.trails, clean, {
-          slug: clean,
-          title: name,
-          description: '',
-          icon: r?.icon || '📖',
-          order: trails.length + 1,
-          unlockAfter: null,
-          comingSoon: true,
-          color: realm === 'novo-testamento' ? '#3DCFBE' : realm === 'vida-crista' ? '#FFA898' : realm === 'teologia' ? '#7EB0D8' : '#4A9EFF',
-          realm,
-          category: defaultCategory(realm),
-          modules: [
-            {
-              title: name,
-              icon: '📘',
-              missions: [emptyStep(1, 'Primeiro passo')],
-            },
-          ],
-          isActive: true,
-        });
-        close();
-        showToast('Trilha criada — agora o primeiro passo');
-        navigate(`trail:${clean}`);
-      } catch (err) {
-        showToast(err.message || 'Erro', 'error');
-      } finally {
-        setLoading(false);
-      }
-    });
-  }
-
-  paint();
+/** Criar trilha de fora desta tela (Explorar). Nasce "em breve": não aparece no app. */
+export function openCreateTrail(trails, navigate, { category } = {}) {
+  openCreateSimple(trails, navigate, { category });
 }
 
-/* ─── Editor: passo + miniatura + ações do banco ─────────── */
+const TITLE_MAX = 40;
+const DESC_MAX = 90;
 
-export async function renderTrailEditor(root, trailId, navigate) {
+/** Lugar no Explorar, agrupado como a árvore: AT e NT por fase, o resto por prateleira. */
+function placeOptions(selected) {
+  const opt = (c) => `<option value="${c}" ${c === selected ? 'selected' : ''}>${escapeHtml(treeCategoryLabel(c))}</option>`;
+  return TREE_SHELVES.map((shelf) => {
+    const journeys = TREE_JOURNEYS.filter((j) => j.shelf === shelf.id);
+    if (shelf.id === 'biblia') {
+      return journeys.map((j) => `<optgroup label="${escapeHtml(`Bíblia › ${j.label}`)}">${j.categories.map(opt).join('')}</optgroup>`).join('');
+    }
+    return `<optgroup label="${escapeHtml(shelf.label)}">${journeys.flatMap((j) => j.categories).map(opt).join('')}</optgroup>`;
+  }).join('');
+}
+
+function realmOfCategory(category) {
+  return TREE_CATEGORIES.find((c) => c.id === category)?.realm || 'antigo-testamento';
+}
+
+/** Onde a trilha aparece, por extenso: "Bíblia › Antigo Testamento › Pentateuco". */
+function placePath(category) {
+  const j = TREE_JOURNEYS.find((x) => x.categories.includes(category));
+  const shelf = TREE_SHELVES.find((x) => x.id === j?.shelf);
+  const parts = shelf?.id === 'biblia' ? [shelf.label, j.label] : [shelf?.label];
+  return [...parts, treeCategoryLabel(category)].filter(Boolean).join(' › ');
+}
+
+function roman(n) {
+  const table = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+  let out = '';
+  let k = n;
+  for (const [v, r] of table) {
+    while (k >= v) {
+      out += r;
+      k -= v;
+    }
+  }
+  return out;
+}
+
+/** Lido na hora: os cards do painel entram depois do carregamento. */
+const categoryOrder = (id) => TREE_CATEGORIES.find((c) => c.id === id)?.order ?? 0;
+
+/**
+ * O caminho da jornada como o app monta (ordem da categoria, depois `order`),
+ * com a trilha nova no fim da categoria dela. Mostra a fase dela: até 2
+ * vizinhas antes e a nova em destaque.
+ */
+function journeyPreviewData(trails, draft) {
+  const journey = TREE_JOURNEYS.find((j) => j.categories.includes(draft.category));
+  const shelf = TREE_SHELVES.find((x) => x.id === journey?.shelf);
+  const scenes = (t) => (t.modules || []).reduce((n, m) => n + (m.missions || []).length, 0);
+  const existing = trails
+    .filter((t) => journey?.categories.includes(t.category))
+    .sort((a, b) => (categoryOrder(a.category) - categoryOrder(b.category)) || ((Number(a.order) || 0) - (Number(b.order) || 0)));
+  const fresh = { isNew: true, category: draft.category, title: draft.title, description: draft.description };
+  const lastOfCat = existing.map((t) => categoryOrder(t.category) <= categoryOrder(draft.category)).lastIndexOf(true);
+  const list = [...existing.slice(0, lastOfCat + 1), fresh, ...existing.slice(lastOfCat + 1)];
+
+  let phase = 0;
+  let last = null;
+  const stations = list.map((t, i) => {
+    if (t.category !== last) {
+      phase += 1;
+      last = t.category;
+    }
+    return {
+      phase,
+      roman: roman(i + 1),
+      title: t.title || t.slug || t.id || '',
+      status: t.isNew ? t.description : t.comingSoon ? '' : t.description || `${scenes(t)} cenas`,
+      soon: t.isNew || Boolean(t.comingSoon),
+      isNew: Boolean(t.isNew),
+      category: t.category,
+    };
+  });
+  const at = stations.findIndex((x) => x.isNew);
+  const sameCat = stations.filter((x, i) => x.category === draft.category && i <= at);
+  const shown = sameCat.slice(-3);
+  const multi = (journey?.categories.length || 0) > 1;
+  return {
+    journeyLabel: journey?.label || '',
+    subtitle: shelf?.label || '',
+    phaseIndex: multi ? stations[at].phase : 1,
+    phaseLabel: treeCategoryLabel(draft.category),
+    stations: shown,
+    before: at + 1 - shown.length,
+  };
+}
+
+function uniqueSlug(name, trails) {
+  const base = slugify(name);
+  if (!base) return '';
+  const used = new Set(trails.flatMap((t) => [t.id, t.slug]));
+  if (!used.has(base)) return base;
+  let n = 2;
+  while (used.has(`${base}-${n}`)) n += 1;
+  return `${base}-${n}`;
+}
+
+/* ─── Criar: nome, linha, lugar + cartão ────────────────── */
+
+function openCreateSimple(trails, navigate, { category: initial } = {}) {
+  const modal = document.getElementById('modal');
+  if (!modal) return;
+  const draft = {
+    title: '',
+    description: '',
+    category: TREE_CATEGORIES.some((c) => c.id === initial) ? initial : 'pentateuco',
+  };
+
+  function realmMeta() {
+    return REALMS.find((x) => x.value === realmOfCategory(draft.category)) || REALMS[0];
+  }
+
+  function previewHtml() {
+    return renderJourneyPreview(journeyPreviewData(trails, draft));
+  }
+
+  function idLine() {
+    const slug = uniqueSlug(draft.title, trails);
+    return slug ? `id <code>${escapeHtml(slug)}</code> (fica fixo depois de criar)` : 'O id sai do nome.';
+  }
+
+  function paintLive() {
+    const slot = modal.querySelector('#create-preview');
+    if (slot) slot.innerHTML = previewHtml();
+    const id = modal.querySelector('#create-id');
+    if (id) id.innerHTML = idLine();
+    const where = modal.querySelector('#create-where');
+    if (where) where.textContent = placePath(draft.category);
+    for (const [f, max] of [['title', TITLE_MAX], ['description', DESC_MAX]]) {
+      const c = modal.querySelector(`[data-count="${f}"]`);
+      if (c) c.textContent = `${draft[f].trim().length}/${max}`;
+    }
+  }
+
+  modal.innerHTML = `
+    <div class="modal-backdrop qs-backdrop">
+      <div class="modal-card card qs-modal ct-create-modal" role="dialog" aria-modal="true" aria-labelledby="ct-create-title">
+        <header class="qs-head">
+          <div>
+            <p class="simple-kicker">Explorar</p>
+            <h2 id="ct-create-title">Nova trilha</h2>
+          </div>
+          <button type="button" class="modal-close" aria-label="Fechar">×</button>
+        </header>
+        <form id="create-trail-form" class="qs-layout" novalidate>
+          <div class="qs-form">
+            <label class="ez-field">
+              <span class="ez-label">Nome <span class="qe-count" data-count="title">0/${TITLE_MAX}</span></span>
+              <input name="title" maxlength="${TITLE_MAX}" required placeholder="Ex.: Gênesis 1–11" autocomplete="off" />
+              <span class="ez-hint" id="create-id">O id sai do nome.</span>
+            </label>
+            <label class="ez-field">
+              <span class="ez-label">Uma linha sobre o caminho <span class="qe-count" data-count="description">0/${DESC_MAX}</span></span>
+              <input name="description" maxlength="${DESC_MAX}" placeholder="Ex.: Da criação a Babel: quem é Deus e quem somos nós." autocomplete="off" />
+              <span class="ez-hint">Opcional. Aparece embaixo do nome no cartão.</span>
+            </label>
+            <label class="ez-field">
+              <span class="ez-label">Coleção</span>
+              <select name="category">${placeOptions(draft.category)}</select>
+              <span class="ez-hint"><span id="create-where">${escapeHtml(placePath(draft.category))}</span>. A trilha é nova e tem cenas próprias; aqui você só escolhe em qual coleção do Explorar ela aparece.</span>
+            </label>
+            <p class="qe-note">A trilha nasce <strong>em breve</strong>: ninguém vê no app. Depois de criar, você monta as cenas e tira o “em breve” em <strong>Editar trilha</strong>.</p>
+          </div>
+          <aside class="qs-aside" id="create-preview">${previewHtml()}</aside>
+        </form>
+        <div class="btn-row qs-actions">
+          <button type="button" class="btn btn-secondary" id="cancel">Cancelar</button>
+          <button type="submit" form="create-trail-form" class="btn btn-primary">Criar e abrir</button>
+        </div>
+      </div>
+    </div>`;
+
+  showModalElement(modal);
+  const close = bindModalDismiss(modal);
+  modal.querySelector('#cancel')?.addEventListener('click', close);
+  const form = modal.querySelector('#create-trail-form');
+  form.querySelector('[name="title"]')?.focus();
+
+  form.addEventListener('input', (e) => {
+    const { name, value } = e.target;
+    if (name in draft) draft[name] = value;
+    paintLive();
+  });
+  form.addEventListener('change', (e) => {
+    if (e.target.name === 'category') {
+      draft.category = e.target.value;
+      paintLive();
+    }
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const title = draft.title.trim();
+    if (!title) {
+      showToast('Escreva o nome da trilha', 'error');
+      form.querySelector('[name="title"]')?.focus();
+      return;
+    }
+    const slug = uniqueSlug(title, trails) || `trilha-${Date.now()}`;
+    const realm = realmOfCategory(draft.category);
+    setLoading(true);
+    try {
+      await saveDoc(COL.trails, slug, {
+        slug,
+        title,
+        description: draft.description.trim(),
+        icon: realmMeta().icon,
+        order: trails.filter((t) => t.category === draft.category).length + 1,
+        unlockAfter: null,
+        comingSoon: true,
+        color: realm === 'novo-testamento' ? '#3DCFBE' : realm === 'vida-crista' ? '#FFA898' : realm === 'teologia' ? '#7EB0D8' : '#4A9EFF',
+        realm,
+        category: draft.category,
+        modules: [{ title, icon: '📘', missions: [emptyStep(1, 'Primeira cena')] }],
+        isActive: true,
+      });
+      close();
+      showToast('Trilha criada (em breve). Agora a primeira cena.');
+      navigate(`trail:${slug}`);
+    } catch (err) {
+      showToast(err.message || 'Erro', 'error');
+    } finally {
+      setLoading(false);
+    }
+  });
+}
+
+/* ─── Editor: cena + miniatura + ações do banco ─────────── */
+
+export async function renderTrailEditor(root, route, navigate) {
+  // `trail:<id>:cena` (botão + Nova cena do Explorar) abre já com a cena nova.
+  const [trailId, intent] = String(route).split(':');
   root.innerHTML = `<div class="ez-page"><div class="ez-skeleton">Abrindo…</div></div>`;
   loadBible();
-  const [trails, studies, bankStart] = await Promise.all([
+  const [trails, studies, bankStart, cards, shelves] = await Promise.all([
     listCollection(COL.trails),
     listCollection(COL.studies, 'slug'),
-    listCollection(COL.bank),
+    listWhere(COL.bank, 'trail', trailId),
+    listCollection(COL.cards).catch(() => []),
+    listCollection(COL.shelves).catch(() => []),
   ]);
+  setExtraShelves(shelves);
+  setExtraCards(cards);
   const trail = trails.find((t) => t.id === trailId);
   if (!trail) {
     root.innerHTML = `<div class="ez-page"><div class="ez-empty"><h2>Não encontrada</h2><button class="btn btn-primary" data-route="trails">Voltar</button></div></div>`;
@@ -451,6 +609,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
   }
 
   const studyMap = Object.fromEntries(studies.map((s) => [s.id, s]));
+  const studyPrints = new Map(studies.map((s) => [s.id, studyFingerprint(s)]));
   let draft = ensureStructure(
     structuredClone({ ...trail, modules: trail.modules || [] }),
     studyMap,
@@ -505,15 +664,15 @@ export async function renderTrailEditor(root, trailId, navigate) {
     root.innerHTML = `
       <div class="ez-page studio-page">
         <header class="simple-top">
-          <button type="button" class="btn btn-ghost btn-sm" data-back>← Trilhas</button>
+          <button type="button" class="btn btn-ghost btn-sm" data-back>← Explorar</button>
           <div class="simple-top-title">
             <strong>${escapeHtml(draft.title || trailId)}</strong>
-            <span>${draft.comingSoon ? 'Rascunho' : 'No ar'} · ${steps.length} passos · ${qCount(bank, trailId)} ações</span>
+            <span>${draft.comingSoon ? 'Rascunho' : 'No ar'} · ${steps.length} cenas · ${qCount(bank, trailId)} ações</span>
           </div>
           <button type="button" class="btn btn-primary" data-save>${dirty ? 'Salvar' : 'Salvo'}</button>
         </header>
 
-        <p class="simple-guide">Escreva o <strong>passo</strong> (título + verso) e adicione as <strong>perguntas</strong> embaixo. A miniatura à direita mostra o celular.</p>
+        <p class="simple-guide">Escreva a <strong>cena</strong> (título + verso) e adicione as <strong>perguntas</strong> embaixo. A miniatura à direita mostra o celular.</p>
 
         <div class="simple-steps">
           ${steps.map((s, i) => {
@@ -523,16 +682,16 @@ export async function renderTrailEditor(root, trailId, navigate) {
               ${pad(i + 1)}${n ? `<em>${n}</em>` : ''}
             </button>`;
           }).join('')}
-          <button type="button" class="simple-step-chip add" data-add-step>+ Passo</button>
+          <button type="button" class="simple-step-chip add" data-add-step>+ Nova cena</button>
         </div>
 
         ${!ms
-          ? `<div class="ez-empty"><p>Sem passos.</p><button type="button" class="btn btn-primary" data-add-step>Criar passo</button></div>`
+          ? `<div class="ez-empty"><p>Sem cenas.</p><button type="button" class="btn btn-primary" data-add-step>Criar cena</button></div>`
           : `
         <div class="studio">
           <div class="studio-main">
             <section class="simple-card">
-              <p class="simple-kicker">Passo ${pad(idx)} · tela de entrada</p>
+              <p class="simple-kicker">Cena ${pad(idx)} · tela de entrada</p>
               ${field(
                 'Título',
                 `<input id="f-title" data-preview="title" data-screen="intro" value="${escapeHtml(ms.title || '')}" placeholder="Ex.: Quem criou o mundo?" />`,
@@ -579,15 +738,13 @@ export async function renderTrailEditor(root, trailId, navigate) {
             <section class="simple-card">
               <div class="row-between">
                 <div>
-                  <h2>Perguntas deste passo</h2>
-                  <p class="ez-lead" style="margin:0">Escolha o tipo — na próxima tela escreva ou gere do verso.</p>
+                  <h2>Perguntas desta cena</h2>
+                  <p class="ez-lead" style="margin:0">Toque num gesto para criar; toque numa pergunta para editar.</p>
                 </div>
-                ${ms.hookRef || ms.hookVerse
-                  ? `<button type="button" class="btn btn-secondary btn-sm" data-quick-gen>✨ Gerar quiz do verso</button>`
-                  : ''}
+                <button type="button" class="btn btn-ghost btn-sm" data-route-bank>Revisar no banco →</button>
               </div>
               <div class="gesture-row add-row all-types">
-                ${GESTURES.map((g) => `
+                ${GESTURES.filter((g) => !g.legacy).map((g) => `
                   <button type="button" class="gesture-chip" data-add-g="${g.id}" title="${escapeHtml(g.blurb)}">
                     <span class="gesture-icon">${escapeHtml(g.icon || '•')}</span>
                     <strong>${escapeHtml(g.label)}</strong>
@@ -612,8 +769,8 @@ export async function renderTrailEditor(root, trailId, navigate) {
                   </div>`}
               ${legacy.length
                 ? `<details class="simple-more" style="margin-top:var(--space-4)">
-                    <summary>Quiz antigo neste passo (${legacy.length}) — fallback</summary>
-                    <p class="ez-hint">O app prefere as ações do banco. Isto só entra se o banco deste passo estiver vazio.</p>
+                    <summary>Quiz antigo nesta cena (${legacy.length}) — fallback</summary>
+                    <p class="ez-hint">O app prefere as ações do banco. Isto só entra se o banco desta cena estiver vazio.</p>
                   </details>`
                 : ''}
             </section>
@@ -635,9 +792,9 @@ export async function renderTrailEditor(root, trailId, navigate) {
                   )}
                 </div>
                 ${field(
-                  'Identificador do passo',
+                  'Identificador da cena',
                   `<input id="f-slug" value="${escapeHtml(ms.slug || '')}" />`,
-                  { hint: 'Liga as perguntas a este passo. Evite mudar depois de cadastrar ações.' },
+                  { hint: 'Liga as perguntas a esta cena. Evite mudar depois de cadastrar ações.' },
                 )}
                 ${field('Versículo base (estudo)', `<input id="st-ref" value="${escapeHtml(study.passageRef || '')}" placeholder="Ex.: Gênesis 1:1–2" />`)}
                 ${field('Texto da passagem (estudo)', `<textarea id="st-text" rows="2">${escapeHtml(study.passageText || '')}</textarea>`)}
@@ -646,12 +803,12 @@ export async function renderTrailEditor(root, trailId, navigate) {
                   <input id="t-soon" type="checkbox" ${draft.comingSoon ? 'checked' : ''}/>
                   <span>Rascunho (ainda não publicar no app)</span>
                 </label>
-                <button type="button" class="btn btn-ghost btn-sm btn-danger" data-del-step>Remover este passo</button>
+                <button type="button" class="btn btn-ghost btn-sm btn-danger" data-del-step>Remover esta cena</button>
               </div>
             </details>
 
             <div class="simple-actions">
-              <button type="button" class="btn btn-secondary" data-add-step>+ Próximo passo</button>
+              <button type="button" class="btn btn-secondary" data-add-step>+ Próxima cena</button>
               <button type="button" class="btn btn-primary" data-save>Salvar trilha</button>
             </div>
           </div>
@@ -680,24 +837,26 @@ export async function renderTrailEditor(root, trailId, navigate) {
     try {
       const clean = stripStudies(draft);
       const { id, updatedAt, ...payload } = clean;
-      await saveDoc(COL.trails, trailId, { ...payload, slug: trailId, isActive: true });
+      await saveDoc(COL.trails, trailId, { ...payload, slug: trailId, isActive: trail.isActive ?? true }, { bump: false });
 
+      // Só o estudo que mudou: gravar todos marcaria a cena inteira como editada no painel.
+      let changedStudies = 0;
       for (const mod of draft.modules || []) {
         for (const step of mod.missions || []) {
           if (!step.slug || !studyHasContent(step._study)) continue;
+          const print = studyFingerprint(step._study);
+          if (studyPrints.get(step.slug) === print) continue;
+          const st = step._study;
           await saveDoc(COL.studies, step.slug, {
             slug: step.slug,
-            passageRef: step._study.passageRef || '',
-            passageText: step._study.passageText || '',
-            context: step._study.context || '',
-            keyword: step._study.keyword || '',
-            keywordGloss: step._study.keywordGloss || '',
-            focusQuestion: step._study.focusQuestion || '',
-            reflectionPrompts: step._study.reflectionPrompts || [],
-            relatedVerses: step._study.relatedVerses || [],
-          });
+            ...Object.fromEntries(STUDY_V2_FIELDS.map((k) => [k, st[k] ?? (k === 'reflectionPrompts' || k === 'relatedVerses' ? [] : '')])),
+          }, { bump: false });
+          studyPrints.set(step.slug, print);
+          changedStudies += 1;
         }
       }
+      await bumpCatalogVersion();
+      if (changedStudies) showToast(`${changedStudies} estudo(s) atualizado(s)`);
 
       dirty = false;
       showToast('Trilha salva');
@@ -730,12 +889,12 @@ export async function renderTrailEditor(root, trailId, navigate) {
     const mod = draft.modules[mi] || draft.modules[0];
     if (!mod.missions) mod.missions = [];
     const n = flatSteps(draft).length + 1;
-    const step = emptyStep(n, `Passo ${n}`);
+    const step = emptyStep(n, `Cena ${n}`);
     step.slug = nextStepSlug(n);
     mod.missions.push({ ...step, _study: emptyStudy() });
     focus = { mi: draft.modules.indexOf(mod), qi: mod.missions.length - 1 };
     markDirty();
-    showToast(`Passo ${n} adicionado`);
+    showToast(`Cena ${n} criada`);
     render();
     requestAnimationFrame(() => {
       root.querySelector('.simple-step-chip.active')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
@@ -747,7 +906,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
     readForm();
     const ms = current();
     if (!ms) {
-      showToast('Não foi possível abrir o editor deste passo', 'error');
+      showToast('Não foi possível abrir o editor desta cena', 'error');
       return;
     }
     if (!ms.slug || String(ms.slug).startsWith('passo-')) {
@@ -771,7 +930,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
         },
         onSaved: (payload) => {
           const i = bank.findIndex((x) => x.id === payload.id);
-          if (i >= 0) bank[i] = { ...bank[i], ...payload };
+          if (i >= 0) bank[i] = { ...payload };
           else bank.push(payload);
           render();
         },
@@ -784,7 +943,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
 
   function onRootClick(e) {
     const el = e.target.closest(
-      '[data-add-step],[data-add-g],[data-quick-gen],[data-edit-q],[data-del-q],[data-focus],[data-back],[data-save],[data-del-step],[data-pv]',
+      '[data-add-step],[data-add-g],[data-route-bank],[data-edit-q],[data-del-q],[data-focus],[data-back],[data-save],[data-del-step],[data-pv]',
     );
     if (!el || !root.contains(el)) return;
 
@@ -798,9 +957,10 @@ export async function renderTrailEditor(root, trailId, navigate) {
       openAct(null, el.dataset.addG);
       return;
     }
-    if (el.matches('[data-quick-gen]')) {
+    if (el.matches('[data-route-bank]')) {
       e.preventDefault();
-      openAct(null, 'choice');
+      history.replaceState(null, '', contentHash(trailId));
+      navigate('content');
       return;
     }
     if (el.matches('[data-edit-q]')) {
@@ -813,11 +973,12 @@ export async function renderTrailEditor(root, trailId, navigate) {
       e.preventDefault();
       e.stopPropagation();
       (async () => {
-        if (!(await confirmAction('Excluir esta pergunta?'))) return;
+        if (!(await confirmAction(`Mover esta pergunta para a lixeira? Sai do app agora e fica ${TRASH_DAYS} dias para restaurar.`, { confirmLabel: 'Mover para a lixeira' }))) return;
         try {
-          await removeDoc(COL.bank, el.dataset.delQ);
+          const gone = bank.find((x) => x.id === el.dataset.delQ);
+          await removeDoc(COL.bank, el.dataset.delQ, { info: { trail: gone?.trail || trailId, section: gone?.section || '' } });
           bank = bank.filter((x) => x.id !== el.dataset.delQ);
-          showToast('Removida');
+          showToast('Movida para a lixeira');
           render();
         } catch (err) {
           showToast(err.message || 'Erro', 'error');
@@ -838,7 +999,8 @@ export async function renderTrailEditor(root, trailId, navigate) {
     }
     if (el.matches('[data-back]')) {
       e.preventDefault();
-      navigate('trails');
+      history.replaceState(null, '', contentHash(trailId));
+      navigate('content');
       return;
     }
     if (el.matches('[data-save]')) {
@@ -849,7 +1011,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
     if (el.matches('[data-del-step]')) {
       e.preventDefault();
       (async () => {
-        if (!(await confirmAction('Remover este passo?'))) return;
+        if (!(await confirmAction('Remover esta cena?'))) return;
         readForm();
         draft.modules[focus.mi].missions.splice(focus.qi, 1);
         if (!draft.modules[focus.mi].missions.length) {
@@ -976,6 +1138,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
   }
 
   render();
+  if (intent === 'cena') addStep();
 }
 
 export { categoryLabel, listPassos };

@@ -1,0 +1,505 @@
+{
+ "study": {
+  "passageRef": "Gênesis 1:1–5",
+  "passages": [
+   { "ref": "Gênesis 1:1–5" }
+  ],
+  "context": "A Bíblia não começa tentando provar que Deus existe: começa com ele já agindo. Quem ouviu isso primeiro conhecia histórias de muitos deuses em guerra. Aqui, antes de qualquer coisa, há um só Deus, e ele cria.",
+  "keyword": "No princípio",
+  "keywordGloss": "O começo de tudo o que existe; quando ele chega, Deus já está lá.",
+  "focusQuestion": "O que muda em você saber que Deus já estava lá antes de tudo, inclusive antes da sua história?",
+  "reflectionPrompts": [
+   "Deus vem primeiro",
+   "A palavra que cria",
+   "Do escuro à luz"
+  ],
+  "facts": [
+   {
+    "text": "Deus criou os céus e a terra.",
+    "evidenceRef": "Gênesis 1:1",
+    "evidenceSpan": "Deus criou os céus e a terra"
+   },
+   {
+    "text": "No começo, a terra estava sem forma e vazia.",
+    "evidenceRef": "Gênesis 1:2",
+    "evidenceSpan": "estava sem forma e vazia"
+   },
+   {
+    "text": "O Espírito de Deus pairava sobre as águas.",
+    "evidenceRef": "Gênesis 1:2",
+    "evidenceSpan": "o Espírito de Deus pairava sobre as águas"
+   },
+   {
+    "text": "Deus falou, e a luz passou a existir.",
+    "evidenceRef": "Gênesis 1:3",
+    "evidenceSpan": "e houve luz"
+   },
+   {
+    "text": "Deus viu que a luz era boa.",
+    "evidenceRef": "Gênesis 1:4",
+    "evidenceSpan": "Deus viu que a luz era boa"
+   },
+   {
+    "text": "Deus chamou a luz de Dia e as trevas de Noite.",
+    "evidenceRef": "Gênesis 1:5",
+    "evidenceSpan": "Deus chamou a luz de Dia e as trevas de Noite"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "princípio",
+    "gloss": "O começo de tudo. A Bíblia o abre com Deus, não com o ser humano."
+   },
+   {
+    "term": "criou",
+    "gloss": "Verbo que, aqui, tem só Deus como sujeito: ele faz existir o que não existia."
+   },
+   {
+    "term": "pairava",
+    "gloss": "Imagem de alguém presente e atento sobre a terra ainda vazia, antes da primeira palavra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus cria, e a terra ainda está vazia",
+    "evidenceRef": "Gênesis 1:1–2"
+   },
+   {
+    "label": "Deus fala e a luz passa a existir",
+    "evidenceRef": "Gênesis 1:3"
+   },
+   {
+    "label": "Deus aprova a luz e a separa das trevas",
+    "evidenceRef": "Gênesis 1:4"
+   },
+   {
+    "label": "Deus dá nome ao dia e à noite",
+    "evidenceRef": "Gênesis 1:5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Deus já criou os céus e a terra, porém a terra ainda está sem forma: a obra começa pelo vazio.",
+    "marker": "porém",
+    "evidenceRef": "Gênesis 1:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "Deus diz \"Que haja luz\", e a luz existe: a palavra dele basta para criar.",
+    "marker": "houve",
+    "evidenceRef": "Gênesis 1:3"
+   },
+   {
+    "kind": "sequência",
+    "text": "Primeiro Deus vê que a luz é boa; depois a separa das trevas.",
+    "marker": null,
+    "evidenceRef": "Gênesis 1:4"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 90:2",
+    "bridge": "Deus existe antes do mundo"
+   },
+   {
+    "ref": "Salmos 33:6",
+    "bridge": "Deus cria pela palavra"
+   },
+   {
+    "ref": "João 1:1",
+    "bridge": "O Verbo já estava no princípio"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Gênesis 1 começa tentando provar que Deus existe.",
+    "why": "O texto não argumenta: parte de Deus como ponto de partida e mostra o que ele faz."
+   },
+   {
+    "text": "Antes de Deus já havia um caos, e ele só arrumou o que encontrou.",
+    "why": "Nada aparece antes de Deus: no princípio, ele cria os céus e a terra."
+   },
+   {
+    "text": "Deus criou o mundo e depois o deixou por conta própria.",
+    "why": "O Espírito paira sobre as águas, e Deus segue falando, vendo e dando nome ao que fez."
+   }
+  ],
+  "centralInsight": "Deus vem antes de tudo",
+  "anchorQuestion": "Segundo Gênesis 1:1, quem já estava agindo no princípio?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 1:4, Deus viu que a luz era boa.",
+   "verseRef": "Gênesis 1:4",
+   "correctOptionId": "true",
+   "evidenceSpan": "Deus viu que a luz era boa",
+   "feedbackCorrect": "O texto diz: Deus olhou para a luz que fez e viu que era boa.",
+   "feedbackWrong": {
+    "false": "Releia o começo de Gênesis 1:4: Deus viu que a luz era boa."
+   },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Observar que Deus vê e aprova o que faz.",
+   "evidence": ["Gênesis 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+   "verseRef": "Gênesis 1:1",
+   "options": [
+    { "id": "a", "text": "No princípio" },
+    { "id": "b", "text": "Deus" },
+    { "id": "c", "text": "a terra" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Deus criou",
+   "feedbackCorrect": "Deus é o sujeito da primeira frase da Bíblia: é ele quem cria.",
+   "feedbackWrong": {
+    "a": "\"No princípio\" diz quando, não quem.",
+    "c": "A terra é o que foi criado, não quem criou."
+   },
+   "hint": "Procure quem faz a ação de criar.",
+   "learningObjective": "Identificar Deus como autor da criação.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 1:5, que nome Deus deu às trevas?",
+   "verseRef": "Gênesis 1:5",
+   "options": [
+    { "id": "a", "text": "Dia" },
+    { "id": "b", "text": "Abismo" },
+    { "id": "c", "text": "Noite" },
+    { "id": "d", "text": "Tarde" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "as trevas de Noite",
+   "feedbackCorrect": "Deus chama a luz de Dia e as trevas de Noite: ele dá nome até ao escuro.",
+   "feedbackWrong": {
+    "a": "Dia é o nome que Deus deu à luz, não às trevas.",
+    "b": "O abismo aparece em Gênesis 1:2; aqui Deus dá nome às trevas.",
+    "d": "Tarde e manhã marcam o primeiro dia; o nome das trevas é outro."
+   },
+   "hint": "Leia a primeira frase do versículo até o ponto.",
+   "learningObjective": "Observar que Deus dá nome à luz e às trevas.",
+   "evidence": ["Gênesis 1:5"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 1:2 na ordem do texto.",
+   "verseRef": "Gênesis 1:2",
+   "options": [
+    { "id": "a", "text": "A terra, porém, estava sem forma e vazia" },
+    { "id": "b", "text": "havia trevas sobre a face do abismo" },
+    { "id": "c", "text": "o Espírito de Deus pairava sobre as águas" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+   "feedbackCorrect": "É a sequência do versículo: terra vazia, trevas, e o Espírito presente sobre as águas.",
+   "feedbackWrong": {
+    "default": "Comece pela terra sem forma; o Espírito de Deus aparece no fim do versículo."
+   },
+   "hint": "O versículo começa pela terra.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 1:2.",
+   "evidence": ["Gênesis 1:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 1:3, o que Deus faz para que haja luz?",
+   "verseRef": "Gênesis 1:3",
+   "options": [
+    { "id": "a", "text": "Disse" },
+    { "id": "b", "text": "Pensou" },
+    { "id": "c", "text": "Pediu" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Disse Deus",
+   "feedbackCorrect": "Deus fala, e a luz passa a existir: a palavra dele cria.",
+   "feedbackWrong": {
+    "b": "O texto mostra Deus falando em voz alta, não só pensando.",
+    "c": "Deus não pede a ninguém: ele mesmo diz, e acontece."
+   },
+   "hint": "Veja a primeira palavra do versículo.",
+   "learningObjective": "Lembrar que Deus cria pela palavra.",
+   "evidence": ["Gênesis 1:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 1:1",
+   "passageA": { "ref": "Gênesis 1:1", "text": "No princípio, Deus criou" },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Quando tudo começou, Deus já estava presente e agindo."
+   },
+   "options": [
+    { "id": "a", "text": "Deus já estava lá no começo" },
+    { "id": "b", "text": "Deus surgiu junto com o mundo" },
+    { "id": "c", "text": "O começo não teve autor" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "No princípio, Deus criou",
+   "feedbackCorrect": "\"No princípio, Deus\": quando tudo começa, ele já está lá, criando.",
+   "feedbackWrong": {
+    "b": "O mundo tem começo; Deus já está lá quando ele começa.",
+    "c": "O texto dá um autor ao começo: Deus criou."
+   },
+   "hint": "Veja quem já está presente na primeira frase.",
+   "learningObjective": "Ligar Gênesis 1:1 à ideia de que Deus vem antes de tudo.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 1:1–2, a terra que Deus criou ainda estava sem forma, e o texto marca esse contraste.",
+   "verseRef": "Gênesis 1:1–2",
+   "correctOptionId": "true",
+   "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+   "feedbackCorrect": "O \"porém\" vira a página: Deus criou tudo, mas a terra ainda esperava forma.",
+   "feedbackWrong": {
+    "false": "Releia o começo de Gênesis 1:2: a terra, porém, estava sem forma e vazia."
+   },
+   "hint": "Repare na palavra que liga os dois versículos.",
+   "learningObjective": "Compreender o contraste entre Gênesis 1:1 e 1:2.",
+   "evidence": ["Gênesis 1:1–2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:3, toque a palavra que mostra o resultado da ordem de Deus.",
+   "verseRef": "Gênesis 1:3",
+   "options": [
+    { "id": "a", "text": "Disse" },
+    { "id": "b", "text": "haja" },
+    { "id": "c", "text": "houve" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "e houve luz",
+   "feedbackCorrect": "\"E houve luz\": o que Deus diz acontece na hora, sem demora.",
+   "feedbackWrong": {
+    "a": "\"Disse\" abre a cena com a fala de Deus; o resultado vem no fim.",
+    "b": "\"Haja\" é a própria ordem; o resultado vem depois do ponto e vírgula."
+   },
+   "hint": "Olhe depois do ponto e vírgula.",
+   "learningObjective": "Reconhecer que a palavra de Deus produz o que diz.",
+   "evidence": ["Gênesis 1:3"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Gênesis 1:3 se relaciona com a terra vazia de Gênesis 1:2?",
+   "verseRef": "Gênesis 1:2–3",
+   "options": [
+    { "id": "a", "text": "A luz aparece sozinha, sem ação de Deus" },
+    { "id": "b", "text": "A palavra de Deus começa a dar forma ao vazio" },
+    { "id": "c", "text": "Deus cria outro mundo, longe da terra vazia" },
+    { "id": "d", "text": "As trevas somem antes de Deus falar" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Disse Deus",
+   "feedbackCorrect": "A terra estava vazia e escura; Deus fala, e a luz começa a mudar a cena.",
+   "feedbackWrong": {
+    "a": "A luz vem depois de \"Disse Deus\": é a palavra dele que a faz existir.",
+    "c": "A cena continua na mesma terra; Deus age sobre ela.",
+    "d": "As trevas continuam até Deus falar; ele separa a luz das trevas depois."
+   },
+   "hint": "Veja o que acontece logo depois da descrição da terra vazia.",
+   "learningObjective": "Relacionar o vazio de 1:2 com a palavra criadora de 1:3.",
+   "evidence": ["Gênesis 1:2–3"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Gênesis 1:4–5?",
+   "verseRef": "Gênesis 1:4–5",
+   "options": [
+    { "id": "a", "text": "Deus aprova a luz que fez" },
+    { "id": "b", "text": "Deus separa a luz da escuridão" },
+    { "id": "c", "text": "Deus dá nome ao dia e à noite" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "E Deus viu que a luz era boa; e separou a luz das trevas",
+   "feedbackCorrect": "Deus olha e aprova, depois separa, e por fim dá nome a cada parte.",
+   "feedbackWrong": {
+    "default": "Primeiro Deus vê que a luz é boa; os nomes vêm por último, em Gênesis 1:5."
+   },
+   "hint": "Os nomes chegam no segundo versículo.",
+   "learningObjective": "Compreender o movimento de Deus em Gênesis 1:4–5.",
+   "evidence": ["Gênesis 1:4–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 1:2, o que o Espírito de Deus fazia sobre as águas?",
+   "verseRef": "Gênesis 1:2",
+   "options": [
+    { "id": "a", "text": "pairava" },
+    { "id": "b", "text": "soprava" },
+    { "id": "c", "text": "andava" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+   "feedbackCorrect": "O Espírito pairava: Deus está presente sobre a terra vazia antes da primeira palavra.",
+   "feedbackWrong": {
+    "b": "O texto não fala de sopro aqui; mostra o Espírito pairando, presente.",
+    "c": "O texto não diz que ele andava; usa a imagem de alguém que paira sobre as águas."
+   },
+   "hint": "É uma imagem de alguém que fica sobre algo, atento.",
+   "learningObjective": "Compreender a presença de Deus antes da ordem.",
+   "evidence": ["Gênesis 1:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:3 a Salmos 33:6?",
+   "verseRef": "Gênesis 1:3",
+   "passageA": { "ref": "Gênesis 1:3" },
+   "passageB": { "ref": "Salmos 33:6" },
+   "options": [
+    { "id": "a", "text": "O mundo nasce de uma luta" },
+    { "id": "b", "text": "Deus cria aos poucos, com esforço" },
+    { "id": "c", "text": "Deus cria pela palavra" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Disse Deus",
+   "feedbackCorrect": "Nos dois textos, a palavra de Deus basta: ele fala, e as coisas existem.",
+   "feedbackWrong": {
+    "a": "Nenhum dos textos mostra luta; mostra Deus falando.",
+    "b": "Não há esforço: pela palavra do Senhor os céus foram criados."
+   },
+   "hint": "Compare como cada texto diz que as coisas passaram a existir.",
+   "learningObjective": "Relacionar a criação pela palavra em Gênesis e nos Salmos.",
+   "evidence": ["Gênesis 1:3", "Salmos 33:6"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 1:1–2 mostra que o caos já existia antes de Deus, e ele só arrumou o que encontrou.",
+   "verseRef": "Gênesis 1:1–2",
+   "correctOptionId": "false",
+   "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+   "feedbackCorrect": "Nada aparece antes de Deus: no princípio, ele cria os céus e a terra.",
+   "feedbackWrong": {
+    "true": "O texto não põe nada antes de Deus; a terra ainda sem forma já é obra dele (Gn 1:1)."
+   },
+   "hint": "Veja quem aparece primeiro no texto.",
+   "learningObjective": "Reconhecer que o texto não põe nada antes de Deus.",
+   "evidence": ["Gênesis 1:1–2"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:2, toque o trecho que mostra que Deus não está longe da terra ainda vazia.",
+   "verseRef": "Gênesis 1:2",
+   "options": [
+    { "id": "a", "text": "trevas" },
+    { "id": "b", "text": "face do abismo" },
+    { "id": "c", "text": "Espírito de Deus" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+   "feedbackCorrect": "O Espírito de Deus já está ali, sobre as águas, antes de haver luz.",
+   "feedbackWrong": {
+    "a": "As trevas descrevem o cenário; a presença de Deus vem no fim do versículo.",
+    "b": "O abismo é o cenário, não a presença de Deus."
+   },
+   "hint": "Procure alguém, não um lugar.",
+   "learningObjective": "Sustentar com o texto que Deus está presente desde o início.",
+   "evidence": ["Gênesis 1:2"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Gênesis 1:1–2 sustenta sobre Deus e o começo do mundo?",
+   "verseRef": "Gênesis 1:1–2",
+   "options": [
+    { "id": "a", "text": "O texto começa provando, com argumentos, que Deus existe" },
+    { "id": "b", "text": "Antes de Deus já havia um caos sem dono" },
+    { "id": "c", "text": "Deus vem antes de tudo e está presente desde o início" },
+    { "id": "d", "text": "Deus criou o mundo e depois o deixou sozinho" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+   "feedbackCorrect": "Deus está no começo de tudo, e seu Espírito já paira sobre a terra vazia.",
+   "feedbackWrong": {
+    "a": "O texto não argumenta: começa com Deus já agindo.",
+    "b": "Nada aparece antes de Deus: \"No princípio, Deus criou\".",
+    "d": "O Espírito presente sobre as águas desmente um Deus distante."
+   },
+   "hint": "Compare cada opção com o começo e o fim do trecho.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre Deus e a origem do mundo.",
+   "evidence": ["Gênesis 1:1–2"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da criação que começa em Gênesis 1:1?",
+   "verseRef": "Gênesis 1:1",
+   "options": [
+    { "id": "a", "text": "No princípio, Deus cria os céus e a terra" },
+    { "id": "b", "text": "O Verbo, por meio de quem tudo foi feito, vem morar entre nós" },
+    { "id": "c", "text": "Do trono, Deus faz novas todas as coisas" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+   "feedbackCorrect": "O Deus que cria no princípio vem até nós em Jesus e, no fim, faz tudo novo.",
+   "feedbackWrong": {
+    "default": "Siga a história: criação (Gn 1:1), o Verbo entre nós (Jo 1:14) e tudo novo (Ap 21:5)."
+   },
+   "hint": "Siga a ordem da história bíblica: começo, Jesus, fim.",
+   "learningObjective": "Ver Gênesis 1:1 como começo de um fio que atravessa a Bíblia.",
+   "evidence": ["Gênesis 1:1", "João 1:3", "João 1:14", "Apocalipse 21:5"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 1:1, que verbo diz o que Deus faz no princípio?",
+   "verseRef": "Gênesis 1:1",
+   "options": [
+    { "id": "a", "text": "organizou" },
+    { "id": "b", "text": "criou" },
+    { "id": "c", "text": "encontrou" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Deus criou os céus e a terra",
+   "feedbackCorrect": "Deus faz existir o que não existia; não apenas arruma algo que já estava ali.",
+   "feedbackWrong": {
+    "a": "Organizar supõe algo antes de Deus; o texto diz que ele fez os céus e a terra.",
+    "c": "Deus não acha o mundo pronto; ele o faz existir."
+   },
+   "hint": "É o verbo que vem logo depois de Deus.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:1 a Salmos 90:2?",
+   "verseRef": "Gênesis 1:1",
+   "passageA": { "ref": "Gênesis 1:1" },
+   "passageB": { "ref": "Salmos 90:2" },
+   "options": [
+    { "id": "a", "text": "Deus existe antes do mundo" },
+    { "id": "b", "text": "O mundo é eterno como Deus" },
+    { "id": "c", "text": "Os montes vieram antes da terra" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "No princípio, Deus criou",
+   "feedbackCorrect": "Antes dos montes e da terra, Deus já é Deus: ele está antes de tudo o que criou.",
+   "feedbackWrong": {
+    "b": "Os dois textos dão começo ao mundo; só Deus é de eternidade a eternidade.",
+    "c": "O salmo não fala de ordem entre montes e terra; fala de Deus antes de ambos."
+   },
+   "hint": "Veja o que o salmo diz que existia antes dos montes.",
+   "learningObjective": "Ligar o começo de Gênesis ao Deus eterno dos Salmos.",
+   "evidence": ["Gênesis 1:1", "Salmos 90:2"]
+  }
+ ]
+}

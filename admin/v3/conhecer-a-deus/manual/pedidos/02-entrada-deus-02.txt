@@ -1,0 +1,71 @@
+Escreva a cena "entrada-deus-02" da trilha "conhecer-a-deus" (Conhecer a Deus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "conhecer-a-deus",
+  "title": "Conhecer a Deus",
+  "description": "Cinco cenas do Criador ao Verbo feito carne — e seguir nos Evangelhos.",
+  "realm": "vida-crista"
+ },
+ "block": "Deus se aproxima",
+ "mission": {
+  "slug": "entrada-deus-02",
+  "title": "EU SOU",
+  "type": "lesson",
+  "intro": "Na sarça, Deus diz o seu nome a um fugitivo.",
+  "hookRef": "Êxodo 3:13–14",
+  "hookNote": "Moisés pergunta quem o envia. Deus responde com um nome que não depende de ninguém.",
+  "centralInsight": "Deus se dá a conhecer pelo nome",
+  "objective": "Entender o que o nome EU SOU revela sobre Deus."
+ },
+ "v2": {
+  "passageRef": null,
+  "context": null,
+  "keyword": null,
+  "verseRefs": [
+   "Êxodo 3:13–14"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 3:10–17"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 3:10",
+   "text": "Vem agora, e eu te enviarei ao Faraó, para que tires o meu povo, os filhos de Israel, do Egito."
+  },
+  {
+   "ref": "Êxodo 3:11",
+   "text": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito?"
+  },
+  {
+   "ref": "Êxodo 3:12",
+   "text": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+  },
+  {
+   "ref": "Êxodo 3:13",
+   "text": "Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi?"
+  },
+  {
+   "ref": "Êxodo 3:14",
+   "text": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+  },
+  {
+   "ref": "Êxodo 3:15",
+   "text": "E Deus disse ainda mais a Moisés: Assim dirás aos filhos de Israel: O SENHOR, o Deus de vossos pais, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó, me enviou a vocês; este é o meu nome eternamente, e assim serei lembrado de geração em geração."
+  },
+  {
+   "ref": "Êxodo 3:16",
+   "text": "Vá e reúna os anciãos de Israel e diga-lhes: O SENHOR, o Deus de seus pais, o Deus de Abraão, de Isaque e de Jacó, me apareceu, dizendo: Em verdade, eu os visitei e vi o que está acontecendo com vocês no Egito."
+  },
+  {
+   "ref": "Êxodo 3:17",
+   "text": "Por isso, eu disse: Farei vocês subir da aflição do Egito para a terra dos cananeus, dos heteus, dos amorreus, dos ferezeus, dos heveus e dos jebuseus, uma terra que flui leite e mel."
+  }
+ ]
+}
+</cena>

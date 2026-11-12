@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "miqueias-sem-mq-05-mar-01": {
+  "question": "Em Miqueias 7:19, Deus lançará todos os pecados do povo nas profundezas do mar.",
+  "learningObjective": "Observar o destino dos pecados perdoados.",
+  "feedbackCorrect": "A imagem final é de pecados lançados bem fundo.",
+  "feedbackWrong": {
+   "false": "Releia o destino dos pecados em Miqueias 7:19."
+  },
+  "hint": "Veja onde Deus lança os pecados.",
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-sem-mq-05-mar-02": {
+  "question": "Em Miqueias 7:18, toque o que Deus perdoa no restante da sua herança.",
+  "learningObjective": "Identificar o que Deus perdoa.",
+  "feedbackCorrect": "É isso que o Deus incomparável perdoa primeiro.",
+  "feedbackWrong": {
+   "a": "Transgressão também é esquecida, mas vem depois neste versículo.",
+   "c": "Herança é o povo de Deus, não o que ele perdoa."
+  },
+  "hint": "Procure logo depois da pergunta inicial.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-sem-mq-05-mar-03": {
+  "question": "Segundo Miqueias 7:18, por que Deus não retém a ira para sempre?",
+  "learningObjective": "Observar a razão do perdão de Deus.",
+  "feedbackCorrect": "A razão dada é o prazer de Deus em ser misericordioso.",
+  "feedbackWrong": {
+   "a": "O texto não diz que ele esqueceu o povo.",
+   "b": "Medo do povo não é a razão apresentada.",
+   "d": "Cansaço não aparece; a razão é alegria em perdoar."
+  },
+  "hint": "Leia a explicação no fim do versículo.",
+  "options": {
+   "a": "Ele se esqueceu do povo",
+   "b": "Ele teme a reação do povo",
+   "c": "Ele se alegra em mostrar misericórdia",
+   "d": "Ele se cansou de julgar"
+  },
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-sem-mq-05-mar-04": {
+  "question": "Monte Miqueias 7:19 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Miqueias 7:19.",
+  "feedbackCorrect": "Compaixão, vitória sobre o erro e lançamento ao mar formam a ordem.",
+  "feedbackWrong": {
+   "default": "Comece pela compaixão de Deus."
+  },
+  "hint": "O versículo começa com Deus tendo compaixão.",
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-sem-mq-05-mar-05": {
+  "question": "Em Miqueias 7:19, o que Deus terá de nós antes de lançar os pecados ao mar?",
+  "learningObjective": "Lembrar a compaixão de Deus.",
+  "feedbackCorrect": "A ternura de Deus abre o versículo do perdão.",
+  "feedbackWrong": {
+   "a": "Distância é o contrário da aproximação misericordiosa.",
+   "b": "Orgulho não combina com o gesto de Deus aqui."
+  },
+  "hint": "Olhe a primeira palavra do versículo.",
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-sem-mq-05-mar-06": {
+  "question": "O que Miqueias 7:19 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar o perdão ao lançamento dos pecados.",
+  "feedbackCorrect": "Perdoar, aqui, é remover o pecado para bem longe.",
+  "feedbackWrong": {
+   "a": "O mar é destino dos pecados, não esconderijo do povo.",
+   "b": "A imagem não guarda pecados para cobrança fácil."
+  },
+  "hint": "Veja para onde vão os pecados no versículo.",
+  "options": {
+   "a": "Povo escondido no fundo do mar",
+   "b": "Pecados guardados para cobrança",
+   "c": "Perdão que lança pecados longe"
+  },
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-cam-mq-05-mar-01": {
+  "question": "Em Miqueias 7:18, Deus não retém a ira para sempre porque se alegra em demonstrar misericórdia.",
+  "learningObjective": "Compreender a causa do perdão.",
+  "feedbackCorrect": "A causa está explícita no fim do versículo.",
+  "feedbackWrong": {
+   "false": "Releia a ligação entre ira e misericórdia em 7:18."
+  },
+  "hint": "Repare no \"porque\" do fim do versículo.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-cam-mq-05-mar-02": {
+  "question": "Em Miqueias 7:18, toque a palavra que liga a ira passageira à misericórdia de Deus.",
+  "learningObjective": "Reconhecer o marcador de causa.",
+  "feedbackCorrect": "Essa palavra introduz a explicação do versículo.",
+  "feedbackWrong": {
+   "a": "Sempre marca duração, não a causa apresentada.",
+   "c": "Como abre uma comparação, não a explicação final."
+  },
+  "hint": "Procure a palavra antes da alegria de Deus.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-cam-mq-05-mar-03": {
+  "question": "Como Miqueias 7:19 continua a ideia de Miqueias 7:18?",
+  "learningObjective": "Relacionar misericórdia e remoção dos pecados.",
+  "feedbackCorrect": "O Deus que não guarda ira age lançando pecados longe.",
+  "feedbackWrong": {
+   "b": "Guardar pecados contradiz o lançamento ao fundo.",
+   "c": "O perdão não é parcial no destino final dos pecados.",
+   "d": "Distância de Deus não é o movimento de compaixão."
+  },
+  "hint": "Veja o gesto que vem depois da compaixão.",
+  "options": {
+   "a": "A misericórdia remove os pecados",
+   "b": "Deus guarda pecados para depois",
+   "c": "O perdão deixa tudo no mesmo lugar",
+   "d": "A compaixão afasta Deus do povo"
+  },
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia. Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-cam-mq-05-mar-04": {
+  "question": "Como avança a celebração em Miqueias 7:18–19?",
+  "learningObjective": "Compreender o avanço do perdão celebrado.",
+  "feedbackCorrect": "Pergunta, perdão sem ira guardada e pecados ao fundo formam o avanço.",
+  "feedbackWrong": {
+   "default": "O lançamento ao mar fecha a celebração."
+  },
+  "hint": "O fundo do mar é o ponto de chegada.",
+  "options": {
+   "a": "Deus perdoa o restante da herança",
+   "b": "Ele não guarda a ira para sempre",
+   "c": "Ele lança os pecados no fundo do mar"
+  },
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia. Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-cam-mq-05-mar-05": {
+  "question": "Em Miqueias 7:18, o que Deus não retém para sempre contra o povo?",
+  "learningObjective": "Lembrar o que Deus não guarda para sempre.",
+  "feedbackCorrect": "Isso dura menos que a alegria dele em perdoar.",
+  "feedbackWrong": {
+   "a": "Isso abre o versículo seguinte como gesto de Deus.",
+   "c": "Isso é justamente o que ele se alegra em demonstrar."
+  },
+  "hint": "Olhe o que vem antes da palavra sempre.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-cam-mq-05-mar-06": {
+  "question": "O que liga Miqueias 7:19 a Salmos 103:12?",
+  "learningObjective": "Relacionar perdão como distância dos pecados.",
+  "feedbackCorrect": "Os dois textos medem o perdão pela distância dos pecados.",
+  "feedbackWrong": {
+   "b": "A distância mostra remoção, não memória guardada.",
+   "c": "Nenhum dos textos aproxima pecados para nova cobrança."
+  },
+  "hint": "Compare a distância nos dois trechos.",
+  "options": {
+   "a": "Deus afasta as transgressões de nós",
+   "b": "Perdão mantém tudo ao alcance",
+   "c": "Pecados ficam perto para cobrança"
+  },
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-pro-mq-05-mar-01": {
+  "question": "Segundo Miqueias 7:18, Deus perdoa o povo mas guarda a ira para sempre contra ele.",
+  "learningObjective": "Avaliar a leitura que eterniza a ira de Deus.",
+  "feedbackCorrect": "A celebração afirma justamente o limite da ira.",
+  "feedbackWrong": {
+   "true": "Releia a frase sobre a ira em Miqueias 7:18."
+  },
+  "hint": "Leia o que o versículo diz sobre a ira de Deus.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-pro-mq-05-mar-02": {
+  "question": "Em Miqueias 7:20, toque a quem Deus mostrará fidelidade no fim do livro.",
+  "learningObjective": "Sustentar a fidelidade de Deus com o texto.",
+  "feedbackCorrect": "O nome abre a promessa final de fidelidade.",
+  "feedbackWrong": {
+   "a": "Abraão recebe misericórdia citada depois, não fidelidade aqui.",
+   "c": "Pais é referência geral no fim, não o primeiro nomeado."
+  },
+  "hint": "Procure o primeiro nome próprio do versículo.",
+  "_verso": "Mostrarás a Jacó a fidelidade e a Abraão a misericórdia, que prometeste a nossos pais desde os tempos antigos."
+ },
+ "miqueias-pro-mq-05-mar-03": {
+  "question": "Que leitura Miqueias 7:19 sustenta sobre pecados perdoados?",
+  "learningObjective": "Escolher a interpretação do perdão em Miqueias 7:19.",
+  "feedbackCorrect": "Perdão remove os pecados para um fundo inacessível.",
+  "feedbackWrong": {
+   "a": "A imagem não é de arquivo acessível, mas de profundeza.",
+   "b": "Perdoar pela metade não combina com todos lançados.",
+   "c": "Guardar para cobrança contradiz o lançamento ao fundo."
+  },
+  "hint": "Pense no que acontece com algo lançado bem fundo.",
+  "options": {
+   "a": "Viram arquivo fácil de rever",
+   "b": "São perdoados só pela metade",
+   "c": "Ficam guardados para cobrança",
+   "d": "São removidos para bem longe"
+  },
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-pro-mq-05-mar-04": {
+  "question": "Qual sequência revela o sentido de Miqueias 7:18–20?",
+  "learningObjective": "Ver o perdão final dentro da história de Deus.",
+  "feedbackCorrect": "Promessa antiga, pergunta de Miqueias e perdão profundo se ligam.",
+  "feedbackWrong": {
+   "default": "Comece pela fidelidade prometida aos pais."
+  },
+  "hint": "Siga da promessa antiga ao perdão celebrado.",
+  "options": {
+   "a": "Deus foi fiel a Jacó e a Abraão",
+   "b": "Miqueias pergunta quem é como Deus",
+   "c": "O perdão lança pecados no mar profundo"
+  },
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-pro-mq-05-mar-05": {
+  "question": "Em Miqueias 7:20, o que Deus mostrará a Abraão junto da fidelidade a Jacó?",
+  "learningObjective": "Lembrar o dom ligado a Abraão.",
+  "feedbackCorrect": "O livro fecha ligando perdão presente e promessa antiga.",
+  "feedbackWrong": {
+   "a": "Compaixão aparece em 7:19, não neste nome final.",
+   "c": "Fidelidade é o que é mostrado a Jacó nesta frase."
+  },
+  "hint": "Olhe o segundo nome próprio do versículo.",
+  "_verso": "Mostrarás a Jacó a fidelidade e a Abraão a misericórdia, que prometeste a nossos pais desde os tempos antigos."
+ },
+ "miqueias-pro-mq-05-mar-06": {
+  "question": "O que liga Miqueias 7:18 a Isaías 43:25?",
+  "learningObjective": "Ligar o perdão de Miqueias ao Deus que apaga.",
+  "feedbackCorrect": "Nos dois textos, Deus mesmo toma a iniciativa de apagar o erro.",
+  "feedbackWrong": {
+   "b": "Apagar não é guardar para lembrar depois.",
+   "c": "A iniciativa de perdoar está em Deus nos dois textos."
+  },
+  "hint": "Veja quem age para apagar nos dois trechos.",
+  "options": {
+   "a": "Deus apaga transgressões por amor",
+   "b": "Deus guarda tudo para lembrar",
+   "c": "O povo apaga o próprio erro"
+  },
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "estudo:mq-05-mar": {
+  "context": "Perto do fim do livro, depois de anúncios de juízo, Miqueias celebra o Deus incomparável: ele perdoa, não guarda a ira para sempre e lança os pecados no fundo do mar.",
+  "focusQuestion": "Que pecado você precisa deixar Deus lançar longe, sem ficar pescando de volta?",
+  "keywordGloss": "Deus se alegra em demonstrar bondade fiel, perdoando em vez de guardar a ira para sempre.",
+  "reflectionPrompts": [
+   "Quem é como Deus",
+   "Ira não é para sempre",
+   "Pecados no fundo do mar"
+  ],
+  "facts": [
+   "Deus mostrará maravilhas como nos dias da saída do Egito.",
+   "Deus perdoa a iniquidade e esquece a transgressão do restante da sua herança.",
+   "Deus não retém a sua ira para sempre.",
+   "Deus se alegra em demonstrar misericórdia.",
+   "Deus pisará as iniquidades e lançará os pecados nas profundezas do mar.",
+   "Deus mostrará fidelidade a Jacó e misericórdia a Abraão, como prometeu aos pais."
+  ],
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia. Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ }
+}

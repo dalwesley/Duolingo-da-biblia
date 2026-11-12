@@ -1,0 +1,345 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-01": {
+  "question": "Em Miqueias 4:3, as nações continuarão aprendendo a guerra depois de transformar as armas.",
+  "learningObjective": "Revisar o fim da guerra em Miqueias 4.",
+  "feedbackCorrect": "O texto fecha a cena de guerra, não a continua.",
+  "feedbackWrong": {
+   "true": "Releia o fim de Miqueias 4:3."
+  },
+  "hint": "Leia o que acontece com a guerra no fim do versículo.",
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-02": {
+  "question": "Em Miqueias 4:3, toque em que as espadas serão convertidas.",
+  "learningObjective": "Revisar a transformação das armas.",
+  "feedbackCorrect": "Arma de guerra vira instrumento de cultivo.",
+  "feedbackWrong": {
+   "a": "Espadas são transformadas; não são o resultado final.",
+   "c": "Lanças viram outro instrumento citado depois."
+  },
+  "hint": "Procure o primeiro resultado da transformação.",
+  "_verso": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-03": {
+  "question": "Segundo Miqueias 5:2, de onde sairá quem deve reinar em Israel?",
+  "learningObjective": "Revisar a origem do reinante.",
+  "feedbackCorrect": "A promessa nomeia a cidade pequena de Judá.",
+  "feedbackWrong": {
+   "a": "O Egito aparece em Miqueias 7 como passado, não origem.",
+   "c": "Jerusalém é citada em Miqueias 4, não como origem em 5:2.",
+   "d": "Samaria não é o lugar nomeado nesta promessa."
+  },
+  "hint": "Leia quem é chamado pelo nome no versículo.",
+  "options": {
+   "a": "Do Egito, terra antiga",
+   "b": "De Belém, pequena em Judá",
+   "c": "De Jerusalém, a capital",
+   "d": "De Samaria, no norte"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-04": {
+  "question": "Monte Miqueias 7:19 na ordem do texto.",
+  "learningObjective": "Revisar a ordem do perdão final.",
+  "feedbackCorrect": "Compaixão e lançamento ao fundo fecham o livro com perdão.",
+  "feedbackWrong": {
+   "default": "Comece pela compaixão de Deus pelo povo."
+  },
+  "hint": "O versículo começa com um gesto de Deus.",
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-05": {
+  "question": "Em Miqueias 4:4, debaixo de que planta cada um se sentará sem medo?",
+  "learningObjective": "Revisar a imagem de descanso.",
+  "feedbackCorrect": "A primeira planta nomeada marca descanso seguro.",
+  "feedbackWrong": {
+   "b": "A segunda planta aparece logo depois na mesma frase.",
+   "c": "Oliveira não é a primeira planta deste versículo."
+  },
+  "hint": "Olhe a primeira planta citada no versículo.",
+  "_verso": "Mas cada um se sentará debaixo da sua videira e debaixo da sua figueira, e não haverá quem os espante porque a boca do Senhor dos Exércitos o declarou."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-06": {
+  "question": "O que Miqueias 4:2 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar as cenas ao Deus que ensina.",
+  "feedbackCorrect": "As três cenas começam com Deus ensinando o seu povo e os povos.",
+  "feedbackWrong": {
+   "a": "Belém pequena mostra que tamanho não manda na promessa.",
+   "c": "O perdão final não guarda pecados perto do povo."
+  },
+  "hint": "Veja o motivo da subida ao monte.",
+  "options": {
+   "a": "Tamanho decide quem Deus usa",
+   "b": "Deus reúne ensino, rei e perdão",
+   "c": "Pecados ficam perto para cobrança"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-07": {
+  "question": "Em Miqueias 5:4, toque até onde o reinante será engrandecido.",
+  "learningObjective": "Revisar o alcance do reinante.",
+  "feedbackCorrect": "O alcance dele vai muito além de Belém.",
+  "feedbackWrong": {
+   "a": "Isso é a força do cuidado, não o alcance citado.",
+   "c": "Isso é o nome que sustenta o cuidado, não o limite."
+  },
+  "hint": "Procure a expressão de alcance no fim do versículo.",
+  "_verso": "Ele se manterá firme e cuidará do povo na força do Senhor, na majestade do nome do Senhor, seu Deus; e eles habitarão seguros, porque agora ele será engrandecido até os confins da terra."
+ },
+ "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-08": {
+  "question": "Monte Miqueias 5:2 na ordem do texto.",
+  "learningObjective": "Revisar a ordem da promessa de Belém.",
+  "feedbackCorrect": "Nome, tamanho e promessa aparecem nesta ordem.",
+  "feedbackWrong": {
+   "default": "Comece chamando Belém pelo nome."
+  },
+  "hint": "O versículo começa com um chamado pelo nome.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-01": {
+  "question": "Em Miqueias 4:2–3, aprender os caminhos de Deus vem antes de as armas virarem ferramentas.",
+  "learningObjective": "Compreender a ordem entre ensino e paz.",
+  "feedbackCorrect": "Primeiro a subida para aprender, depois a transformação das armas.",
+  "feedbackWrong": {
+   "false": "Compare a ordem entre Miqueias 4:2 e 4:3."
+  },
+  "hint": "Siga a ordem: o ensino vem antes ou depois das armas?",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém. E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-02": {
+  "question": "Em Miqueias 4:2, toque as palavras que mostram o motivo da subida das nações.",
+  "learningObjective": "Revisar o propósito da subida.",
+  "feedbackCorrect": "A subida tem um alvo: ser ensinado por Deus.",
+  "feedbackWrong": {
+   "a": "Venham é o convite inicial, não o motivo.",
+   "b": "Porque explica a origem da lei no fim do versículo."
+  },
+  "hint": "Procure a expressão ligada ao verbo ensinar.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-03": {
+  "question": "Como Miqueias 5:4 descreve o cuidado do reinante de Belém?",
+  "learningObjective": "Relacionar origem de Belém e cuidado do reinante.",
+  "feedbackCorrect": "Ele governa apoiado em Deus e o povo vive seguro.",
+  "feedbackWrong": {
+   "a": "Força própria isolada não é o que o versículo destaca.",
+   "c": "Distância do povo contradiz o verbo cuidar usado aqui.",
+   "d": "Medo não é o resultado; o texto fala de habitar seguro."
+  },
+  "hint": "Veja em quem o reinante se apoia para cuidar.",
+  "options": {
+   "a": "Governa só com força própria",
+   "b": "Cuida apoiado na força de Deus",
+   "c": "Fica longe do povo cercado",
+   "d": "Traz medo a quem governa"
+  },
+  "_verso": "Ele se manterá firme e cuidará do povo na força do Senhor, na majestade do nome do Senhor, seu Deus; e eles habitarão seguros, porque agora ele será engrandecido até os confins da terra."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-04": {
+  "question": "Como avança a cena em Miqueias 4:1–2?",
+  "learningObjective": "Compreender o avanço do monte às nações.",
+  "feedbackCorrect": "Monte exaltado, povos chegando e ensino pedido formam o avanço.",
+  "feedbackWrong": {
+   "default": "O pedido para aprender é o ponto de chegada."
+  },
+  "hint": "O ensino pedido fecha este movimento.",
+  "options": {
+   "a": "O monte da casa é exaltado",
+   "b": "Os povos afluem ao monte exaltado",
+   "c": "As nações pedem o ensino de Deus"
+  },
+  "_verso": "Nos últimos dias, o monte da casa do Senhor será estabelecido no cimo dos montes e se exaltará acima das colinas, e os povos afluirão a ele. E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-05": {
+  "question": "Em Miqueias 4:2, o que procederá de Sião para guiar as nações?",
+  "learningObjective": "Revisar o que sai de Sião.",
+  "feedbackCorrect": "É a instrução que sai para os povos que subiram.",
+  "feedbackWrong": {
+   "b": "Guerra é abandonada, não enviada como guia.",
+   "c": "Colheita não é o que procede de Sião aqui."
+  },
+  "hint": "Olhe a explicação final do versículo.",
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-06": {
+  "question": "O que liga Miqueias 4:2 a Isaías 2:3?",
+  "learningObjective": "Relacionar Miqueias e Isaías sobre as nações.",
+  "feedbackCorrect": "Os dois textos veem nações buscando instrução no monte.",
+  "feedbackWrong": {
+   "b": "A subida procura ensino, não combate.",
+   "c": "O monte não é apresentado como lugar fechado."
+  },
+  "hint": "Compare quem sobe e o motivo nos dois textos.",
+  "options": {
+   "a": "Nações sobem para aprender",
+   "b": "Povos sobem para combater",
+   "c": "Monte fechado só para Israel"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-07": {
+  "question": "Em Miqueias 7:18, toque a palavra que explica por que a ira não dura para sempre.",
+  "learningObjective": "Revisar a causa do perdão final.",
+  "feedbackCorrect": "A explicação vem logo depois dessa palavra.",
+  "feedbackWrong": {
+   "a": "Sempre mede duração, não traz a explicação.",
+   "b": "Como abre a pergunta inicial do versículo."
+  },
+  "hint": "Procure a palavra antes da alegria de Deus.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-08": {
+  "question": "Como avança a celebração em Miqueias 7:18–19?",
+  "learningObjective": "Compreender o avanço do perdão em Miqueias 7.",
+  "feedbackCorrect": "Perdão, ira que não fica e pecados lançados formam o avanço.",
+  "feedbackWrong": {
+   "default": "O fundo do mar fecha a celebração do perdão."
+  },
+  "hint": "O lançamento ao mar é o ponto final.",
+  "options": {
+   "a": "Deus perdoa o restante da herança",
+   "b": "Ele não guarda a ira para sempre",
+   "c": "Ele lança os pecados ao fundo"
+  },
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia. Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-01": {
+  "question": "Segundo Miqueias 5:2, Belém importa porque era a maior entre os milhares de Judá.",
+  "learningObjective": "Avaliar a leitura que mede Belém pelo tamanho.",
+  "feedbackCorrect": "A importância está na promessa, não no tamanho da cidade.",
+  "feedbackWrong": {
+   "true": "O texto chama Belém de pequena demais entre os milhares."
+  },
+  "hint": "Veja como Miqueias descreve o tamanho de Belém.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-02": {
+  "question": "Em Miqueias 7:18, toque o que Deus se alegra em demonstrar ao perdoar.",
+  "learningObjective": "Sustentar o caráter de Deus com o texto.",
+  "feedbackCorrect": "É esse traço que explica a ira não durar para sempre.",
+  "feedbackWrong": {
+   "a": "Transgressão é o erro esquecido, não o que ele demonstra com alegria.",
+   "c": "Herança é o povo dele, não o traço demonstrado."
+  },
+  "hint": "Olhe o fim do versículo, depois da explicação.",
+  "_verso": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-03": {
+  "question": "Que leitura reúne bem as promessas de Miqueias 4, 5 e 7?",
+  "learningObjective": "Escolher a leitura que reúne as três cenas.",
+  "feedbackCorrect": "Deus ensina, levanta o reinante e perdoa no fim.",
+  "feedbackWrong": {
+   "b": "Força militar é transformada, não celebrada como caminho final.",
+   "c": "Pecados lançados ao fundo não ficam para cobrança.",
+   "d": "Lugar pequeno é escolhido, não descartado pela promessa."
+  },
+  "hint": "Junte monte, Belém e fundo do mar.",
+  "options": {
+   "a": "Deus ensina, reina e perdoa",
+   "b": "Armas fortes garantem o futuro",
+   "c": "Perdão guarda pecados por perto",
+   "d": "Lugares pequenos são descartados"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-04": {
+  "question": "Qual sequência revela o fio das promessas em Miqueias 4, 5 e 7?",
+  "learningObjective": "Ver o fio que une as três cenas.",
+  "feedbackCorrect": "Ensino, reinante e perdão mostram o governo bondoso de Deus.",
+  "feedbackWrong": {
+   "default": "Comece pelas nações aprendendo no monte."
+  },
+  "hint": "Siga a ordem dos capítulos revisados.",
+  "options": {
+   "a": "Nações aprendem os caminhos de Deus",
+   "b": "O reinante de Belém cuida do povo",
+   "c": "Deus lança os pecados no mar"
+  },
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-05": {
+  "question": "Em Miqueias 5:2, as origens do reinante são desde os dias de quê?",
+  "learningObjective": "Revisar a origem eterna do reinante.",
+  "feedbackCorrect": "A origem dele ultrapassa a história da pequena cidade.",
+  "feedbackWrong": {
+   "a": "História soa vago diante do peso do fim do versículo.",
+   "b": "Juventude reduziria a origem a uma fase curta."
+  },
+  "hint": "Olhe as últimas palavras do versículo.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-06": {
+  "question": "O que liga Miqueias 5:2 a Mateus 2:5–6?",
+  "learningObjective": "Ligar a promessa de Belém à sua citação final.",
+  "feedbackCorrect": "Mateus registra a antiga promessa sendo citada aos interessados.",
+  "feedbackWrong": {
+   "a": "A citação mostra memória viva da promessa antiga.",
+   "b": "O Evangelho confirma o lugar, não o troca por outro."
+  },
+  "hint": "Veja a resposta dada sobre onde Cristo nasceria.",
+  "options": {
+   "a": "A promessa antiga foi esquecida",
+   "b": "Mateus troca o lugar da promessa",
+   "c": "Escribas apontam Belém prometida"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-07": {
+  "question": "Em Miqueias 5:2, toque o trecho que mostra a antiguidade das origens do reinante.",
+  "learningObjective": "Sustentar a antiguidade do reinante.",
+  "feedbackCorrect": "Esse trecho sustenta uma história anterior ao nascimento.",
+  "feedbackWrong": {
+   "b": "Isso descreve o tamanho do lugar, não o tempo dele.",
+   "c": "Isso mede Belém entre as cidades, não a origem dele."
+  },
+  "hint": "Procure a parte do versículo ligada ao passado distante.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-08": {
+  "question": "Qual sequência revela a fidelidade de Deus celebrada em Miqueias 7?",
+  "learningObjective": "Ver a fidelidade de Deus ao longo do livro.",
+  "feedbackCorrect": "Promessa aos pais, saída lembrada e perdão atual se encontram.",
+  "feedbackWrong": {
+   "default": "Comece pela promessa feita aos pais antigos."
+  },
+  "hint": "Siga da promessa antiga ao perdão presente.",
+  "options": {
+   "a": "Deus prometeu misericórdia aos pais antigos",
+   "b": "Ele mostrou maravilhas na saída do Egito",
+   "c": "Miqueias celebra o Deus que perdoa"
+  },
+  "_verso": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+ },
+ "estudo:miqueias-miqueias-03-desafio-miqueias": {
+  "context": "Este desafio revisa Miqueias 4, 5 e 7: nações que aprendem no monte, reinante que sai de Belém e Deus que, no fim, perdoa e lança pecados no fundo do mar.",
+  "focusQuestion": "Qual destas três cenas mais desafia a sua confiança em Deus hoje?",
+  "keywordGloss": "Bondade fiel de Deus, que ensina as nações, levanta o reinante e perdoa o povo no fim do livro.",
+  "reflectionPrompts": [
+   "Aprender no monte de Deus",
+   "Confiar no reinante de Belém",
+   "Receber o perdão do fundo do mar"
+  ],
+  "facts": [
+   "Muitas nações sobem ao monte para aprender os caminhos de Deus.",
+   "Espadas virarão relhas de arados e lanças virarão podadeiras.",
+   "De Belém sairá aquele que deve reinar em Israel.",
+   "O reinante cuidará do povo na força do Senhor.",
+   "Deus não retém a sua ira para sempre, porque se alegra em misericórdia.",
+   "Deus lançará todos os pecados nas profundezas do mar."
+  ],
+  "_verso": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém. E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+ }
+}

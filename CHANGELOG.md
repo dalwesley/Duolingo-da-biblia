@@ -9,6 +9,26 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.46] — 2026-11-11
+
+### Added
+- Página do Advento no site (`stway.com.br/advento`): os 26 postais, de 29 de novembro a 24 de dezembro. O dia de hoje fica marcado; os que ainda não chegaram ficam velados
+- Explorar monta as portas e os cards a partir do painel (linhas e cards) e guarda essa cópia no aparelho, para reabrir sem rede
+- Na entrada da cena, o endereço: coleção, trilha e número da cena
+- Painel: moderar uma conta (aviso, nome neutro, tirar a foto, suspender por prazo, inativar e reativar). Cada ação pede motivo e fica no histórico. A suspensão vencida reativa o login sozinha, de hora em hora
+- Painel: Funil, Flags (Remote Config), Suporte da conta, e o Explorar num lugar só (trilhas, cenas, cards e linhas)
+
+### Changed
+- A aba Trilhas passa a se chamar Explorar
+- "Explorar a Bíblia" vira Atlas da Bíblia (linha do tempo, lugares e personagens)
+- Trilhas de entrada (Ansiedade, Conhecer a Deus, Entender a Bíblia) e A Promessa saem do código do app e vêm do catálogo, como as outras. A cena emprestada continua contando na trilha de origem
+- Sugestão de trilha pede a coleção
+- Widget iOS em 1.0.46 (1046)
+
+### Infra
+- `firestore.rules`: `moderation` e `moderation_log` (só o admin lê; só a Function grava); `content_cards` e `content_shelves` (leitura aberta, escrita de editor)
+- Functions: `moderateUser` e `liftSuspensions`
+
 ## [1.0.45] — 2026-11-09
 
 ### Added

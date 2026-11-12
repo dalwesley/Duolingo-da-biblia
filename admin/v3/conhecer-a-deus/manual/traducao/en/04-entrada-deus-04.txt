@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "conhecer-a-deus-sem-entrada-deus-04-01": {
+  "question": "Em Salmos 23:2, o Senhor leva Davi para junto das águas de descanso.",
+  "learningObjective": "Observar o cuidado concreto do pastor no Salmo 23.",
+  "feedbackCorrect": "O texto diz: ele leva para junto das águas de descanso, como o pastor faz com as ovelhas.",
+  "feedbackWrong": {
+   "false": "Releia o fim de Salmos 23:2: leva-me para junto das águas de descanso."
+  },
+  "hint": "Olhe o fim do versículo.",
+  "_verso": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso."
+ },
+ "conhecer-a-deus-sem-entrada-deus-04-02": {
+  "question": "Em Salmos 23:1, toque quem Davi chama de pastor.",
+  "learningObjective": "Identificar o Senhor como o pastor do salmo.",
+  "feedbackCorrect": "Davi começa pelo nome de Deus: é o Senhor quem cuida dele como pastor.",
+  "feedbackWrong": {
+   "a": "\"Nada\" fala do que não vai faltar, não de quem cuida.",
+   "b": "\"Meu pastor\" é o título que Davi dá; toque quem recebe esse título."
+  },
+  "hint": "Procure quem vem antes do título no começo do versículo.",
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-sem-entrada-deus-04-03": {
+  "question": "Segundo Salmos 23:4, o que conforta Davi no vale?",
+  "learningObjective": "Observar o que traz conforto a Davi no vale.",
+  "feedbackCorrect": "Vara e cajado são ferramentas do pastor para guiar e proteger; é isso que conforta Davi.",
+  "feedbackWrong": {
+   "b": "Não há outros pastores no salmo: \"tu estás comigo\".",
+   "c": "Davi não fala da própria força; o conforto vem do que é do Senhor.",
+   "d": "O texto não fala de candeia; fala da vara e do cajado."
+  },
+  "hint": "Leia o fim do versículo.",
+  "options": {
+   "a": "A vara e o cajado do Senhor",
+   "b": "A companhia dos outros pastores",
+   "c": "A força do seu próprio braço",
+   "d": "A luz de uma candeia no caminho"
+  },
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+ },
+ "conhecer-a-deus-sem-entrada-deus-04-04": {
+  "question": "Monte Salmos 23:5 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Salmos 23:5.",
+  "feedbackCorrect": "É a sequência do versículo: banquete, óleo na cabeça e cálice transbordando.",
+  "feedbackWrong": {
+   "default": "Comece pelo banquete; o cálice que transborda fecha o versículo."
+  },
+  "hint": "O versículo começa com a mesa.",
+  "_verso": "Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda."
+ },
+ "conhecer-a-deus-sem-entrada-deus-04-05": {
+  "question": "Em Salmos 23:2, onde o Senhor faz Davi repousar?",
+  "learningObjective": "Lembrar a imagem concreta do cuidado do pastor.",
+  "feedbackCorrect": "Pastos verdejantes: lugar de comida e descanso, que o pastor escolhe para as ovelhas.",
+  "feedbackWrong": {
+   "a": "O texto não leva a ovelha para o alto; fala de um lugar verde para repousar.",
+   "b": "Parece próximo, mas o texto fala do lugar onde as ovelhas comem."
+  },
+  "hint": "Pense no lugar onde as ovelhas comem.",
+  "_verso": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso."
+ },
+ "conhecer-a-deus-sem-entrada-deus-04-06": {
+  "question": "O que Salmos 23:1 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a experiência de Davi com ovelhas à imagem do Senhor como pastor.",
+  "feedbackCorrect": "Quem foi pastor agora se vê como ovelha: o Senhor faz por ele o que ele fazia pelo rebanho.",
+  "feedbackWrong": {
+   "a": "Aqui o pastor é o Senhor; Davi se coloca como ovelha.",
+   "c": "O salmo não olha para o passado de Davi; fala de quem cuida dele agora."
+  },
+  "hint": "Veja quem ocupa o lugar de pastor no versículo.",
+  "options": {
+   "a": "Davi se vê como o pastor",
+   "b": "Davi vê no Senhor um pastor",
+   "c": "Davi sente saudade das ovelhas"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-01": {
+  "question": "Em Salmos 23:4, Davi deixa de temer porque o Senhor o tira do vale da sombra da morte.",
+  "learningObjective": "Compreender a causa da coragem de Davi no vale.",
+  "feedbackCorrect": "Davi ainda anda pelo vale; ele não teme porque o Senhor está com ele ali dentro.",
+  "feedbackWrong": {
+   "true": "Releia: \"Ainda que eu ande pelo vale\". O motivo é outro: \"porque tu estás comigo\"."
+  },
+  "hint": "Veja o que vem depois de \"não temerei mal nenhum\".",
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-02": {
+  "question": "Em Salmos 23:4, toque a palavra que introduz o motivo de Davi não temer.",
+  "learningObjective": "Reconhecer o marcador de causa no texto.",
+  "feedbackCorrect": "\"Porque\" abre a razão: o Senhor está com ele, e isso basta no vale.",
+  "feedbackWrong": {
+   "a": "\"Mal nenhum\" diz o que Davi não teme, não por quê.",
+   "b": "\"Ainda que\" admite o perigo do vale; o motivo da coragem vem depois."
+  },
+  "hint": "Procure a palavra que liga a coragem à sua razão.",
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-03": {
+  "question": "Como as duas partes de Salmos 23:1 se ligam?",
+  "learningObjective": "Relacionar o pastor com a falta de nada.",
+  "feedbackCorrect": "A primeira frase sustenta a segunda: porque o Senhor é pastor, nada vai faltar.",
+  "feedbackWrong": {
+   "a": "A ordem é a inversa: o pastor vem primeiro, e por isso nada falta.",
+   "b": "O salmo não fala de conquistas de Davi, e sim do cuidado do Senhor.",
+   "d": "Davi não faz promessa; ele confia no que o pastor vai dar."
+  },
+  "hint": "Pense em qual frase depende da outra.",
+  "options": {
+   "a": "Nada faltar é a condição para o Senhor ser pastor",
+   "b": "Davi descreve as riquezas que já conquistou",
+   "c": "Ter o Senhor como pastor é a razão de nada faltar",
+   "d": "Davi promete nunca pedir nada ao Senhor"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-04": {
+  "question": "Como avança o cuidado do Senhor no Salmo 23?",
+  "learningObjective": "Compreender o movimento do Salmo 23.",
+  "feedbackCorrect": "Do pasto ao vale e do vale à mesa: o Senhor cuida em cada parte do caminho.",
+  "feedbackWrong": {
+   "default": "O salmo começa no pasto, passa pelo vale e termina na mesa e na casa do Senhor."
+  },
+  "hint": "O salmo termina na casa do Senhor.",
+  "options": {
+   "a": "O pastor dá descanso e direção",
+   "b": "O pastor acompanha no vale escuro",
+   "c": "O Senhor serve banquete e acolhe em casa"
+  },
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam. Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-05": {
+  "question": "Em Salmos 23:3, o que o Senhor faz com a alma de Davi?",
+  "learningObjective": "Lembrar a ação do pastor que renova a pessoa.",
+  "feedbackCorrect": "Refrigerar é refazer as forças: o pastor devolve o fôlego a quem está cansado.",
+  "feedbackWrong": {
+   "b": "Guardar aparece em outros salmos; aqui a ação é renovar a alma cansada.",
+   "c": "O salmo não fala de exame aqui; fala de renovar as forças."
+  },
+  "hint": "É a ação que vem no começo do versículo.",
+  "_verso": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome."
+ },
+ "conhecer-a-deus-cam-entrada-deus-04-06": {
+  "question": "O que liga Salmos 23:1 a Isaías 40:11?",
+  "learningObjective": "Relacionar a imagem do Senhor pastor em Salmos e Isaías.",
+  "feedbackCorrect": "Nos dois textos, o próprio Senhor é o pastor que guia e carrega o rebanho.",
+  "feedbackWrong": {
+   "b": "Isaías mostra o contrário: ele carrega os cordeirinhos nos braços.",
+   "c": "Nos dois textos, o pastor é o Senhor, não um rei humano."
+  },
+  "hint": "Compare quem cuida do rebanho nos dois trechos.",
+  "options": {
+   "a": "O Senhor pastoreia o seu povo",
+   "b": "Deus cuida só dos fortes",
+   "c": "Reis são os pastores do povo"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-01": {
+  "question": "O Salmo 23 promete que quem tem o Senhor como pastor não passa por vales escuros.",
+  "learningObjective": "Distinguir a promessa de companhia de uma promessa de vida sem dor.",
+  "feedbackCorrect": "O salmo fala do vale da sombra da morte; a promessa é o Senhor junto, não a falta de vales.",
+  "feedbackWrong": {
+   "true": "Releia Salmos 23:4: \"Ainda que eu ande pelo vale\". O vale existe; o Senhor está nele."
+  },
+  "hint": "Veja como começa o versículo do vale.",
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-02": {
+  "question": "Em Salmos 23:4, toque o trecho que mostra o Senhor perto, e não distante.",
+  "learningObjective": "Sustentar com o texto que o Deus santo cuida de perto.",
+  "feedbackCorrect": "\"Tu estás comigo\": no lugar mais escuro, o Senhor não está longe, está ao lado de Davi.",
+  "feedbackWrong": {
+   "a": "O vale é o lugar do perigo, não a presença do Senhor.",
+   "c": "\"Não temerei\" é a reação de Davi; a razão está na presença do Senhor."
+  },
+  "hint": "Procure uma presença, não um lugar nem um sentimento.",
+  "_verso": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-03": {
+  "question": "Que leitura Salmos 23:1 sustenta sobre o Senhor?",
+  "learningObjective": "Escolher a leitura que o texto sustenta sobre o cuidado de Deus.",
+  "feedbackCorrect": "\"Meu pastor\": o Senhor não é só o Deus de todos, é quem cuida de Davi pessoalmente.",
+  "feedbackWrong": {
+   "b": "O salmo fala do vale da sombra da morte (Sl 23:4); o Senhor está nele.",
+   "c": "O que não falta é o cuidado do pastor, não cada desejo de Davi.",
+   "d": "Davi chama o Senhor de \"meu pastor\": o santo não fica longe."
+  },
+  "hint": "Repare na palavra \"meu\" antes de \"pastor\".",
+  "options": {
+   "a": "O Senhor cuida de Davi de perto, como pastor",
+   "b": "Com o Senhor por perto, não existem vales escuros",
+   "c": "Quem tem o Senhor recebe tudo o que deseja",
+   "d": "Deus é santo demais para cuidar de alguém de perto"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-04": {
+  "question": "Qual sequência mostra o fio do pastor que passa por Salmos 23:1?",
+  "learningObjective": "Ver o Salmo 23 como começo de um fio que chega a Jesus.",
+  "feedbackCorrect": "O pastor de Davi aparece em Jesus, que dá a vida, e guia o seu povo até o fim.",
+  "feedbackWrong": {
+   "default": "Siga a história: o salmo de Davi (Sl 23), Jesus (Jo 10:11) e o fim (Ap 7:17)."
+  },
+  "hint": "Siga a ordem da Bíblia: Salmos, Evangelhos, Apocalipse.",
+  "options": {
+   "a": "Davi chama o Senhor de seu pastor",
+   "b": "Jesus, o bom Pastor, dá a vida pelas ovelhas",
+   "c": "O Cordeiro no trono guia às fontes da vida"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-05": {
+  "question": "Em Salmos 23:6, o que segue Davi junto com a bondade?",
+  "learningObjective": "Lembrar o termo que mostra o amor fiel do Senhor.",
+  "feedbackCorrect": "A misericórdia é o amor fiel de Deus: ela não fica para trás, segue Davi todos os dias.",
+  "feedbackWrong": {
+   "a": "Paz combina com o salmo, mas não é a palavra do versículo.",
+   "c": "A justiça aparece em Salmos 23:3, nas veredas; aqui o par da bondade é outro."
+  },
+  "hint": "É o amor fiel que acompanha Davi pela vida inteira.",
+  "_verso": "Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade."
+ },
+ "conhecer-a-deus-pro-entrada-deus-04-06": {
+  "question": "O que liga Salmos 23:1 a João 10:11?",
+  "learningObjective": "Ligar o pastor do Salmo 23 a Jesus, como o próprio Jesus faz.",
+  "feedbackCorrect": "Jesus assume a imagem do Salmo 23: ele é o pastor, e dá a vida pelas ovelhas.",
+  "feedbackWrong": {
+   "a": "Davi se coloca como ovelha; em João, quem diz \"Eu sou o bom Pastor\" é Jesus.",
+   "c": "João 10 não fala de líderes de igreja; fala de Jesus e das suas ovelhas."
+  },
+  "hint": "Veja quem fala em primeira pessoa em João 10:11.",
+  "options": {
+   "a": "Davi é o bom pastor",
+   "b": "Jesus é o bom Pastor",
+   "c": "Pastores lideram as igrejas"
+  },
+  "_verso": "O Senhor é o meu pastor; nada me faltará."
+ },
+ "estudo:entrada-deus-04": {
+  "context": "Davi cuidou de ovelhas antes de ser rei. Ele sabia o que um pastor faz: leva ao pasto e à água, guia pelo caminho e defende do perigo. Neste salmo, ele usa essa imagem para falar do próprio Senhor.",
+  "focusQuestion": "Em que parte do seu caminho você precisa lembrar que o Senhor está com você?",
+  "keywordGloss": "Quem guia, alimenta e protege as ovelhas; Davi dá esse nome ao Senhor.",
+  "reflectionPrompts": [
+   "Nada me faltará",
+   "Tu estás comigo",
+   "A casa do Senhor"
+  ],
+  "facts": [
+   "Davi chama o Senhor de seu pastor.",
+   "O Senhor leva Davi para junto das águas de descanso.",
+   "No vale da sombra da morte, Davi não teme mal nenhum.",
+   "A vara e o cajado do Senhor trazem conforto.",
+   "O Senhor prepara um banquete diante dos inimigos de Davi.",
+   "A bondade e a misericórdia seguem Davi todos os dias."
+  ],
+  "_verso": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome. Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam. Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda. Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade."
+ }
+}

@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/data/entry_trails.dart';
 import 'package:trilha_app/data/season_walk_catalog.dart';
-import 'package:trilha_app/data/trail_repository.dart';
 import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/season_walk.dart';
-import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/liturgical_calendar.dart';
 import 'package:trilha_app/utils/season_walk_debug.dart';
 import 'package:trilha_app/widgets/mission_listen_button.dart';
@@ -164,56 +162,19 @@ void main() {
   });
 
   group('Entry trails and seals', () {
-    test('entry overlays keep continuesTo and their own banks', () {
-      final bySlug = {for (final t in EntryTrails.overlay) t.slug: t};
-      expect(bySlug.keys.toSet(), EntryTrails.slugs);
-      expect(bySlug['ansiedade']!.missionSlugs, hasLength(5));
-      expect(bySlug['conhecer-a-deus']!.missionSlugs, hasLength(5));
-      expect(bySlug['entender-a-biblia']!.missionSlugs, hasLength(7));
-      for (final t in EntryTrails.overlay) {
-        expect(EntryTrails.continuesTo[t.missionSlugs.last], isNotNull);
-      }
-      // Motivos: banco próprio (section = slug da cena).
-      for (final slug in [
+    test('entry trail rules keep continuesTo; content comes from Firestore', () {
+      expect(EntryTrails.slugs, {
         'ansiedade',
         'conhecer-a-deus',
         'entender-a-biblia',
-      ]) {
-        for (final m in bySlug[slug]!.modules.expand((mod) => mod.missions)) {
-          expect(m.bankSection, isNull);
-          expect(m.bankTrailSlug, isNull);
-          expect(m.resolvedBankSection, m.slug);
-        }
-      }
+      });
+      expect(EntryTrails.continuesTo.keys, {
+        'dor-ansia-05',
+        'entrada-deus-05',
+        'entrada-biblia-07',
+      });
       // Recomeço saiu: as cenas de Gênesis e do Sermão ficam nas trilhas delas.
-      expect(bySlug.containsKey('recomeco'), isFalse);
-    });
-
-    test('no entry scene shares completion with canon banks', () {
-      expect(EntryTrails.linkedScenes('dor-ansia-01'), isEmpty);
-      expect(EntryTrails.linkedScenes('entrada-deus-01'), isEmpty);
-      expect(EntryTrails.linkedScenes('entrada-biblia-01'), isEmpty);
-      expect(EntryTrails.linkedScenes('gen-06-queda'), isEmpty);
-      expect(EntryTrails.linkedScenes('sm-03-os-que-choram'), isEmpty);
-      expect(EntryTrails.linkedScenes('gen-02-dias'), isEmpty);
-    });
-
-    test('entry overlay wins over empty remote stub', () {
-      final stub = Trail(
-        slug: 'ansiedade',
-        title: 'Ansiedade (remoto vazio)',
-        description: '',
-        icon: '',
-        order: 99,
-        comingSoon: true,
-        color: '#000000',
-        modules: const [],
-      );
-      final merged = TrailRepository.mergeEntry([stub]);
-      final hit = merged.firstWhere((t) => t.slug == 'ansiedade');
-      expect(hit.comingSoon, isFalse);
-      expect(hit.missionSlugs, hasLength(5));
-      expect(merged.where((t) => t.slug == 'ansiedade'), hasLength(1));
+      expect(EntryTrails.slugs.contains('recomeco'), isFalse);
     });
 
     test('seals unlock only after the anchor mission', () {
@@ -235,21 +196,6 @@ void main() {
     test('last pain-trail missions continue into the canon', () {
       expect(EntryTrails.continuesTo['dor-ansia-05'], 'sermao-do-monte');
     });
-
-    test(
-      'anxiety contentment scene keeps its own section, not Filipenses bank',
-      () {
-        final m = EntryTrails.overlay
-            .firstWhere((t) => t.slug == 'ansiedade')
-            .modules
-            .first
-            .missions
-            .firstWhere((x) => x.slug == 'dor-ansia-02');
-        expect(m.hookRef, 'Filipenses 4:12–13');
-        expect(m.bankSection, isNull);
-        expect(m.resolvedBankSection, 'dor-ansia-02');
-      },
-    );
   });
 
   group('Walk review picker', () {

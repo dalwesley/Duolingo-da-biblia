@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "conhecer-a-deus-sem-entrada-deus-03-01": {
+  "question": "Em Isaías 6:2, os serafins cobriam o rosto com duas das suas asas.",
+  "learningObjective": "Observar a reação dos serafins diante do Senhor.",
+  "feedbackCorrect": "O texto diz: com duas asas cada serafim cobria o rosto diante do Senhor.",
+  "feedbackWrong": {
+   "false": "Releia Isaías 6:2: com duas asas cada serafim cobria o rosto."
+  },
+  "hint": "Veja o que cada par de asas fazia.",
+  "_verso": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava."
+ },
+ "conhecer-a-deus-sem-entrada-deus-03-02": {
+  "question": "Em Isaías 6:1, toque quem Isaías viu assentado no trono.",
+  "learningObjective": "Identificar quem Isaías vê na visão.",
+  "feedbackCorrect": "Isaías viu o Senhor no trono, no mesmo ano em que o rei da terra morreu.",
+  "feedbackWrong": {
+   "b": "O templo é o lugar que as vestes enchiam, não quem estava no trono.",
+   "c": "O rei Uzias tinha morrido; quem está no trono da visão é outro."
+  },
+  "hint": "Procure quem aparece logo depois de \"eu vi\".",
+  "_verso": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo."
+ },
+ "conhecer-a-deus-sem-entrada-deus-03-03": {
+  "question": "Segundo Isaías 6:4, o que aconteceu com a casa durante a visão?",
+  "learningObjective": "Observar o efeito da voz no templo.",
+  "feedbackCorrect": "Os umbrais tremem com a voz, e a casa se enche de fumaça.",
+  "feedbackWrong": {
+   "a": "Havia uma voz clamando, tão forte que os umbrais se moveram.",
+   "b": "O texto fala de fumaça, não de luz.",
+   "c": "As portas tremem, mas o texto não diz que a casa caiu."
+  },
+  "hint": "Leia o fim do versículo.",
+  "options": {
+   "a": "Ficou em completo silêncio",
+   "b": "Encheu-se de uma luz forte",
+   "c": "Desabou por inteiro",
+   "d": "Encheu-se de fumaça"
+  },
+  "_verso": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça."
+ },
+ "conhecer-a-deus-sem-entrada-deus-03-04": {
+  "question": "Monte Isaías 6:5 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Isaías 6:5.",
+  "feedbackCorrect": "Primeiro o grito, depois a confissão, e por fim o que ele viu: o Rei.",
+  "feedbackWrong": {
+   "default": "Comece pelo \"Ai de mim\"; o que os olhos de Isaías viram fecha o versículo."
+  },
+  "hint": "O versículo começa com um grito.",
+  "_verso": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!"
+ },
+ "conhecer-a-deus-sem-entrada-deus-03-05": {
+  "question": "Em Isaías 6:2, quantas asas tinha cada serafim?",
+  "learningObjective": "Lembrar a descrição dos serafins.",
+  "feedbackCorrect": "Seis asas: duas cobriam o rosto, duas os pés, e duas serviam para voar.",
+  "feedbackWrong": {
+   "a": "É menos: o versículo descreve três pares de asas.",
+   "c": "Conte os pares do versículo: rosto, pés e voo. São três pares."
+  },
+  "hint": "Conte os pares de asas descritos no resto do versículo.",
+  "_verso": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava."
+ },
+ "conhecer-a-deus-sem-entrada-deus-03-06": {
+  "question": "O que Isaías 6:1 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a visão do trono ao momento de crise de Judá.",
+  "feedbackCorrect": "O rei da terra morre, mas Isaías vê o Senhor assentado no trono.",
+  "feedbackWrong": {
+   "a": "Na visão, o trono está ocupado: o Senhor está assentado nele.",
+   "b": "Isaías não sobe ao trono; ele vê quem já está lá."
+  },
+  "hint": "Veja quem está no trono no ano em que o rei morreu.",
+  "options": {
+   "a": "O trono ficou vazio",
+   "b": "Isaías vira o novo rei",
+   "c": "O Senhor segue reinando"
+  },
+  "_verso": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo."
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-01": {
+  "question": "Em Isaías 6:4–5, Isaías se sente perdido porque o templo estava tremendo e cheio de fumaça.",
+  "learningObjective": "Compreender a causa do \"Ai de mim\" de Isaías.",
+  "feedbackCorrect": "O texto dá outro motivo: Isaías é impuro, e seus olhos viram o Rei.",
+  "feedbackWrong": {
+   "true": "Releia Isaías 6:5: o motivo é ser homem de lábios impuros e ter visto o Rei."
+  },
+  "hint": "Veja o que Isaías diz depois de \"Estou perdido!\".",
+  "_verso": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça. Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!"
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-02": {
+  "question": "Em Isaías 6:5, toque a palavra que introduz o motivo do \"Ai de mim\".",
+  "learningObjective": "Reconhecer o marcador de causa na confissão de Isaías.",
+  "feedbackCorrect": "\"Pois\" abre a explicação: ele é impuro e viu o Rei.",
+  "feedbackWrong": {
+   "a": "\"Então\" marca quando Isaías fala, não por que ele fala.",
+   "b": "\"Perdido\" é como ele se sente; o motivo vem logo depois."
+  },
+  "hint": "Olhe o que vem logo após o grito de Isaías.",
+  "_verso": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!"
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-03": {
+  "question": "Como o gesto dos serafins em Isaías 6:2 se liga ao que eles proclamam em 6:3?",
+  "learningObjective": "Relacionar a atitude dos serafins com a santidade que proclamam.",
+  "feedbackCorrect": "Os que estão mais perto do trono cobrem o rosto e proclamam: Deus é santo.",
+  "feedbackWrong": {
+   "a": "O texto não fala de ira; eles louvam a santidade do Senhor.",
+   "b": "Eles estão diante do Senhor; Isaías não é o centro da cena.",
+   "d": "Eles voam acima do trono; o texto não diz que o carregam."
+  },
+  "hint": "Compare o que eles fazem com o que eles dizem.",
+  "options": {
+   "a": "Eles se escondem porque Deus está irado com eles",
+   "b": "Cobrem o rosto para não ver Isaías",
+   "c": "Até eles cobrem o rosto diante do Deus santo",
+   "d": "Voam para levar o trono de Deus pela terra"
+  },
+  "_verso": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava. E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-04": {
+  "question": "Como avança a cena em Isaías 6:5–6?",
+  "learningObjective": "Compreender o movimento da confissão até a vinda do serafim.",
+  "feedbackCorrect": "Isaías clama, confessa a impureza, e então um serafim vem até ele.",
+  "feedbackWrong": {
+   "default": "A brasa chega por último, depois do clamor e da confissão de Isaías."
+  },
+  "hint": "O serafim só se move no segundo versículo.",
+  "options": {
+   "a": "Isaías clama que está perdido",
+   "b": "Isaías confessa a impureza dele e do povo",
+   "c": "Um serafim vem até ele com uma brasa"
+  },
+  "_verso": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos! Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;"
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-05": {
+  "question": "Em Isaías 6:4, o que os umbrais das portas fizeram com a voz que clamava?",
+  "learningObjective": "Compreender o efeito da santidade proclamada sobre o templo.",
+  "feedbackCorrect": "A voz que proclama a santidade faz até a estrutura do templo tremer.",
+  "feedbackWrong": {
+   "a": "O texto não fala de portas se abrindo; fala dos umbrais tremendo.",
+   "c": "Nada se fecha no texto; os umbrais tremem com a voz."
+  },
+  "hint": "Pense no efeito de uma voz muito forte sobre uma construção.",
+  "_verso": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça."
+ },
+ "conhecer-a-deus-cam-entrada-deus-03-06": {
+  "question": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+  "learningObjective": "Relacionar a visão de Isaías com a adoração no Apocalipse.",
+  "feedbackCorrect": "Em Isaías e no Apocalipse, seres de seis asas repetem: Santo, santo, santo.",
+  "feedbackWrong": {
+   "b": "Nenhum dos textos mostra pedido de perdão; os dois mostram louvor.",
+   "c": "O louvor não muda: séculos depois, o mesmo \"Santo, santo, santo\" continua."
+  },
+  "hint": "Compare o que os seres de seis asas dizem nos dois textos.",
+  "options": {
+   "a": "O mesmo clamor diante do trono",
+   "b": "Os serafins pedem perdão",
+   "c": "O louvor muda com o tempo"
+  },
+  "_verso": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-01": {
+  "question": "Em Isaías 6:5, Isaías se inclui no meio de um povo impuro, em vez de se achar melhor que os outros.",
+  "learningObjective": "Interpretar a confissão de Isaías como humildade diante do Deus santo.",
+  "feedbackCorrect": "Diante do Deus santo, Isaías não se compara a ninguém: ele e o povo precisam de Deus.",
+  "feedbackWrong": {
+   "false": "Releia Isaías 6:5: ele diz que habita no meio de um povo de impuros lábios, como ele."
+  },
+  "hint": "Veja onde Isaías diz que mora.",
+  "_verso": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!"
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-02": {
+  "question": "Em Isaías 6:3, toque o trecho que mostra que a glória de Deus não fica presa no templo.",
+  "learningObjective": "Sustentar com o texto que a glória do Deus santo enche o mundo.",
+  "feedbackCorrect": "A visão acontece no templo, mas a glória do Deus santo enche o mundo inteiro.",
+  "feedbackWrong": {
+   "b": "\"Dos Exércitos\" fala do poder do Senhor, não do alcance da glória.",
+   "c": "\"Uns aos outros\" mostra como os serafins proclamam, não até onde vai a glória."
+  },
+  "hint": "Procure na segunda metade do versículo.",
+  "_verso": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-03": {
+  "question": "Que leitura Isaías 6:2–3 sustenta sobre a santidade de Deus?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta sobre a santidade de Deus.",
+  "feedbackCorrect": "Os serafins cobrem o rosto e repetem \"santo\" três vezes: Deus é diferente de tudo.",
+  "feedbackWrong": {
+   "b": "Se fosse só bondade, os serafins não cobririam o rosto diante dele.",
+   "c": "Eles cobrem o rosto e proclamam a santidade de outro: só o Senhor é chamado santo.",
+   "d": "O próprio clamor diz que toda a terra está repleta da sua glória."
+  },
+  "hint": "Compare cada opção com o que os serafins fazem e dizem.",
+  "options": {
+   "a": "Deus é diferente de tudo, e até os serafins se cobrem",
+   "b": "Santo quer dizer só que Deus é muito bonzinho",
+   "c": "Os serafins são quase iguais ao Senhor",
+   "d": "Deus só é santo no céu; a terra fica de fora"
+  },
+  "_verso": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava. E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-04": {
+  "question": "Qual sequência mostra o fio do \"Santo, santo, santo\" na Bíblia?",
+  "learningObjective": "Ver Isaías 6:3 como começo de um fio que atravessa a Bíblia.",
+  "feedbackCorrect": "A visão de Isaías aponta para Jesus e segue no louvor que nunca para.",
+  "feedbackWrong": {
+   "default": "Siga a história: Isaías (Is 6:3), o Evangelho de João (Jo 12:41) e o Apocalipse (Ap 4:8)."
+  },
+  "hint": "Comece no profeta e termine na visão do fim da Bíblia.",
+  "options": {
+   "a": "Isaías vê o trono e ouve os serafins proclamarem a santidade",
+   "b": "João diz que Isaías viu a glória de Jesus",
+   "c": "Diante do trono, o clamor santo não para dia e noite"
+  },
+  "_verso": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-05": {
+  "question": "Em Isaías 6:1, sobre o que o Senhor está assentado?",
+  "learningObjective": "Lembrar o termo que mostra o reinado de Deus na cena.",
+  "feedbackCorrect": "O rei da terra morreu, mas o Senhor segue reinando: ele está no seu lugar de Rei.",
+  "feedbackWrong": {
+   "b": "O altar aparece em Isaías 6:6; aqui é o lugar de onde o Senhor reina.",
+   "c": "O texto não fala de monte; fala de onde o Rei se assenta."
+  },
+  "hint": "Pense no lugar de onde um rei governa.",
+  "_verso": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo."
+ },
+ "conhecer-a-deus-pro-entrada-deus-03-06": {
+  "question": "O que liga Isaías 6:3 a 1 Pedro 1:15–16?",
+  "learningObjective": "Ligar a santidade de Deus em Isaías ao chamado do seu povo no NT.",
+  "feedbackCorrect": "O Deus que os serafins chamam de santo chama o seu povo a ser santo também.",
+  "feedbackWrong": {
+   "b": "Pedro pede santidade \"em toda a vossa maneira de viver\", não só no templo.",
+   "c": "Pedro fala a quem foi chamado por Deus, não a anjos."
+  },
+  "hint": "Veja por que Pedro diz que o povo deve ser santo.",
+  "options": {
+   "a": "O Santo chama a ser santo",
+   "b": "Santidade é só para o templo",
+   "c": "Só os anjos precisam ser santos"
+  },
+  "_verso": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+ },
+ "estudo:entrada-deus-03": {
+  "context": "Uzias reinou em Judá por muitos anos, e a morte dele deixou o povo inseguro. Nesse mesmo ano, o profeta Isaías está no templo e recebe uma visão: ele vê quem de fato está no trono.",
+  "focusQuestion": "Como a santidade de Deus muda o jeito como você se aproxima dele?",
+  "keywordGloss": "Separado, puro e diferente de tudo o que existe; dito três vezes, marca o que Deus é no grau mais alto.",
+  "reflectionPrompts": [
+   "O Rei no trono",
+   "Santo, santo, santo",
+   "Ai de mim"
+  ],
+  "facts": [
+   "Isaías viu o Senhor assentado num trono alto e sublime.",
+   "Cada serafim tinha seis asas.",
+   "Os serafins proclamavam que o Senhor é santo, santo, santo.",
+   "Toda a terra está repleta da glória de Deus.",
+   "A casa se encheu de fumaça.",
+   "Isaías reconhece que é homem de lábios impuros."
+  ],
+  "_verso": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo. Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava. E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória. E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça. Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos! Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;"
+ }
+}

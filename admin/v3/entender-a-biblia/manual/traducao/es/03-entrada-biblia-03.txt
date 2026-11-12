@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-03-01": {
+  "question": "Em Gênesis 12:4, Abrão tinha setenta e cinco anos quando deixou Harã.",
+  "learningObjective": "Observar que Abrão parte já idoso, confiando na promessa.",
+  "feedbackCorrect": "O texto dá a idade: setenta e cinco anos, quando Abrão deixou Harã.",
+  "feedbackWrong": {
+   "false": "Releia o fim de Gênesis 12:4: Abrão contava setenta e cinco anos ao deixar Harã."
+  },
+  "hint": "Olhe o fim do versículo.",
+  "_verso": "Partiu, portanto, Abrão conforme o que o SENHOR lhe ordenara, e Ló o acompanhou. Abrão contava setenta e cinco anos ao deixar Harã."
+ },
+ "entender-a-biblia-sem-entrada-biblia-03-02": {
+  "question": "Em Gênesis 12:5, toque o nome da esposa de Abrão.",
+  "learningObjective": "Identificar quem acompanha Abrão na partida.",
+  "feedbackCorrect": "Sarai, sua esposa, vai com Abrão rumo à terra prometida.",
+  "feedbackWrong": {
+   "a": "Ló também vai, mas é filho do irmão de Abrão, não sua esposa.",
+   "b": "Harã é a cidade de onde eles saem, não uma pessoa."
+  },
+  "hint": "Procure quem o versículo chama de esposa.",
+  "_verso": "E Abrão levou consigo Sarai, sua esposa, e Ló, filho de seu irmão, e todos os bens que haviam adquirido, assim como as pessoas que lhes acresceram em Harã. Partiram em direção à terra de Canaã e lá chegaram."
+ },
+ "entender-a-biblia-sem-entrada-biblia-03-03": {
+  "question": "Segundo Gênesis 12:1, o que o Senhor manda Abrão deixar?",
+  "learningObjective": "Observar o que o chamado custa a Abrão.",
+  "feedbackCorrect": "O Senhor pede que Abrão deixe a terra, a parentela e a casa do pai.",
+  "feedbackWrong": {
+   "a": "Sarai e Ló vão com Abrão (Gn 12:4–5).",
+   "b": "O versículo não fala de rebanhos nem de servos; fala de terra e família.",
+   "c": "Os bens vão junto com ele (Gn 12:5); o que fica é a terra e a família do pai."
+  },
+  "hint": "O versículo lista três coisas.",
+  "options": {
+   "a": "Sua esposa e seu sobrinho Ló",
+   "b": "Seus rebanhos e seus servos",
+   "c": "Só a cidade de Harã e seus bens",
+   "d": "Sua terra, sua parentela e a casa do pai"
+  },
+  "_verso": "O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei."
+ },
+ "entender-a-biblia-sem-entrada-biblia-03-04": {
+  "question": "Monte Gênesis 12:2 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência das promessas de Gênesis 12:2.",
+  "feedbackCorrect": "É a sequência do versículo: nação, nome e, por fim, ser bênção.",
+  "feedbackWrong": {
+   "default": "O versículo começa pela grande nação e termina com Abrão sendo bênção."
+  },
+  "hint": "O versículo termina com uma exclamação.",
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção!"
+ },
+ "entender-a-biblia-sem-entrada-biblia-03-05": {
+  "question": "Em Gênesis 12:5, para que terra Abrão e os seus partiram?",
+  "learningObjective": "Lembrar o destino da viagem de Abrão.",
+  "feedbackCorrect": "Eles seguem para Canaã, a terra que o Senhor ia mostrar a Abrão.",
+  "feedbackWrong": {
+   "a": "O Egito não é o destino aqui; eles partem de Harã rumo a outra terra.",
+   "c": "Siquém é um lugar dentro da terra, por onde Abrão passa depois (Gn 12:6)."
+  },
+  "hint": "Veja o fim do versículo.",
+  "_verso": "E Abrão levou consigo Sarai, sua esposa, e Ló, filho de seu irmão, e todos os bens que haviam adquirido, assim como as pessoas que lhes acresceram em Harã. Partiram em direção à terra de Canaã e lá chegaram."
+ },
+ "entender-a-biblia-sem-entrada-biblia-03-06": {
+  "question": "O que Gênesis 12:1 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a partida de Abrão ao chamado do Senhor.",
+  "feedbackCorrect": "A partida não nasce de um plano de Abrão: é o Senhor quem chama.",
+  "feedbackWrong": {
+   "a": "A ideia não é de Abrão; o versículo começa com o Senhor falando.",
+   "b": "O texto não fala de inimigo; fala de uma ordem do Senhor."
+  },
+  "hint": "Veja quem fala no começo do versículo.",
+  "options": {
+   "a": "Abrão busca terras melhores",
+   "b": "Abrão foge de um inimigo",
+   "c": "O Senhor chama Abrão a sair"
+  },
+  "_verso": "O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei."
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-01": {
+  "question": "Em Gênesis 12:2, Abrão é abençoado para que ele mesmo se torne uma bênção.",
+  "learningObjective": "Compreender o propósito da bênção dada a Abrão.",
+  "feedbackCorrect": "A bênção não para em Abrão: ele recebe para passar adiante.",
+  "feedbackWrong": {
+   "false": "Releia o fim de Gênesis 12:2: além de abençoado, Abrão \"será uma bênção\"."
+  },
+  "hint": "Veja como o versículo termina.",
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção!"
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-02": {
+  "question": "Em Gênesis 12:4, toque a palavra que liga a partida de Abrão à ordem do Senhor.",
+  "learningObjective": "Reconhecer o marcador que liga a ordem à obediência.",
+  "feedbackCorrect": "\"Portanto\" mostra que a partida é resposta à palavra do Senhor.",
+  "feedbackWrong": {
+   "a": "\"Contava\" introduz a idade de Abrão, não a ligação com a ordem.",
+   "b": "\"Acompanhou\" fala de Ló indo junto, não do motivo da partida."
+  },
+  "hint": "Procure uma palavra entre vírgulas, logo no começo.",
+  "_verso": "Partiu, portanto, Abrão conforme o que o SENHOR lhe ordenara, e Ló o acompanhou. Abrão contava setenta e cinco anos ao deixar Harã."
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-03": {
+  "question": "Como Gênesis 12:3 se relaciona com a bênção prometida em 12:2?",
+  "learningObjective": "Compreender o alcance da bênção prometida a Abrão.",
+  "feedbackCorrect": "O que começa em Abrão se estende: nele todas as famílias da terra serão benditas.",
+  "feedbackWrong": {
+   "a": "O versículo vai além da família de Abrão: fala de todas as famílias da terra.",
+   "b": "A maldição é para quem amaldiçoar; o versículo termina na bênção para todos.",
+   "d": "A terra é tema de 12:1; 12:3 fala de quem será abençoado."
+  },
+  "hint": "Compare quem é abençoado em 12:2 e no fim de 12:3.",
+  "options": {
+   "a": "Limita a bênção à família de Abrão",
+   "b": "Troca a bênção por uma ameaça aos inimigos",
+   "c": "Amplia a bênção de Abrão para todos os povos",
+   "d": "Repete a promessa da terra com outras palavras"
+  },
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção! Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-04": {
+  "question": "Como avança a promessa em Gênesis 12:2–3?",
+  "learningObjective": "Compreender como a promessa se amplia de Abrão para todos.",
+  "feedbackCorrect": "A promessa cresce: uma nação, quem se liga a ela, e enfim todas as famílias.",
+  "feedbackWrong": {
+   "default": "A promessa vai do menor ao maior: começa em Abrão e termina em todos os povos."
+  },
+  "hint": "O ponto de chegada é o maior alcance da bênção.",
+  "options": {
+   "a": "A bênção chega a todas as famílias",
+   "b": "Deus promete uma grande nação",
+   "c": "Quem abençoar Abrão será abençoado"
+  },
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção! Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-05": {
+  "question": "Em Gênesis 12:1, qual é a primeira ordem do Senhor a Abrão?",
+  "learningObjective": "Lembrar a ação que abre a história de Abrão.",
+  "feedbackCorrect": "A história nova começa com um chamado a deixar o conhecido e confiar.",
+  "feedbackWrong": {
+   "b": "O Senhor não pede que Abrão fique e cuide; pede que deixe a terra.",
+   "c": "Não há perigo do qual fugir; é um chamado do Senhor."
+  },
+  "hint": "É a ação que põe Abrão na estrada.",
+  "_verso": "O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei."
+ },
+ "entender-a-biblia-cam-entrada-biblia-03-06": {
+  "question": "O que liga Gênesis 12:2 a Gênesis 11:4?",
+  "learningObjective": "Relacionar a promessa a Abrão com o projeto de Babel.",
+  "feedbackCorrect": "Em Babel, querem fazer um nome sozinhos; a Abrão, o nome é dado por Deus.",
+  "feedbackWrong": {
+   "b": "Abrão não busca fama: quem engrandece o nome dele é o Senhor.",
+   "c": "É o contrário de Babel: lá o nome é conquista humana, aqui é dom de Deus."
+  },
+  "hint": "Compare quem faz o nome grande em cada texto.",
+  "options": {
+   "a": "Nome dado, não conquistado",
+   "b": "Os dois buscam fama sozinhos",
+   "c": "Deus repete o plano de Babel"
+  },
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção!"
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-01": {
+  "question": "Gênesis 12:1–2 mostra que Abrão foi escolhido porque já era mais fiel que os outros.",
+  "learningObjective": "Interpretar a escolha de Abrão como iniciativa de Deus, não mérito.",
+  "feedbackCorrect": "O texto não fala de mérito: a iniciativa é do Senhor, que chama e promete primeiro.",
+  "feedbackWrong": {
+   "true": "Releia 12:1–2: nada é dito sobre virtudes de Abrão; tudo começa com o Senhor falando."
+  },
+  "hint": "Veja quem toma a iniciativa no começo do trecho.",
+  "_verso": "O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei. Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção!"
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-02": {
+  "question": "Em Gênesis 12:3, toque o trecho que mostra que a promessa não é só para Abrão.",
+  "learningObjective": "Sustentar com o texto que a promessa alcança todos os povos.",
+  "feedbackCorrect": "O alvo da promessa é o mundo inteiro: todas as famílias da terra.",
+  "feedbackWrong": {
+   "b": "\"Abençoarei\" fala de quem abençoar Abrão; o alcance aparece no fim.",
+   "c": "\"Amaldiçoarei\" protege Abrão; não mostra quem recebe a bênção."
+  },
+  "hint": "Procure quem será bendito no fim do versículo.",
+  "_verso": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-03": {
+  "question": "Que leitura Gênesis 12:2–3 sustenta sobre a escolha de Abrão?",
+  "learningObjective": "Escolher a leitura que o texto sustenta sobre o propósito da escolha.",
+  "feedbackCorrect": "Deus escolhe um para alcançar todos: a bênção de Abrão tem o mundo como alvo.",
+  "feedbackWrong": {
+   "a": "O texto diz que nele todas as famílias da terra serão benditas.",
+   "b": "O texto não fala de mérito; a iniciativa é do Senhor.",
+   "d": "Escolher Abrão é o caminho para chegar aos outros povos, não para deixá-los."
+  },
+  "hint": "Veja para onde a bênção vai no fim do trecho.",
+  "options": {
+   "a": "A bênção era só para Abrão e seus descendentes",
+   "b": "Abrão foi escolhido por ser melhor que os outros",
+   "c": "Abrão é escolhido para ser bênção a todos os povos",
+   "d": "Deus desiste dos outros povos e fica só com um"
+  },
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção! Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-04": {
+  "question": "Qual sequência mostra a promessa a Abrão se cumprindo na Bíblia?",
+  "learningObjective": "Ver em Abrão o começo do plano de Deus para todos os povos.",
+  "feedbackCorrect": "A promessa (Gn 12:3) passa por Jesus, filho de Abraão (Mt 1:1), e chega a todas as nações (Ap 7:9).",
+  "feedbackWrong": {
+   "default": "Siga a Bíblia: a promessa a Abrão, Jesus como seu descendente, e todos os povos no fim."
+  },
+  "hint": "Siga a ordem da Bíblia: Gênesis, Evangelhos, Apocalipse.",
+  "options": {
+   "a": "Jesus nasce como filho de Abraão",
+   "b": "Uma multidão de todas as nações adora diante do trono",
+   "c": "Deus promete abençoar todas as famílias em Abrão"
+  },
+  "_verso": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-05": {
+  "question": "Em Gênesis 12:2, o que Abrão se tornará para os outros?",
+  "learningObjective": "Lembrar o termo que carrega o sentido da promessa.",
+  "feedbackCorrect": "A palavra que atravessa o trecho: Abrão é abençoado e se torna bênção.",
+  "feedbackWrong": {
+   "a": "A nação vem no começo do versículo; o fim diz o que Abrão será para os outros.",
+   "b": "O texto não fala de glória para Abrão; fala do bem que chega a outros por ele."
+  },
+  "hint": "É a palavra que se repete no trecho, em várias formas.",
+  "_verso": "Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção!"
+ },
+ "entender-a-biblia-pro-entrada-biblia-03-06": {
+  "question": "O que liga Gênesis 12:3 a Gálatas 3:8?",
+  "learningObjective": "Ligar a promessa a Abrão à leitura que o NT faz dela.",
+  "feedbackCorrect": "Paulo lê Gênesis 12:3 como boa notícia antecipada: Deus abençoaria os povos pela fé.",
+  "feedbackWrong": {
+   "a": "Paulo fala de evangelho e fé, não de lei, ao citar a promessa.",
+   "b": "Paulo cita a promessa justamente para mostrar que ela inclui todos os povos."
+  },
+  "hint": "Veja o que Paulo diz que a Escritura proclamou primeiro.",
+  "options": {
+   "a": "Uma lei dada a Abraão",
+   "b": "Uma bênção só para Israel",
+   "c": "O evangelho anunciado a Abraão"
+  },
+  "_verso": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+ },
+ "estudo:entrada-biblia-03": {
+  "context": "Depois da queda, a história só escurece: Caim mata o irmão, vem o dilúvio, e em Babel os povos são espalhados. Em Gênesis 12, o Senhor fala a um homem que vivia em Harã, Abrão, e o chama a sair.",
+  "focusQuestion": "Que passo de confiança Deus pode estar pedindo de você antes de mostrar todo o caminho?",
+  "keywordGloss": "O compromisso que o Senhor assume com Abrão: dele virá uma bênção para todas as famílias da terra.",
+  "reflectionPrompts": [
+   "Sair sem ver o mapa",
+   "Abençoado para abençoar",
+   "Todas as famílias"
+  ],
+  "facts": [
+   "O Senhor manda Abrão sair da sua terra, da parentela e da casa do pai.",
+   "O Senhor promete fazer de Abrão uma grande nação.",
+   "Em Abrão, todas as famílias da terra serão benditas.",
+   "Abrão partiu conforme o Senhor tinha ordenado.",
+   "Abrão tinha setenta e cinco anos quando deixou Harã.",
+   "Eles partiram para a terra de Canaã e chegaram lá."
+  ],
+  "_verso": "O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei. Farei de você uma grande nação, e o abençoarei, engrandecendo o seu nome; você será uma bênção! Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas. Partiu, portanto, Abrão conforme o que o SENHOR lhe ordenara, e Ló o acompanhou. Abrão contava setenta e cinco anos ao deixar Harã."
+ }
+}

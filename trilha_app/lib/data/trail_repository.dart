@@ -1,29 +1,12 @@
 import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
-import 'curated_trails.dart';
-import 'entry_trails.dart';
 
 class TrailRepository {
   Future<List<Trail>> getTrails({bool forceRefresh = false}) async {
     final remote = await ContentCatalogService.instance.getTrails(
       forceRefresh: forceRefresh,
     );
-    return mergeEntry(remote);
-  }
-
-  /// Trilhas por dor (`EntryTrails`) e costuradas (`CuratedTrails`) vivem
-  /// no app. Sempre substituem o remoto do mesmo slug — senão um stub vazio
-  /// no Firebase esconde Recomeço/Ansiedade.
-  static List<Trail> mergeEntry(List<Trail> remote) {
-    final overlay = [...EntryTrails.overlay, ...CuratedTrails.overlay];
-    if (overlay.isEmpty) return remote;
-    final bySlug = {for (final t in overlay) t.slug: t};
-    final merged = <Trail>[
-      ...overlay,
-      for (final t in remote)
-        if (!bySlug.containsKey(t.slug)) t,
-    ];
-    return merged;
+    return remote;
   }
 
   Future<Trail?> getTrailBySlug(String slug) async {

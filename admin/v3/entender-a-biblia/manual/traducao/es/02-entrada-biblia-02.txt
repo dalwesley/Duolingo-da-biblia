@@ -1,0 +1,271 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-02-01": {
+  "question": "Em Gênesis 3:1, a serpente é descrita como o mais forte de todos os animais do campo.",
+  "learningObjective": "Observar que a serpente age pela esperteza, não pela força.",
+  "feedbackCorrect": "O texto não fala de força, e sim de astúcia: ela era a mais astuta dos animais.",
+  "feedbackWrong": {
+   "true": "Releia o começo de Gênesis 3:1: a serpente era mais astuta, não mais forte."
+  },
+  "hint": "Veja a palavra que descreve a serpente.",
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+ },
+ "entender-a-biblia-sem-entrada-biblia-02-02": {
+  "question": "Em Gênesis 3:6, toque a pessoa a quem a mulher deu do fruto.",
+  "learningObjective": "Observar que o homem também participa da queda.",
+  "feedbackCorrect": "Ela deu também ao marido, que estava com ela, e ele comeu.",
+  "feedbackWrong": {
+   "a": "Os olhos aparecem no que a mulher viu; o fruto foi dado a uma pessoa.",
+   "b": "A árvore é de onde vem o fruto, não quem o recebe."
+  },
+  "hint": "Procure quem estava junto com ela.",
+  "_verso": "E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ },
+ "entender-a-biblia-sem-entrada-biblia-02-03": {
+  "question": "Segundo Gênesis 3:1, como a serpente começa a conversa com a mulher?",
+  "learningObjective": "Observar que a tentação começa com uma pergunta sobre a palavra de Deus.",
+  "feedbackCorrect": "A serpente não começa pelo fruto, e sim pondo em dúvida o que Deus disse.",
+  "feedbackWrong": {
+   "a": "A serpente não dá ordem; ela começa com uma pergunta.",
+   "b": "Quem acha a árvore bonita é a mulher, mais adiante, em Gênesis 3:6.",
+   "d": "O texto não mostra a serpente entregando o fruto; a mulher mesma o toma."
+  },
+  "hint": "Repare no sinal de pontuação no fim do versículo.",
+  "options": {
+   "a": "Mandando que ela comesse do fruto",
+   "b": "Elogiando a beleza da árvore",
+   "c": "Com uma pergunta sobre o que Deus disse",
+   "d": "Oferecendo o fruto com as próprias mãos"
+  },
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+ },
+ "entender-a-biblia-sem-entrada-biblia-02-04": {
+  "question": "Monte Gênesis 3:6 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Gênesis 3:6.",
+  "feedbackCorrect": "É a sequência do versículo: ela vê, toma, come e dá ao marido.",
+  "feedbackWrong": {
+   "default": "Comece pelo olhar da mulher sobre a árvore; o marido aparece no fim."
+  },
+  "hint": "Antes de tomar o fruto, a mulher olha para a árvore.",
+  "_verso": "E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ },
+ "entender-a-biblia-sem-entrada-biblia-02-05": {
+  "question": "Em Gênesis 3:3, onde está a árvore de que Deus disse para não comer?",
+  "learningObjective": "Lembrar onde estava a árvore proibida.",
+  "feedbackCorrect": "A árvore proibida estava no centro do jardim, não escondida num canto.",
+  "feedbackWrong": {
+   "a": "Releia Gênesis 3:3: a árvore não estava num canto, e sim no centro do jardim.",
+   "b": "O texto não fala do fundo do jardim; a árvore estava bem no centro."
+  },
+  "hint": "Veja a localização que a mulher dá para a árvore.",
+  "_verso": "Mas do fruto da árvore que está no meio do jardim, disse Deus: Dele não comam, nem nele toquem para que não morram."
+ },
+ "entender-a-biblia-sem-entrada-biblia-02-06": {
+  "question": "O que Gênesis 3:4 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a fala da serpente ao aviso que Deus tinha dado.",
+  "feedbackCorrect": "Deus disse que morreriam; a serpente garante o contrário: não morrerão.",
+  "feedbackWrong": {
+   "b": "A mulher acabou de lembrar o aviso em 3:3; quem o nega é a serpente.",
+   "c": "A serpente não repete o aviso; ela diz exatamente o oposto."
+  },
+  "hint": "Compare a fala da serpente com o aviso de Deus.",
+  "options": {
+   "a": "A serpente contradiz Deus",
+   "b": "A mulher esquece o aviso",
+   "c": "A serpente repete o aviso"
+  },
+  "_verso": "Então, a serpente disse à mulher: É certo que vocês não morrerão."
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-01": {
+  "question": "Em Gênesis 3:5, a serpente diz que Deus proibiu a árvore para proteger o casal da morte.",
+  "learningObjective": "Compreender o motivo falso que a serpente dá para a proibição.",
+  "feedbackCorrect": "A serpente sugere o contrário: Deus estaria escondendo algo bom, os olhos abertos.",
+  "feedbackWrong": {
+   "true": "Releia Gênesis 3:5: a serpente não fala em proteção; insinua que Deus esconde algo bom."
+  },
+  "hint": "Veja que motivo a serpente atribui a Deus.",
+  "_verso": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal."
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-02": {
+  "question": "Em Gênesis 3:1, toque a palavra que marca o contraste com o jardim bom de Gênesis 2.",
+  "learningObjective": "Reconhecer o marcador que vira a história depois de Gênesis 2.",
+  "feedbackCorrect": "Depois de tudo bom no jardim, o \"porém\" anuncia que algo vai dar errado.",
+  "feedbackWrong": {
+   "b": "\"Astuta\" descreve a serpente; a palavra de contraste vem antes dela.",
+   "c": "\"Então\" marca o que vem em seguida, não um contraste."
+  },
+  "hint": "Procure uma palavra curta entre vírgulas, no começo do versículo.",
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-03": {
+  "question": "Como a fala da serpente em Gênesis 3:4 se relaciona com o que Deus disse em 3:3?",
+  "learningObjective": "Compreender o contraste entre a palavra de Deus e a da serpente.",
+  "feedbackCorrect": "Deus disse \"para que não morram\"; a serpente responde \"não morrerão\". É uma palavra contra a outra.",
+  "feedbackWrong": {
+   "a": "A serpente fala justamente da morte, o centro do aviso de Deus.",
+   "b": "A serpente não explica o aviso; ela o desmente.",
+   "d": "Não é confirmação: a serpente nega exatamente o que Deus avisou."
+  },
+  "hint": "Compare o fim de 3:3 com o fim de 3:4.",
+  "options": {
+   "a": "Muda de assunto e fala só do jardim",
+   "b": "Explica o aviso para a mulher entender melhor",
+   "c": "Contradiz o aviso de Deus sobre a morte",
+   "d": "Confirma o aviso, só que com outras palavras"
+  },
+  "_verso": "Mas do fruto da árvore que está no meio do jardim, disse Deus: Dele não comam, nem nele toquem para que não morram. Então, a serpente disse à mulher: É certo que vocês não morrerão."
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-04": {
+  "question": "Como avança a cena em Gênesis 3:5–6?",
+  "learningObjective": "Compreender como a palavra da serpente leva ao ato de comer.",
+  "feedbackCorrect": "Primeiro a promessa da serpente, depois o novo olhar da mulher, e então o fruto comido.",
+  "feedbackWrong": {
+   "default": "A promessa vem antes do olhar, e o olhar antes de comer."
+  },
+  "hint": "O fruto comido é o ponto de chegada.",
+  "options": {
+   "a": "A mulher vê a árvore como desejável",
+   "b": "Ela come e dá ao marido",
+   "c": "A serpente promete olhos abertos"
+  },
+  "_verso": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal. E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-05": {
+  "question": "Em Gênesis 3:5, que palavra liga a promessa da serpente ao motivo que ela inventa?",
+  "learningObjective": "Compreender que a serpente justifica a mentira com uma acusação contra Deus.",
+  "feedbackCorrect": "O \"Pois\" apresenta um motivo: Deus saberia de algo bom e o esconderia.",
+  "feedbackWrong": {
+   "a": "\"Mas\" faria contraste; a serpente está dando uma explicação.",
+   "b": "\"Então\" marcaria sequência; aqui a serpente dá a razão do que disse."
+  },
+  "hint": "É a palavra que abre o versículo e dá uma razão.",
+  "_verso": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal."
+ },
+ "entender-a-biblia-cam-entrada-biblia-02-06": {
+  "question": "O que liga Gênesis 3:1 a Gênesis 2:16?",
+  "learningObjective": "Relacionar a pergunta da serpente com a ordem original de Deus.",
+  "feedbackCorrect": "Deus deu toda árvore, menos uma; a serpente faz parecer que ele proibiu tudo.",
+  "feedbackWrong": {
+   "a": "Deus disse \"de toda árvore comerás\"; a pergunta da serpente torce isso.",
+   "c": "Deus não mudou nada; quem muda as palavras é a serpente."
+  },
+  "hint": "Compare o que Deus liberou com o que a serpente pergunta.",
+  "options": {
+   "a": "A serpente cita Deus fielmente",
+   "b": "A serpente distorce a palavra",
+   "c": "Deus muda a sua ordem"
+  },
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-01": {
+  "question": "Gênesis 3:4–5 mostra que a queda começa na desconfiança da palavra de Deus, antes de o fruto ser tomado.",
+  "learningObjective": "Interpretar a queda como quebra de confiança, não só como um ato isolado.",
+  "feedbackCorrect": "Antes do fruto, a palavra de Deus é negada e sua bondade posta em dúvida.",
+  "feedbackWrong": {
+   "false": "Releia 3:4–5: antes de comer, a mulher ouve o aviso de Deus ser negado e Deus ser acusado."
+  },
+  "hint": "Veja o que acontece com a palavra de Deus antes de 3:6.",
+  "_verso": "Então, a serpente disse à mulher: É certo que vocês não morrerão. Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal."
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-02": {
+  "question": "Em Gênesis 3:5, toque o trecho que mostra a tentação de ocupar o lugar de Deus.",
+  "learningObjective": "Sustentar com o texto que a tentação era se igualar a Deus.",
+  "feedbackCorrect": "A oferta é ser igual a Deus: decidir sozinho o que é bem e o que é mal.",
+  "feedbackWrong": {
+   "a": "\"No dia\" marca quando, não o que a serpente oferece.",
+   "b": "Os olhos abertos são o meio; a meta oferecida é se igualar a Deus."
+  },
+  "hint": "Procure a comparação que a serpente faz.",
+  "_verso": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal."
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-03": {
+  "question": "Que leitura Gênesis 3:5–6 sustenta sobre a queda?",
+  "learningObjective": "Escolher a leitura que o texto sustenta sobre a origem da queda.",
+  "feedbackCorrect": "A mulher passa a ver a árvore com os olhos da promessa da serpente, e então come.",
+  "feedbackWrong": {
+   "a": "O fruto é o fim do caminho; antes dele, a palavra de Deus foi desacreditada.",
+   "b": "O texto diz que ela deu ao marido \"que estava com ela\".",
+   "c": "Essa é a acusação da serpente, não o que o texto afirma sobre Deus."
+  },
+  "hint": "Pense no que a mulher ouve antes de ver a árvore de outro jeito.",
+  "options": {
+   "a": "O problema foi só comer uma fruta proibida",
+   "b": "Só a mulher errou, pois o homem não estava ali",
+   "c": "Deus escondia algo bom, e a serpente revelou",
+   "d": "Ela começa ao trocar a palavra de Deus pela da serpente"
+  },
+  "_verso": "Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal. E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-04": {
+  "question": "Qual sequência mostra o caminho da morte que entra em Gênesis 3?",
+  "learningObjective": "Ver a queda como o problema que o resto da Bíblia resolve.",
+  "feedbackCorrect": "A morte negada pela serpente entra no mundo (Rm 5:12) e será vencida no fim (Ap 21:4).",
+  "feedbackWrong": {
+   "default": "Siga a Bíblia: a mentira no jardim, a morte que se espalha, e a morte vencida no fim."
+  },
+  "hint": "Siga a história da Bíblia: começo, meio e fim.",
+  "options": {
+   "a": "Na nova criação, a morte não existirá mais",
+   "b": "A serpente nega que a desobediência traga morte",
+   "c": "Por um só homem, o pecado e a morte entram no mundo"
+  },
+  "_verso": "Então, a serpente disse à mulher: É certo que vocês não morrerão."
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-05": {
+  "question": "Em Gênesis 3:6, como a mulher passa a ver a árvore?",
+  "learningObjective": "Lembrar o termo que mostra o desejo desviado de Deus para o fruto.",
+  "feedbackCorrect": "O desejo muda de lugar: o fruto parece trazer o entendimento que a serpente prometeu.",
+  "feedbackWrong": {
+   "b": "O texto vai além de utilidade: fala de desejo pelo que o fruto promete.",
+   "c": "A árvore não era necessária; havia todas as outras. O texto fala de desejo."
+  },
+  "hint": "A palavra mostra o que o coração da mulher sente pela árvore.",
+  "_verso": "E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ },
+ "entender-a-biblia-pro-entrada-biblia-02-06": {
+  "question": "O que liga Gênesis 3:1 a 2 Coríntios 11:3?",
+  "learningObjective": "Ligar o engano do jardim ao alerta do NT para quem crê hoje.",
+  "feedbackCorrect": "Paulo teme que a igreja seja enganada como Eva: o engano do jardim continua.",
+  "feedbackWrong": {
+   "a": "Paulo escreve justamente porque a igreja pode cair no mesmo engano.",
+   "b": "Paulo não fala de vitória aqui; ele alerta contra o mesmo engano."
+  },
+  "hint": "Veja o que Paulo teme que aconteça com a igreja.",
+  "options": {
+   "a": "Só Eva podia ser enganada",
+   "b": "A serpente já foi vencida",
+   "c": "A mesma astúcia ameaça a fé"
+  },
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim?"
+ },
+ "estudo:entrada-biblia-02": {
+  "context": "Em Gênesis 2, Deus deu ao ser humano um jardim inteiro e uma só proibição: não comer da árvore do conhecimento do bem e do mal. Agora entra em cena a serpente. Ela não usa força: usa perguntas e meias-verdades sobre o que Deus disse.",
+  "focusQuestion": "Em que área da sua vida você tem ouvido a pergunta \"Deus disse mesmo isso?\"",
+  "keywordGloss": "Duvidar da palavra e da bondade de Deus; no texto, é o passo que vem antes do fruto.",
+  "reflectionPrompts": [
+   "A pergunta que distorce",
+   "Uma palavra contra a outra",
+   "Bom aos meus olhos"
+  ],
+  "facts": [
+   "A serpente era mais astuta que todos os animais do campo.",
+   "A serpente começa com uma pergunta sobre o que Deus disse.",
+   "A mulher responde que podem comer do fruto das árvores do jardim.",
+   "A serpente afirma que eles não morrerão.",
+   "A mulher comeu do fruto e deu também ao marido, que comeu."
+  ],
+  "_verso": "A serpente, porém, era mais astuta que todos os animais do campo que o Senhor Deus havia criado. Então, disse à mulher: É assim que Deus disse: Não comereis de toda a árvore do jardim? E a mulher disse à serpente: Do fruto das árvores do jardim podemos comer. Mas do fruto da árvore que está no meio do jardim, disse Deus: Dele não comam, nem nele toquem para que não morram. Então, a serpente disse à mulher: É certo que vocês não morrerão. Pois Deus sabe que no dia em que vocês comerem dele, seus olhos se abrirão e, como Deus, conhecerão o bem e o mal. E a mulher viu que a árvore era boa para se comer, agradável aos olhos e desejável para proporcionar entendimento; tomou do seu fruto, comeu e deu também ao marido que estava com ela, e ele comeu."
+ }
+}

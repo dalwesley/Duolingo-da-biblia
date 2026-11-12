@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeFirestore } from 'firebase/firestore';
 
 const REQUIRED_ENV = [
   'VITE_FIREBASE_API_KEY',
@@ -30,5 +30,6 @@ function readConfig() {
 }
 
 export const app = initializeApp(readConfig());
-export const db = getFirestore(app);
+// Campo `undefined` some do payload em vez de derrubar o setDoc.
+export const db = initializeFirestore(app, { ignoreUndefinedProperties: true });
 export const auth = getAuth(app);

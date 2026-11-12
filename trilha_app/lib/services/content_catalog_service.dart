@@ -8,8 +8,10 @@ import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../data/curated_trails.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
+import '../models/trail_catalog.dart';
 
 /// Currículo via Firestore + cache em disco.
 class ContentCatalogService {
@@ -27,6 +29,8 @@ class ContentCatalogService {
   static const _fileBank = 'content_bank.json';
   static const _fileStudies = 'content_studies.json';
   static const _fileVerses = 'content_verses.json';
+  static const _fileCards = 'content_cards.json';
+  static const _fileShelves = 'content_shelves.json';
 
   // Legado SharedPreferences (migrado uma vez e apagado).
   static const _legacyTrailsKey = 'content_trails_json';
@@ -315,6 +319,17 @@ class ContentCatalogService {
       // Migração one-shot: prefs antigos → disco (evita SharedPreferences >1–2MB).
       await _migrateLegacyPrefs(prefs);
 
+      // Linhas e cards do painel antes das trilhas: a trilha acha o card dela
+      // ao abrir, e o card acha a linha.
+      final shelvesRaw = await _readCacheFile(_fileShelves);
+      if (shelvesRaw != null && shelvesRaw.isNotEmpty) {
+        _setShelves(await _decodeJson(shelvesRaw) as List);
+      }
+      final cardsRaw = await _readCacheFile(_fileCards);
+      if (cardsRaw != null && cardsRaw.isNotEmpty) {
+        _setCards(await _decodeJson(cardsRaw) as List);
+      }
+
       final trailsRaw = await _readCacheFile(_fileTrails);
       if (trailsRaw != null && trailsRaw.isNotEmpty) {
         final list = await _decodeJson(trailsRaw) as List;
@@ -323,6 +338,7 @@ class ContentCatalogService {
                 .map((e) => Trail.fromJson(Map<String, dynamic>.from(e as Map)))
                 .toList()
               ..sort((a, b) => a.order.compareTo(b.order));
+        CuratedTrails.attach(_trails!);
       }
       _signalTrails();
 
@@ -418,6 +434,8 @@ class ContentCatalogService {
         await _clearBankCaches();
       }
 
+      await _pullCards(db);
+
       final trailsSnap = await db
           .collection('content_trails')
           .get()
@@ -431,6 +449,7 @@ class ContentCatalogService {
           return Trail.fromJson(data);
         }).toList()..sort((a, b) => a.order.compareTo(b.order));
         _trails = list;
+        CuratedTrails.attach(list);
         debugPrint('ContentCatalog: trails ${list.length}');
       }
       _signalTrails();
@@ -452,6 +471,53 @@ class ContentCatalogService {
     } finally {
       _signalTrails();
     }
+  }
+
+  /// Linhas e cards do Explorar criados no painel (`content_shelves`,
+  /// `content_cards`). Falha mantém os do cache: sem eles, as trilhas desses
+  /// cards caem no card da área.
+  Future<void> _pullCards(FirebaseFirestore db) async {
+    try {
+      final shelves = await db
+          .collection('content_shelves')
+          .get()
+          .timeout(const Duration(seconds: 8));
+      _setShelves([
+        for (final d in shelves.docs) {...d.data(), 'id': d.id},
+      ]);
+    } catch (e) {
+      debugPrint('ContentCatalog shelves failed: $e');
+    }
+    try {
+      final snap = await db
+          .collection('content_cards')
+          .get()
+          .timeout(const Duration(seconds: 8));
+      _setCards([
+        for (final d in snap.docs) {...d.data(), 'id': d.id},
+      ]);
+      _cardsPulled = true;
+      debugPrint('ContentCatalog: cards ${ExploreCards.cards.length}');
+    } catch (e) {
+      debugPrint('ContentCatalog cards failed: $e');
+    }
+  }
+
+  /// Cards vieram do Firestore nesta sessão (só então regrava o cache).
+  bool _cardsPulled = false;
+
+  void _setShelves(List<dynamic> raw) {
+    ExploreShelves.set([
+      for (final e in raw)
+        if (e is Map) ?ExploreShelf.fromJson(Map<String, dynamic>.from(e)),
+    ]);
+  }
+
+  void _setCards(List<dynamic> raw) {
+    ExploreCards.set([
+      for (final e in raw)
+        if (e is Map) ?ExploreCard.fromJson(Map<String, dynamic>.from(e)),
+    ]);
   }
 
   Future<void> _pullDifficulties(FirebaseFirestore db) async {
@@ -598,6 +664,18 @@ class ContentCatalogService {
               .toList(),
         );
         await _writeCacheFile(_fileTrails, encoded);
+        if (_cardsPulled) {
+          await _writeCacheFile(
+            _fileShelves,
+            await _encodeJson([
+              for (final s in ExploreShelves.shelves) s.extra!.toJson(),
+            ]),
+          );
+          await _writeCacheFile(
+            _fileCards,
+            await _encodeJson([for (final c in ExploreCards.cards) c.toJson()]),
+          );
+        }
       }
       if (_bankQuestions != null) {
         // toJson de cada pergunta também vai para o isolate.

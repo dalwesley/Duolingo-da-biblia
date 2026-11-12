@@ -1,5 +1,7 @@
 import {
+  GoogleAuthProvider,
   onAuthStateChanged,
+  signInWithPopup,
   signInAnonymously,
   signInWithEmailAndPassword,
   signOut,
@@ -37,6 +39,9 @@ export function mapAuthError(err) {
     'auth/user-disabled': 'Conta desativada.',
     'auth/too-many-requests': 'Muitas tentativas. Aguarde alguns minutos.',
     'auth/network-request-failed': 'Sem conexão. Verifique a internet.',
+    'auth/popup-closed-by-user': 'Janela do Google fechada antes de entrar.',
+    'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Libere pop-ups para este site.',
+    'auth/unauthorized-domain': 'Domínio não autorizado no Firebase Auth (Authentication → Settings → Authorized domains).',
     'auth/operation-not-allowed':
       'Método de login desabilitado no Firebase Console (Anonymous ou E-mail/senha).',
   };
@@ -67,6 +72,13 @@ export function watchAuth(onChange) {
 
 export async function signIn(email, password) {
   return signInWithEmailAndPassword(auth, email.trim(), password);
+}
+
+/** Contas donas do projeto entram com Google (não têm senha de e-mail/senha). */
+export async function signInWithGoogle() {
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: 'select_account' });
+  return signInWithPopup(auth, provider);
 }
 
 export async function logOut() {

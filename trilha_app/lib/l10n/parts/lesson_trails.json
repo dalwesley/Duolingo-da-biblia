@@ -154,6 +154,16 @@
       "total": "int"
     }
   },
+  "sceneAddress": {
+    "pt": "{collection} › {trail} › Cena {number}",
+    "en": "{collection} › {trail} › Scene {number}",
+    "es": "{collection} › {trail} › Escena {number}",
+    "placeholders": {
+      "collection": "String",
+      "trail": "String",
+      "number": "int"
+    }
+  },
   "trailsScenesShort": {
     "pt": "{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}",
     "en": "{total, plural, =1{{done}/1 scene} other{{done}/{total} scenes}}",
@@ -503,14 +513,14 @@
     "es": "La ruta"
   },
   "suggestionTrailPlaceholder": {
-    "pt": "Escolha uma área e descreva a trilha…",
-    "en": "Choose an area and describe the trail…",
-    "es": "Elige un área y describe la ruta…"
+    "pt": "Escolha uma coleção e descreva a trilha…",
+    "en": "Choose a collection and describe the trail…",
+    "es": "Elige una colección y describe la ruta…"
   },
   "suggestionTrailHintBoth": {
-    "pt": "Escolha uma área e descreva a trilha.",
-    "en": "Choose an area and describe the trail.",
-    "es": "Elige un área y describe la ruta."
+    "pt": "Escolha uma coleção e descreva a trilha.",
+    "en": "Choose a collection and describe the trail.",
+    "es": "Elige una colección y describe la ruta."
   },
   "suggestionTrailHintRealm": {
     "pt": "Escolha onde essa trilha encaixa.",

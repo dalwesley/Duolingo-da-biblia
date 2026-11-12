@@ -1,17 +1,39 @@
-import {
-  collection,
-  getDocs,
-  orderBy,
-  query,
-  updateDoc,
-  doc,
-  Timestamp,
-} from 'firebase/firestore';
+/**
+ * Relatos: o que as pessoas mandam pelo app, uma fila por aba.
+ *
+ *   Denúncias           user_reports               (pessoa denunciando pessoa)
+ *   Problemas do app    app_reports
+ *   Erros em perguntas  content_question_reports
+ *   Sugestões de trilha trail_suggestions          (pedidos do mapa)
+ *   Autores             author_suggestions
+ *
+ * Toda fila tem o mesmo card: etiquetas + ações no topo, fatos em lista.
+ * Mudar o status só muda aqui — ninguém é avisado.
+ */
+import { collection, getDocs, orderBy, query, updateDoc, doc, Timestamp } from 'firebase/firestore';
 import { db } from './firebase.js';
-import { COL } from './db.js';
+import { COL, getDocById } from './db.js';
+import { DIFFS } from './content-preview.js';
+import { openQuestionStudio } from './question-studio.js';
+import { openPersonModal } from './person-modal.js';
 import { escapeHtml, showToast } from './ui.js';
 
-const CATEGORY_LABELS = {
+const FIREBASE_PROJECT = import.meta.env.VITE_FIREBASE_PROJECT_ID || 'trilha-biblia';
+
+const STATUS = {
+  open: 'Aberto',
+  reviewed: 'Revisado',
+  fixed: 'Corrigido',
+  dismissed: 'Descartado',
+};
+
+const PEOPLE_STATUS = {
+  open: 'Aberta',
+  actioned: 'Já agi',
+  dismissed: 'Sem fundamento',
+};
+
+const QUESTION_CATEGORY = {
   theological: 'Erro teológico',
   interpretation: 'Interpretação',
   wrong_answer: 'Resposta errada',
@@ -20,15 +42,15 @@ const CATEGORY_LABELS = {
   other: 'Outro',
 };
 
-const REALM_LABELS = {
-  'antigo-testamento': 'Antigo Testamento',
-  'novo-testamento': 'Novo Testamento',
-  'vida-crista': 'Vida Cristã',
-  teologia: 'Teologia',
-  outros: 'Outros',
+const APP_CATEGORY = {
+  bug: 'Algo não funciona',
+  account: 'Conta e progresso',
+  subscription: 'Assinatura e compras',
+  suggestion: 'Sugestão',
+  other: 'Outro',
 };
 
-const USER_REASON_LABELS = {
+const PEOPLE_REASON = {
   offensive_name: 'Nome ofensivo',
   offensive_photo: 'Foto imprópria',
   harassment: 'Assédio ou ameaça',
@@ -36,7 +58,7 @@ const USER_REASON_LABELS = {
   other: 'Outro',
 };
 
-const USER_SOURCE_LABELS = {
+const PEOPLE_SOURCE = {
   ranking: 'Ranking',
   recognition: 'Reconhecimento',
   room_invite: 'Convite de grupo',
@@ -45,26 +67,15 @@ const USER_SOURCE_LABELS = {
   companion: 'Companhia',
 };
 
-const USER_STATUS_LABELS = {
-  open: 'Aberta',
-  actioned: 'Ação tomada',
-  dismissed: 'Descartada',
+const REALM = {
+  'antigo-testamento': 'Antigo Testamento',
+  'novo-testamento': 'Novo Testamento',
+  'vida-crista': 'Vida Cristã',
+  teologia: 'Teologia',
+  outros: 'Outros',
 };
 
-const APP_CATEGORY_LABELS = {
-  bug: 'Algo não funciona',
-  account: 'Conta e progresso',
-  subscription: 'Assinatura e compras',
-  suggestion: 'Sugestão',
-  other: 'Outro',
-};
-
-const STATUS_LABELS = {
-  open: 'Aberto',
-  reviewed: 'Revisado',
-  fixed: 'Corrigido',
-  dismissed: 'Descartado',
-};
+/* ─── Pequenos formatos ──────────────────────────────────── */
 
 function formatDate(value) {
   if (!value) return '—';
@@ -76,524 +87,371 @@ function formatDate(value) {
   }
 }
 
-async function loadOrdered(colId) {
-  try {
-    const q = query(collection(db, colId), orderBy('createdAt', 'desc'));
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-  } catch {
-    const snap = await getDocs(collection(db, colId));
-    const items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-    items.sort((a, b) => {
-      const ta = a.createdAt?.toMillis?.() ?? 0;
-      const tb = b.createdAt?.toMillis?.() ?? 0;
-      return tb - ta;
-    });
-    return items;
-  }
-}
-
-function statusButtons(id, status, attr) {
-  if ((status || 'open') === 'open') {
-    return `
-      <button type="button" class="btn btn-sm btn-secondary" ${attr}="reviewed" data-id="${escapeHtml(id)}">Revisado</button>
-      <button type="button" class="btn btn-sm btn-primary" ${attr}="fixed" data-id="${escapeHtml(id)}">Corrigido</button>
-      <button type="button" class="btn btn-sm btn-ghost" ${attr}="dismissed" data-id="${escapeHtml(id)}">Descartar</button>
-    `;
-  }
-  return `<button type="button" class="btn btn-sm btn-secondary" ${attr}="open" data-id="${escapeHtml(id)}">Reabrir</button>`;
-}
-
-function userReportButtons(id, status) {
-  if ((status || 'open') === 'open') {
-    return `
-      <button type="button" class="btn btn-sm btn-primary" data-user-status="actioned" data-id="${escapeHtml(id)}">Ação tomada</button>
-      <button type="button" class="btn btn-sm btn-ghost" data-user-status="dismissed" data-id="${escapeHtml(id)}">Descartar</button>
-    `;
-  }
-  return `<button type="button" class="btn btn-sm btn-secondary" data-user-status="open" data-id="${escapeHtml(id)}">Reabrir</button>`;
-}
-
-/** Horas desde a denúncia — a App Store pede resposta em até 24h. */
 function hoursSince(value) {
   const ms = value?.toMillis?.();
   if (!ms) return null;
   return Math.floor((Date.now() - ms) / 3_600_000);
 }
 
-export async function renderReportsPage(root) {
-  root.innerHTML = `<div class="page-header"><h1>Relatos</h1></div><div class="card"><p>Carregando…</p></div>`;
+/** "há 3 h", "há 5 dias". */
+function ago(hours) {
+  if (hours === null) return '';
+  if (hours < 1) return 'agora há pouco';
+  if (hours < 48) return `há ${hours} h`;
+  return `há ${Math.floor(hours / 24)} dias`;
+}
 
-  let items = [];
-  let suggestions = [];
-  let authors = [];
-  let userReports = [];
-  let appReports = [];
-  try {
-    [items, suggestions, authors, userReports, appReports] = await Promise.all([
-      loadOrdered(COL.reports),
-      loadOrdered(COL.suggestions),
-      loadOrdered(COL.authorSuggestions),
-      loadOrdered(COL.userReports),
-      loadOrdered(COL.appReports),
-    ]);
-  } catch (err) {
-    root.innerHTML = `<div class="card"><p>Erro ao carregar relatos: ${escapeHtml(err.message || String(err))}</p></div>`;
-    return;
-  }
+function when(r) {
+  const h = hoursSince(r.createdAt);
+  return `${escapeHtml(formatDate(r.createdAt))}${h !== null ? ` <span class="field-hint">· ${escapeHtml(ago(h))}</span>` : ''}`;
+}
 
-  let filterStatus = 'open';
-  let filterCategory = '';
-  let filterSuggestionStatus = 'open';
-  let filterAuthorStatus = 'open';
-  let filterUserStatus = 'open';
-  let filterAppStatus = 'open';
+/** uid inteiro à vista (separa contas com o mesmo nome); toque copia. */
+function copyChip(uid) {
+  if (!uid) return '';
+  return `<button type="button" class="rp-uid" data-copy="${escapeHtml(uid)}" title="Copiar uid (cole em Suporte)"><code>${escapeHtml(uid)}</code><span aria-hidden="true">⧉</span></button>`;
+}
 
-  async function setAppReportStatus(id, status) {
-    try {
-      await updateDoc(doc(db, COL.appReports, id), {
-        status,
-        reviewedAt: Timestamp.now(),
-      });
-      const item = appReports.find((r) => r.id === id);
-      if (item) item.status = status;
-      showToast('Status atualizado', 'success');
-      render();
-    } catch (err) {
-      showToast(err.message || 'Falha ao atualizar', 'error');
-    }
-  }
+function quote(text) {
+  return text ? `<em>“${escapeHtml(text)}”</em>` : '<span class="field-hint">sem comentário</span>';
+}
 
-  function appReportsHtml() {
-    const list = appReports.filter(
-      (r) => !filterAppStatus || (r.status || 'open') === filterAppStatus,
-    );
-    if (list.length === 0) {
-      return '<p class="field-hint">Nenhum relato neste filtro.</p>';
-    }
-    return list
-      .map((r) => {
-        const cat = APP_CATEGORY_LABELS[r.category] || r.category || '—';
-        const status = STATUS_LABELS[r.status] || r.status || 'Aberto';
-        const device = [
+/** Nome (abre a ficha da pessoa) + uid copiável. */
+function person(name, uid, extra = '', reportId = '') {
+  const label = name ? escapeHtml(name) : '(sem nome)';
+  const who = uid
+    ? `<button type="button" class="rp-person" data-person="${escapeHtml(uid)}" data-person-name="${escapeHtml(name || '')}" ${reportId ? `data-report="${escapeHtml(reportId)}"` : ''} title="Abrir ficha">${label}</button>`
+    : '<span class="field-hint">conta excluída</span>';
+  return `${who}${extra ? ` <span class="field-hint">· ${escapeHtml(extra)}</span>` : ''} ${copyChip(uid)}`;
+}
+
+const isOpen = (r) => (r.status || 'open') === 'open';
+
+/* ─── Filas ──────────────────────────────────────────────── */
+
+const DEFAULT_ACTIONS = [
+  ['reviewed', 'Revisado', 'btn-secondary', 'Vi e anotei'],
+  ['fixed', 'Corrigido', 'btn-primary', 'Resolvido'],
+  ['dismissed', 'Descartar', 'btn-ghost', 'Não procede'],
+];
+
+const TABS = [
+  {
+    id: 'people',
+    label: 'Denúncias',
+    col: COL.userReports,
+    statuses: PEOPLE_STATUS,
+    actions: [
+      ['actioned', 'Já agi', 'btn-primary', 'Use depois de trocar o nome/foto ou desativar a conta'],
+      ['dismissed', 'Sem fundamento', 'btn-ghost', 'A denúncia não procede: nada a fazer'],
+    ],
+    help: () => `
+      <details class="rp-howto">
+        <summary>O que fazer com uma denúncia (agir em até 24h)</summary>
+        <ol>
+          <li>Olhe nome/foto da <strong>pessoa denunciada</strong> (copie o uid e cole em Suporte).</li>
+          <li>Viola as regras? Troque nome/foto em <code>users/{uid}</code> e nos placares, ou desative a conta no
+            <a href="https://console.firebase.google.com/project/${escapeHtml(FIREBASE_PROJECT)}/authentication/users" target="_blank" rel="noopener">Firebase Auth ↗</a>.
+            Depois toque <strong>Já agi</strong>.</li>
+          <li>Não viola? <strong>Sem fundamento</strong>.</li>
+        </ol>
+        <p><strong>Os botões não avisam ninguém.</strong> O app ainda não tem canal de resposta. Para responder a quem denunciou,
+          procure o uid no Firebase Auth (lá está o e-mail) e escreva de fora. Diga só que a denúncia foi analisada; não conte o que aconteceu com a outra pessoa.</p>
+      </details>`,
+    card: (r, ctx) => {
+      const h = hoursSince(r.createdAt);
+      const late = isOpen(r) && h !== null && h >= 24;
+      const source = PEOPLE_SOURCE[r.source] || r.source || '—';
+      return {
+        late,
+        tags: [
+          [PEOPLE_REASON[r.reason] || r.reason || '—', 'bad'],
+          late ? ['Passou de 24h', 'warn', 'A App Store pede ação em até 24h'] : null,
+        ],
+        facts: [
+          ['Pessoa denunciada', person(r.targetName, r.targetUid, '', r.id)],
+          ['Onde foi vista', escapeHtml(r.roomName ? `${source} · grupo “${r.roomName}” (${r.roomCode || ''})` : source)],
+          ['Comentário', quote(r.comment)],
+          ['Quando', when(r)],
+          ['Quem denunciou', person(ctx.names.get(r.reporterUid), r.reporterUid, '', r.id)],
+        ],
+      };
+    },
+  },
+  {
+    id: 'app',
+    label: 'Problemas do app',
+    col: COL.appReports,
+    statuses: STATUS,
+    help: () => '<p class="rp-lead">Enviados pelo app em “Relatar problema”. Se a pessoa deixou e-mail, responda por fora.</p>',
+    card: (r) => ({
+      tags: [[APP_CATEGORY[r.category] || r.category || '—', '']],
+      facts: [
+        ['Relato', quote(r.comment)],
+        ['Aparelho', escapeHtml([
           r.platform,
           r.osVersion,
           r.appVersion ? `v${r.appVersion}${r.buildNumber ? ` (${r.buildNumber})` : ''}` : '',
           r.locale,
-        ]
-          .filter(Boolean)
-          .join(' · ');
-        return `
-            <article class="ez-panel" style="margin-bottom:12px">
-              <div class="row-between" style="gap:12px;flex-wrap:wrap">
-                <div>
-                  <strong>${escapeHtml(cat)}</strong>
-                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(status)}</span>
-                  <p class="field-hint" style="margin:6px 0 0">
-                    ${escapeHtml(formatDate(r.createdAt))} · ${escapeHtml(device || '—')}
-                  </p>
-                </div>
-                <div class="td-actions">
-                  ${statusButtons(r.id, r.status, 'data-app-status')}
-                </div>
-              </div>
-              <p style="margin-top:8px">${r.comment ? `<em>“${escapeHtml(r.comment)}”</em>` : '<span class="field-hint">Sem comentário</span>'}</p>
-              <p class="field-hint" style="margin-top:8px">
-                ${escapeHtml(r.displayName || r.email || r.uid || 'conta excluída')}
-                ${r.email && r.displayName ? ` · ${escapeHtml(r.email)}` : ''}
-              </p>
-            </article>`;
-      })
-      .join('');
-  }
+        ].filter(Boolean).join(' · ') || '—')],
+        ['Quando', when(r)],
+        ['Quem mandou', person(r.displayName, r.uid, r.email)],
+      ],
+    }),
+  },
+  {
+    id: 'questions',
+    label: 'Erros em perguntas',
+    col: COL.reports,
+    statuses: STATUS,
+    categories: QUESTION_CATEGORY,
+    help: () => '<p class="rp-lead">Toque <strong>Abrir pergunta</strong> para corrigir no editor. Depois marque <strong>Corrigido</strong>.</p>',
+    card: (r) => {
+      const mode = DIFFS.find((d) => d.id === r.difficulty)?.label || r.difficulty;
+      return {
+        tags: [[QUESTION_CATEGORY[r.category] || r.category || '—', '']],
+        extraAction: r.questionId
+          ? `<button type="button" class="btn btn-sm btn-secondary" data-open-q="${escapeHtml(r.questionId)}">Abrir pergunta</button>`
+          : '',
+        facts: [
+          ['Pergunta', `${escapeHtml(r.questionText || '—')}${r.verseRef ? ` <span class="field-hint">· ${escapeHtml(r.verseRef)}</span>` : ''}`],
+          ['Resposta', `${r.userWasCorrect ? 'acertou' : 'errou'} · escolheu “${escapeHtml(r.selectedOptionText || r.selectedOptionId || '—')}” · certa “${escapeHtml(r.correctOptionText || r.correctOptionId || '—')}”`],
+          ['Comentário', quote(r.comment)],
+          ['Onde', `${escapeHtml([r.missionSlug, mode].filter(Boolean).join(' · ') || '—')}${r.questionId ? ` <code class="rp-id">${escapeHtml(r.questionId)}</code>` : ''}`],
+          ['Quando', when(r)],
+          ['Quem mandou', person(r.displayName, r.uid, r.email)],
+        ],
+      };
+    },
+  },
+  {
+    id: 'trails',
+    label: 'Sugestões de trilha',
+    col: COL.suggestions,
+    statuses: STATUS,
+    help: () => '<p class="rp-lead">Pedidos feitos no mapa: o que as pessoas querem estudar.</p>',
+    card: (s) => ({
+      tags: [[REALM[s.realmId] || s.realmId || 'Sem reino', '']],
+      facts: [
+        ['Sugestão', escapeHtml(s.text || '—')],
+        ['Quando', when(s)],
+        ['Quem mandou', person(s.displayName, s.uid, s.email)],
+      ],
+    }),
+  },
+  {
+    id: 'authors',
+    label: 'Autores',
+    col: COL.authorSuggestions,
+    statuses: STATUS,
+    help: () => '<p class="rp-lead">Autores indicados para escrever trilhas.</p>',
+    card: (s) => ({
+      tags: [],
+      facts: [
+        ['Autor', `<strong>${escapeHtml(s.name || '—')}</strong>`],
+        ['Contato', escapeHtml([s.phone ? `Tel. ${s.phone}` : '', s.email || '', s.instagram ? `@${s.instagram}` : ''].filter(Boolean).join(' · ') || '—')],
+        ['Quando', when(s)],
+        ['Indicado por', person(s.submitterName, s.uid, s.submitterEmail)],
+      ],
+    }),
+  },
+];
 
-  async function setUserReportStatus(id, status) {
-    try {
-      await updateDoc(doc(db, COL.userReports, id), {
-        status,
-        reviewedAt: Timestamp.now(),
-      });
-      const item = userReports.find((r) => r.id === id);
-      if (item) item.status = status;
-      showToast('Status atualizado', 'success');
-      render();
-    } catch (err) {
-      showToast(err.message || 'Falha ao atualizar', 'error');
-    }
-  }
+/** Aba a abrir na próxima entrada em Relatos (o Hoje escolhe). */
+let pendingTab = null;
+export function openReportsTab(id) {
+  pendingTab = id;
+}
 
-  function filteredUserReports() {
-    return userReports.filter(
-      (r) => !filterUserStatus || (r.status || 'open') === filterUserStatus,
-    );
+async function loadOrdered(colId) {
+  try {
+    const snap = await getDocs(query(collection(db, colId), orderBy('createdAt', 'desc')));
+    return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+  } catch {
+    const snap = await getDocs(collection(db, colId));
+    return snap.docs
+      .map((d) => ({ id: d.id, ...d.data() }))
+      .sort((a, b) => (b.createdAt?.toMillis?.() ?? 0) - (a.createdAt?.toMillis?.() ?? 0));
   }
+}
 
-  function userReportsHtml() {
-    const list = filteredUserReports();
-    if (list.length === 0) {
-      return '<p class="field-hint">Nenhuma denúncia neste filtro.</p>';
-    }
-    return list
-      .map((r) => {
-        const reason = USER_REASON_LABELS[r.reason] || r.reason || '—';
-        const source = USER_SOURCE_LABELS[r.source] || r.source || '—';
-        const status = USER_STATUS_LABELS[r.status] || r.status || 'Aberta';
-        const hours = hoursSince(r.createdAt);
-        const late = (r.status || 'open') === 'open' && hours !== null && hours >= 24;
-        return `
-            <article class="ez-panel" style="margin-bottom:12px">
-              <div class="row-between" style="gap:12px;flex-wrap:wrap">
-                <div>
-                  <strong>${escapeHtml(r.targetName || '—')}</strong>
-                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(reason)}</span>
-                  <span class="badge badge-muted" style="margin-left:4px">${escapeHtml(status)}</span>
-                  ${late ? '<span class="badge" style="margin-left:4px">+24h</span>' : ''}
-                  <p class="field-hint" style="margin:6px 0 0">
-                    ${escapeHtml(formatDate(r.createdAt))} · ${escapeHtml(source)}
-                    · alvo <code>${escapeHtml(r.targetUid || '')}</code>
-                    ${r.roomName ? ` · grupo “${escapeHtml(r.roomName)}” (${escapeHtml(r.roomCode || '')})` : ''}
-                  </p>
-                </div>
-                <div class="td-actions">
-                  ${userReportButtons(r.id, r.status)}
-                </div>
-              </div>
-              ${r.comment ? `<p style="margin-top:8px"><em>“${escapeHtml(r.comment)}”</em></p>` : ''}
-              <p class="field-hint" style="margin-top:8px">
-                Denunciado por <code>${escapeHtml(r.reporterUid || 'conta excluída')}</code>
-              </p>
-            </article>`;
-      })
-      .join('');
-  }
+/* ─── Página ─────────────────────────────────────────────── */
 
-  async function setStatus(id, status) {
-    try {
-      await updateDoc(doc(db, COL.reports, id), {
-        status,
-        reviewedAt: Timestamp.now(),
-      });
-      const item = items.find((r) => r.id === id);
-      if (item) item.status = status;
-      showToast('Status atualizado', 'success');
-      render();
-    } catch (err) {
-      showToast(err.message || 'Falha ao atualizar', 'error');
-    }
-  }
+export async function renderReportsPage(root) {
+  root.innerHTML = '<div class="ez-page wide"><div class="ez-skeleton">Carregando relatos…</div></div>';
 
-  async function setSuggestionStatus(id, status) {
-    try {
-      await updateDoc(doc(db, COL.suggestions, id), {
-        status,
-        reviewedAt: Timestamp.now(),
-      });
-      const item = suggestions.find((r) => r.id === id);
-      if (item) item.status = status;
-      showToast('Status atualizado', 'success');
-      render();
-    } catch (err) {
-      showToast(err.message || 'Falha ao atualizar', 'error');
-    }
-  }
-
-  function filtered() {
-    return items.filter((r) => {
-      if (filterStatus && (r.status || 'open') !== filterStatus) return false;
-      if (filterCategory && r.category !== filterCategory) return false;
-      return true;
+  const data = {};
+  try {
+    const lists = await Promise.all(TABS.map((t) => loadOrdered(t.col)));
+    TABS.forEach((t, i) => {
+      data[t.id] = lists[i];
     });
+  } catch (err) {
+    root.innerHTML = `<div class="ez-page wide"><p class="ez-hint">Erro ao carregar relatos: ${escapeHtml(err.message || String(err))}</p></div>`;
+    return;
   }
 
-  function filteredSuggestions() {
-    return suggestions.filter((r) => {
-      if (filterSuggestionStatus && (r.status || 'open') !== filterSuggestionStatus) {
-        return false;
+  // Nome de quem denunciou: `users/{uid}` é público (o e-mail não é).
+  const names = new Map();
+  await Promise.all(
+    [...new Set(data.people.map((r) => r.reporterUid).filter(Boolean))].map(async (uid) => {
+      try {
+        const u = await getDocById(COL.users, uid);
+        if (u) names.set(uid, u.userName || u.name || u.displayName || '');
+      } catch {
+        /* sem nome: fica o uid */
       }
-      return true;
-    });
+    }),
+  );
+  const ctx = { names };
+
+  const openCount = (id) => data[id].filter(isOpen).length;
+  let tab = TABS.some((t) => t.id === pendingTab)
+    ? pendingTab
+    : (TABS.find((t) => openCount(t.id)) || TABS[0]).id;
+  pendingTab = null;
+  const statusFilter = Object.fromEntries(TABS.map((t) => [t.id, 'open']));
+  let category = '';
+
+  function cardHtml(t, r) {
+    const c = t.card(r, ctx);
+    const open = isOpen(r);
+    const actions = open
+      ? (t.actions || DEFAULT_ACTIONS)
+          .map(([status, label, cls, title]) => `<button type="button" class="btn btn-sm ${cls}" data-set="${status}" data-id="${escapeHtml(r.id)}" title="${escapeHtml(title)}">${escapeHtml(label)}</button>`)
+          .join('')
+      : `<button type="button" class="btn btn-sm btn-ghost" data-set="open" data-id="${escapeHtml(r.id)}">Reabrir</button>`;
+    const tags = [...c.tags, open ? null : [t.statuses[r.status] || r.status, 'ok']].filter(Boolean);
+    return `
+      <article class="rp-card ${c.late ? 'late' : ''} ${open ? '' : 'done'}">
+        <header class="rp-card-head">
+          <div class="rp-tags">
+            ${tags.map(([label, tone, title]) => `<span class="rv-pill ${tone}" ${title ? `title="${escapeHtml(title)}"` : ''}>${escapeHtml(label)}</span>`).join('')}
+          </div>
+          <div class="td-actions">${c.extraAction || ''}${actions}</div>
+        </header>
+        <dl class="rp-facts">
+          ${c.facts.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${v}</dd>`).join('')}
+        </dl>
+      </article>`;
   }
 
-  function filteredAuthors() {
-    return authors.filter((r) => {
-      if (filterAuthorStatus && (r.status || 'open') !== filterAuthorStatus) {
-        return false;
-      }
+  function panelHtml() {
+    const t = TABS.find((x) => x.id === tab);
+    const status = statusFilter[tab];
+    const list = data[tab].filter((r) => {
+      if (status && (r.status || 'open') !== status) return false;
+      if (t.categories && category && r.category !== category) return false;
       return true;
     });
-  }
-
-  async function setAuthorStatus(id, status) {
-    try {
-      await updateDoc(doc(db, COL.authorSuggestions, id), {
-        status,
-        reviewedAt: Timestamp.now(),
-      });
-      const item = authors.find((r) => r.id === id);
-      if (item) item.status = status;
-      showToast('Status atualizado', 'success');
-      render();
-    } catch (err) {
-      showToast(err.message || 'Falha ao atualizar', 'error');
-    }
+    return `
+      <div class="rp-toolbar">
+        <select id="rp-status" class="rp-filter" aria-label="Status">
+          <option value="">Todos os status</option>
+          ${Object.entries(t.statuses).map(([k, v]) => `<option value="${k}" ${status === k ? 'selected' : ''}>${escapeHtml(v)}</option>`).join('')}
+        </select>
+        ${t.categories ? `
+          <select id="rp-cat" class="rp-filter" aria-label="Categoria">
+            <option value="">Todas as categorias</option>
+            ${Object.entries(t.categories).map(([k, v]) => `<option value="${k}" ${category === k ? 'selected' : ''}>${escapeHtml(v)}</option>`).join('')}
+          </select>` : ''}
+        <span class="field-hint">${list.length} ${list.length === 1 ? 'item' : 'itens'}</span>
+      </div>
+      ${t.help()}
+      ${list.length
+        ? list.map((r) => cardHtml(t, r)).join('')
+        : `<div class="rp-empty">${status === 'open' ? 'Nada aberto aqui.' : 'Nada neste filtro.'}</div>`}`;
   }
 
   function render() {
-    const list = filtered();
-    const suggestionList = filteredSuggestions();
-    const authorList = filteredAuthors();
-    const openCount = items.filter((r) => (r.status || 'open') === 'open').length;
-    const openSuggestions = suggestions.filter((r) => (r.status || 'open') === 'open').length;
-    const openAuthors = authors.filter((r) => (r.status || 'open') === 'open').length;
-    const openUserReports = userReports.filter((r) => (r.status || 'open') === 'open').length;
-    const openAppReports = appReports.filter((r) => (r.status || 'open') === 'open').length;
-
     root.innerHTML = `
-      <div class="page-header row-between">
-        <div>
-          <h1>Relatos e sugestões</h1>
-          <p class="page-sub">Denúncias, problemas do app, erros de perguntas e caminhos pedidos pelo mapa — ${openUserReports} denúncias, ${openAppReports} do app, ${openCount} relatos, ${openSuggestions} trilhas e ${openAuthors} autores abertos</p>
-        </div>
-      </div>
-      <div class="card filters-bar">
-        <select id="f-user-status">
-          <option value="">Todos status</option>
-          ${Object.entries(USER_STATUS_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterUserStatus === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 4px;font-size:1.05rem">Denúncias de pessoas · ${openUserReports} abertas</h2>
-        <p class="field-hint" style="margin:0 0 12px">
-          Responder em até 24h. Para agir: corrigir nome/foto em <code>users/{uid}</code>
-          e nos placares, ou desativar a conta no Firebase Auth.
-        </p>
-        ${userReportsHtml()}
-      </div>
-      <div class="card filters-bar" style="margin-top:18px">
-        <select id="f-app-status">
-          <option value="">Todos status</option>
-          ${Object.entries(STATUS_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterAppStatus === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 12px;font-size:1.05rem">Problemas do app · ${openAppReports} abertos</h2>
-        ${appReportsHtml()}
-      </div>
-      <div class="card filters-bar" style="margin-top:18px">
-        <select id="f-status">
-          <option value="">Todos status</option>
-          ${Object.entries(STATUS_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterStatus === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-        <select id="f-cat">
-          <option value="">Todas categorias</option>
-          ${Object.entries(CATEGORY_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterCategory === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 12px;font-size:1.05rem">Relatos de perguntas</h2>
-        ${
-          list.length === 0
-            ? '<p class="field-hint">Nenhum relato neste filtro.</p>'
-            : list
-                .map((r) => {
-                  const cat = CATEGORY_LABELS[r.category] || r.category || '—';
-                  const status = STATUS_LABELS[r.status] || r.status || 'Aberto';
-                  return `
-            <article class="ez-panel" style="margin-bottom:12px">
-              <div class="row-between" style="gap:12px;flex-wrap:wrap">
-                <div>
-                  <strong>${escapeHtml(cat)}</strong>
-                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(status)}</span>
-                  <p class="field-hint" style="margin:6px 0 0">
-                    ${escapeHtml(formatDate(r.createdAt))}
-                    · <code>${escapeHtml(r.questionId || '')}</code>
-                    ${r.missionSlug ? ` · ${escapeHtml(r.missionSlug)}` : ''}
-                    ${r.difficulty ? ` · ${escapeHtml(r.difficulty)}` : ''}
-                  </p>
-                </div>
-                <div class="td-actions">
-                  ${statusButtons(r.id, r.status, 'data-status')}
-                </div>
-              </div>
-              <p style="margin:10px 0 4px"><strong>Pergunta:</strong> ${escapeHtml(r.questionText || '—')}</p>
-              ${r.verseRef ? `<p class="field-hint">Verso: ${escapeHtml(r.verseRef)}</p>` : ''}
-              <p class="field-hint">
-                Usuário ${r.userWasCorrect ? 'acertou' : 'errou'} ·
-                escolheu “${escapeHtml(r.selectedOptionText || r.selectedOptionId || '—')}” ·
-                certa: “${escapeHtml(r.correctOptionText || r.correctOptionId || '—')}”
-              </p>
-              ${
-                r.comment
-                  ? `<p style="margin-top:8px"><em>“${escapeHtml(r.comment)}”</em></p>`
-                  : ''
-              }
-              <p class="field-hint" style="margin-top:8px">
-                ${escapeHtml(r.displayName || r.email || r.uid || 'anônimo')}
-              </p>
-            </article>`;
-                })
-                .join('')
-        }
-      </div>
-      <div class="card filters-bar" style="margin-top:18px">
-        <select id="f-sug-status">
-          <option value="">Todos status</option>
-          ${Object.entries(STATUS_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterSuggestionStatus === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 12px;font-size:1.05rem">Sugestões de trilhas</h2>
-        ${
-          suggestionList.length === 0
-            ? '<p class="field-hint">Nenhuma sugestão neste filtro.</p>'
-            : suggestionList
-                .map((s) => {
-                  const status = STATUS_LABELS[s.status] || s.status || 'Aberto';
-                  const realm = REALM_LABELS[s.realmId] || s.realmId || 'Sem reino';
-                  return `
-            <article class="ez-panel" style="margin-bottom:12px">
-              <div class="row-between" style="gap:12px;flex-wrap:wrap">
-                <div>
-                  <strong>${escapeHtml(realm)}</strong>
-                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(status)}</span>
-                  <p class="field-hint" style="margin:6px 0 0">
-                    ${escapeHtml(formatDate(s.createdAt))}
-                  </p>
-                </div>
-                <div class="td-actions">
-                  ${statusButtons(s.id, s.status, 'data-sug-status')}
-                </div>
-              </div>
-              <p style="margin:10px 0 4px">${escapeHtml(s.text || '—')}</p>
-              <p class="field-hint" style="margin-top:8px">
-                ${escapeHtml(s.displayName || s.email || s.uid || 'anônimo')}
-              </p>
-            </article>`;
-                })
-                .join('')
-        }
-      </div>
-      <div class="card filters-bar" style="margin-top:18px">
-        <select id="f-author-status">
-          <option value="">Todos status</option>
-          ${Object.entries(STATUS_LABELS)
-            .map(
-              ([k, v]) =>
-                `<option value="${k}" ${filterAuthorStatus === k ? 'selected' : ''}>${v}</option>`,
-            )
-            .join('')}
-        </select>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 12px;font-size:1.05rem">Sugestões de autores</h2>
-        ${
-          authorList.length === 0
-            ? '<p class="field-hint">Nenhum autor neste filtro.</p>'
-            : authorList
-                .map((s) => {
-                  const status = STATUS_LABELS[s.status] || s.status || 'Aberto';
-                  const contact = [
-                    s.phone ? `Tel. ${s.phone}` : '',
-                    s.email || '',
-                    s.instagram ? `@${s.instagram}` : '',
-                  ]
-                    .filter(Boolean)
-                    .join(' · ');
-                  return `
-            <article class="ez-panel" style="margin-bottom:12px">
-              <div class="row-between" style="gap:12px;flex-wrap:wrap">
-                <div>
-                  <strong>${escapeHtml(s.name || '—')}</strong>
-                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(status)}</span>
-                  <p class="field-hint" style="margin:6px 0 0">
-                    ${escapeHtml(formatDate(s.createdAt))}
-                  </p>
-                </div>
-                <div class="td-actions">
-                  ${statusButtons(s.id, s.status, 'data-author-status')}
-                </div>
-              </div>
-              <p style="margin:10px 0 4px">${escapeHtml(contact || '—')}</p>
-              <p class="field-hint" style="margin-top:8px">
-                Indicado por ${escapeHtml(s.submitterName || s.submitterEmail || s.uid || 'anônimo')}
-              </p>
-            </article>`;
-                })
-                .join('')
-        }
+      <div class="ez-page wide">
+        <header class="ez-hero db-hero">
+          <div>
+            <h1>Relatos</h1>
+            <p class="ez-lead">O que as pessoas mandam pelo app. Mudar o status não avisa ninguém.</p>
+          </div>
+        </header>
+        <nav class="rp-tabs" role="tablist">
+          ${TABS.map((t) => {
+            const n = openCount(t.id);
+            return `<button type="button" role="tab" class="${t.id === tab ? 'on' : ''}" aria-selected="${t.id === tab}" data-tab="${t.id}">${escapeHtml(t.label)}${n ? `<span class="rp-count ${t.id === 'people' ? 'hot' : ''}">${n}</span>` : ''}</button>`;
+          }).join('')}
+        </nav>
+        <section class="rp-panel" role="tabpanel">${panelHtml()}</section>
       </div>`;
+    bind();
+  }
 
-    document.getElementById('f-user-status')?.addEventListener('change', (e) => {
-      filterUserStatus = e.target.value;
+  async function setStatus(id, status) {
+    const t = TABS.find((x) => x.id === tab);
+    try {
+      await updateDoc(doc(db, t.col, id), { status, reviewedAt: Timestamp.now() });
+      const item = data[tab].find((r) => r.id === id);
+      if (item) item.status = status;
+      showToast(status === 'open' ? 'Reaberto' : 'Status atualizado', 'success');
+      render();
+    } catch (err) {
+      showToast(err.message || 'Falha ao atualizar', 'error');
+    }
+  }
+
+  function bind() {
+    root.querySelectorAll('[data-tab]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        tab = btn.dataset.tab;
+        category = '';
+        render();
+      });
+    });
+    root.querySelector('#rp-status')?.addEventListener('change', (e) => {
+      statusFilter[tab] = e.target.value;
       render();
     });
-    root.querySelectorAll('[data-user-status]').forEach((btn) => {
-      btn.addEventListener('click', () =>
-        setUserReportStatus(btn.dataset.id, btn.dataset.userStatus),
-      );
-    });
-    document.getElementById('f-app-status')?.addEventListener('change', (e) => {
-      filterAppStatus = e.target.value;
+    root.querySelector('#rp-cat')?.addEventListener('change', (e) => {
+      category = e.target.value;
       render();
     });
-    root.querySelectorAll('[data-app-status]').forEach((btn) => {
-      btn.addEventListener('click', () =>
-        setAppReportStatus(btn.dataset.id, btn.dataset.appStatus),
-      );
+    root.querySelectorAll('[data-set]').forEach((btn) => {
+      btn.addEventListener('click', () => setStatus(btn.dataset.id, btn.dataset.set));
     });
-    document.getElementById('f-status')?.addEventListener('change', (e) => {
-      filterStatus = e.target.value;
-      render();
+    root.querySelectorAll('[data-copy]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(btn.dataset.copy);
+          showToast('uid copiado', 'success');
+        } catch {
+          showToast(btn.dataset.copy, 'info');
+        }
+      });
     });
-    document.getElementById('f-cat')?.addEventListener('change', (e) => {
-      filterCategory = e.target.value;
-      render();
+    root.querySelectorAll('[data-person]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        openPersonModal({
+          uid: btn.dataset.person,
+          name: btn.dataset.personName,
+          reportId: btn.dataset.report || '',
+          onChanged: () => {
+            openReportsTab(tab);
+            renderReportsPage(root);
+          },
+        });
+      });
     });
-    document.getElementById('f-sug-status')?.addEventListener('change', (e) => {
-      filterSuggestionStatus = e.target.value;
-      render();
-    });
-    document.getElementById('f-author-status')?.addEventListener('change', (e) => {
-      filterAuthorStatus = e.target.value;
-      render();
-    });
-    root.querySelectorAll('[data-status]').forEach((btn) => {
-      btn.addEventListener('click', () => setStatus(btn.dataset.id, btn.dataset.status));
-    });
-    root.querySelectorAll('[data-sug-status]').forEach((btn) => {
-      btn.addEventListener('click', () =>
-        setSuggestionStatus(btn.dataset.id, btn.dataset.sugStatus),
-      );
-    });
-    root.querySelectorAll('[data-author-status]').forEach((btn) => {
-      btn.addEventListener('click', () =>
-        setAuthorStatus(btn.dataset.id, btn.dataset.authorStatus),
-      );
+    root.querySelectorAll('[data-open-q]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        try {
+          const q = await getDocById(COL.bank, btn.dataset.openQ);
+          if (!q) {
+            showToast('A pergunta não existe mais no banco', 'error');
+            return;
+          }
+          const trail = q.trail ? await getDocById(COL.trails, q.trail) : null;
+          await openQuestionStudio({ existing: q, trails: trail ? [trail] : [] });
+        } catch (err) {
+          showToast(err.message || 'Falha ao abrir', 'error');
+        }
+      });
     });
   }
 

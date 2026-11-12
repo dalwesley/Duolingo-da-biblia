@@ -44,7 +44,7 @@ class MainBottomNav extends StatelessWidget {
         tone: AppRoles.navToday,
       ),
       (
-        glyph: CinematicGlyph.path,
+        glyph: CinematicGlyph.compass,
         label: l10n.navTrails,
         tone: AppRoles.navTrails,
       ),

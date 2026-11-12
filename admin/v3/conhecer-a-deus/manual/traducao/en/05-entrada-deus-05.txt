@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "conhecer-a-deus-sem-entrada-deus-05-01": {
+  "question": "Em João 1:8, João Batista é apresentado como a luz que veio ao mundo.",
+  "learningObjective": "Observar que João Batista aponta para a luz, mas não é a luz.",
+  "feedbackCorrect": "O texto diz o contrário: \"Não era ele a luz\". João veio para testificar da luz.",
+  "feedbackWrong": {
+   "true": "Releia João 1:8: João não era a luz; ele veio para testificar da luz."
+  },
+  "hint": "Olhe o começo do versículo.",
+  "_verso": "Não era ele a luz, mas veio para que testificasse da luz."
+ },
+ "conhecer-a-deus-sem-entrada-deus-05-02": {
+  "question": "Em João 1:1, toque quem estava com Deus no princípio.",
+  "learningObjective": "Identificar o Verbo como quem estava com Deus no princípio.",
+  "feedbackCorrect": "O Verbo já estava com Deus no princípio; João usa esse nome para Jesus.",
+  "feedbackWrong": {
+   "b": "\"Era\" é o verbo da frase; toque quem estava com Deus.",
+   "c": "\"Princípio\" diz quando, não quem."
+  },
+  "hint": "Procure o nome que se repete três vezes no versículo.",
+  "_verso": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+ },
+ "conhecer-a-deus-sem-entrada-deus-05-03": {
+  "question": "Segundo João 1:12, o que recebem os que acolhem o Verbo?",
+  "learningObjective": "Observar o que João promete a quem recebe o Verbo.",
+  "feedbackCorrect": "Quem recebe o Verbo e crê no seu nome ganha o poder de se tornar filho de Deus.",
+  "feedbackWrong": {
+   "a": "O versículo 13 diz que esses filhos não nascem do sangue, mas de Deus.",
+   "b": "A luz aqui é Jesus; o que se recebe é tornar-se filho de Deus.",
+   "d": "O texto não fala em virar profeta; fala em se tornar filho de Deus."
+  },
+  "hint": "Leia o que vem depois de \"deu-lhes\".",
+  "options": {
+   "a": "Um lugar garantido no povo de Israel",
+   "b": "A capacidade de ver a luz com os olhos",
+   "c": "O poder de se tornar filhos de Deus",
+   "d": "O direito de ser profetas como João"
+  },
+  "_verso": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;"
+ },
+ "conhecer-a-deus-sem-entrada-deus-05-04": {
+  "question": "Monte João 1:14 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de João 1:14.",
+  "feedbackCorrect": "É a sequência do versículo: o Verbo vem morar entre nós, cheio de graça, e sua glória é vista.",
+  "feedbackWrong": {
+   "default": "Comece pelo Verbo que se fez carne; a glória vista vem no fim."
+  },
+  "hint": "O versículo começa pelo Verbo.",
+  "_verso": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+ },
+ "conhecer-a-deus-sem-entrada-deus-05-05": {
+  "question": "Em João 1:5, onde a luz resplandece?",
+  "learningObjective": "Lembrar a imagem da luz que brilha no escuro.",
+  "feedbackCorrect": "A luz brilha justamente no escuro, e as trevas não conseguem apagá-la.",
+  "feedbackWrong": {
+   "a": "Águas lembram Gênesis 1, mas aqui a luz brilha no escuro.",
+   "b": "A luz não fica longe, nas alturas; ela brilha onde está escuro."
+  },
+  "hint": "Pense no contrário da luz.",
+  "_verso": "E a luz resplandece nas trevas, e as trevas não a dominaram"
+ },
+ "conhecer-a-deus-sem-entrada-deus-05-06": {
+  "question": "O que João 1:14 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar João 1:14 à vida humana de Jesus.",
+  "feedbackCorrect": "\"Se fez carne\": o Verbo, que era Deus, passou a viver como gente no meio de nós.",
+  "feedbackWrong": {
+   "a": "O texto diz o contrário: ele habitou entre nós.",
+   "c": "João diz \"se fez carne\": não foi aparência, foi vida humana de verdade."
+  },
+  "hint": "Veja o que o Verbo se tornou e onde ele morou.",
+  "options": {
+   "a": "O Verbo ficou longe, no céu",
+   "b": "O Verbo se tornou gente",
+   "c": "O Verbo apareceu só como visão"
+  },
+  "_verso": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-01": {
+  "question": "Em João 1:10, o mundo foi feito por meio do Verbo e, mesmo assim, não o conheceu.",
+  "learningObjective": "Compreender o contraste entre o Criador e o mundo que não o conheceu.",
+  "feedbackCorrect": "O \"no entanto\" marca o contraste: o mundo veio dele, mas não o reconheceu.",
+  "feedbackWrong": {
+   "false": "Releia João 1:10: o mundo foi feito por meio dele; no entanto, não o conheceu."
+  },
+  "hint": "Repare na expressão que liga as duas partes do versículo.",
+  "_verso": "Estava no mundo, e o mundo foi feito por meio dele; no entanto, o mundo não o conheceu."
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-02": {
+  "question": "Em João 1:12, toque a palavra que marca a virada depois da rejeição do versículo anterior.",
+  "learningObjective": "Reconhecer o marcador de contraste entre rejeição e acolhida.",
+  "feedbackCorrect": "\"Mas\" vira a página: os seus não o receberam, porém quem o recebe vira filho de Deus.",
+  "feedbackWrong": {
+   "a": "\"Deu-lhes\" mostra o presente recebido, não a virada em si.",
+   "b": "\"Todos\" diz o alcance; a virada vem antes, na primeira palavra."
+  },
+  "hint": "Procure uma palavra curta no começo do versículo.",
+  "_verso": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;"
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-03": {
+  "question": "Em João 1:7–8, como João Batista se relaciona com a luz?",
+  "learningObjective": "Relacionar a missão de João Batista com a luz.",
+  "feedbackCorrect": "João é testemunha: ele aponta para a luz a fim de que todos venham a crer.",
+  "feedbackWrong": {
+   "b": "Não há disputa: ele veio para testificar a respeito da luz.",
+   "c": "João 1:8 diz: \"Não era ele a luz\".",
+   "d": "O propósito é amplo: \"a fim de que todos viessem a crer\"."
+  },
+  "hint": "Procure para que João veio.",
+  "options": {
+   "a": "Ele aponta para a luz, para que outros creiam",
+   "b": "Ele disputa com a luz a fé do povo",
+   "c": "Ele é a luz, enviado antes do Verbo",
+   "d": "Ele guarda a luz só para os seus discípulos"
+  },
+  "_verso": "Ele veio como testemunha para que testificasse a respeito da luz, a fim de que todos viessem a crer por meio dele. Não era ele a luz, mas veio para que testificasse da luz."
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-04": {
+  "question": "Em que ordem João apresenta o Verbo em João 1:1–14?",
+  "learningObjective": "Compreender o movimento do prólogo de João.",
+  "feedbackCorrect": "Primeiro quem ele é, depois o que fez na criação, e então a chegada entre nós.",
+  "feedbackWrong": {
+   "default": "João começa no princípio, passa pela criação e chega ao Verbo que se fez carne."
+  },
+  "hint": "João começa antes de tudo existir.",
+  "options": {
+   "a": "O Verbo eterno, com Deus e Deus",
+   "b": "Tudo foi feito por meio dele",
+   "c": "O Verbo vem morar entre nós"
+  },
+  "_verso": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus."
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-05": {
+  "question": "Em João 1:11, o que os seus não fizeram com o Verbo?",
+  "learningObjective": "Lembrar a ação que separa rejeição e acolhida.",
+  "feedbackCorrect": "Ele veio para os seus, e eles não o receberam: a rejeição prepara a virada do versículo 12.",
+  "feedbackWrong": {
+   "a": "\"Conheceu\" aparece em João 1:10, sobre o mundo; aqui o verbo é outro.",
+   "c": "O texto não fala em seguir; fala em acolher quem chegou."
+  },
+  "hint": "O versículo 12 repete o mesmo verbo, agora no positivo.",
+  "_verso": "Veio para o que era seu, mas os seus não o receberam."
+ },
+ "conhecer-a-deus-cam-entrada-deus-05-06": {
+  "question": "O que liga João 1:1 a Gênesis 1:1?",
+  "learningObjective": "Relacionar o começo de João com o começo de Gênesis.",
+  "feedbackCorrect": "João começa como Gênesis para mostrar que o Verbo já estava lá quando tudo começou.",
+  "feedbackWrong": {
+   "a": "No princípio, o Verbo já era; ele não foi criado.",
+   "c": "João fala da mesma criação; tudo foi feito por meio do Verbo."
+  },
+  "hint": "Compare as primeiras palavras dos dois versículos.",
+  "options": {
+   "a": "O Verbo criado no princípio",
+   "b": "O mesmo começo: \"No princípio\"",
+   "c": "Duas criações diferentes do mundo"
+  },
+  "_verso": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-01": {
+  "question": "João 1:1–2 mostra o Verbo já com Deus no princípio, e não como algo que Deus criou depois.",
+  "learningObjective": "Distinguir o Verbo eterno de uma criatura.",
+  "feedbackCorrect": "O Verbo já era no princípio, estava com Deus e era Deus; tudo foi feito por meio dele.",
+  "feedbackWrong": {
+   "false": "Releia: \"No princípio, era o Verbo\". Ele não surge depois; já estava ao lado de Deus."
+  },
+  "hint": "Veja onde o Verbo estava no princípio.",
+  "_verso": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus."
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-02": {
+  "question": "Em João 1:5, toque o trecho que sustenta que a luz segue de pé diante do mal.",
+  "learningObjective": "Sustentar com o texto que a luz não é vencida.",
+  "feedbackCorrect": "As trevas existem, mas não venceram a luz: a última palavra é dela.",
+  "feedbackWrong": {
+   "a": "\"Nas trevas\" mostra onde ela brilha, não o resultado do confronto.",
+   "b": "\"A luz\" diz quem brilha; o que garante que ela resiste vem no fim."
+  },
+  "hint": "Olhe o que as trevas não conseguiram fazer.",
+  "_verso": "E a luz resplandece nas trevas, e as trevas não a dominaram"
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-03": {
+  "question": "Que leitura João 1:14 sustenta sobre como Deus se dá a conhecer?",
+  "learningObjective": "Escolher a leitura que o texto sustenta sobre Deus se revelando em Jesus.",
+  "feedbackCorrect": "O Verbo morou entre nós, e a sua glória foi vista: em Jesus, Deus se deixa conhecer.",
+  "feedbackWrong": {
+   "b": "João diz \"vimos a sua glória\": Deus se deixou ver de perto.",
+   "c": "\"Se fez carne\" afirma humanidade de verdade, não aparência.",
+   "d": "No princípio, o Verbo já era e era Deus (Jo 1:1)."
+  },
+  "hint": "Compare cada opção com \"habitou entre nós\" e \"vimos\".",
+  "options": {
+   "a": "Deus se mostra em Jesus, que viveu entre nós",
+   "b": "Deus continua distante, e ninguém vê sua glória",
+   "c": "Jesus só parecia humano, como uma aparição",
+   "d": "O Verbo foi a primeira coisa criada por Deus"
+  },
+  "_verso": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-04": {
+  "question": "Qual sequência mostra o fio de Deus morando com o seu povo que passa por João 1:14?",
+  "learningObjective": "Ver João 1:14 dentro do fio de Deus que vem morar com o seu povo.",
+  "feedbackCorrect": "Da tenda no deserto a Jesus entre nós, e por fim Deus morando com o seu povo.",
+  "feedbackWrong": {
+   "default": "Siga a história: deserto (Êx 40:34), Jesus (Jo 1:14) e o fim (Ap 21:3)."
+  },
+  "hint": "Siga a ordem da Bíblia: Êxodo, Evangelhos, Apocalipse.",
+  "options": {
+   "a": "A glória do Senhor enche a tenda no deserto",
+   "b": "O Verbo habita entre nós e vemos a sua glória",
+   "c": "Deus vem morar com o seu povo para sempre"
+  },
+  "_verso": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-05": {
+  "question": "Em João 1:14, o que o Verbo fez entre nós depois de se fazer carne?",
+  "learningObjective": "Lembrar o termo que mostra Deus vindo morar perto.",
+  "feedbackCorrect": "Habitar é morar junto, como quem arma a tenda no meio do povo: Deus perto de verdade.",
+  "feedbackWrong": {
+   "a": "Não foi visita rápida; o texto fala de morar no meio do povo.",
+   "c": "Ele também falou, mas o versículo diz mais: ele morou entre nós."
+  },
+  "hint": "O verbo fala de morar, não de visitar.",
+  "_verso": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+ },
+ "conhecer-a-deus-pro-entrada-deus-05-06": {
+  "question": "O que liga João 1:3 a Hebreus 1:1–2?",
+  "learningObjective": "Ligar o Verbo criador de João ao Filho de Hebreus.",
+  "feedbackCorrect": "Os dois textos dizem o mesmo: foi por meio do Filho que Deus fez todas as coisas.",
+  "feedbackWrong": {
+   "a": "Os textos não colocam o Filho entre as coisas feitas; tudo foi feito por meio dele.",
+   "c": "O Filho já agia na criação: \"por meio de quem também fez o universo\"."
+  },
+  "hint": "Veja por meio de quem as coisas foram feitas nos dois textos.",
+  "options": {
+   "a": "O Filho foi feito primeiro",
+   "b": "Tudo foi feito pelo Filho",
+   "c": "O Filho chegou depois da criação"
+  },
+  "_verso": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+ },
+ "estudo:entrada-deus-05": {
+  "context": "João abre o seu evangelho com as mesmas palavras de Gênesis: \"No princípio\". Ele chama Jesus de Verbo, isto é, a Palavra de Deus. Antes de contar o que Jesus fez, João diz quem ele é e de onde ele vem.",
+  "focusQuestion": "Olhando para Jesus, o que você aprende sobre como Deus é?",
+  "keywordGloss": "A Palavra de Deus; João usa esse nome para Jesus, que mostra Deus em pessoa.",
+  "reflectionPrompts": [
+   "No princípio, o Verbo",
+   "Morou entre nós",
+   "Cheio de graça e de verdade"
+  ],
+  "facts": [
+   "O Verbo estava com Deus e era Deus.",
+   "Todas as coisas foram feitas por meio do Verbo.",
+   "A luz brilha nas trevas, e as trevas não a dominaram.",
+   "João Batista veio testemunhar da luz, mas não era a luz.",
+   "Quem recebe o Verbo ganha o poder de se tornar filho de Deus.",
+   "O Verbo se fez carne e habitou entre nós."
+  ],
+  "_verso": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus. Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez. Nele havia a vida, e essa vida era a luz dos homens; E a luz resplandece nas trevas, e as trevas não a dominaram"
+ }
+}

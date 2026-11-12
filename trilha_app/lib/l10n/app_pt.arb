@@ -1556,14 +1556,14 @@
   },
   "exploreSoonBody": "Estamos pensando em ferramentas para ver quando, onde e com quem cada cena aconteceu. Marque o que você mais quer usar: isso decide o que vem primeiro.",
   "exploreSoonEntryBadge": "Em breve",
-  "exploreSoonEntryTitle": "Linha do tempo, mapas e personagens",
-  "exploreSoonItemAtlas": "Mapas: cidades, viagens e onde cada cena aconteceu",
+  "exploreSoonEntryTitle": "Atlas: linha do tempo, lugares e personagens",
+  "exploreSoonItemAtlas": "Mapas e lugares: cidades, viagens e onde cada cena aconteceu",
   "exploreSoonItemCharacters": "Personagens: quem é quem, famílias e histórias",
   "exploreSoonItemTimeline": "Linha do tempo: reis, profetas e impérios lado a lado",
   "exploreSoonJoined": "Combinado! Avisaremos você quando abrir.",
   "exploreSoonMeanwhile": "Enquanto isso, na Bíblia, toque num versículo e em \"Estudar este versículo\" para ver a palavra original e as conexões com outros textos.",
   "exploreSoonPickHeader": "O que você quer usar?",
-  "exploreSoonTitle": "Explorar a Bíblia está chegando",
+  "exploreSoonTitle": "O Atlas da Bíblia está chegando",
   "feedbackAlmost": "Quase",
   "feedbackAnswer": "Resposta",
   "feedbackCheer1": "Isso.",
@@ -3717,7 +3717,7 @@
     }
   },
   "navTogether": "Juntos",
-  "navTrails": "Trilhas",
+  "navTrails": "Explorar",
   "nextStepDeepenCta": "Começar",
   "nextStepDeepenLineCaminhada": "Você foi firme: {percent}% de primeira. Agora as mesmas cenas perguntam por quê.",
   "@nextStepDeepenLineCaminhada": {
@@ -4481,6 +4481,7 @@
   "pilgrimStreak": "Sequência",
   "pilgrimStreakOngoing": "Em andamento",
   "pilgrimTrail": "Trilha",
+  "pilgrimTrails": "Trilhas",
   "pilgrimTrailsInProgress": "{count} em curso",
   "@pilgrimTrailsInProgress": {
     "placeholders": {
@@ -5524,6 +5525,20 @@
   "roomNameHintEbd": "Ex.: EBD Jovens",
   "roomNameHintFamilia": "Ex.: Família Souza",
   "roomStudyFallbackTitle": "Estudo da semana",
+  "sceneAddress": "{collection} › {trail} › Cena {number}",
+  "@sceneAddress": {
+    "placeholders": {
+      "collection": {
+        "type": "String"
+      },
+      "trail": {
+        "type": "String"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+  },
   "sceneStudyCta": "Para aprofundar",
   "sceneStudyKeyword": "Palavra-chave",
   "sceneStudyLinks": "Ligações na Bíblia",
@@ -6145,10 +6160,10 @@
   "suggestionSendError": "Não foi possível enviar. Tente de novo.",
   "suggestionSending": "Enviando…",
   "suggestionSignInToSend": "Entre para enviar a sugestão.",
-  "suggestionTrailHintBoth": "Escolha uma área e descreva a trilha.",
+  "suggestionTrailHintBoth": "Escolha uma coleção e descreva a trilha.",
   "suggestionTrailHintRealm": "Escolha onde essa trilha encaixa.",
   "suggestionTrailHintText": "Escreva a trilha — pelo menos 4 letras.",
-  "suggestionTrailPlaceholder": "Escolha uma área e descreva a trilha…",
+  "suggestionTrailPlaceholder": "Escolha uma coleção e descreva a trilha…",
   "suggestionTrailRealmLabel": "Onde encaixa",
   "suggestionTrailSent": "Sugestão enviada. Obrigado.",
   "suggestionTrailSubtitle": "O que ainda falta no mapa?",

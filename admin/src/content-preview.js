@@ -6,7 +6,7 @@ export const GESTURES = [
     icon: '🔘',
     verb: 'Escolha',
     verbUp: 'ESCOLHA',
-    label: 'Quiz',
+    label: 'Pergunta',
     blurb: 'Pergunta e alternativas',
     where: 'Opções empilhadas embaixo da pergunta',
   },
@@ -15,7 +15,7 @@ export const GESTURES = [
     icon: '✓✗',
     verb: 'Julgue',
     verbUp: 'JULGUE',
-    label: 'Verdadeiro / Falso',
+    label: 'Afirmação',
     blurb: 'Uma afirmação para julgar',
     where: 'Dois botões — V e F — no rodapé',
   },
@@ -24,7 +24,7 @@ export const GESTURES = [
     icon: '___',
     verb: 'Complete',
     verbUp: 'COMPLETE',
-    label: 'Complete',
+    label: 'Completar',
     blurb: 'Verso com lacuna',
     where: 'Trecho no centro; chips preenchem o ___',
   },
@@ -33,25 +33,35 @@ export const GESTURES = [
     icon: '↕',
     verb: 'Ordene',
     verbUp: 'ORDENE',
-    label: 'Arraste',
+    label: 'Sequência',
     blurb: 'Monte a sequência',
     where: 'Lista no centro, com alça para arrastar',
+  },
+  {
+    id: 'find_in_text',
+    icon: '👆',
+    verb: 'Toque',
+    verbUp: 'TOQUE',
+    label: 'Toque',
+    blurb: 'Tocar a palavra no versículo',
+    where: 'Versículo no centro; o aluno toca o trecho certo',
   },
   {
     id: 'tap',
     icon: '👆',
     verb: 'Toque',
     verbUp: 'TOQUE',
-    label: 'Toque',
-    blurb: 'Verso em destaque + opções',
+    label: 'Toque (V2)',
+    blurb: 'Formato antigo: verso + opções embaixo',
     where: 'Manuscrito no centro; opções embaixo',
+    legacy: true,
   },
   {
     id: 'connect',
     icon: '🔗',
     verb: 'Conecte',
     verbUp: 'CONECTE',
-    label: 'Conecte',
+    label: 'Ponte',
     blurb: 'Dois trechos',
     where: 'Dois blocos de texto + chips',
   },
@@ -63,8 +73,11 @@ export const DIFFS = [
   { id: 'profundezas', label: 'Interpretação', hint: 'Interpretar o que significa' },
 ];
 
+/** Ordem da matriz V3 (SPEC_V3 §3). */
+export const V3_GESTURES = ['true_false', 'find_in_text', 'choice', 'order', 'complete', 'connect'];
+
 export function gestureMeta(type) {
-  return GESTURES.find((g) => g.id === type) || GESTURES[0];
+  return GESTURES.find((g) => g.id === type) || { ...GESTURES[0], id: type, label: type || 'Quiz' };
 }
 
 export function diffMeta(id) {
@@ -122,6 +135,75 @@ export function renderTrailCardPreview(trail, { focus = '' } = {}) {
     ${region('description', focus, `<p class="pv-trail-desc">${ph(desc, 'Uma linha sobre o caminho…')}</p>`)}
     <p class="pv-trail-meta">${escapeHtml(realm)}</p>`;
   return phone(inner, { caption: 'Cartão da trilha no app' });
+}
+
+/**
+ * Jornada no app (aba Explorar → card → caminho): card da fase e as estações
+ * da trilha. `stations`: [{ roman, title, status, soon, isNew }]; a nova vem em destaque.
+ */
+export function renderJourneyPreview({ journeyLabel, subtitle, phaseIndex, phaseLabel, stations, before = 0 }) {
+  const station = (st) => `
+    <div class="pv-station ${st.isNew ? 'is-new' : ''} ${st.soon ? 'is-soon' : ''}">
+      <span class="pv-station-node" aria-hidden="true"></span>
+      <div class="pv-station-card">
+        <span class="pv-station-eyebrow">Trilha ${escapeHtml(st.roman)}${st.isNew ? '<em>nova</em>' : ''}</span>
+        <strong class="pv-station-title">${st.isNew ? ph(st.title, 'Nome da trilha') : escapeHtml(st.title)}</strong>
+        <span class="pv-station-status">${st.isNew ? ph(st.status, 'Uma linha sobre o caminho…') : escapeHtml(st.status || '')}</span>
+        ${st.soon ? '<span class="pv-chip pv-station-chip">Em breve</span>' : ''}
+      </div>
+    </div>`;
+  const inner = `
+    ${topbar(escapeHtml(journeyLabel), escapeHtml(subtitle))}
+    <div class="pv-journey">
+      ${before ? `<p class="pv-journey-more">↑ ${before} trilha${before > 1 ? 's' : ''} antes</p>` : ''}
+      <div class="pv-phase">
+        <span>Fase ${escapeHtml(String(phaseIndex).padStart(2, '0'))}</span>
+        <strong>${escapeHtml(phaseLabel)}</strong>
+      </div>
+      <div class="pv-path">${stations.map(station).join('')}</div>
+    </div>`;
+  return phone(inner, { caption: 'Onde aparece no app' });
+}
+
+/**
+ * Linha da aba Explorar com o card novo no fim. `cards`: [{ title, blurb, plus, isNew, tone }].
+ */
+export function renderShelfPreview({ shelfLabel, cards }) {
+  const card = (c) => `
+    <div class="pv-shelf-card tone-${escapeHtml(c.tone || 'vida-crista')} ${c.isNew ? 'is-new' : ''}">
+      <span class="pv-shelf-glyph" aria-hidden="true">${escapeHtml(c.icon || '✦')}</span>
+      ${c.plus ? '<span class="pv-chip pv-shelf-plus">Plus</span>' : ''}
+      <strong>${c.isNew ? ph(c.title, 'Nome do card') : escapeHtml(c.title)}</strong>
+      <small>${c.isNew ? ph(c.blurb, 'Frase do card') : escapeHtml(c.blurb || '')}</small>
+      ${c.isNew ? '<em class="pv-shelf-new">novo</em>' : ''}
+    </div>`;
+  const inner = `
+    <div class="pv-shelf">
+      <p class="pv-shelf-title">${escapeHtml(shelfLabel)}</p>
+      <div class="pv-shelf-row">${cards.map(card).join('')}</div>
+    </div>`;
+  return phone(inner, { caption: 'Onde aparece no app' });
+}
+
+/**
+ * Aba Explorar: as portas (linhas) em lista, a nova no fim e em destaque.
+ * `doors`: [{ title, subtitle, tone, icon, plus, isNew }].
+ */
+export function renderDoorsPreview({ doors }) {
+  const door = (d) => `
+    <div class="pv-door tone-${escapeHtml(d.tone || 'vida-crista')} ${d.isNew ? 'is-new' : ''}">
+      <span class="pv-shelf-glyph" aria-hidden="true">${escapeHtml(d.icon || '✦')}</span>
+      ${d.plus ? '<span class="pv-chip pv-shelf-plus">Plus</span>' : ''}
+      <strong>${d.isNew ? ph(d.title, 'Nome da linha') : escapeHtml(d.title)}</strong>
+      <small>${d.isNew ? ph(d.subtitle, 'Frase da linha') : escapeHtml(d.subtitle || '')}</small>
+      ${d.isNew ? '<em class="pv-shelf-new">nova</em>' : ''}
+    </div>`;
+  const inner = `
+    <div class="pv-shelf">
+      <p class="pv-shelf-title">Explorar</p>
+      <div class="pv-doors">${doors.map(door).join('')}</div>
+    </div>`;
+  return phone(inner, { caption: 'Onde aparece no app' });
 }
 
 /** Tela de entrada do passo. */
@@ -218,6 +300,37 @@ function optionTiles(q, focus, { letters = true } = {}) {
   );
 }
 
+/** Destaca no versículo os trechos tocáveis (opções) — a certa em dourado. */
+function markTaps(text, options, correctId) {
+  const raw = String(text || '');
+  const spans = [];
+  for (const o of options || []) {
+    const t = String(o.text || '').trim();
+    if (!t) continue;
+    const i = raw.indexOf(t);
+    if (i >= 0) spans.push({ start: i, end: i + t.length, correct: o.id === correctId });
+  }
+  spans.sort((a, b) => a.start - b.start);
+  let out = '';
+  let at = 0;
+  for (const sp of spans) {
+    if (sp.start < at) continue;
+    out += escapeHtml(raw.slice(at, sp.start));
+    out += `<span class="pv-tap ${sp.correct ? 'correct' : ''}">${escapeHtml(raw.slice(sp.start, sp.end))}</span>`;
+    at = sp.end;
+  }
+  return out + escapeHtml(raw.slice(at));
+}
+
+/** Versículo com o `evidenceSpan` aceso, como o app mostra depois da resposta. */
+function markSpan(text, span) {
+  const raw = String(text || '');
+  const s = String(span || '').trim();
+  const i = s ? raw.indexOf(s) : -1;
+  if (i < 0) return escapeHtml(raw);
+  return `${escapeHtml(raw.slice(0, i))}<mark class="pv-span">${escapeHtml(s)}</mark>${escapeHtml(raw.slice(i + s.length))}`;
+}
+
 function heroFor(q, focus) {
   const type = q?.type || 'choice';
   if (type === 'complete') {
@@ -226,6 +339,15 @@ function heroFor(q, focus) {
         ? `<div class="pv-study">ESTUDAR · ${escapeHtml(q.verseRef)}</div>`
         : `<div class="pv-study dim">ESTUDAR · referência</div>`)}
       ${region('template', focus, `<p class="pv-manuscript">${renderBlank(q.template)}</p>`)}`;
+  }
+  if (type === 'find_in_text') {
+    return `
+      ${region('verseRef', focus, q.verseRef
+        ? `<div class="pv-study">${escapeHtml(q.verseRef)}</div>`
+        : `<div class="pv-study dim">referência</div>`)}
+      ${region('passageText', focus, `<p class="pv-manuscript">${q.passageText
+        ? markTaps(q.passageText, optsOf(q), q.correctOptionId)
+        : ph('', 'Cole o versículo. As opções precisam aparecer nele.')}</p>`)}`;
   }
   if (type === 'tap') {
     return `
@@ -282,7 +404,8 @@ export function renderActPreview(q, { focus = '', index = 1, total = 5 } = {}) {
   const cue = cueText(q);
   const type = q?.type || 'choice';
   const hero = heroFor(q, focus);
-  const showOpts = type !== 'order';
+  const showOpts = type !== 'order' && type !== 'find_in_text';
+  const hint = String(q?.hint || '').trim();
 
   const inner = `
     ${topbar(`${index}/${total}`, g.verb)}
@@ -291,6 +414,7 @@ export function renderActPreview(q, { focus = '', index = 1, total = 5 } = {}) {
       ${region('cue', focus, `<p class="pv-cue">${ph(cue, type === 'true_false' ? 'Afirmação para julgar verdadeira ou falsa.' : 'Pergunta que o aluno lê no topo.')}</p>`)}
       ${hero}
       ${showOpts ? optionTiles(q, focus) : ''}
+      ${hint ? region('hint', focus, `<p class="pv-hint-line"><span>Dica</span> ${escapeHtml(hint)}</p>`) : ''}
     </div>
     <div class="pv-foot">
       <span class="pv-lamps">●●●●○</span>
@@ -300,11 +424,19 @@ export function renderActPreview(q, { focus = '', index = 1, total = 5 } = {}) {
   return phone(inner, { caption: `Tela da ação · ${g.label}` });
 }
 
-/** Overlay depois de responder. */
-export function renderFeedbackPreview(q, { focus = '', correct = true } = {}) {
-  const ok = (q.feedbackCorrect || '').trim();
+/** Overlay depois de responder. `wrongId` mostra o feedback daquela opção errada. */
+export function renderFeedbackPreview(q, { focus = '', correct = true, wrongId = null } = {}) {
+  const fw = q.feedbackWrong || {};
+  const wrongKey = wrongId
+    || (q.type === 'true_false'
+      ? (q.correctOptionId === 'true' ? 'false' : 'true')
+      : Object.keys(fw).find((k) => k !== 'default') || 'default');
+  const msg = correct
+    ? (q.feedbackCorrect || '').trim()
+    : String(fw[wrongKey] || fw.default || '').trim();
   const ref = (q.verseRef || '').trim();
   const passage = (q.passageText || '').trim();
+  const wrongOpt = (q.options || []).find((o) => o.id === wrongKey);
   const inner = `
     ${topbar('1/5', gestureMeta(q?.type).verb)}
     <div class="pv-body dimmed">
@@ -312,18 +444,19 @@ export function renderFeedbackPreview(q, { focus = '', correct = true } = {}) {
     </div>
     <div class="pv-overlay">
       <strong class="${correct ? 'ok' : 'no'}">${correct ? 'Acertou!' : 'Quase'}</strong>
-      ${region('feedbackCorrect', focus, `<p>${ph(ok, 'Frase curta de confirmação.')}</p>`)}
+      ${!correct && wrongOpt ? `<p class="pv-wrong-pick">Escolheu: ${escapeHtml(wrongOpt.text || wrongKey)}</p>` : ''}
+      ${region(correct ? 'feedbackCorrect' : 'feedbackWrong', focus, `<p>${ph(msg, correct ? 'Por que está certo.' : 'Por que esta opção está errada.')}</p>`)}
       ${region(
-        'verseRef',
+        'evidenceSpan',
         focus,
         `<div class="pv-fb-verse">
           <small>${ph(ref, 'Referência do verso')}</small>
-          <p>${ph(passage, 'O trecho aparece aqui depois de responder (quiz e V/F).')}</p>
+          <p>${passage ? markSpan(passage, q.evidenceSpan) : ph('', 'O versículo aparece aqui, com o trecho da prova aceso.')}</p>
         </div>`,
       )}
       <div class="pv-cta sm">Continuar</div>
     </div>`;
-  return phone(inner, { caption: 'Depois de responder' });
+  return phone(inner, { caption: correct ? 'Depois de acertar' : 'Depois de errar' });
 }
 
 export function renderPreviewByScreen(screen, ctx) {

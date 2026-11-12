@@ -233,4 +233,4 @@ async function purgeUserData(db, uid, logger) {
   return failed;
 }
 
-module.exports = { purgeUserData };
+module.exports = { purgeUserData, rankingRefs, deleteRefs };

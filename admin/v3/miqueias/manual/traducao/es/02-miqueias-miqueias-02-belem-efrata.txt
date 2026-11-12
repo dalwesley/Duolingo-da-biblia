@@ -1,0 +1,271 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-01": {
+  "question": "Em Miqueias 5:2, Belém é descrita como grande demais entre os milhares de Judá.",
+  "learningObjective": "Observar a pequenez de Belém.",
+  "feedbackCorrect": "O texto destaca justamente o tamanho pequeno de Belém.",
+  "feedbackWrong": {
+   "true": "Releia o começo: Belém é pequena demais entre os milhares."
+  },
+  "hint": "Veja como Belém é descrita entre os milhares de Judá.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-02": {
+  "question": "Em Miqueias 5:2, toque o lugar de onde sairá quem deve reinar.",
+  "learningObjective": "Identificar Belém como lugar da promessa.",
+  "feedbackCorrect": "O reinante prometido sai desse lugar pequeno.",
+  "feedbackWrong": {
+   "a": "Judá é a região maior; o lugar nomeado vem antes.",
+   "b": "Israel é o povo sobre quem ele reinará."
+  },
+  "hint": "Procure o nome próprio no começo do versículo.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-03": {
+  "question": "Segundo Miqueias 5:2, quem sairá de Belém?",
+  "learningObjective": "Observar quem sai de Belém.",
+  "feedbackCorrect": "O texto promete alguém para reinar em Israel.",
+  "feedbackWrong": {
+   "a": "Profetas em grupo não são a promessa deste trecho.",
+   "b": "Um exército não é quem sai de Belém aqui.",
+   "d": "Sacerdotes não são o sujeito prometido neste versículo."
+  },
+  "hint": "Leia a segunda metade do versículo.",
+  "options": {
+   "a": "Todos os profetas do norte",
+   "b": "Um exército de Judá",
+   "c": "Aquele que deve reinar em Israel",
+   "d": "Um grupo de sacerdotes"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-04": {
+  "question": "Monte Miqueias 5:2 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Miqueias 5:2.",
+  "feedbackCorrect": "A sequência nomeia Belém, reconhece seu tamanho e anuncia o reinante.",
+  "feedbackWrong": {
+   "default": "Comece chamando Belém pelo nome."
+  },
+  "hint": "O versículo começa com um chamado a Belém.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-05": {
+  "question": "Em Miqueias 5:2, as origens do reinante são desde os dias de quê?",
+  "learningObjective": "Lembrar a origem eterna do reinante.",
+  "feedbackCorrect": "O fim do versículo aponta para uma origem muito antiga.",
+  "feedbackWrong": {
+   "a": "Juventude limitaria a origem a uma fase da vida.",
+   "c": "História comum não traduz o peso do fim do versículo."
+  },
+  "hint": "Olhe as últimas palavras do versículo.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-sem-miqueias-miqueias-02-belem-efrata-06": {
+  "question": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Belém pequena à promessa do reinante.",
+  "feedbackCorrect": "O lugar pequeno recebe uma promessa desproporcional.",
+  "feedbackWrong": {
+   "a": "O texto não mede a promessa pelo tamanho da cidade.",
+   "b": "Quem sai de Belém reinará em Israel, não o contrário."
+  },
+  "hint": "Compare o tamanho do lugar com a promessa.",
+  "options": {
+   "a": "Só cidades grandes recebem promessas",
+   "b": "Israel sairá de si mesmo",
+   "c": "Pequena Belém, grande promessa"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-01": {
+  "question": "Em Miqueias 5:2, a pequenez de Belém contrasta com a grandeza de quem sairá dela.",
+  "learningObjective": "Compreender o contraste de Miqueias 5:2.",
+  "feedbackCorrect": "O contraste está no próprio versículo: lugar pequeno, reinante prometido.",
+  "feedbackWrong": {
+   "false": "Repare na tensão entre o tamanho de Belém e quem sai dela."
+  },
+  "hint": "Compare o tamanho de Belém com quem sairá dela.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-02": {
+  "question": "Em Miqueias 5:2, toque a palavra que marca o contraste com a promessa.",
+  "learningObjective": "Reconhecer o marcador de contraste.",
+  "feedbackCorrect": "Essa palavra abre a tensão entre tamanho e promessa.",
+  "feedbackWrong": {
+   "b": "Cujas liga o reinante às suas origens.",
+   "c": "Desde marca origem no tempo, não contraste."
+  },
+  "hint": "Procure uma palavra curta logo depois do nome da cidade.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-03": {
+  "question": "O que o contraste de Miqueias 5:2 mostra sobre a escolha de Belém?",
+  "learningObjective": "Relacionar pequenez de Belém e promessa.",
+  "feedbackCorrect": "A promessa não depende do tamanho do lugar escolhido.",
+  "feedbackWrong": {
+   "a": "O texto não diz que ela foi ignorada; ela é nomeada.",
+   "c": "A região maior não substitui o lugar nomeado.",
+   "d": "Se fosse grande, o contraste do versículo desapareceria."
+  },
+  "hint": "Pense no que Deus faz com um lugar pequeno.",
+  "options": {
+   "a": "Pequenez significa abandono por Deus",
+   "b": "Um lugar menor recebe uma missão maior",
+   "c": "Judá inteira substitui a cidade nomeada",
+   "d": "Belém foi escolhida por ser a maior"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-04": {
+  "question": "Como avança a promessa em Miqueias 5:2?",
+  "learningObjective": "Compreender os movimentos de Miqueias 5:2.",
+  "feedbackCorrect": "Primeiro o chamado, depois o tamanho, então o reinante.",
+  "feedbackWrong": {
+   "default": "O reinante prometido é o ponto de chegada."
+  },
+  "hint": "A promessa termina em quem sairá de Belém.",
+  "options": {
+   "a": "Belém é chamada pelo nome",
+   "b": "Sua pequenez é reconhecida no texto",
+   "c": "O reinante prometido sai dela"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-05": {
+  "question": "Em Miqueias 5:2, o que o prometido deve fazer em Israel?",
+  "learningObjective": "Lembrar a tarefa do reinante prometido.",
+  "feedbackCorrect": "A tarefa do prometido é governar o povo.",
+  "feedbackWrong": {
+   "a": "Fugir é o contrário de assumir o reinado.",
+   "c": "Julgar sozinho não é o verbo usado neste trecho."
+  },
+  "hint": "Procure o verbo ligado a Israel.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-cam-miqueias-miqueias-02-belem-efrata-06": {
+  "question": "O que liga Miqueias 5:2 a Mateus 2:5–6?",
+  "learningObjective": "Relacionar promessa de Belém e citação no Evangelho.",
+  "feedbackCorrect": "Mateus mostra a promessa sendo citada séculos depois.",
+  "feedbackWrong": {
+   "a": "A promessa antiga é lembrada, não anulada.",
+   "c": "Mateus não troca o lugar; ele o confirma pela Escritura."
+  },
+  "hint": "Veja quem responde sobre o nascimento em Mateus.",
+  "options": {
+   "a": "A promessa foi esquecida no Evangelho",
+   "b": "Escribas apontam Belém prometida",
+   "c": "Mateus troca Belém por Nazaré"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-01": {
+  "question": "Segundo Miqueias 5:2, o reinante vale porque Belém era a maior cidade de Judá.",
+  "learningObjective": "Avaliar a leitura que mede a promessa pelo tamanho.",
+  "feedbackCorrect": "O valor está na promessa de Deus, não no tamanho da cidade.",
+  "feedbackWrong": {
+   "true": "O texto chama Belém de pequena; a grandeza está em quem sai dela."
+  },
+  "hint": "Veja como o versículo descreve as origens do reinante.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-02": {
+  "question": "Em Miqueias 5:2, toque o trecho que mostra a antiguidade das origens do reinante.",
+  "learningObjective": "Sustentar a antiguidade do reinante com o texto.",
+  "feedbackCorrect": "Esse trecho sustenta que a história dele começa muito antes.",
+  "feedbackWrong": {
+   "a": "Isso mede o tamanho de Belém, não a origem dele.",
+   "c": "Isso descreve a cidade entre as outras, não o tempo."
+  },
+  "hint": "Procure a parte final do versículo.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-03": {
+  "question": "Que leitura Miqueias 5:2 sustenta sobre o reinante prometido?",
+  "learningObjective": "Escolher a interpretação sustentada por Miqueias 5:2.",
+  "feedbackCorrect": "Ele vem de lugar pequeno, mas sua história é muito anterior.",
+  "feedbackWrong": {
+   "a": "A cidade é pequena; a promessa não é apresentada como erro.",
+   "b": "O texto não limita a promessa a um reinado passageiro sem raiz.",
+   "c": "Um chefe comum não combina com origens tão antigas."
+  },
+  "hint": "Junte o começo e o fim do versículo.",
+  "options": {
+   "a": "Belém foi citada por engano",
+   "b": "Seu reinado não tem raiz no passado",
+   "c": "É só um chefe local qualquer",
+   "d": "Vem pequeno, com origem muito antiga"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-04": {
+  "question": "Qual sequência revela o caminho da promessa de Belém?",
+  "learningObjective": "Ver Belém num fio que chega ao Evangelho.",
+  "feedbackCorrect": "O fio vai da promessa antiga à citação e ao nascimento.",
+  "feedbackWrong": {
+   "default": "Comece pela promessa em Miqueias."
+  },
+  "hint": "Siga a ordem: profeta, citação, nascimento.",
+  "options": {
+   "a": "Miqueias anuncia o reinante vindo de Belém",
+   "b": "Os escribas indicam Belém a Herodes",
+   "c": "O menino nasce e é posto numa manjedoura"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-05": {
+  "question": "Em Miqueias 5:2, que palavra mostra de onde vêm as raízes do reinante?",
+  "learningObjective": "Lembrar o termo da origem do reinante.",
+  "feedbackCorrect": "Essa palavra liga o reinante a um passado anterior a Belém.",
+  "feedbackWrong": {
+   "a": "Começos é genérico; o versículo usa um termo próprio.",
+   "c": "Raízes é ideia parecida, mas não é a palavra do texto."
+  },
+  "hint": "Procure o substantivo antes de desde.",
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "miqueias-pro-miqueias-miqueias-02-belem-efrata-06": {
+  "question": "O que liga Miqueias 5:2 a João 7:42?",
+  "learningObjective": "Ligar a promessa de Belém à expectativa sobre Cristo.",
+  "feedbackCorrect": "Nos dois textos, Belém aparece ligada ao Cristo esperado.",
+  "feedbackWrong": {
+   "a": "A aldeia pequena continua no centro da expectativa.",
+   "c": "João registra a pergunta do povo, sem negar o lugar."
+  },
+  "hint": "Veja o lugar citado nos dois trechos.",
+  "options": {
+   "a": "Belém não entra na expectativa",
+   "b": "Cristo vem de Belém de Davi",
+   "c": "Cristo viria só da Galileia"
+  },
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ },
+ "estudo:miqueias-miqueias-02-belem-efrata": {
+  "context": "Depois das perguntas sobre ofertas em Miqueias 6, esta cena olha para a promessa de Miqueias 5: de Belém, pequena em Judá, sairá quem deve reinar em Israel.",
+  "focusQuestion": "Onde você tem achado pequeno demais para Deus agir?",
+  "keywordGloss": "Cidade pequena de Judá de onde, segundo a promessa, sairá o reinante de Israel.",
+  "reflectionPrompts": [
+   "Pequena entre milhares",
+   "Reinante prometido",
+   "Origens desde a eternidade"
+  ],
+  "facts": [
+   "Belém é pequena demais para ser contada entre os milhares de Judá.",
+   "De Belém sairá aquele que deve reinar em Israel.",
+   "As origens do reinante são desde os tempos antigos, desde a eternidade.",
+   "O Senhor exige justiça, misericórdia e andar humildemente com Deus.",
+   "A pessoa pergunta se irá ao Senhor com holocaustos e bezerros de um ano."
+  ],
+  "_verso": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+ }
+}

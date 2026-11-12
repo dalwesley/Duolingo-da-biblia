@@ -61,6 +61,11 @@ export function canAccessRoute(routeKey) {
     return Boolean(cachedProfile.permissions?.trails);
   }
   if (routeKey === 'bank') return Boolean(cachedProfile.permissions?.bank);
+  // Conteúdo junta trilhas, estudos e perguntas.
+  if (routeKey === 'content') {
+    const p = cachedProfile.permissions || {};
+    return Boolean(p.bank || p.trails || p.studies);
+  }
   if (routeKey === 'studies') return Boolean(cachedProfile.permissions?.studies);
   // Relatos: quem edita perguntas ou trilhas precisa ver.
   if (routeKey === 'reports') {

@@ -1,0 +1,273 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-07-01": {
+  "question": "Em Apocalipse 21:1, João vê um novo céu e uma nova terra.",
+  "learningObjective": "Observar o que João vê no início da visão.",
+  "feedbackCorrect": "A visão abre com um novo céu e uma nova terra, como no começo da Bíblia.",
+  "feedbackWrong": {
+   "false": "Releia o começo de Apocalipse 21:1: \"Vi um novo céu e uma nova terra\"."
+  },
+  "hint": "Olhe o começo do versículo.",
+  "_verso": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+ },
+ "entender-a-biblia-sem-entrada-biblia-07-02": {
+  "question": "Em Apocalipse 21:2, toque o que João vê descer do céu.",
+  "learningObjective": "Identificar o que desce do céu na visão.",
+  "feedbackCorrect": "É a cidade santa, a nova Jerusalém, que desce da parte de Deus.",
+  "feedbackWrong": {
+   "a": "A noiva é a comparação: a cidade vem enfeitada como uma noiva.",
+   "b": "O esposo completa a comparação; quem desce é outra coisa."
+  },
+  "hint": "Procure o lugar que desce, não a comparação.",
+  "_verso": "E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo."
+ },
+ "entender-a-biblia-sem-entrada-biblia-07-03": {
+  "question": "Segundo Apocalipse 21:4, o que deixará de existir?",
+  "learningObjective": "Observar o que a nova criação deixa para trás.",
+  "feedbackCorrect": "O texto lista o que acaba: morte, luto, pranto e dor.",
+  "feedbackWrong": {
+   "a": "A cidade e o povo ficam; é Deus quem vem morar com eles.",
+   "b": "O trono continua: é de lá que vem a voz que anuncia tudo novo.",
+   "c": "O que acaba é o pranto, não a alegria."
+  },
+  "hint": "Leia a lista depois de \"não existirá mais\".",
+  "options": {
+   "a": "A cidade santa e o seu povo",
+   "b": "O trono e a voz de Deus",
+   "c": "O canto e a alegria do povo",
+   "d": "A morte, o luto e a dor"
+  },
+  "_verso": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+ },
+ "entender-a-biblia-sem-entrada-biblia-07-04": {
+  "question": "Monte Apocalipse 21:5 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Apocalipse 21:5.",
+  "feedbackCorrect": "É a sequência do versículo: quem fala, o que promete e a ordem de escrever.",
+  "feedbackWrong": {
+   "default": "Comece por quem está no trono; a ordem de escrever fecha o versículo."
+  },
+  "hint": "O versículo começa dizendo quem fala.",
+  "_verso": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+ },
+ "entender-a-biblia-sem-entrada-biblia-07-05": {
+  "question": "Em Apocalipse 21:4, o que Deus enxugará dos olhos do seu povo?",
+  "learningObjective": "Lembrar o cuidado de Deus descrito na visão.",
+  "feedbackCorrect": "É um gesto de perto, de quem cuida: Deus mesmo enxuga cada lágrima.",
+  "feedbackWrong": {
+   "a": "O versículo fala do que sai dos olhos de quem chora, não de culpa.",
+   "b": "O que se enxuga dos olhos é o choro; a dor aparece no fim do versículo."
+  },
+  "hint": "Pense no que escorre dos olhos de quem chora.",
+  "_verso": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+ },
+ "entender-a-biblia-sem-entrada-biblia-07-06": {
+  "question": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Apocalipse 21:3 à volta da presença de Deus perdida na queda.",
+  "feedbackCorrect": "A distância que começou na queda termina: Deus mora com o seu povo.",
+  "feedbackWrong": {
+   "b": "O texto diz o contrário: Deus é quem vem morar com eles.",
+   "c": "Não é visita: o verbo é habitar, morar junto."
+  },
+  "hint": "Veja o que Deus fará em relação aos homens.",
+  "options": {
+   "a": "Deus volta a morar conosco",
+   "b": "O povo se afasta de Deus",
+   "c": "Deus visita o povo às vezes"
+  },
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-01": {
+  "question": "Em Apocalipse 21:1, o novo céu e a nova terra surgem ao lado do primeiro céu e da primeira terra.",
+  "learningObjective": "Compreender a relação entre o novo e o primeiro em Apocalipse 21:1.",
+  "feedbackCorrect": "O \"pois\" explica: há algo novo porque o primeiro céu e a primeira terra passaram.",
+  "feedbackWrong": {
+   "true": "Releia o meio de Apocalipse 21:1: o primeiro céu e a primeira terra passaram."
+  },
+  "hint": "Veja o que o versículo diz sobre o primeiro céu e a primeira terra.",
+  "_verso": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-02": {
+  "question": "Em Apocalipse 21:4, toque a palavra que introduz o motivo de não haver mais dor.",
+  "learningObjective": "Reconhecer o marcador de causa no versículo.",
+  "feedbackCorrect": "A explicação vem no fim: as primeiras coisas, com sua morte e dor, já passaram.",
+  "feedbackWrong": {
+   "a": "\"Nem\" soma itens da lista; não explica a razão.",
+   "c": "\"Mais\" diz que a morte acabou, mas não diz por quê."
+  },
+  "hint": "Procure a palavra que abre a última parte do versículo.",
+  "_verso": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-03": {
+  "question": "Em Apocalipse 21:3, o que resulta de Deus habitar com os homens?",
+  "learningObjective": "Relacionar a presença de Deus com o laço entre ele e o povo.",
+  "feedbackCorrect": "A presença de Deus cria um laço dos dois lados: eles são o povo dele, e ele o Deus deles.",
+  "feedbackWrong": {
+   "a": "O texto diz que Deus mora com os homens, não longe deles.",
+   "b": "O resultado é pertencer a Deus, não seguir cada um o seu caminho.",
+   "c": "É o contrário: com Deus por perto, eles são o povo dele."
+  },
+  "hint": "Leia o que vem depois de \"Ele habitará com eles\".",
+  "options": {
+   "a": "Deus passa a morar só no alto do céu",
+   "b": "Cada um segue livre o próprio caminho",
+   "c": "Eles deixam de precisar de Deus",
+   "d": "Eles pertencem a Deus, e ele a eles"
+  },
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-04": {
+  "question": "Como avança a visão em Apocalipse 21:3–4?",
+  "learningObjective": "Compreender o movimento de Apocalipse 21:3–4.",
+  "feedbackCorrect": "A voz anuncia, Deus vem morar com o povo e, com ele perto, a morte e o choro acabam.",
+  "feedbackWrong": {
+   "default": "Primeiro a voz do trono, depois Deus com o povo; o fim da morte vem por último."
+  },
+  "hint": "O anúncio vem antes do que ele anuncia.",
+  "options": {
+   "a": "Uma voz vem do trono",
+   "b": "Deus passa a morar com o seu povo",
+   "c": "Fim das lágrimas e da morte"
+  },
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-05": {
+  "question": "Em Apocalipse 21:3, o que Deus fará com os homens?",
+  "learningObjective": "Compreender a ação de Deus na nova criação.",
+  "feedbackCorrect": "Deus não só fala ou visita: ele vem morar com o seu povo para sempre.",
+  "feedbackWrong": {
+   "b": "Deus fala na visão, mas o verbo aqui é de morar junto.",
+   "c": "Não há luta no versículo; Deus vem morar com o povo."
+  },
+  "hint": "O verbo tem a ver com morar junto.",
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-cam-entrada-biblia-07-06": {
+  "question": "O que liga Apocalipse 21:3 a Levítico 26:12?",
+  "learningObjective": "Ver a nova criação como cumprimento da promessa de Deus ao seu povo.",
+  "feedbackCorrect": "A promessa feita a Israel volta no fim: Deus anda com eles, e eles são o seu povo.",
+  "feedbackWrong": {
+   "a": "Nos dois textos Deus está entre o povo, não longe dele.",
+   "b": "Os dois textos falam da presença de Deus, não de um prédio."
+  },
+  "hint": "Compare as palavras sobre Deus e o povo nos dois textos.",
+  "options": {
+   "a": "Deus distante no alto céu",
+   "b": "Um templo feito por mãos",
+   "c": "Deus no meio do seu povo"
+  },
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-01": {
+  "question": "Em Apocalipse 21:2–3, o movimento vai de Deus para o seu povo, pois a cidade desce do céu e Deus vem habitar com eles.",
+  "learningObjective": "Interpretar a nova criação como Deus vindo ao seu povo.",
+  "feedbackCorrect": "Quem se move é Deus: a cidade desce, e ele vem morar com os homens.",
+  "feedbackWrong": {
+   "false": "Releia: a cidade \"descia do céu, da parte de Deus\", e Deus habitará com eles."
+  },
+  "hint": "Repare na direção da cidade e de quem vem morar com quem.",
+  "_verso": "E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo. E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-02": {
+  "question": "Em Apocalipse 21:6, toque a palavra que mostra que a água da vida é um presente.",
+  "learningObjective": "Sustentar com o texto que a vida nova é dom de Deus.",
+  "feedbackCorrect": "Ninguém paga nem conquista: Deus dá de graça a quem tem sede.",
+  "feedbackWrong": {
+   "a": "\"Sedento\" diz quem recebe, não como recebe.",
+   "b": "\"Fonte\" diz de onde vem a água, não que ela é dada de graça."
+  },
+  "hint": "Procure como Deus dá a água a quem tem sede.",
+  "_verso": "Está tudo consumado: Eu sou o Alfa e o Ômega, o Princípio e o Fim. A quem estiver sedento, darei gratuitamente da fonte da água da vida."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-03": {
+  "question": "Que leitura Apocalipse 21:4–5 sustenta sobre o fim da história?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta sobre o fim da história.",
+  "feedbackCorrect": "A promessa vai além do consolo: a morte acaba, e quem está no trono faz tudo novo.",
+  "feedbackWrong": {
+   "a": "Logo antes, em 21:3, é Deus quem vem habitar com os homens.",
+   "c": "O versículo 4 diz que a dor não existirá mais, não só que será consolada.",
+   "d": "Quem faz tudo novo é Deus; e em 21:6 a água da vida é dada de graça."
+  },
+  "hint": "Compare cada opção com quem age nos dois versículos.",
+  "options": {
+   "a": "Deus fica distante, e o povo precisa subir até ele",
+   "b": "Deus acaba com a morte e renova todas as coisas",
+   "c": "Deus só consola a dor, que continua existindo",
+   "d": "O mundo novo é um prêmio que cada um conquista"
+  },
+  "_verso": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-04": {
+  "question": "Qual sequência mostra o caminho da Bíblia até Apocalipse 21:5?",
+  "learningObjective": "Ver o fim da Bíblia como a restauração do começo.",
+  "feedbackCorrect": "Criação, queda, ressurreição e nova criação: a história termina com Deus refazendo tudo.",
+  "feedbackWrong": {
+   "default": "Siga a trilha: criação (Gn 1:31), queda (Rm 5:12), ressurreição (1 Co 15:20) e tudo novo (Ap 21:5)."
+  },
+  "hint": "Siga a história da trilha, do primeiro livro ao último.",
+  "options": {
+   "a": "Deus cria o mundo e o vê muito bom",
+   "b": "Pela queda, a morte entra no mundo",
+   "c": "Jesus ressuscita, o primeiro a vencer a morte",
+   "d": "Deus faz tudo novo, e a morte acaba"
+  },
+  "_verso": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-05": {
+  "question": "Em Apocalipse 21:3, que palavra a voz usa para Deus morando com os homens?",
+  "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+  "feedbackCorrect": "A tenda onde Deus morava no meio de Israel agora é a presença dele com todo o povo.",
+  "feedbackWrong": {
+   "b": "O trono é de onde vem a voz; a palavra aqui fala de morar junto.",
+   "c": "A palavra não é de governo, mas de casa: a tenda onde Deus mora."
+  },
+  "hint": "É a tenda onde Deus morava no meio de Israel.",
+  "_verso": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+ },
+ "entender-a-biblia-pro-entrada-biblia-07-06": {
+  "question": "O que liga Apocalipse 21:1 a Isaías 65:17?",
+  "learningObjective": "Ligar a visão de João à promessa feita por Isaías.",
+  "feedbackCorrect": "Isaías ouve a promessa; João vê a promessa cumprida.",
+  "feedbackWrong": {
+   "a": "Os dois textos falam de algo novo que Deus cria, não de castigo.",
+   "c": "Os dois falam de céu e terra novos juntos, não de um céu separado."
+  },
+  "hint": "Compare o que Deus cria em Isaías com o que João vê.",
+  "options": {
+   "a": "Um castigo para a terra",
+   "b": "Novos céus e nova terra prometidos",
+   "c": "Um céu longe da terra"
+  },
+  "_verso": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+ },
+ "estudo:entrada-biblia-07": {
+  "context": "Apocalipse é o último livro da Bíblia. João recebe visões cheias de imagens, e boa parte do livro mostra luta e sofrimento. Perto do fim, ele vê o que Deus prepara para encerrar a história.",
+  "focusQuestion": "Que dor sua você entrega hoje ao Deus que promete enxugar toda lágrima?",
+  "keywordGloss": "Deus refaz o que a queda quebrou: um novo céu e uma nova terra, sem morte nem dor.",
+  "reflectionPrompts": [
+   "Deus com o seu povo",
+   "Sem morte nem pranto",
+   "Tudo novo"
+  ],
+  "facts": [
+   "João viu um novo céu e uma nova terra.",
+   "A cidade santa desce do céu, da parte de Deus.",
+   "Deus habitará com os homens, e eles serão o seu povo.",
+   "Deus enxugará toda lágrima.",
+   "A morte não existirá mais.",
+   "Aquele que está no trono faz novas todas as coisas."
+  ],
+  "_verso": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe. E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo. E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+ }
+}

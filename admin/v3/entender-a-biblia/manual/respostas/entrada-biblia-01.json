@@ -1,0 +1,505 @@
+{
+ "study": {
+  "passageRef": "Gênesis 1:1–5",
+  "passages": [
+   { "ref": "Gênesis 1:1–5" }
+  ],
+  "context": "A Bíblia reúne muitos livros, escritos ao longo de séculos, mas conta uma só história. Ela não começa com um herói, um povo ou um rei. Estes primeiros versos abrem o palco onde tudo o que vem depois vai acontecer.",
+  "keyword": "No princípio",
+  "keywordGloss": "O começo de tudo; a Bíblia abre a sua história com Deus já presente e agindo.",
+  "focusQuestion": "Que diferença faz ler a sua vida dentro de uma história que começa em Deus?",
+  "reflectionPrompts": [
+   "Um autor para a história",
+   "Um mundo bom",
+   "A luz no começo"
+  ],
+  "facts": [
+   {
+    "text": "A Bíblia começa com Deus criando os céus e a terra.",
+    "evidenceRef": "Gênesis 1:1",
+    "evidenceSpan": "No princípio, Deus criou os céus e a terra"
+   },
+   {
+    "text": "Antes da luz, havia trevas sobre a face do abismo.",
+    "evidenceRef": "Gênesis 1:2",
+    "evidenceSpan": "havia trevas sobre a face do abismo"
+   },
+   {
+    "text": "Deus fala, e a luz passa a existir.",
+    "evidenceRef": "Gênesis 1:3",
+    "evidenceSpan": "e houve luz"
+   },
+   {
+    "text": "Deus vê que a luz é boa e a separa das trevas.",
+    "evidenceRef": "Gênesis 1:4",
+    "evidenceSpan": "Deus viu que a luz era boa; e separou a luz das trevas"
+   },
+   {
+    "text": "Deus dá nome à luz e às trevas: Dia e Noite.",
+    "evidenceRef": "Gênesis 1:5",
+    "evidenceSpan": "E Deus chamou a luz de Dia e as trevas de Noite"
+   },
+   {
+    "text": "O texto marca tarde e manhã e conta o primeiro dia.",
+    "evidenceRef": "Gênesis 1:5",
+    "evidenceSpan": "E houve tarde e manhã, o primeiro dia"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "princípio",
+    "gloss": "O começo de tudo; quando a história começa, Deus já está lá."
+   },
+   {
+    "term": "criou",
+    "gloss": "Fez existir; no texto, quem faz essa ação é sempre Deus."
+   },
+   {
+    "term": "boa",
+    "gloss": "Aprovada por Deus: o que sai das mãos dele não vem com defeito."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus cria tudo no começo",
+    "evidenceRef": "Gênesis 1:1"
+   },
+   {
+    "label": "Um mundo ainda vazio e escuro",
+    "evidenceRef": "Gênesis 1:2"
+   },
+   {
+    "label": "A palavra de Deus traz a luz",
+    "evidenceRef": "Gênesis 1:3"
+   },
+   {
+    "label": "Deus aprova, separa e dá nome",
+    "evidenceRef": "Gênesis 1:4–5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Depois de dizer que Deus criou tudo, o texto mostra a terra ainda sem forma: a história começa com obra a fazer.",
+    "marker": "porém",
+    "evidenceRef": "Gênesis 1:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "Deus diz \"Que haja luz\", e há luz: a palavra dele move a história.",
+    "marker": "houve",
+    "evidenceRef": "Gênesis 1:3"
+   },
+   {
+    "kind": "sequência",
+    "text": "\"O primeiro dia\" abre uma sequência: a obra de Deus está só começando.",
+    "marker": "primeiro",
+    "evidenceRef": "Gênesis 1:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Apocalipse 22:13",
+    "bridge": "Quem começa também conclui"
+   },
+   {
+    "ref": "2 Coríntios 4:6",
+    "bridge": "A luz da criação em Cristo"
+   },
+   {
+    "ref": "Apocalipse 21:1",
+    "bridge": "Novo céu e nova terra"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Gênesis 1 é só uma introdução solta, sem ligação com o resto da Bíblia.",
+    "why": "A história inteira parte daqui: o Deus que cria no começo é o mesmo que promete fazer tudo novo no fim."
+   },
+   {
+    "text": "A Bíblia começa contando a história do ser humano.",
+    "why": "O primeiro sujeito da Bíblia é Deus: \"No princípio, Deus criou\". O ser humano entra depois, dentro da obra dele."
+   },
+   {
+    "text": "O mundo já começou estragado, com o mal fazendo parte da criação.",
+    "why": "Deus vê que a luz é boa. O escuro e o vazio são ponto de partida da obra, e o mal só entra mais tarde na história."
+   }
+  ],
+  "centralInsight": "A história começa em Deus",
+  "anchorQuestion": "Com quem a Bíblia começa a sua história em Gênesis 1:1?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 1:4, Deus separou a luz das águas.",
+   "verseRef": "Gênesis 1:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "e separou a luz das trevas",
+   "feedbackCorrect": "Deus separou a luz das trevas; as águas só são separadas depois, em Gênesis 1:6.",
+   "feedbackWrong": {
+    "true": "Releia o fim de Gênesis 1:4: Deus separou a luz das trevas."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Observar o que Deus separa no primeiro dia.",
+   "evidence": ["Gênesis 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:4, toque o que Deus viu que era bom.",
+   "verseRef": "Gênesis 1:4",
+   "options": [
+    { "id": "a", "text": "trevas" },
+    { "id": "b", "text": "a luz" },
+    { "id": "c", "text": "separou" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Deus viu que a luz era boa",
+   "feedbackCorrect": "A primeira coisa que a Bíblia chama de boa é a luz que Deus fez.",
+   "feedbackWrong": {
+    "a": "As trevas são separadas da luz; o texto não diz que eram boas.",
+    "c": "\"Separou\" é uma ação de Deus, não o que ele viu."
+   },
+   "hint": "Procure o que vem logo antes de \"era boa\".",
+   "learningObjective": "Identificar o que Deus aprova no começo da história.",
+   "evidence": ["Gênesis 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 1:3, como a luz passa a existir?",
+   "verseRef": "Gênesis 1:3",
+   "options": [
+    { "id": "a", "text": "Ela surge sozinha das trevas" },
+    { "id": "b", "text": "O Espírito a acende sobre as águas" },
+    { "id": "c", "text": "Deus fala, e ela acontece" },
+    { "id": "d", "text": "Ela vem do sol, que já existia" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Disse Deus: \"Que haja luz\"; e houve luz",
+   "feedbackCorrect": "Deus diz \"Que haja luz\", e a luz existe: basta a palavra dele.",
+   "feedbackWrong": {
+    "a": "A luz não nasce das trevas; ela vem da palavra de Deus.",
+    "b": "O Espírito pairava sobre as águas (Gn 1:2); a luz vem quando Deus fala.",
+    "d": "O texto ainda não falou do sol; a luz vem da palavra de Deus."
+   },
+   "hint": "Leia o começo do versículo.",
+   "learningObjective": "Observar que a luz vem da palavra de Deus.",
+   "evidence": ["Gênesis 1:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 1:5 na ordem do texto.",
+   "verseRef": "Gênesis 1:5",
+   "options": [
+    { "id": "a", "text": "E Deus chamou a luz de Dia" },
+    { "id": "b", "text": "e as trevas de Noite" },
+    { "id": "c", "text": "E houve tarde e manhã, o primeiro dia" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "E Deus chamou a luz de Dia e as trevas de Noite",
+   "feedbackCorrect": "É a sequência do versículo: Deus dá nome à luz e às trevas, e então se conta o primeiro dia.",
+   "feedbackWrong": {
+    "default": "Comece pelos nomes que Deus dá; o primeiro dia fecha o versículo."
+   },
+   "hint": "O versículo começa com Deus dando nomes.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 1:5.",
+   "evidence": ["Gênesis 1:5"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 1:2, sobre o que havia trevas?",
+   "verseRef": "Gênesis 1:2",
+   "options": [
+    { "id": "a", "text": "deserto" },
+    { "id": "b", "text": "abismo" },
+    { "id": "c", "text": "monte" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "havia trevas sobre a face do abismo",
+   "feedbackCorrect": "Trevas sobre o abismo: o cenário escuro e fundo onde a história vai começar a ganhar forma.",
+   "feedbackWrong": {
+    "a": "O texto não fala de terra seca aqui; fala de um abismo coberto de trevas.",
+    "c": "Não há montes ainda; a terra estava sem forma e vazia."
+   },
+   "hint": "Pense em algo fundo e escuro, ligado às águas.",
+   "learningObjective": "Lembrar o cenário antes da luz.",
+   "evidence": ["Gênesis 1:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 1:1",
+   "passageA": { "ref": "Gênesis 1:1" },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A Bíblia tem muitos livros, escritos ao longo de séculos, e este é o seu primeiro versículo."
+   },
+   "options": [
+    { "id": "a", "text": "A Bíblia começa por Israel" },
+    { "id": "b", "text": "A história toda começa com Deus" },
+    { "id": "c", "text": "A Bíblia começa pelo ser humano" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "No princípio, Deus criou",
+   "feedbackCorrect": "A primeira frase da Bíblia inteira tem Deus como sujeito: a história começa nele.",
+   "feedbackWrong": {
+    "a": "Israel só entra bem depois, com Abraão; antes de qualquer povo, há Deus.",
+    "c": "O ser humano entra mais tarde; a primeira frase fala de Deus criando."
+   },
+   "hint": "Veja quem é o sujeito da primeira frase.",
+   "learningObjective": "Ligar Gênesis 1:1 ao começo da história bíblica inteira.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 1:3, a luz passa a existir como resultado direto da palavra de Deus.",
+   "verseRef": "Gênesis 1:3",
+   "correctOptionId": "true",
+   "evidenceSpan": "e houve luz",
+   "feedbackCorrect": "Deus diz \"Que haja luz\", e logo vem \"e houve luz\": a palavra produz o que diz.",
+   "feedbackWrong": {
+    "false": "Releia Gênesis 1:3: Deus fala, e em seguida \"houve luz\". Não há outra causa."
+   },
+   "hint": "Veja o que vem logo depois do que Deus disse.",
+   "learningObjective": "Compreender a palavra de Deus como causa da luz.",
+   "evidence": ["Gênesis 1:3"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:5, toque a palavra que mostra que a obra de Deus está só começando.",
+   "verseRef": "Gênesis 1:5",
+   "options": [
+    { "id": "a", "text": "Noite" },
+    { "id": "b", "text": "chamou" },
+    { "id": "c", "text": "primeiro" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "o primeiro dia",
+   "feedbackCorrect": "\"Primeiro\" abre uma contagem: se há um primeiro dia, a história vai continuar.",
+   "feedbackWrong": {
+    "a": "\"Noite\" é o nome dado às trevas; não indica que algo vai continuar.",
+    "b": "\"Chamou\" mostra Deus dando nomes, não uma sequência."
+   },
+   "hint": "Procure uma palavra que abre uma contagem.",
+   "learningObjective": "Reconhecer o marcador de sequência no texto.",
+   "evidence": ["Gênesis 1:5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Em Gênesis 1:4–5, o que Deus faz depois de criar a luz?",
+   "verseRef": "Gênesis 1:4–5",
+   "options": [
+    { "id": "a", "text": "Deixa a luz e as trevas misturadas" },
+    { "id": "b", "text": "Aprova a luz, separa e dá nome a cada parte" },
+    { "id": "c", "text": "Pede ao ser humano que dê os nomes" },
+    { "id": "d", "text": "Acaba com as trevas para sempre" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e separou a luz das trevas",
+   "feedbackCorrect": "Deus vê que a luz é boa, separa luz e trevas e dá nome a cada uma: ele põe ordem.",
+   "feedbackWrong": {
+    "a": "O texto diz que Deus separou a luz das trevas.",
+    "c": "Aqui quem dá os nomes é Deus; o ser humano ainda não foi criado.",
+    "d": "As trevas continuam e recebem nome: Noite. Deus as põe em ordem."
+   },
+   "hint": "Siga os verbos: viu, separou, chamou.",
+   "learningObjective": "Relacionar a criação da luz com a ordem que Deus estabelece.",
+   "evidence": ["Gênesis 1:4–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena de Gênesis 1:2 a 1:5?",
+   "verseRef": "Gênesis 1:3–4",
+   "options": [
+    { "id": "a", "text": "Um mundo ainda vazio e escuro" },
+    { "id": "b", "text": "A palavra de Deus traz a luz" },
+    { "id": "c", "text": "Deus aprova, separa e dá nome" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "e houve luz",
+   "feedbackCorrect": "Do vazio escuro à luz pela palavra, e então a ordem: Deus aprova, separa e nomeia.",
+   "feedbackWrong": {
+    "default": "Comece pelo mundo vazio; a luz vem pela palavra e só depois Deus separa e dá nome."
+   },
+   "hint": "O ponto de partida é o escuro.",
+   "learningObjective": "Compreender o movimento do vazio à ordem.",
+   "evidence": ["Gênesis 1:2–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 1:4, o que Deus faz com a luz e as trevas?",
+   "verseRef": "Gênesis 1:4",
+   "options": [
+    { "id": "a", "text": "escondeu" },
+    { "id": "b", "text": "tirou" },
+    { "id": "c", "text": "separou" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "e separou a luz das trevas",
+   "feedbackCorrect": "Separar é pôr cada coisa no seu lugar: a história começa com Deus trazendo ordem.",
+   "feedbackWrong": {
+    "a": "A luz não é escondida; ela é posta no seu lugar, ao lado das trevas.",
+    "b": "As trevas não somem; continuam, com nome de Noite. Deus as distingue da luz."
+   },
+   "hint": "É a ação que põe cada coisa no seu lugar.",
+   "learningObjective": "Lembrar a ação de Deus que traz ordem.",
+   "evidence": ["Gênesis 1:4"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:1 a Apocalipse 22:13?",
+   "verseRef": "Gênesis 1:1",
+   "passageA": { "ref": "Gênesis 1:1" },
+   "passageB": { "ref": "Apocalipse 22:13" },
+   "options": [
+    { "id": "a", "text": "O fim desfaz o começo" },
+    { "id": "b", "text": "Quem começa também conclui a história" },
+    { "id": "c", "text": "A história não tem fim" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "No princípio",
+   "evidence": ["Gênesis 1:1", "Apocalipse 22:13"],
+   "feedbackCorrect": "A Bíblia abre com \"No princípio\" e fecha com \"o Princípio e o Fim\": a história é de Deus inteira.",
+   "feedbackWrong": {
+    "a": "O fim não apaga o começo; o mesmo Senhor está nos dois.",
+    "c": "Apocalipse fala de começo e fim: \"o Princípio e o Fim\"."
+   },
+   "hint": "Procure a mesma palavra nos dois textos.",
+   "learningObjective": "Relacionar o começo da Bíblia com o seu final."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 1:1 mostra que a história da Bíblia começa com Deus, e não com o ser humano.",
+   "verseRef": "Gênesis 1:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "No princípio, Deus criou",
+   "feedbackCorrect": "O primeiro sujeito da Bíblia é Deus; o ser humano entra depois, dentro da obra dele.",
+   "feedbackWrong": {
+    "false": "Releia Gênesis 1:1: antes de qualquer pessoa, \"No princípio, Deus criou\"."
+   },
+   "hint": "Veja quem age na primeira frase.",
+   "learningObjective": "Ler a Bíblia como uma história que tem Deus no centro desde o começo.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:4, toque o trecho que sustenta que o mundo começa aprovado por Deus.",
+   "verseRef": "Gênesis 1:4",
+   "options": [
+    { "id": "a", "text": "era boa" },
+    { "id": "b", "text": "das trevas" },
+    { "id": "c", "text": "e separou" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus viu que a luz era boa",
+   "feedbackCorrect": "Deus olha o que fez e aprova: a história começa com um mundo bom, não estragado.",
+   "feedbackWrong": {
+    "b": "\"Das trevas\" diz de onde a luz foi separada, não a aprovação de Deus.",
+    "c": "Separar mostra ordem; a aprovação está no que Deus viu."
+   },
+   "hint": "Procure o que Deus achou do que fez.",
+   "learningObjective": "Sustentar com o texto que a criação começa boa.",
+   "evidence": ["Gênesis 1:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Gênesis 1:1–2 sustenta sobre o lugar deste trecho na Bíblia?",
+   "verseRef": "Gênesis 1:1–2",
+   "options": [
+    { "id": "a", "text": "É uma introdução solta, sem ligação com o resto" },
+    { "id": "b", "text": "É o começo da história do ser humano, não de Deus" },
+    { "id": "c", "text": "Mostra um mundo que já nasce estragado pelo mal" },
+    { "id": "d", "text": "É o começo da história que a Bíblia inteira conta" }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+   "feedbackCorrect": "Tudo o que vem depois acontece no mundo que Deus criou aqui: é o primeiro passo da história.",
+   "feedbackWrong": {
+    "a": "O Deus que cria aqui é o mesmo que, no fim da Bíblia, faz tudo novo.",
+    "b": "O primeiro sujeito é Deus: \"No princípio, Deus criou\".",
+    "c": "O vazio e o escuro são ponto de partida; Deus vê que o que faz é bom (Gn 1:4)."
+   },
+   "hint": "Compare cada opção com quem age e com o que vem depois.",
+   "learningObjective": "Escolher a leitura que coloca Gênesis 1 como começo da história bíblica.",
+   "evidence": ["Gênesis 1:1–2"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da criação que começa em Gênesis 1:1?",
+   "verseRef": "Gênesis 1:1–2",
+   "options": [
+    { "id": "a", "text": "Deus cria os céus e a terra" },
+    { "id": "b", "text": "Deus promete criar novos céus e nova terra" },
+    { "id": "c", "text": "João vê um novo céu e uma nova terra" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+   "evidence": ["Gênesis 1:1", "Isaías 65:17", "Apocalipse 21:1"],
+   "feedbackCorrect": "A Bíblia vai da criação à promessa de criação nova, e termina com ela à vista.",
+   "feedbackWrong": {
+    "default": "Siga a história: criação (Gn 1:1), promessa (Is 65:17) e cumprimento (Ap 21:1)."
+   },
+   "hint": "Siga a ordem da Bíblia: Gênesis, profetas, Apocalipse.",
+   "learningObjective": "Ver Gênesis 1:1 como começo de um fio que atravessa a Bíblia até o fim."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 1:1, que palavra marca o começo de toda a história bíblica?",
+   "verseRef": "Gênesis 1:1",
+   "options": [
+    { "id": "a", "text": "silêncio" },
+    { "id": "b", "text": "céu" },
+    { "id": "c", "text": "princípio" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "No princípio, Deus criou",
+   "feedbackCorrect": "Antes de tudo começar, Deus já está lá: a história da Bíblia parte dele.",
+   "feedbackWrong": {
+    "a": "O texto não fala de silêncio; fala do começo de tudo.",
+    "b": "Os céus são o que Deus criou, não o tempo em que tudo começa."
+   },
+   "hint": "É a palavra que diz quando tudo começou.",
+   "learningObjective": "Lembrar o termo que abre a história bíblica.",
+   "evidence": ["Gênesis 1:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:3 a 2 Coríntios 4:6?",
+   "verseRef": "Gênesis 1:3",
+   "passageA": { "ref": "Gênesis 1:3" },
+   "passageB": { "ref": "2 Coríntios 4:6" },
+   "options": [
+    { "id": "a", "text": "Paulo fala da luz do sol" },
+    { "id": "b", "text": "Só apóstolos recebem essa luz" },
+    { "id": "c", "text": "Deus acende luz no coração" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Disse Deus: \"Que haja luz\"",
+   "evidence": ["Gênesis 1:3", "2 Coríntios 4:6"],
+   "feedbackCorrect": "Paulo lembra Gênesis: o Deus que fez a luz no começo faz brilhar a luz de Cristo em nós.",
+   "feedbackWrong": {
+    "a": "Paulo fala da luz que ilumina o conhecimento da glória de Deus em Cristo.",
+    "b": "Paulo diz \"em nossos corações\": a luz é para quem crê."
+   },
+   "hint": "Veja o que Paulo cita de Gênesis e onde essa luz brilha agora.",
+   "learningObjective": "Ver como o NT relê a luz da criação na obra de Cristo."
+  }
+ ]
+}

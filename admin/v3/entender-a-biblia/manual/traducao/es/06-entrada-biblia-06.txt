@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "entender-a-biblia-sem-entrada-biblia-06-01": {
+  "question": "Em Mateus 28:7, o anjo diz que os discípulos verão Jesus em Jerusalém.",
+  "learningObjective": "Observar a mensagem que o anjo manda levar aos discípulos.",
+  "feedbackCorrect": "O encontro marcado é na Galileia, onde os discípulos o verão, como ele tinha dito.",
+  "feedbackWrong": {
+   "true": "Releia o fim de Mateus 28:7: Jesus vai adiante deles para a Galileia."
+  },
+  "hint": "Procure o lugar que o anjo menciona.",
+  "_verso": "Vão depressa e digam aos seus discípulos que Ele ressuscitou dos mortos e vai adiante de vocês para a Galileia; lá vocês o verão, como já lhes disse."
+ },
+ "entender-a-biblia-sem-entrada-biblia-06-02": {
+  "question": "Em Mateus 28:5, toque com quem o anjo fala.",
+  "learningObjective": "Identificar quem recebe o primeiro anúncio da ressurreição.",
+  "feedbackCorrect": "O anjo se dirige às mulheres: são elas as primeiras a ouvir a notícia.",
+  "feedbackWrong": {
+   "a": "Jesus é aquele que elas buscam; o anjo fala com quem foi ao túmulo.",
+   "c": "O anjo é quem fala, não quem ouve."
+  },
+  "hint": "Veja a quem o anjo se dirige.",
+  "_verso": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado."
+ },
+ "entender-a-biblia-sem-entrada-biblia-06-03": {
+  "question": "Segundo Mateus 28:6, o que o anjo convida as mulheres a fazer?",
+  "learningObjective": "Observar o convite do anjo diante do túmulo vazio.",
+  "feedbackCorrect": "O anjo as chama para ver com os próprios olhos o lugar vazio.",
+  "feedbackWrong": {
+   "a": "Não há corpo para preparar: Jesus já ressuscitou.",
+   "b": "Os guardas nem aparecem na fala do anjo; ele chama as mulheres para ver.",
+   "d": "O anjo não pede espera: ele diz que Jesus não está ali."
+  },
+  "hint": "Leia a última frase do versículo.",
+  "options": {
+   "a": "Preparar o corpo de Jesus",
+   "b": "Chamar os guardas do túmulo",
+   "c": "Ver o lugar onde ele estava",
+   "d": "Esperar ali até Jesus voltar"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-sem-entrada-biblia-06-04": {
+  "question": "Monte Mateus 28:2 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Mateus 28:2.",
+  "feedbackCorrect": "É a sequência do versículo: o terremoto, o anjo que desce e a pedra removida.",
+  "feedbackWrong": {
+   "default": "O versículo começa pelo terremoto e termina com o anjo sentado sobre a pedra."
+  },
+  "hint": "O versículo começa com algo que sacode a terra.",
+  "_verso": "E ocorreu um grande terremoto, pois um anjo do Senhor desceu do céu, aproximou-se, rolou a pedra da entrada e sentou-se sobre ela."
+ },
+ "entender-a-biblia-sem-entrada-biblia-06-05": {
+  "question": "Em Mateus 28:8, com que sentimentos as mulheres saem do sepulcro?",
+  "learningObjective": "Lembrar como as mulheres reagem ao anúncio.",
+  "feedbackCorrect": "Medo e grande alegria juntos: a notícia assusta e, ao mesmo tempo, enche de vida.",
+  "feedbackWrong": {
+   "a": "Elas não ficam paradas em dúvida: correm para anunciar.",
+   "c": "Elas chegaram ao túmulo para um luto, mas saem com outra coisa no coração."
+  },
+  "hint": "Ao lado do medo aparece um sentimento oposto.",
+  "_verso": "E, saindo apressadamente do sepulcro, tomadas de medo e grande alegria, correram a anunciar aos discípulos."
+ },
+ "entender-a-biblia-sem-entrada-biblia-06-06": {
+  "question": "O que Mateus 28:6 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Mateus 28:6 à surpresa das mulheres no túmulo.",
+  "feedbackCorrect": "Elas buscavam um corpo, e o anjo anuncia: ele não está aqui porque ressuscitou.",
+  "feedbackWrong": {
+   "a": "O anjo chama para ver o lugar onde ele estava: é o túmulo certo.",
+   "c": "O anjo não fala de roubo: diz que ele ressuscitou."
+  },
+  "hint": "Veja o motivo que o anjo dá para o túmulo vazio.",
+  "options": {
+   "a": "Elas erraram de túmulo",
+   "b": "Ele ressuscitou e não está ali",
+   "c": "O corpo foi levado embora"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-01": {
+  "question": "Em Mateus 28:5–6, as mulheres não precisam ter medo porque os guardas já tinham fugido.",
+  "learningObjective": "Compreender a causa do \"não tenham medo\".",
+  "feedbackCorrect": "O motivo é outro: Jesus, que elas buscam, não está ali porque já ressuscitou.",
+  "feedbackWrong": {
+   "true": "O anjo não fala dos guardas; o motivo vem depois do \"pois\": Jesus já ressuscitou."
+  },
+  "hint": "Procure o motivo que o próprio anjo dá.",
+  "_verso": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado. Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-02": {
+  "question": "Em Mateus 28:6, toque a palavra que introduz o motivo de Jesus não estar ali.",
+  "learningObjective": "Reconhecer o marcador de causa no anúncio do anjo.",
+  "feedbackCorrect": "\"Pois\" abre a explicação: ele não está ali porque já ressuscitou.",
+  "feedbackWrong": {
+   "a": "\"Como\" liga a ressurreição ao que Jesus tinha dito, não dá o motivo.",
+   "c": "\"Onde\" aponta o lugar em que ele estava, não a razão."
+  },
+  "hint": "Procure a palavra que vem logo após \"Não está aqui\".",
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-03": {
+  "question": "Em Mateus 28:6, o que a expressão \"como ele havia dito\" mostra sobre a ressurreição?",
+  "learningObjective": "Relacionar a ressurreição com a palavra anterior de Jesus.",
+  "feedbackCorrect": "A ressurreição não é improviso: Jesus tinha dito que ia acontecer, e aconteceu.",
+  "feedbackWrong": {
+   "a": "A expressão fala da palavra de Jesus, não de quem acreditava.",
+   "b": "Jesus tinha anunciado isso antes; nada o pegou de surpresa.",
+   "c": "Quem anuncia é o anjo, lembrando a palavra de Jesus, não as mulheres."
+  },
+  "hint": "Pense em quem tinha dito e o que tinha dito.",
+  "options": {
+   "a": "Ela só vale para quem já acreditava antes",
+   "b": "Ela pegou até Jesus de surpresa",
+   "c": "Ela foi uma ideia das mulheres no túmulo",
+   "d": "Ela cumpre o que o próprio Jesus tinha anunciado"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-04": {
+  "question": "Como avança a cena em Mateus 28:8–9?",
+  "learningObjective": "Compreender o movimento do túmulo ao encontro com Jesus.",
+  "feedbackCorrect": "Elas saem, correm para anunciar e, no caminho, o próprio Jesus as encontra.",
+  "feedbackWrong": {
+   "default": "O encontro com Jesus vem por último, quando elas já estão a caminho dos discípulos."
+  },
+  "hint": "O ponto de chegada é o encontro.",
+  "options": {
+   "a": "Elas deixam o túmulo às pressas",
+   "b": "Elas correm para contar aos discípulos",
+   "c": "Jesus vem ao encontro delas no caminho"
+  },
+  "_verso": "E, saindo apressadamente do sepulcro, tomadas de medo e grande alegria, correram a anunciar aos discípulos. E, ao irem anunciá-lo aos seus discípulos, Jesus veio ao seu encontro e disse: \"Saudações!\" E elas, aproximando-se, adoraram-no abraçando seus pés."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-05": {
+  "question": "Em Mateus 28:7, o que o anjo diz que Jesus faz em relação aos discípulos?",
+  "learningObjective": "Compreender a ação de Jesus ressuscitado em relação aos seus.",
+  "feedbackCorrect": "Jesus vivo vai na frente: ele já está esperando os seus na Galileia.",
+  "feedbackWrong": {
+   "b": "Jesus não vem depois; ele chega antes à Galileia.",
+   "c": "Ele não se afasta: marca um encontro com eles."
+  },
+  "hint": "Pense em quem chega primeiro à Galileia.",
+  "_verso": "Vão depressa e digam aos seus discípulos que Ele ressuscitou dos mortos e vai adiante de vocês para a Galileia; lá vocês o verão, como já lhes disse."
+ },
+ "entender-a-biblia-cam-entrada-biblia-06-06": {
+  "question": "O que liga Mateus 28:6 a Mateus 16:21?",
+  "learningObjective": "Relacionar o túmulo vazio com o anúncio feito por Jesus.",
+  "feedbackCorrect": "Em 16:21 Jesus diz que ia morrer e ressuscitar; em 28:6 o anjo lembra: como ele havia dito.",
+  "feedbackWrong": {
+   "a": "Quem anuncia é Jesus; as mulheres vão ao túmulo esperando achar um corpo.",
+   "b": "Jesus não fala em escapar: diz que seria morto e ressuscitaria."
+  },
+  "hint": "Compare o fim dos dois versículos.",
+  "options": {
+   "a": "Os discípulos já esperavam isso",
+   "b": "Jesus escaparia da morte",
+   "c": "Jesus anunciou que ressuscitaria"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-01": {
+  "question": "Mateus 28:5–6 trata a ressurreição como fato que se pode conferir, e não só como lembrança viva de Jesus.",
+  "learningObjective": "Interpretar a ressurreição como acontecimento real, e não só simbólico.",
+  "feedbackCorrect": "O anjo aponta um lugar vazio e convida as mulheres a ver com os próprios olhos.",
+  "feedbackWrong": {
+   "false": "O anjo não fala de lembrança: chama as mulheres para ver o lugar onde o corpo estava."
+  },
+  "hint": "Veja o convite que fecha o versículo 6.",
+  "_verso": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado. Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-02": {
+  "question": "Em Mateus 28:9, toque o gesto que mostra que Jesus ressuscitado tem um corpo real.",
+  "learningObjective": "Sustentar com o texto que a ressurreição é corporal.",
+  "feedbackCorrect": "Elas tocam nos pés dele: não é uma visão nem uma lembrança, é Jesus vivo, com corpo.",
+  "feedbackWrong": {
+   "b": "Elas se aproximam, mas o gesto que mostra o corpo vem logo depois.",
+   "c": "É a fala de Jesus; mostra que ele fala, mas não que pode ser tocado."
+  },
+  "hint": "Procure o que as mulheres tocam.",
+  "_verso": "E, ao irem anunciá-lo aos seus discípulos, Jesus veio ao seu encontro e disse: \"Saudações!\" E elas, aproximando-se, adoraram-no abraçando seus pés."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-03": {
+  "question": "Que leitura Mateus 28:5–6 sustenta sobre a ressurreição?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta sobre a ressurreição.",
+  "feedbackCorrect": "O texto junta as duas pontas: o crucificado é o mesmo que ressuscitou, como tinha dito.",
+  "feedbackWrong": {
+   "a": "O anjo fala de \"Jesus, que foi crucificado\": a morte foi real.",
+   "c": "Jesus já a tinha anunciado, e dela parte o envio das mulheres.",
+   "d": "O anjo não fala de memória: mostra o lugar vazio onde o corpo estava."
+  },
+  "hint": "Compare cada opção com o que o anjo diz de Jesus nos dois versículos.",
+  "options": {
+   "a": "Jesus só desmaiou e depois se recuperou",
+   "b": "Jesus morreu de fato e voltou a viver, como disse",
+   "c": "É só um detalhe no fim da história de Jesus",
+   "d": "A memória de Jesus continuou viva entre os seus"
+  },
+  "_verso": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado. Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-04": {
+  "question": "Qual sequência mostra o lugar de Mateus 28:6 na história da Bíblia?",
+  "learningObjective": "Ver a ressurreição como o centro da história bíblica.",
+  "feedbackCorrect": "A morte entra na queda, é vencida na ressurreição e some de vez na nova criação.",
+  "feedbackWrong": {
+   "default": "Siga a história: queda (Gn 3:19), ressurreição (Mt 28:6) e nova criação (Ap 21:4)."
+  },
+  "hint": "Siga a ordem da Bíblia: começo, centro e fim.",
+  "options": {
+   "a": "Com a queda, a morte entra na história",
+   "b": "Jesus ressuscita e vence a morte",
+   "c": "Na nova criação, a morte não existirá mais"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-05": {
+  "question": "Em Mateus 28:6, que palavra explica por que Jesus não está ali?",
+  "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+  "feedbackCorrect": "Ele não saiu do túmulo como alguém que vai embora: voltou da morte para a vida.",
+  "feedbackWrong": {
+   "a": "\"Partiu\" diria só que ele foi embora; o anjo diz que ele venceu a morte.",
+   "c": "Ninguém foge de um túmulo: o anjo anuncia vida nova, não escape."
+  },
+  "hint": "É a palavra que dá nome à cena.",
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "entender-a-biblia-pro-entrada-biblia-06-06": {
+  "question": "O que liga Mateus 28:6 a 1 Coríntios 15:21–22?",
+  "learningObjective": "Ligar a ressurreição de Jesus à morte que entrou na queda.",
+  "feedbackCorrect": "A morte veio por um homem; a ressurreição de Jesus abre a vida para todos que estão nele.",
+  "feedbackWrong": {
+   "a": "Paulo diz mais: em Cristo, todos serão ressuscitados.",
+   "c": "Não é voltar à vida de antes: é a vitória sobre a morte que entrou com Adão."
+  },
+  "hint": "Veja quem Paulo coloca de cada lado: um traz a morte, o outro a vida.",
+  "options": {
+   "a": "Só Jesus volta a viver",
+   "b": "Em Adão morte, em Cristo vida",
+   "c": "Uma volta à vida de antes"
+  },
+  "_verso": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+ },
+ "estudo:entrada-biblia-06": {
+  "context": "Jesus tinha sido crucificado e sepultado, e uma grande pedra fechava o túmulo, vigiado por guardas. No primeiro dia da semana, algumas mulheres vão até lá. Elas esperam encontrar um corpo.",
+  "focusQuestion": "O que muda no seu medo da morte se o túmulo de Jesus está vazio?",
+  "keywordGloss": "Jesus volta da morte para a vida, como tinha dito, e o túmulo fica vazio.",
+  "reflectionPrompts": [
+   "Não tenham medo",
+   "Como ele havia dito",
+   "Vão e contem"
+  ],
+  "facts": [
+   "Um anjo do Senhor rolou a pedra da entrada.",
+   "Os guardas tremeram e ficaram como mortos.",
+   "O anjo diz às mulheres que não tenham medo.",
+   "Jesus não está no túmulo: ressuscitou, como tinha dito.",
+   "As mulheres são enviadas para contar aos discípulos.",
+   "Jesus vai ao encontro das mulheres no caminho."
+  ],
+  "_verso": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado. Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava. Vão depressa e digam aos seus discípulos que Ele ressuscitou dos mortos e vai adiante de vocês para a Galileia; lá vocês o verão, como já lhes disse."
+ }
+}

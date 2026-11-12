@@ -221,6 +221,14 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final cleared = clearedSig.isEmpty
         ? const <String>[]
         : clearedSig.split('|');
+    final progressLabel = _fromBank
+        ? TrailProgress.activeModeProgressLabel(
+            clearedModes: cleared,
+            activeDifficultyId: difficultyId,
+            liveDone: prog.done,
+            total: prog.total,
+          )
+        : context.l10n.trailsScenesShort(prog.done, prog.total);
     final replaying = TrailProgress.isReplayingUnclearedMode(
       clearedModes: cleared,
       activeDifficultyId: difficultyId,
@@ -411,19 +419,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     inline: true,
                     immersive: true,
                     title: trail.localizedTitle,
+                    // Coleção na frente: Novo Testamento · 3/12 cenas.
                     subtitle: _useThematicMap
                         ? trail.journey.label
-                        : (_fromBank
-                              ? TrailProgress.activeModeProgressLabel(
-                                  clearedModes: cleared,
-                                  activeDifficultyId: difficultyId,
-                                  liveDone: prog.done,
-                                  total: prog.total,
-                                )
-                              : context.l10n.trailsScenesShort(
-                                  prog.done,
-                                  prog.total,
-                                )),
+                        : '${trail.journey.label} · $progressLabel',
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
                     // TopBar = chrome neutro; cor do modo/área só no conteúdo.

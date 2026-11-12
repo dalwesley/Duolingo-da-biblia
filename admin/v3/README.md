@@ -30,6 +30,9 @@ npm run v3:translate -- --trail rute --apply
 npm run v3:publish -- --trail rute                    # simula + backup; --apply grava
 ```
 
+Correções feitas no painel admin ficam marcadas no Firestore. Antes de publicar de novo uma trilha já publicada, traga-as para `cenas/`: `npm run v3:pull -- --trail rute --apply` (o publish para se faltar).
+
+
 `conferir` também recusa uma resposta que use versos fora do livro e dos capítulos da cena: o validador só confere se a referência existe na JFAAL.
 
 ## Passo a passo pela API
